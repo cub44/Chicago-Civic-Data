@@ -1,0 +1,17 @@
+campus_label,campus_name,grade_category,enrollment_20th_day,enrollment_utilization,adj_ideal_capacity,su_pct,cps_status,source
+ES COLO 1,ES COLO: PENN & KIPP - ASCEND (5th - 8th),ES,542,509,980,0.52,Underutilized,cps_space_utilization_sy2026@2026-09-09
+ES COLO 10,ES COLO: SAUCEDO & TELPOCHCALLI,ES,1087,952,1316,0.72,Efficient,cps_space_utilization_sy2026@2026-09-09
+ES COLO 2,ES COLO: NASH & KIPP - ACADEMY (4th - 8th),ES,636,581,840,0.69,Underutilized,cps_space_utilization_sy2026@2026-09-09
+ES COLO 3,ES COLO: ARIEL & U OF C - NKO,ES,692,623,784,0.79,Efficient,cps_space_utilization_sy2026@2026-09-09
+ES COLO 4,ES COLO: REVERE & NOBLE COMER (6th - 8th),ES,419,403,616,0.65,Underutilized,cps_space_utilization_sy2026@2026-09-09
+ES COLO 6,ES COLO: LOZANO & ROWE (K-5th),ES,555,462,840,0.55,Underutilized,cps_space_utilization_sy2026@2026-09-09
+ES COLO 7,ES COLO: THORP J & LEARN - SOUTH CHICAGO,ES,681,621,868,0.72,Efficient,cps_space_utilization_sy2026@2026-09-09
+ES COLO 9,ES COLO: ALBANY PARK & EDISON,ES,494,494,588,0.84,Efficient,cps_space_utilization_sy2026@2026-09-09
+ES/HS COLO 1,ES/HS COLO: KIPP - ONE & ORR HS,ES/HS,1296,1296,1776,0.73,Efficient,cps_space_utilization_sy2026@2026-09-09
+ES/HS COLO 2,ES/HS COLO: DOOLITTLE & URBAN PREP - BRONZEVILLE HS,ES/HS,354,339,1292,0.26,Underutilized,cps_space_utilization_sy2026@2026-09-09
+ES/HS COLO 3,ES/HS COLO: KINZIE & KENNEDY HS,ES/HS,2082,1966,1688,1.16,Overcrowded,cps_space_utilization_sy2026@2026-09-09
+ES/HS COLO 4,ES/HS COLO: CHICACO ACADEMY ES & CHICAGO ACADEMY HS,ES/HS,1123,1065,1152,0.92,Efficient,cps_space_utilization_sy2026@2026-09-09
+HS COLO 1,HS COLO: BOWEN & NOBLE - BAKER HS,HS,541,521,1896,0.27,Underutilized,cps_space_utilization_sy2026@2026-09-09
+HS COLO 2,HS COLO: CORLISS HS & NOBLE - BUTLER HS,HS,1065,1054,1368,0.77,Efficient,cps_space_utilization_sy2026@2026-09-09
+HS COLO 3,HS COLO: BRONZEVILLE HS & WILLIAMS HS,HS,197,188,1584,0.12,Underutilized,cps_space_utilization_sy2026@2026-09-09
+HS COLO 4,HS COLO: LITTLE VILLAGE CAMPUS,HS,1212,1212,1488,0.81,Efficient,cps_space_utilization_sy2026@2026-09-09
