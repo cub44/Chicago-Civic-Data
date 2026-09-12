@@ -1,0 +1,3 @@
+source_key,url,error
+nnh_reavis_archive,https://www.boardportal.nearnorthhealth.org/reavis-school-based-health-center-,"<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.boardportal.nearnorthhealth.org'. (_ssl.c:1028)>"
+uic_drake_open,https://nursing.uic.edu/news-stories/school-based-community-health-center-named-for-uic-nursing-alumna-opens,HTTP Error 404: Not Found

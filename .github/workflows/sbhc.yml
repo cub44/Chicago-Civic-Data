@@ -1,0 +1,25 @@
+name: Validate SBHC publication
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  sbhc:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/cps-space-colocation
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build and validate publication files
+        run: python3 build_resolved.py && python3 test_sbhc_publish.py
+      - name: Require generated files to be committed
+        run: git diff --exit-code -- data/processed
