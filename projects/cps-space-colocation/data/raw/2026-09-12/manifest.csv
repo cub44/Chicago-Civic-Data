@@ -1,0 +1,39 @@
+source_key,file,requested_url,final_url,content_type,bytes
+340b_hope,340b_hope.html,https://340bopais.hrsa.gov/cedetails/27228,https://340bopais.hrsa.gov/cedetails/27228,text/html; charset=utf-8,27922
+340b_lchc,340b_lchc.html,https://340bopais.hrsa.gov/cedetails/19531,https://340bopais.hrsa.gov/cedetails/19531,text/html; charset=utf-8,27927
+340b_uplift,340b_uplift.html,https://340bopais.hrsa.gov/cedetails/21948,https://340bopais.hrsa.gov/cedetails/21948,text/html; charset=utf-8,27897
+alivio_loc,alivio_loc.html,https://alivio.org/locations/,https://alivio.org/locations/,text/html; charset=UTF-8,110600
+alivio_lvlhs,alivio_lvlhs.html,https://alivio.org/locations/lawndale/,https://alivio.org/locations/lawndale/,text/html; charset=UTF-8,101238
+alivio_peds,alivio_peds.html,https://alivio.org/services/pediatrics/,https://alivio.org/services/pediatrics/,text/html; charset=UTF-8,135248
+blockclub,blockclub.html,https://blockclubchicago.org/2022/10/13/heartland-health-centers-renamed-tapestry-360-health-to-avoid-confusion-with-former-sister-agency/,https://blockclubchicago.org/2022/10/13/heartland-health-centers-renamed-tapestry-360-health-to-avoid-confusion-with-former-sister-agency/,text/html; charset=UTF-8,348621
+cdph2014,cdph2014.csv,https://data.cityofchicago.org/api/views/cjg8-dbka/rows.csv?accessType=DOWNLOAD,https://data.cityofchicago.org/api/views/cjg8-dbka/rows.csv?accessType=DOWNLOAD,text/csv; charset=utf-8,18862
+cps_booklet,cps_booklet.pdf,https://www.cps.edu/globalassets/cps-pages/sites/back-to-school/student-health-and-school-forms-booklet-english-25-26.pdf,https://www.cps.edu/globalassets/cps-pages/sites/back-to-school/student-health-and-school-forms-booklet-english-25-26.pdf,application/pdf,4546381
+cps_resources,cps_resources.html,https://www.cps.edu/services-and-supports/health-and-wellness/health-resources/,https://www.cps.edu/services-and-supports/health-and-wellness/health-resources/,text/html; charset=utf-8,397230
+cps_staff,cps_staff.html,https://www.cps.edu/strategic-initiatives/healthy-cps/staff/,https://www.cps.edu/strategic-initiatives/healthy-cps/staff/,text/html; charset=utf-8,426919
+cult_hw,cult_hw.html,https://cultivate-collective.org/services/health-wellness,https://cultivate-collective.org/services/health-wellness,text/html; charset=UTF-8,236712
+erie_amun,erie_amun.html,https://www.eriefamilyhealth.org/locations/amundsen/,https://www.eriefamilyhealth.org/locations/amundsen/,text/html; charset=UTF-8,188315
+erie_clem,erie_clem.html,https://www.eriefamilyhealth.org/locations/clemente/,https://www.eriefamilyhealth.org/locations/clemente/,text/html; charset=UTF-8,188480
+erie_john,erie_john.html,https://www.eriefamilyhealth.org/locations/johnson/,https://www.eriefamilyhealth.org/locations/johnson/,text/html; charset=UTF-8,189931
+erie_lkvw,erie_lkvw.html,https://www.eriefamilyhealth.org/locations/lake-view/,https://www.eriefamilyhealth.org/locations/lake-view/,text/html; charset=UTF-8,188468
+erie_loc,erie_loc.html,https://www.eriefamilyhealth.org/locations/,https://www.eriefamilyhealth.org/locations/,text/html; charset=UTF-8,196607
+erie_west,erie_west.html,https://www.eriefamilyhealth.org/locations/westside/,https://www.eriefamilyhealth.org/locations/westside/,text/html; charset=UTF-8,190645
+esp_cult,esp_cult.html,https://www.esperanzachicago.org/location/esperanza-cultivate-collective,https://www.esperanzachicago.org/location/esperanza-cultivate-collective,text/html; charset=UTF-8,23217
+iphca,iphca.html,https://www.iphca.org/health-center-locator/,https://www.iphca.org/health-center-locator/,text/html; charset=UTF-8,897249
+lchc_farragut,lchc_farragut.html,https://lawndale.org/farragut-academy,https://lawndale.org/farragut-academy,text/html;charset=utf-8,201929
+msq_davis,msq_davis.html,https://hospital.uillinois.edu/mile-square-health-center/locations/school-based-clinics/davis-health-wellness-center,https://hospital.uillinois.edu/mile-square-health-center/locations/school-based-clinics/davis-health-wellness-center,text/html; charset=utf-8,38851
+msq_drake,msq_drake.html,https://hospital.uillinois.edu/mile-square-health-center/locations/school-based-clinics/barnes-boyd,https://hospital.uillinois.edu/mile-square-health-center/locations/school-based-clinics/barnes-boyd,text/html; charset=utf-8,38470
+msq_engl,msq_engl.html,https://hospital.uillinois.edu/mile-square-health-center/locations/school-based-clinics/englewood-stem,https://hospital.uillinois.edu/mile-square-health-center/locations/school-based-clinics/englewood-stem,text/html; charset=utf-8,38552
+msq_prim,msq_prim.html,https://hospital.uillinois.edu/mile-square-health-center/care-at-mile-square/services/primary-and-pediatric-care,https://hospital.uillinois.edu/mile-square-health-center/care-at-mile-square/services/primary-and-pediatric-care,text/html; charset=utf-8,41048
+msq_sbhc,msq_sbhc.html,https://hospital.uillinois.edu/mile-square-health-center/locations/school-based-clinics,https://hospital.uillinois.edu/mile-square-health-center/locations/school-based-clinics,text/html; charset=utf-8,33862
+nnh_loc,nnh_loc.html,https://nearnorthhealth.org/locations/,https://nearnorthhealth.org/locations/,text/html; charset=UTF-8,226004
+rush_sbhc,rush_sbhc.html,https://www.rush.edu/about-us/rush-community/office-community-health-equity-and-engagement/community-based-practices,https://www.rush.edu/about-us/rush-community/office-community-health-equity-and-engagement/community-based-practices,text/html; charset=UTF-8,111235
+tap_loc,tap_loc.html,https://tap360health.org/location/,https://tap360health.org/location/,text/html; charset=UTF-8,297444
+tap_rename,tap_rename.html,https://tap360health.org/new-name-same-quality-care/,https://tap360health.org/new-name-same-quality-care/,text/html; charset=UTF-8,242791
+tap_senn,tap_senn.html,https://tap360health.org/location/tapestry-senn-high-school/,https://tap360health.org/location/tapestry-senn-high-school/,text/html; charset=UTF-8,324785
+tap_student,tap_student.html,https://tap360health.org/medical-specialties/student-health/,https://tap360health.org/medical-specialties/student-health/,text/html; charset=UTF-8,342964
+tca_carver,tca_carver.html,https://tcahealth.org/carver-military-academy-school-based-health-center/,https://tcahealth.org/carver-military-academy-school-based-health-center/,text/html; charset=UTF-8,219743
+tca_contact,tca_contact.html,https://tcahealth.org/contact-us/,https://tcahealth.org/contact-us/,text/html; charset=UTF-8,260808
+uic_ag,uic_ag.html,https://live.today.uic.edu/grand-opening-of-ui-healths-auburn-gresham-health-center/,https://live.today.uic.edu/grand-opening-of-ui-healths-auburn-gresham-health-center/,text/html; charset=UTF-8; embedded Azure Function key redacted,131454
+uic_ocean,uic_ocean.html,https://oceanhp.uic.edu/programs/community-health/mile-square-community-school-health-centers/,https://oceanhp.uic.edu/programs/community-health/mile-square-community-school-health-centers/,text/html; charset=UTF-8; embedded Azure Function key redacted,290782
+nnh_reavis_archive,nnh_reavis_archive.html,https://www.boardportal.nearnorthhealth.org/reavis-school-based-health-center-,https://web.archive.org/web/20250806131541id_/https://www.boardportal.nearnorthhealth.org/reavis-school-based-health-center-,text/html; archived official response,628917
+uic_drake_open,uic_drake_open.html,https://nursing.uic.edu/news-stories/school-based-community-health-center-named-for-uic-nursing-alumna-opens,https://web.archive.org/web/20250330023119id_/https://nursing.uic.edu/news-stories/school-based-community-health-center-named-for-uic-nursing-alumna-opens/,text/html; archived official response; embedded Azure Function key redacted,234933
