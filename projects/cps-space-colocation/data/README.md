@@ -145,6 +145,74 @@ maintained privately.
 
 ---
 
+## `school_buildings.csv` — one row per school, building coordinate
+
+Grain: one school, joined to `schools.csv` on `sid`. 642 rows — every school in
+`schools.csv` has exactly one row here, so a left join loses nothing.
+
+**This file does not replace the coordinates in `schools.csv`.** Those stay
+exactly as published: `lat`/`lon` there are the answer to "where is this
+address", which is what any distance, catchment or nearest-service work has to
+be computed against. This file adds a second, differently derived coordinate —
+a point *inside* the school's building — and states how confidently it was
+derived, so a consumer decides for itself which one to use. The map uses the
+building point where it is well established and falls back to the source point
+everywhere else.
+
+Source: Socrata `syp8-uezg` (*Building Footprints*), reached from the
+`Building Footprints - Map` view `hz9b-7nh8`. The extract pulls the footprints
+within 160 m of each school point rather than all 820,606 citywide.
+
+| Column | Type | Notes |
+|---|---|---|
+| `sid` | integer | CPS school id. Joins to `schools.csv`. |
+| `match_quality` | enum | How the building was established. See below. Only `address_exact` and `containing` assert "this is the building". |
+| `bldg_lat` / `bldg_lon` | decimal | Pole of inaccessibility of the matched footprint — the interior point furthest from any wall. Empty for `no_match` and `no_point`. |
+| `offset_m` | metres | Distance from the `schools.csv` point to `bldg_lat`/`bldg_lon`. How far the marker moved. |
+| `edge_m` | metres | Distance from the `schools.csv` point to the footprint's nearest wall; `0` means the source point falls inside the footprint. |
+| `bldg_id` | integer | `syp8-uezg` building id, so any match can be re-checked against the source. |
+| `bldg_address` | text | Address the footprint itself carries, for comparison against the school's. |
+| `bldg_name` | text | Building name in the footprint file, where it has one. Not used for matching, so it is an independent check: 74 of the 80 named snapped buildings carry a school name. |
+| `bldg_stories` | integer | From the footprint file. Absent where the source is blank. |
+| `footprint_area_sqft` | number | The source's own `shape_area`, in square feet, republished unconverted. |
+| `candidates_in_range` | integer | Footprints within the extract radius. A high count is a dense block, not a problem. |
+
+### `match_quality`
+
+| Value | Rows | Meaning |
+|---|---|---|
+| `address_exact` | 501 | Geometry and address agree: the footprint's address range and street match the school's, and the school point is inside it or within 60 m of its wall. |
+| `containing` | 16 | The school point falls inside the footprint, but the footprint carries no address or a non-matching one. Direct geometric evidence. |
+| `largest_nearby` | 116 | Nothing contains the point and no address matched within 60 m. The largest footprint in range is recorded as a *candidate only*. |
+| `no_match` | 2 | A school point exists but the source has no footprint within 160 m. Verified against the portal, not a gap in this extract. |
+| `no_point` | 7 | `schools.csv` has no coordinate, so there was nothing to match — the seven schools already reported as unmappable above. |
+
+The 60 m cap on non-containing address matches is load-bearing. Chicago
+footprint address ranges span a whole block face, so "house number inside
+`f_add1`–`t_add1` on the same street" collides freely with a school's
+neighbours. Without the cap the match confidently placed one charter school on
+the police station down the block and a high school on a 326 m² outbuilding
+137 m away. Those rows are now `largest_nearby` and the map leaves them alone.
+
+Among snapped rows the source point is a median 10 m outside its building's
+wall and only 38 fall inside one, which is what an address-level geocode looks
+like: close to the right building, rarely in it. Snapping moves a marker a
+median 40 m.
+
+### Known limitation: the footprint snapshot is from 2015
+
+`syp8-uezg` reports `rowsUpdatedAt` of 2015-08-15 and has not been revised
+since. Any school built or rebuilt after that date is therefore matched against
+whatever stood on the site in 2015, or not at all. Noble – ITW David Speer
+Academy, which opened in 2016, snaps to a footprint named `RUBENSTEIN LUMBER
+CO.`; the school point does fall inside that footprint, so the coordinate is
+defensible for 2015 geometry, but the building name is a reminder of what the
+match is really asserting. `bldg_name` and `offset_m` are published so this
+class of error stays visible rather than being absorbed into a coordinate. The
+City publishes no newer citywide footprint dataset on this portal.
+
+---
+
 ## `sbhc_publish.csv` — one row per school-based health centre
 
 Grain: one health centre. 38 rows: 32 operating, two closed, one
