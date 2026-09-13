@@ -52,6 +52,13 @@ PROVENANCE_COLS = ["resolution_confidence", "resolution_fields", "resolution_sou
 # source sheet and sbhc_resolved.csv keep them so the change stays auditable.
 SUPERSEDED = ["hours"]
 
+# Retired columns: dropped from every processed sheet, not just the publication
+# one. manually_verified was the pre-publication review gate. That gate has been
+# replaced, so the column no longer means anything - it was "false" on all 38
+# rows - and there is nothing in it to audit. The input sheet keeps the column;
+# this build never modifies its inputs.
+RETIRED = ["manually_verified"]
+
 RANK = {"high": 3, "medium": 2, "low": 1, "unresolved": 0}
 
 
@@ -124,8 +131,8 @@ def main():
     for x in R:
         grouped[x["site_name"]].append(x)
 
-    resolved_cols = list(rows[0].keys()) + list(FIELD_TO_COL.values()) \
-        + NEW_SCHEMA_COLS + PROVENANCE_COLS
+    resolved_cols = [c for c in list(rows[0].keys()) if c not in RETIRED] \
+        + list(FIELD_TO_COL.values()) + NEW_SCHEMA_COLS + PROVENANCE_COLS
     publish_cols = [c for c in resolved_cols
                     if c not in SUPERSEDED and not c.startswith("resolved_")]
 
