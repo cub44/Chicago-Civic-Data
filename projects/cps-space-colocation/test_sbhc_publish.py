@@ -135,9 +135,16 @@ for r in rows:
         check(r["resolution_confidence"] in ("high", "medium", "low", "unresolved"),
               "bad resolution_confidence: %s" % r["site_name"])
 
-# ---- no row is published as verified by the build
-check(all(r["manually_verified"] == "false" for r in rows),
-      "manually_verified set by the build rather than by review")
+# ---- the retired review gate stays retired, in both processed sheets.
+# manually_verified gated publication before the gate was replaced. It carried
+# "false" on every row, so republishing it would assert nothing while reading
+# like a verification claim.
+resolved_header = next(csv.reader(
+    (ROOT / "data" / "processed" / "sbhc_resolved.csv").open()))
+check("manually_verified" not in rows[0],
+      "retired manually_verified column is back in sbhc_publish.csv")
+check("manually_verified" not in resolved_header,
+      "retired manually_verified column is back in sbhc_resolved.csv")
 
 # ---- source sponsor claims are audit-only; publication has one canonical name
 check("sponsor_cps" not in rows[0] and "sponsor_idph" not in rows[0],
