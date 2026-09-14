@@ -342,6 +342,153 @@ visible rather than being absorbed into a coordinate.
 
 ---
 
+## `park_facilities.csv` — one row per Chicago Park District building
+
+Grain: one building on Park District premises. 743 rows. Snapshot pulled
+14 September 2026; the source's rows were last updated 18 May 2022, and the
+portal describes the inventory as "as of November 4, 2016".
+
+Source: Socrata `vcti-mbcd`, *CPD_Park_Buildings*, the tabular dataset behind the
+portal's `u7uu-j2ma` map view, *Parks - Chicago Park District Buildings
+(current)*.
+
+This layer is here for the same reason the library roster is. The project asks
+what underused school space could additionally hold, and the answer depends on
+what public space a neighbourhood already has. A field house three blocks from a
+half-empty school building is already doing some of what that school's surplus
+space might be asked to do.
+
+**This is an asset inventory, not a programme roster.** It establishes that a
+building of a recorded type stands at a point. It establishes nothing about what
+runs inside, when the building opens, or whether the pool is filled and the
+field house staffed.
+
+| Column | Type | Notes |
+|---|---|---|
+| `objectid` | integer | The row id. **The join key** to `park_facility_buildings.csv`. Use it rather than `bldg_id`, which is not unique: two Lincoln Park buildings, a comfort station and a concession, both carry `0100-81`. |
+| `park` | text | CPD's park name, verbatim and in its own capitals (`LINCOLN (ABRAHAM)`). |
+| `park_no` | integer | CPD's park number. |
+| `bldg_id` | text | CPD's building id. Published, but **not unique** — see `objectid`. |
+| `bldg_name` | text | CPD's building name. Blank on 62 rows. |
+| `category` | text | **Derived**, and the only derived classification here: `field_house`, `museum`, `pool`, `stadium`, `other`, from `bldg_type` alone. See below. |
+| `bldg_type` | text | CPD's own type, **verbatim**, 38 distinct values. Published beside `category` so the grouping loses nothing. Four rows carry an `INACTIVE: ` prefix in the type string itself. |
+| `field_house_class` | text | The class CPD grades a field house at, parsed from `bldg_type` — `A1 A2 A3 A4 AA B BH1 BH2 C D D2 JOINT`. Blank for everything that is not a field house. |
+| `status` | text | `ACTIVE` / `INACTIVE` as published; blank on one row. A standing building, not a programmed one. |
+| `year_built` | integer | **Blank where CPD publishes 0**, which is its null. Present on 333 of 743 rows, range 1836–2020. |
+| `stories` | integer | Blank where CPD publishes 0. Present on 542 of 743 rows. |
+| `building_sqft` | integer | **Gross floor area in square feet as CPD records it.** Blank where CPD publishes 0 — present on 232 of 743 rows. Different from `footprint_area_sqft` in the sidecar, which is the City's footprint polygon area; neither is derived from the other. |
+| `owner` | text | Owner code as published (`CPD`, `CITY`, `BOE`, `CHA`, `CTA`, `STATE`, `MWRD`, `OTHER`, …), not expanded — the codes are undocumented in the dataset. Not an operator. Blank on 19 rows; one value contains an embedded newline and two read `CPS` and `COD`, all published as found. |
+| `address` | text | As published. Blank on 323 rows, and many of the rest are not civic addresses (`SW corner Central Park & Peterson`, `Belmont Harbor`). Not repaired. |
+| `ward` | integer | As published. |
+| `community` | text | Community area by point-in-polygon against `igwz-8jzy`, the same way `schools.csv` and `libraries.csv` assign it. Blank on three rows that genuinely fall outside every polygon: a breakwater light and a floating yacht club in the lake, and a stadium just north of the city boundary at Devon. |
+| `lat` / `lon` | decimal | WGS84. **Already a building point, not an address geocode** — which is why containment, not address matching, carries the sidecar. Every building has one. |
+| `provenance` / `source` | text | `sourced` for all rows, citing the datasets and pull dates. |
+
+### `category` — the five groups
+
+| Value | Rows | From `bldg_type` |
+|---|---:|---|
+| `field_house` | 251 | every `FIELDHOUSE` class CPD records, not a single type |
+| `pool` | 63 | `POOL BUILDING` |
+| `museum` | 14 | `MUSEUM` |
+| `stadium` | 7 | `STADIUM` |
+| `other` | 408 | the remaining 22 types |
+
+`other` is **not** CPD's own `OTHER` type, which covers 15 buildings. The rest of
+the residue is comfort stations, shelters, maintenance buildings, utility
+structures, concessions, zoo buildings, harbour buildings, golf buildings and
+two dozen more. The grouping is a presentation decision, so `bldg_type` is
+published verbatim beside it and nothing about the source value is lost.
+
+The `INACTIVE: ` prefix is stripped **only** to choose a category, so an inactive
+field house is categorised as a field house. `bldg_type` keeps the prefix and
+`status` keeps the status; nothing is rewritten.
+
+### Before reporting from this file
+
+- A blank area is an area with **no Park District building**, not an area with
+  no park. Park land carrying no building — a playlot, a ball field, a beach —
+  is absent from this dataset entirely.
+- Building *presence* is not provision, and this file carries no programme,
+  hours, staffing or condition figure of any kind.
+- **Absence is not zero.** CPD writes 0 for "no figure" in `year_built`,
+  `stories` and `bldg_sq_fo`; those are published blank. A build year is missing
+  for 410 of 743 buildings and a floor area for 511. Nothing is interpolated.
+- The source contradicts itself in places, and is published as found rather than
+  reconciled. `objectid` 303, a Jackson Park comfort station, is typed
+  `INACTIVE: COMFORT STATION` and statused `ACTIVE`. Four buildings carry a
+  build year after the November 2016 inventory date.
+
+---
+
+## `park_facility_buildings.csv` — one row per park building, building coordinate
+
+Grain: one CPD building, joined to `park_facilities.csv` on `objectid`. 743 rows
+— every building has exactly one row, so a left join loses nothing.
+
+The same design as `school_buildings.csv` and `library_buildings.csv`, built by
+the same code, with the same guarantee: **it does not replace the coordinates in
+`park_facilities.csv`.** Those stay exactly as published and remain what
+distance work is computed against. This file adds a point *inside* the City
+footprint matched to the building and states how confidently it was derived.
+
+Columns are identical to `school_buildings.csv` except that the key is
+`objectid`, and that `park` and `cpd_bldg_name` are carried so the file reads on
+its own. `cpd_bldg_name` is prefixed deliberately: `bldg_name` in this file is
+the City's name for the **footprint**, a different name from a different
+publisher, and the two disagree often.
+
+Source: Socrata `syp8-uezg` (*Building Footprints*), pulled within 160 m of each
+CPD building point — the same extract method and radius as the school and
+library sidecars, so offsets from all three files are comparable.
+
+### `match_quality`
+
+| Value | Rows | Meaning |
+|---|---:|---|
+| `address_exact` | 312 | Geometry and address agree. |
+| `containing` | 298 | The CPD point falls inside a footprint carrying no matching address. |
+| `largest_nearby` | 105 | Nothing contains the point and no address matched. Recorded as a *candidate only*. |
+| `no_match` | 28 | No footprint within 160 m of the point. |
+| `no_point` | 0 | Every building has a coordinate. |
+
+610 of 743 buildings (82.1%) are placed inside a footprint on evidence strong
+enough to assert it. Snapping moves a marker a median of **1.9 m**.
+
+`library_named` cannot appear in this file. `syp8-uezg` labels library
+buildings; it carries no comparable park-building label, so the park matcher
+passes no such rule.
+
+### Why the numbers look different from the school file
+
+CPD publishes a **building point**, not an address geocode, so 608 of the 610
+snapped rows are placed by containment: the point was already inside its
+footprint and the marker moves to that footprint's interior point. The
+`address_exact` / `containing` split here is therefore not a split between
+address evidence and geometric evidence — it is whether the address *also*
+corroborated a containment that had already happened. By category, 233 of 251
+field houses (92.8%), 53 of 63 pool buildings, 11 of 14 museum buildings, 5 of 7
+stadiums and 308 of 408 in `other` are placed inside a footprint.
+
+### Known limitations: the 2015 snapshot, and its granularity
+
+The 133 buildings that do not snap are overwhelmingly small structures the 2015
+footprint file does not carry — comfort stations, shelters and utility
+structures in open parkland. They keep CPD's own point, flagged rather than
+guessed.
+
+The footprint file is also **coarser than CPD's inventory**. Nine footprints
+carry more than one CPD building between them, 25 snapped rows in total; the
+worst is the Sherman Park complex, where eight CPD buildings — lifeguard office,
+two pergolas, two locker buildings, two gymnasiums and a boiler house — are a
+single footprint in the 2015 file. Those rows snap to the same `bldg_id` and
+therefore to nearly the same point. That is the footprint file being less
+granular, not a matching error: dropping the duplicates would delete buildings
+that exist and moving them would invent positions. `bldg_id` and `offset_m` are
+published so the condition stays visible.
+
+---
+
 ## `sbhc_publish.csv` — one row per school-based health centre
 
 Grain: one health centre. 38 rows: 32 operating, two closed, one
