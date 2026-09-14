@@ -4,7 +4,7 @@ Downloadable data behind projects on [Connor Blandford’s website](https://conn
 
 | Project | Source snapshot | Downloads | Publication status |
 |---|---|---|---|
-| [CPS space and co-location](projects/cps-space-colocation/) | 9 September 2026 | Schools, utilization, co-located campuses | Exploratory map; article forthcoming |
+| [CPS space and co-location](projects/cps-space-colocation/) | 9 September 2026 (libraries and building footprints 13 September 2026) | Schools, utilization, co-located campuses, building coordinates, public library branches | Exploratory map; article forthcoming |
 
 This collection contains curated project data and documentation. Website development, raw source snapshots, historical artifacts, and work in progress are maintained separately.
 

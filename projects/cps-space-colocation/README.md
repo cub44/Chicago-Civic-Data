@@ -7,17 +7,20 @@
 | CSV | Rows | One row represents |
 |---|---:|---|
 | [schools.csv](data/processed/schools.csv) | 642 | One school |
+| [school_buildings.csv](data/processed/school_buildings.csv) | 642 | One school, with a coordinate inside its building |
 | [utilization.csv](data/processed/utilization.csv) | 510 | One school in SY2026 |
 | [colocation_campuses.csv](data/processed/colocation_campuses.csv) | 16 | One shared campus |
 | [sbhc_publish.csv](data/processed/sbhc_publish.csv) | 38 | One school-based health centre |
 | [sbhc_resolved.csv](data/processed/sbhc_resolved.csv) | 38 | One centre with source and resolved values side by side |
 | [sbhc_discrepancies.csv](data/processed/sbhc_discrepancies.csv) | 151 | One centre-field evidence finding |
+| [libraries.csv](data/processed/libraries.csv) | 82 | One Chicago Public Library branch |
+| [library_buildings.csv](data/processed/library_buildings.csv) | 82 | One branch, with a coordinate inside its building |
 
-See the [data dictionary](data/README.md) for all fields and caveats. Join schools and utilization using `sid`. Campus totals overlap individual school records: do not add both together. [SHA-256 checksums](checksums.sha256) identify the download versions.
+See the [data dictionary](data/README.md) for all fields and caveats. Join schools and utilization using `sid`, schools and school buildings using `sid`, and libraries and library buildings using `name`. Campus totals overlap individual school records: do not add both together. The building files never replace a roster coordinate; they add a second one, inside the building, and say how confidently it was derived. [SHA-256 checksums](checksums.sha256) identify the download versions.
 
 ## Sources and method
 
-Inputs are the CPS SY2026 Space Utilization workbook (`spaceuse_2026_final_forweb.xlsx`, published 19 December 2025), the CPS School Profile Information API (`api.cps.edu/schoolprofile/CPS/AllSchoolProfiles`), and City of Chicago datasets `pb6d-zzuh` (school locations) and `igwz-8jzy` (community areas). Most source snapshots are preserved privately. The pages cited by the SBHC reconciliation are preserved in `data/raw/2026-09-12/`, and its standard-library Python build is included so the publication sheet remains auditable.
+Inputs are the CPS SY2026 Space Utilization workbook (`spaceuse_2026_final_forweb.xlsx`, published 19 December 2025), the CPS School Profile Information API (`api.cps.edu/schoolprofile/CPS/AllSchoolProfiles`), and City of Chicago datasets `pb6d-zzuh` (school locations), `igwz-8jzy` (community areas), `x8fc-8rcq` (library branch locations, pulled 13 September 2026) and `syp8-uezg` (building footprints, a 2015 snapshot). Most source snapshots are preserved privately. The pages cited by the SBHC reconciliation are preserved in `data/raw/2026-09-12/`, and its standard-library Python build is included so the publication sheet remains auditable.
 
 The pipeline reads the workbook’s traditional-school and co-location sheets, joins school records by CPS ID, and assigns community areas from coordinates and boundary polygons, falling back to the profile API’s community when a point falls outside all polygons. Missing values remain blank. Homerooms are derived from adjusted classrooms: elementary `floor(adjusted classrooms × 0.77)` with 28 seats each; high-school `adjusted classrooms × 0.80` with 30 seats each. These are inferred rules checked against the workbook, not an independently published homeroom count.
 
@@ -28,6 +31,8 @@ The pipeline reads the workbook’s traditional-school and co-location sheets, j
 - `classrooms_demand` is a legacy field name for adjusted classroom supply, not measured demand. `classrooms_supply` represents permanent classrooms.
 - Seven schools lack coordinates; 14 co-located school rows lack classroom and capacity counts. Absence is not zero.
 - School utilization does not establish that space is usable or available for additional services. Some schools operate wholly in leased space.
+- The library file is a roster of branch **locations**. It carries no floor area, collection, staffing or programme-space figure, and its hours are the usual published schedule rather than a record of any given day. A blank area is an area with no CPL branch — not an area with no library service, since school, university and suburban systems are outside the dataset.
+- Building coordinates come from a 2015 footprint snapshot, the most recent the City publishes. Anything built since is matched to whatever stood on the site, or to nothing; unmatched records keep their address point and are flagged rather than guessed.
 - SBHC rows marked `closed` or `closed_or_consolidated` remain in the record but
   should not be treated as currently operating. The map hides them by default.
 

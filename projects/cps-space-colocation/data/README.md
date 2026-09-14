@@ -18,6 +18,10 @@ Snapshot: 9 September 2026. CSVs are UTF-8; blank cells mean missing, not zero. 
 - **The school locations file has no community area field.** Community is
   assigned by point-in-polygon against `igwz-8jzy`, not by trusting a text
   field.
+- **The library roster is locations, not provision.** `x8fc-8rcq` publishes
+  where each branch is and how to reach it. It carries no floor area, collection
+  size, staffing level or programme-space figure, and its hours field is the
+  usual published schedule, not a record of any given day.
 - **Portal datasets get revised retroactively.** Raw pulls are dated and
   preserved privately, and the build reads those snapshots, so published numbers
   stay reproducible after an upstream revision.
@@ -210,6 +214,116 @@ defensible for 2015 geometry, but the building name is a reminder of what the
 match is really asserting. `bldg_name` and `offset_m` are published so this
 class of error stays visible rather than being absorbed into a coordinate. The
 City publishes no newer citywide footprint dataset on this portal.
+
+---
+
+## `libraries.csv` — one row per public library branch
+
+Grain: one Chicago Public Library branch. 82 rows. Snapshot pulled
+13 September 2026; the source's rows were last updated 24 August 2026.
+
+Source: Socrata `x8fc-8rcq`, *Libraries - Locations, Contact Information, and
+Usual Hours of Operation* — CPL's own branch roster.
+
+This layer is here because the project asks what underused school space could
+additionally hold, and library programming is one of the candidate uses. Where
+the public library service already reaches bears directly on that: a school with
+surplus space three blocks from a branch is a different proposition from one two
+miles from the nearest.
+
+| Column | Type | Notes |
+|---|---|---|
+| `name` | text | CPL's branch name. **The join key** to `library_buildings.csv`; unique across all 82 rows. |
+| `cpl_location_id` | integer | CPL's internal location id, parsed from the branch's own `website` URL. The dataset publishes no id column, so this is derived rather than sourced — join to chipublib.org with it, but join within this project on `name`. |
+| `address` | text | As published, with CPL's abbreviating full stops. |
+| `zip` | text | `city` and `state` are omitted: both are constant across all 82 rows. |
+| `phone`, `email`, `website` | text | Published branch contact details. |
+| `service_hours` | text | **The usual published schedule, not an observed opening record.** Verbatim free text, not parsed into structured hours — doing so would impose a precision the field does not have. |
+| `community` | text | Community area, assigned by point-in-polygon against `igwz-8jzy`, the same way `schools.csv` assigns it, so the two are comparable. All 82 fall inside a polygon. |
+| `lat` / `lon` | decimal | WGS84. Every branch has a coordinate; unlike the school roster there are no gaps. |
+| `provenance` / `source` | text | `sourced` for all rows, citing the dataset and pull date. |
+
+### Before reporting from this file
+
+A blank area on a map of these points is an area with **no CPL branch**. It is
+not an area with no library service, and it is not a measure of how much library
+service the surrounding area gets:
+
+- Chicago Public Library also operates locations inside other institutions, and
+  school, university and suburban library systems that Chicagoans use are not in
+  this dataset at all.
+- Branch *presence* is not provision. Two branches an equal distance away may
+  differ by an order of magnitude in floor area, collection, staffing and open
+  hours, and none of those figures is published here.
+- The hours field describes an ordinary week, not any particular week.
+
+---
+
+## `library_buildings.csv` — one row per branch, building coordinate
+
+Grain: one branch, joined to `libraries.csv` on `name`. 82 rows — every branch
+has exactly one row, so a left join loses nothing.
+
+The same design as `school_buildings.csv`, built by the same code, and with the
+same guarantee: **it does not replace the coordinates in `libraries.csv`.**
+Those stay exactly as published and remain what distance work is computed
+against. This file adds a point *inside* the branch's building and states how
+confidently it was derived. Columns are identical to `school_buildings.csv`
+except that the key is `name` rather than `sid`.
+
+Source: Socrata `syp8-uezg` (*Building Footprints*), pulled within 160 m of each
+branch point — the same extract method as the school sidecar, so offsets from
+the two files are comparable.
+
+### `match_quality`
+
+| Value | Rows | Meaning |
+|---|---|---|
+| `address_exact` | 66 | Geometry and address agree, as in the school file. |
+| `library_named` | 8 | The City's own footprint record labels that building a library, and it lies within 60 m of the branch point. |
+| `containing` | 1 | The branch point falls inside a footprint carrying no matching address. |
+| `largest_nearby` | 7 | Nothing contains the point and neither rule matched. Recorded as a *candidate only*. |
+| `no_match` | 0 | — |
+| `no_point` | 0 | Every branch has a coordinate. |
+
+75 of 82 branches (91.5%) are placed inside their building on evidence strong
+enough to assert it. Snapping moves a marker a median 22 m.
+
+### Why `library_named` exists
+
+`syp8-uezg` carries a building-use label: 65 of the 8,980 footprints in this
+extract name a library in `bldg_name1` or `bldg_name2`, most as the City's own
+`CHICAGO PUBLIC LIBRARY`. That is the same class of evidence as the address
+range the matcher already trusts — a field the publisher of the geometry
+attached to the footprint — and a better one, because an address range describes
+a whole block face while a use label describes that building.
+
+Checked against the branches the address rule already matched, the label agrees
+with the footprint chosen in 56 of 58 cases, and no branch has two labelled
+footprints within 60 m. Both disagreements are cases the label gets right and
+the address rule gets wrong: Gage Park sits 0.5 m outside the footprint the City
+labels `GAGE PARK` and just inside its unlabelled neighbour; Whitney M. Young,
+Jr. matched an address range 54.8 m away — inside the cap, but exactly the
+block-face collision that cap exists to bound — while its labelled footprint is
+18.1 m away. Six further branches are corner sites addressed on the cross
+street (Albany Park, Back of the Yards, Bezazian, Douglass, King, North
+Pulaski), which the address rule could never reach.
+
+Where label and address agree the row stays `address_exact`: the stronger claim
+is kept rather than overwritten. The school footprints carry no comparable
+labelling, so `school_buildings.csv` can never contain this value.
+
+### Known limitation: the 2015 footprint snapshot applies here too
+
+The seven unsnapped branches are Altgeld, Blackstone, Daley (Richard M.),
+Galewood-Mont Clare, Little Italy, the Obama Presidential Center Library and
+Vodak-East Side. Several were built or rebuilt after the footprint file's 2015
+vintage, so nothing in the source stands where they now do. They keep their
+address point, and the map says so rather than implying a position it has not
+established. For the same reason, two branches that *are* snapped — King and
+Back of the Yards — sit on footprints of buildings that have since been
+replaced. `bldg_name` and `offset_m` are published so this class of error stays
+visible rather than being absorbed into a coordinate.
 
 ---
 
