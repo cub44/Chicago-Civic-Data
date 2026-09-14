@@ -22,6 +22,26 @@ Snapshot: 9 September 2026. CSVs are UTF-8; blank cells mean missing, not zero. 
   where each branch is and how to reach it. It carries no floor area, collection
   size, staffing level or programme-space figure, and its hours field is the
   usual published schedule, not a record of any given day.
+- **The three City service rosters are stale, and none carries an operating
+  status.** `kcki-hnch` (CDPH clinics), `qhfc-4cw2` (senior centres) and
+  `cs4s-nsna` (workforce centres) publish where a service was delivered, with
+  hours and a phone number. On each, the portal's own *Time Period* is earlier
+  than the date the rows were last edited:
+
+  | Roster | Portal *Time Period* | Rows last updated |
+  |---|---|---|
+  | CDPH clinics | "Current as of June 2016" | 2017-08-03 |
+  | Senior centres | "Current as of 2011" | 2019-03-07 |
+  | Workforce centres | "Current list" | 2011-08-21 |
+
+  A row establishes that the City published that address as a service location
+  as of that date, and nothing more. Both dates ride on every row as `vintage`
+  and `rows_updated`. **Do not report any of these as currently operating
+  without checking a current source.**
+- **CDPH records its clinic service flags on WIC rows only.** `wic`,
+  `public_health_nursing`, `family_case_management`, `healthy_start_program` and
+  `healthy_families_program` are blank on every mental health and STI row, so a
+  blank means "not recorded on this row", never "this service is not offered".
 - **Portal datasets get revised retroactively.** Raw pulls are dated and
   preserved privately, and the build reads those snapshots, so published numbers
   stay reproducible after an upstream revision.
@@ -486,6 +506,170 @@ therefore to nearly the same point. That is the footprint file being less
 granular, not a matching error: dropping the duplicates would delete buildings
 that exist and moving them would invent positions. `bldg_id` and `offset_m` are
 published so the condition stays visible.
+
+---
+
+## `health_clinics.csv` — one row per CDPH clinic
+
+Grain: one clinic. 24 rows. Source: Socrata `kcki-hnch`, the tabular dataset
+behind the portal's `4msa-kt5t` map view, pulled 14 September 2026.
+
+**A location roster of uncertain currency**, described by the portal as "Current
+as of June 2016" with rows last updated in August 2017, and carrying **no
+operating-status column at all**. See the source-level limitations above.
+
+| Column | Type | Notes |
+|---|---|---|
+| `site_id` | text | The data portal's own row handle. **The join key** for `health_clinic_buildings.csv`. Used because the dataset publishes no id column and `site_name` is not unique — two rows are both "Erie Health Center", at different addresses. It identifies a row within this snapshot and is **not** a durable public identifier. |
+| `site_name` | text | CDPH's own site name, verbatim. Not unique. |
+| `category` | text | `mental_health` (5), `wic` (15), `sti` (4). A one-to-one relabelling of `clinic_type`, and the three map layers. CDPH publishes exactly three types, so there is no `other` bucket. |
+| `clinic_type` | text | CDPH's own type, verbatim, published beside `category`. |
+| `site_number` | integer | CDPH's site number, on 11 of 24 rows. Not a key — it cannot join the other 13. |
+| `hours_of_operation` | text | The published schedule, not an observed opening record, and of the same 2016 vintage as the rest of the row. |
+| `public_health_nursing`, `family_case_management`, `healthy_start_program`, `healthy_families_program`, `wic` | text | `Y` or blank. **Blank means "not recorded on this row", not "service not offered"** — CDPH fills these in on WIC rows only. |
+| `address` | text | As published, **including the suite and floor**. Not normalised, so `address` does **not** identify a site: see below. |
+| `zip`, `phone`, `fax` | text | As published. `phone` is CDPH's `phone_1`. |
+| `phone_additional` | text | CDPH's `phone_2`–`phone_5`, joined with `; `. Values untouched, including one that is a typo in the source. |
+| `community` | text | Point-in-polygon against `igwz-8jzy`, the same way the school, library and park files assign it. All 24 land inside a polygon. |
+| `lat` / `lon` | float | WGS84 degrees, from the Socrata `location` geometry. Every clinic has a coordinate. |
+| `vintage` | text | The portal's own statement of what the rows describe: `Current as of June 2016`. |
+| `rows_updated` | date | When the portal last changed the rows: `2017-08-03`. A different fact from `vintage`. |
+| `provenance` / `source` | text | `sourced`, citing the dated pulls. |
+
+### Three addresses carry more than one clinic
+
+The portal's own description of the map view says so: *"some locations have
+multiple clinic types but will show as a single dot on this map."*
+
+| Coordinate | Address | Categories |
+|---|---|---|
+| 41.779692, −87.641428 | 641 W. 63rd St | `mental_health`, `sti`, `wic` |
+| 41.793275, −87.727664 | 4150 W. 55th | `mental_health`, `wic` |
+| 41.902212, −87.748845 | 4909 W. Division | `sti`, `wic` |
+
+**Group them by coordinate, not by `address`.** Each of those sites writes the
+shared address differently on each row — `641 W. 63rd St`, `641 W. 63rd St.,
+Lower Level` and `641 W. 63rd St.` are one building — so matching on `address`
+finds 24 distinct addresses and no sharing at all. The rows are kept separate:
+collapsing three services into one would delete two of them.
+
+---
+
+## `senior_centers.csv` — one row per DFSS senior centre
+
+Grain: one centre. 21 rows. Source: Socrata `qhfc-4cw2`, the tabular dataset
+behind the portal's `8ayb-6mjs` map view, pulled 14 September 2026.
+
+**A location roster the portal itself dates to 2011**, last edited in March
+2019, with no operating-status column.
+
+| Column | Type | Notes |
+|---|---|---|
+| `site_id` | text | The portal's row handle. **The join key** for `senior_center_buildings.csv`; see `health_clinics.csv`. |
+| `site_name` | text | DFSS names these for the neighbourhood — `Pilsen`, `Abbott Park` — not "X Senior Center". |
+| `program` | text | `Regional Senior Center` (6) or `Satellite Senior Center` (15), verbatim. |
+| `hours_of_operation` | text | The published schedule, of 2011 vintage. |
+| `address`, `zip`, `phone` | text | As published. Two addresses carry a hyphenated house number (`653-657 W. 63rd Street`, `5674-B S. Archer Avenue`). |
+| `community` | text | Point-in-polygon. All 21 land inside a polygon. |
+| `lat` / `lon` | float | WGS84 degrees. Every centre has a coordinate. |
+| `vintage` / `rows_updated` | text / date | `Current as of 2011`; `2019-03-07`. |
+| `provenance` / `source` | text | `sourced`, citing the dated pulls. |
+
+---
+
+## `workforce_centers.csv` — one row per DFSS workforce centre
+
+Grain: one centre. 5 rows. Source: Socrata `cs4s-nsna`, the tabular dataset
+behind the portal's `i4rz-w47p` map view, pulled 14 September 2026.
+
+**The stalest of the three, and the one whose stated vintage says least.** The
+portal labels it a "Current list", which dates nothing, while its rows have not
+been edited since **August 2011**. Five rows is a short enough list that a gap
+means this file does not cover an area, not that employment services are absent
+from it.
+
+| Column | Type | Notes |
+|---|---|---|
+| `site_id` | text | The portal's row handle. **The join key** for `workforce_center_buildings.csv`. |
+| `site_name` | text | As published — `Garfield Workforce Center`, and four more. |
+| `hours_of_operation` | text | The published schedule, of 2011 vintage. |
+| `address`, `zip`, `phone` | text | As published, including `7500 S. Pulaski, Bldg 100`. |
+| `community` | text | Point-in-polygon. All five land inside a polygon. |
+| `lat` / `lon` | float | WGS84 degrees. Every centre has a coordinate. |
+| `vintage` / `rows_updated` | text / date | `Current list` — not a date; `2011-08-21`. |
+| `provenance` / `source` | text | `sourced`, citing the dated pulls. |
+
+---
+
+## `health_clinic_buildings.csv`, `senior_center_buildings.csv`, `workforce_center_buildings.csv`
+
+Grain: one clinic (24), one senior centre (21), one workforce centre (5), joined
+to their rosters on `site_id`. Every row has exactly one sidecar row, so a left
+join loses nothing.
+
+The same design as `school_buildings.csv`, `library_buildings.csv` and
+`park_facility_buildings.csv`, built by **the same code, unchanged**, with the
+same guarantee: **they do not replace the coordinates in the rosters.** Those
+stay exactly as published and remain what distance work is computed against.
+These files add a point *inside* the City footprint matched to the building and
+state how confidently it was derived.
+
+Columns are identical to `school_buildings.csv` except that the key is
+`site_id`, and that `clinic_name` / `centre_name` — plus `category` on the
+clinic file and `program` on the senior centre file — are carried so each file
+reads on its own. The name is prefixed for the reason `cpd_bldg_name` is:
+`bldg_name` in these files is the City's name for the **footprint**, a different
+name from a different publisher.
+
+Source: Socrata `syp8-uezg` (*Building Footprints*), pulled within 160 m of each
+site — the same extract method and radius as the school, library and park
+sidecars, so offsets from all six files are comparable.
+
+### `match_quality`
+
+| Value | Clinics | Senior centres | Workforce centres | Meaning |
+|---|---:|---:|---:|---|
+| `address_exact` | 18 | 13 | 2 | Geometry and address agree. |
+| `containing` | 1 | 1 | 1 | The point falls inside a footprint carrying no matching address. |
+| `largest_nearby` | 5 | 7 | 2 | Nothing contains the point and no address matched. Recorded as a *candidate only*. |
+| `no_match` / `no_point` | 0 | 0 | 0 | Every site has a coordinate and a footprint in range. |
+
+36 of these 50 sites (72%) are placed inside a footprint on evidence strong
+enough to assert it; the other 14 keep their address point and are flagged.
+Snapping moves a marker a median of 27.1 m, 31.6 m and 22.8 m respectively.
+
+`library_named` cannot appear in these files. `syp8-uezg` labels library
+buildings, which is what earns that quality on the branch file; it carries no
+comparable clinic, senior-centre or workforce-centre label, and inventing one
+would assert a rule the source does not support.
+
+### Known limitations
+
+**The 2015 footprint snapshot applies here too.** Anything built or replaced
+since is matched to whatever stood on the site, or to nothing.
+
+**One clinic is placed in the wrong building on the right campus.** North River
+MHC's address, 5801 N. Pulaski, is North Park Village — one address across
+several buildings, four of which the footprint file gives that same address
+range. The shared rules take the address-matched footprint nearest the published
+point, which is the 760 sq ft `NORTH PARK VILLAGE - GUARD HOUSE`, while the
+27,646 sq ft footprint labelled `NORTH PARK VILLAGE - HEALTH CENTER` sits
+further in. The marker lands about 25 m from CDPH's point, on the right campus
+and in the wrong building on it. It is recorded rather than special-cased: a
+one-row exception would stop these layers being positioned by the same method as
+every other layer, and `bldg_name` names the building chosen so the error is
+visible in the data rather than hidden by it.
+
+**Suites, floors and hyphenated house numbers are not parsed.** `4909 W.
+Division St., Suite 411` and `653-657 W. 63rd Street` are published as the City
+writes them; the address parser declines both rather than guessing which part of
+a building or which half of a range a site occupies. Those rows fall through to
+containment or stay unsnapped.
+
+**Three clinics share one footprint.** The rows at 641 W. 63rd St snap to the
+same building and therefore to nearly the same point, as do the pairs at 4150 W.
+55th and 4909 W. Division. That is the source recording several services in one
+building, not a matching error; nothing is deduplicated.
 
 ---
 
