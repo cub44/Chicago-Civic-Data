@@ -64,9 +64,12 @@ for r in rows:
                                      "hours_dental")),
               "closed centre still publishing hours: %s" % r["site_name"])
 
-# the count that actually means "live centres"; CPS publishes 33 citywide
+# the count that actually means "live centres"; CPS publishes 33 citywide.
+# The two remaining non-operating-and-not-closed rows are TCA's mobile units,
+# which are unverified rather than absent: HRSA registers them, nothing current
+# was checked, and no status is asserted either way.
 live = sum(1 for r in rows if r["operational_status"] == "operating")
-check(live == 32, "operating rows != 32 (got %d)" % live)
+check(live == 33, "operating rows != 33 (got %d)" % live)
 
 # ---- hours: split cleanly, never a concatenation, empty means not established
 for r in rows:
