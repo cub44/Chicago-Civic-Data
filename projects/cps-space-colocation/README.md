@@ -35,6 +35,15 @@ The pipeline reads the workbook’s traditional-school and co-location sheets, j
 - Building coordinates come from a 2015 footprint snapshot, the most recent the City publishes. Anything built since is matched to whatever stood on the site, or to nothing; unmatched records keep their address point and are flagged rather than guessed.
 - SBHC rows marked `closed` or `closed_or_consolidated` remain in the record but
   should not be treated as currently operating. The map hides them by default.
+- The two mobile health units in `sbhc_publish.csv` are not drawn on the map.
+  Neither has a fixed site, and HRSA registers both at their operator's own
+  address, so their only coordinate points at a building that is neither a
+  school nor anywhere the unit goes. The rows stay in the file, where an address
+  is a field rather than a position.
+- `student_count` in `schools.csv` is the profile API's headcount and is the only
+  enrollment figure published for a charter in its own building. It disagrees
+  with `enrollment_20th_day` on 502 of the 509 schools both sources cover; use
+  `enrollment_20th_day` for utilization analysis.
 
 See [SBHC resolution notes](docs/RESOLUTION_NOTES.md) for source hierarchy,
 current-status evidence, deliberately unresolved values, and the 2014-only use

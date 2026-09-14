@@ -50,9 +50,10 @@ with `idph_certified=true`, and two of them carry a coordinate that would put a 
 Reavis is absence-of-evidence rather than a closure notice, so it is marked
 `closed_or_consolidated` at medium confidence. The other two are documented terminations.
 
-CPS states there are **33** SBHCs citywide. Dropping these three from the IDPH count of 34
-leaves 31, which is consistent with the CPS sheet's 32 rows once Mansueto (CPS-only) is
-included — the three IDPH-only rows were the discrepancy, not a coverage gap.
+CPS states there are **33** SBHCs citywide, which is exactly the number of rows this sheet
+marks `operating`. Dropping these three from the IDPH count of 34 leaves 31, which is
+consistent with the CPS sheet's 32 rows once Mansueto (CPS-only) is included — the three
+IDPH-only rows were the discrepancy, not a coverage gap.
 
 ## A bad school match
 
@@ -81,9 +82,9 @@ uploaded CPS sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**.
   (41.764002, -87.601896) — set `coord_basis='cdph_2014_geocode'`, not
   `cps_school_building`, since `test_sbhc.py` rightly forbids mapping a school-linked centre
   at its school's coordinate.
-- **Mansueto → school_linked confirmed.** The centre is Esperanza's own Brighton Park clinic
-  at 4700 S California Ave, about a kilometre from the school. CPS's off-site override is
-  right.
+- **Mansueto → school_linked confirmed, and operating.** The centre is Esperanza's Brighton
+  Park clinic at 4700 S California Ave, about a kilometre from the school. CPS's off-site
+  override is right, and the IPHCA locator carries the site as current.
 - **Cultivate Collective → host school is Academy for Global Citizenship**, the CPS charter
   on that campus. Note this site is neither IDPH-certified nor in CPS's directory; it may not
   meet a strict SBHC definition at all.
@@ -154,12 +155,23 @@ every row — the build fails if any row is blank, since an empty status would r
 exactly the ambiguity the column exists to remove. `closed_on` is set only where a source
 carries an actual date, so Reavis has a status but no date.
 
-Result: 32 operating, 2 closed (both dated 2024-04-01), 1 closed-or-consolidated,
-3 unverified. The three `unverified` rows are Mansueto and the two TCA mobile units — HRSA
-carries `hrsa_status='Active'` for the mobile units but that field was not independently
-re-verified, so no status is asserted. This is the column that makes `live == 32` assertable
-against CPS's published 33 citywide; the old hard counts of 34/32/28 are snapshot arithmetic
-that still holds but never meant "live centres."
+Result: 33 operating, 2 closed (both dated 2024-04-01), 1 closed-or-consolidated,
+2 unverified. The two `unverified` rows are TCA's mobile units — HRSA carries
+`hrsa_status='Active'` for both but that field was not independently re-verified, so no
+status is asserted. This is the column that makes `live == 33` assertable, matching CPS's
+published 33 citywide; the old hard counts of 34/32/28 are snapshot arithmetic that still
+holds but never meant "live centres."
+
+**Mansueto is operating, at medium confidence.** It was previously `unverified` on the
+grounds that no CPS directory entry had been checked for it. That reasoning was wrong:
+the CPS 2025-26 booklet covers only the "Open to ALL CPS Students" subset, and this centre
+is school-linked rather than in-building, so it would not appear there whether it were
+operating or not. Its absence is therefore not evidence against it, and the booklet is no
+longer cited on that row at all. The IPHCA health-centre locator carries 4700 S California
+Ave as a current Esperanza site — the same source that settles the row's `setting`. That is
+one credible current source, hence medium rather than high: nothing published by the
+operator or CPS names Mansueto as the school this clinic serves, and that affiliation rests
+on the CPS off-site coordinate override alone.
 
 Closed rows are retained, not deleted. The new test enforces that a closed centre is not
 published with hours or with `open_to_public=true`.
@@ -177,6 +189,7 @@ published with hours or with `open_to_public=true`.
   row's own access note, the only one in either sheet that names dental.
 - 17 rows have a researched split, 17 carry the source value forward as school-year medical,
   4 are empty because the centre is closed or unverified, 2 because the value is contested.
+  Mansueto keeps the CPS sheet's hours, carried forward as school-year medical.
 
 ### `room_or_entrance`
 

@@ -591,7 +591,25 @@ for _s in _CPS_BOOKLET_CONFIRMED:
     stat(_s, "operating", "", "high", ["cps_booklet"],
          "Listed in CPS's 2025-26 SBHC directory. " + CPS_BOOKLET_NOTE)
 
-for _s in ["Noble Mansueto High School", "Mobile Oral Health Unit",
+# The centre here is Esperanza's own Brighton Park clinic at 4700 S California
+# Ave, which both Esperanza and the IPHCA health-centre locator carry as a
+# current site - the same two sources that settle this row's `setting`. Absence
+# from the CPS booklet is not evidence against it: that directory covers only the
+# "Open to ALL CPS Students" subset, and this centre is school-linked rather than
+# in-building, so it would not appear there whether it were operating or not.
+# The booklet is therefore not cited on this row at all.
+#
+# medium, not high: one credible current source. The IPHCA locator is a
+# third-party directory of Illinois health centres, not Esperanza's own page, and
+# nothing published by the operator or CPS names Mansueto as the school this
+# clinic serves - that affiliation rests on the CPS off-site coordinate override.
+stat("Noble Mansueto High School", "operating", "", "medium", ["iphca"],
+     "Esperanza's Brighton Park clinic at 4700 S California Ave, carried as a current "
+     "site by the IPHCA health-centre locator - the same source that settles this "
+     "row's setting. CPS supplies an off-site coordinate override linking it to "
+     "Mansueto HS; the centre is school-linked, not in the school building.")
+
+for _s in ["Mobile Oral Health Unit",
            "Mobile Student Health Clinic, Parking Lot B"]:
     stat(_s, "unverified", "", "unresolved", ["cps_booklet"],
          "No current operator page or CPS directory entry checked for this site. HRSA "

@@ -36,13 +36,14 @@ Grain: one school. 642 rows.
 |---|---|---|---|---|
 | `sid` | integer | — | `cps_school_profiles` (`SchoolID`) | 6-digit CPS id. District ids begin 6, charter ids begin 4. Unique in this file. |
 | `name` | text | — | `cps_school_profiles` (`SchoolLongName`) | |
-| `layer` | text | — | derived | Reconstructed from governance × grade category. Only the district and charter layers are derivable from these sources; the snapshot's private layers have no source at all, so they are absent here rather than manufactured. |
+| `layer` | text | — | derived | Reconstructed from governance × grade category. Only the district and charter layers are derivable from these sources; private schools have no source at all, so they are absent here rather than manufactured. |
 | `governance` | text | — | `cps_school_profiles` (`Governance`) | District, Charter, ALOP, Contract, SAFE. Empty for the one school present only in the space-use file. |
 | `school_type` | text | — | `cps_school_profiles` (`SchoolType`) | Empty string in the API for many schools; stored as empty, not as `"nan"`. |
 | `grades` | text | — | `cps_school_profiles` (`GradesOffered`) | |
 | `community` | text | — | `socrata_igwz-8jzy` | Point-in-polygon assignment. Falls back to the API's own `Community` field only when the point lands outside every polygon. Empty where coordinates are absent. |
 | `address` | text | — | `cps_school_profiles` | `AddressStreet` + zip. Empty when unavailable. |
 | `lat` / `lon` | float | WGS84 degrees | `socrata_pb6d-zzuh`, falling back to `cps_school_profiles` | See "missing coordinates" below. |
+| `student_count` | integer | students | `cps_school_profiles` (`StudentCount`) | The API's own headcount, of uncertain vintage. Published for every school, unlike `enrollment_20th_day`, which exists only where CPS scores the building. **Do not use it where `enrollment_20th_day` exists.** See "headcount" below. |
 | `provenance` | text | — | derived | `sourced` or `unverified`. Source status. |
 | `source` | text | — | derived | Source keys and pull dates that produced the row. |
 
@@ -53,6 +54,20 @@ Bronzeville) appears only in the space-use file with no geometry anywhere.
 Zero is recognised as a missing sentinel and stored as empty. It is **not**
 interpolated. The set is pinned in `tests/test_validate.py`; a new absence
 fails the build.
+
+**Headcount (2 rows absent).** `student_count` is present for 640 of 642
+schools. Urban Prep – Bronzeville (`400105`) is absent from the profile API
+entirely and its row comes from the space-use workbook, which publishes no
+enrollment figure. YCCS-Austin (`400127`) is returned by the API as `0`, which
+is read as its missing sentinel: the school is open and no other row in the file
+is below three figures. Both are left empty rather than filled.
+
+`student_count` disagrees with the workbook's `enrollment_20th_day` on 502 of
+the 509 schools both sources publish, and the API labels a single record
+`SchoolProfileYear: 2026` and `SchoolYearReadable: "School Year 2024-2025"` at
+the same time. It is carried because for a charter in its own building it is the
+only enrollment figure published anywhere, and it is what the map sizes those
+markers by — but anything load-bearing should use `enrollment_20th_day`.
 
 **`sid` uniqueness.** Unique in `schools.csv`.
 
