@@ -1,0 +1,6 @@
+site_id,site_name,hours_of_operation,address,zip,phone,community,lat,lon,vintage,rows_updated,provenance,source
+row-kg9m_hhd9~y84g,Garfield Workforce Center,Mon - Fri 9:00 a.m. to 5:00 p.m.,10 S. Kedzie,60612,773-722-3885,EAST GARFIELD PARK,41.880853,-87.706176,Current list,2011-08-21,sourced,"socrata_cs4s-nsna@2026-09-14, socrata_igwz-8jzy@2026-09-09"
+row-jdgu-j7gk.qgdk,Mid-South Workforce Center,Mon - Fri 8:30 a.m. to 5:00 p.m.,4314 S. Cottage Grove Ave.,60653,773-538-5627,GRAND BOULEVARD,41.816099,-87.606933,Current list,2011-08-21,sourced,"socrata_cs4s-nsna@2026-09-14, socrata_igwz-8jzy@2026-09-09"
+row-se2w-ga5b-5fw8,Northside Workforce Center,Mon - Fri 8:30 a.m. to 5:00 p.m.,4740 N. Sheridan,60640,773-334-4747,UPTOWN,41.968444,-87.655226,Current list,2011-08-21,sourced,"socrata_cs4s-nsna@2026-09-14, socrata_igwz-8jzy@2026-09-09"
+row-72e5_hraj.cqsv,Pilsen Workforce Center,Mon - Fri 8:30 a.m. to 4:30 p.m.,1700 W. 18th,60608,312-994-8300,LOWER WEST SIDE,41.857108,-87.668923,Current list,2011-08-21,sourced,"socrata_cs4s-nsna@2026-09-14, socrata_igwz-8jzy@2026-09-09"
+row-m3nc.7g3q_tvsn,Southwest Workforce Center,Mon - Fri 8:30 a.m. to 5:00 p.m.,"7500 S. Pulaski, Bldg 100",60652,773-884-7000,ASHBURN,41.746147,-87.712074,Current list,2011-08-21,sourced,"socrata_cs4s-nsna@2026-09-14, socrata_igwz-8jzy@2026-09-09"
