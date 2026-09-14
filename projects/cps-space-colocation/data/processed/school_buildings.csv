@@ -128,7 +128,7 @@ sid,name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bl
 609716,Kelvyn Park High School,address_exact,41.927483,-87.736052,48.5,18.4,255925,4343 W WRIGHTWOOD AVE,,3,65194.6,169,sourced,socrata_syp8-uezg@2026-09-13
 609718,John F Kennedy High School,largest_nearby,41.790746,-87.781385,98.2,81.7,497242,5553-5559 S NARRAGANSETT AVE,E32,0,7323.9,72,sourced,socrata_syp8-uezg@2026-09-13
 609719,Lake View High School,address_exact,41.955827,-87.668642,120.9,12.7,146655,4015 N ASHLAND AVE,,5,77256.4,78,sourced,socrata_syp8-uezg@2026-09-13
-609720,Albert G Lane Technical High School,largest_nearby,41.945595,-87.690764,118.5,98.3,184366,0,,0,30200.7,83,sourced,socrata_syp8-uezg@2026-09-13
+609720,Albert G Lane Technical High School,largest_nearby,41.945595,-87.690764,118.5,98.3,184366,,,0,30200.7,83,sourced,socrata_syp8-uezg@2026-09-13
 609722,Manley Career Academy High School,address_exact,41.870469,-87.699091,84.8,7.3,368696,2935 W POLK ST,,4,75458.9,82,sourced,socrata_syp8-uezg@2026-09-13
 609723,John Marshall Metropolitan High School,largest_nearby,41.879944,-87.70817,166.9,147.5,358414,3250-3258 W MONROE ST,FARADAY SCHOOL,0,29662.5,34,sourced,socrata_syp8-uezg@2026-09-13
 609724,Stephen T Mather High School,largest_nearby,41.987168,-87.701363,104.8,91.6,48657,5801-5807 N LINCOLN AVE,,1,6735,79,sourced,socrata_syp8-uezg@2026-09-13
@@ -592,7 +592,7 @@ sid,name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bl
 610504,Velma F Thomas Early Childhood Center,address_exact,41.8277,-87.677181,31.1,4.9,421173,3625 S HOYNE AVE,,0,12373.1,231,sourced,socrata_syp8-uezg@2026-09-13
 610513,Tammera L Holmes Aero Academy,address_exact,41.828199,-87.633028,23.3,6.1,420221,3630 S WELLS ST,,2,34192.5,9,sourced,socrata_syp8-uezg@2026-09-13
 610515,Disney II Magnet School,address_exact,41.950473,-87.730146,44.2,5.9,164416,3815 N KEDVALE AVE,,1,22740.2,102,sourced,socrata_syp8-uezg@2026-09-13
-610518,Austin College and Career Academy High School,largest_nearby,41.884811,-87.762253,134.2,93.6,354360,0,,0,11477.2,39,sourced,socrata_syp8-uezg@2026-09-13
+610518,Austin College and Career Academy High School,largest_nearby,41.884811,-87.762253,134.2,93.6,354360,,,0,11477.2,39,sourced,socrata_syp8-uezg@2026-09-13
 610520,LaSalle II Magnet Elementary School,address_exact,41.90282,-87.674488,66.5,12.6,323202,1148 N HONORE ST,,4,36785.9,128,sourced,socrata_syp8-uezg@2026-09-13
 610521,Sir Miles Davis Magnet Elementary Academy,address_exact,41.771467,-87.666783,34.4,3.5,888752,6720-6740 S PAULINA ST,DAVIS MAGNET SCHOOL,0,43742.6,106,sourced,socrata_syp8-uezg@2026-09-13
 610523,Edison Park Elementary School,address_exact,41.994196,-87.814174,33.7,23.3,34753,6220 N OLCOTT AVE,,2,16375.2,163,sourced,socrata_syp8-uezg@2026-09-13
@@ -616,7 +616,7 @@ sid,name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bl
 610563,Back of the Yards IB High School,largest_nearby,41.808886,-87.677651,53.3,40.5,878300,4650 S DAMEN AVE,BACK OF THE YARDS BRANCH LIBRARY,0,16229.1,64,sourced,socrata_syp8-uezg@2026-09-13
 610564,Disney II Magnet High School,address_exact,41.952203,-87.720832,54.3,8,156963,3900 N LAWNDALE AVE,,0,41961,157,sourced,socrata_syp8-uezg@2026-09-13
 610565,Excel Academy of Englewood,address_exact,41.763704,-87.64879,35,6.7,578461,7141 S MORGAN ST,,0,24127.2,167,sourced,socrata_syp8-uezg@2026-09-13
-610568,Pathways in Education- Avondale,largest_nearby,41.939574,-87.705812,52.7,30.3,887061,0,,0,15053.6,159,sourced,socrata_syp8-uezg@2026-09-13
+610568,Pathways in Education- Avondale,largest_nearby,41.939574,-87.705812,52.7,30.3,887061,,,0,15053.6,159,sourced,socrata_syp8-uezg@2026-09-13
 610569,Ombudsman Chicago- Northwest,address_exact,42.017336,-87.806823,21.7,7.1,841046,7500-7504 N HARLEM AVE,,1,5225.8,88,sourced,socrata_syp8-uezg@2026-09-13
 610570,Ombudsman Chicago - South,address_exact,41.783206,-87.683174,43.2,6.2,520002,6057 S WESTERN AVE,,1,48663,69,sourced,socrata_syp8-uezg@2026-09-13
 610571,Ombudsman Chicago- West,largest_nearby,41.865602,-87.706596,99.1,67.2,836479,1215-1227 S SAWYER AVE,,0,8425.5,27,sourced,socrata_syp8-uezg@2026-09-13
