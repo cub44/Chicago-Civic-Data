@@ -1,6 +1,6 @@
 # Data dictionary
 
-Snapshot: 9 September 2026. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%.
+Snapshot: 15 September 2026. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%.
 
 ### Source-level limitations
 
@@ -62,18 +62,25 @@ Grain: one school. 642 rows.
 | `grades` | text | — | `cps_school_profiles` (`GradesOffered`) | |
 | `community` | text | — | `socrata_igwz-8jzy` | Point-in-polygon assignment. Falls back to the API's own `Community` field only when the point lands outside every polygon. Empty where coordinates are absent. |
 | `address` | text | — | `cps_school_profiles` | `AddressStreet` + zip. Empty when unavailable. |
-| `lat` / `lon` | float | WGS84 degrees | `socrata_pb6d-zzuh`, falling back to `cps_school_profiles` | See "missing coordinates" below. |
+| `lat` / `lon` | float | WGS84 degrees | `socrata_pb6d-zzuh`, falling back to `cps_school_profiles`, falling back to `google_earth` | See "missing coordinates" below. |
 | `student_count` | integer | students | `cps_school_profiles` (`StudentCount`) | The API's own headcount, of uncertain vintage. Published for every school, unlike `enrollment_20th_day`, which exists only where CPS scores the building. **Do not use it where `enrollment_20th_day` exists.** See "headcount" below. |
 | `provenance` | text | — | derived | `sourced` or `unverified`. Source status. |
 | `source` | text | — | derived | Source keys and pull dates that produced the row. |
 
-**Missing coordinates (7 rows).** The profile API returns `0.0 / 0.0` — null
-island — for six district schools recently converted from Acero charter
-campuses (`610602`–`610607`), and one school (`400105`, Urban Prep –
-Bronzeville) appears only in the space-use file with no geometry anywhere.
-Zero is recognised as a missing sentinel and stored as empty. It is **not**
-interpolated. The set is pinned in `tests/test_validate.py`; a new absence
-fails the build.
+**Missing coordinates, resolved for 7 rows by manual geocode.** The profile API
+returns `0.0 / 0.0` — null island — for six district schools recently converted
+from Acero charter campuses (`610602`–`610607`), and one school (`400105`,
+Urban Prep – Bronzeville) appears only in the space-use file with no geometry
+anywhere. Zero is recognised as a missing sentinel and stored as empty; it is
+**not** interpolated by either primary source. These seven `lat`/`lon` pairs
+instead come from a third, differently-sourced input — addresses read by eye
+against Google Earth imagery, 2026-09-15 — kept separate from the primary
+sources in the private build (`data/source/manual_geocodes.csv` there) rather
+than blended into it, the same way the SBHC roster here is kept out of the
+schools pipeline entirely. `source` on these seven rows carries
+`google_earth@2026-09-15` alongside the primary-source keys. The
+originally-missing set is pinned in `tests/test_validate.py`; a new absence not
+resolvable this way still fails the build.
 
 **Headcount (2 rows absent).** `student_count` is present for 640 of 642
 schools. Urban Prep – Bronzeville (`400105`) is absent from the profile API
@@ -220,11 +227,11 @@ within 160 m of each school point rather than all 820,606 citywide.
 
 | Value | Rows | Meaning |
 |---|---|---|
-| `address_exact` | 501 | Geometry and address agree: the footprint's address range and street match the school's, and the school point is inside it or within 60 m of its wall. |
-| `containing` | 16 | The school point falls inside the footprint, but the footprint carries no address or a non-matching one. Direct geometric evidence. |
+| `address_exact` | 505 | Geometry and address agree: the footprint's address range and street match the school's, and the school point is inside it or within 60 m of its wall. |
+| `containing` | 19 | The school point falls inside the footprint, but the footprint carries no address or a non-matching one. Direct geometric evidence. |
 | `largest_nearby` | 116 | Nothing contains the point and no address matched within 60 m. The largest footprint in range is recorded as a *candidate only*. |
 | `no_match` | 2 | A school point exists but the source has no footprint within 160 m. Verified against the portal, not a gap in this extract. |
-| `no_point` | 7 | `schools.csv` has no coordinate, so there was nothing to match — the seven schools already reported as unmappable above. |
+| `no_point` | 0 | `schools.csv` has no coordinate, so there was nothing to match. The seven schools once unmappable this way are now geocoded — see "Missing coordinates" above — and three of the seven landed on `containing`, four on `address_exact`. |
 
 The 60 m cap on non-containing address matches is load-bearing. Chicago
 footprint address ranges span a whole block face, so "house number inside
@@ -234,7 +241,7 @@ the police station down the block and a high school on a 326 m² outbuilding
 137 m away. Those rows are now `largest_nearby` and the map leaves them alone.
 
 Among snapped rows the source point is a median 10 m outside its building's
-wall and only 38 fall inside one, which is what an address-level geocode looks
+wall and only 45 fall inside one, which is what an address-level geocode looks
 like: close to the right building, rarely in it. Snapping moves a marker a
 median 40 m.
 

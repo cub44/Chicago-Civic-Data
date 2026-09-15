@@ -52,7 +52,7 @@ sid,name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bl
 400097,Noble - Chicago Bulls College Prep,address_exact,41.879092,-87.67842,36.6,9.7,359125,2040 W ADAMS ST,,0,36454.5,35,sourced,socrata_syp8-uezg@2026-09-13
 400098,Noble - Muchin College Prep,address_exact,41.882381,-87.62722,83.4,52.3,868627,1-15 N STATE ST,,0,27132.7,24,sourced,socrata_syp8-uezg@2026-09-13
 400104,Instituto Health Sciences Career Academy,containing,41.84615,-87.68706,25.2,0,394531,2429 W 25TH ST,,0,56248.1,31,sourced,socrata_syp8-uezg@2026-09-13
-400105,URBAN PREP - BRONZEVILLE HS,no_point,,,,,,,,,,0,no_coordinate,socrata_syp8-uezg@2026-09-13
+400105,URBAN PREP - BRONZEVILLE HS,containing,41.830585,-87.613486,11.9,0,417351,521 E 35TH ST,,3,44555.8,4,sourced,socrata_syp8-uezg@2026-09-13
 400106,Noble - John and Eunice Johnson College Prep,address_exact,41.778349,-87.635431,26.2,9.8,533824,6310-6350 S STEWART AVE,REED SCHOOL,3,30853.8,26,sourced,socrata_syp8-uezg@2026-09-13
 400107,L.E.A.R.N. - South Chicago Campus,address_exact,41.733257,-87.544862,60.3,43.7,673451,8914 S BUFFALO AVE,,0,40540.5,65,sourced,socrata_syp8-uezg@2026-09-13
 400111,L.E.A.R.N. - Hunter Perkins Campus,address_exact,41.74326,-87.666534,69.3,38.8,644274,1700-1724 W 83RD ST,TIMOTHY LUTHERAN SCHOOL,0,11044.4,200,sourced,socrata_syp8-uezg@2026-09-13
@@ -635,9 +635,9 @@ sid,name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bl
 610597,The Virtual Academy High School,address_exact,41.863675,-87.659771,28.7,9.9,374045,1304-1336 W 14TH ST,,0,3895.2,22,sourced,socrata_syp8-uezg@2026-09-13
 610599,Catalpa Early Childhood Center,containing,41.961946,-87.757803,4.2,0,126153,4434 N LARAMIE AVE,,0,23757.1,145,sourced,socrata_syp8-uezg@2026-09-13
 610601,SAFE Achieve Academy West HS,address_exact,41.88423,-87.739559,26.8,11.6,354970,224-230 N KOLMAR AVE,,3,22045.8,85,sourced,socrata_syp8-uezg@2026-09-13
-610602,Carlos Fuentes Elementary School,no_point,,,,,,,,,,0,no_coordinate,socrata_syp8-uezg@2026-09-13
-610603,Esmeralda Santiago Elementary School,no_point,,,,,,,,,,0,no_coordinate,socrata_syp8-uezg@2026-09-13
-610604,Bartolome de las Casas Elementary School,no_point,,,,,,,,,,0,no_coordinate,socrata_syp8-uezg@2026-09-13
-610605,Sandra Cisneros Elementary School,no_point,,,,,,,,,,0,no_coordinate,socrata_syp8-uezg@2026-09-13
-610606,Rufino Tamayo Elementary School,no_point,,,,,,,,,,0,no_coordinate,socrata_syp8-uezg@2026-09-13
-610607,Chicago Arts High School,no_point,,,,,,,,,,0,no_coordinate,socrata_syp8-uezg@2026-09-13
+610602,Carlos Fuentes Elementary School,containing,41.937278,-87.699857,2.2,0,859175,3049-3059 N FRANCISCO AVE,,0,11367.1,233,sourced,socrata_syp8-uezg@2026-09-13
+610603,Esmeralda Santiago Elementary School,address_exact,41.900553,-87.689956,3.5,0,328167,2510 W CORTEZ ST,,2,8626.6,235,sourced,socrata_syp8-uezg@2026-09-13
+610604,Bartolome de las Casas Elementary School,containing,41.859166,-87.667902,28.1,0,376344,1638-1640 W 17TH ST,ST ADELBERT CHURCH,0,24061,85,sourced,socrata_syp8-uezg@2026-09-13
+610605,Sandra Cisneros Elementary School,address_exact,41.823074,-87.694293,11.3,0,425810,2744 W PERSHING RD,MC KINLEY PARK SCHOOL,0,28622.1,204,sourced,socrata_syp8-uezg@2026-09-13
+610606,Rufino Tamayo Elementary School,address_exact,41.800091,-87.693615,7.6,0,463749,5123-5141 S CALIFORNIA AVE,,2,22235.2,194,sourced,socrata_syp8-uezg@2026-09-13
+610607,Chicago Arts High School,address_exact,41.899526,-87.694965,6.7,0,329641,2714 W AUGUSTA BLVD,,0,40022,188,sourced,socrata_syp8-uezg@2026-09-13
