@@ -4,7 +4,7 @@ Downloadable data behind projects on [Connor Blandford’s website](https://conn
 
 | Project | Source snapshot | Downloads | Publication status |
 |---|---|---|---|
-| [CPS space and co-location](projects/cps-space-colocation/) | 9 September 2026 (libraries and building footprints 13 September 2026; park buildings and City service rosters 14 September 2026) | Schools, utilization, co-located campuses, building coordinates, public library branches, Park District buildings, city health clinics, senior centres, workforce centres | Exploratory map; article forthcoming |
+| [CPS space and co-location](projects/cps-space-colocation/) | September 9, 2026 (libraries and building footprints September 13, 2026; park buildings and City service rosters September 14, 2026) | Schools, utilization, co-located campuses, building coordinates, public library branches, Park District buildings, city health clinics, senior centers, workforce centers | Exploratory map and article (part one of three) |
 
 This collection contains curated project data and documentation. Website development, raw source snapshots, historical artifacts, and work in progress are maintained separately.
 
@@ -12,4 +12,4 @@ This collection contains curated project data and documentation. Website develop
 
 Data and prose are CC BY 4.0; code is MIT. See [LICENSE](LICENSE). Underlying CPS and City of Chicago records remain subject to their publishers’ terms.
 
-Suggested attribution: “Chicago Civic Data, Connor Ulrich Blandford, source snapshot 9 September 2026,” with a link to this repository and the project. Cite the snapshot date and the CSV you used. Report corrections through [Issues](https://github.com/cub44/Chicago-Civic-Data/issues), including the filename, school ID, and disputed value.
+Suggested attribution: “Chicago Civic Data, Connor Ulrich Blandford, source snapshot September 9, 2026,” with a link to this repository and the project. Cite the snapshot date and the CSV you used. Report corrections through [Issues](https://github.com/cub44/Chicago-Civic-Data/issues), including the filename, school ID, and disputed value.

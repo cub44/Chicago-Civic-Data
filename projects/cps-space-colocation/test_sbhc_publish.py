@@ -55,16 +55,16 @@ for r in rows:
         check(len(r["closed_on"]) == 10 and r["closed_on"][4] == r["closed_on"][7] == "-",
               "closed_on is not ISO yyyy-mm-dd: %s" % r["site_name"])
 
-# a closed centre must not be published as open to anyone
+# a closed center must not be published as open to anyone
 for r in rows:
     if r["operational_status"].startswith("closed"):
         check(r["open_to_public"] != "true",
-              "closed centre still flagged open_to_public: %s" % r["site_name"])
+              "closed center still flagged open_to_public: %s" % r["site_name"])
         check(not any(r[c] for c in ("hours_medical_school_year", "hours_medical_summer",
                                      "hours_dental")),
-              "closed centre still publishing hours: %s" % r["site_name"])
+              "closed center still publishing hours: %s" % r["site_name"])
 
-# the count that actually means "live centres"; CPS publishes 33 citywide.
+# the count that actually means "live centers"; CPS publishes 33 citywide.
 # The two remaining non-operating-and-not-closed rows are TCA's mobile units,
 # which are unverified rather than absent: HRSA registers them, nothing current
 # was checked, and no status is asserted either way.
@@ -113,7 +113,7 @@ for r in rows:
         check(r["sid"] or r["school_name"],
               "in_building row with neither school id nor school name: %s" % r["site_name"])
 
-# ---- a coordinate must describe the centre, not a school it is merely linked to
+# ---- a coordinate must describe the center, not a school it is merely linked to
 for r in rows:
     if r["lat"]:
         check(r["coord_basis"] in ("cps_school_building", "cps_offsite_override",
@@ -121,7 +121,7 @@ for r in rows:
               "coordinate with no recorded basis: %s" % r["site_name"])
         check(not (r["setting"] == "school_linked"
                    and r["coord_basis"] == "cps_school_building"),
-              "school-linked centre mapped at its school's coordinate: %s" % r["site_name"])
+              "school-linked center mapped at its school's coordinate: %s" % r["site_name"])
     else:
         check(r["coord_basis"] == "", "coord_basis set without a coordinate: %s" % r["site_name"])
 

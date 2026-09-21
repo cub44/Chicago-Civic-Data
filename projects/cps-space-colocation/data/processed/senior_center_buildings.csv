@@ -1,4 +1,4 @@
-site_id,centre_name,program,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bldg_name,bldg_stories,footprint_area_sqft,candidates_in_range,provenance,source
+site_id,center_name,program,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bldg_name,bldg_stories,footprint_area_sqft,candidates_in_range,provenance,source
 row-2hu7_b6k6.76m4,Englewood,Satellite Senior Center,largest_nearby,41.779077,-87.633778,110.4,89.3,533330,6320 S HARVARD AVE,,3,10935.4,8,sourced,socrata_syp8-uezg@2026-09-14
 row-6ey7.yyr3.iayi,Northwest,Regional Senior Center,address_exact,41.938144,-87.722838,28,8.6,216649,3160 N MILWAUKEE AVE,,1,18424.9,131,sourced,socrata_syp8-uezg@2026-09-14
 row-8gsy.g5ds-tdwi,Northeast,Regional Senior Center,address_exact,41.968468,-87.680048,30.8,16.3,104572,2019 W LAWRENCE AVE,,0,7512.4,163,sourced,socrata_syp8-uezg@2026-09-14
@@ -10,7 +10,7 @@ row-ea3b~fqvj_6cec,Southwest,Regional Senior Center,address_exact,41.782114,-87.
 row-fwsg_agga_5f87,South Chicago,Satellite Senior Center,largest_nearby,41.728692,-87.5465,138.4,109.1,684418,3210 E 92ND ST,,1,6577.8,41,sourced,socrata_syp8-uezg@2026-09-14
 row-gbc2~7ue7-ftz8,Garfield Ridge,Satellite Senior Center,largest_nearby,41.797512,-87.753129,31.8,22.3,888540,5672 S ARCHER AVE,,0,10771.8,152,sourced,socrata_syp8-uezg@2026-09-14
 row-gezr.auz6_9j58,Pilsen,Satellite Senior Center,largest_nearby,41.854514,-87.651188,76.2,50.1,892684,2055 S MORGAN ST,,5,14463.3,159,sourced,socrata_syp8-uezg@2026-09-14
-row-gpea.epjf~wxie,Kelvyn Park,Satellite Senior Center,address_exact,41.929944,-87.746985,76.2,53.3,247479,2700-2722 N CICERO AVE,,1,17386.8,166,sourced,socrata_syp8-uezg@2026-09-14
+row-gpea.epjf~wxie,Kelvyn Park,Satellite Senior Center,largest_nearby,41.929944,-87.746985,76.2,53.3,247479,2700-2722 N CICERO AVE,,1,17386.8,166,sourced,socrata_syp8-uezg@2026-09-14
 row-hu5s-6pm5.qhb2,Central West,Regional Senior Center,address_exact,41.871087,-87.678862,22.5,5.9,368102,2102 W OGDEN AVE,,0,20242,42,sourced,socrata_syp8-uezg@2026-09-14
 row-id9w~n5eb_rc5m,West Town,Satellite Senior Center,containing,41.89578,-87.668367,8.8,0,876209,1617-1625 W CHICAGO AVE,,0,22707.3,144,sourced,socrata_syp8-uezg@2026-09-14
 row-ih76_b7ti_9eq4,Auburn Gresham,Satellite Senior Center,largest_nearby,41.750299,-87.649652,61.5,29.1,616366,1015-1025 W 79TH ST,,1,16829.2,150,sourced,socrata_syp8-uezg@2026-09-14

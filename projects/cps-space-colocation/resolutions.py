@@ -160,7 +160,7 @@ add("Ludwig Van Beethoven Elementary School", "sponsor", "Friend Health",
 add("Marquette Elementary School", "sponsor", "Esperanza Health Centers",
     "Esperanza Clinic", "HRSA grantee: ESPERANZA HEALTH CENTERS",
     "Esperanza Health Centers", "high", ["cps_booklet", "iphca"],
-    "IDPH's 'Esperanza Clinic' is not the organisation's name.")
+    "IDPH's 'Esperanza Clinic' is not the organization's name.")
 
 add("Charles P Steinmetz College Preparatory HS", "sponsor",
     "PCC Community Wellness Center", "PCC Community Center Wellness",
@@ -212,29 +212,29 @@ add("David G Farragut Career Academy High School", "setting", "in_building (scho
 add("Nathan S Davis Elementary School", "setting", "3050 W 39th Pl (school bldg 3014 W 39th Pl)",
     "3050 W. 39th Pl. Annex", "CDPH 2014: 'UIC- Mile Square at Davis Elementary' @ 3050 W 39th Pl",
     "in_building", "medium", ["uic_ocean", "msq_davis", "cps_booklet", "cdph2014"],
-    "sbhc.csv has this as school_linked because the centre address differs from the school "
+    "sbhc.csv has this as school_linked because the center address differs from the school "
     "building address. IDPH names it an Annex, i.e. CPS space on the Davis campus, and both "
-    "CPS and UI Health publish the centre at 3050 W 39th Pl. For a co-location analysis this "
+    "CPS and UI Health publish the center at 3050 W 39th Pl. For a co-location analysis this "
     "is in-building CPS space. Flagged: depends on whether the annex is a separate structure.")
 
 add("Noble - Gary Comer College Prep", "setting", "7200 S Ingleside Ave (school @ 7131 S South Chicago Ave)",
     "Comer Youth Center @ 7200 S. Ingleside Ave", "CDPH 2014: 'ACCESS at Gary Comer Youth Center'",
     "school_linked", "high", ["cdph2014", "cps_booklet"],
-    "Centre is inside the Gary Comer Youth Center, a separate building from Gary Comer "
+    "Center is inside the Gary Comer Youth Center, a separate building from Gary Comer "
     "College Prep. school_linked confirmed.")
 
 add("Noble - Gary Comer College Prep", "lat_lon", "", "",
     "CDPH 2014 geocode of 7200 S Ingleside Ave: 41.764002, -87.601896",
     "41.764002,-87.601896", "medium", ["cdph2014"],
     "Fills the null coordinate flagged in sbhc.csv. Basis is a 2014 CDPH geocode of an "
-    "address that has not changed, not the centre's own published coordinate. "
+    "address that has not changed, not the center's own published coordinate. "
     "Set coord_basis='cdph_2014_geocode', not 'cps_school_building'.")
 
 add("Noble Mansueto High School", "setting", "cps_offsite_override @ 4700 S California Ave",
     "not listed", "IPHCA lists 4700 S California Ave as an Esperanza site",
     "school_linked", "high", ["iphca", "esp_cult"],
-    "The centre is Esperanza's own Brighton Park clinic at 4700 S California Ave, roughly a "
-    "kilometre from Mansueto HS (2911 W 47th St). CPS's off-site override is correct.")
+    "The center is Esperanza's own Brighton Park clinic at 4700 S California Ave, roughly a "
+    "kilometer from Mansueto HS (2911 W 47th St). CPS's off-site override is correct.")
 
 add("Esperanza at Cultivate Collective", "school_name", "not listed", "not listed",
     "HRSA setting 'School' @ 4350 S Laporte Ave",
@@ -277,14 +277,14 @@ add("James Weldon Johnson STEAM Elementary School", "site_address", "1420 S Alba
 
 add("James Weldon Johnson STEAM Elementary School", "setting", "in_building",
     "separate street address (1504 S. Albany Ave.)",
-    "Erie, CDPH 2014 and HRSA's coordinate all place the centre at 1504 S Albany",
+    "Erie, CDPH 2014 and HRSA's coordinate all place the center at 1504 S Albany",
     "school_linked", "high", ["erie_john", "cdph2014", "cps_booklet"],
     "CORRECTED from sbhc.csv's in_building. 1504 S Albany is a separate building from the "
     "Johnson school building at 1420 S Albany, confirmed by local knowledge on 2026-09-12. "
-    "CPS publishes the school address for this centre in both the uploaded sheet and the "
+    "CPS publishes the school address for this center in both the uploaded sheet and the "
     "2025-26 booklet, which is what produced the bad in_building classification. "
     "coord_basis stays 'hrsa_site': the existing coordinate (41.861116, -87.703417) is the "
-    "centre's own, not the school's, so the school_linked coordinate rule in test_sbhc.py "
+    "center's own, not the school's, so the school_linked coordinate rule in test_sbhc.py "
     "passes unchanged. Note this row no longer needs to satisfy the in_building/sid rule.")
 
 add("David G Farragut Career Academy High School", "site_address", "2345 S Christiana Ave",
@@ -373,7 +373,7 @@ add("John B Drake Elementary School", "hours", "Mon-Fri: 8:00am-4:00pm", "",
 add("Englewood STEM High School", "hours", "Mon-Fri: 8:00am-4:30pm", "",
     "CPS booklet: M-F 8:00a-4:30p; UIC OCEANHP: M-F 8:00am-4:00pm",
     "Mon-Fri: 8:00am-4:30pm", "medium", ["cps_booklet", "uic_ocean"],
-    "Two CPS sources agree on 4:30pm close; UIC's OCEANHP programme page says 4:00pm and "
+    "Two CPS sources agree on 4:30pm close; UIC's OCEANHP program page says 4:00pm and "
     "appears to be the older of the two.")
 
 add("Greater Lawndale High School For Social Justice", "hours",
@@ -591,23 +591,23 @@ for _s in _CPS_BOOKLET_CONFIRMED:
     stat(_s, "operating", "", "high", ["cps_booklet"],
          "Listed in CPS's 2025-26 SBHC directory. " + CPS_BOOKLET_NOTE)
 
-# The centre here is Esperanza's own Brighton Park clinic at 4700 S California
-# Ave, which both Esperanza and the IPHCA health-centre locator carry as a
+# The center here is Esperanza's own Brighton Park clinic at 4700 S California
+# Ave, which both Esperanza and the IPHCA health-center locator carry as a
 # current site - the same two sources that settle this row's `setting`. Absence
 # from the CPS booklet is not evidence against it: that directory covers only the
-# "Open to ALL CPS Students" subset, and this centre is school-linked rather than
+# "Open to ALL CPS Students" subset, and this center is school-linked rather than
 # in-building, so it would not appear there whether it were operating or not.
 # The booklet is therefore not cited on this row at all.
 #
 # medium, not high: one credible current source. The IPHCA locator is a
-# third-party directory of Illinois health centres, not Esperanza's own page, and
+# third-party directory of Illinois health centers, not Esperanza's own page, and
 # nothing published by the operator or CPS names Mansueto as the school this
 # clinic serves - that affiliation rests on the CPS off-site coordinate override.
 stat("Noble Mansueto High School", "operating", "", "medium", ["iphca"],
      "Esperanza's Brighton Park clinic at 4700 S California Ave, carried as a current "
-     "site by the IPHCA health-centre locator - the same source that settles this "
+     "site by the IPHCA health-center locator - the same source that settles this "
      "row's setting. CPS supplies an off-site coordinate override linking it to "
-     "Mansueto HS; the centre is school-linked, not in the school building.")
+     "Mansueto HS; the center is school-linked, not in the school building.")
 
 for _s in ["Mobile Oral Health Unit",
            "Mobile Student Health Clinic, Parking Lot B"]:
@@ -709,7 +709,7 @@ hrs("William C Reavis Math & Science Specialty ES", "", "", "", "unresolved",
 
 # ---- 3. room_or_entrance ---------------------------------------------------
 # The strongest in-building evidence available, and four operators publish it.
-# A published room number or a named exterior door is a fact about the centre
+# A published room number or a named exterior door is a fact about the center
 # occupying school space; a bare street address is not.
 
 ROOM = {}
@@ -729,7 +729,7 @@ for _s, _v in [("Orr Academy High School", "Room 109"),
 room("Simpson Academy HS for Young Women",
      "Entrance immediately left of the main school door; separate community door",
      "high", ["rush_sbhc"],
-     "Rush notes the community door is how students from other CPS schools reach the centre, "
+     "Rush notes the community door is how students from other CPS schools reach the center, "
      "which is what makes this site all-CPS-accessible rather than enrolled-students-only.")
 
 for _s, _v in [("Stephen F Gale Elementary Community Academy", "Room 107"),
@@ -744,7 +744,7 @@ room("Ludwig Van Beethoven Elementary School", "Room 134", "medium", ["cps_bookl
      "site's provider name but the room number is not contradicted anywhere.")
 
 room("Laura S Ward Elementary School", "Entrance on Ridgeway Ave", "high", ["erie_west"],
-     "Erie: health centre entrance on the west side of the building off Ridgeway, with "
+     "Erie: health center entrance on the west side of the building off Ridgeway, with "
      "its own parking.")
 
 room("Englewood STEM High School", "Door 2", "high", ["msq_prim"],

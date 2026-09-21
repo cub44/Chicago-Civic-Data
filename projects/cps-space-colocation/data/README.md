@@ -1,6 +1,6 @@
 # Data dictionary
 
-Snapshot: 15 September 2026. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%.
+Snapshot: September 21, 2026. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%.
 
 ### Source-level limitations
 
@@ -20,19 +20,19 @@ Snapshot: 15 September 2026. CSVs are UTF-8; blank cells mean missing, not zero.
   field.
 - **The library roster is locations, not provision.** `x8fc-8rcq` publishes
   where each branch is and how to reach it. It carries no floor area, collection
-  size, staffing level or programme-space figure, and its hours field is the
+  size, staffing level or program-space figure, and its hours field is the
   usual published schedule, not a record of any given day.
 - **The three City service rosters are stale, and none carries an operating
-  status.** `kcki-hnch` (CDPH clinics), `qhfc-4cw2` (senior centres) and
-  `cs4s-nsna` (workforce centres) publish where a service was delivered, with
+  status.** `kcki-hnch` (CDPH clinics), `qhfc-4cw2` (senior centers) and
+  `cs4s-nsna` (workforce centers) publish where a service was delivered, with
   hours and a phone number. On each, the portal's own *Time Period* is earlier
   than the date the rows were last edited:
 
   | Roster | Portal *Time Period* | Rows last updated |
   |---|---|---|
   | CDPH clinics | "Current as of June 2016" | 2017-08-03 |
-  | Senior centres | "Current as of 2011" | 2019-03-07 |
-  | Workforce centres | "Current list" | 2011-08-21 |
+  | Senior centers | "Current as of 2011" | 2019-03-07 |
+  | Workforce centers | "Current list" | 2011-08-21 |
 
   A row establishes that the City published that address as a service location
   as of that date, and nothing more. Both dates ride on every row as `vintage`
@@ -61,26 +61,45 @@ Grain: one school. 642 rows.
 | `school_type` | text | — | `cps_school_profiles` (`SchoolType`) | Empty string in the API for many schools; stored as empty, not as `"nan"`. |
 | `grades` | text | — | `cps_school_profiles` (`GradesOffered`) | |
 | `community` | text | — | `socrata_igwz-8jzy` | Point-in-polygon assignment. Falls back to the API's own `Community` field only when the point lands outside every polygon. Empty where coordinates are absent. |
-| `address` | text | — | `cps_school_profiles` | `AddressStreet` + zip. Empty when unavailable. |
-| `lat` / `lon` | float | WGS84 degrees | `socrata_pb6d-zzuh`, falling back to `cps_school_profiles`, falling back to `google_earth` | See "missing coordinates" below. |
+| `address` | text | — | `cps_school_profiles` | `AddressStreet` + zip. For the one school present only in the space-use file (`400105`), `pb6d-zzuh`'s street line, with no zip because that file publishes none. |
+| `lat` / `lon` | float | WGS84 degrees | `socrata_pb6d-zzuh`, falling back to `cps_school_profiles` | Six converted schools are read from `pb6d-zzuh` under their predecessor ids. See "missing coordinates" below. |
 | `student_count` | integer | students | `cps_school_profiles` (`StudentCount`) | The API's own headcount, of uncertain vintage. Published for every school, unlike `enrollment_20th_day`, which exists only where CPS scores the building. **Do not use it where `enrollment_20th_day` exists.** See "headcount" below. |
 | `provenance` | text | — | derived | `sourced` or `unverified`. Source status. |
 | `source` | text | — | derived | Source keys and pull dates that produced the row. |
 
-**Missing coordinates, resolved for 7 rows by manual geocode.** The profile API
-returns `0.0 / 0.0` — null island — for six district schools recently converted
-from Acero charter campuses (`610602`–`610607`), and one school (`400105`,
-Urban Prep – Bronzeville) appears only in the space-use file with no geometry
-anywhere. Zero is recognised as a missing sentinel and stored as empty; it is
-**not** interpolated by either primary source. These seven `lat`/`lon` pairs
-instead come from a third, differently-sourced input — addresses read by eye
-against Google Earth imagery, 2026-09-15 — kept separate from the primary
-sources in the private build (`data/source/manual_geocodes.csv` there) rather
-than blended into it, the same way the SBHC roster here is kept out of the
-schools pipeline entirely. `source` on these seven rows carries
-`google_earth@2026-09-15` alongside the primary-source keys. The
-originally-missing set is pinned in `tests/test_validate.py`; a new absence not
-resolvable this way still fails the build.
+**Missing coordinates: none.** Every school's coordinate comes from the City's
+school-locations file (`pb6d-zzuh`) or the profile API. Seven rows need a note.
+
+- Six district schools converted from former charters — five Acero schools
+  (Fuentes `610602`, Santiago `610603`, de las Casas `610604`, Cisneros
+  `610605`, Tamayo `610606`) and ChiArts (`610607`) — are returned by the
+  profile API at `0.0 / 0.0`, null island. Zero is recognized as a missing
+  sentinel and never published as a coordinate. `pb6d-zzuh` publishes all six
+  under the charter ids they held before conversion, and that is where their
+  coordinates come from:
+
+  | `sid` | School | Predecessor id in `pb6d-zzuh` | Name there |
+  |---|---|---|---|
+  | `610602` | Carlos Fuentes Elementary School | `400082` | ACERO - FUENTES |
+  | `610603` | Esmeralda Santiago Elementary School | `400114` | ACERO - SANTIAGO |
+  | `610604` | Bartolome de las Casas Elementary School | `400081` | ACERO - DE LAS CASAS |
+  | `610605` | Sandra Cisneros Elementary School | `400101` | ACERO - CISNEROS |
+  | `610606` | Rufino Tamayo Elementary School | `400084` | ACERO - TAMAYO |
+  | `610607` | Chicago Arts High School | `400022` | CHIARTS HS |
+
+  Each pair shares a street address in the two files; the old id is absent from
+  the profile API and the new id from `pb6d-zzuh`; and the profile API gives
+  each new school an `OpenDate` of 2026-06-14. The build checks all of that on
+  every run and fails if a pair goes stale. `source` on these rows reads
+  `socrata_pb6d-zzuh@2026-09-09:<predecessor id>`.
+- Urban Prep – Bronzeville (`400105`) is absent from the profile API, and its
+  row comes from the space-use workbook. `pb6d-zzuh` publishes it under its own
+  id at 521 E 35th St, which is where its coordinate and address come from.
+
+An earlier release said no primary source placed these seven schools and filled
+them from coordinates read off Google Earth imagery. That was wrong: the City
+file places all seven. The hand-read coordinates have been removed, and no
+coordinate in this file comes from imagery.
 
 **Headcount (2 rows absent).** `student_count` is present for 640 of 642
 schools. Urban Prep – Bronzeville (`400105`) is absent from the profile API
@@ -111,7 +130,7 @@ Grain: one school-year. 510 rows, all SY2026.
 | `grade_category` | text | — | `Grade Category` | ES or HS **as the space-use file assigns it**, which is not always the school's overall band. Noble – Gary Comer is a high school whose co-located rows cover grades 6–8 and are scored ES. This column, not the school's layer, governs the capacity rule. |
 | `enrollment_profile` | integer | students | `cps_school_profiles` `StudentCount` | Uncertain vintage — see source limitations. |
 | `enrollment_20th_day` | integer | students | `20th Day Enrollment` | Total enrollment at the 20th day. |
-| `enrollment_utilization` | integer | students | `Adjusted SY2026 20th Day School Enrollment` | The numerator of the published rate. **Excludes students assigned to cluster *or* pre-K programme classrooms** — see the note below. |
+| `enrollment_utilization` | integer | students | `Adjusted SY2026 20th Day School Enrollment` | The numerator of the published rate. **Excludes students assigned to cluster *or* pre-K program classrooms** — see the note below. |
 | `homerooms` | float | homerooms | **derived** | Not published by CPS. Computed from `classrooms_demand` by the rule below and asserted against published capacity. Empty for the 14 co-located rows that carry no classroom counts. |
 | `ideal_capacity` | integer | seats | `Ideal Capacity (IC) for Permanent Bldg Only` | Permanent building only.  |
 | `adj_ideal_capacity` | integer | seats | `Adjusted IC 2 After CR Deductions` | The denominator of the published rate, after classroom deductions. |
@@ -143,7 +162,7 @@ drifting.
 ### What the utilization enrollment actually excludes
 
 CPS's own data dictionary defines the student deduction as **"Students Assigned
-to Cluster or PK programs"** — cluster programmes being separate-classroom
+to Cluster or PK programs"** — cluster programs being separate-classroom
 placements for students needing significantly modified curriculum with moderate
 to intensive support for over 61% of the day.
 
@@ -214,11 +233,11 @@ within 160 m of each school point rather than all 820,606 citywide.
 | `sid` | integer | CPS school id. Joins to `schools.csv`. |
 | `match_quality` | enum | How the building was established. See below. Only `address_exact` and `containing` assert "this is the building". |
 | `bldg_lat` / `bldg_lon` | decimal | Pole of inaccessibility of the matched footprint — the interior point furthest from any wall. Empty for `no_match` and `no_point`. |
-| `offset_m` | metres | Distance from the `schools.csv` point to `bldg_lat`/`bldg_lon`. How far the marker moved. |
-| `edge_m` | metres | Distance from the `schools.csv` point to the footprint's nearest wall; `0` means the source point falls inside the footprint. |
+| `offset_m` | meters | Distance from the `schools.csv` point to `bldg_lat`/`bldg_lon`. How far the marker moved. |
+| `edge_m` | meters | Distance from the `schools.csv` point to the footprint's nearest wall; `0` means the source point falls inside the footprint. |
 | `bldg_id` | integer | `syp8-uezg` building id, so any match can be re-checked against the source. |
 | `bldg_address` | text | Address the footprint itself carries, for comparison against the school's. |
-| `bldg_name` | text | Building name in the footprint file, where it has one. Not used for matching, so it is an independent check: 74 of the 80 named snapped buildings carry a school name. |
+| `bldg_name` | text | Building name in the footprint file, where it has one. Not used for matching, so it is an independent check: 76 of the 80 named snapped buildings carry a school's name. |
 | `bldg_stories` | integer | From the footprint file. Absent where the source is blank. |
 | `footprint_area_sqft` | number | The source's own `shape_area`, in square feet, republished unconverted. |
 | `candidates_in_range` | integer | Footprints within the extract radius. A high count is a dense block, not a problem. |
@@ -227,21 +246,35 @@ within 160 m of each school point rather than all 820,606 citywide.
 
 | Value | Rows | Meaning |
 |---|---|---|
-| `address_exact` | 505 | Geometry and address agree: the footprint's address range and street match the school's, and the school point is inside it or within 60 m of its wall. |
-| `containing` | 19 | The school point falls inside the footprint, but the footprint carries no address or a non-matching one. Direct geometric evidence. |
-| `largest_nearby` | 116 | Nothing contains the point and no address matched within 60 m. The largest footprint in range is recorded as a *candidate only*. |
+| `address_exact` | 502 | Geometry and address agree: the footprint's address range, side of the street and street match the school's, and the school point is inside it or within 60 m of its wall. |
+| `containing` | 16 | The school point falls inside the footprint, but the footprint carries no address or a non-matching one. Direct geometric evidence. |
+| `largest_nearby` | 122 | Nothing contains the point and no address matched within 60 m. The largest footprint in range is recorded as a *candidate only*. |
 | `no_match` | 2 | A school point exists but the source has no footprint within 160 m. Verified against the portal, not a gap in this extract. |
-| `no_point` | 0 | `schools.csv` has no coordinate, so there was nothing to match. The seven schools once unmappable this way are now geocoded — see "Missing coordinates" above — and three of the seven landed on `containing`, four on `address_exact`. |
+| `no_point` | 0 | `schools.csv` has no coordinate, so there was nothing to match. Every school now has one; see "Missing coordinates" above. |
 
 The 60 m cap on non-containing address matches is load-bearing. Chicago
 footprint address ranges span a whole block face, so "house number inside
 `f_add1`–`t_add1` on the same street" collides freely with a school's
-neighbours. Without the cap the match confidently placed one charter school on
-the police station down the block and a high school on a 326 m² outbuilding
-137 m away. Those rows are now `largest_nearby` and the map leaves them alone.
+neighbors. Without the cap the match confidently placed a high school on a
+326 m² outbuilding 137 m away. That row is now `largest_nearby` and the map
+leaves it alone.
+
+The cap does not catch the building across the street, which is usually closer
+than 60 m, so an address now matches only a range of its own parity: Chicago
+numbers one side of every street odd and the other even, and every addressed
+footprint in the extract has a same-parity range. An earlier version of this
+file said the cap had kept Legacy Charter (`400049`, 3318 W Ogden) off the
+police station down the block. It had not: the school was published as
+`address_exact` to the Chicago Police 10th District station at 3301–3325 W
+Ogden, across the street and 43.5 m away. Ten schools were matched across the
+street this way (as were one senior center and one workforce center). With the
+parity check, five of the ten now snap to the right building on their own side
+(YCCS-West, Little Village, Laughlin Falconer, Stone and Tilton), and five —
+Legacy Charter, L.E.A.R.N. Middle School Campus, Hancock, Northside Prep and
+Jensen — stay unsnapped on their address point.
 
 Among snapped rows the source point is a median 10 m outside its building's
-wall and only 45 fall inside one, which is what an address-level geocode looks
+wall and only 38 fall inside one, which is what an address-level geocode looks
 like: close to the right building, rarely in it. Snapping moves a marker a
 median 40 m.
 
@@ -262,7 +295,7 @@ City publishes no newer citywide footprint dataset on this portal.
 ## `libraries.csv` — one row per public library branch
 
 Grain: one Chicago Public Library branch. 82 rows. Snapshot pulled
-13 September 2026; the source's rows were last updated 24 August 2026.
+September 13, 2026; the source's rows were last updated August 24, 2026.
 
 Source: Socrata `x8fc-8rcq`, *Libraries - Locations, Contact Information, and
 Usual Hours of Operation* — CPL's own branch roster.
@@ -341,19 +374,19 @@ attached to the footprint — and a better one, because an address range describ
 a whole block face while a use label describes that building.
 
 Checked against the branches the address rule already matched, the label agrees
-with the footprint chosen in 56 of 58 cases, and no branch has two labelled
+with the footprint chosen in 56 of 58 cases, and no branch has two labeled
 footprints within 60 m. Both disagreements are cases the label gets right and
 the address rule gets wrong: Gage Park sits 0.5 m outside the footprint the City
-labels `GAGE PARK` and just inside its unlabelled neighbour; Whitney M. Young,
+labels `GAGE PARK` and just inside its unlabelled neighbor; Whitney M. Young,
 Jr. matched an address range 54.8 m away — inside the cap, but exactly the
-block-face collision that cap exists to bound — while its labelled footprint is
+block-face collision that cap exists to bound — while its labeled footprint is
 18.1 m away. Six further branches are corner sites addressed on the cross
 street (Albany Park, Back of the Yards, Bezazian, Douglass, King, North
 Pulaski), which the address rule could never reach.
 
 Where label and address agree the row stays `address_exact`: the stronger claim
 is kept rather than overwritten. The school footprints carry no comparable
-labelling, so `school_buildings.csv` can never contain this value.
+labeling, so `school_buildings.csv` can never contain this value.
 
 ### Known limitation: the 2015 footprint snapshot applies here too
 
@@ -372,7 +405,7 @@ visible rather than being absorbed into a coordinate.
 ## `park_facilities.csv` — one row per Chicago Park District building
 
 Grain: one building on Park District premises. 743 rows. Snapshot pulled
-14 September 2026; the source's rows were last updated 18 May 2022, and the
+September 14, 2026; the source's rows were last updated May 18, 2022, and the
 portal describes the inventory as "as of November 4, 2016".
 
 Source: Socrata `vcti-mbcd`, *CPD_Park_Buildings*, the tabular dataset behind the
@@ -381,11 +414,11 @@ portal's `u7uu-j2ma` map view, *Parks - Chicago Park District Buildings
 
 This layer is here for the same reason the library roster is. The project asks
 what underused school space could additionally hold, and the answer depends on
-what public space a neighbourhood already has. A field house three blocks from a
+what public space a neighborhood already has. A field house three blocks from a
 half-empty school building is already doing some of what that school's surplus
 space might be asked to do.
 
-**This is an asset inventory, not a programme roster.** It establishes that a
+**This is an asset inventory, not a program roster.** It establishes that a
 building of a recorded type stands at a point. It establishes nothing about what
 runs inside, when the building opens, or whether the pool is filled and the
 field house staffed.
@@ -423,12 +456,12 @@ field house staffed.
 
 `other` is **not** CPD's own `OTHER` type, which covers 15 buildings. The rest of
 the residue is comfort stations, shelters, maintenance buildings, utility
-structures, concessions, zoo buildings, harbour buildings, golf buildings and
+structures, concessions, zoo buildings, harbor buildings, golf buildings and
 two dozen more. The grouping is a presentation decision, so `bldg_type` is
 published verbatim beside it and nothing about the source value is lost.
 
 The `INACTIVE: ` prefix is stripped **only** to choose a category, so an inactive
-field house is categorised as a field house. `bldg_type` keeps the prefix and
+field house is categorized as a field house. `bldg_type` keeps the prefix and
 `status` keeps the status; nothing is rewritten.
 
 ### Before reporting from this file
@@ -436,7 +469,7 @@ field house is categorised as a field house. `bldg_type` keeps the prefix and
 - A blank area is an area with **no Park District building**, not an area with
   no park. Park land carrying no building — a playlot, a ball field, a beach —
   is absent from this dataset entirely.
-- Building *presence* is not provision, and this file carries no programme,
+- Building *presence* is not provision, and this file carries no program,
   hours, staffing or condition figure of any kind.
 - **Absence is not zero.** CPD writes 0 for "no figure" in `year_built`,
   `stories` and `bldg_sq_fo`; those are published blank. A build year is missing
@@ -519,7 +552,7 @@ published so the condition stays visible.
 ## `health_clinics.csv` — one row per CDPH clinic
 
 Grain: one clinic. 24 rows. Source: Socrata `kcki-hnch`, the tabular dataset
-behind the portal's `4msa-kt5t` map view, pulled 14 September 2026.
+behind the portal's `4msa-kt5t` map view, pulled September 14, 2026.
 
 **A location roster of uncertain currency**, described by the portal as "Current
 as of June 2016" with rows last updated in August 2017, and carrying **no
@@ -534,7 +567,7 @@ operating-status column at all**. See the source-level limitations above.
 | `site_number` | integer | CDPH's site number, on 11 of 24 rows. Not a key — it cannot join the other 13. |
 | `hours_of_operation` | text | The published schedule, not an observed opening record, and of the same 2016 vintage as the rest of the row. |
 | `public_health_nursing`, `family_case_management`, `healthy_start_program`, `healthy_families_program`, `wic` | text | `Y` or blank. **Blank means "not recorded on this row", not "service not offered"** — CDPH fills these in on WIC rows only. |
-| `address` | text | As published, **including the suite and floor**. Not normalised, so `address` does **not** identify a site: see below. |
+| `address` | text | As published, **including the suite and floor**. Not normalized, so `address` does **not** identify a site: see below. |
 | `zip`, `phone`, `fax` | text | As published. `phone` is CDPH's `phone_1`. |
 | `phone_additional` | text | CDPH's `phone_2`–`phone_5`, joined with `; `. Values untouched, including one that is a typo in the source. |
 | `community` | text | Point-in-polygon against `igwz-8jzy`, the same way the school, library and park files assign it. All 24 land inside a polygon. |
@@ -562,10 +595,10 @@ collapsing three services into one would delete two of them.
 
 ---
 
-## `senior_centers.csv` — one row per DFSS senior centre
+## `senior_centers.csv` — one row per DFSS senior center
 
-Grain: one centre. 21 rows. Source: Socrata `qhfc-4cw2`, the tabular dataset
-behind the portal's `8ayb-6mjs` map view, pulled 14 September 2026.
+Grain: one center. 21 rows. Source: Socrata `qhfc-4cw2`, the tabular dataset
+behind the portal's `8ayb-6mjs` map view, pulled September 14, 2026.
 
 **A location roster the portal itself dates to 2011**, last edited in March
 2019, with no operating-status column.
@@ -573,21 +606,21 @@ behind the portal's `8ayb-6mjs` map view, pulled 14 September 2026.
 | Column | Type | Notes |
 |---|---|---|
 | `site_id` | text | The portal's row handle. **The join key** for `senior_center_buildings.csv`; see `health_clinics.csv`. |
-| `site_name` | text | DFSS names these for the neighbourhood — `Pilsen`, `Abbott Park` — not "X Senior Center". |
+| `site_name` | text | DFSS names these for the neighborhood — `Pilsen`, `Abbott Park` — not "X Senior Center". |
 | `program` | text | `Regional Senior Center` (6) or `Satellite Senior Center` (15), verbatim. |
 | `hours_of_operation` | text | The published schedule, of 2011 vintage. |
 | `address`, `zip`, `phone` | text | As published. Two addresses carry a hyphenated house number (`653-657 W. 63rd Street`, `5674-B S. Archer Avenue`). |
 | `community` | text | Point-in-polygon. All 21 land inside a polygon. |
-| `lat` / `lon` | float | WGS84 degrees. Every centre has a coordinate. |
+| `lat` / `lon` | float | WGS84 degrees. Every center has a coordinate. |
 | `vintage` / `rows_updated` | text / date | `Current as of 2011`; `2019-03-07`. |
 | `provenance` / `source` | text | `sourced`, citing the dated pulls. |
 
 ---
 
-## `workforce_centers.csv` — one row per DFSS workforce centre
+## `workforce_centers.csv` — one row per DFSS workforce center
 
-Grain: one centre. 5 rows. Source: Socrata `cs4s-nsna`, the tabular dataset
-behind the portal's `i4rz-w47p` map view, pulled 14 September 2026.
+Grain: one center. 5 rows. Source: Socrata `cs4s-nsna`, the tabular dataset
+behind the portal's `i4rz-w47p` map view, pulled September 14, 2026.
 
 **The stalest of the three, and the one whose stated vintage says least.** The
 portal labels it a "Current list", which dates nothing, while its rows have not
@@ -602,7 +635,7 @@ from it.
 | `hours_of_operation` | text | The published schedule, of 2011 vintage. |
 | `address`, `zip`, `phone` | text | As published, including `7500 S. Pulaski, Bldg 100`. |
 | `community` | text | Point-in-polygon. All five land inside a polygon. |
-| `lat` / `lon` | float | WGS84 degrees. Every centre has a coordinate. |
+| `lat` / `lon` | float | WGS84 degrees. Every center has a coordinate. |
 | `vintage` / `rows_updated` | text / date | `Current list` — not a date; `2011-08-21`. |
 | `provenance` / `source` | text | `sourced`, citing the dated pulls. |
 
@@ -610,7 +643,7 @@ from it.
 
 ## `health_clinic_buildings.csv`, `senior_center_buildings.csv`, `workforce_center_buildings.csv`
 
-Grain: one clinic (24), one senior centre (21), one workforce centre (5), joined
+Grain: one clinic (24), one senior center (21), one workforce center (5), joined
 to their rosters on `site_id`. Every row has exactly one sidecar row, so a left
 join loses nothing.
 
@@ -622,8 +655,8 @@ These files add a point *inside* the City footprint matched to the building and
 state how confidently it was derived.
 
 Columns are identical to `school_buildings.csv` except that the key is
-`site_id`, and that `clinic_name` / `centre_name` — plus `category` on the
-clinic file and `program` on the senior centre file — are carried so each file
+`site_id`, and that `clinic_name` / `center_name` — plus `category` on the
+clinic file and `program` on the senior center file — are carried so each file
 reads on its own. The name is prefixed for the reason `cpd_bldg_name` is:
 `bldg_name` in these files is the City's name for the **footprint**, a different
 name from a different publisher.
@@ -634,20 +667,23 @@ sidecars, so offsets from all six files are comparable.
 
 ### `match_quality`
 
-| Value | Clinics | Senior centres | Workforce centres | Meaning |
+| Value | Clinics | Senior centers | Workforce centers | Meaning |
 |---|---:|---:|---:|---|
-| `address_exact` | 18 | 13 | 2 | Geometry and address agree. |
+| `address_exact` | 18 | 12 | 2 | Geometry and address agree. |
 | `containing` | 1 | 1 | 1 | The point falls inside a footprint carrying no matching address. |
-| `largest_nearby` | 5 | 7 | 2 | Nothing contains the point and no address matched. Recorded as a *candidate only*. |
+| `largest_nearby` | 5 | 8 | 2 | Nothing contains the point and no address matched. Recorded as a *candidate only*. |
 | `no_match` / `no_point` | 0 | 0 | 0 | Every site has a coordinate and a footprint in range. |
 
-36 of these 50 sites (72%) are placed inside a footprint on evidence strong
-enough to assert it; the other 14 keep their address point and are flagged.
-Snapping moves a marker a median of 27.1 m, 31.6 m and 22.8 m respectively.
+35 of these 50 sites (70%) are placed inside a footprint on evidence strong
+enough to assert it; the other 15 keep their address point and are flagged.
+Snapping moves a marker a median of 27.1 m, 30.8 m and 22.8 m respectively.
+The Kelvyn Park senior center (2715 N. Cicero) is unsnapped because its only
+address match was across the street; the Garfield workforce center (10 S.
+Kedzie) now snaps to the building on its own side.
 
 `library_named` cannot appear in these files. `syp8-uezg` labels library
 buildings, which is what earns that quality on the branch file; it carries no
-comparable clinic, senior-centre or workforce-centre label, and inventing one
+comparable clinic, senior-center or workforce-center label, and inventing one
 would assert a rule the source does not support.
 
 ### Known limitations
@@ -660,7 +696,7 @@ MHC's address, 5801 N. Pulaski, is North Park Village — one address across
 several buildings, four of which the footprint file gives that same address
 range. The shared rules take the address-matched footprint nearest the published
 point, which is the 760 sq ft `NORTH PARK VILLAGE - GUARD HOUSE`, while the
-27,646 sq ft footprint labelled `NORTH PARK VILLAGE - HEALTH CENTER` sits
+27,646 sq ft footprint labeled `NORTH PARK VILLAGE - HEALTH CENTER` sits
 further in. The marker lands about 25 m from CDPH's point, on the right campus
 and in the wrong building on it. It is recorded rather than special-cased: a
 one-row exception would stop these layers being positioned by the same method as
@@ -680,10 +716,10 @@ building, not a matching error; nothing is deduplicated.
 
 ---
 
-## `sbhc_publish.csv` — one row per school-based health centre
+## `sbhc_publish.csv` — one row per school-based health center
 
-Grain: one health centre. 38 rows: 32 operating, two closed, one
-closed-or-consolidated, and three unverified. Closed centres are retained as
+Grain: one health center. 38 rows: 32 operating, two closed, one
+closed-or-consolidated, and three unverified. Closed centers are retained as
 historical records and are not evidence that a host school ceased operating.
 
 The build also emits `sbhc_resolved.csv`, which preserves 36 of the 37 input
@@ -716,11 +752,11 @@ medical hours and phone conflict across UI Health/CPS pages; Greater Lawndale's
 hours conflict with a provider-claimed listing while the operator publishes
 none; Hibbard's former combined `hours` value cannot itself be resolved even
 though the medical/dental schedules are separated into the new columns; and
-Reavis's historical hours are not published because the centre is not
+Reavis's historical hours are not published because the center is not
 established as operating. See `docs/RESOLUTION_NOTES.md` for full evidence.
 
 The CPS 2025-26 student-health forms booklet p.11 is the only current
 CPS-published directory used here, and it covers only the “Open to ALL CPS
-Students” subset—not all 33 centres. The CDPH dataset `cjg8-dbka` is a 2014
+Students” subset—not all 33 centers. The CDPH dataset `cjg8-dbka` is a 2014
 snapshot last updated 2014-04-22; it is used only to corroborate unchanged
 addresses and geocodes, never current status.

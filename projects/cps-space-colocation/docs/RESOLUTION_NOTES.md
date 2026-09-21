@@ -12,7 +12,7 @@ Neither input sheet was modified. Outputs:
 - `sbhc_discrepancies.csv` — the evidence table, one row per (site, field): each source's
   value as found, the resolved value, confidence, citations, access date.
 - `sbhc_resolved.csv` — `sbhc.csv`'s columns untouched, plus `resolved_*` columns so the
-  two can be diffed, plus per-row citations and confidence. This is the audit artefact.
+  two can be diffed, plus per-row citations and confidence. This is the audit artifact.
 - `sbhc_publish.csv` — the canonical sheet. Resolved values overlay the canonical columns,
   the superseded `hours` column is dropped, a single `sponsor` column replaces having to
   pick between `sponsor_cps` and `sponsor_idph`, and closed sites are retained with a
@@ -27,7 +27,7 @@ Neither input sheet was modified. Outputs:
    termination dates, which is the only source that dates a closure.
 3. CPS's current published directory (2025-26 forms booklet, p.11).
 4. The IDPH certified list and the uploaded CPS sheet.
-5. CDPH's health-centre dataset — **note this is a 2014 snapshot** (rows last updated
+5. CDPH's health-center dataset — **note this is a 2014 snapshot** (rows last updated
    2014-04-22). Used only to corroborate addresses that have not changed, never for
    current status or provider names.
 
@@ -36,12 +36,12 @@ provider names and phones by several years. The uploaded CPS sheet's provider co
 named `SY2021_School_Health_Center`, and its hours in particular look like SY2021 values;
 CPS's 2025-26 booklet supersedes it where the two differ.
 
-## Three centres in the IDPH list are not currently operating
+## Three centers in the IDPH list are not currently operating
 
 This is the most consequential finding, because all three are in `sbhc.csv` as live rows
 with `idph_certified=true`, and two of them carry a coordinate that would put a dot on a map.
 
-| Centre | Evidence | Date |
+| Center | Evidence | Date |
 |---|---|---|
 | Uplift SHC (900 W Wilson Ave) | 340B site BPS-H80-010055 terminated, "Business decision by the Covered Entity"; absent from Tapestry 360's six-site student-health list | 2024-04-01 |
 | Hope Health & Wellness SHC (1628 W Washington Blvd) | 340B site BPS-H80-010036 terminated, reason **"Site closure"**; absent from Mile Square's current four-site list | 2024-04-01 |
@@ -70,20 +70,20 @@ uploaded CPS sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**.
 
 - **Farragut → in_building.** LCHC states the clinic is "located within Farragut Career
   Academy." The 3256 W 24th St address is the clinic's own entrance on the school's south
-  frontage, not a separate building. The centre address should be 3256 W 24th St; the school
+  frontage, not a separate building. The center address should be 3256 W 24th St; the school
   address stays 2345 S Christiana Ave.
 - **Davis → in_building** (was `school_linked`). IDPH names it "3050 W. 39th Pl. **Annex**",
-  i.e. CPS space on the Davis campus; CPS and UI Health both publish the centre there. For a
+  i.e. CPS space on the Davis campus; CPS and UI Health both publish the center there. For a
   co-location analysis this is CPS building space. Medium confidence — it turns on whether
   the annex is a separate structure.
-- **Comer → school_linked confirmed.** The centre is inside the Gary Comer Youth Center
+- **Comer → school_linked confirmed.** The center is inside the Gary Comer Youth Center
   (7200 S Ingleside Ave), a different building from Gary Comer College Prep (7131 S South
   Chicago Ave). The null coordinate can be filled from CDPH's geocode of that address
   (41.764002, -87.601896) — set `coord_basis='cdph_2014_geocode'`, not
-  `cps_school_building`, since `test_sbhc.py` rightly forbids mapping a school-linked centre
+  `cps_school_building`, since `test_sbhc.py` rightly forbids mapping a school-linked center
   at its school's coordinate.
-- **Mansueto → school_linked confirmed, and operating.** The centre is Esperanza's Brighton
-  Park clinic at 4700 S California Ave, about a kilometre from the school. CPS's off-site
+- **Mansueto → school_linked confirmed, and operating.** The center is Esperanza's Brighton
+  Park clinic at 4700 S California Ave, about a kilometer from the school. CPS's off-site
   override is right, and the IPHCA locator carries the site as current.
 - **Cultivate Collective → host school is Academy for Global Citizenship**, the CPS charter
   on that campus. Note this site is neither IDPH-certified nor in CPS's directory; it may not
@@ -160,20 +160,20 @@ Result: 33 operating, 2 closed (both dated 2024-04-01), 1 closed-or-consolidated
 `hrsa_status='Active'` for both but that field was not independently re-verified, so no
 status is asserted. This is the column that makes `live == 33` assertable, matching CPS's
 published 33 citywide; the old hard counts of 34/32/28 are snapshot arithmetic that still
-holds but never meant "live centres."
+holds but never meant "live centers."
 
 **Mansueto is operating, at medium confidence.** It was previously `unverified` on the
 grounds that no CPS directory entry had been checked for it. That reasoning was wrong:
-the CPS 2025-26 booklet covers only the "Open to ALL CPS Students" subset, and this centre
+the CPS 2025-26 booklet covers only the "Open to ALL CPS Students" subset, and this center
 is school-linked rather than in-building, so it would not appear there whether it were
 operating or not. Its absence is therefore not evidence against it, and the booklet is no
-longer cited on that row at all. The IPHCA health-centre locator carries 4700 S California
+longer cited on that row at all. The IPHCA health-center locator carries 4700 S California
 Ave as a current Esperanza site — the same source that settles the row's `setting`. That is
 one credible current source, hence medium rather than high: nothing published by the
 operator or CPS names Mansueto as the school this clinic serves, and that affiliation rests
 on the CPS off-site coordinate override alone.
 
-Closed rows are retained, not deleted. The new test enforces that a closed centre is not
+Closed rows are retained, not deleted. The new test enforces that a closed center is not
 published with hours or with `open_to_public=true`.
 
 ### `hours` split three ways
@@ -188,14 +188,14 @@ published with hours or with `open_to_public=true`.
 - Hibbard's single CPS cell held two concatenated schedules. The split is supported by that
   row's own access note, the only one in either sheet that names dental.
 - 17 rows have a researched split, 17 carry the source value forward as school-year medical,
-  4 are empty because the centre is closed or unverified, 2 because the value is contested.
+  4 are empty because the center is closed or unverified, 2 because the value is contested.
   Mansueto keeps the CPS sheet's hours, carried forward as school-year medical.
 
 ### `room_or_entrance`
 
 Populated for 15 rows. Rush, Tapestry, Erie and Mile Square all publish it; IDPH supplied
 Beethoven's Room 134. A published room number or a named exterior door is evidence the
-centre occupies school space, which a street address is not — so the test refuses this
+center occupies school space, which a street address is not — so the test refuses this
 column on any `school_linked` or `mobile` row.
 
 ### Still worth doing

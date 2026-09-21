@@ -1,6 +1,6 @@
-site_id,centre_name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bldg_name,bldg_stories,footprint_area_sqft,candidates_in_range,provenance,source
+site_id,center_name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bldg_name,bldg_stories,footprint_area_sqft,candidates_in_range,provenance,source
 row-72e5_hraj.cqsv,Pilsen Workforce Center,containing,41.857118,-87.668953,2.7,0,868317,1818 S PAULINA ST,,0,1440.6,173,sourced,socrata_syp8-uezg@2026-09-14
 row-jdgu-j7gk.qgdk,Mid-South Workforce Center,largest_nearby,41.816341,-87.607281,39.4,7,431372,741-745 E 43RD ST,,0,35404.1,34,sourced,socrata_syp8-uezg@2026-09-14
-row-kg9m_hhd9~y84g,Garfield Workforce Center,address_exact,41.88074,-87.705793,34.2,17.3,358047,7-19 S KEDZIE AVE,,0,20796.9,34,sourced,socrata_syp8-uezg@2026-09-14
+row-kg9m_hhd9~y84g,Garfield Workforce Center,address_exact,41.880266,-87.706583,73.4,21.7,358082,10 S KEDZIE AVE,,0,26201.9,34,sourced,socrata_syp8-uezg@2026-09-14
 row-m3nc.7g3q_tvsn,Southwest Workforce Center,largest_nearby,41.746709,-87.711617,73.1,61.4,631837,3553 W 80TH PL,,1,1672.9,213,sourced,socrata_syp8-uezg@2026-09-14
 row-se2w-ga5b-5fw8,Northside Workforce Center,address_exact,41.968649,-87.65524,22.8,0,826365,4736-4760 N SHERIDAN RD,,8,36949.6,63,sourced,socrata_syp8-uezg@2026-09-14
