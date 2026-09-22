@@ -1,241 +1,241 @@
 sid,name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bldg_name,bldg_stories,footprint_area_sqft,candidates_in_range,provenance,source
 400009,Academy for Global Citizenship Charter School,largest_nearby,41.812776,-87.748663,90.3,73.1,438228,4402-4406 S LAVERGNE AVE,,1,4297.1,4,sourced,socrata_syp8-uezg@2026-09-13
-400011,Alain Locke Charter School,address_exact,41.877075,-87.705082,23,9.1,868894,3141 W JACKSON BLVD,,0,12143.7,44,sourced,socrata_syp8-uezg@2026-09-13
+400011,Alain Locke Charter School,address_exact,41.877075,-87.705082,23,9.1,868894,3141 W JACKSON BLVD,,,12143.7,44,sourced,socrata_syp8-uezg@2026-09-13
 400021,Catalyst Elementary Charter School - Circle Rock,address_exact,41.882512,-87.76624,79.1,3.3,356747,5600-5608 W WASHINGTON BLVD,,3,37331,41,sourced,socrata_syp8-uezg@2026-09-13
-400023,CICS - Avalon/South Shore,address_exact,41.742945,-87.587699,32.2,11.4,643248,1501 E 83RD PL,,0,10289.8,188,sourced,socrata_syp8-uezg@2026-09-13
-400024,CICS - Basil,address_exact,41.794257,-87.669726,49.1,3.1,483342,1800-1824 W GARFIELD BLVD,,0,26121.8,156,sourced,socrata_syp8-uezg@2026-09-13
-400025,CICS - Bucktown,address_exact,41.922508,-87.681104,23.5,2.5,853970,2235 N HAMILTON AVE,,0,7459.1,174,sourced,socrata_syp8-uezg@2026-09-13
-400026,CICS - Loomis Primary,address_exact,41.720175,-87.656915,54.3,29.8,856678,9535 S LOOMIS ST,,0,23047.1,104,sourced,socrata_syp8-uezg@2026-09-13
-400027,CICS - Irving Park,address_exact,41.950632,-87.710733,35,2.2,162321,3800-3820 N SPAULDING AVE,,0,28178.6,228,sourced,socrata_syp8-uezg@2026-09-13
-400028,CICS - Prairie,largest_nearby,41.684441,-87.617669,65,3.5,782931,218-224 E KENSINGTON AVE,,0,25347.2,75,sourced,socrata_syp8-uezg@2026-09-13
-400029,CICS - Washington Park,containing,41.784114,-87.621252,1.5,0,515668,120 E 61ST ST,,0,10937.6,57,sourced,socrata_syp8-uezg@2026-09-13
-400030,CICS - West Belden,largest_nearby,41.922209,-87.776505,61.4,44.3,272543,2300-2306 N AUSTIN AVE,,0,21650.1,153,sourced,socrata_syp8-uezg@2026-09-13
+400023,CICS - Avalon/South Shore,address_exact,41.742945,-87.587699,32.2,11.4,643248,1501 E 83RD PL,,,10289.8,188,sourced,socrata_syp8-uezg@2026-09-13
+400024,CICS - Basil,address_exact,41.794257,-87.669726,49.1,3.1,483342,1800-1824 W GARFIELD BLVD,,,26121.8,156,sourced,socrata_syp8-uezg@2026-09-13
+400025,CICS - Bucktown,address_exact,41.922508,-87.681104,23.5,2.5,853970,2235 N HAMILTON AVE,,,7459.1,174,sourced,socrata_syp8-uezg@2026-09-13
+400026,CICS - Loomis Primary,address_exact,41.720175,-87.656915,54.3,29.8,856678,9535 S LOOMIS ST,,,23047.1,104,sourced,socrata_syp8-uezg@2026-09-13
+400027,CICS - Irving Park,address_exact,41.950632,-87.710733,35,2.2,162321,3800-3820 N SPAULDING AVE,,,28178.6,228,sourced,socrata_syp8-uezg@2026-09-13
+400028,CICS - Prairie,largest_nearby,41.684441,-87.617669,65,3.5,782931,218-224 E KENSINGTON AVE,,,25347.2,75,sourced,socrata_syp8-uezg@2026-09-13
+400029,CICS - Washington Park,containing,41.784114,-87.621252,1.5,0,515668,120 E 61ST ST,,,10937.6,57,sourced,socrata_syp8-uezg@2026-09-13
+400030,CICS - West Belden,largest_nearby,41.922209,-87.776505,61.4,44.3,272543,2300-2306 N AUSTIN AVE,,,21650.1,153,sourced,socrata_syp8-uezg@2026-09-13
 400031,CICS - Wrightwood,address_exact,41.745029,-87.693236,63.8,9.9,636377,8130 S CALIFORNIA AVE,,2,23292.4,166,sourced,socrata_syp8-uezg@2026-09-13
-400032,CICS - Ralph Ellison,address_exact,41.748125,-87.669116,30.7,13.5,624654,1817 W 80TH ST,,0,18218.1,145,sourced,socrata_syp8-uezg@2026-09-13
-400033,CICS - Longwood,address_exact,41.720896,-87.655806,36.2,22.7,856673,1301-1315 W 95TH ST,,0,12344.2,104,sourced,socrata_syp8-uezg@2026-09-13
-400034,CICS - Northtown,largest_nearby,41.989848,-87.728034,134.2,125.1,43569,3945 W PETERSON AVE,E89,0,3222.5,4,sourced,socrata_syp8-uezg@2026-09-13
+400032,CICS - Ralph Ellison,address_exact,41.748125,-87.669116,30.7,13.5,624654,1817 W 80TH ST,,,18218.1,145,sourced,socrata_syp8-uezg@2026-09-13
+400033,CICS - Longwood,address_exact,41.720896,-87.655806,36.2,22.7,856673,1301-1315 W 95TH ST,,,12344.2,104,sourced,socrata_syp8-uezg@2026-09-13
+400034,CICS - Northtown,largest_nearby,41.989848,-87.728034,134.2,125.1,43569,3945 W PETERSON AVE,E89,,3222.5,4,sourced,socrata_syp8-uezg@2026-09-13
 400035,Chicago Math and Science Academy Charter School,largest_nearby,42.013731,-87.675222,84.7,13.9,5205,7202 N CLARK ST,,1,53988.5,81,sourced,socrata_syp8-uezg@2026-09-13
-400039,Erie Elementary Charter School,address_exact,41.90674,-87.693942,35.1,3.1,315131,1405 N WASHTENAW AVE,,0,3961.8,161,sourced,socrata_syp8-uezg@2026-09-13
+400039,Erie Elementary Charter School,address_exact,41.90674,-87.693942,35.1,3.1,315131,1405 N WASHTENAW AVE,,,3961.8,161,sourced,socrata_syp8-uezg@2026-09-13
 400044,KIPP Ascend Charter School,containing,41.858381,-87.720759,25.9,0,377952,1617 S AVERS AVE,,3,1913.5,72,sourced,socrata_syp8-uezg@2026-09-13
-400046,L.E.A.R.N. - Romano Butler Campus,address_exact,41.867074,-87.710877,27.5,12.5,823053,1132-1136 S HOMAN AVE,,0,9376.9,46,sourced,socrata_syp8-uezg@2026-09-13
+400046,L.E.A.R.N. - Romano Butler Campus,address_exact,41.867074,-87.710877,27.5,12.5,823053,1132-1136 S HOMAN AVE,,,9376.9,46,sourced,socrata_syp8-uezg@2026-09-13
 400047,L.E.A.R.N. - Charles and Dorothy Campbell Campus,address_exact,41.87802,-87.698997,27.7,5.7,360874,206-212 S FRANCISCO AVE,,3,29839.5,109,sourced,socrata_syp8-uezg@2026-09-13
 400048,L.E.A.R.N. - Excel Campus,containing,41.887328,-87.701884,15.6,0,881572,3005 W CARROLL AVE,,4,18006.9,62,sourced,socrata_syp8-uezg@2026-09-13
-400049,Legacy Charter School,largest_nearby,41.858643,-87.708622,187,143.1,855245,1601-1625 S CHRISTIANA AVE,,0,31450.5,77,sourced,socrata_syp8-uezg@2026-09-13
-400050,Namaste Charter School,address_exact,41.825734,-87.667463,22,0.4,423208,3737 S PAULINA ST,,0,8402.2,242,sourced,socrata_syp8-uezg@2026-09-13
-400051,Noble - Noble College Prep,address_exact,41.900077,-87.662784,18.1,1.3,855983,1010 N NOBLE ST,,0,7777.7,99,sourced,socrata_syp8-uezg@2026-09-13
+400049,Legacy Charter School,largest_nearby,41.858643,-87.708622,187,143.1,855245,1601-1625 S CHRISTIANA AVE,,,31450.5,77,sourced,socrata_syp8-uezg@2026-09-13
+400050,Namaste Charter School,address_exact,41.825734,-87.667463,22,0.4,423208,3737 S PAULINA ST,,,8402.2,242,sourced,socrata_syp8-uezg@2026-09-13
+400051,Noble - Noble College Prep,address_exact,41.900077,-87.662784,18.1,1.3,855983,1010 N NOBLE ST,,,7777.7,99,sourced,socrata_syp8-uezg@2026-09-13
 400052,Noble - Gary Comer College Prep,address_exact,41.765203,-87.604208,6.6,0,878813,7131 S SOUTH CHICAGO AVE,,1,3045.1,72,sourced,socrata_syp8-uezg@2026-09-13
-400053,Noble - Golder College Prep,address_exact,41.895541,-87.664557,29.4,18.3,340517,1454 W SUPERIOR ST,,0,4220.4,183,sourced,socrata_syp8-uezg@2026-09-13
-400054,Noble - Pritzker College Prep,address_exact,41.915084,-87.72949,54.7,30.2,860893,4111-4131 W CORTLAND ST,NOBLE - PRITZKER SCHOOL,0,11849.6,224,sourced,socrata_syp8-uezg@2026-09-13
+400053,Noble - Golder College Prep,address_exact,41.895541,-87.664557,29.4,18.3,340517,1454 W SUPERIOR ST,,,4220.4,183,sourced,socrata_syp8-uezg@2026-09-13
+400054,Noble - Pritzker College Prep,address_exact,41.915084,-87.72949,54.7,30.2,860893,4111-4131 W CORTLAND ST,NOBLE - PRITZKER SCHOOL,,11849.6,224,sourced,socrata_syp8-uezg@2026-09-13
 400055,Noble - Rauner College Prep,address_exact,41.892256,-87.661234,36.3,14.3,346561,1337 W OHIO ST,,3,11151.4,154,sourced,socrata_syp8-uezg@2026-09-13
-400056,Noble - Rowe-Clark Math and Science Academy,address_exact,41.895211,-87.718361,30.9,3.2,830974,3645 W CHICAGO AVE,LOUISE H LANDAU COMMUNITY HEALTH CENTER,0,22192.3,138,sourced,socrata_syp8-uezg@2026-09-13
-400057,Noble - UIC College Prep,address_exact,41.865575,-87.675729,41.6,13.1,372584,1231 S DAMEN AVE,,0,29612,6,sourced,socrata_syp8-uezg@2026-09-13
-400058,North Lawndale College Prep - Christiana,address_exact,41.858643,-87.708622,31.6,7.3,855245,1601-1625 S CHRISTIANA AVE,,0,31450.5,97,sourced,socrata_syp8-uezg@2026-09-13
-400059,North Lawndale College Prep - Collins,largest_nearby,41.858643,-87.708622,123.6,75.9,855245,1601-1625 S CHRISTIANA AVE,,0,31450.5,88,sourced,socrata_syp8-uezg@2026-09-13
+400056,Noble - Rowe-Clark Math and Science Academy,address_exact,41.895211,-87.718361,30.9,3.2,830974,3645 W CHICAGO AVE,LOUISE H LANDAU COMMUNITY HEALTH CENTER,,22192.3,138,sourced,socrata_syp8-uezg@2026-09-13
+400057,Noble - UIC College Prep,address_exact,41.865575,-87.675729,41.6,13.1,372584,1231 S DAMEN AVE,,,29612,6,sourced,socrata_syp8-uezg@2026-09-13
+400058,North Lawndale College Prep - Christiana,address_exact,41.858643,-87.708622,31.6,7.3,855245,1601-1625 S CHRISTIANA AVE,,,31450.5,97,sourced,socrata_syp8-uezg@2026-09-13
+400059,North Lawndale College Prep - Collins,largest_nearby,41.858643,-87.708622,123.6,75.9,855245,1601-1625 S CHRISTIANA AVE,,,31450.5,88,sourced,socrata_syp8-uezg@2026-09-13
 400060,Passages Charter School,address_exact,41.983174,-87.67125,23.1,4.5,853632,1643-1677 W BRYN MAWR AVE,PASSAGES SCHOOL,4,21282,204,sourced,socrata_syp8-uezg@2026-09-13
-400061,Perspectives - Leadership Academy,address_exact,41.73886,-87.626882,32.6,0,655947,8522 S LAFAYETTE AVE,,0,194200.8,1,sourced,socrata_syp8-uezg@2026-09-13
-400062,Perspectives - High School of Technology,largest_nearby,41.73886,-87.626882,151.8,79,655947,8522 S LAFAYETTE AVE,,0,194200.8,4,sourced,socrata_syp8-uezg@2026-09-13
-400064,Perspectives - Rodney D. Joslin,address_exact,41.856331,-87.628326,40.6,11.6,826636,1930 S ARCHER AVE,PERSPECTIVES CHARTER,0,18148.5,34,sourced,socrata_syp8-uezg@2026-09-13
-400066,Perspectives - Math and Science Academy,address_exact,41.828521,-87.624416,87.5,20.3,419758,3633-3663 S WABASH AVE,RAYMOND PUBLIC SCHOOL,0,31976,54,sourced,socrata_syp8-uezg@2026-09-13
-400069,Polaris Charter Academy,address_exact,41.892367,-87.708039,28.7,2,346524,620 N SAWYER AVE,,0,29397.5,94,sourced,socrata_syp8-uezg@2026-09-13
+400061,Perspectives - Leadership Academy,address_exact,41.73886,-87.626882,32.6,0,655947,8522 S LAFAYETTE AVE,,,194200.8,1,sourced,socrata_syp8-uezg@2026-09-13
+400062,Perspectives - High School of Technology,largest_nearby,41.73886,-87.626882,151.8,79,655947,8522 S LAFAYETTE AVE,,,194200.8,4,sourced,socrata_syp8-uezg@2026-09-13
+400064,Perspectives - Rodney D. Joslin,address_exact,41.856331,-87.628326,40.6,11.6,826636,1930 S ARCHER AVE,PERSPECTIVES CHARTER,,18148.5,34,sourced,socrata_syp8-uezg@2026-09-13
+400066,Perspectives - Math and Science Academy,address_exact,41.828521,-87.624416,87.5,20.3,419758,3633-3663 S WABASH AVE,RAYMOND PUBLIC SCHOOL,,31976,54,sourced,socrata_syp8-uezg@2026-09-13
+400069,Polaris Charter Academy,address_exact,41.892367,-87.708039,28.7,2,346524,620 N SAWYER AVE,,,29397.5,94,sourced,socrata_syp8-uezg@2026-09-13
 400071,Providence Englewood Charter School,address_exact,41.775231,-87.663652,32.3,7.9,546627,6515 S ASHLAND AVE,,1,21804.8,96,sourced,socrata_syp8-uezg@2026-09-13
-400075,University of Chicago - Donoghue,address_exact,41.827154,-87.608067,73,10.8,420533,707 E 37TH ST,,0,46032.4,17,sourced,socrata_syp8-uezg@2026-09-13
-400076,University of Chicago - North Kenwood/Oakland,containing,41.811032,-87.598806,16.8,0,439571,4615 S GREENWOOD AVE,,0,17191.9,99,sourced,socrata_syp8-uezg@2026-09-13
+400075,University of Chicago - Donoghue,address_exact,41.827154,-87.608067,73,10.8,420533,707 E 37TH ST,,,46032.4,17,sourced,socrata_syp8-uezg@2026-09-13
+400076,University of Chicago - North Kenwood/Oakland,containing,41.811032,-87.598806,16.8,0,439571,4615 S GREENWOOD AVE,,,17191.9,99,sourced,socrata_syp8-uezg@2026-09-13
 400077,University of Chicago - Woodlawn,largest_nearby,41.780295,-87.596451,78.3,62.2,528871,1167-1169 E 63RD ST,,3,8320.5,25,sourced,socrata_syp8-uezg@2026-09-13
 400079,Acero Charter Schools - SPC Daniel Zizumbo,largest_nearby,41.809352,-87.730796,90.5,67.7,444832,4248 W 47TH ST,,3,62593.6,16,sourced,socrata_syp8-uezg@2026-09-13
 400080,Acero Charter Schools - PFC Omar E. Torres,address_exact,41.809352,-87.730796,131.2,8.2,444832,4248 W 47TH ST,,3,62593.6,87,sourced,socrata_syp8-uezg@2026-09-13
 400085,Acero Charter Schools - Major Hector P. Garcia MD,address_exact,41.809352,-87.730796,34,9,444832,4248 W 47TH ST,,3,62593.6,38,sourced,socrata_syp8-uezg@2026-09-13
 400086,Urban Prep Academy for Young Men Charter School,address_exact,41.782064,-87.634324,62.9,23.4,522470,6201 S STEWART AVE,,3,99004.2,22,sourced,socrata_syp8-uezg@2026-09-13
 400089,Acero Charter Schools - Officer Donald J. Marquez,address_exact,41.808576,-87.696937,48.1,13,445963,2916 W 47TH ST,,4,15620.5,99,sourced,socrata_syp8-uezg@2026-09-13
-400091,Chicago Technology Academy High School,address_exact,41.863104,-87.65991,71.1,11.3,374420,1301 W 14TH ST,,0,28269.9,22,sourced,socrata_syp8-uezg@2026-09-13
-400092,CICS - Lloyd Bond,address_exact,41.65314,-87.60552,70.6,33.9,809039,13300 S LANGLEY AVE,OUR LADY OF THE GARDENS CHURCH/SCHOOL,0,17653.8,23,sourced,socrata_syp8-uezg@2026-09-13
+400091,Chicago Technology Academy High School,address_exact,41.863104,-87.65991,71.1,11.3,374420,1301 W 14TH ST,,,28269.9,22,sourced,socrata_syp8-uezg@2026-09-13
+400092,CICS - Lloyd Bond,address_exact,41.65314,-87.60552,70.6,33.9,809039,13300 S LANGLEY AVE,OUR LADY OF THE GARDENS CHURCH/SCHOOL,,17653.8,23,sourced,socrata_syp8-uezg@2026-09-13
 400096,Rowe Elementary Charter School,address_exact,41.90779,-87.664637,46.9,30.7,311654,1424 N CLEAVER ST,,2,23226,120,sourced,socrata_syp8-uezg@2026-09-13
-400097,Noble - Chicago Bulls College Prep,address_exact,41.879092,-87.67842,36.6,9.7,359125,2040 W ADAMS ST,,0,36454.5,35,sourced,socrata_syp8-uezg@2026-09-13
-400098,Noble - Muchin College Prep,address_exact,41.882381,-87.62722,83.4,52.3,868627,1-15 N STATE ST,,0,27132.7,24,sourced,socrata_syp8-uezg@2026-09-13
-400104,Instituto Health Sciences Career Academy,containing,41.84615,-87.68706,25.2,0,394531,2429 W 25TH ST,,0,56248.1,31,sourced,socrata_syp8-uezg@2026-09-13
+400097,Noble - Chicago Bulls College Prep,address_exact,41.879092,-87.67842,36.6,9.7,359125,2040 W ADAMS ST,,,36454.5,35,sourced,socrata_syp8-uezg@2026-09-13
+400098,Noble - Muchin College Prep,address_exact,41.882381,-87.62722,83.4,52.3,868627,1-15 N STATE ST,,,27132.7,24,sourced,socrata_syp8-uezg@2026-09-13
+400104,Instituto Health Sciences Career Academy,containing,41.84615,-87.68706,25.2,0,394531,2429 W 25TH ST,,,56248.1,31,sourced,socrata_syp8-uezg@2026-09-13
 400105,URBAN PREP - BRONZEVILLE HS,address_exact,41.830585,-87.613486,60.4,7.8,417351,521 E 35TH ST,,3,44555.8,4,sourced,socrata_syp8-uezg@2026-09-13
 400106,Noble - John and Eunice Johnson College Prep,address_exact,41.778349,-87.635431,26.2,9.8,533824,6310-6350 S STEWART AVE,REED SCHOOL,3,30853.8,26,sourced,socrata_syp8-uezg@2026-09-13
-400107,L.E.A.R.N. - South Chicago Campus,address_exact,41.733257,-87.544862,60.3,43.7,673451,8914 S BUFFALO AVE,,0,40540.5,65,sourced,socrata_syp8-uezg@2026-09-13
-400111,L.E.A.R.N. - Hunter Perkins Campus,address_exact,41.74326,-87.666534,69.3,38.8,644274,1700-1724 W 83RD ST,TIMOTHY LUTHERAN SCHOOL,0,11044.4,200,sourced,socrata_syp8-uezg@2026-09-13
+400107,L.E.A.R.N. - South Chicago Campus,address_exact,41.733257,-87.544862,60.3,43.7,673451,8914 S BUFFALO AVE,,,40540.5,65,sourced,socrata_syp8-uezg@2026-09-13
+400111,L.E.A.R.N. - Hunter Perkins Campus,address_exact,41.74326,-87.666534,69.3,38.8,644274,1700-1724 W 83RD ST,TIMOTHY LUTHERAN SCHOOL,,11044.4,200,sourced,socrata_syp8-uezg@2026-09-13
 400112,Acero Charter Schools - Jovita Idar,address_exact,41.8011,-87.709266,39.5,27.7,894356,5050 S HOMAN AVE,UNO ELEMENTARY HIGH SCHOOL,3,27930.9,106,sourced,socrata_syp8-uezg@2026-09-13
-400115,Catalyst - Maria Charter School,address_exact,41.771456,-87.692556,66.9,33.2,560685,6701-6727 S CALIFORNIA AVE,,0,62336.5,19,sourced,socrata_syp8-uezg@2026-09-13
+400115,Catalyst - Maria Charter School,address_exact,41.771456,-87.692556,66.9,33.2,560685,6701-6727 S CALIFORNIA AVE,,,62336.5,19,sourced,socrata_syp8-uezg@2026-09-13
 400116,The Montessori School of Englewood Charter,address_exact,41.76744,-87.667912,23.4,6.2,569638,6936 S HERMITAGE AVE,,3,21005.6,113,sourced,socrata_syp8-uezg@2026-09-13
-400117,Noble - Hansberry College Prep,address_exact,41.73442,-87.651311,27,11.6,672628,8748 S ABERDEEN ST,,0,15181.2,160,sourced,socrata_syp8-uezg@2026-09-13
+400117,Noble - Hansberry College Prep,address_exact,41.73442,-87.651311,27,11.6,672628,8748 S ABERDEEN ST,,,15181.2,160,sourced,socrata_syp8-uezg@2026-09-13
 400118,Noble - DRW College Prep,largest_nearby,41.869731,-87.711941,50.7,30.3,888398,3415 W ARTHINGTON ST,,3,17134.3,43,sourced,socrata_syp8-uezg@2026-09-13
-400119,Legal Prep Charter Academy,address_exact,41.881442,-87.733777,32.3,0,357469,4313-4319 W WASHINGTON BLVD,,0,14301.1,79,sourced,socrata_syp8-uezg@2026-09-13
+400119,Legal Prep Charter Academy,address_exact,41.881442,-87.733777,32.3,0,357469,4313-4319 W WASHINGTON BLVD,,,14301.1,79,sourced,socrata_syp8-uezg@2026-09-13
 400120,Acero Charter Schools - Roberto Clemente,largest_nearby,41.917575,-87.788739,86.3,62.7,286673,2020-2030 N NATCHEZ AVE,,2,35825.4,95,sourced,socrata_syp8-uezg@2026-09-13
-400123,YCCS- Academy of Scholastic Achievement HS,address_exact,41.880032,-87.742274,51,19.1,873588,4649-4651 W MADISON ST,,0,4327.3,73,sourced,socrata_syp8-uezg@2026-09-13
-400124,YCCS- McKinley Lakeside Leadership HS,address_exact,41.841217,-87.625826,43,4.8,400423,2900-2920 S WABASH AVE,ST. JAMES R.C. SCHOOL,0,19787.6,10,sourced,socrata_syp8-uezg@2026-09-13
+400123,YCCS- Academy of Scholastic Achievement HS,address_exact,41.880032,-87.742274,51,19.1,873588,4649-4651 W MADISON ST,,,4327.3,73,sourced,socrata_syp8-uezg@2026-09-13
+400124,YCCS- McKinley Lakeside Leadership HS,address_exact,41.841217,-87.625826,43,4.8,400423,2900-2920 S WABASH AVE,ST. JAMES R.C. SCHOOL,,19787.6,10,sourced,socrata_syp8-uezg@2026-09-13
 400125,"YCCS-ASPIRA,Antonia Pantoja Alternative HS",largest_nearby,41.937859,-87.727843,69,17,217881,3120 N PULASKI RD,,1,40956.6,73,sourced,socrata_syp8-uezg@2026-09-13
-400126,YCCS-Association House HS,address_exact,41.90157,-87.707308,37.2,4.1,325728,1106-1116 N KEDZIE AVE,,0,49422.1,64,sourced,socrata_syp8-uezg@2026-09-13
-400127,YCCS-Austin Career Education Center HS,largest_nearby,41.893647,-87.759707,153.7,118.3,344598,720 N LOREL AVE,,0,27751.2,31,sourced,socrata_syp8-uezg@2026-09-13
+400126,YCCS-Association House HS,address_exact,41.90157,-87.707308,37.2,4.1,325728,1106-1116 N KEDZIE AVE,,,49422.1,64,sourced,socrata_syp8-uezg@2026-09-13
+400127,YCCS-Austin Career Education Center HS,largest_nearby,41.893647,-87.759707,153.7,118.3,344598,720 N LOREL AVE,,,27751.2,31,sourced,socrata_syp8-uezg@2026-09-13
 400128,YCCS-CCA Academy HS,largest_nearby,41.865076,-87.724738,90.5,73.8,373005,1227-1239 S PULASKI RD,COMMUNITY SERVICES WEST  HIGH SCHOOL,1,18307.4,113,sourced,socrata_syp8-uezg@2026-09-13
 400129,YCCS-Progressive Leadership Academy,containing,41.77413,-87.615877,5.3,0,550617,6622-6630 S DR MARTIN LUTHER KING JR DR,,2,31895.2,38,sourced,socrata_syp8-uezg@2026-09-13
 400130,YCCS-Community Youth Development Institute HS,address_exact,41.751566,-87.641992,30.2,11.4,612240,7832-7836 S UNION AVE,,4,8957.2,105,sourced,socrata_syp8-uezg@2026-09-13
-400131,YCCS-Dr. Pedro Albizu Campos Puerto Rican HS,address_exact,41.902636,-87.695997,23.8,5.9,885870,2739-2741 W DIVISION ST,,0,5916.9,127,sourced,socrata_syp8-uezg@2026-09-13
+400131,YCCS-Dr. Pedro Albizu Campos Puerto Rican HS,address_exact,41.902636,-87.695997,23.8,5.9,885870,2739-2741 W DIVISION ST,,,5916.9,127,sourced,socrata_syp8-uezg@2026-09-13
 400133,YCCS- Innovations HS of Arts Integration,address_exact,41.882706,-87.627281,53.4,25.2,868624,17-29 N STATE ST,,20,15695.3,20,sourced,socrata_syp8-uezg@2026-09-13
 400135,YCCS-Latino Youth Alternative HS,address_exact,41.854561,-87.695265,17.9,1.3,382594,2001 S CALIFORNIA AVE,,3,16357.4,97,sourced,socrata_syp8-uezg@2026-09-13
 400136,YCCS-Olive Harvey Middle College HS,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-13
-400139,YCCS-Sullivan House Alternative HS,address_exact,41.746004,-87.578613,33,6.1,630495,8164 S SOUTH CHICAGO AVE,,0,21640.8,68,sourced,socrata_syp8-uezg@2026-09-13
-400141,YCCS-Truman Middle College HS,largest_nearby,41.965606,-87.658194,93.2,80.2,111476,4604-4626 N BROADWAY,,0,21577.6,31,sourced,socrata_syp8-uezg@2026-09-13
-400143,YCCS-West Town Acad Alternative HS,address_exact,41.89104,-87.702798,67.2,33.5,348577,500-534 N SACRAMENTO BLVD,,0,55018.1,11,sourced,socrata_syp8-uezg@2026-09-13
-400144,YCCS-West HS,address_exact,41.902001,-87.74925,45.2,19.7,325482,4901-4925 W DIVISION ST,,0,12989.4,101,sourced,socrata_syp8-uezg@2026-09-13
+400139,YCCS-Sullivan House Alternative HS,address_exact,41.746004,-87.578613,33,6.1,630495,8164 S SOUTH CHICAGO AVE,,,21640.8,68,sourced,socrata_syp8-uezg@2026-09-13
+400141,YCCS-Truman Middle College HS,largest_nearby,41.965606,-87.658194,93.2,80.2,111476,4604-4626 N BROADWAY,,,21577.6,31,sourced,socrata_syp8-uezg@2026-09-13
+400143,YCCS-West Town Acad Alternative HS,address_exact,41.89104,-87.702798,67.2,33.5,348577,500-534 N SACRAMENTO BLVD,,,55018.1,11,sourced,socrata_syp8-uezg@2026-09-13
+400144,YCCS-West HS,address_exact,41.902001,-87.74925,45.2,19.7,325482,4901-4925 W DIVISION ST,,,12989.4,101,sourced,socrata_syp8-uezg@2026-09-13
 400145,YCCS-Youth Connection Leadership Acad HS,largest_nearby,41.85703,-87.646365,124.2,105.9,881737,1821-1841 S HALSTED ST,,2,15763.5,109,sourced,socrata_syp8-uezg@2026-09-13
-400146,KIPP Academy Chicago Campus,containing,41.891609,-87.746688,23.8,0,348285,4816 W OHIO ST,,0,15807.2,108,sourced,socrata_syp8-uezg@2026-09-13
-400147,Chicago Excel Academy HS,containing,41.691967,-87.653608,9.9,0,769178,1237-1249 W 111TH ST,,0,12089.9,110,sourced,socrata_syp8-uezg@2026-09-13
+400146,KIPP Academy Chicago Campus,containing,41.891609,-87.746688,23.8,0,348285,4816 W OHIO ST,,,15807.2,108,sourced,socrata_syp8-uezg@2026-09-13
+400147,Chicago Excel Academy HS,containing,41.691967,-87.653608,9.9,0,769178,1237-1249 W 111TH ST,,,12089.9,110,sourced,socrata_syp8-uezg@2026-09-13
 400149,Acero Charter Schools - Victoria Soto,address_exact,41.802034,-87.710527,51.3,4.6,894355,5025 S ST LOUIS AVE,UNO HIGH SCHOOL,3,63099.8,7,sourced,socrata_syp8-uezg@2026-09-13
 400150,YCCS-Chatham AcademyHS,address_exact,41.730009,-87.60666,29.8,4.1,682534,9035 S LANGLEY AVE,,3,8750.6,186,sourced,socrata_syp8-uezg@2026-09-13
-400151,L.E.A.R.N. Charter School - 7th Campus,largest_nearby,41.887894,-87.700926,75.9,41.2,351932,2942-2950 W CARROLL AVE,,0,29892,67,sourced,socrata_syp8-uezg@2026-09-13
-400153,Acero Charter Schools - Brighton Park,address_exact,41.813215,-87.693389,17.3,1.7,436393,4400-4420 S FAIRFIELD AVE,,0,21259.9,232,sourced,socrata_syp8-uezg@2026-09-13
+400151,L.E.A.R.N. Charter School - 7th Campus,largest_nearby,41.887894,-87.700926,75.9,41.2,351932,2942-2950 W CARROLL AVE,,,29892,67,sourced,socrata_syp8-uezg@2026-09-13
+400153,Acero Charter Schools - Brighton Park,address_exact,41.813215,-87.693389,17.3,1.7,436393,4400-4420 S FAIRFIELD AVE,,,21259.9,232,sourced,socrata_syp8-uezg@2026-09-13
 400156,Noble - Butler College Prep,address_exact,41.706764,-87.60351,78.7,0,731073,821 E 103RD ST,,2,105625,18,sourced,socrata_syp8-uezg@2026-09-13
-400157,Noble - Baker College Prep,largest_nearby,41.734336,-87.557826,138.9,67.1,866015,2700-2728 E 89TH ST,,0,94246.7,73,sourced,socrata_syp8-uezg@2026-09-13
+400157,Noble - Baker College Prep,largest_nearby,41.734336,-87.557826,138.9,67.1,866015,2700-2728 E 89TH ST,,,94246.7,73,sourced,socrata_syp8-uezg@2026-09-13
 400159,Christopher House Charter School,address_exact,41.922021,-87.757914,37.1,8.7,894334,5235 W BELDEN AVE,CHRISTOPHER HOUSE SCHOOL,2,12378.5,234,sourced,socrata_syp8-uezg@2026-09-13
-400161,Chicago Collegiate Charter School,largest_nearby,41.679654,-87.618473,56.2,25,868406,11800-11808 S INDIANA AVE,,0,12779.4,144,sourced,socrata_syp8-uezg@2026-09-13
-400162,Intrinsic Charter School,address_exact,41.939417,-87.741012,48.6,1.8,848162,4540 W BELMONT AVE,,0,40382.5,67,sourced,socrata_syp8-uezg@2026-09-13
+400161,Chicago Collegiate Charter School,largest_nearby,41.679654,-87.618473,56.2,25,868406,11800-11808 S INDIANA AVE,,,12779.4,144,sourced,socrata_syp8-uezg@2026-09-13
+400162,Intrinsic Charter School,address_exact,41.939417,-87.741012,48.6,1.8,848162,4540 W BELMONT AVE,,,40382.5,67,sourced,socrata_syp8-uezg@2026-09-13
 400163,KIPP Chicago Charter School - KIPP Bloom,address_exact,41.793401,-87.641051,91.7,35,484773,5515 S LOWE AVE,,3,55671.8,40,sourced,socrata_syp8-uezg@2026-09-13
 400164,Instituto - Justice and Leadership,largest_nearby,41.845268,-87.683423,56.9,26,395823,2555 S BLUE ISLAND AVE,,2,28891,75,sourced,socrata_syp8-uezg@2026-09-13
-400165,L.E.A.R.N. - Middle School Campus,largest_nearby,41.887894,-87.700926,162.3,127.1,351932,2942-2950 W CARROLL AVE,,0,29892,49,sourced,socrata_syp8-uezg@2026-09-13
-400167,Horizon Science Academy Southwest Chicago Charter,address_exact,41.795384,-87.6826,115.1,51.9,866783,5401 S WESTERN AVE,,0,39993.6,21,sourced,socrata_syp8-uezg@2026-09-13
-400168,Great Lakes Academy Charter School,address_exact,41.742372,-87.559739,36.1,9,644703,8401-8421 S SAGINAW AVE,,0,12894.8,165,sourced,socrata_syp8-uezg@2026-09-13
-400169,Noble - ITW David Speer Academy,address_exact,41.917172,-87.76015,40.8,0,287416,5315-5357 W GRAND AVE,RUBENSTEIN LUMBER CO.,0,123554.5,73,sourced,socrata_syp8-uezg@2026-09-13
-400170,Noble - The Noble Academy,address_exact,41.907426,-87.645505,61,3.7,312910,1443 N OGDEN AVE,,0,22467.1,15,sourced,socrata_syp8-uezg@2026-09-13
+400165,L.E.A.R.N. - Middle School Campus,largest_nearby,41.887894,-87.700926,162.3,127.1,351932,2942-2950 W CARROLL AVE,,,29892,49,sourced,socrata_syp8-uezg@2026-09-13
+400167,Horizon Science Academy Southwest Chicago Charter,address_exact,41.795384,-87.6826,115.1,51.9,866783,5401 S WESTERN AVE,,,39993.6,21,sourced,socrata_syp8-uezg@2026-09-13
+400168,Great Lakes Academy Charter School,address_exact,41.742372,-87.559739,36.1,9,644703,8401-8421 S SAGINAW AVE,,,12894.8,165,sourced,socrata_syp8-uezg@2026-09-13
+400169,Noble - ITW David Speer Academy,address_exact,41.917172,-87.76015,40.8,0,287416,5315-5357 W GRAND AVE,RUBENSTEIN LUMBER CO.,,123554.5,73,sourced,socrata_syp8-uezg@2026-09-13
+400170,Noble - The Noble Academy,address_exact,41.907426,-87.645505,61,3.7,312910,1443 N OGDEN AVE,,,22467.1,15,sourced,socrata_syp8-uezg@2026-09-13
 400173,Pathways in Education- Brighton Park,address_exact,41.808365,-87.702252,36.2,0.8,446774,3110-3124 W 47TH ST,ELSDON,1,14255.1,110,sourced,socrata_syp8-uezg@2026-09-13
 400175,Excel Academy of South Shore,address_exact,41.759587,-87.55679,31,15.3,590698,7530 S SOUTH SHORE DR,ADAM CLAYTON POWELL PUBLIC SCHOOL,3,18840.5,40,sourced,socrata_syp8-uezg@2026-09-13
 400176,Excel Academy Southwest,address_exact,41.764867,-87.690963,13.5,0,575855,7040-7058 S WASHTENAW AVE,,1,14711.8,181,sourced,socrata_syp8-uezg@2026-09-13
-400178,Moving Everest Charter School,address_exact,41.888176,-87.755746,28.4,4.6,876383,402-416 N LARAMIE AVE,,0,25658,88,sourced,socrata_syp8-uezg@2026-09-13
+400178,Moving Everest Charter School,address_exact,41.888176,-87.755746,28.4,4.6,876383,402-416 N LARAMIE AVE,,,25658,88,sourced,socrata_syp8-uezg@2026-09-13
 400179,Noble Mansueto High School,containing,41.807382,-87.696932,68,0,447525,2915 W 47TH ST,,2,62850.5,66,sourced,socrata_syp8-uezg@2026-09-13
-400180,KIPP One Academy,address_exact,41.89387,-87.726618,7.3,0,342890,730 N PULASKI RD,,0,61413.9,31,sourced,socrata_syp8-uezg@2026-09-13
-400181,Art in Motion Charter School,address_exact,41.75972,-87.582793,56.5,0,589768,7415-7431 S EAST END AVE,,0,127511,59,sourced,socrata_syp8-uezg@2026-09-13
-609674,Chicago Vocational Career Academy High School,largest_nearby,41.736803,-87.572275,92.3,59.7,664037,2121 E 87TH ST,,0,6990.4,50,sourced,socrata_syp8-uezg@2026-09-13
+400180,KIPP One Academy,address_exact,41.89387,-87.726618,7.3,0,342890,730 N PULASKI RD,,,61413.9,31,sourced,socrata_syp8-uezg@2026-09-13
+400181,Art in Motion Charter School,address_exact,41.75972,-87.582793,56.5,0,589768,7415-7431 S EAST END AVE,,,127511,59,sourced,socrata_syp8-uezg@2026-09-13
+609674,Chicago Vocational Career Academy High School,largest_nearby,41.736803,-87.572275,92.3,59.7,664037,2121 E 87TH ST,,,6990.4,50,sourced,socrata_syp8-uezg@2026-09-13
 609676,Paul Laurence Dunbar Career Academy High School,largest_nearby,41.840311,-87.616698,78.5,66.2,402557,2951 S DR MARTIN LUTHER KING JR DR,PRAIRIE SHORES 4,21,13851,1,sourced,socrata_syp8-uezg@2026-09-13
 609678,William Jones College Preparatory High School,address_exact,41.872565,-87.627934,59.6,7.5,893134,700 S STATE ST,JONES COLLEGE PREP,7,42089.4,20,sourced,socrata_syp8-uezg@2026-09-13
 609679,Charles Allen Prosser Career Academy High School,largest_nearby,41.920526,-87.759994,101.7,90.6,278082,2200 N LOREL AVE,,2,1978.9,143,sourced,socrata_syp8-uezg@2026-09-13
-609680,Walter Payton College Preparatory High School,address_exact,41.901655,-87.635168,20.1,0,815736,1034 N WELLS ST,,0,55915.5,14,sourced,socrata_syp8-uezg@2026-09-13
-609682,Ellen H Richards Career Academy High School,address_exact,41.802859,-87.662074,17.1,6.5,457237,5009-5015 S LAFLIN ST,,0,12140.4,140,sourced,socrata_syp8-uezg@2026-09-13
+609680,Walter Payton College Preparatory High School,address_exact,41.901655,-87.635168,20.1,0,815736,1034 N WELLS ST,,,55915.5,14,sourced,socrata_syp8-uezg@2026-09-13
+609682,Ellen H Richards Career Academy High School,address_exact,41.802859,-87.662074,17.1,6.5,457237,5009-5015 S LAFLIN ST,,,12140.4,140,sourced,socrata_syp8-uezg@2026-09-13
 609691,North-Grand High School,largest_nearby,41.911098,-87.734561,85.1,58.8,304222,1637 N LOWELL AVE,,1,15687.2,32,sourced,socrata_syp8-uezg@2026-09-13
 609692,Neal F Simeon Career Academy High School,largest_nearby,41.74504,-87.636039,97.6,71.4,636175,8200 S VINCENNES AVE,AUTO TRADE SCHOOL,1,8975.2,49,sourced,socrata_syp8-uezg@2026-09-13
 609693,George Westinghouse College Prep,largest_nearby,41.890519,-87.70815,90.8,57.9,349542,3234-3240 W FRANKLIN BLVD,SACRED HEART HOSPITAL,4,23472.1,29,sourced,socrata_syp8-uezg@2026-09-13
 609694,John Hancock College Preparatory High School,largest_nearby,41.775684,-87.758599,46.4,24.1,547968,5428-5450 W 64TH PL,,1,17692.2,153,sourced,socrata_syp8-uezg@2026-09-13
-609695,Roald Amundsen High School,address_exact,41.974619,-87.680329,85.9,34,78283,5110 N DAMEN AVE,,0,61289.5,45,sourced,socrata_syp8-uezg@2026-09-13
-609698,William J Bogan High School,largest_nearby,41.749808,-87.720842,52.4,32,838201,3904-3920 W 79TH ST,,0,14214,54,sourced,socrata_syp8-uezg@2026-09-13
+609695,Roald Amundsen High School,address_exact,41.974619,-87.680329,85.9,34,78283,5110 N DAMEN AVE,,,61289.5,45,sourced,socrata_syp8-uezg@2026-09-13
+609698,William J Bogan High School,largest_nearby,41.749808,-87.720842,52.4,32,838201,3904-3920 W 79TH ST,,,14214,54,sourced,socrata_syp8-uezg@2026-09-13
 609704,David G Farragut Career Academy High School,address_exact,41.849491,-87.708316,108.4,5.4,390324,2345-2349 S CHRISTIANA AVE,,4,94814.9,160,sourced,socrata_syp8-uezg@2026-09-13
 609705,Christian Fenger Academy High School,largest_nearby,41.690423,-87.636689,90.3,82.7,771728,11202 S PARNELL AVE,,1,3021.6,100,sourced,socrata_syp8-uezg@2026-09-13
-609708,Edwin G. Foreman College and Career Academy,address_exact,41.939181,-87.75356,84.9,11.9,209604,3211-3235 N LECLAIRE AVE,,0,59470,139,sourced,socrata_syp8-uezg@2026-09-13
+609708,Edwin G. Foreman College and Career Academy,address_exact,41.939181,-87.75356,84.9,11.9,209604,3211-3235 N LECLAIRE AVE,,,59470,139,sourced,socrata_syp8-uezg@2026-09-13
 609709,Gage Park High School,address_exact,41.79055,-87.689745,83.5,30.6,492769,5630 S ROCKWELL ST,,3,59987.9,135,sourced,socrata_syp8-uezg@2026-09-13
 609710,John M Harlan Community Academy High School,address_exact,41.718699,-87.621385,73,22.4,705023,9652-9700 S MICHIGAN AVE,,2,117236.6,92,sourced,socrata_syp8-uezg@2026-09-13
-609712,Emil G Hirsch Metropolitan High School,address_exact,41.754439,-87.602001,80.1,8.6,602433,7740 S INGLESIDE AVE,EMIL G HIRSCH HIGH SCHOOL,0,78767.5,68,sourced,socrata_syp8-uezg@2026-09-13
-609713,Hyde Park Academy High School,address_exact,41.782327,-87.587257,53.9,10.1,520403,6220 S STONY ISLAND AVE,,0,116849,5,sourced,socrata_syp8-uezg@2026-09-13
-609715,Thomas Kelly College Preparatory,largest_nearby,41.817636,-87.695307,133.5,3,856225,4057 S ARCHER AVE,,0,84904.6,63,sourced,socrata_syp8-uezg@2026-09-13
+609712,Emil G Hirsch Metropolitan High School,address_exact,41.754439,-87.602001,80.1,8.6,602433,7740 S INGLESIDE AVE,EMIL G HIRSCH HIGH SCHOOL,,78767.5,68,sourced,socrata_syp8-uezg@2026-09-13
+609713,Hyde Park Academy High School,address_exact,41.782327,-87.587257,53.9,10.1,520403,6220 S STONY ISLAND AVE,,,116849,5,sourced,socrata_syp8-uezg@2026-09-13
+609715,Thomas Kelly College Preparatory,largest_nearby,41.817636,-87.695307,133.5,3,856225,4057 S ARCHER AVE,,,84904.6,63,sourced,socrata_syp8-uezg@2026-09-13
 609716,Kelvyn Park High School,address_exact,41.927483,-87.736052,48.5,18.4,255925,4343 W WRIGHTWOOD AVE,,3,65194.6,169,sourced,socrata_syp8-uezg@2026-09-13
-609718,John F Kennedy High School,largest_nearby,41.790746,-87.781385,98.2,81.7,497242,5553-5559 S NARRAGANSETT AVE,E32,0,7323.9,72,sourced,socrata_syp8-uezg@2026-09-13
+609718,John F Kennedy High School,largest_nearby,41.790746,-87.781385,98.2,81.7,497242,5553-5559 S NARRAGANSETT AVE,E32,,7323.9,72,sourced,socrata_syp8-uezg@2026-09-13
 609719,Lake View High School,address_exact,41.955827,-87.668642,120.9,12.7,146655,4015 N ASHLAND AVE,,5,77256.4,78,sourced,socrata_syp8-uezg@2026-09-13
-609720,Albert G Lane Technical High School,largest_nearby,41.945595,-87.690764,118.5,98.3,184366,,,0,30200.7,83,sourced,socrata_syp8-uezg@2026-09-13
+609720,Albert G Lane Technical High School,largest_nearby,41.945595,-87.690764,118.5,98.3,184366,,,,30200.7,83,sourced,socrata_syp8-uezg@2026-09-13
 609722,Manley Career Academy High School,address_exact,41.870469,-87.699091,84.8,7.3,368696,2935 W POLK ST,,4,75458.9,82,sourced,socrata_syp8-uezg@2026-09-13
-609723,John Marshall Metropolitan High School,largest_nearby,41.879944,-87.70817,166.9,147.5,358414,3250-3258 W MONROE ST,FARADAY SCHOOL,0,29662.5,34,sourced,socrata_syp8-uezg@2026-09-13
+609723,John Marshall Metropolitan High School,largest_nearby,41.879944,-87.70817,166.9,147.5,358414,3250-3258 W MONROE ST,FARADAY SCHOOL,,29662.5,34,sourced,socrata_syp8-uezg@2026-09-13
 609724,Stephen T Mather High School,largest_nearby,41.987168,-87.701363,104.8,91.6,48657,5801-5807 N LINCOLN AVE,,1,6735,79,sourced,socrata_syp8-uezg@2026-09-13
 609725,Morgan Park High School,address_exact,41.69232,-87.66522,48.3,2.1,768020,1744 W PRYOR AVE,MORGAN PARK HIGH SCHOOL,3,109175.8,4,sourced,socrata_syp8-uezg@2026-09-13
-609726,Gwendolyn Brooks College Preparatory Academy HS,largest_nearby,41.693891,-87.616989,136,111.3,764607,250 E 111TH ST,,0,13688.1,6,sourced,socrata_syp8-uezg@2026-09-13
+609726,Gwendolyn Brooks College Preparatory Academy HS,largest_nearby,41.693891,-87.616989,136,111.3,764607,250 E 111TH ST,,,13688.1,6,sourced,socrata_syp8-uezg@2026-09-13
 609727,Wendell Phillips Academy High School,largest_nearby,41.823606,-87.6203,51.8,38.7,425150,223-231 E PERSHING RD,,1,8077.2,56,sourced,socrata_syp8-uezg@2026-09-13
-609728,Theodore Roosevelt High School,largest_nearby,41.964885,-87.71594,93.2,83.5,116246,4600-4602 N ST LOUIS AVE,,0,4603.2,129,sourced,socrata_syp8-uezg@2026-09-13
+609728,Theodore Roosevelt High School,largest_nearby,41.964885,-87.71594,93.2,83.5,116246,4600-4602 N ST LOUIS AVE,,,4603.2,129,sourced,socrata_syp8-uezg@2026-09-13
 609729,Carl Schurz High School,largest_nearby,41.946497,-87.736462,72,52,181840,3618-3624 N MILWAUKEE AVE,,2,8957.4,109,sourced,socrata_syp8-uezg@2026-09-13
 609730,Nicholas Senn High School,address_exact,41.989018,-87.666778,29.7,0,43395,5900 N GLENWOOD AVE,SENN HIGH SCHOOL,3,166250.5,28,sourced,socrata_syp8-uezg@2026-09-13
-609732,Charles P Steinmetz College Preparatory HS,address_exact,41.935593,-87.78434,68.5,29.5,226641,3030 N MOBILE AVE,STEINMETZ HIGH SCHOOL,0,99392.9,54,sourced,socrata_syp8-uezg@2026-09-13
+609732,Charles P Steinmetz College Preparatory HS,address_exact,41.935593,-87.78434,68.5,29.5,226641,3030 N MOBILE AVE,STEINMETZ HIGH SCHOOL,,99392.9,54,sourced,socrata_syp8-uezg@2026-09-13
 609733,Roger C Sullivan High School,address_exact,42.002279,-87.668916,50.9,8.1,17149,6631 N BOSWORTH AVE,,3,78069.5,129,sourced,socrata_syp8-uezg@2026-09-13
 609734,William Howard Taft High School,largest_nearby,41.983173,-87.793224,140.9,123.7,59282,5610 N NATOMA AVE,,1,3515.8,28,sourced,socrata_syp8-uezg@2026-09-13
-609735,Edward Tilden Career Community Academy HS,largest_nearby,41.808605,-87.64271,123.4,108.3,445305,645 W 47TH ST,,0,9359.6,148,sourced,socrata_syp8-uezg@2026-09-13
+609735,Edward Tilden Career Community Academy HS,largest_nearby,41.808605,-87.64271,123.4,108.3,445305,645 W 47TH ST,,,9359.6,148,sourced,socrata_syp8-uezg@2026-09-13
 609737,Friedrich W Von Steuben Metropolitan Science HS,address_exact,41.972802,-87.712773,66.2,11,85163,5039 N KIMBALL AVE,,3,63101,91,sourced,socrata_syp8-uezg@2026-09-13
-609738,Lincoln Park High School,address_exact,41.918994,-87.645723,84,11.8,881747,2001-2005 N ORCHARD ST,,0,30022.7,124,sourced,socrata_syp8-uezg@2026-09-13
-609739,George Washington High School,largest_nearby,41.687801,-87.535937,141,110.5,775272,3611 E 114TH ST,,0,30446.7,142,sourced,socrata_syp8-uezg@2026-09-13
+609738,Lincoln Park High School,address_exact,41.918994,-87.645723,84,11.8,881747,2001-2005 N ORCHARD ST,,,30022.7,124,sourced,socrata_syp8-uezg@2026-09-13
+609739,George Washington High School,largest_nearby,41.687801,-87.535937,141,110.5,775272,3611 E 114TH ST,,,30446.7,142,sourced,socrata_syp8-uezg@2026-09-13
 609740,Wells Community Academy High School,address_exact,41.899445,-87.668258,81.4,13.5,330542,936-946 N ASHLAND AVE,,4,59464.8,158,sourced,socrata_syp8-uezg@2026-09-13
-609741,Gurdon S Hubbard High School,largest_nearby,41.780383,-87.71766,33.4,21.4,530927,3741-3755 W 62ND ST,,0,17995.1,181,sourced,socrata_syp8-uezg@2026-09-13
-609744,Northside Learning Center High School,largest_nearby,41.98348,-87.721207,112.8,61.2,57636,3730 W BRYN MAWR AVE,NORTHSIDE CENTER,0,38691.6,7,sourced,socrata_syp8-uezg@2026-09-13
-609745,Southside Occupational Academy High School,address_exact,41.759695,-87.676268,31.9,0,592584,7342 S HOYNE AVE,,0,23694,89,sourced,socrata_syp8-uezg@2026-09-13
+609741,Gurdon S Hubbard High School,largest_nearby,41.780383,-87.71766,33.4,21.4,530927,3741-3755 W 62ND ST,,,17995.1,181,sourced,socrata_syp8-uezg@2026-09-13
+609744,Northside Learning Center High School,largest_nearby,41.98348,-87.721207,112.8,61.2,57636,3730 W BRYN MAWR AVE,NORTHSIDE CENTER,,38691.6,7,sourced,socrata_syp8-uezg@2026-09-13
+609745,Southside Occupational Academy High School,address_exact,41.759695,-87.676268,31.9,0,592584,7342 S HOYNE AVE,,,23694,89,sourced,socrata_syp8-uezg@2026-09-13
 609746,Kenwood Academy High School,largest_nearby,41.803406,-87.589622,77.8,5.5,453997,5014 S LAKE PARK AVE,KENWOOD ACADEMY,3,128131.4,52,sourced,socrata_syp8-uezg@2026-09-13
-609748,Consuella B York Alternative High School,address_exact,41.843166,-87.695928,89.5,59.8,859091,2650-2774 S CALIFORNIA AVE,,0,36445.2,5,sourced,socrata_syp8-uezg@2026-09-13
+609748,Consuella B York Alternative High School,address_exact,41.843166,-87.695928,89.5,59.8,859091,2650-2774 S CALIFORNIA AVE,,,36445.2,5,sourced,socrata_syp8-uezg@2026-09-13
 609749,Northside College Preparatory High School,largest_nearby,41.981463,-87.709087,35.4,18.3,61548,5500-5508 N KEDZIE AVE,,2,10340,68,sourced,socrata_syp8-uezg@2026-09-13
-609750,Simpson Academy HS for Young Women,address_exact,41.864398,-87.668475,20.9,6.7,373286,1321 S PAULINA ST,,0,25479.8,7,sourced,socrata_syp8-uezg@2026-09-13
+609750,Simpson Academy HS for Young Women,address_exact,41.864398,-87.668475,20.9,6.7,373286,1321 S PAULINA ST,,,25479.8,7,sourced,socrata_syp8-uezg@2026-09-13
 609751,Dr. Martin Luther King Jr. College Prep HS,largest_nearby,41.813004,-87.603568,78.7,67.2,436414,4501-4505 S DREXEL BLVD,,3,10835.8,13,sourced,socrata_syp8-uezg@2026-09-13
-609753,Chicago High School for Agricultural Sciences,largest_nearby,41.691581,-87.717259,58.4,45.3,770582,3838 W 111TH ST,,0,10558.2,62,sourced,socrata_syp8-uezg@2026-09-13
+609753,Chicago High School for Agricultural Sciences,largest_nearby,41.691581,-87.717259,58.4,45.3,770582,3838 W 111TH ST,,,10558.2,62,sourced,socrata_syp8-uezg@2026-09-13
 609754,Chicago Military Academy High School,address_exact,41.830325,-87.618964,33,1.7,417715,3517-3533 S GILES AVE,,3,30642,90,sourced,socrata_syp8-uezg@2026-09-13
 609755,Whitney M Young Magnet High School,largest_nearby,41.879188,-87.664711,76.1,51.5,358759,1500-1516 W ADAMS ST,,1,25829.2,62,sourced,socrata_syp8-uezg@2026-09-13
 609756,Marie Sklodowska Curie Metropolitan High School,largest_nearby,41.803525,-87.723037,97.5,72.8,456068,4905-4933 S PULASKI RD,,2,32812.8,19,sourced,socrata_syp8-uezg@2026-09-13
 609759,Roberto Clemente Community Academy High School,address_exact,41.902609,-87.686286,51.5,27.4,323537,1147-1155 N WESTERN AVE,,9,36980.5,82,sourced,socrata_syp8-uezg@2026-09-13
 609760,George Washington Carver Military Academy HS,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-13
 609761,George H Corliss High School,largest_nearby,41.706764,-87.60351,191.2,96.3,731073,821 E 103RD ST,,2,105625,3,sourced,socrata_syp8-uezg@2026-09-13
-609762,Percy L Julian High School,address_exact,41.705336,-87.654609,92.2,48.6,734910,10330 S ELIZABETH ST,PERCY L. JULLIAN HIGH SCHOOL,0,45739.7,27,sourced,socrata_syp8-uezg@2026-09-13
-609764,Benito Juarez Community Academy High School,containing,41.852871,-87.664536,27.6,0,385225,2150 S LAFLIN ST,,0,49246.1,9,sourced,socrata_syp8-uezg@2026-09-13
-609766,Jacqueline B Vaughn Occupational High School,address_exact,41.960256,-87.764362,27.7,3.1,132968,4349-4355 N LINDER AVE,,0,16695.5,177,sourced,socrata_syp8-uezg@2026-09-13
+609762,Percy L Julian High School,address_exact,41.705336,-87.654609,92.2,48.6,734910,10330 S ELIZABETH ST,PERCY L. JULLIAN HIGH SCHOOL,,45739.7,27,sourced,socrata_syp8-uezg@2026-09-13
+609764,Benito Juarez Community Academy High School,containing,41.852871,-87.664536,27.6,0,385225,2150 S LAFLIN ST,,,49246.1,9,sourced,socrata_syp8-uezg@2026-09-13
+609766,Jacqueline B Vaughn Occupational High School,address_exact,41.960256,-87.764362,27.7,3.1,132968,4349-4355 N LINDER AVE,,,16695.5,177,sourced,socrata_syp8-uezg@2026-09-13
 609769,Ray Graham Training Center High School,address_exact,41.84956,-87.624898,37,9.4,389772,2347 S WABASH AVE,,1,19897.2,20,sourced,socrata_syp8-uezg@2026-09-13
-609772,Jane Addams Elementary School,address_exact,41.698716,-87.533406,35.9,23.6,751136,10810 S AVENUE H,,0,18502.1,191,sourced,socrata_syp8-uezg@2026-09-13
-609773,Harriet Tubman Elementary School,address_exact,41.93397,-87.655824,37.8,9.5,232359,2851 N SEMINARY AVE,,0,27867.6,233,sourced,socrata_syp8-uezg@2026-09-13
-609774,Louisa May Alcott College Preparatory ES,address_exact,41.929506,-87.64601,50.8,17.1,247361,2625-2629 N ORCHARD ST,,0,25694,158,sourced,socrata_syp8-uezg@2026-09-13
+609772,Jane Addams Elementary School,address_exact,41.698716,-87.533406,35.9,23.6,751136,10810 S AVENUE H,,,18502.1,191,sourced,socrata_syp8-uezg@2026-09-13
+609773,Harriet Tubman Elementary School,address_exact,41.93397,-87.655824,37.8,9.5,232359,2851 N SEMINARY AVE,,,27867.6,233,sourced,socrata_syp8-uezg@2026-09-13
+609774,Louisa May Alcott College Preparatory ES,address_exact,41.929506,-87.64601,50.8,17.1,247361,2625-2629 N ORCHARD ST,,,25694,158,sourced,socrata_syp8-uezg@2026-09-13
 609777,Phillip D Armour Elementary School,address_exact,41.834092,-87.650239,43.4,29,413518,928-950 W 33RD PL,PHILIP D ARMOUR PUBLIC ELEMENTARY SCHOOL,3,10124.8,186,sourced,socrata_syp8-uezg@2026-09-13
-609779,George Armstrong International Studies ES,address_exact,42.010612,-87.684657,54.3,18.2,8467,2110 W GREENLEAF AVE,ARMSTRONG G SCHOOL,0,36240.4,103,sourced,socrata_syp8-uezg@2026-09-13
-609780,Military Leadership Academy,address_exact,41.916382,-87.722759,92.3,25.3,289729,1920 N HAMLIN AVE,,0,45744.6,81,sourced,socrata_syp8-uezg@2026-09-13
+609779,George Armstrong International Studies ES,address_exact,42.010612,-87.684657,54.3,18.2,8467,2110 W GREENLEAF AVE,ARMSTRONG G SCHOOL,,36240.4,103,sourced,socrata_syp8-uezg@2026-09-13
+609780,Military Leadership Academy,address_exact,41.916382,-87.722759,92.3,25.3,289729,1920 N HAMLIN AVE,,,45744.6,81,sourced,socrata_syp8-uezg@2026-09-13
 609782,John J Audubon Elementary School,address_exact,41.945412,-87.681387,48.4,23,184918,3500 N HOYNE AVE,,3,21074.5,282,sourced,socrata_syp8-uezg@2026-09-13
-609783,Nancy B Jefferson Alternative High School,largest_nearby,41.868732,-87.680749,103.7,77.8,859345,1815 W OGDEN AVE,,0,4947.9,3,sourced,socrata_syp8-uezg@2026-09-13
-609786,Avalon Park Elementary School,address_exact,41.748197,-87.591259,33.3,13.5,620242,8045 S KENWOOD AVE,,0,34699.2,166,sourced,socrata_syp8-uezg@2026-09-13
+609783,Nancy B Jefferson Alternative High School,largest_nearby,41.868732,-87.680749,103.7,77.8,859345,1815 W OGDEN AVE,,,4947.9,3,sourced,socrata_syp8-uezg@2026-09-13
+609786,Avalon Park Elementary School,address_exact,41.748197,-87.591259,33.3,13.5,620242,8045 S KENWOOD AVE,,,34699.2,166,sourced,socrata_syp8-uezg@2026-09-13
 609788,Alice L Barnard Computer Math & Science Ctr ES,address_exact,41.705563,-87.658552,62.3,27.8,734783,10354 S CHARLES ST,,3,19228.8,28,sourced,socrata_syp8-uezg@2026-09-13
-609789,John Barry Elementary School,address_exact,41.932713,-87.739677,32.9,11.7,238437,2828 N KILBOURN AVE,,0,27439.6,125,sourced,socrata_syp8-uezg@2026-09-13
-609790,Clara Barton Elementary School,address_exact,41.754664,-87.671344,62.7,16.6,868501,7630-7652 S WOLCOTT AVE,,0,24791.4,196,sourced,socrata_syp8-uezg@2026-09-13
-609791,Perkins Bass Elementary School,address_exact,41.774511,-87.653538,29.5,3.1,865656,1140 W 66TH ST,,0,15309.1,81,sourced,socrata_syp8-uezg@2026-09-13
-609792,Newton Bateman Elementary School,address_exact,41.958302,-87.702492,29.7,7.1,138481,4214-4220 N RICHMOND ST,,0,32548.9,193,sourced,socrata_syp8-uezg@2026-09-13
-609793,Lillian R. Nicholson STEM Academy,address_exact,41.784062,-87.647707,100,4.3,513955,6000-6022 S PEORIA ST,NICHOLSON SPECIALTY SCHOOL,0,40414.2,95,sourced,socrata_syp8-uezg@2026-09-13
-609794,Thomas A Edison Regional Gifted Center ES,address_exact,41.971382,-87.709398,15.8,0,834580,4929 N SAWYER AVE,,0,42974.6,94,sourced,socrata_syp8-uezg@2026-09-13
-609795,George Rogers Clark Elementary School,address_exact,41.867797,-87.770197,18.4,6.4,855376,1041-1053 S MONITOR AVE,,0,9645.2,169,sourced,socrata_syp8-uezg@2026-09-13
-609796,Jean Baptiste Beaubien Elementary School,address_exact,41.972124,-87.756951,59,33.3,91311,5025 N LARAMIE AVE,,0,29430.9,148,sourced,socrata_syp8-uezg@2026-09-13
-609797,Jacob Beidler Elementary School,largest_nearby,41.884265,-87.706206,120.8,99.7,354740,3200 W LAKE ST,CTA STATION,0,10873,80,sourced,socrata_syp8-uezg@2026-09-13
-609798,Hiram H Belding Elementary School,address_exact,41.958622,-87.733637,47.4,16.6,138222,4235-4257 N TRIPP AVE,,0,22725.1,125,sourced,socrata_syp8-uezg@2026-09-13
+609789,John Barry Elementary School,address_exact,41.932713,-87.739677,32.9,11.7,238437,2828 N KILBOURN AVE,,,27439.6,125,sourced,socrata_syp8-uezg@2026-09-13
+609790,Clara Barton Elementary School,address_exact,41.754664,-87.671344,62.7,16.6,868501,7630-7652 S WOLCOTT AVE,,,24791.4,196,sourced,socrata_syp8-uezg@2026-09-13
+609791,Perkins Bass Elementary School,address_exact,41.774511,-87.653538,29.5,3.1,865656,1140 W 66TH ST,,,15309.1,81,sourced,socrata_syp8-uezg@2026-09-13
+609792,Newton Bateman Elementary School,address_exact,41.958302,-87.702492,29.7,7.1,138481,4214-4220 N RICHMOND ST,,,32548.9,193,sourced,socrata_syp8-uezg@2026-09-13
+609793,Lillian R. Nicholson STEM Academy,address_exact,41.784062,-87.647707,100,4.3,513955,6000-6022 S PEORIA ST,NICHOLSON SPECIALTY SCHOOL,,40414.2,95,sourced,socrata_syp8-uezg@2026-09-13
+609794,Thomas A Edison Regional Gifted Center ES,address_exact,41.971382,-87.709398,15.8,0,834580,4929 N SAWYER AVE,,,42974.6,94,sourced,socrata_syp8-uezg@2026-09-13
+609795,George Rogers Clark Elementary School,address_exact,41.867797,-87.770197,18.4,6.4,855376,1041-1053 S MONITOR AVE,,,9645.2,169,sourced,socrata_syp8-uezg@2026-09-13
+609796,Jean Baptiste Beaubien Elementary School,address_exact,41.972124,-87.756951,59,33.3,91311,5025 N LARAMIE AVE,,,29430.9,148,sourced,socrata_syp8-uezg@2026-09-13
+609797,Jacob Beidler Elementary School,largest_nearby,41.884265,-87.706206,120.8,99.7,354740,3200 W LAKE ST,CTA STATION,,10873,80,sourced,socrata_syp8-uezg@2026-09-13
+609798,Hiram H Belding Elementary School,address_exact,41.958622,-87.733637,47.4,16.6,138222,4235-4257 N TRIPP AVE,,,22725.1,125,sourced,socrata_syp8-uezg@2026-09-13
 609799,Alexander Graham Bell Elementary School,address_exact,41.949494,-87.686687,55.6,16.3,166768,3730 N OAKLEY AVE,,3,36145.6,186,sourced,socrata_syp8-uezg@2026-09-13
 609800,Frank I Bennett Elementary School,address_exact,41.710152,-87.61698,46.4,21.3,722959,10115 S PRAIRIE AVE,,1,26465,176,sourced,socrata_syp8-uezg@2026-09-13
-609803,James G Blaine Elementary School,address_exact,41.950964,-87.6651,23.1,2.6,159309,1420-1430 W GRACE ST,,0,37995.2,177,sourced,socrata_syp8-uezg@2026-09-13
+609803,James G Blaine Elementary School,address_exact,41.950964,-87.6651,23.1,2.6,159309,1420-1430 W GRACE ST,,,37995.2,177,sourced,socrata_syp8-uezg@2026-09-13
 609804,Mosaic School of Fine Arts,address_exact,42.003841,-87.697887,59.2,16.2,16526,6710 N WASHTENAW AVE,,2,40963,156,sourced,socrata_syp8-uezg@2026-09-13
-609805,Scott Joplin Elementary School,address_exact,41.749739,-87.669048,51.7,6.9,618774,7921-7939 S HONORE ST,SCOTT JOPLIN HIGH SCHOOL,0,20090.6,124,sourced,socrata_syp8-uezg@2026-09-13
-609806,Myra Bradwell Communications Arts & Sciences ES,address_exact,41.754197,-87.557759,54.6,8.3,861998,7720-7746 S BURNHAM AVE,,0,36625.6,90,sourced,socrata_syp8-uezg@2026-09-13
-609807,Lionel Hampton Fine & Performing Arts ES,address_exact,41.753766,-87.708445,41.8,19.9,815735,3434-3440 W 77TH ST,,0,39543.8,163,sourced,socrata_syp8-uezg@2026-09-13
-609808,Alex Haley Elementary Academy,address_exact,41.686796,-87.633354,27.6,12.1,778741,11411 S EGGLESTON AVE,,0,23700.5,132,sourced,socrata_syp8-uezg@2026-09-13
+609805,Scott Joplin Elementary School,address_exact,41.749739,-87.669048,51.7,6.9,618774,7921-7939 S HONORE ST,SCOTT JOPLIN HIGH SCHOOL,,20090.6,124,sourced,socrata_syp8-uezg@2026-09-13
+609806,Myra Bradwell Communications Arts & Sciences ES,address_exact,41.754197,-87.557759,54.6,8.3,861998,7720-7746 S BURNHAM AVE,,,36625.6,90,sourced,socrata_syp8-uezg@2026-09-13
+609807,Lionel Hampton Fine & Performing Arts ES,address_exact,41.753766,-87.708445,41.8,19.9,815735,3434-3440 W 77TH ST,,,39543.8,163,sourced,socrata_syp8-uezg@2026-09-13
+609808,Alex Haley Elementary Academy,address_exact,41.686796,-87.633354,27.6,12.1,778741,11411 S EGGLESTON AVE,,,23700.5,132,sourced,socrata_syp8-uezg@2026-09-13
 609809,Lorenz Brentano Math & Science Academy ES,address_exact,41.93086,-87.69602,25.6,4.4,243932,2723 N FAIRFIELD AVE,,3,34990.2,87,sourced,socrata_syp8-uezg@2026-09-13
-609810,Norman A Bridge Elementary School,address_exact,41.950046,-87.798935,105.8,10.7,168348,3800 N NEW ENGLAND AVE,,0,30158.2,224,sourced,socrata_syp8-uezg@2026-09-13
-609811,Orville T Bright Elementary School,address_exact,41.699859,-87.562332,25.3,1.7,748163,10740 S CALHOUN AVE,,0,30881.9,137,sourced,socrata_syp8-uezg@2026-09-13
-609812,William H Brown STEM Magnet Elementary School,address_exact,41.882609,-87.671512,81.2,2.8,355861,54 N HERMITAGE AVE,,0,31107.6,16,sourced,socrata_syp8-uezg@2026-09-13
+609810,Norman A Bridge Elementary School,address_exact,41.950046,-87.798935,105.8,10.7,168348,3800 N NEW ENGLAND AVE,,,30158.2,224,sourced,socrata_syp8-uezg@2026-09-13
+609811,Orville T Bright Elementary School,address_exact,41.699859,-87.562332,25.3,1.7,748163,10740 S CALHOUN AVE,,,30881.9,137,sourced,socrata_syp8-uezg@2026-09-13
+609812,William H Brown STEM Magnet Elementary School,address_exact,41.882609,-87.671512,81.2,2.8,355861,54 N HERMITAGE AVE,,,31107.6,16,sourced,socrata_syp8-uezg@2026-09-13
 609813,Charles S Brownell Elementary School,address_exact,41.771585,-87.621412,28,13,558712,6741 S MICHIGAN AVE,,2,22155.9,136,sourced,socrata_syp8-uezg@2026-09-13
 609815,Edward A Bouchet Math & Science Academy ES,address_exact,41.761177,-87.575737,46.2,16.9,584997,7355 S JEFFERY BLVD,,3,30854.5,104,sourced,socrata_syp8-uezg@2026-09-13
-609817,Lyman A Budlong Elementary School,address_exact,41.975518,-87.697232,61.9,36.4,861967,2701-2711 W FOSTER AVE,,0,9730.9,88,sourced,socrata_syp8-uezg@2026-09-13
-609818,Luther Burbank Elementary School,address_exact,41.917412,-87.782115,52.7,24.4,287480,2035 N MOBILE AVE,,0,62839.1,49,sourced,socrata_syp8-uezg@2026-09-13
+609817,Lyman A Budlong Elementary School,address_exact,41.975518,-87.697232,61.9,36.4,861967,2701-2711 W FOSTER AVE,,,9730.9,88,sourced,socrata_syp8-uezg@2026-09-13
+609818,Luther Burbank Elementary School,address_exact,41.917412,-87.782115,52.7,24.4,287480,2035 N MOBILE AVE,,,62839.1,49,sourced,socrata_syp8-uezg@2026-09-13
 609819,Edmond Burke Elementary School,largest_nearby,41.797281,-87.616623,70.3,5.7,471688,5336-5356 S DR MARTIN LUTHER KING JR DR,,3,30171.2,20,sourced,socrata_syp8-uezg@2026-09-13
 609820,Augustus H Burley Elementary School,address_exact,41.938127,-87.669868,21.2,5.1,215831,1630 W BARRY AVE,,3,18459.2,152,sourced,socrata_syp8-uezg@2026-09-13
 609821,Burnham Elementary Inclusive Academy,address_exact,41.714808,-87.567466,53.1,16.2,713409,9928 S CRANDON AVE,,2,36582.4,90,sourced,socrata_syp8-uezg@2026-09-13
-609827,Burnside Elementary Scholastic Academy,address_exact,41.728703,-87.607433,24.7,4.6,684440,650 E 91ST PL,,0,42576.2,168,sourced,socrata_syp8-uezg@2026-09-13
+609827,Burnside Elementary Scholastic Academy,address_exact,41.728703,-87.607433,24.7,4.6,684440,650 E 91ST PL,,,42576.2,168,sourced,socrata_syp8-uezg@2026-09-13
 609828,Jonathan Burr Elementary School,largest_nearby,41.912081,-87.668587,31.4,8.4,299431,1639 N MARSHFIELD AVE,,3,25870.1,133,sourced,socrata_syp8-uezg@2026-09-13
 609829,John C Burroughs Elementary School,address_exact,41.828823,-87.692705,21.2,2.1,419775,3542 S WASHTENAW AVE,,4,15706.6,218,sourced,socrata_syp8-uezg@2026-09-13
-609830,Milton Brunson Elementary School,address_exact,41.898128,-87.765895,56.9,10.4,815740,932 N CENTRAL AVE,,0,39962.9,159,sourced,socrata_syp8-uezg@2026-09-13
-609832,Michael M Byrne Elementary School,address_exact,41.794608,-87.791199,55,16.2,482545,5329 S OAK PARK AVE,,0,21663,153,sourced,socrata_syp8-uezg@2026-09-13
-609833,Daisy Bates Academy of Social Justice,address_exact,41.739403,-87.581051,33.3,16.5,656111,8546 S CREGIER AVE,,0,21598.9,169,sourced,socrata_syp8-uezg@2026-09-13
+609830,Milton Brunson Elementary School,address_exact,41.898128,-87.765895,56.9,10.4,815740,932 N CENTRAL AVE,,,39962.9,159,sourced,socrata_syp8-uezg@2026-09-13
+609832,Michael M Byrne Elementary School,address_exact,41.794608,-87.791199,55,16.2,482545,5329 S OAK PARK AVE,,,21663,153,sourced,socrata_syp8-uezg@2026-09-13
+609833,Daisy Bates Academy of Social Justice,address_exact,41.739403,-87.581051,33.3,16.5,656111,8546 S CREGIER AVE,,,21598.9,169,sourced,socrata_syp8-uezg@2026-09-13
 609834,Little Village Elementary School,address_exact,41.842826,-87.717522,98.3,34,399010,2620 S LAWNDALE AVE,,3,26281.9,179,sourced,socrata_syp8-uezg@2026-09-13
-609835,Daniel R Cameron Elementary School,address_exact,41.904235,-87.718199,54.1,2.2,320849,1234-1256 N MONTICELLO AVE,CAMERON PUBLIC SCHOOL,0,37570.2,99,sourced,socrata_syp8-uezg@2026-09-13
+609835,Daniel R Cameron Elementary School,address_exact,41.904235,-87.718199,54.1,2.2,320849,1234-1256 N MONTICELLO AVE,CAMERON PUBLIC SCHOOL,,37570.2,99,sourced,socrata_syp8-uezg@2026-09-13
 609836,Arthur E Canty Elementary School,address_exact,41.947625,-87.829733,55.8,26.5,176914,3740-3750 N PANAMA AVE,,2,27762.1,178,sourced,socrata_syp8-uezg@2026-09-13
-609837,Andrew Carnegie Elementary School,address_exact,41.783614,-87.591015,32.9,7.7,878466,1414 E 61ST PL,CARNEGIE SCHOOL,0,25289.1,40,sourced,socrata_syp8-uezg@2026-09-13
+609837,Andrew Carnegie Elementary School,address_exact,41.783614,-87.591015,32.9,7.7,878466,1414 E 61ST PL,CARNEGIE SCHOOL,,25289.1,40,sourced,socrata_syp8-uezg@2026-09-13
 609839,Carroll-Rosenwald Specialty Elementary School,address_exact,41.742099,-87.696916,88.4,48.3,649100,2929 W 83RD ST,,1,22220.5,155,sourced,socrata_syp8-uezg@2026-09-13
 609842,Rachel Carson Elementary School,address_exact,41.793291,-87.688362,46.8,16.1,486269,5516 S MAPLEWOOD AVE,CARSON SCHOOL,3,30720.4,92,sourced,socrata_syp8-uezg@2026-09-13
-609844,William W Carter Elementary School,address_exact,41.789631,-87.623264,70.9,30.3,496556,5740 S MICHIGAN AVE,CARVER SCHOOL,0,44007.6,77,sourced,socrata_syp8-uezg@2026-09-13
+609844,William W Carter Elementary School,address_exact,41.789631,-87.623264,70.9,30.3,496556,5740 S MICHIGAN AVE,CARVER SCHOOL,,44007.6,77,sourced,socrata_syp8-uezg@2026-09-13
 609845,George Washington Carver Primary School,largest_nearby,41.651559,-87.598896,120.5,102.3,810131,933 E 134TH ST,CHURCH,1,3012.5,2,sourced,socrata_syp8-uezg@2026-09-13
 609848,Ira F Aldridge Elementary School,address_exact,41.657706,-87.607131,64.2,18,806159,630 E 131ST ST,,2,38562.8,30,sourced,socrata_syp8-uezg@2026-09-13
 609849,George F Cassell Elementary School,address_exact,41.687312,-87.704045,69.2,19.8,777513,11300-11314 S SPAULDING AVE,,1,37684.6,136,sourced,socrata_syp8-uezg@2026-09-13
-609850,Horace Greeley Elementary School,address_exact,41.953321,-87.650811,58.5,8,153734,832 W SHERIDAN RD,,0,29396.9,80,sourced,socrata_syp8-uezg@2026-09-13
+609850,Horace Greeley Elementary School,address_exact,41.953321,-87.650811,58.5,8,153734,832 W SHERIDAN RD,,,29396.9,80,sourced,socrata_syp8-uezg@2026-09-13
 609851,Thomas Chalmers STEAM Elementary School,address_exact,41.866124,-87.695496,39.8,8.6,372282,2745 W ROOSEVELT RD,,2,32871.1,29,sourced,socrata_syp8-uezg@2026-09-13
-609852,Eliza Chappell Elementary School,address_exact,41.975336,-87.683231,62,15,78100,2135 W FOSTER AVE,CHAPPELL SCHOOL,0,43341.4,104,sourced,socrata_syp8-uezg@2026-09-13
-609853,Salmon P Chase Elementary School,address_exact,41.918477,-87.694602,53.8,6.6,283282,2021 N POINT ST,,0,31713.9,168,sourced,socrata_syp8-uezg@2026-09-13
-609854,Frederic Chopin Elementary School,address_exact,41.897102,-87.688541,54.3,11.9,336650,2448-2450 W RICE ST,,0,35729.6,135,sourced,socrata_syp8-uezg@2026-09-13
-609855,Walter S Christopher Elementary School,address_exact,41.801833,-87.686097,45.1,4.6,864249,5042 S ARTESIAN AVE,,0,67666.9,144,sourced,socrata_syp8-uezg@2026-09-13
+609852,Eliza Chappell Elementary School,address_exact,41.975336,-87.683231,62,15,78100,2135 W FOSTER AVE,CHAPPELL SCHOOL,,43341.4,104,sourced,socrata_syp8-uezg@2026-09-13
+609853,Salmon P Chase Elementary School,address_exact,41.918477,-87.694602,53.8,6.6,283282,2021 N POINT ST,,,31713.9,168,sourced,socrata_syp8-uezg@2026-09-13
+609854,Frederic Chopin Elementary School,address_exact,41.897102,-87.688541,54.3,11.9,336650,2448-2450 W RICE ST,,,35729.6,135,sourced,socrata_syp8-uezg@2026-09-13
+609855,Walter S Christopher Elementary School,address_exact,41.801833,-87.686097,45.1,4.6,864249,5042 S ARTESIAN AVE,,,67666.9,144,sourced,socrata_syp8-uezg@2026-09-13
 609856,Henry Clay Elementary School,address_exact,41.654587,-87.544058,46.4,14.9,807737,13231 S BURLEY AVE,,3,36906.6,163,sourced,socrata_syp8-uezg@2026-09-13
-609857,Grover Cleveland Elementary School,address_exact,41.951612,-87.706332,48.7,8.4,159013,3121 W BYRON ST,CLEVELAND PUBLIC SCHOOL,0,24628.9,201,sourced,socrata_syp8-uezg@2026-09-13
-609859,DeWitt Clinton Elementary School,address_exact,41.992441,-87.69866,27.2,12.1,34558,6110 N FAIRFIELD AVE,,0,53068.6,135,sourced,socrata_syp8-uezg@2026-09-13
+609857,Grover Cleveland Elementary School,address_exact,41.951612,-87.706332,48.7,8.4,159013,3121 W BYRON ST,CLEVELAND PUBLIC SCHOOL,,24628.9,201,sourced,socrata_syp8-uezg@2026-09-13
+609859,DeWitt Clinton Elementary School,address_exact,41.992441,-87.69866,27.2,12.1,34558,6110 N FAIRFIELD AVE,,,53068.6,135,sourced,socrata_syp8-uezg@2026-09-13
 609861,Henry R Clissold Elementary School,largest_nearby,41.693266,-87.67951,118.5,96.9,766068,2350 W 110TH PL,HENRY CLISSOLD SCHOOL,2,25037.4,59,sourced,socrata_syp8-uezg@2026-09-13
-609862,Edward Coles Elementary Language Academy,address_exact,41.741473,-87.565663,26.4,17.5,648804,8441 S YATES BLVD,,0,2624.5,175,sourced,socrata_syp8-uezg@2026-09-13
-609863,Ruth Bader Ginsburg Elementary School,address_exact,41.899738,-87.681497,41.3,17.5,329966,1003 N LEAVITT ST,,0,21005,210,sourced,socrata_syp8-uezg@2026-09-13
-609864,John W Cook Elementary School,largest_nearby,41.745072,-87.661387,135.3,105.9,636784,8156-8158 S LAFLIN ST,,0,5670.2,169,sourced,socrata_syp8-uezg@2026-09-13
+609862,Edward Coles Elementary Language Academy,address_exact,41.741473,-87.565663,26.4,17.5,648804,8441 S YATES BLVD,,,2624.5,175,sourced,socrata_syp8-uezg@2026-09-13
+609863,Ruth Bader Ginsburg Elementary School,address_exact,41.899738,-87.681497,41.3,17.5,329966,1003 N LEAVITT ST,,,21005,210,sourced,socrata_syp8-uezg@2026-09-13
+609864,John W Cook Elementary School,largest_nearby,41.745072,-87.661387,135.3,105.9,636784,8156-8158 S LAFLIN ST,,,5670.2,169,sourced,socrata_syp8-uezg@2026-09-13
 609865,Jordan Elementary Community School,address_exact,42.017109,-87.678022,21.6,5.5,1772,7414 N WOLCOTT AVE,,2,29032.5,57,sourced,socrata_syp8-uezg@2026-09-13
 609866,John C Coonley Elementary School,address_exact,41.955531,-87.684023,21.6,3.9,147813,4046 N LEAVITT ST,,1,26099.8,265,sourced,socrata_syp8-uezg@2026-09-13
-609867,Peter Cooper Elementary Dual Language Academy,address_exact,41.856217,-87.667151,21.6,8,380486,1624 W 19TH ST,,0,12623.8,148,sourced,socrata_syp8-uezg@2026-09-13
+609867,Peter Cooper Elementary Dual Language Academy,address_exact,41.856217,-87.667151,21.6,8,380486,1624 W 19TH ST,,,12623.8,148,sourced,socrata_syp8-uezg@2026-09-13
 609869,Anna R. Langford Community Academy,address_exact,41.784378,-87.657389,38.3,4.3,515018,6010 S THROOP ST,,3,20021,150,sourced,socrata_syp8-uezg@2026-09-13
 609870,Daniel J Corkery Elementary School,address_exact,41.845482,-87.732288,91.9,40.5,395796,2510 S KILDARE AVE,,4,27032.8,117,sourced,socrata_syp8-uezg@2026-09-13
 609871,Barbara Vick Early Childhood & Family Center,address_exact,41.688721,-87.685709,58.9,18.2,775583,2554 W 113TH ST,,1,12467.9,120,sourced,socrata_syp8-uezg@2026-09-13
@@ -243,217 +243,217 @@ sid,name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bl
 609873,Crown Community Academy of Fine Arts Center ES,largest_nearby,41.852817,-87.712798,32.1,10.8,385882,2128 S ST LOUIS AVE,,2,38571.4,117,sourced,socrata_syp8-uezg@2026-09-13
 609874,Everett McKinley Dirksen Elementary School,address_exact,41.97339,-87.841615,59.7,37.2,88178,8601-8609 W FOSTER AVE,DIRKSEN PUBLIC SCHOOL,1,42354,76,sourced,socrata_syp8-uezg@2026-09-13
 609875,Charles R Darwin Elementary School,address_exact,41.923523,-87.705365,22.6,3.1,267352,3116 W BELDEN AVE,Darwin Public School,3,32565.2,157,sourced,socrata_syp8-uezg@2026-09-13
-609876,Nathan S Davis Elementary School,address_exact,41.822172,-87.700248,35.8,22.8,426876,3014 W 39TH PL,,0,25654.4,220,sourced,socrata_syp8-uezg@2026-09-13
-609879,Charles Gates Dawes Elementary School,largest_nearby,41.745334,-87.717339,28.5,17,635812,8101 S SPRINGFIELD AVE,,0,30661.6,187,sourced,socrata_syp8-uezg@2026-09-13
+609876,Nathan S Davis Elementary School,address_exact,41.822172,-87.700248,35.8,22.8,426876,3014 W 39TH PL,,,25654.4,220,sourced,socrata_syp8-uezg@2026-09-13
+609879,Charles Gates Dawes Elementary School,largest_nearby,41.745334,-87.717339,28.5,17,635812,8101 S SPRINGFIELD AVE,,,30661.6,187,sourced,socrata_syp8-uezg@2026-09-13
 609880,Stephen Decatur Classical Elementary School,address_exact,42.009889,-87.704844,69.2,2.4,9729,7030 N SACRAMENTO AVE,,1,24155.6,93,sourced,socrata_syp8-uezg@2026-09-13
 609883,Charles S Deneen Elementary School,address_exact,41.762599,-87.623688,30.9,18,582122,7240 S WABASH AVE,,2,27946.1,97,sourced,socrata_syp8-uezg@2026-09-13
 609884,William E Dever Elementary School,address_exact,41.942555,-87.813568,36.1,23.9,199210,3436 N OSCEOLA AVE,,3,18713,140,sourced,socrata_syp8-uezg@2026-09-13
 609885,Dewey Elementary Academy of Fine Arts,address_exact,41.795929,-87.642302,42.8,20,477490,5403-5415 S UNION AVE,,3,20142.2,103,sourced,socrata_syp8-uezg@2026-09-13
-609887,Arthur Dixon Elementary School,largest_nearby,41.743322,-87.610498,57.9,26.4,641822,8306-8310 S ST LAWRENCE AVE,,0,30746.5,120,sourced,socrata_syp8-uezg@2026-09-13
+609887,Arthur Dixon Elementary School,largest_nearby,41.743322,-87.610498,57.9,26.4,641822,8306-8310 S ST LAWRENCE AVE,,,30746.5,120,sourced,socrata_syp8-uezg@2026-09-13
 609891,James R Doolittle Jr Elementary School,address_exact,41.830595,-87.612492,61.2,19.1,417440,535 E 35TH ST,,3,32413.9,7,sourced,socrata_syp8-uezg@2026-09-13
 609893,John C Dore Elementary School,largest_nearby,41.774785,-87.800513,137.4,128.3,552980,6425 S HARLEM AVE,,1,1720.5,73,sourced,socrata_syp8-uezg@2026-09-13
 609894,John B Drake Elementary School,address_exact,41.843137,-87.628647,101,4.3,397367,2710 S DEARBORN ST,,3,42535.6,7,sourced,socrata_syp8-uezg@2026-09-13
-609895,Turner-Drew Elementary Language Academy,address_exact,41.725725,-87.630498,30.6,16.3,691695,9300 S PRINCETON AVE,,0,21999.1,31,sourced,socrata_syp8-uezg@2026-09-13
+609895,Turner-Drew Elementary Language Academy,address_exact,41.725725,-87.630498,30.6,16.3,691695,9300 S PRINCETON AVE,,,21999.1,31,sourced,socrata_syp8-uezg@2026-09-13
 609896,Thomas Drummond Elementary School,address_exact,41.915745,-87.674509,18.8,1.8,290712,1845 W CORTLAND ST,,3,14721.2,273,sourced,socrata_syp8-uezg@2026-09-13
 609897,Charles W Earle Elementary School,address_exact,41.781684,-87.675681,52.2,9.5,525162,2040 W 62ND ST,,2,35508.6,93,sourced,socrata_syp8-uezg@2026-09-13
-609898,John F Eberhart Elementary School,address_exact,41.77474,-87.708474,56,23.8,550548,3400 W 65TH PL,,0,24853.9,170,sourced,socrata_syp8-uezg@2026-09-13
+609898,John F Eberhart Elementary School,address_exact,41.77474,-87.708474,56,23.8,550548,3400 W 65TH PL,,,24853.9,170,sourced,socrata_syp8-uezg@2026-09-13
 609899,Christian Ebinger Elementary School,address_exact,42.004613,-87.811362,27.8,14.5,16523,7350 W PRATT AVE,,2,26473.2,160,sourced,socrata_syp8-uezg@2026-09-13
 609900,George W Curtis Elementary School,address_exact,41.685642,-87.621693,25.1,8.2,780690,32 E 115TH ST,,3,18801.1,40,sourced,socrata_syp8-uezg@2026-09-13
 609901,Edgebrook Elementary School,address_exact,41.999379,-87.761042,66.4,23.2,22949,6525 N HIAWATHA AVE,,2,14969,91,sourced,socrata_syp8-uezg@2026-09-13
-609902,Ralph H Metcalfe Elementary Community Academy,address_exact,41.669616,-87.634041,29.2,8.3,798793,12339-12371 S NORMAL AVE,METCALFE SCHOOL,0,35681.5,107,sourced,socrata_syp8-uezg@2026-09-13
-609903,Richard Edwards Elementary School,address_exact,41.805743,-87.725635,28.9,9.9,452320,4815 S KARLOV AVE,,0,34463.2,197,sourced,socrata_syp8-uezg@2026-09-13
-609904,Edward K Ellington Elementary School,containing,41.885326,-87.766283,34,0,859889,224 N CENTRAL AVE,,0,55354.5,62,sourced,socrata_syp8-uezg@2026-09-13
+609902,Ralph H Metcalfe Elementary Community Academy,address_exact,41.669616,-87.634041,29.2,8.3,798793,12339-12371 S NORMAL AVE,METCALFE SCHOOL,,35681.5,107,sourced,socrata_syp8-uezg@2026-09-13
+609903,Richard Edwards Elementary School,address_exact,41.805743,-87.725635,28.9,9.9,452320,4815 S KARLOV AVE,,,34463.2,197,sourced,socrata_syp8-uezg@2026-09-13
+609904,Edward K Ellington Elementary School,containing,41.885326,-87.766283,34,0,859889,224 N CENTRAL AVE,,,55354.5,62,sourced,socrata_syp8-uezg@2026-09-13
 609907,Leif Ericson Elementary Scholastic Academy,largest_nearby,41.875921,-87.716257,42.4,21.3,362885,400 S CENTRAL PARK AVE,,2,43625.2,42,sourced,socrata_syp8-uezg@2026-09-13
-609908,Esmond Elementary School,address_exact,41.688762,-87.669756,88.3,56.4,774970,1865 W MONTVALE AVE,ESMOND PUBLIC,0,15134.9,101,sourced,socrata_syp8-uezg@2026-09-13
-609909,Edward Everett Elementary School,address_exact,41.831694,-87.681067,25.4,1.2,416858,3419 S BELL AVE,,0,15188.8,288,sourced,socrata_syp8-uezg@2026-09-13
-609910,Laughlin Falconer Elementary School,address_exact,41.935593,-87.749856,48.5,29.4,227453,3020 N LAMON AVE,,0,31699.5,200,sourced,socrata_syp8-uezg@2026-09-13
+609908,Esmond Elementary School,address_exact,41.688762,-87.669756,88.3,56.4,774970,1865 W MONTVALE AVE,ESMOND PUBLIC,,15134.9,101,sourced,socrata_syp8-uezg@2026-09-13
+609909,Edward Everett Elementary School,address_exact,41.831694,-87.681067,25.4,1.2,416858,3419 S BELL AVE,,,15188.8,288,sourced,socrata_syp8-uezg@2026-09-13
+609910,Laughlin Falconer Elementary School,address_exact,41.935593,-87.749856,48.5,29.4,227453,3020 N LAMON AVE,,,31699.5,200,sourced,socrata_syp8-uezg@2026-09-13
 609912,James B Farnsworth Elementary School,address_exact,41.980326,-87.766289,62.1,10,65156,5414 N LINDER AVE,,2,28013.1,199,sourced,socrata_syp8-uezg@2026-09-13
 609917,Fernwood Elementary School,address_exact,41.711215,-87.640215,16.9,4.7,721714,10041 S UNION AVE,,3,18429.8,173,sourced,socrata_syp8-uezg@2026-09-13
-609918,Eugene Field Elementary School,address_exact,42.009764,-87.669286,59,12.3,9365,7019 N ASHLAND BLVD,FIELD PUBLIC SCHOOL,0,42580.1,82,sourced,socrata_syp8-uezg@2026-09-13
+609918,Eugene Field Elementary School,address_exact,42.009764,-87.669286,59,12.3,9365,7019 N ASHLAND BLVD,FIELD PUBLIC SCHOOL,,42580.1,82,sourced,socrata_syp8-uezg@2026-09-13
 609919,John Fiske Elementary School,address_exact,41.785385,-87.609119,46.2,16,510994,6002-6066 S LANGLEY AVE,,3,42693.2,40,sourced,socrata_syp8-uezg@2026-09-13
 609920,Gerald Delgado Kanoon Elementary Magnet School,address_exact,41.850459,-87.704504,61.2,14.6,389049,2233-2253 S KEDZIE AVE,,2,34942.9,127,sourced,socrata_syp8-uezg@2026-09-13
-609921,Telpochcalli Elementary School,largest_nearby,41.847316,-87.696067,70.3,49.6,393130,2817 W 24TH BLVD,,0,10097.1,74,sourced,socrata_syp8-uezg@2026-09-13
+609921,Telpochcalli Elementary School,largest_nearby,41.847316,-87.696067,70.3,49.6,393130,2817 W 24TH BLVD,,,10097.1,74,sourced,socrata_syp8-uezg@2026-09-13
 609922,Belmont-Cragin Elementary School,largest_nearby,41.923401,-87.782121,100,81.5,268688,6233 W FULLERTON AVE,,1,6499.4,57,sourced,socrata_syp8-uezg@2026-09-13
-609924,Fort Dearborn Elementary School,address_exact,41.730141,-87.654804,76.7,16.5,682708,9025 S THROOP ST,,0,33760.8,144,sourced,socrata_syp8-uezg@2026-09-13
+609924,Fort Dearborn Elementary School,address_exact,41.730141,-87.654804,76.7,16.5,682708,9025 S THROOP ST,,,33760.8,144,sourced,socrata_syp8-uezg@2026-09-13
 609925,Joseph Kellman Corporate Community ES,largest_nearby,41.870469,-87.699091,257.2,125.4,368696,2935 W POLK ST,,4,75458.9,66,sourced,socrata_syp8-uezg@2026-09-13
 609926,Franklin Elementary Fine Arts Center,address_exact,41.906415,-87.636409,77.2,4.3,314871,225 W EVERGREEN AVE,,2,22669.6,70,sourced,socrata_syp8-uezg@2026-09-13
-609927,Foster Park Elementary School,address_exact,41.738397,-87.668417,26.6,16.3,659868,8530 S WOOD ST,,0,16017.4,168,sourced,socrata_syp8-uezg@2026-09-13
+609927,Foster Park Elementary School,address_exact,41.738397,-87.668417,26.6,16.3,659868,8530 S WOOD ST,,,16017.4,168,sourced,socrata_syp8-uezg@2026-09-13
 609928,James Farmer Jr Elementary School,address_exact,41.818041,-87.61224,38.2,24.1,429834,4210-4214 S ST LAWRENCE AVE,,3,24223.5,93,sourced,socrata_syp8-uezg@2026-09-13
 609929,Robert Fulton Elementary School,address_exact,41.797278,-87.6687,40.1,12.1,865286,5300-5314 S HERMITAGE AVE,,3,14381.8,171,sourced,socrata_syp8-uezg@2026-09-13
 609930,Frederick Funston Elementary School,address_exact,41.917806,-87.717177,31.6,5.4,285772,2010 N CENTRAL PARK AVE,,4,40348.2,140,sourced,socrata_syp8-uezg@2026-09-13
-609933,Stephen F Gale Elementary Community Academy,address_exact,42.020719,-87.671317,66,32.4,873718,1601-1631 W JONQUIL TER,GALE SCHOOL,0,29308.6,69,sourced,socrata_syp8-uezg@2026-09-13
-609935,Matthew Gallistel Elementary Language Academy,address_exact,41.706703,-87.534906,24.9,5.5,729562,10347 S EWING AVE,,0,29733.8,200,sourced,socrata_syp8-uezg@2026-09-13
+609933,Stephen F Gale Elementary Community Academy,address_exact,42.020719,-87.671317,66,32.4,873718,1601-1631 W JONQUIL TER,GALE SCHOOL,,29308.6,69,sourced,socrata_syp8-uezg@2026-09-13
+609935,Matthew Gallistel Elementary Language Academy,address_exact,41.706703,-87.534906,24.9,5.5,729562,10347 S EWING AVE,,,29733.8,200,sourced,socrata_syp8-uezg@2026-09-13
 609937,John W Garvy Elementary School,address_exact,41.976625,-87.79587,42.8,16.9,77051,5225 N OAK PARK AVE,,2,24516.9,193,sourced,socrata_syp8-uezg@2026-09-13
-609938,Joseph E Gary Elementary School,address_exact,41.8379,-87.718848,93.5,54.4,407943,3740 W 31ST ST,,0,23159.1,172,sourced,socrata_syp8-uezg@2026-09-13
-609939,Frank L Gillespie Elementary School,address_exact,41.724426,-87.623295,106.6,28.4,693553,9301 S STATE ST,,0,45404.1,45,sourced,socrata_syp8-uezg@2026-09-13
-609941,Asa Philip Randolph Elementary School,address_exact,41.760618,-87.67659,51.9,12.1,589904,7316 S HOYNE AVE,,0,50539.8,141,sourced,socrata_syp8-uezg@2026-09-13
-609942,Johann W von Goethe Elementary School,address_exact,41.922732,-87.693224,29,10.1,269064,2236 N ROCKWELL ST,GOETHE PUBLIC SCHOOL,0,28722,145,sourced,socrata_syp8-uezg@2026-09-13
-609943,Jesse Owens Elementary Community Academy,address_exact,41.670474,-87.623266,62.1,49.4,798328,12302 S STATE ST,,0,32269,127,sourced,socrata_syp8-uezg@2026-09-13
+609938,Joseph E Gary Elementary School,address_exact,41.8379,-87.718848,93.5,54.4,407943,3740 W 31ST ST,,,23159.1,172,sourced,socrata_syp8-uezg@2026-09-13
+609939,Frank L Gillespie Elementary School,address_exact,41.724426,-87.623295,106.6,28.4,693553,9301 S STATE ST,,,45404.1,45,sourced,socrata_syp8-uezg@2026-09-13
+609941,Asa Philip Randolph Elementary School,address_exact,41.760618,-87.67659,51.9,12.1,589904,7316 S HOYNE AVE,,,50539.8,141,sourced,socrata_syp8-uezg@2026-09-13
+609942,Johann W von Goethe Elementary School,address_exact,41.922732,-87.693224,29,10.1,269064,2236 N ROCKWELL ST,GOETHE PUBLIC SCHOOL,,28722,145,sourced,socrata_syp8-uezg@2026-09-13
+609943,Jesse Owens Elementary Community Academy,address_exact,41.670474,-87.623266,62.1,49.4,798328,12302 S STATE ST,,,32269,127,sourced,socrata_syp8-uezg@2026-09-13
 609944,Virgil Grissom Elementary School,address_exact,41.662577,-87.553581,25.2,12,802914,12800-12810 S ESCANABA AVE,,2,18288.6,161,sourced,socrata_syp8-uezg@2026-09-13
 609945,William C. Goudy Technology Academy,address_exact,41.975475,-87.658126,41.9,6.4,76353,5120 N WINTHROP AVE,,3,37432.9,64,sourced,socrata_syp8-uezg@2026-09-13
-609947,Alexander Graham Elementary School,address_exact,41.812907,-87.643765,56.3,19.7,436409,4436 S UNION AVE,,0,22233.6,171,sourced,socrata_syp8-uezg@2026-09-13
-609949,William P Gray Elementary School,address_exact,41.949078,-87.757375,41,23.6,170710,3730 N LARAMIE AVE,,0,22501.6,206,sourced,socrata_syp8-uezg@2026-09-13
-609950,Josefa Ortiz De Dominguez Elementary School,address_exact,41.838232,-87.717647,72.8,21.4,407333,3000 S LAWNDALE AVE,,0,33697.4,182,sourced,socrata_syp8-uezg@2026-09-13
+609947,Alexander Graham Elementary School,address_exact,41.812907,-87.643765,56.3,19.7,436409,4436 S UNION AVE,,,22233.6,171,sourced,socrata_syp8-uezg@2026-09-13
+609949,William P Gray Elementary School,address_exact,41.949078,-87.757375,41,23.6,170710,3730 N LARAMIE AVE,,,22501.6,206,sourced,socrata_syp8-uezg@2026-09-13
+609950,Josefa Ortiz De Dominguez Elementary School,address_exact,41.838232,-87.717647,72.8,21.4,407333,3000 S LAWNDALE AVE,,,33697.4,182,sourced,socrata_syp8-uezg@2026-09-13
 609951,Ariel Elementary Community Academy,address_exact,41.810791,-87.597993,58.8,24.3,439457,1119-1125 E 46TH ST,,3,34081.5,105,sourced,socrata_syp8-uezg@2026-09-13
 609952,Nathanael Greene Elementary School,address_exact,41.829859,-87.671225,30.7,9.6,418297,3511-3539 S HONORE ST,,2,34105.5,205,sourced,socrata_syp8-uezg@2026-09-13
 609954,John Milton Gregory Elementary School,largest_nearby,41.870336,-87.718573,45.8,11.2,368962,800-824 S LAWNDALE AVE,,3,41668.9,52,sourced,socrata_syp8-uezg@2026-09-13
-609955,Walter Q Gresham Elementary School,address_exact,41.738646,-87.645215,34.3,7.4,659296,8524-8534 S GREEN ST,,0,15988,62,sourced,socrata_syp8-uezg@2026-09-13
+609955,Walter Q Gresham Elementary School,address_exact,41.738646,-87.645215,34.3,7.4,659296,8524-8534 S GREEN ST,,,15988,62,sourced,socrata_syp8-uezg@2026-09-13
 609956,Robert L Grimes Elementary School,address_exact,41.775684,-87.758599,29.7,8.4,547968,5428-5450 W 64TH PL,,1,17692.2,170,sourced,socrata_syp8-uezg@2026-09-13
 609958,Frank W Gunsaulus Elementary Scholastic Academy,address_exact,41.812729,-87.70006,65.6,9.8,437340,4420 S SACRAMENTO AVE,,4,34828.5,202,sourced,socrata_syp8-uezg@2026-09-13
 609959,John Charles Haines Elementary School,address_exact,41.84976,-87.633729,22.9,5.2,389547,247 W 23RD PL,,3,28697.2,225,sourced,socrata_syp8-uezg@2026-09-13
-609960,Nathan Hale Elementary School,address_exact,41.780184,-87.776976,33,16.7,530544,6140 S MELVINA AVE,,0,35148.1,152,sourced,socrata_syp8-uezg@2026-09-13
+609960,Nathan Hale Elementary School,address_exact,41.780184,-87.776976,33,16.7,530544,6140 S MELVINA AVE,,,35148.1,152,sourced,socrata_syp8-uezg@2026-09-13
 609961,Ninos Heroes Elementary Academic Center,largest_nearby,41.744161,-87.553038,107.8,81.1,637017,8344 S COMMERCIAL AVE,HEROES MAGNET PUBLIC SCHOOL,3,25794.8,96,sourced,socrata_syp8-uezg@2026-09-13
 609963,Alexander Hamilton Elementary School,address_exact,41.9455,-87.670657,35.6,9.2,184297,1650 W CORNELIA AVE,,3,21044.9,216,sourced,socrata_syp8-uezg@2026-09-13
 609964,John H Hamline Elementary School,address_exact,41.807756,-87.66091,61.2,8.2,447499,4747 S BISHOP ST,,3,24178.1,206,sourced,socrata_syp8-uezg@2026-09-13
 609966,Charles G Hammond Elementary School,address_exact,41.852547,-87.696118,21.8,0.5,386246,2817-2819 W 21ST PL,,3,31514.5,174,sourced,socrata_syp8-uezg@2026-09-13
 609967,William F Finkl Elementary School,largest_nearby,41.849244,-87.68721,128.1,73,390253,2332 S WESTERN AVE,,2,40001.1,85,sourced,socrata_syp8-uezg@2026-09-13
 609968,Sharon Christa McAuliffe Elementary School,address_exact,41.91456,-87.723418,51.2,8.9,293557,1841 N SPRINGFIELD AVE,,3,43843,98,sourced,socrata_syp8-uezg@2026-09-13
-609969,Bret Harte Elementary School,address_exact,41.793725,-87.586815,31,6.6,483492,1556 E 56TH ST,HARTE ELEMENTARY SCHOOL,0,14440.8,34,sourced,socrata_syp8-uezg@2026-09-13
-609971,John Harvard Elementary School of Excellence,address_exact,41.757494,-87.632285,41.2,20.9,866052,7517-7525 S HARVARD AVE,,0,17612,59,sourced,socrata_syp8-uezg@2026-09-13
-609972,Helge A Haugan Elementary School,address_exact,41.963686,-87.723603,54.8,16.6,117982,4540 N HAMLIN AVE,,0,60309.9,176,sourced,socrata_syp8-uezg@2026-09-13
-609973,Emiliano Zapata Elementary Academy,largest_nearby,41.841725,-87.735742,124.2,63,401532,2728-2738 S KOSTNER AVE,,0,39945.9,139,sourced,socrata_syp8-uezg@2026-09-13
-609974,Hawthorne Elementary Scholastic Academy,address_exact,41.942006,-87.657529,33.3,3.5,195803,3319 N CLIFTON AVE,,0,24123.4,160,sourced,socrata_syp8-uezg@2026-09-13
+609969,Bret Harte Elementary School,address_exact,41.793725,-87.586815,31,6.6,483492,1556 E 56TH ST,HARTE ELEMENTARY SCHOOL,,14440.8,34,sourced,socrata_syp8-uezg@2026-09-13
+609971,John Harvard Elementary School of Excellence,address_exact,41.757494,-87.632285,41.2,20.9,866052,7517-7525 S HARVARD AVE,,,17612,59,sourced,socrata_syp8-uezg@2026-09-13
+609972,Helge A Haugan Elementary School,address_exact,41.963686,-87.723603,54.8,16.6,117982,4540 N HAMLIN AVE,,,60309.9,176,sourced,socrata_syp8-uezg@2026-09-13
+609973,Emiliano Zapata Elementary Academy,largest_nearby,41.841725,-87.735742,124.2,63,401532,2728-2738 S KOSTNER AVE,,,39945.9,139,sourced,socrata_syp8-uezg@2026-09-13
+609974,Hawthorne Elementary Scholastic Academy,address_exact,41.942006,-87.657529,33.3,3.5,195803,3319 N CLIFTON AVE,,,24123.4,160,sourced,socrata_syp8-uezg@2026-09-13
 609975,John Hay Elementary Community Academy,address_exact,41.8995,-87.756096,43.4,10.2,331076,1018-1020 N LARAMIE AVE,,4,32026,127,sourced,socrata_syp8-uezg@2026-09-13
 609976,Stephen K Hayt Elementary School,address_exact,41.99477,-87.6684,26.8,8.2,30569,1518 W GRANVILLE AVE,,3,45485.9,137,sourced,socrata_syp8-uezg@2026-09-13
 609977,Woodlawn Community Elementary School,address_exact,41.773515,-87.594135,27.1,12.2,551654,6657 S KIMBARK AVE,,2,18466.5,35,sourced,socrata_syp8-uezg@2026-09-13
 609978,Wendell Smith Elementary School,address_exact,41.70781,-87.605353,64.1,23.6,727794,722-744 E 103RD ST,SMITH SCHOOL,2,46222.8,41,sourced,socrata_syp8-uezg@2026-09-13
-609979,Robert Healy Elementary School,address_exact,41.83948,-87.641042,59.6,4.9,404219,3010-3020 S PARNELL AVE,,0,48294.9,221,sourced,socrata_syp8-uezg@2026-09-13
-609981,Phoebe Apperson Hearst Elementary School,address_exact,41.808178,-87.746132,33.8,17.2,445728,4640 S LAMON AVE,,0,36332.2,99,sourced,socrata_syp8-uezg@2026-09-13
+609979,Robert Healy Elementary School,address_exact,41.83948,-87.641042,59.6,4.9,404219,3010-3020 S PARNELL AVE,,,48294.9,221,sourced,socrata_syp8-uezg@2026-09-13
+609981,Phoebe Apperson Hearst Elementary School,address_exact,41.808178,-87.746132,33.8,17.2,445728,4640 S LAMON AVE,,,36332.2,99,sourced,socrata_syp8-uezg@2026-09-13
 609983,James Hedges Elementary School,address_exact,41.807646,-87.673088,62.5,2.7,447659,4735-4747 S WINCHESTER AVE,,3,34498.6,227,sourced,socrata_syp8-uezg@2026-09-13
 609985,Helen M Hefferan Elementary School,largest_nearby,41.878452,-87.736337,50.3,6.2,360576,4400 W ADAMS ST,,2,33934.4,168,sourced,socrata_syp8-uezg@2026-09-13
 609986,Charles R Henderson Elementary School,address_exact,41.790768,-87.672275,37.8,16.2,494172,5650 S WOLCOTT AVE,,3,35371.6,174,sourced,socrata_syp8-uezg@2026-09-13
 609987,Thomas A Hendricks Elementary Community Academy,address_exact,41.815708,-87.633866,19,3.3,431928,4316 S PRINCETON AVE,,3,21156,93,sourced,socrata_syp8-uezg@2026-09-13
 609988,Patrick Henry Elementary School,largest_nearby,41.958787,-87.715856,29.1,1,137144,4250 N ST LOUIS AVE,,3,25651,219,sourced,socrata_syp8-uezg@2026-09-13
-609990,South Loop Elementary School,containing,41.859664,-87.62841,10,0,375761,19 W 16TH ST,,0,27870.5,8,sourced,socrata_syp8-uezg@2026-09-13
+609990,South Loop Elementary School,containing,41.859664,-87.62841,10,0,375761,19 W 16TH ST,,,27870.5,8,sourced,socrata_syp8-uezg@2026-09-13
 609991,Theodore Herzl Elementary School,largest_nearby,41.861825,-87.718335,61.7,27.9,375007,1408-1428 S LAWNDALE AVE,,3,53933.5,50,sourced,socrata_syp8-uezg@2026-09-13
 609993,Agustin Lara Elementary Academy,address_exact,41.809749,-87.671917,22.2,7.2,442861,4619 S WOLCOTT AVE,,3,25545.5,214,sourced,socrata_syp8-uezg@2026-09-13
-609994,William G Hibbard Elementary School,address_exact,41.970904,-87.710379,63.2,23.4,861975,3244 W AINSLIE ST,,0,35737.9,122,sourced,socrata_syp8-uezg@2026-09-13
+609994,William G Hibbard Elementary School,address_exact,41.970904,-87.710379,63.2,23.4,861975,3244 W AINSLIE ST,,,35737.9,122,sourced,socrata_syp8-uezg@2026-09-13
 609995,Rufus M Hitch Elementary School,largest_nearby,41.983689,-87.778839,23.6,7.1,56234,5625 N MC VICKER AVE,,2,28321,190,sourced,socrata_syp8-uezg@2026-09-13
 609996,Charles N Holden Elementary School,address_exact,41.838311,-87.654298,52.5,2.3,407052,1104 W 31ST ST,,3,27896.2,170,sourced,socrata_syp8-uezg@2026-09-13
 609997,Oliver Wendell Holmes Elementary School,largest_nearby,41.793374,-87.649677,47.1,5,485169,5525 S MORGAN ST,,2,35446.6,69,sourced,socrata_syp8-uezg@2026-09-13
-610000,Julia Ward Howe Elementary School of Excellence,address_exact,41.893647,-87.759707,26,9.6,344598,720 N LOREL AVE,,0,27751.2,121,sourced,socrata_syp8-uezg@2026-09-13
+610000,Julia Ward Howe Elementary School of Excellence,address_exact,41.893647,-87.759707,26,9.6,344598,720 N LOREL AVE,,,27751.2,121,sourced,socrata_syp8-uezg@2026-09-13
 610002,Thomas Hoyne Elementary School,address_exact,41.733025,-87.56791,43.7,11.2,674434,8905 S CRANDON AVE,,1,27943.4,238,sourced,socrata_syp8-uezg@2026-09-13
-610003,Paul Cuffe Math-Science Technology Academy ES,address_exact,41.742813,-87.65388,45.1,7.5,821958,8324 S RACINE AVE,,0,34585.8,142,sourced,socrata_syp8-uezg@2026-09-13
+610003,Paul Cuffe Math-Science Technology Academy ES,address_exact,41.742813,-87.65388,45.1,7.5,821958,8324 S RACINE AVE,,,34585.8,142,sourced,socrata_syp8-uezg@2026-09-13
 610004,Countee Cullen Elementary School,address_exact,41.700267,-87.611648,34.5,3.7,748406,10650 S EBERHART AVE,,2,14038.8,216,sourced,socrata_syp8-uezg@2026-09-13
-610005,Charles Evans Hughes Elementary School,address_exact,41.860393,-87.731731,14.4,0,375753,4247 W 15TH ST,,0,25117.2,78,sourced,socrata_syp8-uezg@2026-09-13
-610006,Edward N Hurley Elementary School,address_exact,41.76655,-87.719528,26.1,14.9,572575,3849 W 69TH PL,,0,18263,212,sourced,socrata_syp8-uezg@2026-09-13
-610009,Galileo Math & Science Scholastic Academy ES,address_exact,41.871236,-87.653529,13.7,0,367934,820 S CARPENTER ST,,0,32297,161,sourced,socrata_syp8-uezg@2026-09-13
+610005,Charles Evans Hughes Elementary School,address_exact,41.860393,-87.731731,14.4,0,375753,4247 W 15TH ST,,,25117.2,78,sourced,socrata_syp8-uezg@2026-09-13
+610006,Edward N Hurley Elementary School,address_exact,41.76655,-87.719528,26.1,14.9,572575,3849 W 69TH PL,,,18263,212,sourced,socrata_syp8-uezg@2026-09-13
+610009,Galileo Math & Science Scholastic Academy ES,address_exact,41.871236,-87.653529,13.7,0,367934,820 S CARPENTER ST,,,32297,161,sourced,socrata_syp8-uezg@2026-09-13
 610010,Friedrich L. Jahn Elementary of the Fine Arts,address_exact,41.93917,-87.675199,51.4,30.5,211085,3149 N WOLCOTT AVE,,3,25428.8,244,sourced,socrata_syp8-uezg@2026-09-13
 610011,Minnie Mars Jamieson Elementary School,address_exact,41.984562,-87.700936,34.8,13.2,55080,5650 N MOZART ST,JAMIESON PUBLIS SCHOOL,3,29384.1,115,sourced,socrata_syp8-uezg@2026-09-13
-610013,Pilsen Elementary Community Academy,address_exact,41.859026,-87.662451,28.1,2.3,376639,1420 W 17TH ST,,0,19880.1,129,sourced,socrata_syp8-uezg@2026-09-13
-610015,Joseph Jungman STEM Magnet Elementary School,address_exact,41.858591,-87.652569,62.5,29,376791,1632-1746 S MILLER ST,,0,27034.4,199,sourced,socrata_syp8-uezg@2026-09-13
+610013,Pilsen Elementary Community Academy,address_exact,41.859026,-87.662451,28.1,2.3,376639,1420 W 17TH ST,,,19880.1,129,sourced,socrata_syp8-uezg@2026-09-13
+610015,Joseph Jungman STEM Magnet Elementary School,address_exact,41.858591,-87.652569,62.5,29,376791,1632-1746 S MILLER ST,,,27034.4,199,sourced,socrata_syp8-uezg@2026-09-13
 610016,Kate S Kellogg Elementary School,address_exact,41.725092,-87.676808,40.2,23.3,693841,9241 S LEAVITT ST,,2,13166.2,92,sourced,socrata_syp8-uezg@2026-09-13
-610017,Maria Saucedo STEAM Magnet Academy,largest_nearby,41.847316,-87.696067,124.8,106.1,393130,2817 W 24TH BLVD,,0,10097.1,75,sourced,socrata_syp8-uezg@2026-09-13
-610019,Joshua D Kershaw Elementary School,address_exact,41.776437,-87.641505,51,3.5,539735,6440-6450 S LOWE AVE,,0,37600.1,5,sourced,socrata_syp8-uezg@2026-09-13
+610017,Maria Saucedo STEAM Magnet Academy,largest_nearby,41.847316,-87.696067,124.8,106.1,393130,2817 W 24TH BLVD,,,10097.1,75,sourced,socrata_syp8-uezg@2026-09-13
+610019,Joshua D Kershaw Elementary School,address_exact,41.776437,-87.641505,51,3.5,539735,6440-6450 S LOWE AVE,,,37600.1,5,sourced,socrata_syp8-uezg@2026-09-13
 610021,Pablo Casals Elementary School,address_exact,41.904189,-87.714128,36,13.5,320900,3501 W POTOMAC AVE,,3,24330.5,111,sourced,socrata_syp8-uezg@2026-09-13
-610022,Joyce Kilmer International Academy,address_exact,42.0041,-87.668497,55.9,15.9,861102,6700-6726 N GREENVIEW AVE,,0,21083.8,115,sourced,socrata_syp8-uezg@2026-09-13
+610022,Joyce Kilmer International Academy,address_exact,42.0041,-87.668497,55.9,15.9,861102,6700-6726 N GREENVIEW AVE,,,21083.8,115,sourced,socrata_syp8-uezg@2026-09-13
 610024,Lazaro Cardenas Elementary School,address_exact,41.848261,-87.715754,33.4,10.4,392013,2345 S MILLARD AVE,,3,20881.2,149,sourced,socrata_syp8-uezg@2026-09-13
 610026,John H Kinzie Elementary School,largest_nearby,41.790963,-87.778471,139.1,125.3,496640,5544-5550 S MERRIMAC AVE,,1,3540.6,97,sourced,socrata_syp8-uezg@2026-09-13
-610027,Rudyard Kipling Elementary School,address_exact,41.723681,-87.639061,38.8,11.8,695562,9351 S LOWE AVE,,0,38577.2,189,sourced,socrata_syp8-uezg@2026-09-13
+610027,Rudyard Kipling Elementary School,address_exact,41.723681,-87.639061,38.8,11.8,695562,9351 S LOWE AVE,,,38577.2,189,sourced,socrata_syp8-uezg@2026-09-13
 610029,Rodolfo Lozano Bilingual & International Ctr ES,address_exact,41.909114,-87.664873,31.2,9.3,308636,1501 N GREENVIEW AVE,,3,18911.2,114,sourced,socrata_syp8-uezg@2026-09-13
 610030,Charles Kozminski Elementary Community Academy,address_exact,41.798337,-87.602309,39.9,7.2,465886,934-936 E 54TH ST,,3,33314.1,151,sourced,socrata_syp8-uezg@2026-09-13
 610032,Wendell E Green Elementary School,address_exact,41.719498,-87.652441,23.4,6.1,703866,1150 W 96TH ST,,3,17554.1,105,sourced,socrata_syp8-uezg@2026-09-13
-610033,LaSalle Elementary Language Academy,address_exact,41.913815,-87.637834,24.2,8.4,294734,1734-1742 N ORLEANS ST,,0,29321.2,187,sourced,socrata_syp8-uezg@2026-09-13
+610033,LaSalle Elementary Language Academy,address_exact,41.913815,-87.637834,24.2,8.4,294734,1734-1742 N ORLEANS ST,,,29321.2,187,sourced,socrata_syp8-uezg@2026-09-13
 610034,Lawndale Elementary Community Academy,largest_nearby,41.863362,-87.713253,51,6.3,374449,1320-1334 S ST LOUIS AVE,,4,22796,34,sourced,socrata_syp8-uezg@2026-09-13
 610036,Leslie Lewis Elementary School,address_exact,41.906692,-87.754273,27.4,11.3,859103,1431-1457 N LEAMINGTON AVE,,1,28085,134,sourced,socrata_syp8-uezg@2026-09-13
-610037,Arthur A Libby Elementary School,address_exact,41.797375,-87.66016,39.2,5.2,472058,5300 S LOOMIS BLVD,,0,20357.8,76,sourced,socrata_syp8-uezg@2026-09-13
-610038,Abraham Lincoln Elementary School,address_exact,41.92435,-87.644745,28.3,4.7,264505,615-621 W KEMPER PL,,0,27107.5,157,sourced,socrata_syp8-uezg@2026-09-13
+610037,Arthur A Libby Elementary School,address_exact,41.797375,-87.66016,39.2,5.2,472058,5300 S LOOMIS BLVD,,,20357.8,76,sourced,socrata_syp8-uezg@2026-09-13
+610038,Abraham Lincoln Elementary School,address_exact,41.92435,-87.644745,28.3,4.7,264505,615-621 W KEMPER PL,,,27107.5,157,sourced,socrata_syp8-uezg@2026-09-13
 610039,Carl von Linne Elementary School,address_exact,41.940187,-87.701891,64.8,7.7,206731,3221 N SACRAMENTO AVE,,2,32728.5,219,sourced,socrata_syp8-uezg@2026-09-13
 610040,Henry D Lloyd Elementary School,largest_nearby,41.918094,-87.749071,92.4,78.6,286154,2036-2040 N LAMON AVE,,2,2847.8,193,sourced,socrata_syp8-uezg@2026-09-13
-610041,Josephine C Locke Elementary School,address_exact,41.931767,-87.795889,23.7,7.6,835100,2828 N OAK PARK AVE,LOCKE SCHOOL,0,18539.9,154,sourced,socrata_syp8-uezg@2026-09-13
-610043,Joseph Lovett Elementary School,largest_nearby,41.912507,-87.784232,35,12.7,300433,1757 N NARRAGANSETT AVE,,0,27655.5,114,sourced,socrata_syp8-uezg@2026-09-13
+610041,Josephine C Locke Elementary School,address_exact,41.931767,-87.795889,23.7,7.6,835100,2828 N OAK PARK AVE,LOCKE SCHOOL,,18539.9,154,sourced,socrata_syp8-uezg@2026-09-13
+610043,Joseph Lovett Elementary School,largest_nearby,41.912507,-87.784232,35,12.7,300433,1757 N NARRAGANSETT AVE,,,27655.5,114,sourced,socrata_syp8-uezg@2026-09-13
 610044,James Russell Lowell Elementary School,address_exact,41.906697,-87.710535,32.9,3.1,315206,3320-3356 W HIRSCH ST,,3,46130.5,214,sourced,socrata_syp8-uezg@2026-09-13
-610046,Mary Lyon Elementary School,largest_nearby,41.934535,-87.776903,44.2,10.9,233506,2941 N MC VICKER AVE,,0,32161.2,201,sourced,socrata_syp8-uezg@2026-09-13
-610047,James Madison Elementary School,address_exact,41.759312,-87.589983,66,44.1,591939,7433-7435 S DORCHESTER AVE,,0,13339,107,sourced,socrata_syp8-uezg@2026-09-13
-610048,George Manierre Elementary School,address_exact,41.907316,-87.640005,104.5,11,310836,1368-1420 N HUDSON AVE,,0,48468.1,129,sourced,socrata_syp8-uezg@2026-09-13
-610051,Northwest Middle School,address_exact,41.92105,-87.757907,48.8,4.5,274750,5246-5252 W PALMER ST,WEBER R.C. HIGH SCHOOL,0,65700.2,237,sourced,socrata_syp8-uezg@2026-09-13
+610046,Mary Lyon Elementary School,largest_nearby,41.934535,-87.776903,44.2,10.9,233506,2941 N MC VICKER AVE,,,32161.2,201,sourced,socrata_syp8-uezg@2026-09-13
+610047,James Madison Elementary School,address_exact,41.759312,-87.589983,66,44.1,591939,7433-7435 S DORCHESTER AVE,,,13339,107,sourced,socrata_syp8-uezg@2026-09-13
+610048,George Manierre Elementary School,address_exact,41.907316,-87.640005,104.5,11,310836,1368-1420 N HUDSON AVE,,,48468.1,129,sourced,socrata_syp8-uezg@2026-09-13
+610051,Northwest Middle School,address_exact,41.92105,-87.757907,48.8,4.5,274750,5246-5252 W PALMER ST,WEBER R.C. HIGH SCHOOL,,65700.2,237,sourced,socrata_syp8-uezg@2026-09-13
 610052,Horace Mann Elementary School,address_exact,41.748974,-87.575049,80.1,5.2,619224,8050 S CHAPPEL AVE,,2,34040.8,152,sourced,socrata_syp8-uezg@2026-09-13
-610053,Marquette Elementary School,address_exact,41.774207,-87.697708,67,55.8,553085,6550 S RICHMOND ST,,0,2724.8,176,sourced,socrata_syp8-uezg@2026-09-13
-610054,John L Marsh Elementary School,address_exact,41.71651,-87.552722,21.7,10.4,830397,9822 S EXCHANGE AVE,Part of John L Marsh Public School,0,4923.9,103,sourced,socrata_syp8-uezg@2026-09-13
-610055,Michael Faraday Elementary School,address_exact,41.879944,-87.70817,26.3,8.2,358414,3250-3258 W MONROE ST,FARADAY SCHOOL,0,29662.5,29,sourced,socrata_syp8-uezg@2026-09-13
-610056,Roswell B Mason Elementary School,largest_nearby,41.855648,-87.729062,92.4,73.1,381713,1840 S KARLOV AVE,,0,6147.8,126,sourced,socrata_syp8-uezg@2026-09-13
-610057,Fairfield Elementary Academy,address_exact,41.780703,-87.691832,32.5,13.5,529335,6201-6205 S FAIRFIELD AVE,,0,26928.5,210,sourced,socrata_syp8-uezg@2026-09-13
-610059,Oscar Mayer Magnet School,address_exact,41.923187,-87.657902,51,5.7,267502,2238-2250 N CLIFTON AVE,,0,36318.5,97,sourced,socrata_syp8-uezg@2026-09-13
+610053,Marquette Elementary School,address_exact,41.774207,-87.697708,67,55.8,553085,6550 S RICHMOND ST,,,2724.8,176,sourced,socrata_syp8-uezg@2026-09-13
+610054,John L Marsh Elementary School,address_exact,41.71651,-87.552722,21.7,10.4,830397,9822 S EXCHANGE AVE,Part of John L Marsh Public School,,4923.9,103,sourced,socrata_syp8-uezg@2026-09-13
+610055,Michael Faraday Elementary School,address_exact,41.879944,-87.70817,26.3,8.2,358414,3250-3258 W MONROE ST,FARADAY SCHOOL,,29662.5,29,sourced,socrata_syp8-uezg@2026-09-13
+610056,Roswell B Mason Elementary School,largest_nearby,41.855648,-87.729062,92.4,73.1,381713,1840 S KARLOV AVE,,,6147.8,126,sourced,socrata_syp8-uezg@2026-09-13
+610057,Fairfield Elementary Academy,address_exact,41.780703,-87.691832,32.5,13.5,529335,6201-6205 S FAIRFIELD AVE,,,26928.5,210,sourced,socrata_syp8-uezg@2026-09-13
+610059,Oscar Mayer Magnet School,address_exact,41.923187,-87.657902,51,5.7,267502,2238-2250 N CLIFTON AVE,,,36318.5,97,sourced,socrata_syp8-uezg@2026-09-13
 610060,Chicago World Language Academy,address_exact,41.874774,-87.661075,53.2,9.7,363972,1340 W HARRISON ST,,3,32920.9,65,sourced,socrata_syp8-uezg@2026-09-13
 610062,Minnie Miñoso Academy,address_exact,41.830272,-87.640851,37.4,14.3,417879,3527 S WALLACE ST,,3,18079.8,169,sourced,socrata_syp8-uezg@2026-09-13
-610063,Cyrus H McCormick Elementary School,address_exact,41.842194,-87.706508,19,1.6,400417,2712 S SAWYER AVE,,0,22090.4,201,sourced,socrata_syp8-uezg@2026-09-13
-610065,Emmett Louis Till Math and Science Academy,address_exact,41.775568,-87.609085,27.7,6.4,544155,6543 S CHAMPLAIN AVE,,0,32928.2,127,sourced,socrata_syp8-uezg@2026-09-13
+610063,Cyrus H McCormick Elementary School,address_exact,41.842194,-87.706508,19,1.6,400417,2712 S SAWYER AVE,,,22090.4,201,sourced,socrata_syp8-uezg@2026-09-13
+610065,Emmett Louis Till Math and Science Academy,address_exact,41.775568,-87.609085,27.7,6.4,544155,6543 S CHAMPLAIN AVE,,,32928.2,127,sourced,socrata_syp8-uezg@2026-09-13
 610066,James E McDade Elementary Classical School,address_exact,41.734335,-87.618805,41.6,24.1,672037,8801 S INDIANA AVE,,1,25455.2,145,sourced,socrata_syp8-uezg@2026-09-13
-610067,Francis M McKay Elementary School,address_exact,41.767446,-87.691364,85,25.4,865664,6901-6929 S FAIRFIELD AVE,,0,22575.1,62,sourced,socrata_syp8-uezg@2026-09-13
-610068,Hanson Park Elementary School,address_exact,41.923292,-87.76222,94.1,41.6,267954,5411 W FULLERTON AVE,,0,70172.1,129,sourced,socrata_syp8-uezg@2026-09-13
+610067,Francis M McKay Elementary School,address_exact,41.767446,-87.691364,85,25.4,865664,6901-6929 S FAIRFIELD AVE,,,22575.1,62,sourced,socrata_syp8-uezg@2026-09-13
+610068,Hanson Park Elementary School,address_exact,41.923292,-87.76222,94.1,41.6,267954,5411 W FULLERTON AVE,,,70172.1,129,sourced,socrata_syp8-uezg@2026-09-13
 610070,James B McPherson Elementary School,address_exact,41.968286,-87.676688,59,13.8,857765,4722-4728 N WOLCOTT AVE,MCPHERSON SCHOOL,3,33062.4,66,sourced,socrata_syp8-uezg@2026-09-13
-610073,Ellen Mitchell Elementary School,address_exact,41.891957,-87.683306,17.2,1.2,347308,2233 W OHIO ST,,0,21202.6,192,sourced,socrata_syp8-uezg@2026-09-13
-610074,Logan Square Elementary School,address_exact,41.92991,-87.719181,9.5,2.6,248758,3651 W SCHUBERT AVE,,0,3098.2,234,sourced,socrata_syp8-uezg@2026-09-13
-610076,Bernhard Moos Elementary School,address_exact,41.912739,-87.696379,53.4,30.5,297724,1711 N CALIFORNIA AVE,,0,22814.1,159,sourced,socrata_syp8-uezg@2026-09-13
-610077,Donald Morrill Math & Science Elementary School,address_exact,41.784398,-87.688327,20.7,5.4,516565,6011 S ROCKWELL ST,,0,38542.6,195,sourced,socrata_syp8-uezg@2026-09-13
+610073,Ellen Mitchell Elementary School,address_exact,41.891957,-87.683306,17.2,1.2,347308,2233 W OHIO ST,,,21202.6,192,sourced,socrata_syp8-uezg@2026-09-13
+610074,Logan Square Elementary School,address_exact,41.92991,-87.719181,9.5,2.6,248758,3651 W SCHUBERT AVE,,,3098.2,234,sourced,socrata_syp8-uezg@2026-09-13
+610076,Bernhard Moos Elementary School,address_exact,41.912739,-87.696379,53.4,30.5,297724,1711 N CALIFORNIA AVE,,,22814.1,159,sourced,socrata_syp8-uezg@2026-09-13
+610077,Donald Morrill Math & Science Elementary School,address_exact,41.784398,-87.688327,20.7,5.4,516565,6011 S ROCKWELL ST,,,38542.6,195,sourced,socrata_syp8-uezg@2026-09-13
 610078,Inter-American Elementary Magnet School,address_exact,41.948493,-87.651371,59.1,17.7,170815,851 W WAVELAND AVE,,3,41643.4,107,sourced,socrata_syp8-uezg@2026-09-13
-610081,Mark Sheridan Math & Science Academy,address_exact,41.844188,-87.64123,25.3,7.3,397266,533 W 27TH ST,,0,21356.6,215,sourced,socrata_syp8-uezg@2026-09-13
+610081,Mark Sheridan Math & Science Academy,address_exact,41.844188,-87.64123,25.3,7.3,397266,533 W 27TH ST,,,21356.6,215,sourced,socrata_syp8-uezg@2026-09-13
 610082,Mount Greenwood Elementary School,address_exact,41.695513,-87.705351,45.4,26.3,760120,10813-10851 S HOMAN AVE,,1,30410,137,sourced,socrata_syp8-uezg@2026-09-13
-610083,Daniel C Beard Elementary School,largest_nearby,41.969923,-87.790769,97,11.1,101140,4839 N NASHVILLE AVE,,0,40261.1,173,sourced,socrata_syp8-uezg@2026-09-13
+610083,Daniel C Beard Elementary School,largest_nearby,41.969923,-87.790769,97,11.1,101140,4839 N NASHVILLE AVE,,,40261.1,173,sourced,socrata_syp8-uezg@2026-09-13
 610084,Annie Keller Regional Gifted Center,address_exact,41.697477,-87.697142,35.9,7.8,757346,3020 W 108TH ST,,1,22013.2,165,sourced,socrata_syp8-uezg@2026-09-13
-610086,Mount Vernon Elementary School,address_exact,41.702301,-87.648162,57.5,24.6,742745,10540-10542 S MORGAN ST,,0,30449.9,82,sourced,socrata_syp8-uezg@2026-09-13
-610087,Blair Early Childhood Center,address_exact,41.776368,-87.789047,131.2,9,545521,6715-6751 W 63RD PL,,0,39257.5,201,sourced,socrata_syp8-uezg@2026-09-13
-610088,Wolfgang A Mozart Elementary School,address_exact,41.921323,-87.722438,64.7,36.3,273920,2200 N HAMLIN AVE,,0,28211.8,239,sourced,socrata_syp8-uezg@2026-09-13
+610086,Mount Vernon Elementary School,address_exact,41.702301,-87.648162,57.5,24.6,742745,10540-10542 S MORGAN ST,,,30449.9,82,sourced,socrata_syp8-uezg@2026-09-13
+610087,Blair Early Childhood Center,address_exact,41.776368,-87.789047,131.2,9,545521,6715-6751 W 63RD PL,,,39257.5,201,sourced,socrata_syp8-uezg@2026-09-13
+610088,Wolfgang A Mozart Elementary School,address_exact,41.921323,-87.722438,64.7,36.3,273920,2200 N HAMLIN AVE,,,28211.8,239,sourced,socrata_syp8-uezg@2026-09-13
 610089,John B Murphy Elementary School,address_exact,41.949626,-87.717084,54.3,19.4,167757,3539 W GRACE ST,,3,28977.1,208,sourced,socrata_syp8-uezg@2026-09-13
 610090,Phillip Murray Elementary Language Academy,address_exact,41.799004,-87.592896,63.8,36,465877,5335 S KENWOOD AVE,MURRAY ELEMENTARY MAGNET SCHOOL,2,31887.2,39,sourced,socrata_syp8-uezg@2026-09-13
 610091,Ronald Brown Elementary Community Academy,address_exact,41.664723,-87.638657,30.1,13.4,801794,12607 S UNION AVE,,1,35588.5,167,sourced,socrata_syp8-uezg@2026-09-13
-610092,Henry H Nash Elementary School,address_exact,41.891985,-87.747638,31.5,6.1,347746,4837 W ERIE ST,NASH PUBLIC SCHOOL,0,31084.2,166,sourced,socrata_syp8-uezg@2026-09-13
+610092,Henry H Nash Elementary School,address_exact,41.891985,-87.747638,31.5,6.1,347746,4837 W ERIE ST,NASH PUBLIC SCHOOL,,31084.2,166,sourced,socrata_syp8-uezg@2026-09-13
 610093,Jane A Neil Elementary School,largest_nearby,41.738061,-87.622216,113.5,86.5,661713,8601 S WABASH AVE,,1,3796.8,119,sourced,socrata_syp8-uezg@2026-09-13
-610094,Louis Nettelhorst Elementary School,address_exact,41.941581,-87.644737,15.9,0.8,853746,3246-3258 N BROADWAY,,0,11677.4,76,sourced,socrata_syp8-uezg@2026-09-13
-610095,Walter L Newberry Math & Science Academy ES,largest_nearby,41.91455,-87.646279,71.1,15.3,293232,1815-1829 N BURLING ST,,0,31315.6,119,sourced,socrata_syp8-uezg@2026-09-13
-610096,Florence Nightingale Elementary School,address_exact,41.798047,-87.689834,68.6,57.3,470907,5250 S ROCKWELL ST,,0,2817.2,194,sourced,socrata_syp8-uezg@2026-09-13
-610097,William P Nixon Elementary School,address_exact,41.919268,-87.73115,41.3,5.4,279496,2121 N KEELER AVE,,0,29013.9,177,sourced,socrata_syp8-uezg@2026-09-13
+610094,Louis Nettelhorst Elementary School,address_exact,41.941581,-87.644737,15.9,0.8,853746,3246-3258 N BROADWAY,,,11677.4,76,sourced,socrata_syp8-uezg@2026-09-13
+610095,Walter L Newberry Math & Science Academy ES,largest_nearby,41.91455,-87.646279,71.1,15.3,293232,1815-1829 N BURLING ST,,,31315.6,119,sourced,socrata_syp8-uezg@2026-09-13
+610096,Florence Nightingale Elementary School,address_exact,41.798047,-87.689834,68.6,57.3,470907,5250 S ROCKWELL ST,,,2817.2,194,sourced,socrata_syp8-uezg@2026-09-13
+610097,William P Nixon Elementary School,address_exact,41.919268,-87.73115,41.3,5.4,279496,2121 N KEELER AVE,,,29013.9,177,sourced,socrata_syp8-uezg@2026-09-13
 610098,Alfred Nobel Elementary School,address_exact,41.905773,-87.72977,45.2,3.8,317155,4119-4127 W HIRSCH ST,,4,23216.1,154,sourced,socrata_syp8-uezg@2026-09-13
-610099,Norwood Park Elementary School,largest_nearby,41.989302,-87.802649,130.6,99.3,45059,5900 N NINA AVE,,0,29794.8,67,sourced,socrata_syp8-uezg@2026-09-13
+610099,Norwood Park Elementary School,largest_nearby,41.989302,-87.802649,130.6,99.3,45059,5900 N NINA AVE,,,29794.8,67,sourced,socrata_syp8-uezg@2026-09-13
 610100,West Park Elementary Academy,address_exact,41.906835,-87.732188,22.6,6.3,314324,1403-1439 N TRIPP AVE,,3,30431.1,176,sourced,socrata_syp8-uezg@2026-09-13
 610101,William B Ogden Elementary School,address_exact,41.900283,-87.628894,47.8,9.1,892954,24 W WALTON ST,Ogden International School of Chicago,3,55364.1,48,sourced,socrata_syp8-uezg@2026-09-13
 610102,Richard J Oglesby Elementary School,address_exact,41.754799,-87.646173,60.2,7.2,602870,7646 S GREEN ST,,3,24051.4,109,sourced,socrata_syp8-uezg@2026-09-13
-610103,Isabelle C O'Keeffe Elementary School,address_exact,41.768993,-87.573045,47.8,10,565209,6940 S MERRILL AVE,,0,33750.9,74,sourced,socrata_syp8-uezg@2026-09-13
+610103,Isabelle C O'Keeffe Elementary School,address_exact,41.768993,-87.573045,47.8,10,565209,6940 S MERRILL AVE,,,33750.9,74,sourced,socrata_syp8-uezg@2026-09-13
 610104,William J Onahan Elementary School,address_exact,41.994092,-87.792238,79.5,20.6,33839,6634 W RAVEN ST,,3,29633,117,sourced,socrata_syp8-uezg@2026-09-13
 610105,Oriole Park Elementary School,address_exact,41.978309,-87.812405,36.1,18.8,70752,5424 N OKETO AVE,ORIOLE PARK PUBLIC SCHOOL,2,18152.5,186,sourced,socrata_syp8-uezg@2026-09-13
-610106,Brian Piccolo Elementary Specialty School,address_exact,41.900301,-87.73188,54.3,21.8,328772,1040 N KEELER AVE,,0,73377.2,193,sourced,socrata_syp8-uezg@2026-09-13
-610107,James Otis Elementary School,address_exact,41.891866,-87.665076,29.8,10.7,347134,525 N ARMOUR ST,,0,30086,137,sourced,socrata_syp8-uezg@2026-09-13
-610108,Luke O'Toole Elementary School,address_exact,41.774136,-87.675411,66.3,32.9,549436,6550 S SEELEY AVE,,0,33937,134,sourced,socrata_syp8-uezg@2026-09-13
+610106,Brian Piccolo Elementary Specialty School,address_exact,41.900301,-87.73188,54.3,21.8,328772,1040 N KEELER AVE,,,73377.2,193,sourced,socrata_syp8-uezg@2026-09-13
+610107,James Otis Elementary School,address_exact,41.891866,-87.665076,29.8,10.7,347134,525 N ARMOUR ST,,,30086,137,sourced,socrata_syp8-uezg@2026-09-13
+610108,Luke O'Toole Elementary School,address_exact,41.774136,-87.675411,66.3,32.9,549436,6550 S SEELEY AVE,,,33937,134,sourced,socrata_syp8-uezg@2026-09-13
 610109,William Bishop Owen Scholastic Academy ES,address_exact,41.742715,-87.705375,34.5,17.7,645847,8247 S CHRISTIANA AVE,,2,17756.5,154,sourced,socrata_syp8-uezg@2026-09-13
-610110,Ida B Wells Preparatory Elementary Academy,address_exact,41.826695,-87.619595,74.9,8,421493,249 E 37TH ST,,0,43368.8,99,sourced,socrata_syp8-uezg@2026-09-13
-610111,John Palmer Elementary School,address_exact,41.97328,-87.738948,22,7.6,86734,5051 N KENNETH AVE,,0,28053.8,175,sourced,socrata_syp8-uezg@2026-09-13
-610112,Francis W Parker Elementary Community Academy,largest_nearby,41.770098,-87.636033,178.7,140.1,561584,6835 S NORMAL BLVD,,0,100332.2,12,sourced,socrata_syp8-uezg@2026-09-13
+610110,Ida B Wells Preparatory Elementary Academy,address_exact,41.826695,-87.619595,74.9,8,421493,249 E 37TH ST,,,43368.8,99,sourced,socrata_syp8-uezg@2026-09-13
+610111,John Palmer Elementary School,address_exact,41.97328,-87.738948,22,7.6,86734,5051 N KENNETH AVE,,,28053.8,175,sourced,socrata_syp8-uezg@2026-09-13
+610112,Francis W Parker Elementary Community Academy,largest_nearby,41.770098,-87.636033,178.7,140.1,561584,6835 S NORMAL BLVD,,,100332.2,12,sourced,socrata_syp8-uezg@2026-09-13
 610115,Park Manor Elementary School,address_exact,41.766813,-87.611293,42.8,4.6,570281,7037 S RHODES AVE,,3,29271.8,136,sourced,socrata_syp8-uezg@2026-09-13
 610116,Parkside Elementary Community Academy,address_exact,41.768901,-87.583297,47.9,10,564914,6938 S EAST END AVE,,3,31905,118,sourced,socrata_syp8-uezg@2026-09-13
 610117,Louis Pasteur Elementary School,address_exact,41.787023,-87.732412,25.5,11,507246,5825 S KOSTNER AVE,,2,27911.1,133,sourced,socrata_syp8-uezg@2026-09-13
-610120,Ferdinand Peck Elementary School,address_exact,41.788081,-87.720242,87.6,6.6,505055,3826 W 58TH ST,,0,26630.6,190,sourced,socrata_syp8-uezg@2026-09-13
-610121,Washington Irving Elementary School,address_exact,41.871771,-87.683261,35.4,16.7,367381,745-749 S OAKLEY BLVD,,0,30076.4,171,sourced,socrata_syp8-uezg@2026-09-13
-610122,Helen Peirce International Studies ES,address_exact,41.98305,-87.666137,50.9,13,57687,1423 W BRYN MAWR AVE,,0,30304.2,164,sourced,socrata_syp8-uezg@2026-09-13
+610120,Ferdinand Peck Elementary School,address_exact,41.788081,-87.720242,87.6,6.6,505055,3826 W 58TH ST,,,26630.6,190,sourced,socrata_syp8-uezg@2026-09-13
+610121,Washington Irving Elementary School,address_exact,41.871771,-87.683261,35.4,16.7,367381,745-749 S OAKLEY BLVD,,,30076.4,171,sourced,socrata_syp8-uezg@2026-09-13
+610122,Helen Peirce International Studies ES,address_exact,41.98305,-87.666137,50.9,13,57687,1423 W BRYN MAWR AVE,,,30304.2,164,sourced,socrata_syp8-uezg@2026-09-13
 610123,William Penn Elementary School,address_exact,41.858175,-87.721943,42.8,5.4,377533,1616 S AVERS AVE,,3,44611,76,sourced,socrata_syp8-uezg@2026-09-13
-610124,Harold Washington Elementary School,address_exact,41.728565,-87.596646,32.5,9.7,684751,9128-9130 S UNIVERSITY AVE,,0,32949.4,149,sourced,socrata_syp8-uezg@2026-09-13
+610124,Harold Washington Elementary School,address_exact,41.728565,-87.596646,32.5,9.7,684751,9128-9130 S UNIVERSITY AVE,,,32949.4,149,sourced,socrata_syp8-uezg@2026-09-13
 610125,Irma C Ruiz Elementary School,address_exact,41.847947,-87.681289,48.3,12.3,392368,2410 S LEAVITT ST,,3,30390.2,198,sourced,socrata_syp8-uezg@2026-09-13
-610126,John J Pershing STEAM Magnet Elementary School,address_exact,41.836309,-87.618642,34.9,7.5,410129,3200 S CALUMET AVE,,0,38985.2,80,sourced,socrata_syp8-uezg@2026-09-13
+610126,John J Pershing STEAM Magnet Elementary School,address_exact,41.836309,-87.618642,34.9,7.5,410129,3200 S CALUMET AVE,,,38985.2,80,sourced,socrata_syp8-uezg@2026-09-13
 610127,Mary Gage Peterson Elementary School,address_exact,41.982207,-87.712845,75.4,7.4,60175,5510 N CHRISTIANA AVE,,2,33110.2,165,sourced,socrata_syp8-uezg@2026-09-13
-610128,Marcus Moziah Garvey Elementary School,address_exact,41.706599,-87.64727,25.6,5.6,732051,10309 S MORGAN ST,,0,21993.9,151,sourced,socrata_syp8-uezg@2026-09-13
-610129,Josiah Pickard Elementary School,address_exact,41.852774,-87.683639,32.1,4,385801,2301 W 21ST PL,,0,22534.1,208,sourced,socrata_syp8-uezg@2026-09-13
-610130,John T Pirie Fine Arts & Academic Center ES,address_exact,41.740727,-87.608265,53,14.7,651586,636-650 E 85TH ST,,0,42405.9,24,sourced,socrata_syp8-uezg@2026-09-13
+610128,Marcus Moziah Garvey Elementary School,address_exact,41.706599,-87.64727,25.6,5.6,732051,10309 S MORGAN ST,,,21993.9,151,sourced,socrata_syp8-uezg@2026-09-13
+610129,Josiah Pickard Elementary School,address_exact,41.852774,-87.683639,32.1,4,385801,2301 W 21ST PL,,,22534.1,208,sourced,socrata_syp8-uezg@2026-09-13
+610130,John T Pirie Fine Arts & Academic Center ES,address_exact,41.740727,-87.608265,53,14.7,651586,636-650 E 85TH ST,,,42405.9,24,sourced,socrata_syp8-uezg@2026-09-13
 610131,Ambrose Plamondon Elementary School,address_exact,41.86044,-87.692632,22,3.5,375640,2640-2650 W 15TH PL,PLAMONDON,3,13629.2,70,sourced,socrata_syp8-uezg@2026-09-13
 610132,Edgar Allan Poe Elementary Classical School,address_exact,41.702447,-87.606671,29.2,2.7,742048,10538 S LANGLEY AVE,,3,13940.9,186,sourced,socrata_syp8-uezg@2026-09-13
-610133,Laura S Ward Elementary School,address_exact,41.8933,-87.719068,23.6,3.7,856434,644-658 N LAWNDALE AVE,,0,13509.6,121,sourced,socrata_syp8-uezg@2026-09-13
-610135,Portage Park Elementary School,address_exact,41.957371,-87.760976,42.6,10.4,859347,5320-5338 W BERTEAU AVE,,0,34831.8,163,sourced,socrata_syp8-uezg@2026-09-13
+610133,Laura S Ward Elementary School,address_exact,41.8933,-87.719068,23.6,3.7,856434,644-658 N LAWNDALE AVE,,,13509.6,121,sourced,socrata_syp8-uezg@2026-09-13
+610135,Portage Park Elementary School,address_exact,41.957371,-87.760976,42.6,10.4,859347,5320-5338 W BERTEAU AVE,,,34831.8,163,sourced,socrata_syp8-uezg@2026-09-13
 610136,William H Prescott Elementary School,address_exact,41.929202,-87.669233,47,13,249991,1632 W WRIGHTWOOD AVE,PRESCOTT PUBLIC SCHOOL,3,16309.4,238,sourced,socrata_syp8-uezg@2026-09-13
 610137,Ernst Prussing Elementary School,address_exact,41.965401,-87.772669,32.1,10.4,113469,4650 N MENARD AVE,,2,28313.5,200,sourced,socrata_syp8-uezg@2026-09-13
-610138,Pulaski International School of Chicago,largest_nearby,41.918736,-87.683773,27.9,15.1,281930,2230 W MC LEAN AVE,,0,24280.8,225,sourced,socrata_syp8-uezg@2026-09-13
+610138,Pulaski International School of Chicago,largest_nearby,41.918736,-87.683773,27.9,15.1,281930,2230 W MC LEAN AVE,,,24280.8,225,sourced,socrata_syp8-uezg@2026-09-13
 610139,George M Pullman Elementary School,address_exact,41.68868,-87.608868,49.3,33.9,774387,11311 S FORRESTVILLE AVE,,3,22054.9,235,sourced,socrata_syp8-uezg@2026-09-13
 610141,Ravenswood Elementary School,address_exact,41.960999,-87.671293,41.6,6.6,128127,4322-4332 N PAULINA ST,,2,35660.5,92,sourced,socrata_syp8-uezg@2026-09-13
-610142,William H Ray Elementary School,address_exact,41.792435,-87.594478,24.7,8.1,871246,5631-5641 S KIMBARK AVE,RAY SCHOOL,0,25246.8,79,sourced,socrata_syp8-uezg@2026-09-13
+610142,William H Ray Elementary School,address_exact,41.792435,-87.594478,24.7,8.1,871246,5631-5641 S KIMBARK AVE,RAY SCHOOL,,25246.8,79,sourced,socrata_syp8-uezg@2026-09-13
 610143,William C Reavis Math & Science Specialty ES,address_exact,41.804342,-87.605434,46.2,3.3,452888,820-834 E 50TH ST,,2,37332.4,8,sourced,socrata_syp8-uezg@2026-09-13
 610144,Frank W Reilly Elementary School,address_exact,41.941829,-87.719314,83.8,6.3,200508,3650 W SCHOOL ST,,3,46161.9,230,sourced,socrata_syp8-uezg@2026-09-13
-610145,Peter A Reinberg Elementary School,address_exact,41.942459,-87.768556,71.6,16.6,197410,3425 N MAJOR AVE,,0,25658.9,206,sourced,socrata_syp8-uezg@2026-09-13
+610145,Peter A Reinberg Elementary School,address_exact,41.942459,-87.768556,71.6,16.6,197410,3425 N MAJOR AVE,,,25658.9,206,sourced,socrata_syp8-uezg@2026-09-13
 610146,Paul Revere Elementary School,address_exact,41.764581,-87.600304,44.1,9.2,575312,1010 E 72ND ST,,4,34383.8,130,sourced,socrata_syp8-uezg@2026-09-13
 610147,Philip Rogers Elementary School,address_exact,42.015496,-87.696402,69.8,24.1,3769,7345 N WASHTENAW AVE,,2,33011.9,99,sourced,socrata_syp8-uezg@2026-09-13
-610148,Back of the Yards Multicultural Academic Center,address_exact,41.80754,-87.665694,52.5,21.1,447594,4747 S MARSHFIELD AVE,,0,17604,142,sourced,socrata_syp8-uezg@2026-09-13
-610152,Martha Ruggles Elementary School,address_exact,41.751847,-87.617646,36.7,21.5,608745,7825-7831 S PRAIRIE AVE,,0,34638.2,82,sourced,socrata_syp8-uezg@2026-09-13
+610148,Back of the Yards Multicultural Academic Center,address_exact,41.80754,-87.665694,52.5,21.1,447594,4747 S MARSHFIELD AVE,,,17604,142,sourced,socrata_syp8-uezg@2026-09-13
+610152,Martha Ruggles Elementary School,address_exact,41.751847,-87.617646,36.7,21.5,608745,7825-7831 S PRAIRIE AVE,,,34638.2,82,sourced,socrata_syp8-uezg@2026-09-13
 610153,William H Ryder Math & Science Specialty ES,address_exact,41.735264,-87.639472,53.9,36.5,669065,8716 S WALLACE ST,WILLIAM H. RYDER PUBLIC SCHOOL,3,30294.4,123,sourced,socrata_syp8-uezg@2026-09-13
 610155,Sauganash Elementary School,address_exact,41.991568,-87.746108,46.2,23.8,40611,6040 N KILPATRICK AVE,,1,13108,79,sourced,socrata_syp8-uezg@2026-09-13
 610157,Sidney Sawyer Elementary School,address_exact,41.797649,-87.705269,27.6,4.1,471893,5248 S SAWYER AVE,,3,27472.2,159,sourced,socrata_syp8-uezg@2026-09-13
 610158,Harriet E Sayre Elementary Language Academy,address_exact,41.913809,-87.799259,58.6,27.1,296314,1850 N NEWLAND AVE,,3,31752.5,134,sourced,socrata_syp8-uezg@2026-09-13
-610159,Jonathan Y Scammon Elementary School,address_exact,41.941447,-87.732948,68.8,12.1,202938,4201 W HENDERSON ST,,0,28252.5,207,sourced,socrata_syp8-uezg@2026-09-13
+610159,Jonathan Y Scammon Elementary School,address_exact,41.941447,-87.732948,68.8,12.1,202938,4201 W HENDERSON ST,,,28252.5,207,sourced,socrata_syp8-uezg@2026-09-13
 610163,Frederick Stock Elementary School,address_exact,42.016695,-87.814653,43.8,13.2,3186,7507 W BIRCHWOOD AVE,,1,16794.1,212,sourced,socrata_syp8-uezg@2026-09-13
 610165,Franz Peter Schubert Elementary School,address_exact,41.929994,-87.76066,63.2,27.2,248287,2701-2727 N LONG AVE,,1,30238.1,157,sourced,socrata_syp8-uezg@2026-09-13
 610167,William H Seward Communication Arts Academy ES,address_exact,41.810054,-87.669027,37.5,8.1,442519,4600 S HERMITAGE AVE,,3,28833.2,199,sourced,socrata_syp8-uezg@2026-09-13
@@ -461,183 +461,183 @@ sid,name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bl
 610171,Arnold Mireles Elementary Academy,largest_nearby,41.731582,-87.553289,44.3,6.7,678373,9035 S ESCANABA AVE,,4,57334.6,116,sourced,socrata_syp8-uezg@2026-09-13
 610172,William T Sherman Elementary School,address_exact,41.799933,-87.650468,27.6,10.6,463145,1000-1004 W 52ND ST,,3,13486.1,103,sourced,socrata_syp8-uezg@2026-09-13
 610173,Jesse Sherwood Elementary School,address_exact,41.790608,-87.632565,31.9,8.9,494704,245 W 57TH ST,,2,22738.4,69,sourced,socrata_syp8-uezg@2026-09-13
-610174,James Shields Elementary School,address_exact,41.815858,-87.689766,11.4,3.5,432641,4250 S ROCKWELL ST,,0,3275,239,sourced,socrata_syp8-uezg@2026-09-13
+610174,James Shields Elementary School,address_exact,41.815858,-87.689766,11.4,3.5,432641,4250 S ROCKWELL ST,,,3275,239,sourced,socrata_syp8-uezg@2026-09-13
 610175,Beulah Shoesmith Elementary School,address_exact,41.804858,-87.594214,67.7,30.1,451955,1330 E 50TH ST,,2,24670.8,80,sourced,socrata_syp8-uezg@2026-09-13
-610176,John D Shoop Math-Science Technical Academy ES,largest_nearby,41.690626,-87.659835,102.4,5,771157,1460 W 112TH ST,,0,37903.6,77,sourced,socrata_syp8-uezg@2026-09-13
-610177,Mark Skinner Elementary School,address_exact,41.879384,-87.659009,46.2,16.9,888754,1260 W ADAMS ST,SKINNER SCHOOL,0,36567,59,sourced,socrata_syp8-uezg@2026-09-13
-610178,Theophilus Schmid Elementary School,address_exact,41.717068,-87.596581,30.5,18.1,708647,9755 S GREENWOOD AVE,,0,7194,172,sourced,socrata_syp8-uezg@2026-09-13
-610179,Washington D Smyser Elementary School,address_exact,41.959418,-87.782587,79.4,28.6,136614,4310 N MELVINA AVE,,0,26103,151,sourced,socrata_syp8-uezg@2026-09-13
+610176,John D Shoop Math-Science Technical Academy ES,largest_nearby,41.690626,-87.659835,102.4,5,771157,1460 W 112TH ST,,,37903.6,77,sourced,socrata_syp8-uezg@2026-09-13
+610177,Mark Skinner Elementary School,address_exact,41.879384,-87.659009,46.2,16.9,888754,1260 W ADAMS ST,SKINNER SCHOOL,,36567,59,sourced,socrata_syp8-uezg@2026-09-13
+610178,Theophilus Schmid Elementary School,address_exact,41.717068,-87.596581,30.5,18.1,708647,9755 S GREENWOOD AVE,,,7194,172,sourced,socrata_syp8-uezg@2026-09-13
+610179,Washington D Smyser Elementary School,address_exact,41.959418,-87.782587,79.4,28.6,136614,4310 N MELVINA AVE,,,26103,151,sourced,socrata_syp8-uezg@2026-09-13
 610180,John M Smyth Elementary School,containing,41.865259,-87.653173,24.8,0,372703,1062-1064 W MAXWELL ST,,3,39459.9,23,sourced,socrata_syp8-uezg@2026-09-13
 610182,Hannah G Solomon Elementary School,address_exact,41.99443,-87.724361,60.3,15.2,32576,6206 N HAMLIN AVE,,1,38273.6,115,sourced,socrata_syp8-uezg@2026-09-13
-610183,Spencer Technology Academy,address_exact,41.884871,-87.750791,28.7,10.7,353946,214 N LAVERGNE AVE,,0,33157.2,103,sourced,socrata_syp8-uezg@2026-09-13
-610184,John Spry Elementary Community School,address_exact,41.847814,-87.699832,30.2,13,392537,2400 S MARSHALL BLVD,,0,32810.2,183,sourced,socrata_syp8-uezg@2026-09-13
+610183,Spencer Technology Academy,address_exact,41.884871,-87.750791,28.7,10.7,353946,214 N LAVERGNE AVE,,,33157.2,103,sourced,socrata_syp8-uezg@2026-09-13
+610184,John Spry Elementary Community School,address_exact,41.847814,-87.699832,30.2,13,392537,2400 S MARSHALL BLVD,,,32810.2,183,sourced,socrata_syp8-uezg@2026-09-13
 610185,Adlai E Stevenson Elementary School,address_exact,41.747138,-87.732029,30.4,16.2,630384,8010 S KOSTNER AVE,,2,30368,140,sourced,socrata_syp8-uezg@2026-09-13
-610188,Dunne Technology Academy,address_exact,41.696408,-87.639757,20.6,6.4,759040,10845 S UNION AVE,,0,12455.1,164,sourced,socrata_syp8-uezg@2026-09-13
+610188,Dunne Technology Academy,address_exact,41.696408,-87.639757,20.6,6.4,759040,10845 S UNION AVE,,,12455.1,164,sourced,socrata_syp8-uezg@2026-09-13
 610191,Stone Elementary Scholastic Academy,address_exact,41.995249,-87.684383,36.1,21.5,29460,6239-6251 N LEAVITT ST,,3,26593.1,69,sourced,socrata_syp8-uezg@2026-09-13
 610192,Harriet Beecher Stowe Elementary School,address_exact,41.912879,-87.713076,106.4,12.2,298167,3444 W WABANSIA AVE,,3,31569.5,149,sourced,socrata_syp8-uezg@2026-09-13
-610193,William K New Sullivan Elementary School,address_exact,41.74355,-87.542642,39.1,13.1,815737,8331 S MACKINAW AVE,,0,37902.5,90,sourced,socrata_syp8-uezg@2026-09-13
+610193,William K New Sullivan Elementary School,address_exact,41.74355,-87.542642,39.1,13.1,815737,8331 S MACKINAW AVE,,,37902.5,90,sourced,socrata_syp8-uezg@2026-09-13
 610194,Charles Sumner Math & Science Community Acad ES,largest_nearby,41.87098,-87.733636,19.3,0.9,368382,4300-4328 W FIFTH AVE,,2,46078.9,50,sourced,socrata_syp8-uezg@2026-09-13
-610195,Elizabeth H Sutherland Elementary School,address_exact,41.711276,-87.676536,30.3,12.6,721055,10015 S LEAVITT ST,,0,27848.5,105,sourced,socrata_syp8-uezg@2026-09-13
+610195,Elizabeth H Sutherland Elementary School,address_exact,41.711276,-87.676536,30.3,12.6,721055,10015 S LEAVITT ST,,,27848.5,105,sourced,socrata_syp8-uezg@2026-09-13
 610196,George B Swift Elementary Specialty School,address_exact,41.988993,-87.658552,26.7,4,853482,5832-5900 N WINTHROP AVE,SWIFT SCHOOL,3,32283.8,55,sourced,socrata_syp8-uezg@2026-09-13
-610197,Mancel Talcott Elementary School,address_exact,41.89259,-87.673954,28.1,4.7,345301,1840 W OHIO ST,,0,37421,211,sourced,socrata_syp8-uezg@2026-09-13
-610198,Douglas Taylor Elementary School,address_exact,41.715336,-87.533316,32.4,6,711137,9912 S AVENUE H,,0,33274,157,sourced,socrata_syp8-uezg@2026-09-13
-610199,Johnnie Colemon Elementary Academy,address_exact,41.676855,-87.657784,77.1,56.8,815738,1441 W 119TH ST,,0,39725.8,110,sourced,socrata_syp8-uezg@2026-09-13
-610200,James N Thorp Elementary School,address_exact,41.733257,-87.544862,49,22.1,673451,8914 S BUFFALO AVE,,0,40540.5,71,sourced,socrata_syp8-uezg@2026-09-13
-610201,Ole A Thorp Elementary Scholastic Academy,address_exact,41.948888,-87.777847,39.5,9.1,171976,6024 W WARWICK AVE,,0,35440.5,186,sourced,socrata_syp8-uezg@2026-09-13
+610197,Mancel Talcott Elementary School,address_exact,41.89259,-87.673954,28.1,4.7,345301,1840 W OHIO ST,,,37421,211,sourced,socrata_syp8-uezg@2026-09-13
+610198,Douglas Taylor Elementary School,address_exact,41.715336,-87.533316,32.4,6,711137,9912 S AVENUE H,,,33274,157,sourced,socrata_syp8-uezg@2026-09-13
+610199,Johnnie Colemon Elementary Academy,address_exact,41.676855,-87.657784,77.1,56.8,815738,1441 W 119TH ST,,,39725.8,110,sourced,socrata_syp8-uezg@2026-09-13
+610200,James N Thorp Elementary School,address_exact,41.733257,-87.544862,49,22.1,673451,8914 S BUFFALO AVE,,,40540.5,71,sourced,socrata_syp8-uezg@2026-09-13
+610201,Ole A Thorp Elementary Scholastic Academy,address_exact,41.948888,-87.777847,39.5,9.1,171976,6024 W WARWICK AVE,,,35440.5,186,sourced,socrata_syp8-uezg@2026-09-13
 610202,George W Tilton Elementary School,address_exact,41.883809,-87.730249,41.8,12.6,859322,223 N KEELER AVE,,4,24844,96,sourced,socrata_syp8-uezg@2026-09-13
-610203,Monarcas Academy,address_exact,41.787233,-87.707768,47,20.8,506096,5815-5817 S HOMAN AVE,,0,24311.2,209,sourced,socrata_syp8-uezg@2026-09-13
-610206,Mark Twain Elementary School,address_exact,41.799136,-87.759178,23.1,1.8,465496,5134 S LOTUS AVE,TWAIN SCHOOL,0,63249.3,164,sourced,socrata_syp8-uezg@2026-09-13
+610203,Monarcas Academy,address_exact,41.787233,-87.707768,47,20.8,506096,5815-5817 S HOMAN AVE,,,24311.2,209,sourced,socrata_syp8-uezg@2026-09-13
+610206,Mark Twain Elementary School,address_exact,41.799136,-87.759178,23.1,1.8,465496,5134 S LOTUS AVE,TWAIN SCHOOL,,63249.3,164,sourced,socrata_syp8-uezg@2026-09-13
 610207,John H Vanderpoel Elementary Magnet School,address_exact,41.720605,-87.665906,37.2,17.9,701709,9510-9538 S PROSPECT AVE,VANDERPOEL SCHOOL,3,19511.1,55,sourced,socrata_syp8-uezg@2026-09-13
 610208,Mildred I Lavizzo Elementary School,address_exact,41.696478,-87.627219,24.7,10.7,815734,138 W 109TH ST,,3,35808.9,107,sourced,socrata_syp8-uezg@2026-09-13
-610209,Alessandro Volta Elementary School,address_exact,41.971661,-87.725033,35.6,17.9,92849,4950 N AVERS AVE,,0,27906.1,165,sourced,socrata_syp8-uezg@2026-09-13
-610212,Albany Park Multicultural Academy,largest_nearby,41.971382,-87.709398,101.3,84.1,834580,4929 N SAWYER AVE,,0,42974.6,99,sourced,socrata_syp8-uezg@2026-09-13
+610209,Alessandro Volta Elementary School,address_exact,41.971661,-87.725033,35.6,17.9,92849,4950 N AVERS AVE,,,27906.1,165,sourced,socrata_syp8-uezg@2026-09-13
+610212,Albany Park Multicultural Academy,largest_nearby,41.971382,-87.709398,101.3,84.1,834580,4929 N SAWYER AVE,,,42974.6,99,sourced,socrata_syp8-uezg@2026-09-13
 610213,James Wadsworth Elementary School,address_exact,41.773468,-87.601266,20.7,3.7,551265,6650 S ELLIS AVE,,3,29885.2,81,sourced,socrata_syp8-uezg@2026-09-13
-610215,Francisco I Madero Middle School,largest_nearby,41.841173,-87.704559,48.4,20.8,401997,2759 S KEDZIE AVE,,0,38182.4,136,sourced,socrata_syp8-uezg@2026-09-13
+610215,Francisco I Madero Middle School,largest_nearby,41.841173,-87.704559,48.4,20.8,401997,2759 S KEDZIE AVE,,,38182.4,136,sourced,socrata_syp8-uezg@2026-09-13
 610216,John A Walsh Elementary School,address_exact,41.854382,-87.647821,55,1.4,382055,2015-2031 S PEORIA ST,WALSH ELEMENTARY SCHOOL,3,27339.6,42,sourced,socrata_syp8-uezg@2026-09-13
-610217,James Ward Elementary School,address_exact,41.843452,-87.635142,61.3,18.9,397715,2701 S SHIELDS AVE,,0,23479.9,165,sourced,socrata_syp8-uezg@2026-09-13
-610218,Joseph Warren Elementary School,address_exact,41.726787,-87.57508,22.8,7.3,688605,9239 S JEFFERY AVE,,0,16775,163,sourced,socrata_syp8-uezg@2026-09-13
-610219,George Washington Elementary School,address_exact,41.687801,-87.535937,37.3,10.2,775272,3611 E 114TH ST,,0,30446.7,176,sourced,socrata_syp8-uezg@2026-09-13
+610217,James Ward Elementary School,address_exact,41.843452,-87.635142,61.3,18.9,397715,2701 S SHIELDS AVE,,,23479.9,165,sourced,socrata_syp8-uezg@2026-09-13
+610218,Joseph Warren Elementary School,address_exact,41.726787,-87.57508,22.8,7.3,688605,9239 S JEFFERY AVE,,,16775,163,sourced,socrata_syp8-uezg@2026-09-13
+610219,George Washington Elementary School,address_exact,41.687801,-87.535937,37.3,10.2,775272,3611 E 114TH ST,,,30446.7,176,sourced,socrata_syp8-uezg@2026-09-13
 610220,Thomas J Waters Elementary School,address_exact,41.96431,-87.692015,56.9,21.6,116894,4540 N CAMPBELL AVE,Waters Elementary School,3,28702.1,179,sourced,socrata_syp8-uezg@2026-09-13
 610221,Daniel Webster Elementary School,address_exact,41.869713,-87.726874,58.4,8.6,370002,4055 W ARTHINGTON ST,,2,34449,118,sourced,socrata_syp8-uezg@2026-09-13
 610223,Daniel S Wentworth Elementary School,address_exact,41.765311,-87.658378,29.8,12.2,574488,1340 W 71ST ST,,3,18122.1,148,sourced,socrata_syp8-uezg@2026-09-13
-610225,John Whistler Elementary School,address_exact,41.684022,-87.655049,30.7,8.3,783435,11533 S ADA ST,,0,54240.1,168,sourced,socrata_syp8-uezg@2026-09-13
-610226,Socorro Sandoval Elementary School,largest_nearby,41.793963,-87.711549,185.5,143.6,888750,3510 W 55TH ST,HERNANDEZ SCHOOL,0,41522.4,114,sourced,socrata_syp8-uezg@2026-09-13
-610227,Eli Whitney Elementary School,address_exact,41.840052,-87.725339,17.5,5.3,404169,2815 S KOMENSKY AVE,,0,17804.8,230,sourced,socrata_syp8-uezg@2026-09-13
-610228,John Greenleaf Whittier Elementary School,address_exact,41.850626,-87.673914,46.3,23,388593,1900 W 23RD ST,,0,10902.9,144,sourced,socrata_syp8-uezg@2026-09-13
+610225,John Whistler Elementary School,address_exact,41.684022,-87.655049,30.7,8.3,783435,11533 S ADA ST,,,54240.1,168,sourced,socrata_syp8-uezg@2026-09-13
+610226,Socorro Sandoval Elementary School,largest_nearby,41.793963,-87.711549,185.5,143.6,888750,3510 W 55TH ST,HERNANDEZ SCHOOL,,41522.4,114,sourced,socrata_syp8-uezg@2026-09-13
+610227,Eli Whitney Elementary School,address_exact,41.840052,-87.725339,17.5,5.3,404169,2815 S KOMENSKY AVE,,,17804.8,230,sourced,socrata_syp8-uezg@2026-09-13
+610228,John Greenleaf Whittier Elementary School,address_exact,41.850626,-87.673914,46.3,23,388593,1900 W 23RD ST,,,10902.9,144,sourced,socrata_syp8-uezg@2026-09-13
 610229,A.N. Pritzker School,address_exact,41.90654,-87.677862,57.6,10.9,314470,2009-2021 W SCHILLER ST,,1,39612.9,64,sourced,socrata_syp8-uezg@2026-09-13
 610230,Wildwood IB World Magnet School,address_exact,42.00718,-87.779006,64.7,18.4,13211,6950 N HIAWATHA AVE,,1,25192.8,58,sourced,socrata_syp8-uezg@2026-09-13
 610231,National Teachers Elementary Academy,largest_nearby,41.853876,-87.628944,123.3,54.8,383684,30-54 W CERMAK RD,HILLARD SENIOR HOMES I AND II,16,27310.1,3,sourced,socrata_syp8-uezg@2026-09-13
-610234,Richard Yates Elementary School,address_exact,41.91513,-87.70005,21.6,3.6,866008,1835-1855 N RICHMOND ST,,0,19329.5,127,sourced,socrata_syp8-uezg@2026-09-13
+610234,Richard Yates Elementary School,address_exact,41.91513,-87.70005,21.6,3.6,866008,1835-1855 N RICHMOND ST,,,19329.5,127,sourced,socrata_syp8-uezg@2026-09-13
 610235,Ella Flagg Young Elementary School,address_exact,41.905985,-87.767506,94.5,18.2,315550,1434 N PARKSIDE AVE,,3,65149.4,162,sourced,socrata_syp8-uezg@2026-09-13
-610237,Ludwig Van Beethoven Elementary School,address_exact,41.808882,-87.626854,36.7,15.1,444626,25 W 47TH ST,BEETHOVEN SCHOOL,0,14820.4,9,sourced,socrata_syp8-uezg@2026-09-13
+610237,Ludwig Van Beethoven Elementary School,address_exact,41.808882,-87.626854,36.7,15.1,444626,25 W 47TH ST,BEETHOVEN SCHOOL,,14820.4,9,sourced,socrata_syp8-uezg@2026-09-13
 610238,Carrie Jacobs Bond Elementary School,address_exact,41.765314,-87.653376,30.2,5.5,572617,7050-7056 S MAY ST,,3,46837.6,126,sourced,socrata_syp8-uezg@2026-09-13
 610239,Richard J Daley Elementary Academy,address_exact,41.802465,-87.672456,24.8,6.7,457699,5014-5024 S WOLCOTT AVE,,3,28940.8,106,sourced,socrata_syp8-uezg@2026-09-13
 610242,Joseph Brennemann Elementary School,address_exact,41.960009,-87.649122,52,18.4,130428,4251 N CLARENDON AVE,,1,47537.5,73,sourced,socrata_syp8-uezg@2026-09-13
 610244,Michele Clark Academic Prep Magnet High School,address_exact,41.872345,-87.752665,81.2,17.2,366868,5101 W HARRISON ST,,2,73356,15,sourced,socrata_syp8-uezg@2026-09-13
-610245,Frederick A Douglass Academy High School,largest_nearby,41.890388,-87.767139,43.9,2.5,349815,550 N PARKSIDE AVE,,0,88778.6,64,sourced,socrata_syp8-uezg@2026-09-13
+610245,Frederick A Douglass Academy High School,largest_nearby,41.890388,-87.767139,43.9,2.5,349815,550 N PARKSIDE AVE,,,88778.6,64,sourced,socrata_syp8-uezg@2026-09-13
 610246,Edward Beasley Elementary Magnet Academic Center,largest_nearby,41.798835,-87.626607,86.4,71.3,466480,5262 S STATE ST,,1,3803.9,13,sourced,socrata_syp8-uezg@2026-09-13
 610248,Chicago Academy Elementary School,address_exact,41.942528,-87.777471,83.4,49.3,195009,3400 N AUSTIN AVE,,4,64821.4,127,sourced,socrata_syp8-uezg@2026-09-13
-610249,Talman Elementary School,address_exact,41.794546,-87.690471,58,15.1,483097,5440-5450 S TALMAN AVE,ST CLARE OF MONTEFALCO SCHOOL,0,15095.6,185,sourced,socrata_syp8-uezg@2026-09-13
-610250,Ruben Salazar Elementary Bilingual Center,address_exact,41.901551,-87.633871,24.8,3.8,325088,160 W WENDELL ST,,0,9937.9,25,sourced,socrata_syp8-uezg@2026-09-13
+610249,Talman Elementary School,address_exact,41.794546,-87.690471,58,15.1,483097,5440-5450 S TALMAN AVE,ST CLARE OF MONTEFALCO SCHOOL,,15095.6,185,sourced,socrata_syp8-uezg@2026-09-13
+610250,Ruben Salazar Elementary Bilingual Center,address_exact,41.901551,-87.633871,24.8,3.8,325088,160 W WENDELL ST,,,9937.9,25,sourced,socrata_syp8-uezg@2026-09-13
 610251,Willa Cather Elementary School,address_exact,41.883279,-87.699444,42.3,13.1,355572,2908-2922 W WASHINGTON BLVD,,2,38811.9,99,sourced,socrata_syp8-uezg@2026-09-13
-610252,Robert Nathaniel Dett Elementary School,address_exact,41.879649,-87.68017,27.4,7.7,358580,2131 W MONROE ST,,0,34821,54,sourced,socrata_syp8-uezg@2026-09-13
-610254,Dvorak Technology Academy,address_exact,41.858746,-87.716077,31.6,3.3,377342,3615-3621 W 16TH ST,,0,35465.3,135,sourced,socrata_syp8-uezg@2026-09-13
+610252,Robert Nathaniel Dett Elementary School,address_exact,41.879649,-87.68017,27.4,7.7,358580,2131 W MONROE ST,,,34821,54,sourced,socrata_syp8-uezg@2026-09-13
+610254,Dvorak Technology Academy,address_exact,41.858746,-87.716077,31.6,3.3,377342,3615-3621 W 16TH ST,,,35465.3,135,sourced,socrata_syp8-uezg@2026-09-13
 610256,Jackie Robinson Elementary School,address_exact,41.817188,-87.598083,83.7,22.3,430765,4225 S LAKE PARK AVE,,1,18796.8,32,sourced,socrata_syp8-uezg@2026-09-13
-610257,Morton School of Excellence,address_exact,41.888986,-87.704769,35.3,11.3,350689,431 N TROY ST,,0,36353,37,sourced,socrata_syp8-uezg@2026-09-13
+610257,Morton School of Excellence,address_exact,41.888986,-87.704769,35.3,11.3,350689,431 N TROY ST,,,36353,37,sourced,socrata_syp8-uezg@2026-09-13
 610263,John Foster Dulles Elementary School,address_exact,41.779952,-87.616873,28.9,12.9,530295,6311 S CALUMET AVE,,2,30145.2,8,sourced,socrata_syp8-uezg@2026-09-13
 610268,Arthur R Ashe Elementary School,address_exact,41.740084,-87.600901,25.3,5.8,654090,8505 S INGLESIDE AVE,,3,27370.2,127,sourced,socrata_syp8-uezg@2026-09-13
 610269,John T McCutcheon Elementary School,address_exact,41.971193,-87.654474,35.9,4.2,92647,4865 N SHERIDAN RD,,2,23512.1,73,sourced,socrata_syp8-uezg@2026-09-13
 610271,Jensen Elementary Scholastic Academy,largest_nearby,41.873458,-87.702899,67.5,19.8,365788,3023-3053 W HARRISON ST,,1,37788,50,sourced,socrata_syp8-uezg@2026-09-13
-610274,James Weldon Johnson STEAM Elementary School,address_exact,41.861925,-87.703562,36.5,13.1,374981,1420-1424 S ALBANY AVE,,0,12736.9,26,sourced,socrata_syp8-uezg@2026-09-13
+610274,James Weldon Johnson STEAM Elementary School,address_exact,41.861925,-87.703562,36.5,13.1,374981,1420-1424 S ALBANY AVE,,,12736.9,26,sourced,socrata_syp8-uezg@2026-09-13
 610276,Irvin C Mollison Elementary School,largest_nearby,41.814153,-87.615987,57.1,26.5,433704,4415 S DR MARTIN LUTHER KING JR DR,,2,29645.9,71,sourced,socrata_syp8-uezg@2026-09-13
 610279,Henry O Tanner Elementary School,address_exact,41.760671,-87.60704,20.7,4.2,587260,7350 S EVANS AVE,,3,25647.8,129,sourced,socrata_syp8-uezg@2026-09-13
-610281,Adam Clayton Powell Paideia Community Academy ES,address_exact,41.760456,-87.556361,38.2,4.8,892417,7511 S SOUTH SHORE DR,,0,38607.2,33,sourced,socrata_syp8-uezg@2026-09-13
-610282,Ronald E McNair Elementary School,address_exact,41.898021,-87.746701,22.6,8.6,821960,4820-4824 W WALTON ST,,0,41586.7,119,sourced,socrata_syp8-uezg@2026-09-13
-610284,New Field Elementary School,address_exact,42.007354,-87.672377,76.1,6.9,826160,1703-1707 W MORSE AVE,,0,38020.2,76,sourced,socrata_syp8-uezg@2026-09-13
+610281,Adam Clayton Powell Paideia Community Academy ES,address_exact,41.760456,-87.556361,38.2,4.8,892417,7511 S SOUTH SHORE DR,,,38607.2,33,sourced,socrata_syp8-uezg@2026-09-13
+610282,Ronald E McNair Elementary School,address_exact,41.898021,-87.746701,22.6,8.6,821960,4820-4824 W WALTON ST,,,41586.7,119,sourced,socrata_syp8-uezg@2026-09-13
+610284,New Field Elementary School,address_exact,42.007354,-87.672377,76.1,6.9,826160,1703-1707 W MORSE AVE,,,38020.2,76,sourced,socrata_syp8-uezg@2026-09-13
 610287,Ashburn Community Elementary School,address_exact,41.741657,-87.709827,79.2,18.3,649525,8300 S ST LOUIS AVE,ASHBURN SCHOOL,2,24826.9,145,sourced,socrata_syp8-uezg@2026-09-13
 610290,Benjamin E Mays Elementary Academy,address_exact,41.772958,-87.637336,26,7.5,554799,6650-6656 S NORMAL BLVD,,3,27982.9,65,sourced,socrata_syp8-uezg@2026-09-13
-610291,Richard Henry Lee Elementary School,address_exact,41.775204,-87.72913,23.3,7.3,547853,6448 S TRIPP AVE,,0,28803.1,145,sourced,socrata_syp8-uezg@2026-09-13
-610293,Genevieve Melody Elementary School,address_exact,41.878405,-87.724463,46.7,6.4,360217,3937 W WILCOX ST,,0,44285.5,82,sourced,socrata_syp8-uezg@2026-09-13
+610291,Richard Henry Lee Elementary School,address_exact,41.775204,-87.72913,23.3,7.3,547853,6448 S TRIPP AVE,,,28803.1,145,sourced,socrata_syp8-uezg@2026-09-13
+610293,Genevieve Melody Elementary School,address_exact,41.878405,-87.724463,46.7,6.4,360217,3937 W WILCOX ST,,,44285.5,82,sourced,socrata_syp8-uezg@2026-09-13
 610295,Thomas J Higgins Elementary Community Academy,address_exact,41.680908,-87.64739,35.7,8.2,789177,11710 S MORGAN ST,,2,28247.2,97,sourced,socrata_syp8-uezg@2026-09-13
 610298,Lenart Elementary Regional Gifted Center,largest_nearby,41.746494,-87.627617,84.6,25.2,628918,8101 S LA SALLE ST,,3,22906.5,198,sourced,socrata_syp8-uezg@2026-09-13
 610299,Dr. Martin Luther King Jr Academy of Social Justice,address_exact,41.765581,-87.641444,28.7,6.9,573597,644-700 W 71ST ST,,1,29066.9,114,sourced,socrata_syp8-uezg@2026-09-13
 610300,Oliver S Westcott Elementary School,address_exact,41.748668,-87.635252,47.2,25.7,621741,409 W 80TH ST,WESTCOTT SCHOOL,3,20460.6,115,sourced,socrata_syp8-uezg@2026-09-13
-610304,Phoenix Military Academy High School,largest_nearby,41.879023,-87.688328,114.1,78.6,358692,145 S CAMPBELL AVE,,0,46718.8,43,sourced,socrata_syp8-uezg@2026-09-13
+610304,Phoenix Military Academy High School,largest_nearby,41.879023,-87.688328,114.1,78.6,358692,145 S CAMPBELL AVE,,,46718.8,43,sourced,socrata_syp8-uezg@2026-09-13
 610305,George Leland Elementary School,address_exact,41.873519,-87.749738,39.1,19.4,365810,512 S LAVERGNE AVE,,3,36174.1,111,sourced,socrata_syp8-uezg@2026-09-13
-610308,Wilma Rudolph Elementary Learning Center,containing,41.883792,-87.667886,21.3,0,354806,111 N PAULINA ST,,0,100476.5,37,sourced,socrata_syp8-uezg@2026-09-13
-610312,Mary E McDowell Elementary School,address_exact,41.732842,-87.589647,32.5,16.7,675890,1419 E 89TH ST,,0,14934.6,204,sourced,socrata_syp8-uezg@2026-09-13
+610308,Wilma Rudolph Elementary Learning Center,containing,41.883792,-87.667886,21.3,0,354806,111 N PAULINA ST,,,100476.5,37,sourced,socrata_syp8-uezg@2026-09-13
+610312,Mary E McDowell Elementary School,address_exact,41.732842,-87.589647,32.5,16.7,675890,1419 E 89TH ST,,,14934.6,204,sourced,socrata_syp8-uezg@2026-09-13
 610313,Jose De Diego Elementary Community Academy,address_exact,41.906383,-87.685548,122.2,4.6,315508,1313-1337 N CLAREMONT AVE,,3,69851.9,131,sourced,socrata_syp8-uezg@2026-09-13
 610315,Edward White Elementary Career Academy,address_exact,41.672683,-87.650562,41.6,20.8,796423,1120-1136 W 122ND ST,,1,28277.5,119,sourced,socrata_syp8-uezg@2026-09-13
 610316,Amelia Earhart Options for Knowledge ES,address_exact,41.726351,-87.58328,95.3,14.1,690087,1700-1710 E 93RD ST,,1,29394.3,182,sourced,socrata_syp8-uezg@2026-09-13
-610317,Brighton Park Elementary School,address_exact,41.82392,-87.691952,10.7,1.8,425315,3825-3839 S WASHTENAW AVE,,0,14878.6,174,sourced,socrata_syp8-uezg@2026-09-13
-610319,Evergreen Academy Middle School,address_exact,41.829025,-87.667559,42.6,14,419297,3537 S PAULINA ST,,0,15861,186,sourced,socrata_syp8-uezg@2026-09-13
-610323,Bowen High School,address_exact,41.734336,-87.557826,39.7,9.1,866015,2700-2728 E 89TH ST,,0,94246.7,54,sourced,socrata_syp8-uezg@2026-09-13
-610325,Avondale-Logandale Elementary School,address_exact,41.934268,-87.70799,33.4,7.6,232700,3212 W GEORGE ST,LOGANDALE MIDDLE SCHOOL,0,25302.4,217,sourced,socrata_syp8-uezg@2026-09-13
-610329,Orozco Fine Arts & Sciences Elementary School,address_exact,41.857977,-87.675693,47.1,10.6,836696,1940 W 18TH ST,,0,42797.7,61,sourced,socrata_syp8-uezg@2026-09-13
-610334,Al Raby High School,address_exact,41.885918,-87.715394,32.5,7.8,353194,3545 W FULTON BLVD,,0,47627.2,76,sourced,socrata_syp8-uezg@2026-09-13
-610339,Amos Alonzo Stagg Elementary School,address_exact,41.75873,-87.649382,25.6,2.4,593273,7424 S MORGAN ST,AMOS ALONZEO STAGG,0,29180.8,98,sourced,socrata_syp8-uezg@2026-09-13
+610317,Brighton Park Elementary School,address_exact,41.82392,-87.691952,10.7,1.8,425315,3825-3839 S WASHTENAW AVE,,,14878.6,174,sourced,socrata_syp8-uezg@2026-09-13
+610319,Evergreen Academy Middle School,address_exact,41.829025,-87.667559,42.6,14,419297,3537 S PAULINA ST,,,15861,186,sourced,socrata_syp8-uezg@2026-09-13
+610323,Bowen High School,address_exact,41.734336,-87.557826,39.7,9.1,866015,2700-2728 E 89TH ST,,,94246.7,54,sourced,socrata_syp8-uezg@2026-09-13
+610325,Avondale-Logandale Elementary School,address_exact,41.934268,-87.70799,33.4,7.6,232700,3212 W GEORGE ST,LOGANDALE MIDDLE SCHOOL,,25302.4,217,sourced,socrata_syp8-uezg@2026-09-13
+610329,Orozco Fine Arts & Sciences Elementary School,address_exact,41.857977,-87.675693,47.1,10.6,836696,1940 W 18TH ST,,,42797.7,61,sourced,socrata_syp8-uezg@2026-09-13
+610334,Al Raby High School,address_exact,41.885918,-87.715394,32.5,7.8,353194,3545 W FULTON BLVD,,,47627.2,76,sourced,socrata_syp8-uezg@2026-09-13
+610339,Amos Alonzo Stagg Elementary School,address_exact,41.75873,-87.649382,25.6,2.4,593273,7424 S MORGAN ST,AMOS ALONZEO STAGG,,29180.8,98,sourced,socrata_syp8-uezg@2026-09-13
 610340,Chicago Academy High School,address_exact,41.942528,-87.777471,78,2.2,195009,3400 N AUSTIN AVE,,4,64821.4,139,sourced,socrata_syp8-uezg@2026-09-13
-610342,Albert R Sabin Elementary Magnet School,address_exact,41.907396,-87.682872,66.1,31.9,313076,2216 W HIRSCH ST,,0,35080.2,243,sourced,socrata_syp8-uezg@2026-09-13
-610345,Carter G Woodson South Elementary School,address_exact,41.814064,-87.608677,52.8,9.7,433475,4414-4444 S EVANS AVE,,0,47715.1,29,sourced,socrata_syp8-uezg@2026-09-13
-610347,Claremont STEM Magnet Elementary School,address_exact,41.777777,-87.681548,50.1,15.1,821957,2300 W 64TH ST,,0,52213.8,149,sourced,socrata_syp8-uezg@2026-09-13
+610342,Albert R Sabin Elementary Magnet School,address_exact,41.907396,-87.682872,66.1,31.9,313076,2216 W HIRSCH ST,,,35080.2,243,sourced,socrata_syp8-uezg@2026-09-13
+610345,Carter G Woodson South Elementary School,address_exact,41.814064,-87.608677,52.8,9.7,433475,4414-4444 S EVANS AVE,,,47715.1,29,sourced,socrata_syp8-uezg@2026-09-13
+610347,Claremont STEM Magnet Elementary School,address_exact,41.777777,-87.681548,50.1,15.1,821957,2300 W 64TH ST,,,52213.8,149,sourced,socrata_syp8-uezg@2026-09-13
 610350,Robert A Black Magnet Elementary School,address_exact,41.72944,-87.576387,35.2,13.6,683060,9101-9137 S EUCLID AVE,,1,28764.8,147,sourced,socrata_syp8-uezg@2026-09-13
 610352,Durkin Park Elementary School,address_exact,41.739158,-87.729456,54.2,19.2,659553,8445 S KOLIN AVE,,1,28056.9,134,sourced,socrata_syp8-uezg@2026-09-13
-610353,Calmeca Academy of Fine Arts and Dual Language,address_exact,41.824724,-87.71117,55.7,26.4,891533,3456 W 38TH ST,CALMECA SCHOOL,0,34160.9,141,sourced,socrata_syp8-uezg@2026-09-13
-610354,North River Elementary School,address_exact,41.966243,-87.721166,19.3,1.7,844484,3729 W LELAND AVE,ASPIRA-HAUGAN SCHOOL,0,51571.4,141,sourced,socrata_syp8-uezg@2026-09-13
+610353,Calmeca Academy of Fine Arts and Dual Language,address_exact,41.824724,-87.71117,55.7,26.4,891533,3456 W 38TH ST,CALMECA SCHOOL,,34160.9,141,sourced,socrata_syp8-uezg@2026-09-13
+610354,North River Elementary School,address_exact,41.966243,-87.721166,19.3,1.7,844484,3729 W LELAND AVE,ASPIRA-HAUGAN SCHOOL,,51571.4,141,sourced,socrata_syp8-uezg@2026-09-13
 610355,Mary E Courtenay Elementary Language Arts Center,address_exact,41.962331,-87.664156,25.3,8.6,122394,4420 N BEACON ST,,3,45415.6,57,sourced,socrata_syp8-uezg@2026-09-13
-610357,Spry Community Links High School,address_exact,41.847814,-87.699832,73.8,55.7,392537,2400 S MARSHALL BLVD,,0,32810.2,125,sourced,socrata_syp8-uezg@2026-09-13
+610357,Spry Community Links High School,address_exact,41.847814,-87.699832,73.8,55.7,392537,2400 S MARSHALL BLVD,,,32810.2,125,sourced,socrata_syp8-uezg@2026-09-13
 610362,Medgar Evers Elementary School,address_exact,41.715743,-87.638959,30,8.2,712196,9801-9811 S LOWE AVE,,2,29646,123,sourced,socrata_syp8-uezg@2026-09-13
 610363,Walt Disney Magnet Elementary School,largest_nearby,41.955907,-87.646489,106.4,85,146120,4100 N MARINE DR,4100 N MARINE,19,15349.6,3,sourced,socrata_syp8-uezg@2026-09-13
-610364,William E B Dubois Elementary School,address_exact,41.653985,-87.614476,30.8,12,808653,330 E 133RD ST,,0,25037.6,32,sourced,socrata_syp8-uezg@2026-09-13
+610364,William E B Dubois Elementary School,address_exact,41.653985,-87.614476,30.8,12,808653,330 E 133RD ST,,,25037.6,32,sourced,socrata_syp8-uezg@2026-09-13
 610366,Charles H Wacker Elementary School,largest_nearby,41.716146,-87.648742,58.3,11.6,710980,9741 S CARPENTER ST,,2,21260.9,154,sourced,socrata_syp8-uezg@2026-09-13
-610367,Oscar DePriest Elementary School,address_exact,41.878047,-87.766028,23.7,1,859504,139 S PARKSIDE AVE,,0,41394.1,56,sourced,socrata_syp8-uezg@2026-09-13
-610368,Langston Hughes Elementary School,address_exact,41.705763,-87.629036,83.6,10.8,888751,240 W 104TH ST,LANGSTON HUGHS SCHOOL,0,90537,93,sourced,socrata_syp8-uezg@2026-09-13
+610367,Oscar DePriest Elementary School,address_exact,41.878047,-87.766028,23.7,1,859504,139 S PARKSIDE AVE,,,41394.1,56,sourced,socrata_syp8-uezg@2026-09-13
+610368,Langston Hughes Elementary School,address_exact,41.705763,-87.629036,83.6,10.8,888751,240 W 104TH ST,LANGSTON HUGHS SCHOOL,,90537,93,sourced,socrata_syp8-uezg@2026-09-13
 610369,Mahalia Jackson Elementary School,address_exact,41.73386,-87.646561,34.1,11.6,674076,917 W 88TH ST,,3,29249.8,100,sourced,socrata_syp8-uezg@2026-09-13
 610380,Daniel Hale Williams Prep School of Medicine,largest_nearby,41.805128,-87.625436,115,71.3,451927,4934 S WABASH AVE,,3,130071.6,22,sourced,socrata_syp8-uezg@2026-09-13
 610381,Bronzeville Scholastic Academy High School,address_exact,41.805128,-87.625436,36.9,4.7,451927,4934 S WABASH AVE,,3,130071.6,27,sourced,socrata_syp8-uezg@2026-09-13
-610383,Greater Lawndale High School For Social Justice,largest_nearby,41.83505,-87.735537,172.5,98.6,826623,3120 S KOSTNER AVE,LITTLE VILLAGE HIGH SCHOOL,0,221395,3,sourced,socrata_syp8-uezg@2026-09-13
-610384,Infinity Math Science and Technology High School,address_exact,41.83505,-87.735537,126.1,24.4,826623,3120 S KOSTNER AVE,LITTLE VILLAGE HIGH SCHOOL,0,221395,20,sourced,socrata_syp8-uezg@2026-09-13
-610385,Multicultural Arts High School,address_exact,41.83505,-87.735537,33.3,0,826623,3120 S KOSTNER AVE,LITTLE VILLAGE HIGH SCHOOL,0,221395,2,sourced,socrata_syp8-uezg@2026-09-13
+610383,Greater Lawndale High School For Social Justice,largest_nearby,41.83505,-87.735537,172.5,98.6,826623,3120 S KOSTNER AVE,LITTLE VILLAGE HIGH SCHOOL,,221395,3,sourced,socrata_syp8-uezg@2026-09-13
+610384,Infinity Math Science and Technology High School,address_exact,41.83505,-87.735537,126.1,24.4,826623,3120 S KOSTNER AVE,LITTLE VILLAGE HIGH SCHOOL,,221395,20,sourced,socrata_syp8-uezg@2026-09-13
+610385,Multicultural Arts High School,address_exact,41.83505,-87.735537,33.3,0,826623,3120 S KOSTNER AVE,LITTLE VILLAGE HIGH SCHOOL,,221395,2,sourced,socrata_syp8-uezg@2026-09-13
 610386,Peace & Education Coalition HS,address_exact,41.803565,-87.667661,24.2,5,456120,4946 S PAULINA ST,,3,7402.8,210,sourced,socrata_syp8-uezg@2026-09-13
-610389,Orr Academy High School,address_exact,41.89387,-87.726618,75.2,0,342890,730 N PULASKI RD,,0,61413.9,24,sourced,socrata_syp8-uezg@2026-09-13
-610390,Hyman G Rickover Naval Academy High School,address_exact,41.957259,-87.770641,69.5,0,141133,5700 W BERTEAU AVE,,0,84854,102,sourced,socrata_syp8-uezg@2026-09-13
+610389,Orr Academy High School,address_exact,41.89387,-87.726618,75.2,0,342890,730 N PULASKI RD,,,61413.9,24,sourced,socrata_syp8-uezg@2026-09-13
+610390,Hyman G Rickover Naval Academy High School,address_exact,41.957259,-87.770641,69.5,0,141133,5700 W BERTEAU AVE,,,84854,102,sourced,socrata_syp8-uezg@2026-09-13
 610391,Robert Lindblom Math & Science Academy HS,address_exact,41.782093,-87.672308,54,16.4,521719,6130 S WOLCOTT AVE,,4,109178.5,134,sourced,socrata_syp8-uezg@2026-09-13
-610392,World Language Academy High School,address_exact,41.83505,-87.735537,75.3,0,826623,3120 S KOSTNER AVE,LITTLE VILLAGE HIGH SCHOOL,0,221395,3,sourced,socrata_syp8-uezg@2026-09-13
+610392,World Language Academy High School,address_exact,41.83505,-87.735537,75.3,0,826623,3120 S KOSTNER AVE,LITTLE VILLAGE HIGH SCHOOL,,221395,3,sourced,socrata_syp8-uezg@2026-09-13
 610394,Uplift Community High School,address_exact,41.966104,-87.652156,67.2,25.1,111063,900 W WILSON AVE,,3,39382,38,sourced,socrata_syp8-uezg@2026-09-13
 610396,Tarkington School of Excellence ES,largest_nearby,41.764651,-87.706149,36.6,10.1,826622,3300 W 71ST ST,TARKINGTON SCHOLASTIC ACADEMY,3,63733.2,125,sourced,socrata_syp8-uezg@2026-09-13
 610402,DeVry University Advantage Academy HS,address_exact,41.969065,-87.677211,78.2,10.1,101859,1900-1910 W LAWRENCE AVE,,3,40322,69,sourced,socrata_syp8-uezg@2026-09-13
-610405,Suder Montessori Magnet ES,address_exact,41.883677,-87.677342,56.8,5.1,355113,2020-2022 W WASHINGTON BLVD,,0,36193.2,54,sourced,socrata_syp8-uezg@2026-09-13
+610405,Suder Montessori Magnet ES,address_exact,41.883677,-87.677342,56.8,5.1,355113,2020-2022 W WASHINGTON BLVD,,,36193.2,54,sourced,socrata_syp8-uezg@2026-09-13
 610499,Collins Academy STEAM High School,largest_nearby,41.863639,-87.703338,121.6,110.9,374298,1330-1332 S ALBANY AVE,,3,3200,9,sourced,socrata_syp8-uezg@2026-09-13
-610503,Frazier Prospective IB Magnet ES,address_exact,41.866838,-87.7256,137.4,14.4,372018,4027 W GRENSHAW ST,,0,32233.4,65,sourced,socrata_syp8-uezg@2026-09-13
-610504,Velma F Thomas Early Childhood Center,address_exact,41.8277,-87.677181,31.1,4.9,421173,3625 S HOYNE AVE,,0,12373.1,231,sourced,socrata_syp8-uezg@2026-09-13
+610503,Frazier Prospective IB Magnet ES,address_exact,41.866838,-87.7256,137.4,14.4,372018,4027 W GRENSHAW ST,,,32233.4,65,sourced,socrata_syp8-uezg@2026-09-13
+610504,Velma F Thomas Early Childhood Center,address_exact,41.8277,-87.677181,31.1,4.9,421173,3625 S HOYNE AVE,,,12373.1,231,sourced,socrata_syp8-uezg@2026-09-13
 610513,Tammera L Holmes Aero Academy,address_exact,41.828199,-87.633028,23.3,6.1,420221,3630 S WELLS ST,,2,34192.5,9,sourced,socrata_syp8-uezg@2026-09-13
 610515,Disney II Magnet School,address_exact,41.950473,-87.730146,44.2,5.9,164416,3815 N KEDVALE AVE,,1,22740.2,102,sourced,socrata_syp8-uezg@2026-09-13
-610518,Austin College and Career Academy High School,largest_nearby,41.884811,-87.762253,134.2,93.6,354360,,,0,11477.2,39,sourced,socrata_syp8-uezg@2026-09-13
+610518,Austin College and Career Academy High School,largest_nearby,41.884811,-87.762253,134.2,93.6,354360,,,,11477.2,39,sourced,socrata_syp8-uezg@2026-09-13
 610520,LaSalle II Magnet Elementary School,address_exact,41.90282,-87.674488,66.5,12.6,323202,1148 N HONORE ST,,4,36785.9,128,sourced,socrata_syp8-uezg@2026-09-13
-610521,Sir Miles Davis Magnet Elementary Academy,address_exact,41.771467,-87.666783,34.4,3.5,888752,6720-6740 S PAULINA ST,DAVIS MAGNET SCHOOL,0,43742.6,106,sourced,socrata_syp8-uezg@2026-09-13
+610521,Sir Miles Davis Magnet Elementary Academy,address_exact,41.771467,-87.666783,34.4,3.5,888752,6720-6740 S PAULINA ST,DAVIS MAGNET SCHOOL,,43742.6,106,sourced,socrata_syp8-uezg@2026-09-13
 610523,Edison Park Elementary School,address_exact,41.994196,-87.814174,33.7,23.3,34753,6220 N OLCOTT AVE,,2,16375.2,163,sourced,socrata_syp8-uezg@2026-09-13
 610524,Louisa May Alcott College Preparatory HS,address_exact,41.935539,-87.680308,35.4,5.9,226710,2957 N HOYNE AVE,,3,17745.2,155,sourced,socrata_syp8-uezg@2026-09-13
-610529,Ogden International High School,address_exact,41.893997,-87.65847,92.2,14.8,342915,1250 W ERIE ST,,0,47546.9,179,sourced,socrata_syp8-uezg@2026-09-13
+610529,Ogden International High School,address_exact,41.893997,-87.65847,92.2,14.8,342915,1250 W ERIE ST,,,47546.9,179,sourced,socrata_syp8-uezg@2026-09-13
 610530,South Shore Fine Arts Academy,address_exact,41.767496,-87.590591,33,7.5,568635,1409-1415 E 70TH ST,,2,52259.4,68,sourced,socrata_syp8-uezg@2026-09-13
-610532,Irene C. Hernandez Middle School for the Advancement of Science,address_exact,41.793963,-87.711549,55.7,15.2,888750,3510 W 55TH ST,HERNANDEZ SCHOOL,0,41522.4,97,sourced,socrata_syp8-uezg@2026-09-13
+610532,Irene C. Hernandez Middle School for the Advancement of Science,address_exact,41.793963,-87.711549,55.7,15.2,888750,3510 W 55TH ST,HERNANDEZ SCHOOL,,41522.4,97,sourced,socrata_syp8-uezg@2026-09-13
 610533,Dr Jorge Prieto Math and Science Academy,address_exact,41.920962,-87.765228,60.6,19.4,888753,2231 N CENTRAL AVE,DR. JORGE PRIETO MATH AND SCIENCE ACADEMY,4,42257.7,104,sourced,socrata_syp8-uezg@2026-09-13
-610534,Skinner North,address_exact,41.905282,-87.644591,28.3,7.4,317305,618-640 W SCOTT ST,,0,40210.1,6,sourced,socrata_syp8-uezg@2026-09-13
-610539,Marvin Camras Elementary School,largest_nearby,41.934672,-87.770262,30.9,18.1,232806,2954-2958 N MANGO AVE,,0,4124.1,231,sourced,socrata_syp8-uezg@2026-09-13
-610541,Federico Garcia Lorca Elementary School,address_exact,41.940171,-87.724071,61.2,22.7,891531,3231 N SPRINGFIELD AVE,LORCA SCHOOL,0,31203.1,71,sourced,socrata_syp8-uezg@2026-09-13
-610542,West Ridge Elementary School,largest_nearby,42.002828,-87.707377,121.9,100.7,18062,6659 N KEDZIE AVE,,0,6742,92,sourced,socrata_syp8-uezg@2026-09-13
-610543,Eric Solorio Academy High School,address_exact,41.795373,-87.711844,68,23.6,891535,5400 S ST LOUIS AVE,SOLORIO HIGH SCHOOL,0,58867.1,138,sourced,socrata_syp8-uezg@2026-09-13
-610544,Mariano Azuela Elementary School,address_exact,41.77064,-87.739833,49.3,28.2,891534,4707 W MARQUETTE RD,AZUELA SCHOOL,0,53183.1,121,sourced,socrata_syp8-uezg@2026-09-13
+610534,Skinner North,address_exact,41.905282,-87.644591,28.3,7.4,317305,618-640 W SCOTT ST,,,40210.1,6,sourced,socrata_syp8-uezg@2026-09-13
+610539,Marvin Camras Elementary School,largest_nearby,41.934672,-87.770262,30.9,18.1,232806,2954-2958 N MANGO AVE,,,4124.1,231,sourced,socrata_syp8-uezg@2026-09-13
+610541,Federico Garcia Lorca Elementary School,address_exact,41.940171,-87.724071,61.2,22.7,891531,3231 N SPRINGFIELD AVE,LORCA SCHOOL,,31203.1,71,sourced,socrata_syp8-uezg@2026-09-13
+610542,West Ridge Elementary School,largest_nearby,42.002828,-87.707377,121.9,100.7,18062,6659 N KEDZIE AVE,,,6742,92,sourced,socrata_syp8-uezg@2026-09-13
+610543,Eric Solorio Academy High School,address_exact,41.795373,-87.711844,68,23.6,891535,5400 S ST LOUIS AVE,SOLORIO HIGH SCHOOL,,58867.1,138,sourced,socrata_syp8-uezg@2026-09-13
+610544,Mariano Azuela Elementary School,address_exact,41.77064,-87.739833,49.3,28.2,891534,4707 W MARQUETTE RD,AZUELA SCHOOL,,53183.1,121,sourced,socrata_syp8-uezg@2026-09-13
 610547,South Shore Intl College Prep High School,largest_nearby,41.759994,-87.575899,138.7,107.3,589426,7411-7431 S JEFFERY BLVD,,3,13485.5,95,sourced,socrata_syp8-uezg@2026-09-13
 610548,STEM Magnet Academy,address_exact,41.86869,-87.66491,13.5,0.1,370572,1522 W FILLMORE ST,,3,21827.8,49,sourced,socrata_syp8-uezg@2026-09-13
 610557,Pathways in Education- Ashburn,largest_nearby,41.735409,-87.704371,32,24.5,670534,3264 W 87TH ST,,1,3112.6,2,sourced,socrata_syp8-uezg@2026-09-13
-610558,Sarah E. Goode STEM Academy,largest_nearby,41.753766,-87.708445,91.5,76.8,815735,3434-3440 W 77TH ST,,0,39543.8,118,sourced,socrata_syp8-uezg@2026-09-13
+610558,Sarah E. Goode STEM Academy,largest_nearby,41.753766,-87.708445,91.5,76.8,815735,3434-3440 W 77TH ST,,,39543.8,118,sourced,socrata_syp8-uezg@2026-09-13
 610559,James Shields Middle School,largest_nearby,41.806332,-87.68898,68.8,42.7,450351,2547 W 48TH ST,,2,53015.9,69,sourced,socrata_syp8-uezg@2026-09-13
-610561,Richard T Crane Medical Preparatory HS,address_exact,41.87684,-87.683243,12.8,0,361658,2245 W JACKSON BLVD,,0,114921.4,45,sourced,socrata_syp8-uezg@2026-09-13
-610563,Back of the Yards IB High School,largest_nearby,41.808886,-87.677651,53.3,40.5,878300,4650 S DAMEN AVE,BACK OF THE YARDS BRANCH LIBRARY,0,16229.1,64,sourced,socrata_syp8-uezg@2026-09-13
-610564,Disney II Magnet High School,address_exact,41.952203,-87.720832,54.3,8,156963,3900 N LAWNDALE AVE,,0,41961,157,sourced,socrata_syp8-uezg@2026-09-13
-610565,Excel Academy of Englewood,address_exact,41.763704,-87.64879,35,6.7,578461,7141 S MORGAN ST,,0,24127.2,167,sourced,socrata_syp8-uezg@2026-09-13
-610568,Pathways in Education- Avondale,largest_nearby,41.939574,-87.705812,52.7,30.3,887061,,,0,15053.6,159,sourced,socrata_syp8-uezg@2026-09-13
+610561,Richard T Crane Medical Preparatory HS,address_exact,41.87684,-87.683243,12.8,0,361658,2245 W JACKSON BLVD,,,114921.4,45,sourced,socrata_syp8-uezg@2026-09-13
+610563,Back of the Yards IB High School,largest_nearby,41.808886,-87.677651,53.3,40.5,878300,4650 S DAMEN AVE,BACK OF THE YARDS BRANCH LIBRARY,,16229.1,64,sourced,socrata_syp8-uezg@2026-09-13
+610564,Disney II Magnet High School,address_exact,41.952203,-87.720832,54.3,8,156963,3900 N LAWNDALE AVE,,,41961,157,sourced,socrata_syp8-uezg@2026-09-13
+610565,Excel Academy of Englewood,address_exact,41.763704,-87.64879,35,6.7,578461,7141 S MORGAN ST,,,24127.2,167,sourced,socrata_syp8-uezg@2026-09-13
+610568,Pathways in Education- Avondale,largest_nearby,41.939574,-87.705812,52.7,30.3,887061,,,,15053.6,159,sourced,socrata_syp8-uezg@2026-09-13
 610569,Ombudsman Chicago- Northwest,address_exact,42.017336,-87.806823,21.7,7.1,841046,7500-7504 N HARLEM AVE,,1,5225.8,88,sourced,socrata_syp8-uezg@2026-09-13
 610570,Ombudsman Chicago - South,address_exact,41.783206,-87.683174,43.2,6.2,520002,6057 S WESTERN AVE,,1,48663,69,sourced,socrata_syp8-uezg@2026-09-13
-610571,Ombudsman Chicago- West,largest_nearby,41.865602,-87.706596,99.1,67.2,836479,1215-1227 S SAWYER AVE,,0,8425.5,27,sourced,socrata_syp8-uezg@2026-09-13
+610571,Ombudsman Chicago- West,largest_nearby,41.865602,-87.706596,99.1,67.2,836479,1215-1227 S SAWYER AVE,,,8425.5,27,sourced,socrata_syp8-uezg@2026-09-13
 610572,Safe Achieve Academy Elementary,address_exact,41.752441,-87.550415,75.5,59.7,821689,7877 S COLES AVE,,2,3506.6,128,sourced,socrata_syp8-uezg@2026-09-13
 610573,Safe Achieve Academy HS,largest_nearby,41.753497,-87.553213,124.6,68.9,604863,7811-7829 S EXCHANGE AVE,,2,25856.9,123,sourced,socrata_syp8-uezg@2026-09-13
-610586,Edward E. Sadlowski Elementary School,largest_nearby,41.70413,-87.527538,89.1,46,735801,3951 E 105TH ST,,0,50989.4,73,sourced,socrata_syp8-uezg@2026-09-13
-610587,Walter Henri Dyett High School for the Arts,address_exact,41.801391,-87.612278,21.1,0,460015,525-555 E 51ST ST,,0,62330.6,5,sourced,socrata_syp8-uezg@2026-09-13
+610586,Edward E. Sadlowski Elementary School,largest_nearby,41.70413,-87.527538,89.1,46,735801,3951 E 105TH ST,,,50989.4,73,sourced,socrata_syp8-uezg@2026-09-13
+610587,Walter Henri Dyett High School for the Arts,address_exact,41.801391,-87.612278,21.1,0,460015,525-555 E 51ST ST,,,62330.6,5,sourced,socrata_syp8-uezg@2026-09-13
 610588,Robert J. Richardson Middle School,largest_nearby,41.784572,-87.725665,85.3,80,516984,5944 S KARLOV AVE,,1,1791,178,sourced,socrata_syp8-uezg@2026-09-13
 610589,Sor Juana Ines de la Cruz ES,address_exact,41.791723,-87.724958,49.7,18.6,865204,4034-4058 W 56TH ST,,4,18990.6,173,sourced,socrata_syp8-uezg@2026-09-13
 610590,Bronzeville Classical Elementary School,address_exact,41.819477,-87.626903,34.4,14.5,428192,8 W ROOT ST,,1,40885.2,13,sourced,socrata_syp8-uezg@2026-09-13
-610592,Englewood STEM High School,address_exact,41.770098,-87.636033,70.1,0,561584,6835 S NORMAL BLVD,,0,100332.2,32,sourced,socrata_syp8-uezg@2026-09-13
+610592,Englewood STEM High School,address_exact,41.770098,-87.636033,70.1,0,561584,6835 S NORMAL BLVD,,,100332.2,32,sourced,socrata_syp8-uezg@2026-09-13
 610593,Ombudsman Chicago - Roseland,address_exact,41.695101,-87.642808,0.8,0,762387,10928 S HALSTED ST,,1,8751.2,136,sourced,socrata_syp8-uezg@2026-09-13
 610594,Pathways in Education - Humboldt Park,containing,41.902705,-87.687981,15.3,0,867165,2423 W DIVISION ST,,2,2881.6,118,sourced,socrata_syp8-uezg@2026-09-13
 610595,Dr. Fisher Early Learning Center,address_exact,41.915972,-87.635067,35.9,17.9,288655,1840-1850 N CLARK ST,HEMINGWAY HOUSE,29,21146.9,83,sourced,socrata_syp8-uezg@2026-09-13
-610596,The Virtual Academy Elementary School,address_exact,41.863675,-87.659771,32.9,17.6,374045,1304-1336 W 14TH ST,,0,3895.2,23,sourced,socrata_syp8-uezg@2026-09-13
-610597,The Virtual Academy High School,address_exact,41.863675,-87.659771,28.7,9.9,374045,1304-1336 W 14TH ST,,0,3895.2,22,sourced,socrata_syp8-uezg@2026-09-13
-610599,Catalpa Early Childhood Center,containing,41.961946,-87.757803,4.2,0,126153,4434 N LARAMIE AVE,,0,23757.1,145,sourced,socrata_syp8-uezg@2026-09-13
+610596,The Virtual Academy Elementary School,address_exact,41.863675,-87.659771,32.9,17.6,374045,1304-1336 W 14TH ST,,,3895.2,23,sourced,socrata_syp8-uezg@2026-09-13
+610597,The Virtual Academy High School,address_exact,41.863675,-87.659771,28.7,9.9,374045,1304-1336 W 14TH ST,,,3895.2,22,sourced,socrata_syp8-uezg@2026-09-13
+610599,Catalpa Early Childhood Center,containing,41.961946,-87.757803,4.2,0,126153,4434 N LARAMIE AVE,,,23757.1,145,sourced,socrata_syp8-uezg@2026-09-13
 610601,SAFE Achieve Academy West HS,address_exact,41.88423,-87.739559,26.8,11.6,354970,224-230 N KOLMAR AVE,,3,22045.8,85,sourced,socrata_syp8-uezg@2026-09-13
 610602,Carlos Fuentes Elementary School,address_exact,41.937188,-87.699553,32.2,1.6,219972,2845 W BARRY AVE,,2,4911.2,245,sourced,socrata_syp8-uezg@2026-09-13
 610603,Esmeralda Santiago Elementary School,address_exact,41.900553,-87.689956,23.8,1.3,328167,2510 W CORTEZ ST,,2,8626.6,232,sourced,socrata_syp8-uezg@2026-09-13
-610604,Bartolome de las Casas Elementary School,largest_nearby,41.859166,-87.667902,37.8,2,376344,1638-1640 W 17TH ST,ST ADELBERT CHURCH,0,24061,85,sourced,socrata_syp8-uezg@2026-09-13
-610605,Sandra Cisneros Elementary School,address_exact,41.823074,-87.694293,32.5,6.3,425810,2744 W PERSHING RD,MC KINLEY PARK SCHOOL,0,28622.1,231,sourced,socrata_syp8-uezg@2026-09-13
+610604,Bartolome de las Casas Elementary School,largest_nearby,41.859166,-87.667902,37.8,2,376344,1638-1640 W 17TH ST,ST ADELBERT CHURCH,,24061,85,sourced,socrata_syp8-uezg@2026-09-13
+610605,Sandra Cisneros Elementary School,address_exact,41.823074,-87.694293,32.5,6.3,425810,2744 W PERSHING RD,MC KINLEY PARK SCHOOL,,28622.1,231,sourced,socrata_syp8-uezg@2026-09-13
 610606,Rufino Tamayo Elementary School,address_exact,41.800091,-87.693615,27.2,3.4,463749,5123-5141 S CALIFORNIA AVE,,2,22235.2,203,sourced,socrata_syp8-uezg@2026-09-13
-610607,Chicago Arts High School,address_exact,41.899526,-87.694965,16.6,3.1,329641,2714 W AUGUSTA BLVD,,0,40022,192,sourced,socrata_syp8-uezg@2026-09-13
+610607,Chicago Arts High School,address_exact,41.899526,-87.694965,16.6,3.1,329641,2714 W AUGUSTA BLVD,,,40022,192,sourced,socrata_syp8-uezg@2026-09-13

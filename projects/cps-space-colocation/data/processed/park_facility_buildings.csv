@@ -1,671 +1,671 @@
 objectid,park,cpd_bldg_name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bldg_name,bldg_stories,footprint_area_sqft,candidates_in_range,provenance,source
-1,GRANT (ULYSSES),Buckingham North Comfort Station,largest_nearby,41.877126,-87.618672,63.5,60.6,874133,,,0,304.9,2,sourced,socrata_syp8-uezg@2026-09-14
-2,GRANT (ULYSSES),Fountain Cafe,largest_nearby,41.877126,-87.618672,37.1,34,874133,,,0,304.9,2,sourced,socrata_syp8-uezg@2026-09-14
-3,GRANT (ULYSSES),Buckingham South Comfort Station,largest_nearby,41.874464,-87.618608,66.3,63.1,874135,,,0,282.5,2,sourced,socrata_syp8-uezg@2026-09-14
-4,GRANT (ULYSSES),Buckingham South Concession,largest_nearby,41.874464,-87.618608,39.2,36.3,874135,,,0,282.5,2,sourced,socrata_syp8-uezg@2026-09-14
+1,GRANT (ULYSSES),Buckingham North Comfort Station,largest_nearby,41.877126,-87.618672,63.5,60.6,874133,,,,304.9,2,sourced,socrata_syp8-uezg@2026-09-14
+2,GRANT (ULYSSES),Fountain Cafe,largest_nearby,41.877126,-87.618672,37.1,34,874133,,,,304.9,2,sourced,socrata_syp8-uezg@2026-09-14
+3,GRANT (ULYSSES),Buckingham South Comfort Station,largest_nearby,41.874464,-87.618608,66.3,63.1,874135,,,,282.5,2,sourced,socrata_syp8-uezg@2026-09-14
+4,GRANT (ULYSSES),Buckingham South Concession,largest_nearby,41.874464,-87.618608,39.2,36.3,874135,,,,282.5,2,sourced,socrata_syp8-uezg@2026-09-14
 5,GRANT (ULYSSES),Queen's Landing Concession,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 6,WASHINGTON (HAROLD),Comfort Station,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-7,LINCOLN (ABRAHAM),Fullerton Comfort Station,largest_nearby,41.927092,-87.630656,62.6,24.4,254878,,LINCOLN PARK,0,26516,1,sourced,socrata_syp8-uezg@2026-09-14
+7,LINCOLN (ABRAHAM),Fullerton Comfort Station,largest_nearby,41.927092,-87.630656,62.6,24.4,254878,,LINCOLN PARK,,26516,1,sourced,socrata_syp8-uezg@2026-09-14
 8,GRANT (ULYSSES),Museum Campus Concession & Comfort Station,largest_nearby,41.866217,-87.617029,199.1,90.2,371641,1400 S LAKE SHORE DR,FIELD MUSEUM,1,245772.1,2,sourced,socrata_syp8-uezg@2026-09-14
-9,BURNHAM (DANIEL),43rd Street Pedestrian Bridge,containing,41.817425,-87.595087,60.1,0,430566,,,0,5874.6,11,sourced,socrata_syp8-uezg@2026-09-14
-10,BURNHAM (DANIEL),49th Street Comfort Station,containing,41.806616,-87.584978,4.1,0,448916,,,0,591.5,4,sourced,socrata_syp8-uezg@2026-09-14
+9,BURNHAM (DANIEL),43rd Street Pedestrian Bridge,containing,41.817425,-87.595087,60.1,0,430566,,,,5874.6,11,sourced,socrata_syp8-uezg@2026-09-14
+10,BURNHAM (DANIEL),49th Street Comfort Station,containing,41.806616,-87.584978,4.1,0,448916,,,,591.5,4,sourced,socrata_syp8-uezg@2026-09-14
 11,EDISON (THOMAS ALVA),Edison Park Fieldhouse,address_exact,42.004051,-87.817589,2.5,0,17233,6755 N NORTHWEST HWY,,2,3408.8,104,sourced,socrata_syp8-uezg@2026-09-14
 12,GLADSTONE (WILLIAM),Gladstone Park Fieldhouse,address_exact,41.979282,-87.772939,1.5,0,68442,5421 N MENARD AVE,,1,2232,190,sourced,socrata_syp8-uezg@2026-09-14
 13,LA FOLLETTE (ROBERT),La Follette Park Fieldhouse,address_exact,41.904977,-87.755098,4.9,0,319537,1333 N LARAMIE AVE,,2,24289.5,92,sourced,socrata_syp8-uezg@2026-09-14
-14,COLUMBUS (CHRISTOPHER),Columbus Park Refectory,address_exact,41.876482,-87.768921,32.9,0,363161,5701 W JACKSON BLVD,,0,16785.9,3,sourced,socrata_syp8-uezg@2026-09-14
-15,HORNER (HENRY),Horner Park Fieldhouse,address_exact,41.960564,-87.697696,2.9,0,130172,2741-2757 W MONTROSE AVE,,0,17526.2,43,sourced,socrata_syp8-uezg@2026-09-14
-16,PASTEUR (LOUIS),Pasteur Park Fieldhouse,address_exact,41.787847,-87.731698,0.8,0,506081,5825 S KOSTNER AVE,,0,1394.2,74,sourced,socrata_syp8-uezg@2026-09-14
-17,BEVERLY,Beverly Park Fieldhouse,containing,41.708188,-87.683668,3.7,0,729464,,BEVERLY PARK,0,1450.1,81,sourced,socrata_syp8-uezg@2026-09-14
+14,COLUMBUS (CHRISTOPHER),Columbus Park Refectory,address_exact,41.876482,-87.768921,32.9,0,363161,5701 W JACKSON BLVD,,,16785.9,3,sourced,socrata_syp8-uezg@2026-09-14
+15,HORNER (HENRY),Horner Park Fieldhouse,address_exact,41.960564,-87.697696,2.9,0,130172,2741-2757 W MONTROSE AVE,,,17526.2,43,sourced,socrata_syp8-uezg@2026-09-14
+16,PASTEUR (LOUIS),Pasteur Park Fieldhouse,address_exact,41.787847,-87.731698,0.8,0,506081,5825 S KOSTNER AVE,,,1394.2,74,sourced,socrata_syp8-uezg@2026-09-14
+17,BEVERLY,Beverly Park Fieldhouse,containing,41.708188,-87.683668,3.7,0,729464,,BEVERLY PARK,,1450.1,81,sourced,socrata_syp8-uezg@2026-09-14
 18,COLE (NAT KING),Cole Park Fieldhouse,address_exact,41.739828,-87.615426,0.7,0,655688,8500 S DR MARTIN LUTHER KING JR DR,,1,2291.5,113,sourced,socrata_syp8-uezg@2026-09-14
-19,"KING (MARTIN LUTHER, JR.)",King Family Entertainment Center,containing,41.755684,-87.654322,19.2,0,838170,7600 S RACINE AVE,,0,37631.6,41,sourced,socrata_syp8-uezg@2026-09-14
-20,BRADLEY (JOSEPHINE),Bradley Park Fieldhouse,address_exact,41.718054,-87.564347,0.9,0,706249,9727-9729 S YATES AVE,,0,2145.6,167,sourced,socrata_syp8-uezg@2026-09-14
-21,KENWOOD COMM.,Kenwood Park Fieldhouse,containing,41.805623,-87.593332,1.3,0,451037,,,0,1258.5,44,sourced,socrata_syp8-uezg@2026-09-14
+19,"KING (MARTIN LUTHER, JR.)",King Family Entertainment Center,containing,41.755684,-87.654322,19.2,0,838170,7600 S RACINE AVE,,,37631.6,41,sourced,socrata_syp8-uezg@2026-09-14
+20,BRADLEY (JOSEPHINE),Bradley Park Fieldhouse,address_exact,41.718054,-87.564347,0.9,0,706249,9727-9729 S YATES AVE,,,2145.6,167,sourced,socrata_syp8-uezg@2026-09-14
+21,KENWOOD COMM.,Kenwood Park Fieldhouse,containing,41.805623,-87.593332,1.3,0,451037,,,,1258.5,44,sourced,socrata_syp8-uezg@2026-09-14
 22,BARRETT (JOHN),Barrett Park Fieldhouse,address_exact,41.852428,-87.676314,0.8,0,386482,2008 W CERMAK RD,,1,1360.4,232,sourced,socrata_syp8-uezg@2026-09-14
 23,GROSS (THEODORE),Gross Park Fieldhouse,address_exact,41.968687,-87.696668,0.6,0,104369,2708 W LAWRENCE AVE,,1,1276.5,128,sourced,socrata_syp8-uezg@2026-09-14
 24,KEDVALE,Kedvale Park Fieldhouse,address_exact,41.906376,-87.730434,0.8,0,316472,4134 W HIRSCH ST,,1,2626.1,134,sourced,socrata_syp8-uezg@2026-09-14
 25,MOORE (MAURICE),Moore Park Fieldhouse,address_exact,41.878051,-87.75274,1.8,0,361233,5085 W ADAMS ST,,1,2375.4,110,sourced,socrata_syp8-uezg@2026-09-14
 26,MCKIERNAN (DAVID),McKiernan Park Fieldhouse,address_exact,41.698353,-87.702477,0.9,0,755180,10714 S SAWYER AVE,,1,1897.5,183,sourced,socrata_syp8-uezg@2026-09-14
-28,WENTWORTH (JOHN),Warming Hut,largest_nearby,41.790217,-87.779884,58,35.5,498576,6325 W 56TH ST,,0,131423.6,62,sourced,socrata_syp8-uezg@2026-09-14
-29,HIAWATHA,Comfort Station,address_exact,41.94329,-87.827023,0.8,0,197122,8000 W CORNELIA AVE,,0,2312.2,117,sourced,socrata_syp8-uezg@2026-09-14
-30,METCALFE (RALPH),Comfort Station,address_exact,41.817946,-87.626765,1,0,430281,4210 S STATE ST,,0,1128.5,10,sourced,socrata_syp8-uezg@2026-09-14
-31,COTTON TAIL,Shelter,containing,41.86209,-87.628974,0.5,0,374831,,,0,506.6,149,sourced,socrata_syp8-uezg@2026-09-14
-32,FOSTER (J. FRANK),Southwest Shelter,containing,41.741721,-87.661051,1,0,650163,,,0,898.5,33,sourced,socrata_syp8-uezg@2026-09-14
+28,WENTWORTH (JOHN),Warming Hut,largest_nearby,41.790217,-87.779884,58,35.5,498576,6325 W 56TH ST,,,131423.6,62,sourced,socrata_syp8-uezg@2026-09-14
+29,HIAWATHA,Comfort Station,address_exact,41.94329,-87.827023,0.8,0,197122,8000 W CORNELIA AVE,,,2312.2,117,sourced,socrata_syp8-uezg@2026-09-14
+30,METCALFE (RALPH),Comfort Station,address_exact,41.817946,-87.626765,1,0,430281,4210 S STATE ST,,,1128.5,10,sourced,socrata_syp8-uezg@2026-09-14
+31,COTTON TAIL,Shelter,containing,41.86209,-87.628974,0.5,0,374831,,,,506.6,149,sourced,socrata_syp8-uezg@2026-09-14
+32,FOSTER (J. FRANK),Southwest Shelter,containing,41.741721,-87.661051,1,0,650163,,,,898.5,33,sourced,socrata_syp8-uezg@2026-09-14
 33,LOYOLA,Farwell Avenue Breakwater Light,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 34,LINCOLN (ABRAHAM),Wilson Avenue Breakwater Light,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-35,LINCOLN (ABRAHAM),Montrose Beach Light,largest_nearby,41.964703,-87.635674,172,131.7,114825,,,0,10009.5,1,sourced,socrata_syp8-uezg@2026-09-14
+35,LINCOLN (ABRAHAM),Montrose Beach Light,largest_nearby,41.964703,-87.635674,172,131.7,114825,,,,10009.5,1,sourced,socrata_syp8-uezg@2026-09-14
 36,LINCOLN (ABRAHAM),Belmont Harbor Inner Light,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 37,LINCOLN (ABRAHAM),North Avenue Jetty Light,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-38,JACKSON (ANDREW),South Shore Yacht Club,containing,41.779375,-87.579021,2.8,0,531319,,,0,4875.2,5,sourced,socrata_syp8-uezg@2026-09-14
-39,JACKSON (ANDREW),Service Yard,address_exact,41.779791,-87.585342,43.5,0,528271,1625 E HAYES DR,,0,20127.5,2,sourced,socrata_syp8-uezg@2026-09-14
-40,JACKSON (ANDREW),MSI - Henry Crown Space Center & Omnimax Theater,containing,41.790337,-87.581182,3.4,0,494237,,,0,26551.5,5,sourced,socrata_syp8-uezg@2026-09-14
-41,GRANT (ULYSSES),Monroe Concession,largest_nearby,41.881233,-87.616017,92.2,69.7,357276,,,0,15024.5,3,sourced,socrata_syp8-uezg@2026-09-14
+38,JACKSON (ANDREW),South Shore Yacht Club,containing,41.779375,-87.579021,2.8,0,531319,,,,4875.2,5,sourced,socrata_syp8-uezg@2026-09-14
+39,JACKSON (ANDREW),Service Yard,address_exact,41.779791,-87.585342,43.5,0,528271,1625 E HAYES DR,,,20127.5,2,sourced,socrata_syp8-uezg@2026-09-14
+40,JACKSON (ANDREW),MSI - Henry Crown Space Center & Omnimax Theater,containing,41.790337,-87.581182,3.4,0,494237,,,,26551.5,5,sourced,socrata_syp8-uezg@2026-09-14
+41,GRANT (ULYSSES),Monroe Concession,largest_nearby,41.881233,-87.616017,92.2,69.7,357276,,,,15024.5,3,sourced,socrata_syp8-uezg@2026-09-14
 42,BURNHAM (DANIEL),,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-43,ADDAMS (JANE) MEML.,Shelter,largest_nearby,41.891521,-87.613101,88.6,53.8,815730,,LAKE POINT TOWER,0,96641.1,3,sourced,socrata_syp8-uezg@2026-09-14
+43,ADDAMS (JANE) MEML.,Shelter,largest_nearby,41.891521,-87.613101,88.6,53.8,815730,,LAKE POINT TOWER,,96641.1,3,sourced,socrata_syp8-uezg@2026-09-14
 44,LINCOLN (ABRAHAM),,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 45,LINCOLN (ABRAHAM),,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-46,LINCOLN (ABRAHAM),Diversey Harbor Building,largest_nearby,41.926472,-87.635057,211.1,153.7,821490,2430 N CANNON DR,PEGGY NOTEBART NATURE MUSEUM,0,45032,1,sourced,socrata_syp8-uezg@2026-09-14
+46,LINCOLN (ABRAHAM),Diversey Harbor Building,largest_nearby,41.926472,-87.635057,211.1,153.7,821490,2430 N CANNON DR,PEGGY NOTEBART NATURE MUSEUM,,45032,1,sourced,socrata_syp8-uezg@2026-09-14
 47,LINCOLN (ABRAHAM),Diversey Harbor Comfort Station,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-48,JACKSON (ANDREW),Museum Court Comfort Station,containing,41.789556,-87.580227,0.9,0,497598,,,0,668.6,7,sourced,socrata_syp8-uezg@2026-09-14
+48,JACKSON (ANDREW),Museum Court Comfort Station,containing,41.789556,-87.580227,0.9,0,497598,,,,668.6,7,sourced,socrata_syp8-uezg@2026-09-14
 49,SEWARD (WILLIAM),Clock Tower,largest_nearby,41.903477,-87.63968,45.2,15.7,891284,437 W DIVISION ST,,9,20260.5,8,sourced,socrata_syp8-uezg@2026-09-14
-50,WASHINGTON (GEORGE),Comfort Station,largest_nearby,41.801391,-87.612278,207.8,146.4,460015,525-555 E 51ST ST,,0,62330.6,1,sourced,socrata_syp8-uezg@2026-09-14
-51,MANDRAKE (HENRY BROWN),Comfort Station,largest_nearby,41.82426,-87.607592,106.9,83.5,424012,3858 S COTTAGE GROVE AVE,,0,19599.2,23,sourced,socrata_syp8-uezg@2026-09-14
+50,WASHINGTON (GEORGE),Comfort Station,largest_nearby,41.801391,-87.612278,207.8,146.4,460015,525-555 E 51ST ST,,,62330.6,1,sourced,socrata_syp8-uezg@2026-09-14
+51,MANDRAKE (HENRY BROWN),Comfort Station,largest_nearby,41.82426,-87.607592,106.9,83.5,424012,3858 S COTTAGE GROVE AVE,,,19599.2,23,sourced,socrata_syp8-uezg@2026-09-14
 52,UNITY,Shelter,largest_nearby,41.931251,-87.711534,131.9,110.9,851230,2758-2772 N MILWAUKEE AVE,,2,18641.6,191,sourced,socrata_syp8-uezg@2026-09-14
-53,PARK NO. 538,Baseball Stadium at Devon & Kedzie,largest_nearby,41.997179,-87.709971,112,98.3,842670,3201-3215 W DEVON AVE,,0,6780.5,58,sourced,socrata_syp8-uezg@2026-09-14
-54,LINCOLN (ABRAHAM),Caffe Oliva,largest_nearby,41.891521,-87.613101,183.7,147,815730,,LAKE POINT TOWER,0,96641.1,2,sourced,socrata_syp8-uezg@2026-09-14
+53,PARK NO. 538,Baseball Stadium at Devon & Kedzie,largest_nearby,41.997179,-87.709971,112,98.3,842670,3201-3215 W DEVON AVE,,,6780.5,58,sourced,socrata_syp8-uezg@2026-09-14
+54,LINCOLN (ABRAHAM),Caffe Oliva,largest_nearby,41.891521,-87.613101,183.7,147,815730,,LAKE POINT TOWER,,96641.1,2,sourced,socrata_syp8-uezg@2026-09-14
 55,LINCOLN (ABRAHAM),Oak Street Beachstro,largest_nearby,41.900413,-87.623526,200.9,139.2,326851,140 E WALTON PL,DRAKE HOTEL,13,63625,4,sourced,socrata_syp8-uezg@2026-09-14
-56,WHITE (JESSE),Jesse White Community Center & Fieldhouse,largest_nearby,41.89725,-87.638337,91.9,71.1,874083,815-829 N SEDGWICK ST,,0,18121.2,19,sourced,socrata_syp8-uezg@2026-09-14
+56,WHITE (JESSE),Jesse White Community Center & Fieldhouse,largest_nearby,41.89725,-87.638337,91.9,71.1,874083,815-829 N SEDGWICK ST,,,18121.2,19,sourced,socrata_syp8-uezg@2026-09-14
 57,LINCOLN (ABRAHAM),North Pond,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-58,LINCOLN (ABRAHAM),Osterman Beach House,largest_nearby,41.985717,-87.652378,62.6,57.9,51614,,,0,784,1,sourced,socrata_syp8-uezg@2026-09-14
-59,LINCOLN (ABRAHAM),"LP Zoo - Chimpanzees, Gorillas",address_exact,41.920214,-87.632022,2,0,835533,2101 N LINCOLN PARK WEST,,0,23185.1,9,sourced,socrata_syp8-uezg@2026-09-14
+58,LINCOLN (ABRAHAM),Osterman Beach House,largest_nearby,41.985717,-87.652378,62.6,57.9,51614,,,,784,1,sourced,socrata_syp8-uezg@2026-09-14
+59,LINCOLN (ABRAHAM),"LP Zoo - Chimpanzees, Gorillas",address_exact,41.920214,-87.632022,2,0,835533,2101 N LINCOLN PARK WEST,,,23185.1,9,sourced,socrata_syp8-uezg@2026-09-14
 60,LINCOLN (ABRAHAM),Webster Comfort Station,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-61,LINCOLN (ABRAHAM),Montrose Stone Comfort Station,containing,41.964703,-87.635674,33.5,0,114825,,,0,10009.5,3,sourced,socrata_syp8-uezg@2026-09-14
+61,LINCOLN (ABRAHAM),Montrose Stone Comfort Station,containing,41.964703,-87.635674,33.5,0,114825,,,,10009.5,3,sourced,socrata_syp8-uezg@2026-09-14
 62,LINCOLN (ABRAHAM),Oak Street Comfort Station,largest_nearby,41.900413,-87.623525,208,149.1,326851,140 E WALTON PL,DRAKE HOTEL,13,63625,3,sourced,socrata_syp8-uezg@2026-09-14
 63,JONES (MARY RICHARDSON),Shelter,largest_nearby,41.866734,-87.629017,41.7,10.9,371557,1212 S PLYMOUTH CT,,2,30322.4,239,sourced,socrata_syp8-uezg@2026-09-14
-64,LINCOLN (ABRAHAM),LP Zoo - Main Barn,containing,41.917007,-87.633675,1.2,0,287149,,LINCOLN PARK,0,6116.8,12,sourced,socrata_syp8-uezg@2026-09-14
-65,LINCOLN (ABRAHAM),LP Zoo - Zoo Gateway Pavilion,containing,41.922095,-87.632871,1.1,0,270780,,,0,217.4,17,sourced,socrata_syp8-uezg@2026-09-14
-66,LINCOLN (ABRAHAM),Montrose Beach House Concession,containing,41.964703,-87.635674,4.8,0,114825,,,0,10009.5,3,sourced,socrata_syp8-uezg@2026-09-14
-67,LINCOLN (ABRAHAM),LP Zoo - Dairy Barn,containing,41.917725,-87.633632,1.3,0,284971,,LINCOLN PARK,0,4527.5,8,sourced,socrata_syp8-uezg@2026-09-14
-68,KOSCIUSZKO (THADEUZ),Kosciuszko Park Fieldhouse,address_exact,41.930815,-87.723831,15.2,0,245160,2732 N AVERS AVE,,0,11428.4,134,sourced,socrata_syp8-uezg@2026-09-14
+64,LINCOLN (ABRAHAM),LP Zoo - Main Barn,containing,41.917007,-87.633675,1.2,0,287149,,LINCOLN PARK,,6116.8,12,sourced,socrata_syp8-uezg@2026-09-14
+65,LINCOLN (ABRAHAM),LP Zoo - Zoo Gateway Pavilion,containing,41.922095,-87.632871,1.1,0,270780,,,,217.4,17,sourced,socrata_syp8-uezg@2026-09-14
+66,LINCOLN (ABRAHAM),Montrose Beach House Concession,containing,41.964703,-87.635674,4.8,0,114825,,,,10009.5,3,sourced,socrata_syp8-uezg@2026-09-14
+67,LINCOLN (ABRAHAM),LP Zoo - Dairy Barn,containing,41.917725,-87.633632,1.3,0,284971,,LINCOLN PARK,,4527.5,8,sourced,socrata_syp8-uezg@2026-09-14
+68,KOSCIUSZKO (THADEUZ),Kosciuszko Park Fieldhouse,address_exact,41.930815,-87.723831,15.2,0,245160,2732 N AVERS AVE,,,11428.4,134,sourced,socrata_syp8-uezg@2026-09-14
 69,BLACKHAWK,Blackhawk Park Fieldhouse,address_exact,41.92287,-87.751996,10.7,0,269929,2318 N LAVERGNE AVE,,1,13995.8,125,sourced,socrata_syp8-uezg@2026-09-14
-70,LINCOLN (ABRAHAM),Nature Boardwalk Peoples Gas Education Pavilion,largest_nearby,41.919237,-87.632363,154.9,123,279132,,LINCOLN PARK,0,9364.6,9,sourced,socrata_syp8-uezg@2026-09-14
-71,LINCOLN (ABRAHAM),Rustic Shelter,largest_nearby,41.928909,-87.639891,115,91.4,893874,,,0,8486.9,6,sourced,socrata_syp8-uezg@2026-09-14
-72,PARK NO. 517,Pergola,largest_nearby,41.990546,-87.654777,117.4,77.2,41568,5959 N SHERIDAN RD,,0,28706.4,35,sourced,socrata_syp8-uezg@2026-09-14
-73,COLUMBUS (CHRISTOPHER),Club House,containing,41.876289,-87.769331,1.9,0,363372,,,0,1149.5,4,sourced,socrata_syp8-uezg@2026-09-14
-74,COLUMBUS (CHRISTOPHER),Athletic Building,containing,41.873902,-87.76617,2.9,0,365617,500 S CENTRAL AVE,,0,35167.1,6,sourced,socrata_syp8-uezg@2026-09-14
-75,CONNORS (WILLIAM),Argo Tea Cafe,largest_nearby,41.899571,-87.626452,115.7,81.2,837711,901 N RUSH ST,,0,42324,27,sourced,socrata_syp8-uezg@2026-09-14
+70,LINCOLN (ABRAHAM),Nature Boardwalk Peoples Gas Education Pavilion,largest_nearby,41.919237,-87.632363,154.9,123,279132,,LINCOLN PARK,,9364.6,9,sourced,socrata_syp8-uezg@2026-09-14
+71,LINCOLN (ABRAHAM),Rustic Shelter,largest_nearby,41.928909,-87.639891,115,91.4,893874,,,,8486.9,6,sourced,socrata_syp8-uezg@2026-09-14
+72,PARK NO. 517,Pergola,largest_nearby,41.990546,-87.654777,117.4,77.2,41568,5959 N SHERIDAN RD,,,28706.4,35,sourced,socrata_syp8-uezg@2026-09-14
+73,COLUMBUS (CHRISTOPHER),Club House,containing,41.876289,-87.769331,1.9,0,363372,,,,1149.5,4,sourced,socrata_syp8-uezg@2026-09-14
+74,COLUMBUS (CHRISTOPHER),Athletic Building,containing,41.873902,-87.76617,2.9,0,365617,500 S CENTRAL AVE,,,35167.1,6,sourced,socrata_syp8-uezg@2026-09-14
+75,CONNORS (WILLIAM),Argo Tea Cafe,largest_nearby,41.899571,-87.626452,115.7,81.2,837711,901 N RUSH ST,,,42324,27,sourced,socrata_syp8-uezg@2026-09-14
 76,LINCOLN (ABRAHAM),Gazebo,largest_nearby,41.900413,-87.623526,87.1,53.2,326851,140 E WALTON PL,DRAKE HOTEL,13,63625,12,sourced,socrata_syp8-uezg@2026-09-14
 77,AUBURN,Comfort Station,largest_nearby,41.752468,-87.636225,141.2,114.7,608768,462-474 W WINNECONNA PKWY,,3,6426.6,40,sourced,socrata_syp8-uezg@2026-09-14
 78,DOUGLASS (ANNA & FREDERICK),West Pergola,largest_nearby,41.855077,-87.697926,160.1,84.8,382002,2875 W 19TH ST,SAINT ANTHONY HOSPITAL,8,56397.9,15,sourced,socrata_syp8-uezg@2026-09-14
 79,DOUGLASS (ANNA & FREDERICK),East Pergola,largest_nearby,41.855077,-87.697926,113.3,45.1,382002,2875 W 19TH ST,SAINT ANTHONY HOSPITAL,8,56397.9,4,sourced,socrata_syp8-uezg@2026-09-14
-80,LINCOLN (ABRAHAM),Concession,largest_nearby,41.963062,-87.638132,85.7,77.3,120816,,,0,6134.8,2,sourced,socrata_syp8-uezg@2026-09-14
-81,PARK NO. 576,,containing,41.648201,-87.567349,1.5,0,841871,,,0,483.1,1,sourced,socrata_syp8-uezg@2026-09-14
-82,LINCOLN (ABRAHAM),North Parking Lot Building,containing,41.91469,-87.632658,0.8,0,835550,,,0,497.8,13,sourced,socrata_syp8-uezg@2026-09-14
+80,LINCOLN (ABRAHAM),Concession,largest_nearby,41.963062,-87.638132,85.7,77.3,120816,,,,6134.8,2,sourced,socrata_syp8-uezg@2026-09-14
+81,PARK NO. 576,,containing,41.648201,-87.567349,1.5,0,841871,,,,483.1,1,sourced,socrata_syp8-uezg@2026-09-14
+82,LINCOLN (ABRAHAM),North Parking Lot Building,containing,41.91469,-87.632658,0.8,0,835550,,,,497.8,13,sourced,socrata_syp8-uezg@2026-09-14
 83,LINCOLN (ABRAHAM),South Parking Lot Building,largest_nearby,41.913775,-87.633835,98.9,78.9,295018,1730 N CLARK ST,EUGENIE TERRACE ON THE PARK,44,13639.5,14,sourced,socrata_syp8-uezg@2026-09-14
 84,JACKSON (ANDREW),CTA Turnaround Building,largest_nearby,41.772924,-87.567161,112.4,62.5,553316,6700-6726 S SOUTH SHORE DR,QUADRANGLE HOUSE,27,36158.5,24,sourced,socrata_syp8-uezg@2026-09-14
 85,LA VILLITA,Comfort Station,largest_nearby,41.841201,-87.702873,101.5,72.9,400938,3110 W 28TH ST,,2,35640.1,52,sourced,socrata_syp8-uezg@2026-09-14
 86,LA VILLITA,Concession,largest_nearby,41.841201,-87.702873,89.2,59.9,400938,3110 W 28TH ST,,2,35640.1,52,sourced,socrata_syp8-uezg@2026-09-14
 87,SOUTH LAKEVIEW,Gazebo,largest_nearby,41.934093,-87.66035,101.9,78.7,232515,2847-2871 N LINCOLN AVE,,3,29327,185,sourced,socrata_syp8-uezg@2026-09-14
 88,BURNHAM (DANIEL),31st St Harbor Building,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-89,ADDAMS (JANE) MEML.,Frutalia Italian Ice,largest_nearby,41.891521,-87.613101,126.1,35.2,815730,,LAKE POINT TOWER,0,96641.1,3,sourced,socrata_syp8-uezg@2026-09-14
-90,ABBOTT (ROBERT),Bath House,address_exact,41.721158,-87.622113,0.7,0,700580,49 E 95TH ST,,0,4537.9,43,sourced,socrata_syp8-uezg@2026-09-14
-91,ABBOTT (ROBERT),Abbott Park Satellite Senior Center,containing,41.721072,-87.621787,0.7,0,826370,,,0,8202.3,39,sourced,socrata_syp8-uezg@2026-09-14
-92,ABBOTT (ROBERT),Abbott Park Fieldhouse,address_exact,41.7215,-87.62219,0.6,0,700157,31 E 95TH ST,,0,2079.5,52,sourced,socrata_syp8-uezg@2026-09-14
-93,ADA (SAWYER GARRETT),Ada Park Fieldhouse,address_exact,41.688164,-87.655982,6.4,0,775605,11250 S ADA ST,,0,23150.5,104,sourced,socrata_syp8-uezg@2026-09-14
-94,ADAMS (GEORGE & ADELE),Pump Station,containing,41.917121,-87.654991,1.3,0,287350,,,0,314.4,161,sourced,socrata_syp8-uezg@2026-09-14
+89,ADDAMS (JANE) MEML.,Frutalia Italian Ice,largest_nearby,41.891521,-87.613101,126.1,35.2,815730,,LAKE POINT TOWER,,96641.1,3,sourced,socrata_syp8-uezg@2026-09-14
+90,ABBOTT (ROBERT),Bath House,address_exact,41.721158,-87.622113,0.7,0,700580,49 E 95TH ST,,,4537.9,43,sourced,socrata_syp8-uezg@2026-09-14
+91,ABBOTT (ROBERT),Abbott Park Satellite Senior Center,containing,41.721072,-87.621787,0.7,0,826370,,,,8202.3,39,sourced,socrata_syp8-uezg@2026-09-14
+92,ABBOTT (ROBERT),Abbott Park Fieldhouse,address_exact,41.7215,-87.62219,0.6,0,700157,31 E 95TH ST,,,2079.5,52,sourced,socrata_syp8-uezg@2026-09-14
+93,ADA (SAWYER GARRETT),Ada Park Fieldhouse,address_exact,41.688164,-87.655982,6.4,0,775605,11250 S ADA ST,,,23150.5,104,sourced,socrata_syp8-uezg@2026-09-14
+94,ADAMS (GEORGE & ADELE),Pump Station,containing,41.917121,-87.654991,1.3,0,287350,,,,314.4,161,sourced,socrata_syp8-uezg@2026-09-14
 95,ADAMS (GEORGE & ADELE),Adams Park Fieldhouse,address_exact,41.916481,-87.655077,4.5,0,288593,1910 N KENMORE AVE,,1,3655,173,sourced,socrata_syp8-uezg@2026-09-14
-96,ALTGELD (JOHN),Bath House,address_exact,41.874022,-87.693079,0.9,0,365323,531 N WASHTENAW AVE,,0,1357,35,sourced,socrata_syp8-uezg@2026-09-14
-97,ALTGELD (JOHN),,containing,41.87473,-87.693115,0.3,0,364641,,,0,261.8,27,sourced,socrata_syp8-uezg@2026-09-14
-98,ALTGELD (JOHN),Filter Building,containing,41.874127,-87.693534,0.2,0,365267,,,0,644.2,38,sourced,socrata_syp8-uezg@2026-09-14
-99,ALTGELD (JOHN),Altgeld Park Fieldhouse,address_exact,41.874364,-87.693297,2.3,0,364869,515 S WASHTENAW AVE,,0,7563.2,35,sourced,socrata_syp8-uezg@2026-09-14
-100,AMUNDSEN (ROALD),Storage Shed,containing,41.913818,-87.779705,0.3,0,296787,,,0,216,45,sourced,socrata_syp8-uezg@2026-09-14
+96,ALTGELD (JOHN),Bath House,address_exact,41.874022,-87.693079,0.9,0,365323,531 N WASHTENAW AVE,,,1357,35,sourced,socrata_syp8-uezg@2026-09-14
+97,ALTGELD (JOHN),,containing,41.87473,-87.693115,0.3,0,364641,,,,261.8,27,sourced,socrata_syp8-uezg@2026-09-14
+98,ALTGELD (JOHN),Filter Building,containing,41.874127,-87.693534,0.2,0,365267,,,,644.2,38,sourced,socrata_syp8-uezg@2026-09-14
+99,ALTGELD (JOHN),Altgeld Park Fieldhouse,address_exact,41.874364,-87.693297,2.3,0,364869,515 S WASHTENAW AVE,,,7563.2,35,sourced,socrata_syp8-uezg@2026-09-14
+100,AMUNDSEN (ROALD),Storage Shed,containing,41.913818,-87.779705,0.3,0,296787,,,,216,45,sourced,socrata_syp8-uezg@2026-09-14
 101,AMUNDSEN (ROALD),Amundsen Park Fieldhouse,address_exact,41.91333,-87.780237,3.2,0,297619,6200 W BLOOMINGDALE AVE,,1,18197.1,107,sourced,socrata_syp8-uezg@2026-09-14
-102,ANDERSON (LOUIS),Recreation Building,address_exact,41.826281,-87.620865,1.2,0,422548,3734 S PRAIRIE AVE,,0,4738.5,24,sourced,socrata_syp8-uezg@2026-09-14
+102,ANDERSON (LOUIS),Recreation Building,address_exact,41.826281,-87.620865,1.2,0,422548,3734 S PRAIRIE AVE,,,4738.5,24,sourced,socrata_syp8-uezg@2026-09-14
 103,ARCHER (WILLIAM BEATTY),Archer Park Fieldhouse,address_exact,41.80348,-87.735064,6.3,0,456814,4901 S KILBOURN AVE,,1,16443.1,36,sourced,socrata_syp8-uezg@2026-09-14
 104,ARMOUR (PHILIP) SQUARE,Armour Square Fieldhouse,address_exact,41.834216,-87.634771,3.6,0,412954,3309 S SHIELDS AVE,,2,33529.6,51,sourced,socrata_syp8-uezg@2026-09-14
-105,ARMSTRONG (LILLIAN HARDIN),North Shelter,address_exact,41.814126,-87.6096,3.8,0,434660,4401 S ST LAWRENCE AVE,,0,986.5,20,sourced,socrata_syp8-uezg@2026-09-14
-106,ARMSTRONG (LILLIAN HARDIN),South Shelter,address_exact,41.813976,-87.609595,3.5,0,434902,4419 S ST LAWRENCE AVE,,0,956.2,20,sourced,socrata_syp8-uezg@2026-09-14
-107,ATHLETIC FIELD,Athletic Field Park Fieldhouse,address_exact,41.94725,-87.717131,10.1,0,178971,3623 N CENTRAL PARK AVE,,0,4388.4,117,sourced,socrata_syp8-uezg@2026-09-14
-108,ATHLETIC FIELD,Ceramics Building,address_exact,41.94672,-87.717007,0.7,0,181050,3546 W ADDISON ST,,0,2426.1,85,sourced,socrata_syp8-uezg@2026-09-14
-109,ATHLETIC FIELD,Shelter,containing,41.947025,-87.717017,1.9,0,179947,,,0,395.2,106,sourced,socrata_syp8-uezg@2026-09-14
+105,ARMSTRONG (LILLIAN HARDIN),North Shelter,address_exact,41.814126,-87.6096,3.8,0,434660,4401 S ST LAWRENCE AVE,,,986.5,20,sourced,socrata_syp8-uezg@2026-09-14
+106,ARMSTRONG (LILLIAN HARDIN),South Shelter,address_exact,41.813976,-87.609595,3.5,0,434902,4419 S ST LAWRENCE AVE,,,956.2,20,sourced,socrata_syp8-uezg@2026-09-14
+107,ATHLETIC FIELD,Athletic Field Park Fieldhouse,address_exact,41.94725,-87.717131,10.1,0,178971,3623 N CENTRAL PARK AVE,,,4388.4,117,sourced,socrata_syp8-uezg@2026-09-14
+108,ATHLETIC FIELD,Ceramics Building,address_exact,41.94672,-87.717007,0.7,0,181050,3546 W ADDISON ST,,,2426.1,85,sourced,socrata_syp8-uezg@2026-09-14
+109,ATHLETIC FIELD,Shelter,containing,41.947025,-87.717017,1.9,0,179947,,,,395.2,106,sourced,socrata_syp8-uezg@2026-09-14
 110,AUGUSTA (CARPENTER),Augusta Park Fieldhouse,address_exact,41.898549,-87.737342,0.7,0,334179,4431 W AUGUSTA BLVD,,1,1278.9,164,sourced,socrata_syp8-uezg@2026-09-14
 111,AUSTIN (HENRY),Bath House,address_exact,41.887715,-87.774117,1.3,0,352333,5951 W LAKE ST,,1,1738.8,32,sourced,socrata_syp8-uezg@2026-09-14
-112,AUSTIN TOWN HALL,Austin Library,address_exact,41.889019,-87.765817,2.4,0,351473,5609-5615 W RACE AVE,AUSTIN,0,11071.9,36,sourced,socrata_syp8-uezg@2026-09-14
-113,AUSTIN TOWN HALL,Austin Town Hall,address_exact,41.888312,-87.7658,0.2,0,351825,5610 W LAKE ST,AUSTIN TOWN HALL,0,21312.5,32,sourced,socrata_syp8-uezg@2026-09-14
-114,AVALON,Bath House,containing,41.742816,-87.593878,0.9,0,644445,,AVALON PARK,0,1293.6,66,sourced,socrata_syp8-uezg@2026-09-14
+112,AUSTIN TOWN HALL,Austin Library,address_exact,41.889019,-87.765817,2.4,0,351473,5609-5615 W RACE AVE,AUSTIN,,11071.9,36,sourced,socrata_syp8-uezg@2026-09-14
+113,AUSTIN TOWN HALL,Austin Town Hall,address_exact,41.888312,-87.7658,0.2,0,351825,5610 W LAKE ST,AUSTIN TOWN HALL,,21312.5,32,sourced,socrata_syp8-uezg@2026-09-14
+114,AVALON,Bath House,containing,41.742816,-87.593878,0.9,0,644445,,AVALON PARK,,1293.6,66,sourced,socrata_syp8-uezg@2026-09-14
 115,AVALON,Avalon Park Fieldhouse,address_exact,41.743629,-87.594185,2.9,0,640789,1215 E 83RD ST,AVALON PARK,1,18120.2,96,sourced,socrata_syp8-uezg@2026-09-14
-116,AVALON,Shelter,containing,41.74274,-87.594801,0.9,0,644877,,AVALON PARK,0,556,48,sourced,socrata_syp8-uezg@2026-09-14
-117,AVALON,Filter Building,containing,41.742642,-87.594322,1,0,645352,,AVALON PARK,0,483.8,57,sourced,socrata_syp8-uezg@2026-09-14
+116,AVALON,Shelter,containing,41.74274,-87.594801,0.9,0,644877,,AVALON PARK,,556,48,sourced,socrata_syp8-uezg@2026-09-14
+117,AVALON,Filter Building,containing,41.742642,-87.594322,1,0,645352,,AVALON PARK,,483.8,57,sourced,socrata_syp8-uezg@2026-09-14
 118,AVONDALE,Avondale Park Fieldhouse,address_exact,41.941283,-87.715207,5.5,0,203369,3516 W SCHOOL ST,AVONDALE PARK,2,12183.2,192,sourced,socrata_syp8-uezg@2026-09-14
-119,BEEHIVE,Shelter,address_exact,41.782501,-87.591572,0.2,0,521419,6158 S DORCHESTER AVE,,0,180.8,53,sourced,socrata_syp8-uezg@2026-09-14
+119,BEEHIVE,Shelter,address_exact,41.782501,-87.591572,0.2,0,521419,6158 S DORCHESTER AVE,,,180.8,53,sourced,socrata_syp8-uezg@2026-09-14
 120,"BELL (GEORGE,JR.)",Bell Park Fieldhouse,address_exact,41.935415,-87.796343,5.7,0,230463,3005 N NEWCASTLE AVE,,1,3250.1,180,sourced,socrata_syp8-uezg@2026-09-14
-121,BERGER (ALBERT),North Lakeside Cultural Center,address_exact,41.994858,-87.655159,2,0,30931,6205 N SHERIDAN RD,,0,4182.5,20,sourced,socrata_syp8-uezg@2026-09-14
-122,BERGER (ALBERT),North Coach House,containing,41.995288,-87.654818,0.5,0,30115,,,0,726.8,20,sourced,socrata_syp8-uezg@2026-09-14
-123,BERGER (ALBERT),South Coach House,address_exact,41.995039,-87.654821,1.1,0,30545,6205 N SHERIDAN RD,,0,1870.8,20,sourced,socrata_syp8-uezg@2026-09-14
+121,BERGER (ALBERT),North Lakeside Cultural Center,address_exact,41.994858,-87.655159,2,0,30931,6205 N SHERIDAN RD,,,4182.5,20,sourced,socrata_syp8-uezg@2026-09-14
+122,BERGER (ALBERT),North Coach House,containing,41.995288,-87.654818,0.5,0,30115,,,,726.8,20,sourced,socrata_syp8-uezg@2026-09-14
+123,BERGER (ALBERT),South Coach House,address_exact,41.995039,-87.654821,1.1,0,30545,6205 N SHERIDAN RD,,,1870.8,20,sourced,socrata_syp8-uezg@2026-09-14
 124,BERGER (ALBERT),Cultural Center Annex,address_exact,41.995235,-87.655095,3.4,0,30175,6219 N SHERIDAN RD,,3,2299,20,sourced,socrata_syp8-uezg@2026-09-14
 125,BESSEMER (HENRY),Bessemer Park Fieldhouse,address_exact,41.733077,-87.556704,26.5,0,674624,8930 S MUSKEGON AVE,,2,21001.4,47,sourced,socrata_syp8-uezg@2026-09-14
-126,BESSEMER (HENRY),Boiler Building,containing,41.733458,-87.556511,1.9,0,673914,,,0,1641.2,41,sourced,socrata_syp8-uezg@2026-09-14
+126,BESSEMER (HENRY),Boiler Building,containing,41.733458,-87.556511,1.9,0,673914,,,,1641.2,41,sourced,socrata_syp8-uezg@2026-09-14
 127,BOGAN (WILLIAM),Bogan Park Fieldhouse,address_exact,41.745742,-87.720457,2,0,635830,8101 S PULASKI RD,,1,2198.1,85,sourced,socrata_syp8-uezg@2026-09-14
 128,BOSLEY (WILLIAM),Bosley Park Fieldhouse,address_exact,41.839245,-87.653761,1.5,0,405393,3044 S BONFIELD ST,,1,1801.5,198,sourced,socrata_syp8-uezg@2026-09-14
-129,BRAINERD,Brainerd Park Fieldhouse,address_exact,41.727097,-87.654906,9.3,0,689162,1246 W 92ND ST,,0,15352.1,122,sourced,socrata_syp8-uezg@2026-09-14
-130,BRANDS,Brands Park Fieldhouse,address_exact,41.941351,-87.70024,14.1,0,202585,3285 N ELSTON AVE,,0,13342.5,144,sourced,socrata_syp8-uezg@2026-09-14
+129,BRAINERD,Brainerd Park Fieldhouse,address_exact,41.727097,-87.654906,9.3,0,689162,1246 W 92ND ST,,,15352.1,122,sourced,socrata_syp8-uezg@2026-09-14
+130,BRANDS,Brands Park Fieldhouse,address_exact,41.941351,-87.70024,14.1,0,202585,3285 N ELSTON AVE,,,13342.5,144,sourced,socrata_syp8-uezg@2026-09-14
 131,BROADWAY ARMORY,Broadway Armory,address_exact,41.989019,-87.659632,23.4,0,43477,5917 N BROADWAY,,2,74711.1,50,sourced,socrata_syp8-uezg@2026-09-14
 132,BROOKS (OSCAR),Brooks Park Fieldhouse,address_exact,42.009876,-87.807274,2,0,10368,7100 N HARLEM AVE,,2,10458.1,79,sourced,socrata_syp8-uezg@2026-09-14
-133,BURNHAM (DANIEL),43rd Street Comfort Station,containing,41.817064,-87.594023,0.9,0,430931,,,0,819.8,2,sourced,socrata_syp8-uezg@2026-09-14
-134,BURNHAM (DANIEL),Promontory Point Refectory,containing,41.79642,-87.576081,4.6,0,473911,,,0,5177.5,1,sourced,socrata_syp8-uezg@2026-09-14
-135,BURNHAM (DANIEL),31st Street Beach House,containing,41.83857,-87.606804,0.9,0,406290,,,0,1369,2,sourced,socrata_syp8-uezg@2026-09-14
+133,BURNHAM (DANIEL),43rd Street Comfort Station,containing,41.817064,-87.594023,0.9,0,430931,,,,819.8,2,sourced,socrata_syp8-uezg@2026-09-14
+134,BURNHAM (DANIEL),Promontory Point Refectory,containing,41.79642,-87.576081,4.6,0,473911,,,,5177.5,1,sourced,socrata_syp8-uezg@2026-09-14
+135,BURNHAM (DANIEL),31st Street Beach House,containing,41.83857,-87.606804,0.9,0,406290,,,,1369,2,sourced,socrata_syp8-uezg@2026-09-14
 136,BURNHAM (DANIEL),McCormick Place Lakeside Center,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-137,BURNHAM (DANIEL),Soldier Field,address_exact,41.862088,-87.61667,17.3,0,836579,425 E MCFETRIDGE DR,,0,527773.8,1,sourced,socrata_syp8-uezg@2026-09-14
-138,BURNHAM (DANIEL),SOUTH PARK BOARD,address_exact,41.825246,-87.601709,2.7,0,423250,1000 E OAKWOOD BLVD,SOUTH PARK BOARD,0,3950.2,9,sourced,socrata_syp8-uezg@2026-09-14
-139,BURNHAM (DANIEL),CPD Central Shop,address_exact,41.825727,-87.601758,12.2,0,422665,1000 E OAKWOOD BLVD,CPD CENTRAL SHOP,0,33691.2,5,sourced,socrata_syp8-uezg@2026-09-14
-140,BURNHAM (DANIEL),Burnham Harbor Building,containing,41.860564,-87.612542,3.1,0,375426,,,0,2683.2,1,sourced,socrata_syp8-uezg@2026-09-14
-141,BURNHAM (DANIEL),31st Street Concession,containing,41.838412,-87.606746,0.9,0,406633,,,0,1336.5,2,sourced,socrata_syp8-uezg@2026-09-14
-142,BURNHAM (DANIEL),Soldier Field South Parking Lot,containing,41.859353,-87.615629,0.7,0,858873,,,0,261519.1,1,sourced,socrata_syp8-uezg@2026-09-14
+137,BURNHAM (DANIEL),Soldier Field,address_exact,41.862088,-87.61667,17.3,0,836579,425 E MCFETRIDGE DR,,,527773.8,1,sourced,socrata_syp8-uezg@2026-09-14
+138,BURNHAM (DANIEL),SOUTH PARK BOARD,address_exact,41.825246,-87.601709,2.7,0,423250,1000 E OAKWOOD BLVD,SOUTH PARK BOARD,,3950.2,9,sourced,socrata_syp8-uezg@2026-09-14
+139,BURNHAM (DANIEL),CPD Central Shop,address_exact,41.825727,-87.601758,12.2,0,422665,1000 E OAKWOOD BLVD,CPD CENTRAL SHOP,,33691.2,5,sourced,socrata_syp8-uezg@2026-09-14
+140,BURNHAM (DANIEL),Burnham Harbor Building,containing,41.860564,-87.612542,3.1,0,375426,,,,2683.2,1,sourced,socrata_syp8-uezg@2026-09-14
+141,BURNHAM (DANIEL),31st Street Concession,containing,41.838412,-87.606746,0.9,0,406633,,,,1336.5,2,sourced,socrata_syp8-uezg@2026-09-14
+142,BURNHAM (DANIEL),Soldier Field South Parking Lot,containing,41.859353,-87.615629,0.7,0,858873,,,,261519.1,1,sourced,socrata_syp8-uezg@2026-09-14
 143,BURNHAM (DANIEL),41st Street Beach House,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-144,CALIFORNIA,Pool Building,containing,41.952496,-87.696612,1,0,157019,,CALIFORNIA PARK,0,6080.9,8,sourced,socrata_syp8-uezg@2026-09-14
-145,CALUMET,,containing,41.709559,-87.5266,0.4,0,724044,,,0,97.5,3,sourced,socrata_syp8-uezg@2026-09-14
-146,CALUMET,,containing,41.709455,-87.526742,0.4,0,724051,,,0,4768.1,3,sourced,socrata_syp8-uezg@2026-09-14
-147,CALUMET,,address_exact,41.722951,-87.532529,1.1,0,696468,3730 E FOREMAN DR,,0,3467.5,2,sourced,socrata_syp8-uezg@2026-09-14
-148,CALUMET,Service Yard,address_exact,41.722978,-87.533161,12.7,0,696487,3730 E FOREMAN DR,,0,7495.5,2,sourced,socrata_syp8-uezg@2026-09-14
-149,CALUMET,Calumet Beach House,address_exact,41.713377,-87.527905,4,0,714970,9801 S AVENUE G,,0,10392.8,1,sourced,socrata_syp8-uezg@2026-09-14
-150,CALUMET,Power House,containing,41.71833,-87.531449,1.1,0,705017,,CALUMET PARK,0,2984.5,45,sourced,socrata_syp8-uezg@2026-09-14
+144,CALIFORNIA,Pool Building,containing,41.952496,-87.696612,1,0,157019,,CALIFORNIA PARK,,6080.9,8,sourced,socrata_syp8-uezg@2026-09-14
+145,CALUMET,,containing,41.709559,-87.5266,0.4,0,724044,,,,97.5,3,sourced,socrata_syp8-uezg@2026-09-14
+146,CALUMET,,containing,41.709455,-87.526742,0.4,0,724051,,,,4768.1,3,sourced,socrata_syp8-uezg@2026-09-14
+147,CALUMET,,address_exact,41.722951,-87.532529,1.1,0,696468,3730 E FOREMAN DR,,,3467.5,2,sourced,socrata_syp8-uezg@2026-09-14
+148,CALUMET,Service Yard,address_exact,41.722978,-87.533161,12.7,0,696487,3730 E FOREMAN DR,,,7495.5,2,sourced,socrata_syp8-uezg@2026-09-14
+149,CALUMET,Calumet Beach House,address_exact,41.713377,-87.527905,4,0,714970,9801 S AVENUE G,,,10392.8,1,sourced,socrata_syp8-uezg@2026-09-14
+150,CALUMET,Power House,containing,41.71833,-87.531449,1.1,0,705017,,CALUMET PARK,,2984.5,45,sourced,socrata_syp8-uezg@2026-09-14
 151,CALUMET,Calumet Patk Fieldhouse,address_exact,41.717836,-87.530572,1,0,706135,9801 S AVENUE G,,2,27094.2,13,sourced,socrata_syp8-uezg@2026-09-14
-152,CALUMET,Calumet Park Comfort Station,address_exact,41.720748,-87.526491,1.2,0,700247,9801 S AVENUE G,CALUMET PARK,0,1580.2,1,sourced,socrata_syp8-uezg@2026-09-14
-153,CARVER (GEORGE WASHINGTON),Comfort Station,containing,41.65352,-87.597645,0.7,0,808988,,,0,577,18,sourced,socrata_syp8-uezg@2026-09-14
-154,CHASE (SALMON),Filter Building,containing,41.968325,-87.66888,0.1,0,105104,,,0,306.2,78,sourced,socrata_syp8-uezg@2026-09-14
+152,CALUMET,Calumet Park Comfort Station,address_exact,41.720748,-87.526491,1.2,0,700247,9801 S AVENUE G,CALUMET PARK,,1580.2,1,sourced,socrata_syp8-uezg@2026-09-14
+153,CARVER (GEORGE WASHINGTON),Comfort Station,containing,41.65352,-87.597645,0.7,0,808988,,,,577,18,sourced,socrata_syp8-uezg@2026-09-14
+154,CHASE (SALMON),Filter Building,containing,41.968325,-87.66888,0.1,0,105104,,,,306.2,78,sourced,socrata_syp8-uezg@2026-09-14
 155,CHASE (SALMON),Chase Park Fieldhouse,address_exact,41.967791,-87.668909,3.7,0,106119,4725 N ASHLAND AVE,,1,16227.9,77,sourced,socrata_syp8-uezg@2026-09-14
 156,CHIPPEWA,Chippewa Park Fieldhouse,address_exact,42.004481,-87.704935,2.6,0,16160,6758 N SACRAMENTO AVE,,1,1935.5,95,sourced,socrata_syp8-uezg@2026-09-14
 157,CHOPIN (FREDERIC),Chopin Park Fieldhouse,address_exact,41.943194,-87.762418,1.6,0,196110,3420 N LONG AVE,,2,4279.2,123,sourced,socrata_syp8-uezg@2026-09-14
 158,CLARENDON COMM. CTR.,Clarendon Community Center,address_exact,41.963676,-87.649351,4.5,0,118181,4501 N CLARENDON AVE,,1,27476.8,10,sourced,socrata_syp8-uezg@2026-09-14
-159,CLARK (JOHN),Filter Building,containing,41.876129,-87.741481,0.2,0,363463,,,0,55.2,79,sourced,socrata_syp8-uezg@2026-09-14
+159,CLARK (JOHN),Filter Building,containing,41.876129,-87.741481,0.2,0,363463,,,,55.2,79,sourced,socrata_syp8-uezg@2026-09-14
 160,CLARK (JOHN),Toilet Building,containing,41.876182,-87.742048,7.6,0,363323,4644 W GLADYS AVE,,2,1704.8,107,sourced,socrata_syp8-uezg@2026-09-14
 161,CLARK (JOHN),Clark Park Fieldhouse,address_exact,41.87673,-87.740973,0.6,0,362863,4615 W JACKSON BLVD,,1,2644.8,72,sourced,socrata_syp8-uezg@2026-09-14
-162,COLUMBUS (CHRISTOPHER),Austin Comfort Station,containing,41.872431,-87.77419,0.9,0,367467,,,0,1185.8,1,sourced,socrata_syp8-uezg@2026-09-14
-163,COLUMBUS (CHRISTOPHER),,containing,41.874074,-87.768401,1.4,0,365670,,,0,1769.4,3,sourced,socrata_syp8-uezg@2026-09-14
-164,COLUMBUS (CHRISTOPHER),Jackson Comfort Station,containing,41.876189,-87.773853,0.4,0,363564,,,0,188.2,1,sourced,socrata_syp8-uezg@2026-09-14
-165,COLUMBUS (CHRISTOPHER),Starter Building,containing,41.876412,-87.769578,0.5,0,363296,,,0,521.1,3,sourced,socrata_syp8-uezg@2026-09-14
-166,COLUMBUS (CHRISTOPHER),Shelter House,containing,41.875615,-87.765025,0.9,0,364018,,,0,1038.1,69,sourced,socrata_syp8-uezg@2026-09-14
-167,COLUMBUS (CHRISTOPHER),Arcade,address_exact,41.873902,-87.76617,37.3,0,365617,500 S CENTRAL AVE,,0,35167.1,20,sourced,socrata_syp8-uezg@2026-09-14
-168,COLUMBUS (CHRISTOPHER),,containing,41.874815,-87.769533,0.8,0,364912,,,0,855.2,4,sourced,socrata_syp8-uezg@2026-09-14
-169,COLUMBUS (CHRISTOPHER),Columbus Park Fieldhouse,address_exact,41.873902,-87.76617,79.6,0,365617,500 S CENTRAL AVE,,0,35167.1,47,sourced,socrata_syp8-uezg@2026-09-14
+162,COLUMBUS (CHRISTOPHER),Austin Comfort Station,containing,41.872431,-87.77419,0.9,0,367467,,,,1185.8,1,sourced,socrata_syp8-uezg@2026-09-14
+163,COLUMBUS (CHRISTOPHER),,containing,41.874074,-87.768401,1.4,0,365670,,,,1769.4,3,sourced,socrata_syp8-uezg@2026-09-14
+164,COLUMBUS (CHRISTOPHER),Jackson Comfort Station,containing,41.876189,-87.773853,0.4,0,363564,,,,188.2,1,sourced,socrata_syp8-uezg@2026-09-14
+165,COLUMBUS (CHRISTOPHER),Starter Building,containing,41.876412,-87.769578,0.5,0,363296,,,,521.1,3,sourced,socrata_syp8-uezg@2026-09-14
+166,COLUMBUS (CHRISTOPHER),Shelter House,containing,41.875615,-87.765025,0.9,0,364018,,,,1038.1,69,sourced,socrata_syp8-uezg@2026-09-14
+167,COLUMBUS (CHRISTOPHER),Arcade,address_exact,41.873902,-87.76617,37.3,0,365617,500 S CENTRAL AVE,,,35167.1,20,sourced,socrata_syp8-uezg@2026-09-14
+168,COLUMBUS (CHRISTOPHER),,containing,41.874815,-87.769533,0.8,0,364912,,,,855.2,4,sourced,socrata_syp8-uezg@2026-09-14
+169,COLUMBUS (CHRISTOPHER),Columbus Park Fieldhouse,address_exact,41.873902,-87.76617,79.6,0,365617,500 S CENTRAL AVE,,,35167.1,47,sourced,socrata_syp8-uezg@2026-09-14
 170,COMMERCIAL CLUB PGD. OF CHICAGO,Commercial Club Fieldhouse,address_exact,41.896688,-87.67417,4.4,0,338002,1845 W RICE ST,,1,8051,237,sourced,socrata_syp8-uezg@2026-09-14
 171,COOPER (JACK),Cooper Park Fieldhouse,address_exact,41.681054,-87.655397,1.1,0,789345,1332 W 117TH ST,,1,2191,204,sourced,socrata_syp8-uezg@2026-09-14
 172,CORNELL (PAUL) SQUARE,Cornell Square Fieldhouse,address_exact,41.802519,-87.670308,17.3,0,457446,5000 S WOOD ST,,1,24974.6,129,sourced,socrata_syp8-uezg@2026-09-14
 173,CRAGIN,Cragin Park Fieldhouse,address_exact,41.928112,-87.758498,1.1,0,254767,2611 N LOCKWOOD AVE,,1,2233.2,216,sourced,socrata_syp8-uezg@2026-09-14
-174,DAVIS (NATHAN) SQUARE,Locker Building,address_exact,41.812861,-87.666516,32.9,0,436465,4430 S MARSHFIELD AVE,,0,7083.1,97,sourced,socrata_syp8-uezg@2026-09-14
-175,DAVIS (NATHAN) SQUARE,Filter House,containing,41.81293,-87.666885,0.1,0,437262,,,0,596.6,98,sourced,socrata_syp8-uezg@2026-09-14
-176,DAVIS (NATHAN) SQUARE,Davis Square Fieldhouse,address_exact,41.813317,-87.667205,17.1,0,436503,1653 W 44TH ST,,0,16060.9,96,sourced,socrata_syp8-uezg@2026-09-14
+174,DAVIS (NATHAN) SQUARE,Locker Building,address_exact,41.812861,-87.666516,32.9,0,436465,4430 S MARSHFIELD AVE,,,7083.1,97,sourced,socrata_syp8-uezg@2026-09-14
+175,DAVIS (NATHAN) SQUARE,Filter House,containing,41.81293,-87.666885,0.1,0,437262,,,,596.6,98,sourced,socrata_syp8-uezg@2026-09-14
+176,DAVIS (NATHAN) SQUARE,Davis Square Fieldhouse,address_exact,41.813317,-87.667205,17.1,0,436503,1653 W 44TH ST,,,16060.9,96,sourced,socrata_syp8-uezg@2026-09-14
 177,DAWES (CHARLES),Dawes Park Fieldhouse,address_exact,41.746904,-87.674016,0.7,0,630334,8040 S DAMEN AVE,,1,2263.5,103,sourced,socrata_syp8-uezg@2026-09-14
 178,DONOVAN (GEORGE),Donovan Park Fieldhouse,address_exact,41.828131,-87.647899,0.8,0,420491,3620 S LITUANICA AVE,,1,1787.5,114,sourced,socrata_syp8-uezg@2026-09-14
-179,DOUGLASS (ANNA & FREDERICK),Farrar & 18th Comfort Station,address_exact,41.857961,-87.696542,3.7,0,378231,1401 S SACRAMENTO AVE,,0,967.5,46,sourced,socrata_syp8-uezg@2026-09-14
-180,DOUGLASS (ANNA & FREDERICK),Pergola,address_exact,41.858861,-87.700692,3.4,0,377034,1613 S SACRAMENTO DR,,0,4841,2,sourced,socrata_syp8-uezg@2026-09-14
-181,DOUGLASS (ANNA & FREDERICK),Landscape Service Building,containing,41.858621,-87.700122,0.8,0,377484,,,0,673,2,sourced,socrata_syp8-uezg@2026-09-14
-182,DOUGLASS (ANNA & FREDERICK),Douglass Park Fieldhouse,address_exact,41.862443,-87.699665,5.6,0,374801,1401 S SACRAMENTO DR,,0,32582.8,1,sourced,socrata_syp8-uezg@2026-09-14
-183,DOUGLASS (ANNA & FREDERICK),,address_exact,41.856242,-87.69663,4.7,0,380484,1401 S SACRAMENTO AVE,,0,13780.5,38,sourced,socrata_syp8-uezg@2026-09-14
+179,DOUGLASS (ANNA & FREDERICK),Farrar & 18th Comfort Station,address_exact,41.857961,-87.696542,3.7,0,378231,1401 S SACRAMENTO AVE,,,967.5,46,sourced,socrata_syp8-uezg@2026-09-14
+180,DOUGLASS (ANNA & FREDERICK),Pergola,address_exact,41.858861,-87.700692,3.4,0,377034,1613 S SACRAMENTO DR,,,4841,2,sourced,socrata_syp8-uezg@2026-09-14
+181,DOUGLASS (ANNA & FREDERICK),Landscape Service Building,containing,41.858621,-87.700122,0.8,0,377484,,,,673,2,sourced,socrata_syp8-uezg@2026-09-14
+182,DOUGLASS (ANNA & FREDERICK),Douglass Park Fieldhouse,address_exact,41.862443,-87.699665,5.6,0,374801,1401 S SACRAMENTO DR,,,32582.8,1,sourced,socrata_syp8-uezg@2026-09-14
+183,DOUGLASS (ANNA & FREDERICK),,address_exact,41.856242,-87.69663,4.7,0,380484,1401 S SACRAMENTO AVE,,,13780.5,38,sourced,socrata_syp8-uezg@2026-09-14
 184,DUNHAM (ROBERT),Dunham Park Fieldhouse,address_exact,41.965881,-87.782435,7.8,0,113704,4630-4640 N MELVINA AVE,,1,15588.5,120,sourced,socrata_syp8-uezg@2026-09-14
-185,DUNHAM (ROBERT),Comfort Station,containing,41.965443,-87.783314,0.7,0,115605,,DUNHAM PARK,0,2282.2,109,sourced,socrata_syp8-uezg@2026-09-14
-186,DVORAK (ANTON),Dressing Facility,address_exact,41.854091,-87.654384,2.6,0,383754,2039 S MAY ST,,0,1316.2,91,sourced,socrata_syp8-uezg@2026-09-14
-187,DVORAK (ANTON),Filter Building,containing,41.853967,-87.653685,1.2,0,383955,,,0,618.2,94,sourced,socrata_syp8-uezg@2026-09-14
-188,DVORAK (ANTON),Dvorak Park Fieldhouse,address_exact,41.854981,-87.653944,5,0,382112,1119 W CULLERTON ST,,0,14455.1,182,sourced,socrata_syp8-uezg@2026-09-14
-189,ECKHART (BERNARD),Ida Crown Natatorium,address_exact,41.896575,-87.661971,0.6,0,855978,1360-1370 W CHICAGO AVE,,0,11516.5,87,sourced,socrata_syp8-uezg@2026-09-14
-190,ECKHART (BERNARD),Eckhart Park Fieldhouse,address_exact,41.896584,-87.661625,17.3,0,855979,1330-1354 W CHICAGO AVE,ECKHART PARK FIELD HOUSE,0,18132.1,84,sourced,socrata_syp8-uezg@2026-09-14
+185,DUNHAM (ROBERT),Comfort Station,containing,41.965443,-87.783314,0.7,0,115605,,DUNHAM PARK,,2282.2,109,sourced,socrata_syp8-uezg@2026-09-14
+186,DVORAK (ANTON),Dressing Facility,address_exact,41.854091,-87.654384,2.6,0,383754,2039 S MAY ST,,,1316.2,91,sourced,socrata_syp8-uezg@2026-09-14
+187,DVORAK (ANTON),Filter Building,containing,41.853967,-87.653685,1.2,0,383955,,,,618.2,94,sourced,socrata_syp8-uezg@2026-09-14
+188,DVORAK (ANTON),Dvorak Park Fieldhouse,address_exact,41.854981,-87.653944,5,0,382112,1119 W CULLERTON ST,,,14455.1,182,sourced,socrata_syp8-uezg@2026-09-14
+189,ECKHART (BERNARD),Ida Crown Natatorium,address_exact,41.896575,-87.661971,0.6,0,855978,1360-1370 W CHICAGO AVE,,,11516.5,87,sourced,socrata_syp8-uezg@2026-09-14
+190,ECKHART (BERNARD),Eckhart Park Fieldhouse,address_exact,41.896584,-87.661625,17.3,0,855979,1330-1354 W CHICAGO AVE,ECKHART PARK FIELD HOUSE,,18132.1,84,sourced,socrata_syp8-uezg@2026-09-14
 191,WHITE (WILLYE B.),Willye White Park Fieldhouse,containing,42.019654,-87.671478,4.1,0,892614,1607 W HOWARD ST,,2,17536.8,33,sourced,socrata_syp8-uezg@2026-09-14
-192,CHICAGO WOMEN'S PARK AND GARDENS,Clarke House Museum,address_exact,41.857066,-87.621873,0.6,0,378896,1827 S INDIANA AVE,HENRY B CLARKE HOUSE,0,2435.4,119,sourced,socrata_syp8-uezg@2026-09-14
-193,EMMERSON (LOUIS),Emmerson Park Fieldhouse,containing,41.994737,-87.67636,0.5,0,31645,,EMERSON PARK,0,1744.5,38,sourced,socrata_syp8-uezg@2026-09-14
+192,CHICAGO WOMEN'S PARK AND GARDENS,Clarke House Museum,address_exact,41.857066,-87.621873,0.6,0,378896,1827 S INDIANA AVE,HENRY B CLARKE HOUSE,,2435.4,119,sourced,socrata_syp8-uezg@2026-09-14
+193,EMMERSON (LOUIS),Emmerson Park Fieldhouse,containing,41.994737,-87.67636,0.5,0,31645,,EMERSON PARK,,1744.5,38,sourced,socrata_syp8-uezg@2026-09-14
 194,EUCLID,Euclid Park Fieldhouse,address_exact,41.716069,-87.637406,0.7,0,711781,9800 S PARNELL AVE,,1,2320,98,sourced,socrata_syp8-uezg@2026-09-14
 195,FERNWOOD,Fernwood Park Fieldhouse,address_exact,41.704276,-87.638554,14.3,0,737756,10436 S WALLACE ST,,1,28615.2,58,sourced,socrata_syp8-uezg@2026-09-14
-196,FERNWOOD,Comfort Station,containing,41.704212,-87.640159,0.4,0,738383,,,0,395,97,sourced,socrata_syp8-uezg@2026-09-14
-197,FIELD (EUGENE),Field Park Fieldhouse,containing,41.97399,-87.722326,9.2,0,84003,,EUGENE FIELD,0,9528.1,123,sourced,socrata_syp8-uezg@2026-09-14
-198,FIELD (EUGENE),Shelter,containing,41.974807,-87.723891,0.6,0,81627,,,0,561.6,88,sourced,socrata_syp8-uezg@2026-09-14
-199,FOSCO (PETER),Fosco Park Fieldhouse,address_exact,41.864772,-87.657629,20,0,826880,1312 S RACINE AVE,,0,53633.6,18,sourced,socrata_syp8-uezg@2026-09-14
+196,FERNWOOD,Comfort Station,containing,41.704212,-87.640159,0.4,0,738383,,,,395,97,sourced,socrata_syp8-uezg@2026-09-14
+197,FIELD (EUGENE),Field Park Fieldhouse,containing,41.97399,-87.722326,9.2,0,84003,,EUGENE FIELD,,9528.1,123,sourced,socrata_syp8-uezg@2026-09-14
+198,FIELD (EUGENE),Shelter,containing,41.974807,-87.723891,0.6,0,81627,,,,561.6,88,sourced,socrata_syp8-uezg@2026-09-14
+199,FOSCO (PETER),Fosco Park Fieldhouse,address_exact,41.864772,-87.657629,20,0,826880,1312 S RACINE AVE,,,53633.6,18,sourced,socrata_syp8-uezg@2026-09-14
 200,FOSTER (J. FRANK),Foster Park Fieldhouse,containing,41.741698,-87.660178,7.7,0,648279,8300 S LOOMIS BLVD,,1,30448.2,13,sourced,socrata_syp8-uezg@2026-09-14
-201,FOSTER (J. FRANK),Southeast Shelter,containing,41.741687,-87.660703,4,0,650132,,,0,843.8,30,sourced,socrata_syp8-uezg@2026-09-14
-202,FOSTER (J. FRANK),South Shelter,containing,41.741621,-87.660844,1.6,0,650473,,,0,851.2,32,sourced,socrata_syp8-uezg@2026-09-14
-203,FOSTER (J. FRANK),,containing,41.742339,-87.660177,1.8,0,647925,,,0,1565,45,sourced,socrata_syp8-uezg@2026-09-14
+201,FOSTER (J. FRANK),Southeast Shelter,containing,41.741687,-87.660703,4,0,650132,,,,843.8,30,sourced,socrata_syp8-uezg@2026-09-14
+202,FOSTER (J. FRANK),South Shelter,containing,41.741621,-87.660844,1.6,0,650473,,,,851.2,32,sourced,socrata_syp8-uezg@2026-09-14
+203,FOSTER (J. FRANK),,containing,41.742339,-87.660177,1.8,0,647925,,,,1565,45,sourced,socrata_syp8-uezg@2026-09-14
 204,FOSTER (J. FRANK),Northeast Shelter,largest_nearby,41.741698,-87.660178,47.4,14.9,648279,8300 S LOOMIS BLVD,,1,30448.2,36,sourced,socrata_syp8-uezg@2026-09-14
 205,CHICAGO WOMEN'S PARK AND GARDENS,Chicago Women's Fieldhouse,address_exact,41.857716,-87.622022,4.4,0,377984,1801-1811 S INDIANA AVE,NATIONAL VIETNAM VETERANS ART MUSEUM,3,9317,126,sourced,socrata_syp8-uezg@2026-09-14
-206,FRANKLIN (BENJAMIN),Pool Equipment Room,address_exact,41.861589,-87.733283,0.8,0,375248,1409 S KOLIN AVE,,0,1351.1,74,sourced,socrata_syp8-uezg@2026-09-14
-207,FRANKLIN (BENJAMIN),Franklin Park Fieldhouse,address_exact,41.861189,-87.73304,1.8,0,375410,1449 S KOLIN AVE,,0,17631.9,77,sourced,socrata_syp8-uezg@2026-09-14
-208,FULLER (MELVILLE),Fuller Park Fieldhouse,address_exact,41.811756,-87.634579,50.7,0,437983,331 W 45TH ST,,0,38071.2,59,sourced,socrata_syp8-uezg@2026-09-14
-209,FULLER (MELVILLE),Fuller Park Bath House,address_exact,41.811137,-87.635405,1.1,0,440042,4500 S PRINCETON AVE,FULLER PARK (BATHHOUSE),0,9007,19,sourced,socrata_syp8-uezg@2026-09-14
-210,FULLER (MELVILLE),Fuller Park Power House,address_exact,41.812477,-87.63566,5.5,0,437689,4500 S PRINCETON AVE,FULLER PARK (HEATING PLANT),0,1967.6,46,sourced,socrata_syp8-uezg@2026-09-14
-211,GAGE (GEORGE),Boiler House,containing,41.792416,-87.684944,0.8,0,489921,,,0,3348.5,66,sourced,socrata_syp8-uezg@2026-09-14
+206,FRANKLIN (BENJAMIN),Pool Equipment Room,address_exact,41.861589,-87.733283,0.8,0,375248,1409 S KOLIN AVE,,,1351.1,74,sourced,socrata_syp8-uezg@2026-09-14
+207,FRANKLIN (BENJAMIN),Franklin Park Fieldhouse,address_exact,41.861189,-87.73304,1.8,0,375410,1449 S KOLIN AVE,,,17631.9,77,sourced,socrata_syp8-uezg@2026-09-14
+208,FULLER (MELVILLE),Fuller Park Fieldhouse,address_exact,41.811756,-87.634579,50.7,0,437983,331 W 45TH ST,,,38071.2,59,sourced,socrata_syp8-uezg@2026-09-14
+209,FULLER (MELVILLE),Fuller Park Bath House,address_exact,41.811137,-87.635405,1.1,0,440042,4500 S PRINCETON AVE,FULLER PARK (BATHHOUSE),,9007,19,sourced,socrata_syp8-uezg@2026-09-14
+210,FULLER (MELVILLE),Fuller Park Power House,address_exact,41.812477,-87.63566,5.5,0,437689,4500 S PRINCETON AVE,FULLER PARK (HEATING PLANT),,1967.6,46,sourced,socrata_syp8-uezg@2026-09-14
+211,GAGE (GEORGE),Boiler House,containing,41.792416,-87.684944,0.8,0,489921,,,,3348.5,66,sourced,socrata_syp8-uezg@2026-09-14
 212,GAGE (GEORGE),Gage Park Fieldhouse,address_exact,41.793555,-87.684974,2.1,0,485829,2411-2415 W 55TH ST,,1,30053.1,16,sourced,socrata_syp8-uezg@2026-09-14
 213,GAGE (GEORGE),Locker Building,largest_nearby,41.793555,-87.684974,44.2,15.9,485829,2411-2415 W 55TH ST,,1,30053.1,26,sourced,socrata_syp8-uezg@2026-09-14
-214,GALEWOOD,Lakewood Park Recreation Building,address_exact,41.912398,-87.768984,4.1,0,300675,5737 W BLOOMINGDALE AVE,,0,1885.8,125,sourced,socrata_syp8-uezg@2026-09-14
-215,GALEWOOD,South Shelter,containing,41.912352,-87.768685,4,0,301089,,,0,460.2,129,sourced,socrata_syp8-uezg@2026-09-14
-216,GALEWOOD,North Shelter,address_exact,41.912504,-87.768737,0.1,0,300620,5729 W BLOOMINGDALE AVE,,0,448.5,126,sourced,socrata_syp8-uezg@2026-09-14
-217,GARFIELD (JAMES),Garfield Market,containing,41.88792,-87.718581,19.3,0,352086,100 N CENTRAL PARK DR,,0,17530.5,45,sourced,socrata_syp8-uezg@2026-09-14
-218,GARFIELD (JAMES),Garfield Trades Yard,containing,41.887669,-87.719288,10.1,0,856498,,,0,14625.4,56,sourced,socrata_syp8-uezg@2026-09-14
-219,GARFIELD (JAMES),Garfield Park Bandstand,containing,41.879538,-87.718675,1,0,359048,100 N CENTRAL PARK DR,,0,1444.6,2,sourced,socrata_syp8-uezg@2026-09-14
-220,GARFIELD (JAMES),Golden Dome Fieldhouse,address_exact,41.882681,-87.715981,11.6,0,356066,100 N CENTRAL PARK DR,,0,45107.9,2,sourced,socrata_syp8-uezg@2026-09-14
-221,GARFIELD (JAMES),Hamlin Comfort Station,address_exact,41.878756,-87.720079,1.5,0,360014,100 N CENTRAL PARK DR,,0,5181.2,26,sourced,socrata_syp8-uezg@2026-09-14
-222,GARFIELD (JAMES),Garfield Park Conservatory,address_exact,41.886261,-87.717595,29.7,0,352249,300 N CENTRAL PARK DR,GARFIELD PARK CONSERVATORY,0,155617.4,5,sourced,socrata_syp8-uezg@2026-09-14
-223,GARFIELD (JAMES),Schraeder Comfort Station,address_exact,41.883835,-87.714077,0.9,0,355250,100 N CENTRAL PARK DR,,0,840.2,8,sourced,socrata_syp8-uezg@2026-09-14
-224,GARFIELD (JAMES),Garfield Park Power House,containing,41.887701,-87.719973,19.9,0,352235,100 N CENTRAL PARK DR,,0,14864,63,sourced,socrata_syp8-uezg@2026-09-14
-225,GATELY (JAMES),West Bleachers,address_exact,41.708528,-87.603169,4.7,0,726936,810 E 103RD ST,Gately Park,0,15640,6,sourced,socrata_syp8-uezg@2026-09-14
-226,GATELY (JAMES),South Locker Building,address_exact,41.708059,-87.603178,1.1,0,728606,810 E 103RD ST,GATELY PARK,0,3041.8,10,sourced,socrata_syp8-uezg@2026-09-14
-227,GATELY (JAMES),East Bleachers,address_exact,41.708519,-87.60211,2.8,0,727224,810 E 103RD ST,GATELY PARK,0,9154,6,sourced,socrata_syp8-uezg@2026-09-14
-228,GATELY (JAMES),North Locker Building,address_exact,41.708983,-87.603206,1.1,0,726498,810 E 103RD ST,GATELY PARK,0,3068.2,4,sourced,socrata_syp8-uezg@2026-09-14
+214,GALEWOOD,Lakewood Park Recreation Building,address_exact,41.912398,-87.768984,4.1,0,300675,5737 W BLOOMINGDALE AVE,,,1885.8,125,sourced,socrata_syp8-uezg@2026-09-14
+215,GALEWOOD,South Shelter,containing,41.912352,-87.768685,4,0,301089,,,,460.2,129,sourced,socrata_syp8-uezg@2026-09-14
+216,GALEWOOD,North Shelter,address_exact,41.912504,-87.768737,0.1,0,300620,5729 W BLOOMINGDALE AVE,,,448.5,126,sourced,socrata_syp8-uezg@2026-09-14
+217,GARFIELD (JAMES),Garfield Market,containing,41.88792,-87.718581,19.3,0,352086,100 N CENTRAL PARK DR,,,17530.5,45,sourced,socrata_syp8-uezg@2026-09-14
+218,GARFIELD (JAMES),Garfield Trades Yard,containing,41.887669,-87.719288,10.1,0,856498,,,,14625.4,56,sourced,socrata_syp8-uezg@2026-09-14
+219,GARFIELD (JAMES),Garfield Park Bandstand,containing,41.879538,-87.718675,1,0,359048,100 N CENTRAL PARK DR,,,1444.6,2,sourced,socrata_syp8-uezg@2026-09-14
+220,GARFIELD (JAMES),Golden Dome Fieldhouse,address_exact,41.882681,-87.715981,11.6,0,356066,100 N CENTRAL PARK DR,,,45107.9,2,sourced,socrata_syp8-uezg@2026-09-14
+221,GARFIELD (JAMES),Hamlin Comfort Station,address_exact,41.878756,-87.720079,1.5,0,360014,100 N CENTRAL PARK DR,,,5181.2,26,sourced,socrata_syp8-uezg@2026-09-14
+222,GARFIELD (JAMES),Garfield Park Conservatory,address_exact,41.886261,-87.717595,29.7,0,352249,300 N CENTRAL PARK DR,GARFIELD PARK CONSERVATORY,,155617.4,5,sourced,socrata_syp8-uezg@2026-09-14
+223,GARFIELD (JAMES),Schraeder Comfort Station,address_exact,41.883835,-87.714077,0.9,0,355250,100 N CENTRAL PARK DR,,,840.2,8,sourced,socrata_syp8-uezg@2026-09-14
+224,GARFIELD (JAMES),Garfield Park Power House,containing,41.887701,-87.719973,19.9,0,352235,100 N CENTRAL PARK DR,,,14864,63,sourced,socrata_syp8-uezg@2026-09-14
+225,GATELY (JAMES),West Bleachers,address_exact,41.708528,-87.603169,4.7,0,726936,810 E 103RD ST,Gately Park,,15640,6,sourced,socrata_syp8-uezg@2026-09-14
+226,GATELY (JAMES),South Locker Building,address_exact,41.708059,-87.603178,1.1,0,728606,810 E 103RD ST,GATELY PARK,,3041.8,10,sourced,socrata_syp8-uezg@2026-09-14
+227,GATELY (JAMES),East Bleachers,address_exact,41.708519,-87.60211,2.8,0,727224,810 E 103RD ST,GATELY PARK,,9154,6,sourced,socrata_syp8-uezg@2026-09-14
+228,GATELY (JAMES),North Locker Building,address_exact,41.708983,-87.603206,1.1,0,726498,810 E 103RD ST,GATELY PARK,,3068.2,4,sourced,socrata_syp8-uezg@2026-09-14
 229,GILL (JOSEPH),Gill Park Fieldhouse,address_exact,41.952355,-87.650598,2,0,156516,825 W SHERIDAN RD,,3,9938.1,56,sourced,socrata_syp8-uezg@2026-09-14
-230,GOMPERS (SAMUEL),Maintenance Building,containing,41.976021,-87.734487,0.4,0,78207,,GOMPERS PARK,0,1016,70,sourced,socrata_syp8-uezg@2026-09-14
-231,GOMPERS (SAMUEL),Gompers Park Fieldhouse,address_exact,41.975704,-87.734414,4.5,0,78488,4222-4224 W FOSTER AVE,,0,6306,87,sourced,socrata_syp8-uezg@2026-09-14
-232,GOMPERS (SAMUEL),Comfort Station,containing,41.973745,-87.728637,0.5,0,85452,,,0,356.8,18,sourced,socrata_syp8-uezg@2026-09-14
-233,GRAND CROSSING,Grand Crossing Fieldhouse,address_exact,41.75567,-87.600432,3,0,868681,7655 S INGLESIDE AVE,GRAND CROSSING PARK FIELD HOUSE,0,24857.5,46,sourced,socrata_syp8-uezg@2026-09-14
-234,GRAND CROSSING,Service Yard,containing,41.756626,-87.600355,0.5,0,597921,7655 S INGLESIDE AVE,GRAND CROSSING PARK,0,1285.4,86,sourced,socrata_syp8-uezg@2026-09-14
-235,GRAND CROSSING,Filter Room,containing,41.756157,-87.600531,4.3,0,598979,,,0,417.4,71,sourced,socrata_syp8-uezg@2026-09-14
-236,GRANT (ULYSSES),Chicago Yacht Club,containing,41.881233,-87.616017,13.4,0,357276,,,0,15024.5,3,sourced,socrata_syp8-uezg@2026-09-14
+230,GOMPERS (SAMUEL),Maintenance Building,containing,41.976021,-87.734487,0.4,0,78207,,GOMPERS PARK,,1016,70,sourced,socrata_syp8-uezg@2026-09-14
+231,GOMPERS (SAMUEL),Gompers Park Fieldhouse,address_exact,41.975704,-87.734414,4.5,0,78488,4222-4224 W FOSTER AVE,,,6306,87,sourced,socrata_syp8-uezg@2026-09-14
+232,GOMPERS (SAMUEL),Comfort Station,containing,41.973745,-87.728637,0.5,0,85452,,,,356.8,18,sourced,socrata_syp8-uezg@2026-09-14
+233,GRAND CROSSING,Grand Crossing Fieldhouse,address_exact,41.75567,-87.600432,3,0,868681,7655 S INGLESIDE AVE,GRAND CROSSING PARK FIELD HOUSE,,24857.5,46,sourced,socrata_syp8-uezg@2026-09-14
+234,GRAND CROSSING,Service Yard,containing,41.756626,-87.600355,0.5,0,597921,7655 S INGLESIDE AVE,GRAND CROSSING PARK,,1285.4,86,sourced,socrata_syp8-uezg@2026-09-14
+235,GRAND CROSSING,Filter Room,containing,41.756157,-87.600531,4.3,0,598979,,,,417.4,71,sourced,socrata_syp8-uezg@2026-09-14
+236,GRANT (ULYSSES),Chicago Yacht Club,containing,41.881233,-87.616017,13.4,0,357276,,,,15024.5,3,sourced,socrata_syp8-uezg@2026-09-14
 237,GRANT (ULYSSES),John G. Shedd Aquarium,address_exact,41.86763,-87.613336,26.9,0,370695,1200 S LAKE SHORE DR,SHEDD AQUARIUM,1,167076.9,1,sourced,socrata_syp8-uezg@2026-09-14
 238,GRANT (ULYSSES),Field Museum of Natural History,address_exact,41.866217,-87.617029,2.6,0,371641,1400 S LAKE SHORE DR,FIELD MUSEUM,1,245772.1,1,sourced,socrata_syp8-uezg@2026-09-14
 239,GRANT (ULYSSES),Art Institute of Chicago,largest_nearby,41.879903,-87.624926,96.3,62.7,357799,122-150 S MICHIGAN AVE,NATIONAL LOUIS UNIVERSITY,20,34223.2,7,sourced,socrata_syp8-uezg@2026-09-14
-240,GRANT (ULYSSES),Petrillo Band Shell,address_exact,41.878827,-87.62003,6.4,0,359080,251 S COLUMBUS DR,,0,4859.1,2,sourced,socrata_syp8-uezg@2026-09-14
-241,GRANT (ULYSSES),9th Street Landscape Yard (Office),address_exact,41.870236,-87.620903,0.8,0,368749,900 S COLUMBUS DR,,0,2686.8,7,sourced,socrata_syp8-uezg@2026-09-14
-242,GRANT (ULYSSES),11th Street Comfort Station,containing,41.869031,-87.620066,0.3,0,370216,,,0,306.5,6,sourced,socrata_syp8-uezg@2026-09-14
-243,GRANT (ULYSSES),9th Strret Landscape Yard (Garage),address_exact,41.870128,-87.621385,21.8,0,368621,900 S COLUMBUS DR,,0,7399.5,4,sourced,socrata_syp8-uezg@2026-09-14
-244,GRANT (ULYSSES),Petrillo Band Shell Utility Building,containing,41.879236,-87.619555,0.4,0,358762,,,0,153.8,3,sourced,socrata_syp8-uezg@2026-09-14
-245,GRANT (ULYSSES),Monroe Harbor Building,containing,41.880698,-87.616267,1.5,0,357591,,,0,2679.4,3,sourced,socrata_syp8-uezg@2026-09-14
-246,GRANT (ULYSSES),Randolph Street Comfort Station,containing,41.884223,-87.613275,0.5,0,354439,,,0,590.9,7,sourced,socrata_syp8-uezg@2026-09-14
-247,GRANT (ULYSSES),Balbo Comfort Station,containing,41.872981,-87.62141,0.2,0,365892,,,0,353.6,1,sourced,socrata_syp8-uezg@2026-09-14
-248,GRANT (ULYSSES),Art Institute Modern Wing,largest_nearby,41.880421,-87.620152,122.6,121.6,874138,,,0,25.6,1,sourced,socrata_syp8-uezg@2026-09-14
+240,GRANT (ULYSSES),Petrillo Band Shell,address_exact,41.878827,-87.62003,6.4,0,359080,251 S COLUMBUS DR,,,4859.1,2,sourced,socrata_syp8-uezg@2026-09-14
+241,GRANT (ULYSSES),9th Street Landscape Yard (Office),address_exact,41.870236,-87.620903,0.8,0,368749,900 S COLUMBUS DR,,,2686.8,7,sourced,socrata_syp8-uezg@2026-09-14
+242,GRANT (ULYSSES),11th Street Comfort Station,containing,41.869031,-87.620066,0.3,0,370216,,,,306.5,6,sourced,socrata_syp8-uezg@2026-09-14
+243,GRANT (ULYSSES),9th Strret Landscape Yard (Garage),address_exact,41.870128,-87.621385,21.8,0,368621,900 S COLUMBUS DR,,,7399.5,4,sourced,socrata_syp8-uezg@2026-09-14
+244,GRANT (ULYSSES),Petrillo Band Shell Utility Building,containing,41.879236,-87.619555,0.4,0,358762,,,,153.8,3,sourced,socrata_syp8-uezg@2026-09-14
+245,GRANT (ULYSSES),Monroe Harbor Building,containing,41.880698,-87.616267,1.5,0,357591,,,,2679.4,3,sourced,socrata_syp8-uezg@2026-09-14
+246,GRANT (ULYSSES),Randolph Street Comfort Station,containing,41.884223,-87.613275,0.5,0,354439,,,,590.9,7,sourced,socrata_syp8-uezg@2026-09-14
+247,GRANT (ULYSSES),Balbo Comfort Station,containing,41.872981,-87.62141,0.2,0,365892,,,,353.6,1,sourced,socrata_syp8-uezg@2026-09-14
+248,GRANT (ULYSSES),Art Institute Modern Wing,largest_nearby,41.880421,-87.620152,122.6,121.6,874138,,,,25.6,1,sourced,socrata_syp8-uezg@2026-09-14
 249,GRANT (ULYSSES),DuSable Harbor Concession,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-250,GRANT (ULYSSES),Randolph Street Concession,largest_nearby,41.883938,-87.612327,77.9,56.6,894434,111 N LAKE SHORE DR NB,COLUMBIA YACHT CLUB,0,16178.6,7,sourced,socrata_syp8-uezg@2026-09-14
-251,GRANT (ULYSSES),Monroe Comfort Station,containing,41.880698,-87.616267,12.7,0,357591,,,0,2679.4,3,sourced,socrata_syp8-uezg@2026-09-14
+250,GRANT (ULYSSES),Randolph Street Concession,largest_nearby,41.883938,-87.612327,77.9,56.6,894434,111 N LAKE SHORE DR NB,COLUMBIA YACHT CLUB,,16178.6,7,sourced,socrata_syp8-uezg@2026-09-14
+251,GRANT (ULYSSES),Monroe Comfort Station,containing,41.880698,-87.616267,12.7,0,357591,,,,2679.4,3,sourced,socrata_syp8-uezg@2026-09-14
 252,GRAVER (PHILIP),Graver Park Fieldhouse,address_exact,41.707421,-87.660828,6.7,0,730791,1500 W 102ND PL,,1,7855.1,94,sourced,socrata_syp8-uezg@2026-09-14
 253,GREEN BRIAR,Green Briar Park Fieldhouse,address_exact,41.990805,-87.696363,1.1,0,41509,2650 W PETERSON AVE,,2,9159.8,143,sourced,socrata_syp8-uezg@2026-09-14
 254,HAAS (JOSEPH),Haas Park Fieldhouse,address_exact,41.925158,-87.695172,2.1,0,263234,2402 N WASHTENAW AVE,,1,2442.6,183,sourced,socrata_syp8-uezg@2026-09-14
-255,HALE (NATHAN),Hale Park Fieldhouse,address_exact,41.77996,-87.778486,4.1,0,533097,6140 S MELVINA AVE,,0,14648.5,26,sourced,socrata_syp8-uezg@2026-09-14
-256,HALE (NATHAN),Dressing Room,containing,41.78069,-87.778025,31,0,821959,6140 S MELVINA AVE,,0,28833.7,87,sourced,socrata_syp8-uezg@2026-09-14
-257,HALE (NATHAN),North Filter Building,largest_nearby,41.780184,-87.776976,130.9,93.9,530544,6140 S MELVINA AVE,,0,35148.1,80,sourced,socrata_syp8-uezg@2026-09-14
-258,HALE (NATHAN),South Filter Building,containing,41.78069,-87.778025,21.6,0,821959,6140 S MELVINA AVE,,0,28833.7,58,sourced,socrata_syp8-uezg@2026-09-14
-259,HAMILTON (ALEXANDER),Hamilton Park Bath House,containing,41.762155,-87.635912,4.3,0,584292,,HAMILTON PARK,0,1388.8,8,sourced,socrata_syp8-uezg@2026-09-14
-260,HAMILTON (ALEXANDER),Hamilton Park Fieldhouse,address_exact,41.76268,-87.637662,9.2,0,580824,513 W 72ND ST,,0,34163.5,19,sourced,socrata_syp8-uezg@2026-09-14
-261,HAMILTON (ALEXANDER),,address_exact,41.763031,-87.639014,1.5,0,581136,513 W 72ND ST,HAMILTON PARK,0,4379.4,31,sourced,socrata_syp8-uezg@2026-09-14
-262,HAMILTON (ALEXANDER),Filter Building,containing,41.761901,-87.636116,0.3,0,585125,,,0,288.9,8,sourced,socrata_syp8-uezg@2026-09-14
-263,HAMILTON (ALEXANDER),Service Yard,containing,41.760133,-87.639027,6.3,0,591159,,HAMILTON PARK,0,1738,31,sourced,socrata_syp8-uezg@2026-09-14
-264,HAMLIN (HANNIBAL),Hamlin Park Fieldhouse,address_exact,41.937498,-87.679834,39.2,0,218923,3035-3051 N HOYNE AVE,,0,24291.8,177,sourced,socrata_syp8-uezg@2026-09-14
-265,HAMLIN (HANNIBAL),Locker Building,containing,41.937245,-87.680553,0.7,0,220221,,,0,746,197,sourced,socrata_syp8-uezg@2026-09-14
+255,HALE (NATHAN),Hale Park Fieldhouse,address_exact,41.77996,-87.778486,4.1,0,533097,6140 S MELVINA AVE,,,14648.5,26,sourced,socrata_syp8-uezg@2026-09-14
+256,HALE (NATHAN),Dressing Room,containing,41.78069,-87.778025,31,0,821959,6140 S MELVINA AVE,,,28833.7,87,sourced,socrata_syp8-uezg@2026-09-14
+257,HALE (NATHAN),North Filter Building,largest_nearby,41.780184,-87.776976,130.9,93.9,530544,6140 S MELVINA AVE,,,35148.1,80,sourced,socrata_syp8-uezg@2026-09-14
+258,HALE (NATHAN),South Filter Building,containing,41.78069,-87.778025,21.6,0,821959,6140 S MELVINA AVE,,,28833.7,58,sourced,socrata_syp8-uezg@2026-09-14
+259,HAMILTON (ALEXANDER),Hamilton Park Bath House,containing,41.762155,-87.635912,4.3,0,584292,,HAMILTON PARK,,1388.8,8,sourced,socrata_syp8-uezg@2026-09-14
+260,HAMILTON (ALEXANDER),Hamilton Park Fieldhouse,address_exact,41.76268,-87.637662,9.2,0,580824,513 W 72ND ST,,,34163.5,19,sourced,socrata_syp8-uezg@2026-09-14
+261,HAMILTON (ALEXANDER),,address_exact,41.763031,-87.639014,1.5,0,581136,513 W 72ND ST,HAMILTON PARK,,4379.4,31,sourced,socrata_syp8-uezg@2026-09-14
+262,HAMILTON (ALEXANDER),Filter Building,containing,41.761901,-87.636116,0.3,0,585125,,,,288.9,8,sourced,socrata_syp8-uezg@2026-09-14
+263,HAMILTON (ALEXANDER),Service Yard,containing,41.760133,-87.639027,6.3,0,591159,,HAMILTON PARK,,1738,31,sourced,socrata_syp8-uezg@2026-09-14
+264,HAMLIN (HANNIBAL),Hamlin Park Fieldhouse,address_exact,41.937498,-87.679834,39.2,0,218923,3035-3051 N HOYNE AVE,,,24291.8,177,sourced,socrata_syp8-uezg@2026-09-14
+265,HAMLIN (HANNIBAL),Locker Building,containing,41.937245,-87.680553,0.7,0,220221,,,,746,197,sourced,socrata_syp8-uezg@2026-09-14
 266,HARRIS (HARRIET),Harris Park Fieldhouse,address_exact,41.781753,-87.604889,3.8,0,523352,6200-6220 S DREXEL AVE,,2,43672.8,44,sourced,socrata_syp8-uezg@2026-09-14
-267,HARRISON (CARTER),Harrison Park Fieldhouse,address_exact,41.85678,-87.672219,40.5,0,379324,1824 S WOOD ST,,0,38285.9,118,sourced,socrata_syp8-uezg@2026-09-14
-268,HARRISON (CARTER),National Museum of Mexican Art,address_exact,41.856178,-87.672978,1.2,0,836699,1801 W 18TH ST,,0,34011.8,89,sourced,socrata_syp8-uezg@2026-09-14
-269,HARRISON (CARTER),Harrison Park Natatorium,containing,41.85678,-87.672219,4.5,0,379324,1824 S WOOD ST,,0,38285.9,117,sourced,socrata_syp8-uezg@2026-09-14
-270,HARSH (VIVIAN G.),Shelter,containing,41.814052,-87.595532,0.6,0,434607,,,0,425.2,104,sourced,socrata_syp8-uezg@2026-09-14
+267,HARRISON (CARTER),Harrison Park Fieldhouse,address_exact,41.85678,-87.672219,40.5,0,379324,1824 S WOOD ST,,,38285.9,118,sourced,socrata_syp8-uezg@2026-09-14
+268,HARRISON (CARTER),National Museum of Mexican Art,address_exact,41.856178,-87.672978,1.2,0,836699,1801 W 18TH ST,,,34011.8,89,sourced,socrata_syp8-uezg@2026-09-14
+269,HARRISON (CARTER),Harrison Park Natatorium,containing,41.85678,-87.672219,4.5,0,379324,1824 S WOOD ST,,,38285.9,117,sourced,socrata_syp8-uezg@2026-09-14
+270,HARSH (VIVIAN G.),Shelter,containing,41.814052,-87.595532,0.6,0,434607,,,,425.2,104,sourced,socrata_syp8-uezg@2026-09-14
 271,HAYES (FRANCIS),Hayes Park Fieldhouse,address_exact,41.739046,-87.696813,14.8,0,659510,2936 W 85TH ST,,1,15599.1,80,sourced,socrata_syp8-uezg@2026-09-14
-272,HAYES (FRANCIS),Hayes Park Natatorium,address_exact,41.739032,-87.697291,1.3,0,838734,3025 W 83RD ST,,0,18984.7,70,sourced,socrata_syp8-uezg@2026-09-14
+272,HAYES (FRANCIS),Hayes Park Natatorium,address_exact,41.739032,-87.697291,1.3,0,838734,3025 W 83RD ST,,,18984.7,70,sourced,socrata_syp8-uezg@2026-09-14
 273,HERMITAGE,Hermitage Park Fieldhouse,address_exact,41.787193,-87.668467,2.5,0,506953,5839 S WOOD ST,,1,1220.1,76,sourced,socrata_syp8-uezg@2026-09-14
 274,HERMOSA,Hermosa Park Fieldhouse,address_exact,41.922043,-87.739543,5.8,0,272444,2240 N KILBOURN AVE,,1,5735.6,92,sourced,socrata_syp8-uezg@2026-09-14
 275,HIAWATHA,Hiawatha Park Fieldhouse,address_exact,41.943708,-87.827481,5.5,0,194531,8029 W FOREST PRESERVE AVE,,1,18357.9,70,sourced,socrata_syp8-uezg@2026-09-14
-276,HOLLY,Shelter,containing,41.820455,-87.603496,0.4,0,427992,,,0,499,98,sourced,socrata_syp8-uezg@2026-09-14
+276,HOLLY,Shelter,containing,41.820455,-87.603496,0.4,0,427992,,,,499,98,sourced,socrata_syp8-uezg@2026-09-14
 277,HOLLYWOOD,Hollywood Park Fieldhouse,address_exact,41.989172,-87.711945,3.5,0,44741,3312 W THORNDALE AVE,,1,2988.5,73,sourced,socrata_syp8-uezg@2026-09-14
 278,HOLSTEIN,Holstein Park Fieldhouse,address_exact,41.92171,-87.685099,0.9,0,272696,2200 N OAKLEY AVE,HOLSTEIN PARK,2,11290.8,238,sourced,socrata_syp8-uezg@2026-09-14
-279,HORNER (HENRY),Comfort Station,address_exact,41.957914,-87.697775,0.6,0,140704,4201 N CALIFORNIA AVE,,0,1682.9,62,sourced,socrata_syp8-uezg@2026-09-14
+279,HORNER (HENRY),Comfort Station,address_exact,41.957914,-87.697775,0.6,0,140704,4201 N CALIFORNIA AVE,,,1682.9,62,sourced,socrata_syp8-uezg@2026-09-14
 280,HOYNE (THOMAS),Hoyne Park Fieldhouse,address_exact,41.831628,-87.678803,0.8,0,417091,3417 S HAMILTON AVE,,1,1201.5,175,sourced,socrata_syp8-uezg@2026-09-14
-281,HUMBOLDT (ALEXANDER VON),Bath House,address_exact,41.898991,-87.703682,1.2,0,332353,3041 W AUGUSTA BLVD,,0,5760.4,54,sourced,socrata_syp8-uezg@2026-09-14
-282,HUMBOLDT (ALEXANDER VON),LeMoyne Comfort Station,containing,41.90862,-87.700175,0.9,0,310838,,,0,910,1,sourced,socrata_syp8-uezg@2026-09-14
+281,HUMBOLDT (ALEXANDER VON),Bath House,address_exact,41.898991,-87.703682,1.2,0,332353,3041 W AUGUSTA BLVD,,,5760.4,54,sourced,socrata_syp8-uezg@2026-09-14
+282,HUMBOLDT (ALEXANDER VON),LeMoyne Comfort Station,containing,41.90862,-87.700175,0.9,0,310838,,,,910,1,sourced,socrata_syp8-uezg@2026-09-14
 283,HUMBOLDT (ALEXANDER VON),State of Illinois Dept of Military Affairs,address_exact,41.909654,-87.706081,13.4,0,307870,1551 N KEDZIE AVE,State of Illinois Dept of Military Affairs,3,64539.8,50,sourced,socrata_syp8-uezg@2026-09-14
 284,HUMBOLDT (ALEXANDER VON),Humboldt Park Field House,address_exact,41.907136,-87.702991,3.4,0,314139,1400 N HUMBOLDT DR,Humboldt Park Field House,3,32609.9,2,sourced,socrata_syp8-uezg@2026-09-14
-285,HUMBOLDT (ALEXANDER VON),,containing,41.908255,-87.697187,0.3,0,311708,,,0,150.5,63,sourced,socrata_syp8-uezg@2026-09-14
-286,HUMBOLDT (ALEXANDER VON),Garden Hall,address_exact,41.903815,-87.703409,1.3,0,321730,1400 N HUMBOLDT DR,Garden House?,0,1399.4,8,sourced,socrata_syp8-uezg@2026-09-14
+285,HUMBOLDT (ALEXANDER VON),,containing,41.908255,-87.697187,0.3,0,311708,,,,150.5,63,sourced,socrata_syp8-uezg@2026-09-14
+286,HUMBOLDT (ALEXANDER VON),Garden Hall,address_exact,41.903815,-87.703409,1.3,0,321730,1400 N HUMBOLDT DR,Garden House?,,1399.4,8,sourced,socrata_syp8-uezg@2026-09-14
 287,HUMBOLDT (ALEXANDER VON),Humboldt Park Boathouse Pavilion,address_exact,41.905574,-87.700601,16.5,0,317578,1301-1331 N HUMBOLDT DR,HUMBOLDT PARK BOATHOUSE PAVILION,3,12320.9,4,sourced,socrata_syp8-uezg@2026-09-14
-288,HUMBOLDT (ALEXANDER VON),National Museum of Puerto Rican Arts & Culture,address_exact,41.902145,-87.703331,34.2,0,324210,3102 W DIVISION ST,Humboldt Park Stables,0,16162.5,3,sourced,socrata_syp8-uezg@2026-09-14
-289,HUMBOLDT (ALEXANDER VON),Little Cubs Field Comfort Station,address_exact,41.906099,-87.705769,0.8,0,316757,1400 N HUMBOLDT DR,,0,907.5,11,sourced,socrata_syp8-uezg@2026-09-14
+288,HUMBOLDT (ALEXANDER VON),National Museum of Puerto Rican Arts & Culture,address_exact,41.902145,-87.703331,34.2,0,324210,3102 W DIVISION ST,Humboldt Park Stables,,16162.5,3,sourced,socrata_syp8-uezg@2026-09-14
+289,HUMBOLDT (ALEXANDER VON),Little Cubs Field Comfort Station,address_exact,41.906099,-87.705769,0.8,0,316757,1400 N HUMBOLDT DR,,,907.5,11,sourced,socrata_syp8-uezg@2026-09-14
 290,HUMBOLDT (ALEXANDER VON),South Comfort Station,largest_nearby,41.898552,-87.704061,171,148.3,333384,3056-3058 W WALTON ST,,1,11505,44,sourced,socrata_syp8-uezg@2026-09-14
 291,HUMBOLDT (ALEXANDER VON),La Esquina del Sabor,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 292,HUMBOLDT (ALEXANDER VON),El Secreto del Sabor,largest_nearby,41.902649,-87.707308,146,114,867675,3207 W DIVISION ST,,3,8026.9,9,sourced,socrata_syp8-uezg@2026-09-14
-293,INDEPENDENCE,,containing,41.952295,-87.723011,0.4,0,158170,,,0,492.1,124,sourced,socrata_syp8-uezg@2026-09-14
+293,INDEPENDENCE,,containing,41.952295,-87.723011,0.4,0,158170,,,,492.1,124,sourced,socrata_syp8-uezg@2026-09-14
 294,INDEPENDENCE,Independence Park Fieldhouse,address_exact,41.95296,-87.724768,3.4,0,155571,3945 N SPRINGFIELD AVE,,2,11638.2,81,sourced,socrata_syp8-uezg@2026-09-14
-295,INDEPENDENCE,Independence Park Bungalow,containing,41.952129,-87.722932,1.7,0,158436,0 W BYRON ST,INDEPENDENCE PARK,0,3181.4,129,sourced,socrata_syp8-uezg@2026-09-14
+295,INDEPENDENCE,Independence Park Bungalow,containing,41.952129,-87.722932,1.7,0,158436,0 W BYRON ST,INDEPENDENCE PARK,,3181.4,129,sourced,socrata_syp8-uezg@2026-09-14
 296,INDIAN BOUNDARY,Indian Boundary Nature Play Center,containing,42.010159,-87.694052,5.9,0,9409,2500 W LUNT AVE,INDIAN BOUNDARY PARK,1,1200,56,sourced,socrata_syp8-uezg@2026-09-14
 297,INDIAN BOUNDARY,Maintenance Building,address_exact,42.010226,-87.694611,0.9,0,9348,2500 W LUNT AVE,INDIAN BOUNDARY PARK,1,1397.8,66,sourced,socrata_syp8-uezg@2026-09-14
 298,INDIAN BOUNDARY,Indian Boundary Fieldhouse,address_exact,42.00897,-87.692604,7.5,0,10741,2500 W LUNT AVE,,2,4032.8,67,sourced,socrata_syp8-uezg@2026-09-14
 299,INDIAN ROAD,Indian Road Park Fieldhouse,address_exact,41.992922,-87.778427,1.3,0,37739,6010 W MATSON AVE,,1,2266.5,171,sourced,socrata_syp8-uezg@2026-09-14
-300,JACKSON (ANDREW),57th Street Beach House,containing,41.791943,-87.57981,0.9,0,489389,,JACKSON PARK,0,846,4,sourced,socrata_syp8-uezg@2026-09-14
-301,JACKSON (ANDREW),Jackson Park Yacht Club,containing,41.777567,-87.572597,1.5,0,536431,,,0,2879.5,4,sourced,socrata_syp8-uezg@2026-09-14
-302,JACKSON (ANDREW),62nd Street Comfort Station,containing,41.78296,-87.585191,3.4,0,519597,,,0,870.6,1,sourced,socrata_syp8-uezg@2026-09-14
-303,JACKSON (ANDREW),Comfort Station,containing,41.774983,-87.569512,8.7,0,546041,,JACKSON PARK,0,4141,1,sourced,socrata_syp8-uezg@2026-09-14
-304,JACKSON (ANDREW),63rd Street Bathing Pavilion,containing,41.781526,-87.573439,22.9,0,869296,,,0,30006.7,1,sourced,socrata_syp8-uezg@2026-09-14
-305,JACKSON (ANDREW),,containing,41.792014,-87.581838,0.4,0,489302,,,0,315,12,sourced,socrata_syp8-uezg@2026-09-14
-306,JACKSON (ANDREW),Bowling Green Club House,address_exact,41.789119,-87.578934,0.5,0,498938,5800 S LAKE SHORE DR,,0,2031.2,4,sourced,socrata_syp8-uezg@2026-09-14
-307,JACKSON (ANDREW),Jackson Park Fieldhouse,address_exact,41.77881,-87.585488,8,0,532729,6401 S STONY ISLAND AVE,,0,18711,3,sourced,socrata_syp8-uezg@2026-09-14
-308,JACKSON (ANDREW),Museum Shores Yacht Club,containing,41.788348,-87.579467,0.5,0,501736,,,0,927.5,4,sourced,socrata_syp8-uezg@2026-09-14
-309,JACKSON (ANDREW),Garden Shelter,containing,41.786162,-87.582709,1,0,508775,,,0,705.2,2,sourced,socrata_syp8-uezg@2026-09-14
-310,JACKSON (ANDREW),Osaka Garden Torii Gate,containing,41.786788,-87.583074,1.8,0,506674,,,0,236.9,2,sourced,socrata_syp8-uezg@2026-09-14
-311,JACKSON (ANDREW),,containing,41.777478,-87.572392,0.6,0,536925,,,0,429.4,4,sourced,socrata_syp8-uezg@2026-09-14
-312,JACKSON (ANDREW),Museum of Science & Industry,largest_nearby,41.790337,-87.581182,156.1,125.4,494237,,,0,26551.5,11,sourced,socrata_syp8-uezg@2026-09-14
-313,JACKSON (ANDREW),La Rabida Children's Hopsital,address_exact,41.777341,-87.571357,4,0,535850,6501 S PROMONTORY DR,LA RABIDA CHILDREN'S HOSPITAL,0,41726.8,4,sourced,socrata_syp8-uezg@2026-09-14
-314,JACKSON (ANDREW),Cecil Partee Golf Clubhouse,containing,41.779317,-87.580497,4,0,531605,,,0,8490.4,6,sourced,socrata_syp8-uezg@2026-09-14
-315,JACKSON (ANDREW),,containing,41.773993,-87.576728,0.7,0,551110,,,0,476.6,26,sourced,socrata_syp8-uezg@2026-09-14
-316,JACKSON (ANDREW),,containing,41.791986,-87.584067,0.4,0,489450,,,0,289,11,sourced,socrata_syp8-uezg@2026-09-14
-317,JACKSON (ANDREW),,containing,41.778891,-87.575134,0.1,0,533027,,,0,1638.4,2,sourced,socrata_syp8-uezg@2026-09-14
-318,JACKSON (ANDREW),,containing,41.788943,-87.579398,0.4,0,499688,,,0,201.5,5,sourced,socrata_syp8-uezg@2026-09-14
-319,JACKSON (ANDREW),Harbor Master's Office,address_exact,41.77868,-87.575185,3.3,0,533489,6401 S COAST GUARD DR,JACKSON PARK COAST GUARD STATION,0,5462.2,2,sourced,socrata_syp8-uezg@2026-09-14
-320,JACKSON (ANDREW),,containing,41.779187,-87.579088,0.2,0,532399,,,0,51,6,sourced,socrata_syp8-uezg@2026-09-14
-321,JACKSON (ANDREW),Starters Shed,containing,41.779146,-87.580986,0.8,0,532482,,,0,457.8,6,sourced,socrata_syp8-uezg@2026-09-14
-322,JACKSON (ANDREW),Iowa Building,containing,41.792954,-87.581011,21.4,0,485576,,,0,5409.5,9,sourced,socrata_syp8-uezg@2026-09-14
-323,JACKSON (ANDREW),57th Street Beach House Concession,containing,41.791784,-87.579772,0.7,0,489976,,JACKSON PARK,0,803,2,sourced,socrata_syp8-uezg@2026-09-14
-324,JACKSON (ANDREW),Jackson Driving Range Comfort Station,containing,41.783518,-87.578717,3,0,517393,,,0,2503.2,1,sourced,socrata_syp8-uezg@2026-09-14
-325,JEFFERSON (THOMAS) MEML.,Tool House & Garage,containing,41.968738,-87.764402,2.9,0,105009,,JEFFERSON (THOMAS)MEML. PARK,0,2687.4,40,sourced,socrata_syp8-uezg@2026-09-14
-326,JEFFERSON (THOMAS) MEML.,Locker Building,containing,41.968866,-87.763809,6.9,0,104900,,JEFFERSON (THOMAS) MEML. PARK,0,2856.4,48,sourced,socrata_syp8-uezg@2026-09-14
+300,JACKSON (ANDREW),57th Street Beach House,containing,41.791943,-87.57981,0.9,0,489389,,JACKSON PARK,,846,4,sourced,socrata_syp8-uezg@2026-09-14
+301,JACKSON (ANDREW),Jackson Park Yacht Club,containing,41.777567,-87.572597,1.5,0,536431,,,,2879.5,4,sourced,socrata_syp8-uezg@2026-09-14
+302,JACKSON (ANDREW),62nd Street Comfort Station,containing,41.78296,-87.585191,3.4,0,519597,,,,870.6,1,sourced,socrata_syp8-uezg@2026-09-14
+303,JACKSON (ANDREW),Comfort Station,containing,41.774983,-87.569512,8.7,0,546041,,JACKSON PARK,,4141,1,sourced,socrata_syp8-uezg@2026-09-14
+304,JACKSON (ANDREW),63rd Street Bathing Pavilion,containing,41.781526,-87.573439,22.9,0,869296,,,,30006.7,1,sourced,socrata_syp8-uezg@2026-09-14
+305,JACKSON (ANDREW),,containing,41.792014,-87.581838,0.4,0,489302,,,,315,12,sourced,socrata_syp8-uezg@2026-09-14
+306,JACKSON (ANDREW),Bowling Green Club House,address_exact,41.789119,-87.578934,0.5,0,498938,5800 S LAKE SHORE DR,,,2031.2,4,sourced,socrata_syp8-uezg@2026-09-14
+307,JACKSON (ANDREW),Jackson Park Fieldhouse,address_exact,41.77881,-87.585488,8,0,532729,6401 S STONY ISLAND AVE,,,18711,3,sourced,socrata_syp8-uezg@2026-09-14
+308,JACKSON (ANDREW),Museum Shores Yacht Club,containing,41.788348,-87.579467,0.5,0,501736,,,,927.5,4,sourced,socrata_syp8-uezg@2026-09-14
+309,JACKSON (ANDREW),Garden Shelter,containing,41.786162,-87.582709,1,0,508775,,,,705.2,2,sourced,socrata_syp8-uezg@2026-09-14
+310,JACKSON (ANDREW),Osaka Garden Torii Gate,containing,41.786788,-87.583074,1.8,0,506674,,,,236.9,2,sourced,socrata_syp8-uezg@2026-09-14
+311,JACKSON (ANDREW),,containing,41.777478,-87.572392,0.6,0,536925,,,,429.4,4,sourced,socrata_syp8-uezg@2026-09-14
+312,JACKSON (ANDREW),Museum of Science & Industry,largest_nearby,41.790337,-87.581182,156.1,125.4,494237,,,,26551.5,11,sourced,socrata_syp8-uezg@2026-09-14
+313,JACKSON (ANDREW),La Rabida Children's Hopsital,address_exact,41.777341,-87.571357,4,0,535850,6501 S PROMONTORY DR,LA RABIDA CHILDREN'S HOSPITAL,,41726.8,4,sourced,socrata_syp8-uezg@2026-09-14
+314,JACKSON (ANDREW),Cecil Partee Golf Clubhouse,containing,41.779317,-87.580497,4,0,531605,,,,8490.4,6,sourced,socrata_syp8-uezg@2026-09-14
+315,JACKSON (ANDREW),,containing,41.773993,-87.576728,0.7,0,551110,,,,476.6,26,sourced,socrata_syp8-uezg@2026-09-14
+316,JACKSON (ANDREW),,containing,41.791986,-87.584067,0.4,0,489450,,,,289,11,sourced,socrata_syp8-uezg@2026-09-14
+317,JACKSON (ANDREW),,containing,41.778891,-87.575134,0.1,0,533027,,,,1638.4,2,sourced,socrata_syp8-uezg@2026-09-14
+318,JACKSON (ANDREW),,containing,41.788943,-87.579398,0.4,0,499688,,,,201.5,5,sourced,socrata_syp8-uezg@2026-09-14
+319,JACKSON (ANDREW),Harbor Master's Office,address_exact,41.77868,-87.575185,3.3,0,533489,6401 S COAST GUARD DR,JACKSON PARK COAST GUARD STATION,,5462.2,2,sourced,socrata_syp8-uezg@2026-09-14
+320,JACKSON (ANDREW),,containing,41.779187,-87.579088,0.2,0,532399,,,,51,6,sourced,socrata_syp8-uezg@2026-09-14
+321,JACKSON (ANDREW),Starters Shed,containing,41.779146,-87.580986,0.8,0,532482,,,,457.8,6,sourced,socrata_syp8-uezg@2026-09-14
+322,JACKSON (ANDREW),Iowa Building,containing,41.792954,-87.581011,21.4,0,485576,,,,5409.5,9,sourced,socrata_syp8-uezg@2026-09-14
+323,JACKSON (ANDREW),57th Street Beach House Concession,containing,41.791784,-87.579772,0.7,0,489976,,JACKSON PARK,,803,2,sourced,socrata_syp8-uezg@2026-09-14
+324,JACKSON (ANDREW),Jackson Driving Range Comfort Station,containing,41.783518,-87.578717,3,0,517393,,,,2503.2,1,sourced,socrata_syp8-uezg@2026-09-14
+325,JEFFERSON (THOMAS) MEML.,Tool House & Garage,containing,41.968738,-87.764402,2.9,0,105009,,JEFFERSON (THOMAS)MEML. PARK,,2687.4,40,sourced,socrata_syp8-uezg@2026-09-14
+326,JEFFERSON (THOMAS) MEML.,Locker Building,containing,41.968866,-87.763809,6.9,0,104900,,JEFFERSON (THOMAS) MEML. PARK,,2856.4,48,sourced,socrata_syp8-uezg@2026-09-14
 327,JEFFERSON (THOMAS) MEML.,Esdohr House,address_exact,41.968315,-87.762758,1.6,0,106353,4820-4822 N LONG AVE,,2,1586.6,57,sourced,socrata_syp8-uezg@2026-09-14
 328,JEFFERSON (THOMAS) MEML.,Jefferson Park Fieldhouse,address_exact,41.968679,-87.762757,9.7,0,105164,4822 N LONG AVE,,1,8853.8,49,sourced,socrata_syp8-uezg@2026-09-14
 329,KELVYN (WILLIAM),Kelvyn Park Fieldhouse,address_exact,41.929013,-87.738139,3.3,0,251155,4438 W WRIGHTWOOD AVE,,3,9870.1,79,sourced,socrata_syp8-uezg@2026-09-14
-330,KENNEDY (DENNIS),Kennedy Memorial Park Restrooms,address_exact,41.686948,-87.68255,0.4,0,778994,11320 S WESTERN AVE,KENNEDY MEMORIAL PARK RESTROOMS,0,1349.9,53,sourced,socrata_syp8-uezg@2026-09-14
-331,KENNEDY (DENNIS),Kennedy Park Fieldhouse,address_exact,41.687134,-87.681753,3.2,0,778390,11320 S WESTERN AVE,,0,9064.5,39,sourced,socrata_syp8-uezg@2026-09-14
-332,KENNEDY (DENNIS),,containing,41.687407,-87.684235,0.2,0,778333,,,0,93.5,43,sourced,socrata_syp8-uezg@2026-09-14
-333,KENNICOTT (JONATHAN),Kennicott Park Fieldhouse,address_exact,41.814131,-87.597302,43.4,0,433803,4434 S LAKE PARK AVE,,0,27275.4,108,sourced,socrata_syp8-uezg@2026-09-14
+330,KENNEDY (DENNIS),Kennedy Memorial Park Restrooms,address_exact,41.686948,-87.68255,0.4,0,778994,11320 S WESTERN AVE,KENNEDY MEMORIAL PARK RESTROOMS,,1349.9,53,sourced,socrata_syp8-uezg@2026-09-14
+331,KENNEDY (DENNIS),Kennedy Park Fieldhouse,address_exact,41.687134,-87.681753,3.2,0,778390,11320 S WESTERN AVE,,,9064.5,39,sourced,socrata_syp8-uezg@2026-09-14
+332,KENNEDY (DENNIS),,containing,41.687407,-87.684235,0.2,0,778333,,,,93.5,43,sourced,socrata_syp8-uezg@2026-09-14
+333,KENNICOTT (JONATHAN),Kennicott Park Fieldhouse,address_exact,41.814131,-87.597302,43.4,0,433803,4434 S LAKE PARK AVE,,,27275.4,108,sourced,socrata_syp8-uezg@2026-09-14
 334,KENSINGTON,Kensington Park Fieldhouse,address_exact,41.679687,-87.615985,0.9,0,790768,315 E 118TH ST,,1,1393.5,89,sourced,socrata_syp8-uezg@2026-09-14
 335,KEN-WELL,Ken-Well Park Fieldhouse,address_exact,41.934894,-87.733687,0.8,0,231351,2941 N KENOSHA AVE,,1,1333.4,140,sourced,socrata_syp8-uezg@2026-09-14
-336,KILBOURN,Kilbourn Park Fieldhouse,address_exact,41.9447,-87.738604,7.8,0,188891,3501 N KILBOURN AVE,KILBOURN PARK,0,19068,71,sourced,socrata_syp8-uezg@2026-09-14
-337,KILBOURN,Kilbourn Park Greenhouse,address_exact,41.94413,-87.738229,0,0,190628,3501 N KILBOURN AVE,KILBOURN PARK,0,8011.9,75,sourced,socrata_syp8-uezg@2026-09-14
-338,KOSCIUSZKO (THADEUZ),Kosciuszko Park Natatorium,address_exact,41.931508,-87.723756,2,0,243881,2742 N AVERS AVE,,0,10397.6,164,sourced,socrata_syp8-uezg@2026-09-14
-339,LA FOLLETTE (ROBERT),Comfort Station,containing,41.904786,-87.751459,0.4,0,320427,,,0,979.2,138,sourced,socrata_syp8-uezg@2026-09-14
-340,LA FOLLETTE (ROBERT),Shelter,containing,41.904479,-87.751881,1.1,0,320928,,,0,750,128,sourced,socrata_syp8-uezg@2026-09-14
-341,LAKE MEADOWS,Lake Meadows Park,largest_nearby,41.838068,-87.61209,63.3,28.7,406907,3113 S RHODES AVE,PERSHING SCHOOL,0,24592.8,22,sourced,socrata_syp8-uezg@2026-09-14
+336,KILBOURN,Kilbourn Park Fieldhouse,address_exact,41.9447,-87.738604,7.8,0,188891,3501 N KILBOURN AVE,KILBOURN PARK,,19068,71,sourced,socrata_syp8-uezg@2026-09-14
+337,KILBOURN,Kilbourn Park Greenhouse,address_exact,41.94413,-87.738229,0,0,190628,3501 N KILBOURN AVE,KILBOURN PARK,,8011.9,75,sourced,socrata_syp8-uezg@2026-09-14
+338,KOSCIUSZKO (THADEUZ),Kosciuszko Park Natatorium,address_exact,41.931508,-87.723756,2,0,243881,2742 N AVERS AVE,,,10397.6,164,sourced,socrata_syp8-uezg@2026-09-14
+339,LA FOLLETTE (ROBERT),Comfort Station,containing,41.904786,-87.751459,0.4,0,320427,,,,979.2,138,sourced,socrata_syp8-uezg@2026-09-14
+340,LA FOLLETTE (ROBERT),Shelter,containing,41.904479,-87.751881,1.1,0,320928,,,,750,128,sourced,socrata_syp8-uezg@2026-09-14
+341,LAKE MEADOWS,Lake Meadows Park,largest_nearby,41.838068,-87.61209,63.3,28.7,406907,3113 S RHODES AVE,PERSHING SCHOOL,,24592.8,22,sourced,socrata_syp8-uezg@2026-09-14
 342,LAKE SHORE,Lake Shore Park Fieldhouse,address_exact,41.897203,-87.617882,3.1,0,335698,808 N LAKE SHORE DR,LAKE SHORE PARK FIELDHOUSE,1,9684.2,6,sourced,socrata_syp8-uezg@2026-09-14
 343,LAKE SHORE,Museum of Contemporary Art,address_exact,41.897219,-87.620933,5.2,0,335431,220 E CHICAGO AVE,MUSEUM OF CONTEMPORARY ART,5,44738.5,12,sourced,socrata_syp8-uezg@2026-09-14
 344,LAWLER (MICHAEL),Lawler Park Fieldhouse,address_exact,41.776719,-87.751799,1,0,543416,5210 W 64TH ST,,1,2256.2,203,sourced,socrata_syp8-uezg@2026-09-14
 345,LE CLAIRE COURTS - HEARST COMM. CTR.,LeClaire-Hearst Fieldhouse,address_exact,41.813273,-87.75134,10.2,0,437074,5120 W 44TH ST,,1,15462.1,35,sourced,socrata_syp8-uezg@2026-09-14
 346,LEONE (SAM) BEACH,Leone Beach Fieldhouse,address_exact,42.01318,-87.662549,5.3,0,5979,7205-7211 N SHERIDAN RD,,1,8536.2,12,sourced,socrata_syp8-uezg@2026-09-14
-347,LERNER (LEO),Shelter,containing,42.007789,-87.705059,0.3,0,12375,,,0,205.8,52,sourced,socrata_syp8-uezg@2026-09-14
-349,LINCOLN (ABRAHAM),,containing,41.985717,-87.652378,0.4,0,51614,,,0,784,1,sourced,socrata_syp8-uezg@2026-09-14
-350,LINCOLN (ABRAHAM),Waveland Clock Tower,containing,41.951889,-87.6411,1.8,0,157420,,LINCOLN PARK,0,8176.5,3,sourced,socrata_syp8-uezg@2026-09-14
-351,LINCOLN (ABRAHAM),Belmont Comfort Station,containing,41.939564,-87.636538,1.4,0,848732,,,0,1051.1,2,sourced,socrata_syp8-uezg@2026-09-14
-352,LINCOLN (ABRAHAM),Peggy Notebaert Nature Museum,address_exact,41.926472,-87.635057,15.8,0,821490,2430 N CANNON DR,PEGGY NOTEBART NATURE MUSEUM,0,45032,1,sourced,socrata_syp8-uezg@2026-09-14
-353,LINCOLN (ABRAHAM),Margate Fieldhouse,address_exact,41.972169,-87.649852,2.2,0,87872,4921-4931 N MARINE DR,,0,17656.8,6,sourced,socrata_syp8-uezg@2026-09-14
-354,LINCOLN (ABRAHAM),"LP Zoo - Polar Bears, Sun Bears",containing,41.923793,-87.633453,3.5,0,265858,,LINCOLN PARK,0,6547.1,11,sourced,socrata_syp8-uezg@2026-09-14
-355,LINCOLN (ABRAHAM),Armitage Comfort Station,containing,41.91862,-87.634022,5,0,281961,,MEN'S AND LADIES COMFORT STATION,0,1692.5,8,sourced,socrata_syp8-uezg@2026-09-14
-356,LINCOLN (ABRAHAM),"LP Zoo - Penguins, Sea Birds",containing,41.922286,-87.634432,1.3,0,269946,,LINCOLN PARK,0,4334.1,19,sourced,socrata_syp8-uezg@2026-09-14
-357,LINCOLN (ABRAHAM),"LP Zoo - Giraffes, Rhinos, Ostriches",containing,41.922849,-87.633966,41.1,0,266326,,LINCOLN PARK,0,44357.1,17,sourced,socrata_syp8-uezg@2026-09-14
-358,LINCOLN (ABRAHAM),Montrose Service Yard,containing,41.963557,-87.647232,2.6,0,118398,,LINCOLN PARK,0,10732.2,3,sourced,socrata_syp8-uezg@2026-09-14
-359,LINCOLN (ABRAHAM),Foster Avenue Breakwater Light,containing,41.97781,-87.64615,0.3,0,70985,,,0,80.8,2,sourced,socrata_syp8-uezg@2026-09-14
-360,LINCOLN (ABRAHAM),LP Zoo - Pigs,containing,41.916981,-87.633235,1.2,0,287226,,LINCOLN PARK,0,2384.2,6,sourced,socrata_syp8-uezg@2026-09-14
-361,LINCOLN (ABRAHAM),LP Zoo - Judy Keller Education Center,containing,41.921485,-87.632404,0.9,0,272548,,LINCOLN PARK,0,1957.5,14,sourced,socrata_syp8-uezg@2026-09-14
-362,LINCOLN (ABRAHAM),LP Zoo - Zoo Concessionaire,containing,41.92191,-87.634247,3.2,0,271217,,LINCOLN PARK,0,837.6,19,sourced,socrata_syp8-uezg@2026-09-14
-363,LINCOLN (ABRAHAM),Diversey Golf Building,containing,41.934241,-87.634432,25.8,0,231556,,LINCOLN PARK,0,6443.2,13,sourced,socrata_syp8-uezg@2026-09-14
-364,LINCOLN (ABRAHAM),LP Zoo - Tropical Birds,containing,41.92326,-87.632892,20.2,0,266434,,LINCOLN PARK,0,8767.6,13,sourced,socrata_syp8-uezg@2026-09-14
-365,LINCOLN (ABRAHAM),DNR Maintenance,containing,41.949736,-87.63946,1.2,0,166367,,LINCOLN PARK,0,1217,3,sourced,socrata_syp8-uezg@2026-09-14
-366,LINCOLN (ABRAHAM),LP Zoo - Lions and Tigers,containing,41.921339,-87.633515,15.5,0,272855,,LINCOLN PARK,0,16447.8,20,sourced,socrata_syp8-uezg@2026-09-14
-367,LINCOLN (ABRAHAM),Clock Tower Cafe,containing,41.952191,-87.641709,1.9,0,156953,,LINCOLN PARK,0,1774.4,3,sourced,socrata_syp8-uezg@2026-09-14
-368,LINCOLN (ABRAHAM),"LP Zoo - Vultures, Eagles, Owls",containing,41.922416,-87.633437,0.8,0,269688,,,0,690.5,18,sourced,socrata_syp8-uezg@2026-09-14
-369,LINCOLN (ABRAHAM),Cricket Hill Comfort Station,containing,41.963933,-87.64608,6.7,0,118044,,LINCOLN PARK,0,2262.5,2,sourced,socrata_syp8-uezg@2026-09-14
-370,LINCOLN (ABRAHAM),LP Zoo - Farm-in-the Zoo Building,containing,41.917372,-87.634011,0,0,835561,,,0,3368.1,17,sourced,socrata_syp8-uezg@2026-09-14
-371,LINCOLN (ABRAHAM),LP Zoo - Zoo Gateway Pavilion,containing,41.922016,-87.632811,1.4,0,270908,,LINCOLN PARK,0,1710.8,17,sourced,socrata_syp8-uezg@2026-09-14
-372,LINCOLN (ABRAHAM),LP Zoo - Monkeys,containing,41.920889,-87.632504,6.2,0,274050,,LINCOLN PARK,0,18305.8,14,sourced,socrata_syp8-uezg@2026-09-14
-373,LINCOLN (ABRAHAM),LP Zoo - Seals,containing,41.921492,-87.634547,0.5,0,881542,,,0,432.7,19,sourced,socrata_syp8-uezg@2026-09-14
-374,LINCOLN (ABRAHAM),Lincoln Park Conservatory,address_exact,41.924653,-87.634922,38.3,0,263189,2391 N STOCKTON DR,LINCOLN PARK CONSERVATORY,0,66858,7,sourced,socrata_syp8-uezg@2026-09-14
-375,LINCOLN (ABRAHAM),Lincoln Park Cultural Center,address_exact,41.919779,-87.635945,11.3,0,278099,2045 N LINCOLN PARK WEST,LINCOLN PARK,0,6848.8,26,sourced,socrata_syp8-uezg@2026-09-14
-376,LINCOLN (ABRAHAM),Chicago Corinthian Yacht Club,containing,41.963062,-87.638132,4.6,0,120816,,,0,6134.8,2,sourced,socrata_syp8-uezg@2026-09-14
-377,LINCOLN (ABRAHAM),Montrose Beach House Concession,containing,41.964478,-87.635327,0.9,0,116152,,,0,869.8,3,sourced,socrata_syp8-uezg@2026-09-14
+347,LERNER (LEO),Shelter,containing,42.007789,-87.705059,0.3,0,12375,,,,205.8,52,sourced,socrata_syp8-uezg@2026-09-14
+349,LINCOLN (ABRAHAM),,containing,41.985717,-87.652378,0.4,0,51614,,,,784,1,sourced,socrata_syp8-uezg@2026-09-14
+350,LINCOLN (ABRAHAM),Waveland Clock Tower,containing,41.951889,-87.6411,1.8,0,157420,,LINCOLN PARK,,8176.5,3,sourced,socrata_syp8-uezg@2026-09-14
+351,LINCOLN (ABRAHAM),Belmont Comfort Station,containing,41.939564,-87.636538,1.4,0,848732,,,,1051.1,2,sourced,socrata_syp8-uezg@2026-09-14
+352,LINCOLN (ABRAHAM),Peggy Notebaert Nature Museum,address_exact,41.926472,-87.635057,15.8,0,821490,2430 N CANNON DR,PEGGY NOTEBART NATURE MUSEUM,,45032,1,sourced,socrata_syp8-uezg@2026-09-14
+353,LINCOLN (ABRAHAM),Margate Fieldhouse,address_exact,41.972169,-87.649852,2.2,0,87872,4921-4931 N MARINE DR,,,17656.8,6,sourced,socrata_syp8-uezg@2026-09-14
+354,LINCOLN (ABRAHAM),"LP Zoo - Polar Bears, Sun Bears",containing,41.923793,-87.633453,3.5,0,265858,,LINCOLN PARK,,6547.1,11,sourced,socrata_syp8-uezg@2026-09-14
+355,LINCOLN (ABRAHAM),Armitage Comfort Station,containing,41.91862,-87.634022,5,0,281961,,MEN'S AND LADIES COMFORT STATION,,1692.5,8,sourced,socrata_syp8-uezg@2026-09-14
+356,LINCOLN (ABRAHAM),"LP Zoo - Penguins, Sea Birds",containing,41.922286,-87.634432,1.3,0,269946,,LINCOLN PARK,,4334.1,19,sourced,socrata_syp8-uezg@2026-09-14
+357,LINCOLN (ABRAHAM),"LP Zoo - Giraffes, Rhinos, Ostriches",containing,41.922849,-87.633966,41.1,0,266326,,LINCOLN PARK,,44357.1,17,sourced,socrata_syp8-uezg@2026-09-14
+358,LINCOLN (ABRAHAM),Montrose Service Yard,containing,41.963557,-87.647232,2.6,0,118398,,LINCOLN PARK,,10732.2,3,sourced,socrata_syp8-uezg@2026-09-14
+359,LINCOLN (ABRAHAM),Foster Avenue Breakwater Light,containing,41.97781,-87.64615,0.3,0,70985,,,,80.8,2,sourced,socrata_syp8-uezg@2026-09-14
+360,LINCOLN (ABRAHAM),LP Zoo - Pigs,containing,41.916981,-87.633235,1.2,0,287226,,LINCOLN PARK,,2384.2,6,sourced,socrata_syp8-uezg@2026-09-14
+361,LINCOLN (ABRAHAM),LP Zoo - Judy Keller Education Center,containing,41.921485,-87.632404,0.9,0,272548,,LINCOLN PARK,,1957.5,14,sourced,socrata_syp8-uezg@2026-09-14
+362,LINCOLN (ABRAHAM),LP Zoo - Zoo Concessionaire,containing,41.92191,-87.634247,3.2,0,271217,,LINCOLN PARK,,837.6,19,sourced,socrata_syp8-uezg@2026-09-14
+363,LINCOLN (ABRAHAM),Diversey Golf Building,containing,41.934241,-87.634432,25.8,0,231556,,LINCOLN PARK,,6443.2,13,sourced,socrata_syp8-uezg@2026-09-14
+364,LINCOLN (ABRAHAM),LP Zoo - Tropical Birds,containing,41.92326,-87.632892,20.2,0,266434,,LINCOLN PARK,,8767.6,13,sourced,socrata_syp8-uezg@2026-09-14
+365,LINCOLN (ABRAHAM),DNR Maintenance,containing,41.949736,-87.63946,1.2,0,166367,,LINCOLN PARK,,1217,3,sourced,socrata_syp8-uezg@2026-09-14
+366,LINCOLN (ABRAHAM),LP Zoo - Lions and Tigers,containing,41.921339,-87.633515,15.5,0,272855,,LINCOLN PARK,,16447.8,20,sourced,socrata_syp8-uezg@2026-09-14
+367,LINCOLN (ABRAHAM),Clock Tower Cafe,containing,41.952191,-87.641709,1.9,0,156953,,LINCOLN PARK,,1774.4,3,sourced,socrata_syp8-uezg@2026-09-14
+368,LINCOLN (ABRAHAM),"LP Zoo - Vultures, Eagles, Owls",containing,41.922416,-87.633437,0.8,0,269688,,,,690.5,18,sourced,socrata_syp8-uezg@2026-09-14
+369,LINCOLN (ABRAHAM),Cricket Hill Comfort Station,containing,41.963933,-87.64608,6.7,0,118044,,LINCOLN PARK,,2262.5,2,sourced,socrata_syp8-uezg@2026-09-14
+370,LINCOLN (ABRAHAM),LP Zoo - Farm-in-the Zoo Building,containing,41.917372,-87.634011,0,0,835561,,,,3368.1,17,sourced,socrata_syp8-uezg@2026-09-14
+371,LINCOLN (ABRAHAM),LP Zoo - Zoo Gateway Pavilion,containing,41.922016,-87.632811,1.4,0,270908,,LINCOLN PARK,,1710.8,17,sourced,socrata_syp8-uezg@2026-09-14
+372,LINCOLN (ABRAHAM),LP Zoo - Monkeys,containing,41.920889,-87.632504,6.2,0,274050,,LINCOLN PARK,,18305.8,14,sourced,socrata_syp8-uezg@2026-09-14
+373,LINCOLN (ABRAHAM),LP Zoo - Seals,containing,41.921492,-87.634547,0.5,0,881542,,,,432.7,19,sourced,socrata_syp8-uezg@2026-09-14
+374,LINCOLN (ABRAHAM),Lincoln Park Conservatory,address_exact,41.924653,-87.634922,38.3,0,263189,2391 N STOCKTON DR,LINCOLN PARK CONSERVATORY,,66858,7,sourced,socrata_syp8-uezg@2026-09-14
+375,LINCOLN (ABRAHAM),Lincoln Park Cultural Center,address_exact,41.919779,-87.635945,11.3,0,278099,2045 N LINCOLN PARK WEST,LINCOLN PARK,,6848.8,26,sourced,socrata_syp8-uezg@2026-09-14
+376,LINCOLN (ABRAHAM),Chicago Corinthian Yacht Club,containing,41.963062,-87.638132,4.6,0,120816,,,,6134.8,2,sourced,socrata_syp8-uezg@2026-09-14
+377,LINCOLN (ABRAHAM),Montrose Beach House Concession,containing,41.964478,-87.635327,0.9,0,116152,,,,869.8,3,sourced,socrata_syp8-uezg@2026-09-14
 378,LINCOLN (ABRAHAM),Chicago History Museum,address_exact,41.912,-87.631511,4.8,0,298474,1601 N CLARK ST,CHICAGO HISTORICAL SOCIETY MUSEUM AND LIBRARY,3,53731.2,11,sourced,socrata_syp8-uezg@2026-09-14
-379,LINCOLN (ABRAHAM),Montrose Beach House,containing,41.964583,-87.635474,0.3,0,115913,,,0,124,3,sourced,socrata_syp8-uezg@2026-09-14
-380,LINCOLN (ABRAHAM),Bacino's Italian Grill,containing,41.93356,-87.635464,0.7,0,234688,,LINCOLN PARK,0,980.1,9,sourced,socrata_syp8-uezg@2026-09-14
-381,LINCOLN (ABRAHAM),"LP Zoo - Bears, Otters, Wolves",containing,41.92108,-87.634915,1,0,852638,,,0,9574,15,sourced,socrata_syp8-uezg@2026-09-14
-382,LINCOLN (ABRAHAM),Lincoln Park Archery Club,containing,41.946989,-87.639227,3.1,0,178266,,,0,661.8,3,sourced,socrata_syp8-uezg@2026-09-14
-383,LINCOLN (ABRAHAM),,containing,41.961929,-87.635091,0.1,0,844983,,,0,591.4,1,sourced,socrata_syp8-uezg@2026-09-14
-384,LINCOLN (ABRAHAM),"LP Zoo - Antelope, Zebras, Kangaroos",containing,41.919237,-87.632363,3.2,0,279132,,LINCOLN PARK,0,9364.6,8,sourced,socrata_syp8-uezg@2026-09-14
-385,LINCOLN (ABRAHAM),LP Zoo - Conservation Center and Animal Hospital,containing,41.923794,-87.633093,2.3,0,265803,,LINCOLN PARK,0,4523.4,10,sourced,socrata_syp8-uezg@2026-09-14
-386,LINCOLN (ABRAHAM),Montrose Hook Comfort Station,containing,41.960624,-87.636395,2.1,0,129441,,,0,669.6,1,sourced,socrata_syp8-uezg@2026-09-14
-387,LINCOLN (ABRAHAM),LP Zoo - Zoo Concessionaire,containing,41.922046,-87.633419,5.1,0,270739,,LINCOLN PARK,0,7290.2,21,sourced,socrata_syp8-uezg@2026-09-14
-388,LINCOLN (ABRAHAM),LP Zoo - Foreman Pavilion,containing,41.92007,-87.634109,6.2,0,852640,,,0,6554.1,15,sourced,socrata_syp8-uezg@2026-09-14
-389,LINCOLN (ABRAHAM),,containing,41.966442,-87.640395,0.7,0,110069,,,0,472.5,2,sourced,socrata_syp8-uezg@2026-09-14
-390,LINCOLN (ABRAHAM),Diversey Shops,containing,41.934371,-87.633353,0.6,0,231216,,,0,328.8,12,sourced,socrata_syp8-uezg@2026-09-14
-391,LINCOLN (ABRAHAM),Lincoln Park Power House,containing,41.922808,-87.632926,10.3,0,267775,,LINCOLN PARK,0,41716.4,13,sourced,socrata_syp8-uezg@2026-09-14
-392,LINCOLN (ABRAHAM),Diversey Beaches & Pools Building,containing,41.933674,-87.634399,2.9,0,233728,,LINCOLN PARK,0,6458.4,13,sourced,socrata_syp8-uezg@2026-09-14
-393,LINCOLN (ABRAHAM),Belmont Harbor Building,containing,41.946796,-87.640035,3.1,0,178388,,LINCOLN PARK,0,6099.1,2,sourced,socrata_syp8-uezg@2026-09-14
-394,LINCOLN (ABRAHAM),Diversey Golf Building B,containing,41.934571,-87.634119,1.5,0,230326,,LINCOLN PARK,0,1357.8,13,sourced,socrata_syp8-uezg@2026-09-14
-395,LINCOLN (ABRAHAM),LP Zoo - Ponies,containing,41.916608,-87.63351,0.4,0,288261,,LINCOLN PARK,0,1063.2,8,sourced,socrata_syp8-uezg@2026-09-14
-396,LINCOLN (ABRAHAM),,containing,41.952125,-87.640537,0.5,0,157263,,,0,418.2,3,sourced,socrata_syp8-uezg@2026-09-14
-397,LINCOLN (ABRAHAM),"LP Zoo - Snakes, Bats, Wallaby",containing,41.920759,-87.634409,1.9,0,274184,,LINCOLN PARK,0,25185.1,14,sourced,socrata_syp8-uezg@2026-09-14
-398,LINCOLN (ABRAHAM),LP Zoo - Seals,containing,41.921466,-87.634202,1.5,0,881541,,,0,955.6,21,sourced,socrata_syp8-uezg@2026-09-14
-399,LINCOLN (ABRAHAM),LP Zoo - Zoo Lockers,containing,41.91916,-87.632136,2.7,0,280303,,,0,385.9,5,sourced,socrata_syp8-uezg@2026-09-14
-400,LINCOLN (ABRAHAM),Foster Beach House,containing,41.977686,-87.64895,7.9,0,71286,,LINCOLN PARK,0,4151,2,sourced,socrata_syp8-uezg@2026-09-14
-401,LINCOLN (ABRAHAM),South Athletic Fieldhouse,containing,41.914648,-87.630011,1.8,0,292978,,LINCOLN PARK,0,3558.5,2,sourced,socrata_syp8-uezg@2026-09-14
-402,LINCOLN (ABRAHAM),Theater on the Lake,containing,41.927092,-87.630656,5.5,0,254878,,LINCOLN PARK,0,26516,1,sourced,socrata_syp8-uezg@2026-09-14
-403,LINCOLN (ABRAHAM),LP Zoo - Administration Building,containing,41.918779,-87.635431,2.5,0,281139,,LINCOLN PARK,0,9310.5,12,sourced,socrata_syp8-uezg@2026-09-14
-404,LINCOLN (ABRAHAM),,containing,41.955618,-87.642048,0.6,0,147410,,,0,500.2,1,sourced,socrata_syp8-uezg@2026-09-14
-405,LINCOLN (ABRAHAM),Wheel Fun Rentals,containing,41.976965,-87.647548,0.7,0,73709,,,0,449.2,3,sourced,socrata_syp8-uezg@2026-09-14
-406,LINCOLN (ABRAHAM),Shelter,containing,41.948422,-87.638754,0.6,0,172060,,,0,517.2,2,sourced,socrata_syp8-uezg@2026-09-14
-407,LINCOLN (ABRAHAM),DNR Maintenance,containing,41.949929,-87.639494,1.1,0,165508,,LINCOLN PARK,0,2112.8,2,sourced,socrata_syp8-uezg@2026-09-14
-408,LINCOLN (ABRAHAM),Diversey Golf Building C,containing,41.933821,-87.635062,0.8,0,233497,,LINCOLN PARK,0,1121.8,13,sourced,socrata_syp8-uezg@2026-09-14
-409,LINCOLN (ABRAHAM),LP Zoo - Farm-in-the Zoo Building,containing,41.917247,-87.633385,3,0,835560,,,0,1401.5,7,sourced,socrata_syp8-uezg@2026-09-14
-410,LINCOLN (ABRAHAM),Move Your Feet Sports,containing,41.933628,-87.634158,2.8,0,234230,,LINCOLN PARK,0,1493.4,13,sourced,socrata_syp8-uezg@2026-09-14
-411,LINCOLN (ABRAHAM),Wilson Comfort Station,containing,41.966371,-87.640445,2.2,0,110291,,LINCOLN PARK,0,841.1,2,sourced,socrata_syp8-uezg@2026-09-14
-412,LINCOLN (ABRAHAM),LP Zoo - Zoo Concessionaire (Tadpole Room),containing,41.920934,-87.633202,2.4,0,274121,,LINCOLN PARK,0,10393.8,18,sourced,socrata_syp8-uezg@2026-09-14
-413,LINCOLN (ABRAHAM),Cafe Brauer (South Pond Refectory),address_exact,41.919113,-87.633922,2.7,0,279560,2021 N STOCKTON DR,CAFE BRAUER (SOUTH POND REFECTORY),0,12723,10,sourced,socrata_syp8-uezg@2026-09-14
-414,LINCOLN (ABRAHAM),Park Bait,containing,41.963491,-87.638242,5.3,0,119354,,LINCOLN PARK,0,2503.2,2,sourced,socrata_syp8-uezg@2026-09-14
+379,LINCOLN (ABRAHAM),Montrose Beach House,containing,41.964583,-87.635474,0.3,0,115913,,,,124,3,sourced,socrata_syp8-uezg@2026-09-14
+380,LINCOLN (ABRAHAM),Bacino's Italian Grill,containing,41.93356,-87.635464,0.7,0,234688,,LINCOLN PARK,,980.1,9,sourced,socrata_syp8-uezg@2026-09-14
+381,LINCOLN (ABRAHAM),"LP Zoo - Bears, Otters, Wolves",containing,41.92108,-87.634915,1,0,852638,,,,9574,15,sourced,socrata_syp8-uezg@2026-09-14
+382,LINCOLN (ABRAHAM),Lincoln Park Archery Club,containing,41.946989,-87.639227,3.1,0,178266,,,,661.8,3,sourced,socrata_syp8-uezg@2026-09-14
+383,LINCOLN (ABRAHAM),,containing,41.961929,-87.635091,0.1,0,844983,,,,591.4,1,sourced,socrata_syp8-uezg@2026-09-14
+384,LINCOLN (ABRAHAM),"LP Zoo - Antelope, Zebras, Kangaroos",containing,41.919237,-87.632363,3.2,0,279132,,LINCOLN PARK,,9364.6,8,sourced,socrata_syp8-uezg@2026-09-14
+385,LINCOLN (ABRAHAM),LP Zoo - Conservation Center and Animal Hospital,containing,41.923794,-87.633093,2.3,0,265803,,LINCOLN PARK,,4523.4,10,sourced,socrata_syp8-uezg@2026-09-14
+386,LINCOLN (ABRAHAM),Montrose Hook Comfort Station,containing,41.960624,-87.636395,2.1,0,129441,,,,669.6,1,sourced,socrata_syp8-uezg@2026-09-14
+387,LINCOLN (ABRAHAM),LP Zoo - Zoo Concessionaire,containing,41.922046,-87.633419,5.1,0,270739,,LINCOLN PARK,,7290.2,21,sourced,socrata_syp8-uezg@2026-09-14
+388,LINCOLN (ABRAHAM),LP Zoo - Foreman Pavilion,containing,41.92007,-87.634109,6.2,0,852640,,,,6554.1,15,sourced,socrata_syp8-uezg@2026-09-14
+389,LINCOLN (ABRAHAM),,containing,41.966442,-87.640395,0.7,0,110069,,,,472.5,2,sourced,socrata_syp8-uezg@2026-09-14
+390,LINCOLN (ABRAHAM),Diversey Shops,containing,41.934371,-87.633353,0.6,0,231216,,,,328.8,12,sourced,socrata_syp8-uezg@2026-09-14
+391,LINCOLN (ABRAHAM),Lincoln Park Power House,containing,41.922808,-87.632926,10.3,0,267775,,LINCOLN PARK,,41716.4,13,sourced,socrata_syp8-uezg@2026-09-14
+392,LINCOLN (ABRAHAM),Diversey Beaches & Pools Building,containing,41.933674,-87.634399,2.9,0,233728,,LINCOLN PARK,,6458.4,13,sourced,socrata_syp8-uezg@2026-09-14
+393,LINCOLN (ABRAHAM),Belmont Harbor Building,containing,41.946796,-87.640035,3.1,0,178388,,LINCOLN PARK,,6099.1,2,sourced,socrata_syp8-uezg@2026-09-14
+394,LINCOLN (ABRAHAM),Diversey Golf Building B,containing,41.934571,-87.634119,1.5,0,230326,,LINCOLN PARK,,1357.8,13,sourced,socrata_syp8-uezg@2026-09-14
+395,LINCOLN (ABRAHAM),LP Zoo - Ponies,containing,41.916608,-87.63351,0.4,0,288261,,LINCOLN PARK,,1063.2,8,sourced,socrata_syp8-uezg@2026-09-14
+396,LINCOLN (ABRAHAM),,containing,41.952125,-87.640537,0.5,0,157263,,,,418.2,3,sourced,socrata_syp8-uezg@2026-09-14
+397,LINCOLN (ABRAHAM),"LP Zoo - Snakes, Bats, Wallaby",containing,41.920759,-87.634409,1.9,0,274184,,LINCOLN PARK,,25185.1,14,sourced,socrata_syp8-uezg@2026-09-14
+398,LINCOLN (ABRAHAM),LP Zoo - Seals,containing,41.921466,-87.634202,1.5,0,881541,,,,955.6,21,sourced,socrata_syp8-uezg@2026-09-14
+399,LINCOLN (ABRAHAM),LP Zoo - Zoo Lockers,containing,41.91916,-87.632136,2.7,0,280303,,,,385.9,5,sourced,socrata_syp8-uezg@2026-09-14
+400,LINCOLN (ABRAHAM),Foster Beach House,containing,41.977686,-87.64895,7.9,0,71286,,LINCOLN PARK,,4151,2,sourced,socrata_syp8-uezg@2026-09-14
+401,LINCOLN (ABRAHAM),South Athletic Fieldhouse,containing,41.914648,-87.630011,1.8,0,292978,,LINCOLN PARK,,3558.5,2,sourced,socrata_syp8-uezg@2026-09-14
+402,LINCOLN (ABRAHAM),Theater on the Lake,containing,41.927092,-87.630656,5.5,0,254878,,LINCOLN PARK,,26516,1,sourced,socrata_syp8-uezg@2026-09-14
+403,LINCOLN (ABRAHAM),LP Zoo - Administration Building,containing,41.918779,-87.635431,2.5,0,281139,,LINCOLN PARK,,9310.5,12,sourced,socrata_syp8-uezg@2026-09-14
+404,LINCOLN (ABRAHAM),,containing,41.955618,-87.642048,0.6,0,147410,,,,500.2,1,sourced,socrata_syp8-uezg@2026-09-14
+405,LINCOLN (ABRAHAM),Wheel Fun Rentals,containing,41.976965,-87.647548,0.7,0,73709,,,,449.2,3,sourced,socrata_syp8-uezg@2026-09-14
+406,LINCOLN (ABRAHAM),Shelter,containing,41.948422,-87.638754,0.6,0,172060,,,,517.2,2,sourced,socrata_syp8-uezg@2026-09-14
+407,LINCOLN (ABRAHAM),DNR Maintenance,containing,41.949929,-87.639494,1.1,0,165508,,LINCOLN PARK,,2112.8,2,sourced,socrata_syp8-uezg@2026-09-14
+408,LINCOLN (ABRAHAM),Diversey Golf Building C,containing,41.933821,-87.635062,0.8,0,233497,,LINCOLN PARK,,1121.8,13,sourced,socrata_syp8-uezg@2026-09-14
+409,LINCOLN (ABRAHAM),LP Zoo - Farm-in-the Zoo Building,containing,41.917247,-87.633385,3,0,835560,,,,1401.5,7,sourced,socrata_syp8-uezg@2026-09-14
+410,LINCOLN (ABRAHAM),Move Your Feet Sports,containing,41.933628,-87.634158,2.8,0,234230,,LINCOLN PARK,,1493.4,13,sourced,socrata_syp8-uezg@2026-09-14
+411,LINCOLN (ABRAHAM),Wilson Comfort Station,containing,41.966371,-87.640445,2.2,0,110291,,LINCOLN PARK,,841.1,2,sourced,socrata_syp8-uezg@2026-09-14
+412,LINCOLN (ABRAHAM),LP Zoo - Zoo Concessionaire (Tadpole Room),containing,41.920934,-87.633202,2.4,0,274121,,LINCOLN PARK,,10393.8,18,sourced,socrata_syp8-uezg@2026-09-14
+413,LINCOLN (ABRAHAM),Cafe Brauer (South Pond Refectory),address_exact,41.919113,-87.633922,2.7,0,279560,2021 N STOCKTON DR,CAFE BRAUER (SOUTH POND REFECTORY),,12723,10,sourced,socrata_syp8-uezg@2026-09-14
+414,LINCOLN (ABRAHAM),Park Bait,containing,41.963491,-87.638242,5.3,0,119354,,LINCOLN PARK,,2503.2,2,sourced,socrata_syp8-uezg@2026-09-14
 415,LINCOLN (ABRAHAM),North Avenue Beach House,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 416,LINDBLOM (ROBERT),Lindblom Park Fieldhouse,address_exact,41.783338,-87.674554,4.7,0,519873,6054 S DAMEN AVE,,1,18081.2,59,sourced,socrata_syp8-uezg@2026-09-14
 417,LOWE (SAMUEL),Lowe Park Fieldhouse,address_exact,41.799437,-87.641422,4.5,0,464839,5205 S LOWE AVE,,1,1450,49,sourced,socrata_syp8-uezg@2026-09-14
-418,LOYOLA,Service Building,containing,42.009943,-87.66066,0.8,0,9436,,LOYOLA PARK,0,805,18,sourced,socrata_syp8-uezg@2026-09-14
-419,LOYOLA,,containing,42.006253,-87.658795,0.2,0,13908,,,0,145.2,42,sourced,socrata_syp8-uezg@2026-09-14
-420,LOYOLA,Comfort Station,containing,42.009784,-87.659479,0.9,0,9598,,LOYOLA PARK,0,1252.5,13,sourced,socrata_syp8-uezg@2026-09-14
-421,LOYOLA,Heartland Cafe,containing,42.010657,-87.660214,0.8,0,8552,,,0,727.5,13,sourced,socrata_syp8-uezg@2026-09-14
+418,LOYOLA,Service Building,containing,42.009943,-87.66066,0.8,0,9436,,LOYOLA PARK,,805,18,sourced,socrata_syp8-uezg@2026-09-14
+419,LOYOLA,,containing,42.006253,-87.658795,0.2,0,13908,,,,145.2,42,sourced,socrata_syp8-uezg@2026-09-14
+420,LOYOLA,Comfort Station,containing,42.009784,-87.659479,0.9,0,9598,,LOYOLA PARK,,1252.5,13,sourced,socrata_syp8-uezg@2026-09-14
+421,LOYOLA,Heartland Cafe,containing,42.010657,-87.660214,0.8,0,8552,,,,727.5,13,sourced,socrata_syp8-uezg@2026-09-14
 422,LOYOLA,Loyola Park Fieldhouse,address_exact,42.01085,-87.661814,18.9,0,8113,1230 W GREENLEAF AVE,,2,31714.4,15,sourced,socrata_syp8-uezg@2026-09-14
-423,MANN (JAMES),Mann Park Fieldhouse,address_exact,41.656433,-87.550848,32.6,0,806651,13000 S CARONDOLET AVE,,0,27896.6,53,sourced,socrata_syp8-uezg@2026-09-14
-424,MANN (JAMES),,address_exact,41.657347,-87.550793,2.1,0,806492,3035 E 130TH ST,,0,1271.9,45,sourced,socrata_syp8-uezg@2026-09-14
+423,MANN (JAMES),Mann Park Fieldhouse,address_exact,41.656433,-87.550848,32.6,0,806651,13000 S CARONDOLET AVE,,,27896.6,53,sourced,socrata_syp8-uezg@2026-09-14
+424,MANN (JAMES),,address_exact,41.657347,-87.550793,2.1,0,806492,3035 E 130TH ST,,,1271.9,45,sourced,socrata_syp8-uezg@2026-09-14
 425,MAPLEWOOD,Maplewood Park Fieldhouse,address_exact,41.911063,-87.691253,0.5,0,304204,1640 N MAPLEWOOD AVE,,1,936.5,163,sourced,socrata_syp8-uezg@2026-09-14
-426,MARIANO (LOUIS),Whispers Cafe,containing,41.901686,-87.628165,0.3,0,324968,,MARIANO PARK SHELTER,0,306.2,82,sourced,socrata_syp8-uezg@2026-09-14
-427,MARQUETTE (JACQUES),Engineer Storage,containing,41.765178,-87.712205,1.8,0,576080,,,0,1627,121,sourced,socrata_syp8-uezg@2026-09-14
-428,MARQUETTE (JACQUES),Landscape Garage,address_exact,41.771225,-87.712125,2.9,0,562016,3551 W MARQUETTE RD,,0,8503.5,138,sourced,socrata_syp8-uezg@2026-09-14
-429,MARQUETTE (JACQUES),Motor Truck Driver Garage (Trades),address_exact,41.764986,-87.712187,17,0,576322,3548 W 71ST ST,,0,10174.1,126,sourced,socrata_syp8-uezg@2026-09-14
-430,MARQUETTE (JACQUES),Kanst Comfort Station,containing,41.767256,-87.695068,0.3,0,571063,,,0,333.6,1,sourced,socrata_syp8-uezg@2026-09-14
+426,MARIANO (LOUIS),Whispers Cafe,containing,41.901686,-87.628165,0.3,0,324968,,MARIANO PARK SHELTER,,306.2,82,sourced,socrata_syp8-uezg@2026-09-14
+427,MARQUETTE (JACQUES),Engineer Storage,containing,41.765178,-87.712205,1.8,0,576080,,,,1627,121,sourced,socrata_syp8-uezg@2026-09-14
+428,MARQUETTE (JACQUES),Landscape Garage,address_exact,41.771225,-87.712125,2.9,0,562016,3551 W MARQUETTE RD,,,8503.5,138,sourced,socrata_syp8-uezg@2026-09-14
+429,MARQUETTE (JACQUES),Motor Truck Driver Garage (Trades),address_exact,41.764986,-87.712187,17,0,576322,3548 W 71ST ST,,,10174.1,126,sourced,socrata_syp8-uezg@2026-09-14
+430,MARQUETTE (JACQUES),Kanst Comfort Station,containing,41.767256,-87.695068,0.3,0,571063,,,,333.6,1,sourced,socrata_syp8-uezg@2026-09-14
 431,MARQUETTE (JACQUES),Tarkington Scholastic Academy,largest_nearby,41.764039,-87.707931,102.3,88.3,578831,3401 W 71ST ST,,1,2219.8,69,sourced,socrata_syp8-uezg@2026-09-14
-432,MARQUETTE (JACQUES),,containing,41.771048,-87.704472,0.7,0,562371,,,0,1030.9,46,sourced,socrata_syp8-uezg@2026-09-14
-433,MARQUETTE (JACQUES),Security Building,address_exact,41.764566,-87.71102,0.5,0,577567,3512 W 71ST ST,,0,901.1,96,sourced,socrata_syp8-uezg@2026-09-14
-434,MARQUETTE (JACQUES),Plumbers Storage Shed,containing,41.764792,-87.712144,0.3,0,576995,,,0,905.8,142,sourced,socrata_syp8-uezg@2026-09-14
-435,MARQUETTE (JACQUES),Landscape Garage,containing,41.770823,-87.712169,3.2,0,563075,,,0,3472.9,127,sourced,socrata_syp8-uezg@2026-09-14
-436,MARQUETTE (JACQUES),Mann Comfort Station,containing,41.770926,-87.709861,1.1,0,562784,,,0,680.8,59,sourced,socrata_syp8-uezg@2026-09-14
-437,MARQUETTE (JACQUES),Plumbers Storage Shed,containing,41.76474,-87.712144,0.3,0,577151,,,0,814.5,143,sourced,socrata_syp8-uezg@2026-09-14
+432,MARQUETTE (JACQUES),,containing,41.771048,-87.704472,0.7,0,562371,,,,1030.9,46,sourced,socrata_syp8-uezg@2026-09-14
+433,MARQUETTE (JACQUES),Security Building,address_exact,41.764566,-87.71102,0.5,0,577567,3512 W 71ST ST,,,901.1,96,sourced,socrata_syp8-uezg@2026-09-14
+434,MARQUETTE (JACQUES),Plumbers Storage Shed,containing,41.764792,-87.712144,0.3,0,576995,,,,905.8,142,sourced,socrata_syp8-uezg@2026-09-14
+435,MARQUETTE (JACQUES),Landscape Garage,containing,41.770823,-87.712169,3.2,0,563075,,,,3472.9,127,sourced,socrata_syp8-uezg@2026-09-14
+436,MARQUETTE (JACQUES),Mann Comfort Station,containing,41.770926,-87.709861,1.1,0,562784,,,,680.8,59,sourced,socrata_syp8-uezg@2026-09-14
+437,MARQUETTE (JACQUES),Plumbers Storage Shed,containing,41.76474,-87.712144,0.3,0,577151,,,,814.5,143,sourced,socrata_syp8-uezg@2026-09-14
 438,MARQUETTE (JACQUES),Pole Barn (DNR),address_exact,41.765395,-87.712313,3.1,0,575238,3556 W 71ST ST,,1,4398.6,110,sourced,socrata_syp8-uezg@2026-09-14
-439,MARQUETTE (JACQUES),Marquette Park Field House,address_exact,41.770692,-87.703932,5.3,0,562718,6700 S KEDZIE AVE,MARQUETTE PARK FIELD HOUSE,0,22873.5,27,sourced,socrata_syp8-uezg@2026-09-14
-440,MARQUETTE (JACQUES),Greenhouse (Inactive),containing,41.765191,-87.711568,2.4,0,575734,,,0,2742.5,68,sourced,socrata_syp8-uezg@2026-09-14
-441,MARQUETTE (JACQUES),,containing,41.771031,-87.704686,0.6,0,562424,,,0,621.5,46,sourced,socrata_syp8-uezg@2026-09-14
-442,MARQUETTE (JACQUES),Redfield Comfort Station,containing,41.765354,-87.700675,2.5,0,575476,,,0,744.8,16,sourced,socrata_syp8-uezg@2026-09-14
-443,MARQUETTE (JACQUES),Riggers Building,address_exact,41.76447,-87.711872,3.7,0,577697,3540 W 71ST ST,,0,3347.4,136,sourced,socrata_syp8-uezg@2026-09-14
-444,MARQUETTE (JACQUES),Landscape Storage (Salt),containing,41.77084,-87.71247,0.7,0,562998,,,0,597.8,139,sourced,socrata_syp8-uezg@2026-09-14
-445,MASON (ELIZABETH),North Shelter,address_exact,41.884369,-87.728349,0.9,0,354853,4101 W MAYPOLE AVE,,0,796.2,98,sourced,socrata_syp8-uezg@2026-09-14
-446,MASON (ELIZABETH),South Shelter,containing,41.883611,-87.728521,0.3,0,355608,,,0,163.8,107,sourced,socrata_syp8-uezg@2026-09-14
-447,MATHER (STEPHEN TYNG),Mather Park Fieldhouse,containing,41.98968,-87.702272,1.3,0,43670,,MATHER PARK,0,2263.5,53,sourced,socrata_syp8-uezg@2026-09-14
+439,MARQUETTE (JACQUES),Marquette Park Field House,address_exact,41.770692,-87.703932,5.3,0,562718,6700 S KEDZIE AVE,MARQUETTE PARK FIELD HOUSE,,22873.5,27,sourced,socrata_syp8-uezg@2026-09-14
+440,MARQUETTE (JACQUES),Greenhouse (Inactive),containing,41.765191,-87.711568,2.4,0,575734,,,,2742.5,68,sourced,socrata_syp8-uezg@2026-09-14
+441,MARQUETTE (JACQUES),,containing,41.771031,-87.704686,0.6,0,562424,,,,621.5,46,sourced,socrata_syp8-uezg@2026-09-14
+442,MARQUETTE (JACQUES),Redfield Comfort Station,containing,41.765354,-87.700675,2.5,0,575476,,,,744.8,16,sourced,socrata_syp8-uezg@2026-09-14
+443,MARQUETTE (JACQUES),Riggers Building,address_exact,41.76447,-87.711872,3.7,0,577697,3540 W 71ST ST,,,3347.4,136,sourced,socrata_syp8-uezg@2026-09-14
+444,MARQUETTE (JACQUES),Landscape Storage (Salt),containing,41.77084,-87.71247,0.7,0,562998,,,,597.8,139,sourced,socrata_syp8-uezg@2026-09-14
+445,MASON (ELIZABETH),North Shelter,address_exact,41.884369,-87.728349,0.9,0,354853,4101 W MAYPOLE AVE,,,796.2,98,sourced,socrata_syp8-uezg@2026-09-14
+446,MASON (ELIZABETH),South Shelter,containing,41.883611,-87.728521,0.3,0,355608,,,,163.8,107,sourced,socrata_syp8-uezg@2026-09-14
+447,MATHER (STEPHEN TYNG),Mather Park Fieldhouse,containing,41.98968,-87.702272,1.3,0,43670,,MATHER PARK,,2263.5,53,sourced,socrata_syp8-uezg@2026-09-14
 448,MAYFAIR,Mayfair Park Fieldhouse,address_exact,41.9631,-87.742006,1.8,0,122686,4520 W SUNNYSIDE AVE,,2,3769.8,141,sourced,socrata_syp8-uezg@2026-09-14
 449,MCGUANE (JOHN),McGuane Park Fieldhouse,address_exact,41.841143,-87.648623,12.9,0,401397,2901 S POPLAR AVE,,2,23198.5,88,sourced,socrata_syp8-uezg@2026-09-14
-450,MCKINLEY (WILLIAM),Comfort Station,containing,41.825837,-87.681313,0.7,0,423228,,,0,556.4,28,sourced,socrata_syp8-uezg@2026-09-14
-451,MCKINLEY (WILLIAM),,containing,41.824741,-87.683891,0.2,0,424403,,,0,220.5,8,sourced,socrata_syp8-uezg@2026-09-14
-452,MCKINLEY (WILLIAM),McKinley Park Fieldhouse,address_exact,41.823775,-87.68246,4.9,0,425344,2210 W PERSHING RD,MCKINLEY PARK FIELD HOUSE,0,32689,6,sourced,socrata_syp8-uezg@2026-09-14
-453,MCKINLEY (WILLIAM),,containing,41.82318,-87.682437,0.8,0,426013,,,0,2706.6,5,sourced,socrata_syp8-uezg@2026-09-14
-454,MCKINLEY (WILLIAM),Powerhouse,containing,41.824972,-87.683589,1.1,0,423982,,,0,723.6,9,sourced,socrata_syp8-uezg@2026-09-14
-455,MCKINLEY (WILLIAM),Service Yard,containing,41.823353,-87.680435,9.7,0,425758,,,0,6014.6,4,sourced,socrata_syp8-uezg@2026-09-14
+450,MCKINLEY (WILLIAM),Comfort Station,containing,41.825837,-87.681313,0.7,0,423228,,,,556.4,28,sourced,socrata_syp8-uezg@2026-09-14
+451,MCKINLEY (WILLIAM),,containing,41.824741,-87.683891,0.2,0,424403,,,,220.5,8,sourced,socrata_syp8-uezg@2026-09-14
+452,MCKINLEY (WILLIAM),McKinley Park Fieldhouse,address_exact,41.823775,-87.68246,4.9,0,425344,2210 W PERSHING RD,MCKINLEY PARK FIELD HOUSE,,32689,6,sourced,socrata_syp8-uezg@2026-09-14
+453,MCKINLEY (WILLIAM),,containing,41.82318,-87.682437,0.8,0,426013,,,,2706.6,5,sourced,socrata_syp8-uezg@2026-09-14
+454,MCKINLEY (WILLIAM),Powerhouse,containing,41.824972,-87.683589,1.1,0,423982,,,,723.6,9,sourced,socrata_syp8-uezg@2026-09-14
+455,MCKINLEY (WILLIAM),Service Yard,containing,41.823353,-87.680435,9.7,0,425758,,,,6014.6,4,sourced,socrata_syp8-uezg@2026-09-14
 456,MERRIMAC,Merrimac Park Fieldhouse,address_exact,41.952328,-87.784946,9.3,0,158485,6343 W IRVING PARK RD,,1,11712.2,76,sourced,socrata_syp8-uezg@2026-09-14
 457,MEYERING (WILLIAM),Meyering Park Fieldhouse,address_exact,41.764609,-87.616039,0.6,0,576123,7140 S DR MARTIN LUTHER KING JR DR,,1,2267.4,123,sourced,socrata_syp8-uezg@2026-09-14
-458,MEYERING (WILLIAM),,containing,41.764843,-87.615746,0.2,0,575567,,,0,183.1,114,sourced,socrata_syp8-uezg@2026-09-14
-459,MINUTEMAN,Minuteman Park Fieldhouse,containing,41.785494,-87.762778,3.6,0,514404,,,0,1808.4,38,sourced,socrata_syp8-uezg@2026-09-14
+458,MEYERING (WILLIAM),,containing,41.764843,-87.615746,0.2,0,575567,,,,183.1,114,sourced,socrata_syp8-uezg@2026-09-14
+459,MINUTEMAN,Minuteman Park Fieldhouse,containing,41.785494,-87.762778,3.6,0,514404,,,,1808.4,38,sourced,socrata_syp8-uezg@2026-09-14
 460,MORAN (TERRANCE),Moran Park Fieldhouse,address_exact,41.789619,-87.654569,1.9,0,498596,5727 S RACINE AVE,,1,1939.5,102,sourced,socrata_syp8-uezg@2026-09-14
-461,MOUNT GREENWOOD,,containing,41.690984,-87.714404,1.1,0,771495,,,0,743.8,59,sourced,socrata_syp8-uezg@2026-09-14
-462,MOUNT GREENWOOD,Mount Greenwood Park Fieldhouse,address_exact,41.691004,-87.713745,1.6,0,771386,3711-3721 W 111TH ST,,0,18346.2,54,sourced,socrata_syp8-uezg@2026-09-14
-463,MOUNT GREENWOOD,,containing,41.691111,-87.715262,0.3,0,771404,,,0,253.5,58,sourced,socrata_syp8-uezg@2026-09-14
-464,MOUNT GREENWOOD,Recreation Building,address_exact,41.690487,-87.712014,0.7,0,772519,3711 W 111TH ST,,0,2720,22,sourced,socrata_syp8-uezg@2026-09-14
-465,MOZART (AMADEUS),Recreation Building,address_exact,41.917543,-87.723278,0.8,0,287188,3840 W ARMITAGE AVE,,0,3628.5,69,sourced,socrata_syp8-uezg@2026-09-14
-466,MOZART (AMADEUS),Mozart Park Fieldhouse,address_exact,41.917944,-87.723759,1.8,0,285403,2036 N AVERS AVE,,0,19477.1,80,sourced,socrata_syp8-uezg@2026-09-14
+461,MOUNT GREENWOOD,,containing,41.690984,-87.714404,1.1,0,771495,,,,743.8,59,sourced,socrata_syp8-uezg@2026-09-14
+462,MOUNT GREENWOOD,Mount Greenwood Park Fieldhouse,address_exact,41.691004,-87.713745,1.6,0,771386,3711-3721 W 111TH ST,,,18346.2,54,sourced,socrata_syp8-uezg@2026-09-14
+463,MOUNT GREENWOOD,,containing,41.691111,-87.715262,0.3,0,771404,,,,253.5,58,sourced,socrata_syp8-uezg@2026-09-14
+464,MOUNT GREENWOOD,Recreation Building,address_exact,41.690487,-87.712014,0.7,0,772519,3711 W 111TH ST,,,2720,22,sourced,socrata_syp8-uezg@2026-09-14
+465,MOZART (AMADEUS),Recreation Building,address_exact,41.917543,-87.723278,0.8,0,287188,3840 W ARMITAGE AVE,,,3628.5,69,sourced,socrata_syp8-uezg@2026-09-14
+466,MOZART (AMADEUS),Mozart Park Fieldhouse,address_exact,41.917944,-87.723759,1.8,0,285403,2036 N AVERS AVE,,,19477.1,80,sourced,socrata_syp8-uezg@2026-09-14
 467,MUNROE,Munroe Park Fieldhouse,address_exact,41.70255,-87.687026,0.6,0,743517,2617 W 105TH ST,,1,1324.5,119,sourced,socrata_syp8-uezg@2026-09-14
-468,MUNROE,,containing,41.70254,-87.687183,0.2,0,743625,,,0,130.2,119,sourced,socrata_syp8-uezg@2026-09-14
-469,MURRAY (DAVID),Murray Park Fieldhouse,address_exact,41.761074,-87.667963,0.3,0,588703,1743 W 73RD ST,,0,2540.9,176,sourced,socrata_syp8-uezg@2026-09-14
+468,MUNROE,,containing,41.70254,-87.687183,0.2,0,743625,,,,130.2,119,sourced,socrata_syp8-uezg@2026-09-14
+469,MURRAY (DAVID),Murray Park Fieldhouse,address_exact,41.761074,-87.667963,0.3,0,588703,1743 W 73RD ST,,,2540.9,176,sourced,socrata_syp8-uezg@2026-09-14
 470,NASH (DON) COMM. CTR.,Nash Community Center,address_exact,41.765844,-87.579865,7.6,0,572297,1833 E 71ST ST,,3,10674.5,66,sourced,socrata_syp8-uezg@2026-09-14
 471,NORMANDY,Normandy Park Fieldhouse,address_exact,41.797925,-87.788684,0.8,0,473349,6640 W 52ND ST,,1,1847.8,226,sourced,socrata_syp8-uezg@2026-09-14
-472,NORTH PARK VILLAGE NATURE CENTER,North Park Village Nature Center,address_exact,41.987954,-87.724313,7.1,0,47075,5801 N PULASKI RD,NORTH PARK VILLAGE - NATURE CENTER,0,5870.5,4,sourced,socrata_syp8-uezg@2026-09-14
-473,NORTH PARK VILLAGE NATURE CENTER,NORTH PARK VILLAGE - MISC BLDG,address_exact,41.988172,-87.724164,0.4,0,46906,5801 N PULASKI RD,NORTH PARK VILLAGE - MISC BLDG,0,136.8,4,sourced,socrata_syp8-uezg@2026-09-14
-474,NORTHERLY ISLAND,12th Street Beach Concession,containing,41.864598,-87.607712,0.8,0,373070,,,0,1340.1,2,sourced,socrata_syp8-uezg@2026-09-14
-475,NORTHERLY ISLAND,,containing,41.860756,-87.610313,0.5,0,375348,,,0,404.2,4,sourced,socrata_syp8-uezg@2026-09-14
-476,NORTHERLY ISLAND,Storage,containing,41.86204,-87.609713,0.4,0,374815,,,0,242,4,sourced,socrata_syp8-uezg@2026-09-14
-477,NORTHERLY ISLAND,12th Street Beach Comfort Station,containing,41.86444,-87.607774,0.9,0,373267,,,0,1321.5,2,sourced,socrata_syp8-uezg@2026-09-14
-478,NORTHERLY ISLAND,Judd Goldman Sailing Center,containing,41.86498,-87.609935,5.7,0,372763,,,0,1810.2,1,sourced,socrata_syp8-uezg@2026-09-14
-479,NORTHERLY ISLAND,,containing,41.857838,-87.609676,17.8,0,377404,1700 S LYNN WHITE DR,,0,10451.8,2,sourced,socrata_syp8-uezg@2026-09-14
-480,NORTHERLY ISLAND,Landscape Garage,containing,41.859283,-87.610086,0.6,0,376080,,,0,4419,3,sourced,socrata_syp8-uezg@2026-09-14
+472,NORTH PARK VILLAGE NATURE CENTER,North Park Village Nature Center,address_exact,41.987954,-87.724313,7.1,0,47075,5801 N PULASKI RD,NORTH PARK VILLAGE - NATURE CENTER,,5870.5,4,sourced,socrata_syp8-uezg@2026-09-14
+473,NORTH PARK VILLAGE NATURE CENTER,NORTH PARK VILLAGE - MISC BLDG,address_exact,41.988172,-87.724164,0.4,0,46906,5801 N PULASKI RD,NORTH PARK VILLAGE - MISC BLDG,,136.8,4,sourced,socrata_syp8-uezg@2026-09-14
+474,NORTHERLY ISLAND,12th Street Beach Concession,containing,41.864598,-87.607712,0.8,0,373070,,,,1340.1,2,sourced,socrata_syp8-uezg@2026-09-14
+475,NORTHERLY ISLAND,,containing,41.860756,-87.610313,0.5,0,375348,,,,404.2,4,sourced,socrata_syp8-uezg@2026-09-14
+476,NORTHERLY ISLAND,Storage,containing,41.86204,-87.609713,0.4,0,374815,,,,242,4,sourced,socrata_syp8-uezg@2026-09-14
+477,NORTHERLY ISLAND,12th Street Beach Comfort Station,containing,41.86444,-87.607774,0.9,0,373267,,,,1321.5,2,sourced,socrata_syp8-uezg@2026-09-14
+478,NORTHERLY ISLAND,Judd Goldman Sailing Center,containing,41.86498,-87.609935,5.7,0,372763,,,,1810.2,1,sourced,socrata_syp8-uezg@2026-09-14
+479,NORTHERLY ISLAND,,containing,41.857838,-87.609676,17.8,0,377404,1700 S LYNN WHITE DR,,,10451.8,2,sourced,socrata_syp8-uezg@2026-09-14
+480,NORTHERLY ISLAND,Landscape Garage,containing,41.859283,-87.610086,0.6,0,376080,,,,4419,3,sourced,socrata_syp8-uezg@2026-09-14
 481,NORTHERLY ISLAND,Adler Planetarium,address_exact,41.866365,-87.606555,8.1,0,371584,1300 S LAKE SHORE DR,ADLER PLANETARIUM,1,54467,1,sourced,socrata_syp8-uezg@2026-09-14
-482,NORTHERLY ISLAND,Northerly Island Visitor Center,containing,41.860457,-87.609959,3.5,0,375385,1500 S LYNN WHITE DR,,0,12402.5,3,sourced,socrata_syp8-uezg@2026-09-14
-483,NORTHERLY ISLAND,Burnham Park Yacht Club,containing,41.862396,-87.609517,5.1,0,374665,1500 S LYNN WHITE DR,BURNHAM PARK YACHT CLUB,0,6847,2,sourced,socrata_syp8-uezg@2026-09-14
-484,NORWOOD,Service Yard,containing,41.987365,-87.792535,0.9,0,49567,,,0,740,5,sourced,socrata_syp8-uezg@2026-09-14
+482,NORTHERLY ISLAND,Northerly Island Visitor Center,containing,41.860457,-87.609959,3.5,0,375385,1500 S LYNN WHITE DR,,,12402.5,3,sourced,socrata_syp8-uezg@2026-09-14
+483,NORTHERLY ISLAND,Burnham Park Yacht Club,containing,41.862396,-87.609517,5.1,0,374665,1500 S LYNN WHITE DR,BURNHAM PARK YACHT CLUB,,6847,2,sourced,socrata_syp8-uezg@2026-09-14
+484,NORWOOD,Service Yard,containing,41.987365,-87.792535,0.9,0,49567,,,,740,5,sourced,socrata_syp8-uezg@2026-09-14
 485,NORWOOD,Norwood Park Fieldhouse,address_exact,41.986647,-87.793462,4.6,0,50714,5801 N NATOMA AVE,,1,15368.1,37,sourced,socrata_syp8-uezg@2026-09-14
 486,NORWOOD,Filter Building,largest_nearby,41.986647,-87.793462,38.7,16,50714,5801 N NATOMA AVE,,1,15368.1,39,sourced,socrata_syp8-uezg@2026-09-14
-487,OAKDALE,Bath House,containing,41.719786,-87.649214,1.4,0,703618,,OAKDALE PARK,0,1267.2,79,sourced,socrata_syp8-uezg@2026-09-14
+487,OAKDALE,Bath House,containing,41.719786,-87.649214,1.4,0,703618,,OAKDALE PARK,,1267.2,79,sourced,socrata_syp8-uezg@2026-09-14
 488,OAKDALE,Oakdale Park Fieldhouse,address_exact,41.720578,-87.647549,1.3,0,701859,965 W 95TH ST,OAKDALE PARK,1,2229.5,97,sourced,socrata_syp8-uezg@2026-09-14
-489,OAKDALE,Filter Building,containing,41.719493,-87.649,0.2,0,704252,,,0,590.8,111,sourced,socrata_syp8-uezg@2026-09-14
-490,OGDEN (WILLIAM),Ogden Park Fieldhouse,address_exact,41.775031,-87.655266,4.3,0,547421,6500 S RACINE AVE,,0,18441.2,15,sourced,socrata_syp8-uezg@2026-09-14
-491,OGDEN (WILLIAM),Boiler Room,address_exact,41.775385,-87.654585,0.8,0,547000,6500 S RACINE AVE,,0,1503.8,36,sourced,socrata_syp8-uezg@2026-09-14
-492,O'HALLAREN (BERNARD),O'Hallaren Park Fieldhouse,containing,41.742116,-87.669119,0.8,0,648855,,,0,1276.8,93,sourced,socrata_syp8-uezg@2026-09-14
+489,OAKDALE,Filter Building,containing,41.719493,-87.649,0.2,0,704252,,,,590.8,111,sourced,socrata_syp8-uezg@2026-09-14
+490,OGDEN (WILLIAM),Ogden Park Fieldhouse,address_exact,41.775031,-87.655266,4.3,0,547421,6500 S RACINE AVE,,,18441.2,15,sourced,socrata_syp8-uezg@2026-09-14
+491,OGDEN (WILLIAM),Boiler Room,address_exact,41.775385,-87.654585,0.8,0,547000,6500 S RACINE AVE,,,1503.8,36,sourced,socrata_syp8-uezg@2026-09-14
+492,O'HALLAREN (BERNARD),O'Hallaren Park Fieldhouse,containing,41.742116,-87.669119,0.8,0,648855,,,,1276.8,93,sourced,socrata_syp8-uezg@2026-09-14
 493,OLYMPIA,Olympia Park Fieldhouse,address_exact,41.999358,-87.815228,6.6,0,23620,6566 N AVONDALE AVE,,1,17477.8,75,sourced,socrata_syp8-uezg@2026-09-14
-494,OLYMPIA,East Shelter,containing,41.999104,-87.814429,5.3,0,24385,,,0,650.5,54,sourced,socrata_syp8-uezg@2026-09-14
-495,OLYMPIA,West Shelter,containing,41.999217,-87.814644,5.7,0,24177,,,0,571.6,60,sourced,socrata_syp8-uezg@2026-09-14
+494,OLYMPIA,East Shelter,containing,41.999104,-87.814429,5.3,0,24385,,,,650.5,54,sourced,socrata_syp8-uezg@2026-09-14
+495,OLYMPIA,West Shelter,containing,41.999217,-87.814644,5.7,0,24177,,,,571.6,60,sourced,socrata_syp8-uezg@2026-09-14
 496,ORIOLE,Oriole Park Fieldhouse,address_exact,41.978572,-87.814813,2.9,0,70779,5430 N OLCOTT AVE,ORIOLE PARK,1,16894.2,71,sourced,socrata_syp8-uezg@2026-09-14
 497,OWENS (JESSE),Owens Park Fieldhouse,address_exact,41.735261,-87.574033,1.1,0,669047,8800 S CLYDE AVE,,1,2007.8,59,sourced,socrata_syp8-uezg@2026-09-14
-498,PALMER (POTTER),Palmer Park Fieldhouse,address_exact,41.691905,-87.616141,23.2,0,768960,201 E 111TH ST,PALMER PARK FIELD HOUSE,0,13212.5,5,sourced,socrata_syp8-uezg@2026-09-14
-499,PALMER (POTTER),Palmer Park Mens Gymnasium,address_exact,41.691915,-87.615359,1.1,0,768931,201 E 111TH ST,PALMER PARK MENS GYMNASIUM,0,6046.2,5,sourced,socrata_syp8-uezg@2026-09-14
-500,PALMER (POTTER),Power House,containing,41.692471,-87.616286,0.5,0,768025,,,0,2164.6,5,sourced,socrata_syp8-uezg@2026-09-14
-502,PALMER (POTTER),Filter Building,containing,41.692493,-87.615881,3.2,0,768026,,,0,956.9,5,sourced,socrata_syp8-uezg@2026-09-14
-503,PARK NO. 422,Shelter,containing,41.874861,-87.707397,0.5,0,364566,,,0,384.5,20,sourced,socrata_syp8-uezg@2026-09-14
+498,PALMER (POTTER),Palmer Park Fieldhouse,address_exact,41.691905,-87.616141,23.2,0,768960,201 E 111TH ST,PALMER PARK FIELD HOUSE,,13212.5,5,sourced,socrata_syp8-uezg@2026-09-14
+499,PALMER (POTTER),Palmer Park Mens Gymnasium,address_exact,41.691915,-87.615359,1.1,0,768931,201 E 111TH ST,PALMER PARK MENS GYMNASIUM,,6046.2,5,sourced,socrata_syp8-uezg@2026-09-14
+500,PALMER (POTTER),Power House,containing,41.692471,-87.616286,0.5,0,768025,,,,2164.6,5,sourced,socrata_syp8-uezg@2026-09-14
+502,PALMER (POTTER),Filter Building,containing,41.692493,-87.615881,3.2,0,768026,,,,956.9,5,sourced,socrata_syp8-uezg@2026-09-14
+503,PARK NO. 422,Shelter,containing,41.874861,-87.707397,0.5,0,364566,,,,384.5,20,sourced,socrata_syp8-uezg@2026-09-14
 504,PARK NO. 512,,address_exact,41.915088,-87.668344,2.1,0,292321,1826 N ASHLAND AVE,,1,2660.2,87,sourced,socrata_syp8-uezg@2026-09-14
-506,HONORÉ (BERTHA PALMER),,containing,41.898419,-87.673896,0.2,0,333688,,,0,225.1,317,sourced,socrata_syp8-uezg@2026-09-14
-507,WARNER GARDEN,,containing,41.957463,-87.666265,0.5,0,141792,,,0,446.8,210,sourced,socrata_syp8-uezg@2026-09-14
-508,WARNER GARDEN,Shelter,containing,41.957332,-87.666172,0.3,0,142188,,,0,219.8,210,sourced,socrata_syp8-uezg@2026-09-14
-509,PARK NO. 526,,address_exact,41.996591,-87.711083,4.2,0,27681,6343 N MC CORMICK RD,,0,1537.1,22,sourced,socrata_syp8-uezg@2026-09-14
+506,HONORÉ (BERTHA PALMER),,containing,41.898419,-87.673896,0.2,0,333688,,,,225.1,317,sourced,socrata_syp8-uezg@2026-09-14
+507,WARNER GARDEN,,containing,41.957463,-87.666265,0.5,0,141792,,,,446.8,210,sourced,socrata_syp8-uezg@2026-09-14
+508,WARNER GARDEN,Shelter,containing,41.957332,-87.666172,0.3,0,142188,,,,219.8,210,sourced,socrata_syp8-uezg@2026-09-14
+509,PARK NO. 526,,address_exact,41.996591,-87.711083,4.2,0,27681,6343 N MC CORMICK RD,,,1537.1,22,sourced,socrata_syp8-uezg@2026-09-14
 510,PARK NO. 527,Candle Factory,address_exact,41.782162,-87.628652,72.8,0,522022,6201 S LA SALLE ST,,1,85007.4,7,sourced,socrata_syp8-uezg@2026-09-14
 511,PARK NO. 527,Candle Factory,address_exact,41.781441,-87.629849,1.1,0,525778,6201-6203 S WENTWORTH AVE,,1,3005.1,9,sourced,socrata_syp8-uezg@2026-09-14
 512,PARK NO. 527,Candle Factory,address_exact,41.780874,-87.629358,17,0,526477,6226 S LA SALLE ST,,3,49071.4,12,sourced,socrata_syp8-uezg@2026-09-14
-513,PARK NO. 528,Comfort Station,containing,41.776829,-87.736022,2.7,0,542760,,,0,893.2,94,sourced,socrata_syp8-uezg@2026-09-14
+513,PARK NO. 528,Comfort Station,containing,41.776829,-87.736022,2.7,0,542760,,,,893.2,94,sourced,socrata_syp8-uezg@2026-09-14
 514,PASCHEN (CHRISTIAN),Paschen Park Fieldhouse,address_exact,42.009236,-87.679361,2,0,10332,1932 W LUNT AVE,,1,2644.6,116,sourced,socrata_syp8-uezg@2026-09-14
-515,PETERSON (PEHR SAMUEL),Peterson Park Fieldhouse,address_exact,41.986934,-87.720555,3.7,0,49528,5801 N PULASKI RD,NORTH PARK VILLAGE - PETERSON PARK FIELD HOUSE,0,7986,5,sourced,socrata_syp8-uezg@2026-09-14
+515,PETERSON (PEHR SAMUEL),Peterson Park Fieldhouse,address_exact,41.986934,-87.720555,3.7,0,49528,5801 N PULASKI RD,NORTH PARK VILLAGE - PETERSON PARK FIELD HOUSE,,7986,5,sourced,socrata_syp8-uezg@2026-09-14
 516,PIETROWSKI (SYLVESTER),Pietrowski Park Fieldhouse,address_exact,41.719862,-87.537884,0.5,0,701974,9650 S AVENUE M,PIETROWSKI PARK,1,839.6,210,sourced,socrata_syp8-uezg@2026-09-14
-517,PIOTROWSKI (LILLIAN),,containing,41.834974,-87.732098,0.5,0,412975,,,0,604.2,8,sourced,socrata_syp8-uezg@2026-09-14
+517,PIOTROWSKI (LILLIAN),,containing,41.834974,-87.732098,0.5,0,412975,,,,604.2,8,sourced,socrata_syp8-uezg@2026-09-14
 518,PIOTROWSKI (LILLIAN),Piotrowski Park Fieldhouse,address_exact,41.836401,-87.730773,2.5,0,410672,4247 W 31ST ST,,2,15055,66,sourced,socrata_syp8-uezg@2026-09-14
-519,PIOTROWSKI (LILLIAN),Comfort Station,containing,41.834739,-87.729751,1.2,0,413275,,,0,1178.1,89,sourced,socrata_syp8-uezg@2026-09-14
-520,PORTAGE,Portage Park Fieldhouse,address_exact,41.955348,-87.763648,2.7,0,149657,4100 N LONG AVE,,0,17062.6,16,sourced,socrata_syp8-uezg@2026-09-14
-521,PORTAGE,Comfort Station,containing,41.954662,-87.766022,1.1,0,152328,,PORTAGE PARK,0,1188.2,53,sourced,socrata_syp8-uezg@2026-09-14
-522,PORTAGE,Filter Building,containing,41.956038,-87.763002,0.3,0,148161,,,0,446.4,91,sourced,socrata_syp8-uezg@2026-09-14
-523,PORTAGE,Landscape Building,address_exact,41.956349,-87.765779,5,0,146539,5505 W BERTEAU AVE,,0,3818.6,87,sourced,socrata_syp8-uezg@2026-09-14
-524,PORTAGE,Portage Gymnasium Building,address_exact,41.95603,-87.766033,4.4,0,147727,4101-4147 N CENTRAL AVE,,0,9520.6,96,sourced,socrata_syp8-uezg@2026-09-14
-525,PORTAGE,Pavilion,containing,41.954681,-87.766535,0.4,0,152338,,,0,691.8,75,sourced,socrata_syp8-uezg@2026-09-14
+519,PIOTROWSKI (LILLIAN),Comfort Station,containing,41.834739,-87.729751,1.2,0,413275,,,,1178.1,89,sourced,socrata_syp8-uezg@2026-09-14
+520,PORTAGE,Portage Park Fieldhouse,address_exact,41.955348,-87.763648,2.7,0,149657,4100 N LONG AVE,,,17062.6,16,sourced,socrata_syp8-uezg@2026-09-14
+521,PORTAGE,Comfort Station,containing,41.954662,-87.766022,1.1,0,152328,,PORTAGE PARK,,1188.2,53,sourced,socrata_syp8-uezg@2026-09-14
+522,PORTAGE,Filter Building,containing,41.956038,-87.763002,0.3,0,148161,,,,446.4,91,sourced,socrata_syp8-uezg@2026-09-14
+523,PORTAGE,Landscape Building,address_exact,41.956349,-87.765779,5,0,146539,5505 W BERTEAU AVE,,,3818.6,87,sourced,socrata_syp8-uezg@2026-09-14
+524,PORTAGE,Portage Gymnasium Building,address_exact,41.95603,-87.766033,4.4,0,147727,4101-4147 N CENTRAL AVE,,,9520.6,96,sourced,socrata_syp8-uezg@2026-09-14
+525,PORTAGE,Pavilion,containing,41.954681,-87.766535,0.4,0,152338,,,,691.8,75,sourced,socrata_syp8-uezg@2026-09-14
 526,POTTAWATTOMIE,Pottawattomie Park Fieldhouse,address_exact,42.015163,-87.678131,1.7,0,3881,7340 N ROGERS AVE,,1,21023.1,65,sourced,socrata_syp8-uezg@2026-09-14
-527,PULASKI (CASIMER),Locker Building,address_exact,41.905436,-87.663208,6.5,0,317709,1300 N NOBLE ST,,0,8998.5,163,sourced,socrata_syp8-uezg@2026-09-14
-528,PULASKI (CASIMER),Filter Building,address_exact,41.905775,-87.663643,0.1,0,317010,1419 W BLACKHAWK ST,,0,855,183,sourced,socrata_syp8-uezg@2026-09-14
-529,PULASKI (CASIMER),Pulaski Park Fieldhouse,address_exact,41.906815,-87.663049,23.6,0,314397,1419 W BLACKHAWK ST,,0,31953.1,123,sourced,socrata_syp8-uezg@2026-09-14
-530,PULASKI (CASIMER),Shelter,containing,41.905473,-87.662961,0.3,0,317799,,,0,491.4,152,sourced,socrata_syp8-uezg@2026-09-14
-531,RAINBOW BEACH,Rainbow Beach Fieldhouse,containing,41.757911,-87.548196,6.1,0,838137,,,0,17031.2,3,sourced,socrata_syp8-uezg@2026-09-14
-532,RAINBOW BEACH,,containing,41.759209,-87.554427,10.7,0,591652,,RAINBOW BEACH,0,8754.6,23,sourced,socrata_syp8-uezg@2026-09-14
-533,RAINBOW BEACH,Rainbow Beach Beach House,containing,41.75835,-87.549425,1.5,0,838136,,,0,7278.4,2,sourced,socrata_syp8-uezg@2026-09-14
-534,RAINBOW BEACH,,containing,41.758855,-87.552347,0.4,0,593347,,,0,211.4,13,sourced,socrata_syp8-uezg@2026-09-14
+527,PULASKI (CASIMER),Locker Building,address_exact,41.905436,-87.663208,6.5,0,317709,1300 N NOBLE ST,,,8998.5,163,sourced,socrata_syp8-uezg@2026-09-14
+528,PULASKI (CASIMER),Filter Building,address_exact,41.905775,-87.663643,0.1,0,317010,1419 W BLACKHAWK ST,,,855,183,sourced,socrata_syp8-uezg@2026-09-14
+529,PULASKI (CASIMER),Pulaski Park Fieldhouse,address_exact,41.906815,-87.663049,23.6,0,314397,1419 W BLACKHAWK ST,,,31953.1,123,sourced,socrata_syp8-uezg@2026-09-14
+530,PULASKI (CASIMER),Shelter,containing,41.905473,-87.662961,0.3,0,317799,,,,491.4,152,sourced,socrata_syp8-uezg@2026-09-14
+531,RAINBOW BEACH,Rainbow Beach Fieldhouse,containing,41.757911,-87.548196,6.1,0,838137,,,,17031.2,3,sourced,socrata_syp8-uezg@2026-09-14
+532,RAINBOW BEACH,,containing,41.759209,-87.554427,10.7,0,591652,,RAINBOW BEACH,,8754.6,23,sourced,socrata_syp8-uezg@2026-09-14
+533,RAINBOW BEACH,Rainbow Beach Beach House,containing,41.75835,-87.549425,1.5,0,838136,,,,7278.4,2,sourced,socrata_syp8-uezg@2026-09-14
+534,RAINBOW BEACH,,containing,41.758855,-87.552347,0.4,0,593347,,,,211.4,13,sourced,socrata_syp8-uezg@2026-09-14
 535,REVERE (PAUL),Boys and Girls Club,address_exact,41.953659,-87.691171,11.9,0,153685,2501 W IRVING PARK RD,,1,11795,114,sourced,socrata_syp8-uezg@2026-09-14
-536,REVERE (PAUL),Revere Park Fieldhouse,address_exact,41.953642,-87.692059,1.2,0,153857,2509 W IRVING PARK RD,,0,8190.4,78,sourced,socrata_syp8-uezg@2026-09-14
-537,RIDGE,,containing,41.71825,-87.667605,0.3,0,707446,,,0,313.8,77,sourced,socrata_syp8-uezg@2026-09-14
+536,REVERE (PAUL),Revere Park Fieldhouse,address_exact,41.953642,-87.692059,1.2,0,153857,2509 W IRVING PARK RD,,,8190.4,78,sourced,socrata_syp8-uezg@2026-09-14
+537,RIDGE,,containing,41.71825,-87.667605,0.3,0,707446,,,,313.8,77,sourced,socrata_syp8-uezg@2026-09-14
 538,RIDGE,Ridge Park Ceramics Building,address_exact,41.716708,-87.668292,0.6,0,710728,9625 S LONGWOOD DR,RIDGE PARK,1,2152.6,79,sourced,socrata_syp8-uezg@2026-09-14
 539,RIDGE,Ridge Park Fieldhouse,address_exact,41.718726,-87.667731,17.6,0,705907,9625 S LONGWOOD DR,RIDGE PARK,2,21380.1,75,sourced,socrata_syp8-uezg@2026-09-14
-540,RIIS (JACOB),Riis Park Fieldhouse,address_exact,41.92411,-87.778537,8.7,0,266648,6100 W FULLERTON AVE,RIIS PARK,0,9928.1,121,sourced,socrata_syp8-uezg@2026-09-14
-541,RIIS (JACOB),Comfort Station,containing,41.926508,-87.781562,3.8,0,260477,,,0,2584.6,23,sourced,socrata_syp8-uezg@2026-09-14
-543,RIIS (JACOB),Bath House,address_exact,41.924237,-87.779742,14.5,0,266857,6136-6146 W FULLERTON AVE,,0,5459,89,sourced,socrata_syp8-uezg@2026-09-14
-544,RIIS (JACOB),Pergola,address_exact,41.924828,-87.779368,7.3,0,265474,6100 W FULLERTON AVE,RIIS PARK,0,1957.4,45,sourced,socrata_syp8-uezg@2026-09-14
-545,RIIS (JACOB),Service Yard,address_exact,41.92412,-87.782971,10.5,0,267150,6300-6310 W FULLERTON AVE,,0,3954.5,72,sourced,socrata_syp8-uezg@2026-09-14
-546,RIVER,Bath House,containing,41.974177,-87.702431,3.2,0,83332,,RIVER PARK,0,3301.6,25,sourced,socrata_syp8-uezg@2026-09-14
-547,RIVER,Filter Building,containing,41.973736,-87.702742,0.1,0,85005,,,0,650.9,19,sourced,socrata_syp8-uezg@2026-09-14
-548,RIVER,,containing,41.973514,-87.703003,0.2,0,85849,,,0,134.5,14,sourced,socrata_syp8-uezg@2026-09-14
+540,RIIS (JACOB),Riis Park Fieldhouse,address_exact,41.92411,-87.778537,8.7,0,266648,6100 W FULLERTON AVE,RIIS PARK,,9928.1,121,sourced,socrata_syp8-uezg@2026-09-14
+541,RIIS (JACOB),Comfort Station,containing,41.926508,-87.781562,3.8,0,260477,,,,2584.6,23,sourced,socrata_syp8-uezg@2026-09-14
+543,RIIS (JACOB),Bath House,address_exact,41.924237,-87.779742,14.5,0,266857,6136-6146 W FULLERTON AVE,,,5459,89,sourced,socrata_syp8-uezg@2026-09-14
+544,RIIS (JACOB),Pergola,address_exact,41.924828,-87.779368,7.3,0,265474,6100 W FULLERTON AVE,RIIS PARK,,1957.4,45,sourced,socrata_syp8-uezg@2026-09-14
+545,RIIS (JACOB),Service Yard,address_exact,41.92412,-87.782971,10.5,0,267150,6300-6310 W FULLERTON AVE,,,3954.5,72,sourced,socrata_syp8-uezg@2026-09-14
+546,RIVER,Bath House,containing,41.974177,-87.702431,3.2,0,83332,,RIVER PARK,,3301.6,25,sourced,socrata_syp8-uezg@2026-09-14
+547,RIVER,Filter Building,containing,41.973736,-87.702742,0.1,0,85005,,,,650.9,19,sourced,socrata_syp8-uezg@2026-09-14
+548,RIVER,,containing,41.973514,-87.703003,0.2,0,85849,,,,134.5,14,sourced,socrata_syp8-uezg@2026-09-14
 549,WILDWOOD,Storage Shed,largest_nearby,42.009009,-87.779858,71.2,53.9,11157,7057 N MC ALPIN AVE,,1,3109.9,54,sourced,socrata_syp8-uezg@2026-09-14
-550,RIVER,,containing,41.973551,-87.70276,0.6,0,85604,,RIVER PARK,0,992.2,18,sourced,socrata_syp8-uezg@2026-09-14
-551,RIVER,River Park Fieldhouse,address_exact,41.973975,-87.701962,3.7,0,83347,5100 N FRANCISCO AVE,,0,9737.4,44,sourced,socrata_syp8-uezg@2026-09-14
+550,RIVER,,containing,41.973551,-87.70276,0.6,0,85604,,RIVER PARK,,992.2,18,sourced,socrata_syp8-uezg@2026-09-14
+551,RIVER,River Park Fieldhouse,address_exact,41.973975,-87.701962,3.7,0,83347,5100 N FRANCISCO AVE,,,9737.4,44,sourced,socrata_syp8-uezg@2026-09-14
 552,ROBICHAUX (JOSEPH),Robichaux Park Fieldhouse,address_exact,41.725666,-87.634499,3.4,0,692245,9247 S EGGLESTON AVE,ROBICHAUX PARK,1,17127,94,sourced,socrata_syp8-uezg@2026-09-14
 553,ROBINSON (JACKIE),Rec Building,address_exact,41.701197,-87.648617,2.7,0,746537,1021 W 106TH ST,,1,2170.4,51,sourced,socrata_syp8-uezg@2026-09-14
-554,ROGERS (PHILLIP),Rogers Park Fieldhouse,largest_nearby,42.012486,-87.695887,107.4,85.5,6918,2614-2620 W TOUHY AVE,,0,10006.9,37,sourced,socrata_syp8-uezg@2026-09-14
+554,ROGERS (PHILLIP),Rogers Park Fieldhouse,largest_nearby,42.012486,-87.695887,107.4,85.5,6918,2614-2620 W TOUHY AVE,,,10006.9,37,sourced,socrata_syp8-uezg@2026-09-14
 555,ROSEDALE,Rosedale Park Fieldhouse,address_exact,41.988702,-87.785821,3.2,0,46063,6312-6314 W ROSEDALE AVE,,2,7118.6,228,sourced,socrata_syp8-uezg@2026-09-14
-556,ROWAN (WILLIAM),,containing,41.685759,-87.539752,0.2,0,779804,,,0,246,3,sourced,socrata_syp8-uezg@2026-09-14
+556,ROWAN (WILLIAM),,containing,41.685759,-87.539752,0.2,0,779804,,,,246,3,sourced,socrata_syp8-uezg@2026-09-14
 557,ROWAN (WILLIAM),Rowan Park Fieldhouse,address_exact,41.684928,-87.537357,2.9,0,781069,11546 S AVENUE L,,1,17186.4,105,sourced,socrata_syp8-uezg@2026-09-14
-558,RUSSELL (MARTIN) SQUARE,Russell Square Fieldhouse,address_exact,41.744422,-87.549843,5.2,0,636476,3045 E 83RD ST,RUSSELL SQUARE PARK,0,21080.8,120,sourced,socrata_syp8-uezg@2026-09-14
-559,RUSSELL (MARTIN) SQUARE,Shelter,address_exact,41.743794,-87.549927,0.4,0,639431,8333 S HOUSTON AVE,,0,624.9,78,sourced,socrata_syp8-uezg@2026-09-14
+558,RUSSELL (MARTIN) SQUARE,Russell Square Fieldhouse,address_exact,41.744422,-87.549843,5.2,0,636476,3045 E 83RD ST,RUSSELL SQUARE PARK,,21080.8,120,sourced,socrata_syp8-uezg@2026-09-14
+559,RUSSELL (MARTIN) SQUARE,Shelter,address_exact,41.743794,-87.549927,0.4,0,639431,8333 S HOUSTON AVE,,,624.9,78,sourced,socrata_syp8-uezg@2026-09-14
 560,RUTHERFORD SAYRE,Rutherford Sayre Fieldhouse,address_exact,41.920788,-87.796979,3.3,0,277625,6851-6855 W BELDEN AVE,,1,7874.9,45,sourced,socrata_syp8-uezg@2026-09-14
 561,SAUGANASH,Sauganash Park Fieldhouse,address_exact,41.988001,-87.73707,1.8,0,47039,5861 N KOSTNER AVE,SAUGANASH PARK,2,16303,82,sourced,socrata_syp8-uezg@2026-09-14
-562,SCHREIBER,Schreiber Park Fieldhouse,containing,41.999119,-87.670088,1.6,0,22994,,SCHREIBER PARK,0,1370.6,68,sourced,socrata_syp8-uezg@2026-09-14
+562,SCHREIBER,Schreiber Park Fieldhouse,containing,41.999119,-87.670088,1.6,0,22994,,SCHREIBER PARK,,1370.6,68,sourced,socrata_syp8-uezg@2026-09-14
 563,SCOTTSDALE,Scottsdale Park Fieldhouse,address_exact,41.741643,-87.736168,2,0,651386,4558 W 83RD PL,,2,10497,174,sourced,socrata_syp8-uezg@2026-09-14
 564,"SENKA (EDWARD ""DUKE"")",Sandoval Elementary,address_exact,41.793014,-87.711947,31.7,0,488106,5534 S ST LOUIS AVE,SANDOVAL SCHOOL,3,51995.6,38,sourced,socrata_syp8-uezg@2026-09-14
 565,"SENKA (EDWARD ""DUKE"")",Shelter,largest_nearby,41.793014,-87.711947,164.2,96.9,488106,5534 S ST LOUIS AVE,SANDOVAL SCHOOL,3,51995.6,71,sourced,socrata_syp8-uezg@2026-09-14
 566,SEWARD (WILLIAM),Seward Park Fieldhouse,address_exact,41.902669,-87.637987,14.7,0,323248,363-375 W ELM ST,,2,16936,18,sourced,socrata_syp8-uezg@2026-09-14
-567,SHABBONA,North Shelter,containing,41.944113,-87.799199,0.3,0,193323,,,0,584.1,110,sourced,socrata_syp8-uezg@2026-09-14
+567,SHABBONA,North Shelter,containing,41.944113,-87.799199,0.3,0,193323,,,,584.1,110,sourced,socrata_syp8-uezg@2026-09-14
 568,SHABBONA,Shabbona Park Fieldhouse,address_exact,41.943347,-87.799568,10.7,0,194000,6915 W ADDISON ST,,2,24944.2,67,sourced,socrata_syp8-uezg@2026-09-14
-569,SHABBONA,South Shelter,containing,41.943921,-87.799192,0.3,0,194135,,,0,577.1,110,sourced,socrata_syp8-uezg@2026-09-14
+569,SHABBONA,South Shelter,containing,41.943921,-87.799192,0.3,0,194135,,,,577.1,110,sourced,socrata_syp8-uezg@2026-09-14
 570,SHEDD (JOHN G.),Shedd Park Fieldhouse,address_exact,41.850238,-87.717095,8.3,0,389693,3650 W 23RD ST,,2,6798.1,81,sourced,socrata_syp8-uezg@2026-09-14
 571,SHEIL (BERNARD) COMM. CTR.,Sheil Community Center,address_exact,41.94571,-87.663612,1.9,0,183265,3507 N SOUTHPORT AVE,,2,13842.4,192,sourced,socrata_syp8-uezg@2026-09-14
 572,SHERIDAN (PHILIP HENRY),Sheridan Park Fieldhouse,address_exact,41.870488,-87.654682,1.9,0,368709,900-910 S ABERDEEN ST,,3,11755.8,176,sourced,socrata_syp8-uezg@2026-09-14
-573,SHERMAN (JOHN),Sherman Park Fieldhouse,address_exact,41.798427,-87.657416,0.7,0,468565,1301 W 52ND ST,,0,11824.1,8,sourced,socrata_syp8-uezg@2026-09-14
-574,SHERMAN (JOHN),Sherman Park Library,address_exact,41.794873,-87.655139,2.6,0,481435,5440 S RACINE AVE,SHERMAN PARK,0,5671.4,50,sourced,socrata_syp8-uezg@2026-09-14
-575,SHERMAN (JOHN),Lifeguard Office,containing,41.799188,-87.658023,56.1,0,869357,,,0,22422.5,18,sourced,socrata_syp8-uezg@2026-09-14
-576,SHERWOOD (JESSE),Filter Building,containing,41.790493,-87.633225,0.2,0,495614,,,0,151,95,sourced,socrata_syp8-uezg@2026-09-14
+573,SHERMAN (JOHN),Sherman Park Fieldhouse,address_exact,41.798427,-87.657416,0.7,0,468565,1301 W 52ND ST,,,11824.1,8,sourced,socrata_syp8-uezg@2026-09-14
+574,SHERMAN (JOHN),Sherman Park Library,address_exact,41.794873,-87.655139,2.6,0,481435,5440 S RACINE AVE,SHERMAN PARK,,5671.4,50,sourced,socrata_syp8-uezg@2026-09-14
+575,SHERMAN (JOHN),Lifeguard Office,containing,41.799188,-87.658023,56.1,0,869357,,,,22422.5,18,sourced,socrata_syp8-uezg@2026-09-14
+576,SHERWOOD (JESSE),Filter Building,containing,41.790493,-87.633225,0.2,0,495614,,,,151,95,sourced,socrata_syp8-uezg@2026-09-14
 577,SHERWOOD (JESSE),Sherwood Park Fieldhouse,address_exact,41.790585,-87.63366,3.1,0,494625,5701-5705 S SHIELDS AVE,,1,17445.8,96,sourced,socrata_syp8-uezg@2026-09-14
 578,SIMONS (ALMIRA),Simons Park Fieldhouse,address_exact,41.911145,-87.715271,10.9,0,303887,1636 N DRAKE AVE,,2,9151,133,sourced,socrata_syp8-uezg@2026-09-14
 579,SKINNER (MARK),Skinner Park Fieldhouse,address_exact,41.879953,-87.660855,0.7,0,358403,1330 W ADAMS ST,,1,1380.1,37,sourced,socrata_syp8-uezg@2026-09-14
-580,SMITH (JOSEPH HIGGINS),Filter Building,containing,41.891776,-87.689512,0.2,0,347846,,,0,667.6,51,sourced,socrata_syp8-uezg@2026-09-14
-581,SMITH (JOSEPH HIGGINS),Bath House,address_exact,41.891942,-87.689952,0.9,0,347450,2526 W GRAND AVE,,0,1333.2,43,sourced,socrata_syp8-uezg@2026-09-14
-582,SMITH (JOSEPH HIGGINS),Ceramics Building,address_exact,41.892299,-87.691186,1.6,0,346809,2550 W GRAND AVE,,0,2062,22,sourced,socrata_syp8-uezg@2026-09-14
-583,SMITH (JOSEPH HIGGINS),Smith Park Fieldhouse,address_exact,41.892139,-87.690284,2.1,0,346963,2540 W GRAND AVE,,0,10339.2,32,sourced,socrata_syp8-uezg@2026-09-14
+580,SMITH (JOSEPH HIGGINS),Filter Building,containing,41.891776,-87.689512,0.2,0,347846,,,,667.6,51,sourced,socrata_syp8-uezg@2026-09-14
+581,SMITH (JOSEPH HIGGINS),Bath House,address_exact,41.891942,-87.689952,0.9,0,347450,2526 W GRAND AVE,,,1333.2,43,sourced,socrata_syp8-uezg@2026-09-14
+582,SMITH (JOSEPH HIGGINS),Ceramics Building,address_exact,41.892299,-87.691186,1.6,0,346809,2550 W GRAND AVE,,,2062,22,sourced,socrata_syp8-uezg@2026-09-14
+583,SMITH (JOSEPH HIGGINS),Smith Park Fieldhouse,address_exact,41.892139,-87.690284,2.1,0,346963,2540 W GRAND AVE,,,10339.2,32,sourced,socrata_syp8-uezg@2026-09-14
 584,SMITH (WENDELL),Smith Park Fieldhouse,address_exact,41.713897,-87.631217,0.9,0,715502,9912 S PRINCETON AVE,,1,1701.9,124,sourced,socrata_syp8-uezg@2026-09-14
-585,SOUTH SHORE CULTL. CTR.,South Shore Beach House,containing,41.768017,-87.561861,1.3,0,567398,,SOUTH SHORE CULTURAL CENTER,0,3748.4,2,sourced,socrata_syp8-uezg@2026-09-14
-586,SOUTH SHORE CULTL. CTR.,South Shore Gate House & Stables,address_exact,41.766546,-87.564856,2.9,0,570210,7059 S SOUTH SHORE DR,SOUTH SHORE CULTURAL CENTER,0,36847.9,14,sourced,socrata_syp8-uezg@2026-09-14
-587,SOUTH SHORE CULTL. CTR.,South Shore Cultural Center,address_exact,41.768282,-87.563881,14.1,0,565826,7059 S SOUTH SHORE DR,SOUTH SHORE CULTURAL CENTER,0,70057.2,4,sourced,socrata_syp8-uezg@2026-09-14
-588,STANTON (EDWIN),Stanton Park Fieldhouse,address_exact,41.905282,-87.644591,44.4,0,317305,618-640 W SCOTT ST,,0,40210.1,8,sourced,socrata_syp8-uezg@2026-09-14
+585,SOUTH SHORE CULTL. CTR.,South Shore Beach House,containing,41.768017,-87.561861,1.3,0,567398,,SOUTH SHORE CULTURAL CENTER,,3748.4,2,sourced,socrata_syp8-uezg@2026-09-14
+586,SOUTH SHORE CULTL. CTR.,South Shore Gate House & Stables,address_exact,41.766546,-87.564856,2.9,0,570210,7059 S SOUTH SHORE DR,SOUTH SHORE CULTURAL CENTER,,36847.9,14,sourced,socrata_syp8-uezg@2026-09-14
+587,SOUTH SHORE CULTL. CTR.,South Shore Cultural Center,address_exact,41.768282,-87.563881,14.1,0,565826,7059 S SOUTH SHORE DR,SOUTH SHORE CULTURAL CENTER,,70057.2,4,sourced,socrata_syp8-uezg@2026-09-14
+588,STANTON (EDWIN),Stanton Park Fieldhouse,address_exact,41.905282,-87.644591,44.4,0,317305,618-640 W SCOTT ST,,,40210.1,8,sourced,socrata_syp8-uezg@2026-09-14
 589,STROHACKER (HOWARD),Strohacker Park Fieldhouse,address_exact,41.794828,-87.732415,2.8,0,483204,4347 W 54TH ST,,1,1062,214,sourced,socrata_syp8-uezg@2026-09-14
 590,TAYLOR (ROBERT ROCHON),Taylor Fieldhouse,address_exact,41.808811,-87.628147,19.2,0,444583,37-41 W 47TH ST,,2,30248.1,7,sourced,socrata_syp8-uezg@2026-09-14
-591,TAYLOR (ROBERT ROCHON),Bath House,containing,41.807942,-87.62829,0.1,0,447014,,,0,1357.8,9,sourced,socrata_syp8-uezg@2026-09-14
-592,TAYLOR (ROBERT ROCHON),Filter Building,containing,41.807602,-87.628096,0.8,0,447638,,,0,653.5,9,sourced,socrata_syp8-uezg@2026-09-14
-593,"TAYLOR-LAURIDSEN (JOHN, EMIL)",Taylor-Lauridsen Fieldhouse,largest_nearby,41.818666,-87.644223,83.3,55.7,878200,725 W ROOT ST,,0,17343.3,124,sourced,socrata_syp8-uezg@2026-09-14
-594,THROOP (AMOS GAGER),Shelter,containing,41.857391,-87.658616,0.4,0,378786,,,0,283.5,226,sourced,socrata_syp8-uezg@2026-09-14
+591,TAYLOR (ROBERT ROCHON),Bath House,containing,41.807942,-87.62829,0.1,0,447014,,,,1357.8,9,sourced,socrata_syp8-uezg@2026-09-14
+592,TAYLOR (ROBERT ROCHON),Filter Building,containing,41.807602,-87.628096,0.8,0,447638,,,,653.5,9,sourced,socrata_syp8-uezg@2026-09-14
+593,"TAYLOR-LAURIDSEN (JOHN, EMIL)",Taylor-Lauridsen Fieldhouse,largest_nearby,41.818666,-87.644223,83.3,55.7,878200,725 W ROOT ST,,,17343.3,124,sourced,socrata_syp8-uezg@2026-09-14
+594,THROOP (AMOS GAGER),Shelter,containing,41.857391,-87.658616,0.4,0,378786,,,,283.5,226,sourced,socrata_syp8-uezg@2026-09-14
 595,TILTON (GEORGE),Marconi Elementary,address_exact,41.88423,-87.739559,25.7,0,354970,224-230 N KOLMAR AVE,,3,22045.8,81,sourced,socrata_syp8-uezg@2026-09-14
 596,TOUHY (PATRICK),Recreation Building,address_exact,42.015263,-87.672999,2,0,3916,7348 N PAULINA ST,,1,3644.6,74,sourced,socrata_syp8-uezg@2026-09-14
 597,"TOUHY-HERBERT (JOHN, VICTOR)",Touhy-Herbert Fieldhouse,address_exact,41.87883,-87.679384,0.6,0,359679,2106 W ADAMS ST,,1,1151.2,47,sourced,socrata_syp8-uezg@2026-09-14
-598,TRUMBULL (LYMAN),Trumbull Park Fieldhouse,address_exact,41.705687,-87.564495,1.9,0,733179,2400 E 105TH ST,Trumbull Park,0,25493,47,sourced,socrata_syp8-uezg@2026-09-14
-599,TRUMBULL (LYMAN),Boiler House,address_exact,41.704832,-87.564314,0.8,0,735310,2400 E 105TH ST,Trumbull Park,0,3277,65,sourced,socrata_syp8-uezg@2026-09-14
-600,TULEY (MURRAY),Tuley Park Fieldhouse,address_exact,41.730101,-87.611199,7.9,0,681938,501 E 90TH PL,TULEY PARK,0,25055.6,75,sourced,socrata_syp8-uezg@2026-09-14
-601,TULEY (MURRAY),Boiler House,address_exact,41.730149,-87.610103,1.2,0,682366,9040 S ST LAWRENCE AVE,,0,2917,136,sourced,socrata_syp8-uezg@2026-09-14
-602,TULEY (MURRAY),Bath House,address_exact,41.730285,-87.610119,6.6,0,682029,9036 S ST LAWRENCE AVE,,0,1486.9,132,sourced,socrata_syp8-uezg@2026-09-14
-603,TULEY (MURRAY),Filter Building,containing,41.729932,-87.610622,0.1,0,682838,,,0,507.1,104,sourced,socrata_syp8-uezg@2026-09-14
-604,UNION,Locker/Gym Building,containing,41.885138,-87.666071,3.4,0,353808,1545 W LAKE ST,,0,11590.1,23,sourced,socrata_syp8-uezg@2026-09-14
-605,UNION,Union Park Fieldhouse,containing,41.884312,-87.664541,14,0,354472,,,0,6422.4,16,sourced,socrata_syp8-uezg@2026-09-14
-606,UNION,Landscape Building,address_exact,41.885013,-87.66554,4.5,0,353888,1545 W LAKE ST,,0,1539.8,25,sourced,socrata_syp8-uezg@2026-09-14
-607,UNITY,Comfort Station,address_exact,41.930292,-87.712697,1.8,0,849801,2700 N KIMBALL AVE,,0,1199.2,202,sourced,socrata_syp8-uezg@2026-09-14
-608,VALLEY FORGE,Valley Forge Fieldhouse,containing,41.784514,-87.796197,14.7,0,892817,7001 W 59TH ST,Valley Forge Field House,0,12171.6,98,sourced,socrata_syp8-uezg@2026-09-14
+598,TRUMBULL (LYMAN),Trumbull Park Fieldhouse,address_exact,41.705687,-87.564495,1.9,0,733179,2400 E 105TH ST,Trumbull Park,,25493,47,sourced,socrata_syp8-uezg@2026-09-14
+599,TRUMBULL (LYMAN),Boiler House,address_exact,41.704832,-87.564314,0.8,0,735310,2400 E 105TH ST,Trumbull Park,,3277,65,sourced,socrata_syp8-uezg@2026-09-14
+600,TULEY (MURRAY),Tuley Park Fieldhouse,address_exact,41.730101,-87.611199,7.9,0,681938,501 E 90TH PL,TULEY PARK,,25055.6,75,sourced,socrata_syp8-uezg@2026-09-14
+601,TULEY (MURRAY),Boiler House,address_exact,41.730149,-87.610103,1.2,0,682366,9040 S ST LAWRENCE AVE,,,2917,136,sourced,socrata_syp8-uezg@2026-09-14
+602,TULEY (MURRAY),Bath House,address_exact,41.730285,-87.610119,6.6,0,682029,9036 S ST LAWRENCE AVE,,,1486.9,132,sourced,socrata_syp8-uezg@2026-09-14
+603,TULEY (MURRAY),Filter Building,containing,41.729932,-87.610622,0.1,0,682838,,,,507.1,104,sourced,socrata_syp8-uezg@2026-09-14
+604,UNION,Locker/Gym Building,containing,41.885138,-87.666071,3.4,0,353808,1545 W LAKE ST,,,11590.1,23,sourced,socrata_syp8-uezg@2026-09-14
+605,UNION,Union Park Fieldhouse,containing,41.884312,-87.664541,14,0,354472,,,,6422.4,16,sourced,socrata_syp8-uezg@2026-09-14
+606,UNION,Landscape Building,address_exact,41.885013,-87.66554,4.5,0,353888,1545 W LAKE ST,,,1539.8,25,sourced,socrata_syp8-uezg@2026-09-14
+607,UNITY,Comfort Station,address_exact,41.930292,-87.712697,1.8,0,849801,2700 N KIMBALL AVE,,,1199.2,202,sourced,socrata_syp8-uezg@2026-09-14
+608,VALLEY FORGE,Valley Forge Fieldhouse,containing,41.784514,-87.796197,14.7,0,892817,7001 W 59TH ST,Valley Forge Field House,,12171.6,98,sourced,socrata_syp8-uezg@2026-09-14
 609,VETERANS' MEMORIAL,Veterans' Memorial Fieldhouse,address_exact,41.717662,-87.555837,0.7,0,707093,2820 E 98TH ST,,1,1927.5,161,sourced,socrata_syp8-uezg@2026-09-14
-610,VITTUM (HARRIET ELIZABETH),Vittum Park Fieldhouse,address_exact,41.802432,-87.748215,2.2,0,459361,5010 W 50TH ST,,0,10283.1,93,sourced,socrata_syp8-uezg@2026-09-14
-611,VITTUM (HARRIET ELIZABETH),Comfort Station,address_exact,41.803655,-87.748836,0.7,0,456895,5033 W 49TH ST,,0,1272.1,116,sourced,socrata_syp8-uezg@2026-09-14
+610,VITTUM (HARRIET ELIZABETH),Vittum Park Fieldhouse,address_exact,41.802432,-87.748215,2.2,0,459361,5010 W 50TH ST,,,10283.1,93,sourced,socrata_syp8-uezg@2026-09-14
+611,VITTUM (HARRIET ELIZABETH),Comfort Station,address_exact,41.803655,-87.748836,0.7,0,456895,5033 W 49TH ST,,,1272.1,116,sourced,socrata_syp8-uezg@2026-09-14
 612,WARREN (LAURENCE),Warren Park Fieldhouse,address_exact,42.002206,-87.68913,16.6,0,18595,6621 N WESTERN AVE,WAARREN PARK,1,26841.2,20,sourced,socrata_syp8-uezg@2026-09-14
-613,WARREN (LAURENCE),Ice Rink Warming Hut,address_exact,42.002008,-87.68816,0.6,0,842079,6513 N WESTERN AVE,,0,2953.4,2,sourced,socrata_syp8-uezg@2026-09-14
+613,WARREN (LAURENCE),Ice Rink Warming Hut,address_exact,42.002008,-87.68816,0.6,0,842079,6513 N WESTERN AVE,,,2953.4,2,sourced,socrata_syp8-uezg@2026-09-14
 614,WARREN (LAURENCE),,address_exact,42.004887,-87.681718,1.3,0,15608,2045 W PRATT BLVD,,1,6510.5,46,sourced,socrata_syp8-uezg@2026-09-14
-615,WARREN (LAURENCE),Golf Starters Building,containing,42.004808,-87.682714,0.8,0,15731,,,0,344.5,40,sourced,socrata_syp8-uezg@2026-09-14
+615,WARREN (LAURENCE),Golf Starters Building,containing,42.004808,-87.682714,0.8,0,15731,,,,344.5,40,sourced,socrata_syp8-uezg@2026-09-14
 616,WARREN (LAURENCE),Comfort Station,containing,42.000204,-87.689377,1.7,0,21383,,WARREN PARK,1,1824.9,62,sourced,socrata_syp8-uezg@2026-09-14
-617,WARREN (LAURENCE),5th Hole Shelter,containing,42.003445,-87.684396,0.8,0,17214,,,0,344.6,1,sourced,socrata_syp8-uezg@2026-09-14
-618,WARREN (LAURENCE),,containing,42.004823,-87.685984,0.3,0,15766,,,0,195.1,36,sourced,socrata_syp8-uezg@2026-09-14
-619,WARREN (LAURENCE),1st Hole Shelter,containing,42.004486,-87.681802,0.8,0,16016,,,0,370.2,41,sourced,socrata_syp8-uezg@2026-09-14
-620,WASHINGTON (GEORGE),Southeast Comfort Station,containing,41.790531,-87.60832,1.2,0,494758,,,0,446,6,sourced,socrata_syp8-uezg@2026-09-14
-621,WASHINGTON (GEORGE),Washington Park Refectory,containing,41.793074,-87.614337,11.5,0,486146,,,0,11892.8,6,sourced,socrata_syp8-uezg@2026-09-14
-622,WASHINGTON (GEORGE),Washington Park Fieldhouse,address_exact,41.79354,-87.615295,8.3,0,484550,5531 S DR MARTIN LUTHER KING JR DR,,0,28466.5,22,sourced,socrata_syp8-uezg@2026-09-14
-623,WASHINGTON (GEORGE),General Jones Armory,address_exact,41.798763,-87.607024,61.5,0,462829,5324 S COTTAGE GROVE AVE,,0,153034.6,3,sourced,socrata_syp8-uezg@2026-09-14
-624,WASHINGTON (GEORGE),Roundhouse,address_exact,41.790736,-87.606886,15.6,0,493343,5730 S COTTAGE GROVE AVE,,0,46131.6,11,sourced,socrata_syp8-uezg@2026-09-14
-625,WASHINGTON (GEORGE),Trades Yard,address_exact,41.789594,-87.606812,3.8,0,498058,5758 S COTTAGE GROVE AVE,,0,1164.4,6,sourced,socrata_syp8-uezg@2026-09-14
-626,WASHINGTON (GEORGE),DuSable Museum of African-American History,address_exact,41.791736,-87.606998,42.7,0,489429,740 E ADMINISTRATION DR,DU SABLE MUSEUM OF AFRICAN AMERICAN HISTORY,0,29451.1,7,sourced,socrata_syp8-uezg@2026-09-14
-627,WASHINGTON (GEORGE),Washington Trades Yard,address_exact,41.787881,-87.606708,88.5,0,498738,5800-5858 S COTTAGE GROVE AVE,,0,71781.8,6,sourced,socrata_syp8-uezg@2026-09-14
-628,WASHINGTON (GEORGE),The Chalet,containing,41.797691,-87.607199,1.1,0,470422,,,0,860,6,sourced,socrata_syp8-uezg@2026-09-14
-629,WASHINGTON (GEORGE),55th & Payne Comfort Station,containing,41.794694,-87.608194,1.1,0,481259,,,0,877.5,2,sourced,socrata_syp8-uezg@2026-09-14
-630,WASHINGTON (GEORGE),Trades Garage,address_exact,41.78973,-87.606496,2.3,0,497200,5758 S COTTAGE GROVE AVE,,0,11743.6,6,sourced,socrata_syp8-uezg@2026-09-14
-631,WASHINGTON (GEORGE),Power House,address_exact,41.790034,-87.60657,5.6,0,496412,5746 S COTTAGE GROVE AVE,,0,6815.6,8,sourced,socrata_syp8-uezg@2026-09-14
-632,WASHINGTON (GEORGE),Bleachers,containing,41.79259,-87.614996,9.3,0,486796,,,0,8587.6,20,sourced,socrata_syp8-uezg@2026-09-14
+617,WARREN (LAURENCE),5th Hole Shelter,containing,42.003445,-87.684396,0.8,0,17214,,,,344.6,1,sourced,socrata_syp8-uezg@2026-09-14
+618,WARREN (LAURENCE),,containing,42.004823,-87.685984,0.3,0,15766,,,,195.1,36,sourced,socrata_syp8-uezg@2026-09-14
+619,WARREN (LAURENCE),1st Hole Shelter,containing,42.004486,-87.681802,0.8,0,16016,,,,370.2,41,sourced,socrata_syp8-uezg@2026-09-14
+620,WASHINGTON (GEORGE),Southeast Comfort Station,containing,41.790531,-87.60832,1.2,0,494758,,,,446,6,sourced,socrata_syp8-uezg@2026-09-14
+621,WASHINGTON (GEORGE),Washington Park Refectory,containing,41.793074,-87.614337,11.5,0,486146,,,,11892.8,6,sourced,socrata_syp8-uezg@2026-09-14
+622,WASHINGTON (GEORGE),Washington Park Fieldhouse,address_exact,41.79354,-87.615295,8.3,0,484550,5531 S DR MARTIN LUTHER KING JR DR,,,28466.5,22,sourced,socrata_syp8-uezg@2026-09-14
+623,WASHINGTON (GEORGE),General Jones Armory,address_exact,41.798763,-87.607024,61.5,0,462829,5324 S COTTAGE GROVE AVE,,,153034.6,3,sourced,socrata_syp8-uezg@2026-09-14
+624,WASHINGTON (GEORGE),Roundhouse,address_exact,41.790736,-87.606886,15.6,0,493343,5730 S COTTAGE GROVE AVE,,,46131.6,11,sourced,socrata_syp8-uezg@2026-09-14
+625,WASHINGTON (GEORGE),Trades Yard,address_exact,41.789594,-87.606812,3.8,0,498058,5758 S COTTAGE GROVE AVE,,,1164.4,6,sourced,socrata_syp8-uezg@2026-09-14
+626,WASHINGTON (GEORGE),DuSable Museum of African-American History,address_exact,41.791736,-87.606998,42.7,0,489429,740 E ADMINISTRATION DR,DU SABLE MUSEUM OF AFRICAN AMERICAN HISTORY,,29451.1,7,sourced,socrata_syp8-uezg@2026-09-14
+627,WASHINGTON (GEORGE),Washington Trades Yard,address_exact,41.787881,-87.606708,88.5,0,498738,5800-5858 S COTTAGE GROVE AVE,,,71781.8,6,sourced,socrata_syp8-uezg@2026-09-14
+628,WASHINGTON (GEORGE),The Chalet,containing,41.797691,-87.607199,1.1,0,470422,,,,860,6,sourced,socrata_syp8-uezg@2026-09-14
+629,WASHINGTON (GEORGE),55th & Payne Comfort Station,containing,41.794694,-87.608194,1.1,0,481259,,,,877.5,2,sourced,socrata_syp8-uezg@2026-09-14
+630,WASHINGTON (GEORGE),Trades Garage,address_exact,41.78973,-87.606496,2.3,0,497200,5758 S COTTAGE GROVE AVE,,,11743.6,6,sourced,socrata_syp8-uezg@2026-09-14
+631,WASHINGTON (GEORGE),Power House,address_exact,41.790034,-87.60657,5.6,0,496412,5746 S COTTAGE GROVE AVE,,,6815.6,8,sourced,socrata_syp8-uezg@2026-09-14
+632,WASHINGTON (GEORGE),Bleachers,containing,41.79259,-87.614996,9.3,0,486796,,,,8587.6,20,sourced,socrata_syp8-uezg@2026-09-14
 633,WASHTENAW,Washtenaw Park Fieldhouse,address_exact,41.845855,-87.69264,0.8,0,395327,2521 S WASHTENAW AVE,,1,1326,86,sourced,socrata_syp8-uezg@2026-09-14
 634,WELLES (GIDEON),Welles Park Fieldhouse,address_exact,41.962774,-87.686463,9,0,122305,2333 W SUNNYSIDE AVE,,1,28324,52,sourced,socrata_syp8-uezg@2026-09-14
-635,WELLES (GIDEON),Landscape Building,containing,41.961701,-87.686848,0.3,0,126943,,,0,405.5,86,sourced,socrata_syp8-uezg@2026-09-14
+635,WELLES (GIDEON),Landscape Building,containing,41.961701,-87.686848,0.3,0,126943,,,,405.5,86,sourced,socrata_syp8-uezg@2026-09-14
 636,WELLES (GIDEON),Shelter,largest_nearby,41.962774,-87.686463,71.7,33.7,122305,2333 W SUNNYSIDE AVE,,1,28324,47,sourced,socrata_syp8-uezg@2026-09-14
-637,WENTWORTH (JOHN),,containing,41.78886,-87.781369,0.6,0,503921,,,0,625.5,85,sourced,socrata_syp8-uezg@2026-09-14
-638,WENTWORTH (JOHN) GARDENS,Filter Building,containing,41.825098,-87.631691,0.1,0,423619,,,0,80.5,26,sourced,socrata_syp8-uezg@2026-09-14
-639,WENTWORTH (JOHN) GARDENS,Wentworth Gardens Fieldhouse,address_exact,41.825744,-87.631844,21.8,0,423044,3802 S WENTWORTH AVE,,0,12492.2,23,sourced,socrata_syp8-uezg@2026-09-14
+637,WENTWORTH (JOHN),,containing,41.78886,-87.781369,0.6,0,503921,,,,625.5,85,sourced,socrata_syp8-uezg@2026-09-14
+638,WENTWORTH (JOHN) GARDENS,Filter Building,containing,41.825098,-87.631691,0.1,0,423619,,,,80.5,26,sourced,socrata_syp8-uezg@2026-09-14
+639,WENTWORTH (JOHN) GARDENS,Wentworth Gardens Fieldhouse,address_exact,41.825744,-87.631844,21.8,0,423044,3802 S WENTWORTH AVE,,,12492.2,23,sourced,socrata_syp8-uezg@2026-09-14
 640,WEST CHATHAM,West Chatham Fieldhouse,address_exact,41.744734,-87.631439,1.8,0,637473,8223 S PRINCETON AVE,WEST CHATHAM PARK,1,3060.6,49,sourced,socrata_syp8-uezg@2026-09-14
-641,WEST CHATHAM,Shelter,largest_nearby,41.743912,-87.63118,135.5,69.2,638724,8223-8233 S PRINCETON AVE,,0,75188.9,82,sourced,socrata_syp8-uezg@2026-09-14
-642,WEST CHATHAM,Filter Building,largest_nearby,41.743912,-87.63118,114.1,48.2,638724,8223-8233 S PRINCETON AVE,,0,75188.9,73,sourced,socrata_syp8-uezg@2026-09-14
-643,WEST LAWN,Trades Building (Former Auto Repair Classroom),address_exact,41.773157,-87.728718,0.7,0,556845,4213 W 66TH ST,,0,2007.2,107,sourced,socrata_syp8-uezg@2026-09-14
-644,WEST LAWN,Storage Building,containing,41.773135,-87.729593,0.5,0,556958,,,0,607.1,131,sourced,socrata_syp8-uezg@2026-09-14
-645,WEST LAWN,West Lawn Fieldhouse,address_exact,41.774484,-87.728844,0.3,0,552300,4235 W 65TH ST,,0,21170.2,142,sourced,socrata_syp8-uezg@2026-09-14
-646,GRANT (ULYSSES),Maggie Daley Park,address_exact,41.883897,-87.61939,26.4,0,886463,337 E RANDOLPH ST,DALEY BICENTENNIAL PLAZA FIELD HOUSE,0,14387.2,4,sourced,socrata_syp8-uezg@2026-09-14
-647,RIVER,River Park Boathouse,address_exact,41.972424,-87.704535,6.4,0,843807,3000 W ARGYLE ST,,0,2209.3,30,sourced,socrata_syp8-uezg@2026-09-14
-648,GRAND CROSSING,Boiler House,containing,41.75654,-87.60061,1.4,0,598034,7655 S INGLESIDE AVE,GRAND CROSSING PARK BOILER ROOM,0,3204.8,91,sourced,socrata_syp8-uezg@2026-09-14
+641,WEST CHATHAM,Shelter,largest_nearby,41.743912,-87.63118,135.5,69.2,638724,8223-8233 S PRINCETON AVE,,,75188.9,82,sourced,socrata_syp8-uezg@2026-09-14
+642,WEST CHATHAM,Filter Building,largest_nearby,41.743912,-87.63118,114.1,48.2,638724,8223-8233 S PRINCETON AVE,,,75188.9,73,sourced,socrata_syp8-uezg@2026-09-14
+643,WEST LAWN,Trades Building (Former Auto Repair Classroom),address_exact,41.773157,-87.728718,0.7,0,556845,4213 W 66TH ST,,,2007.2,107,sourced,socrata_syp8-uezg@2026-09-14
+644,WEST LAWN,Storage Building,containing,41.773135,-87.729593,0.5,0,556958,,,,607.1,131,sourced,socrata_syp8-uezg@2026-09-14
+645,WEST LAWN,West Lawn Fieldhouse,address_exact,41.774484,-87.728844,0.3,0,552300,4235 W 65TH ST,,,21170.2,142,sourced,socrata_syp8-uezg@2026-09-14
+646,GRANT (ULYSSES),Maggie Daley Park,address_exact,41.883897,-87.61939,26.4,0,886463,337 E RANDOLPH ST,DALEY BICENTENNIAL PLAZA FIELD HOUSE,,14387.2,4,sourced,socrata_syp8-uezg@2026-09-14
+647,RIVER,River Park Boathouse,address_exact,41.972424,-87.704535,6.4,0,843807,3000 W ARGYLE ST,,,2209.3,30,sourced,socrata_syp8-uezg@2026-09-14
+648,GRAND CROSSING,Boiler House,containing,41.75654,-87.60061,1.4,0,598034,7655 S INGLESIDE AVE,GRAND CROSSING PARK BOILER ROOM,,3204.8,91,sourced,socrata_syp8-uezg@2026-09-14
 649,WEST PULLMAN,West Pullman Fieldhouse,address_exact,41.670002,-87.632428,29.1,0,798543,401 W 123RD ST,,1,33488.2,43,sourced,socrata_syp8-uezg@2026-09-14
 650,"WICKER (CHARLES, JOEL)",Wicker Park Fieldhouse,address_exact,41.90802,-87.676737,2.7,0,311781,1425 N DAMEN AVE,,1,10338.5,56,sourced,socrata_syp8-uezg@2026-09-14
-651,WILDWOOD,Wildwood Park Fieldhouse,containing,42.008167,-87.779733,1.7,0,12294,,WILDWOOD PARK,0,1227.8,48,sourced,socrata_syp8-uezg@2026-09-14
-652,WILLIAMS (DANIEL HALE),Williams Park Fieldhouse,containing,41.842729,-87.627603,0.7,0,399041,,PARK FIELD HOUSE,0,1367,7,sourced,socrata_syp8-uezg@2026-09-14
+651,WILDWOOD,Wildwood Park Fieldhouse,containing,42.008167,-87.779733,1.7,0,12294,,WILDWOOD PARK,,1227.8,48,sourced,socrata_syp8-uezg@2026-09-14
+652,WILLIAMS (DANIEL HALE),Williams Park Fieldhouse,containing,41.842729,-87.627603,0.7,0,399041,,PARK FIELD HOUSE,,1367,7,sourced,socrata_syp8-uezg@2026-09-14
 653,WILSON (FRANK),Wilson Park Fieldhouse,address_exact,41.964494,-87.758597,1.2,0,117991,4630-4636 N MILWAUKEE AVE,,2,4548.4,61,sourced,socrata_syp8-uezg@2026-09-14
 654,WILSON (JOHN),Wilson Park Fieldhouse,address_exact,41.831713,-87.654505,0.9,0,416847,1122 W 34TH PL,,1,2806.5,154,sourced,socrata_syp8-uezg@2026-09-14
 655,WILSON (JOHN) COMM. CTR.,Wilson Community Center,address_exact,41.835355,-87.6556,1,0,411796,3223-3225 S RACINE AVE,,1,6068.1,290,sourced,socrata_syp8-uezg@2026-09-14
 656,WOLFE (RICHARD),Wolfe Park Fieldhouse,address_exact,41.698965,-87.543171,0.4,0,750751,3325 E 108TH ST,,1,2549.2,164,sourced,socrata_syp8-uezg@2026-09-14
-657,WOODHULL (ROSS),Woodhull Park Fieldhouse,address_exact,41.761982,-87.583757,2.1,0,583412,7300 S EAST END AVE,WOODHULL PARK,0,2349.1,90,sourced,socrata_syp8-uezg@2026-09-14
-658,WRIGHTWOOD,Toilet Building,containing,41.928302,-87.666061,0.1,0,253066,,,0,105,165,sourced,socrata_syp8-uezg@2026-09-14
+657,WOODHULL (ROSS),Woodhull Park Fieldhouse,address_exact,41.761982,-87.583757,2.1,0,583412,7300 S EAST END AVE,WOODHULL PARK,,2349.1,90,sourced,socrata_syp8-uezg@2026-09-14
+658,WRIGHTWOOD,Toilet Building,containing,41.928302,-87.666061,0.1,0,253066,,,,105,165,sourced,socrata_syp8-uezg@2026-09-14
 659,WRIGHTWOOD,Wrightwood Park Fieldhouse,address_exact,41.928212,-87.666751,1.3,0,253107,2534 N GREENVIEW AVE,,1,2806.5,127,sourced,socrata_syp8-uezg@2026-09-14
 660,CARVER (GEORGE WASHINGTON),Carver Park Fieldhouse,address_exact,41.655635,-87.59915,92,0,807510,939-951 E 132ND ST,,1,49283,13,sourced,socrata_syp8-uezg@2026-09-14
-661,DAVIS (DR. NATHAN) SQUARE,Power House,containing,41.812861,-87.666516,3.5,0,436465,4430 S MARSHFIELD AVE,,0,7083.1,99,sourced,socrata_syp8-uezg@2026-09-14
-662,JENSEN (CHRIST),Haugan Middle School,containing,41.966243,-87.721166,17.8,0,844484,3729 W LELAND AVE,ASPIRA-HAUGAN SCHOOL,0,51571.4,131,sourced,socrata_syp8-uezg@2026-09-14
+661,DAVIS (DR. NATHAN) SQUARE,Power House,containing,41.812861,-87.666516,3.5,0,436465,4430 S MARSHFIELD AVE,,,7083.1,99,sourced,socrata_syp8-uezg@2026-09-14
+662,JENSEN (CHRIST),Haugan Middle School,containing,41.966243,-87.721166,17.8,0,844484,3729 W LELAND AVE,ASPIRA-HAUGAN SCHOOL,,51571.4,131,sourced,socrata_syp8-uezg@2026-09-14
 663,NICHOLS (JOHN FOUNTAIN),Murray School,containing,41.799004,-87.592896,64.2,0,465877,5335 S KENWOOD AVE,MURRAY ELEMENTARY MAGNET SCHOOL,2,31887.2,71,sourced,socrata_syp8-uezg@2026-09-14
-664,ORR (REZIN),Orr High School,containing,41.894975,-87.72707,25.9,0,342004,750 N PULASKI RD,,0,32879.5,39,sourced,socrata_syp8-uezg@2026-09-14
+664,ORR (REZIN),Orr High School,containing,41.894975,-87.72707,25.9,0,342004,750 N PULASKI RD,,,32879.5,39,sourced,socrata_syp8-uezg@2026-09-14
 665,WHITE (EDWARD),Edward White Elementary,address_exact,41.672683,-87.650562,50.7,0,796423,1120-1136 W 122ND ST,,1,28277.5,69,sourced,socrata_syp8-uezg@2026-09-14
 666,TOM (PING) MEML.,Ping Tom Boathouse,largest_nearby,41.857316,-87.636179,177.2,124.4,836688,1801-1811 S LUMBER ST,,10,48938.6,14,sourced,socrata_syp8-uezg@2026-09-14
-669,MIDWAY PLAISANCE,Ice Rink Warming Hut,largest_nearby,41.787993,-87.59998,141.1,99.7,884585,1116 E 59TH ST,HARPER LIBRARY,0,18129,5,sourced,socrata_syp8-uezg@2026-09-14
-670,NORTHERLY ISLAND,Huntington Bank Pavilion at Northerly Island,largest_nearby,41.862396,-87.609517,149.8,137.6,374665,1500 S LYNN WHITE DR,BURNHAM PARK YACHT CLUB,0,6847,3,sourced,socrata_syp8-uezg@2026-09-14
-671,NORTHERLY ISLAND,Tent on Lakefront Lawn,largest_nearby,41.860457,-87.609959,83.3,70.6,375385,1500 S LYNN WHITE DR,,0,12402.5,3,sourced,socrata_syp8-uezg@2026-09-14
+669,MIDWAY PLAISANCE,Ice Rink Warming Hut,largest_nearby,41.787993,-87.59998,141.1,99.7,884585,1116 E 59TH ST,HARPER LIBRARY,,18129,5,sourced,socrata_syp8-uezg@2026-09-14
+670,NORTHERLY ISLAND,Huntington Bank Pavilion at Northerly Island,largest_nearby,41.862396,-87.609517,149.8,137.6,374665,1500 S LYNN WHITE DR,BURNHAM PARK YACHT CLUB,,6847,3,sourced,socrata_syp8-uezg@2026-09-14
+671,NORTHERLY ISLAND,Tent on Lakefront Lawn,largest_nearby,41.860457,-87.609959,83.3,70.6,375385,1500 S LYNN WHITE DR,,,12402.5,3,sourced,socrata_syp8-uezg@2026-09-14
 672,DOUGLASS (ANNA & FREDERICK),Sacramento Comfort Station,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-673,JEFFERSON (THOMAS),Comfort Station,largest_nearby,41.859746,-87.642444,98,82.5,375844,1600 S JEFFERSON ST,,0,20629.9,120,sourced,socrata_syp8-uezg@2026-09-14
-674,GRANT (ULYSSES),Butler Field Comfort Station,largest_nearby,41.878827,-87.62003,170.6,152.3,359080,251 S COLUMBUS DR,,0,4859.1,3,sourced,socrata_syp8-uezg@2026-09-14
+673,JEFFERSON (THOMAS),Comfort Station,largest_nearby,41.859746,-87.642444,98,82.5,375844,1600 S JEFFERSON ST,,,20629.9,120,sourced,socrata_syp8-uezg@2026-09-14
+674,GRANT (ULYSSES),Butler Field Comfort Station,largest_nearby,41.878827,-87.62003,170.6,152.3,359080,251 S COLUMBUS DR,,,4859.1,3,sourced,socrata_syp8-uezg@2026-09-14
 675,TOM (PING) MEML.,Leonard M. Louie Fieldhouse,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 676,TOM (PING) MEML.,Ping Tom Pagoda,largest_nearby,41.857316,-87.636179,114.4,82,836688,1801-1811 S LUMBER ST,,10,48938.6,44,sourced,socrata_syp8-uezg@2026-09-14
 677,LINCOLN (ABRAHAM),Roscoe Comfort Station,largest_nearby,41.943001,-87.641001,137.8,98.8,853753,3318 N LAKE SHORE DR,,10,11811,5,sourced,socrata_syp8-uezg@2026-09-14
@@ -673,72 +673,72 @@ objectid,park,cpd_bldg_name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg
 679,STANTON (EDWIN),Stanton Park Natatorium,address_exact,41.905881,-87.644389,10,0,316038,618-640 W SCOTT ST,,1,14099,8,sourced,socrata_syp8-uezg@2026-09-14
 680,PARK NO. 527,South Region Landscape & Forestry,containing,41.780874,-87.629358,40.8,0,526477,6226 S LA SALLE ST,,3,49071.4,10,sourced,socrata_syp8-uezg@2026-09-14
 681,CALIFORNIA,McFetridge Sports Center,containing,41.951665,-87.697102,26.8,0,157613,3801 N CALIFORNIA AVE,,1,90390.5,7,sourced,socrata_syp8-uezg@2026-09-14
-682,DVORAK (ANTON),,largest_nearby,41.853103,-87.653538,96.1,29.9,384293,1111 W 21ST ST,,0,64118,91,sourced,socrata_syp8-uezg@2026-09-14
-683,HUMBOLDT (ALEXANDER VON),Filter Building,address_exact,41.898486,-87.703516,1,0,333868,3050 W WALTON ST,,0,914.6,60,sourced,socrata_syp8-uezg@2026-09-14
-684,OGDEN (WILLIAM),Bath House,address_exact,41.774863,-87.654588,25.3,0,547510,6500 S RACINE AVE,,0,6112.6,35,sourced,socrata_syp8-uezg@2026-09-14
-685,JACKSON (ANDREW),,largest_nearby,41.773291,-87.575772,61.7,52.4,553599,6700-6712 S CHAPPEL AVE,,0,9314.1,31,sourced,socrata_syp8-uezg@2026-09-14
-686,TULEY (MURRAY),Arbor,largest_nearby,41.730101,-87.611199,29.3,19.2,681938,501 E 90TH PL,TULEY PARK,0,25055.6,104,sourced,socrata_syp8-uezg@2026-09-14
-687,TRUMBULL (LYMAN),Filter Building,largest_nearby,41.705687,-87.564495,52.1,6,733179,2400 E 105TH ST,Trumbull Park,0,25493,65,sourced,socrata_syp8-uezg@2026-09-14
-688,SHERMAN (JOHN),West Pergola,containing,41.799188,-87.658023,42.8,0,869357,,,0,22422.5,19,sourced,socrata_syp8-uezg@2026-09-14
-689,SHERMAN (JOHN),East Pergola,containing,41.799188,-87.658023,65.3,0,869357,,,0,22422.5,18,sourced,socrata_syp8-uezg@2026-09-14
-690,SHERMAN (JOHN),West Locker Building,containing,41.799188,-87.658023,23.8,0,869357,,,0,22422.5,24,sourced,socrata_syp8-uezg@2026-09-14
-691,SHERMAN (JOHN),East Locker Building,containing,41.799188,-87.658023,95.3,0,869357,,,0,22422.5,23,sourced,socrata_syp8-uezg@2026-09-14
-692,SHERMAN (JOHN),West Gymnasium,containing,41.799188,-87.658023,1.3,0,869357,,,0,22422.5,31,sourced,socrata_syp8-uezg@2026-09-14
-693,RIIS (JACOB,Pool Grandstand,largest_nearby,41.92411,-87.778537,167.2,139.7,266648,6100 W FULLERTON AVE,RIIS PARK,0,9928.1,82,sourced,socrata_syp8-uezg@2026-09-14
-694,SHERMAN (JOHN),East Gymnasium,containing,41.799188,-87.658023,95.5,0,869357,,,0,22422.5,27,sourced,socrata_syp8-uezg@2026-09-14
-695,SHERMAN (JOHN),Boiler House,containing,41.799188,-87.658023,25.8,0,869357,,,0,22422.5,39,sourced,socrata_syp8-uezg@2026-09-14
-696,SHERMAN (JOHN),Filter Building,largest_nearby,41.799188,-87.658023,45.5,18.8,869357,,,0,22422.5,41,sourced,socrata_syp8-uezg@2026-09-14
-697,PORTAGE,Pool Utility Building,containing,41.95496,-87.762917,0.8,0,151303,,PORTAGE PARK,0,2811,61,sourced,socrata_syp8-uezg@2026-09-14
+682,DVORAK (ANTON),,largest_nearby,41.853103,-87.653538,96.1,29.9,384293,1111 W 21ST ST,,,64118,91,sourced,socrata_syp8-uezg@2026-09-14
+683,HUMBOLDT (ALEXANDER VON),Filter Building,address_exact,41.898486,-87.703516,1,0,333868,3050 W WALTON ST,,,914.6,60,sourced,socrata_syp8-uezg@2026-09-14
+684,OGDEN (WILLIAM),Bath House,address_exact,41.774863,-87.654588,25.3,0,547510,6500 S RACINE AVE,,,6112.6,35,sourced,socrata_syp8-uezg@2026-09-14
+685,JACKSON (ANDREW),,largest_nearby,41.773291,-87.575772,61.7,52.4,553599,6700-6712 S CHAPPEL AVE,,,9314.1,31,sourced,socrata_syp8-uezg@2026-09-14
+686,TULEY (MURRAY),Arbor,largest_nearby,41.730101,-87.611199,29.3,19.2,681938,501 E 90TH PL,TULEY PARK,,25055.6,104,sourced,socrata_syp8-uezg@2026-09-14
+687,TRUMBULL (LYMAN),Filter Building,largest_nearby,41.705687,-87.564495,52.1,6,733179,2400 E 105TH ST,Trumbull Park,,25493,65,sourced,socrata_syp8-uezg@2026-09-14
+688,SHERMAN (JOHN),West Pergola,containing,41.799188,-87.658023,42.8,0,869357,,,,22422.5,19,sourced,socrata_syp8-uezg@2026-09-14
+689,SHERMAN (JOHN),East Pergola,containing,41.799188,-87.658023,65.3,0,869357,,,,22422.5,18,sourced,socrata_syp8-uezg@2026-09-14
+690,SHERMAN (JOHN),West Locker Building,containing,41.799188,-87.658023,23.8,0,869357,,,,22422.5,24,sourced,socrata_syp8-uezg@2026-09-14
+691,SHERMAN (JOHN),East Locker Building,containing,41.799188,-87.658023,95.3,0,869357,,,,22422.5,23,sourced,socrata_syp8-uezg@2026-09-14
+692,SHERMAN (JOHN),West Gymnasium,containing,41.799188,-87.658023,1.3,0,869357,,,,22422.5,31,sourced,socrata_syp8-uezg@2026-09-14
+693,RIIS (JACOB,Pool Grandstand,largest_nearby,41.92411,-87.778537,167.2,139.7,266648,6100 W FULLERTON AVE,RIIS PARK,,9928.1,82,sourced,socrata_syp8-uezg@2026-09-14
+694,SHERMAN (JOHN),East Gymnasium,containing,41.799188,-87.658023,95.5,0,869357,,,,22422.5,27,sourced,socrata_syp8-uezg@2026-09-14
+695,SHERMAN (JOHN),Boiler House,containing,41.799188,-87.658023,25.8,0,869357,,,,22422.5,39,sourced,socrata_syp8-uezg@2026-09-14
+696,SHERMAN (JOHN),Filter Building,largest_nearby,41.799188,-87.658023,45.5,18.8,869357,,,,22422.5,41,sourced,socrata_syp8-uezg@2026-09-14
+697,PORTAGE,Pool Utility Building,containing,41.95496,-87.762917,0.8,0,151303,,PORTAGE PARK,,2811,61,sourced,socrata_syp8-uezg@2026-09-14
 698,LINCOLN (ABRAHAM),Hollywood Avenue Breakwater Light,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-699,KELLY (EDWARD),Kelly Park Fieldhouse,address_exact,41.8193,-87.693075,0.8,0,429447,2724 S FAIRFIELD AVE,,0,1237.2,112,sourced,socrata_syp8-uezg@2026-09-14
-700,WASHINGTON (GEORGE),Windy City Harvest Farm Greenhouse,largest_nearby,41.801391,-87.612278,73.7,18.3,460015,525-555 E 51ST ST,,0,62330.6,7,sourced,socrata_syp8-uezg@2026-09-14
-701,MIDWAY PLAISANCE,Ice Rink Chiller Building,largest_nearby,41.787993,-87.59998,123.6,59.9,884585,1116 E 59TH ST,HARPER LIBRARY,0,18129,6,sourced,socrata_syp8-uezg@2026-09-14
-702,DVORAK (ANTON),Shelter,largest_nearby,41.853103,-87.653538,76.4,30.8,384293,1111 W 21ST ST,,0,64118,47,sourced,socrata_syp8-uezg@2026-09-14
-703,UNITY,,largest_nearby,41.930751,-87.711495,154.1,114.7,864308,3300-3312 W SCHUBERT AVE,,0,15676.1,211,sourced,socrata_syp8-uezg@2026-09-14
+699,KELLY (EDWARD),Kelly Park Fieldhouse,address_exact,41.8193,-87.693075,0.8,0,429447,2724 S FAIRFIELD AVE,,,1237.2,112,sourced,socrata_syp8-uezg@2026-09-14
+700,WASHINGTON (GEORGE),Windy City Harvest Farm Greenhouse,largest_nearby,41.801391,-87.612278,73.7,18.3,460015,525-555 E 51ST ST,,,62330.6,7,sourced,socrata_syp8-uezg@2026-09-14
+701,MIDWAY PLAISANCE,Ice Rink Chiller Building,largest_nearby,41.787993,-87.59998,123.6,59.9,884585,1116 E 59TH ST,HARPER LIBRARY,,18129,6,sourced,socrata_syp8-uezg@2026-09-14
+702,DVORAK (ANTON),Shelter,largest_nearby,41.853103,-87.653538,76.4,30.8,384293,1111 W 21ST ST,,,64118,47,sourced,socrata_syp8-uezg@2026-09-14
+703,UNITY,,largest_nearby,41.930751,-87.711495,154.1,114.7,864308,3300-3312 W SCHUBERT AVE,,,15676.1,211,sourced,socrata_syp8-uezg@2026-09-14
 704,ELM,Shelter,largest_nearby,41.800017,-87.596285,41.7,23.7,867667,1200-1236 E 53RD ST,,1,40890.4,96,sourced,socrata_syp8-uezg@2026-09-14
-705,ROWAN (WILLIAM),,largest_nearby,41.68715,-87.539637,70.5,54.4,777104,,,0,786.4,3,sourced,socrata_syp8-uezg@2026-09-14
+705,ROWAN (WILLIAM),,largest_nearby,41.68715,-87.539637,70.5,54.4,777104,,,,786.4,3,sourced,socrata_syp8-uezg@2026-09-14
 706,COMMERCIAL CLUB PGD. of CHICAGO,Storage Building,largest_nearby,41.896238,-87.67372,48.4,10.6,338974,1850 W CHICAGO AVE,,1,22683.2,222,sourced,socrata_syp8-uezg@2026-09-14
-707,HORNER (HENRY),Horner Park Concession,largest_nearby,41.957418,-87.699333,155.5,126.5,142288,4155-4159 N MOZART ST,,0,6593.5,47,sourced,socrata_syp8-uezg@2026-09-14
-708,GARFIELD (JAMES),Garden Hall,largest_nearby,41.879538,-87.718675,148.4,140.4,359048,100 N CENTRAL PARK DR,,0,1444.6,1,sourced,socrata_syp8-uezg@2026-09-14
+707,HORNER (HENRY),Horner Park Concession,largest_nearby,41.957418,-87.699333,155.5,126.5,142288,4155-4159 N MOZART ST,,,6593.5,47,sourced,socrata_syp8-uezg@2026-09-14
+708,GARFIELD (JAMES),Garden Hall,largest_nearby,41.879538,-87.718675,148.4,140.4,359048,100 N CENTRAL PARK DR,,,1444.6,1,sourced,socrata_syp8-uezg@2026-09-14
 709,GARFIELD (JAMES),Pergola,largest_nearby,41.880113,-87.721072,114.6,103.2,358490,20-22 S HAMLIN BLVD,,3,3685.6,12,sourced,socrata_syp8-uezg@2026-09-14
-710,JEFFERSON (THOMAS),Shelter,largest_nearby,41.859746,-87.642444,69.2,53.4,375844,1600 S JEFFERSON ST,,0,20629.9,118,sourced,socrata_syp8-uezg@2026-09-14
-711,WEST RIDGE NATURE PARK,Pump Station,containing,41.987127,-87.688664,0.6,0,48844,,,0,771,29,sourced,socrata_syp8-uezg@2026-09-14
-712,WEST RIDGE NATURE PARK,Water Tower,largest_nearby,41.986635,-87.690022,135.1,110.4,884067,5754 N WESTERN AVE,,0,6654.6,27,sourced,socrata_syp8-uezg@2026-09-14
-713,CHOPIN (FREDERIC),North Shelter,containing,41.942704,-87.762345,3.9,0,198440,,,0,671.6,131,sourced,socrata_syp8-uezg@2026-09-14
-714,CHOPIN (FREDERIC),South Shelter,containing,41.942529,-87.76229,0.6,0,199277,,,0,540.4,123,sourced,socrata_syp8-uezg@2026-09-14
+710,JEFFERSON (THOMAS),Shelter,largest_nearby,41.859746,-87.642444,69.2,53.4,375844,1600 S JEFFERSON ST,,,20629.9,118,sourced,socrata_syp8-uezg@2026-09-14
+711,WEST RIDGE NATURE PARK,Pump Station,containing,41.987127,-87.688664,0.6,0,48844,,,,771,29,sourced,socrata_syp8-uezg@2026-09-14
+712,WEST RIDGE NATURE PARK,Water Tower,largest_nearby,41.986635,-87.690022,135.1,110.4,884067,5754 N WESTERN AVE,,,6654.6,27,sourced,socrata_syp8-uezg@2026-09-14
+713,CHOPIN (FREDERIC),North Shelter,containing,41.942704,-87.762345,3.9,0,198440,,,,671.6,131,sourced,socrata_syp8-uezg@2026-09-14
+714,CHOPIN (FREDERIC),South Shelter,containing,41.942529,-87.76229,0.6,0,199277,,,,540.4,123,sourced,socrata_syp8-uezg@2026-09-14
 715,SCOTTSDALE,Shelter,largest_nearby,41.741643,-87.736168,38.5,17.5,651386,4558 W 83RD PL,,2,10497,186,sourced,socrata_syp8-uezg@2026-09-14
 716,ARCHER (WILLIAM BEATTY),,largest_nearby,41.803024,-87.736289,129,92,457686,4940 S KILBOURN AVE,,1,30423.2,27,sourced,socrata_syp8-uezg@2026-09-14
-717,PRAIRIE WOLF,Shelter,largest_nearby,41.780188,-87.602275,64.2,23.8,529176,915 E 63RD ST,,0,31211,54,sourced,socrata_syp8-uezg@2026-09-14
-718,NORTH PARK VILLAGE NATURE CENTER,Gymnastics Building,address_exact,41.986168,-87.726785,2.9,0,51415,5801 N PULASKI RD,NORTH PARK VILLAGE - AUDITORIUM,0,9532.2,5,sourced,socrata_syp8-uezg@2026-09-14
+717,PRAIRIE WOLF,Shelter,largest_nearby,41.780188,-87.602275,64.2,23.8,529176,915 E 63RD ST,,,31211,54,sourced,socrata_syp8-uezg@2026-09-14
+718,NORTH PARK VILLAGE NATURE CENTER,Gymnastics Building,address_exact,41.986168,-87.726785,2.9,0,51415,5801 N PULASKI RD,NORTH PARK VILLAGE - AUDITORIUM,,9532.2,5,sourced,socrata_syp8-uezg@2026-09-14
 719,NORTHERLY ISLAND,Bike Chicago Kiosk,largest_nearby,41.866365,-87.606555,98.1,56.8,371584,1300 S LAKE SHORE DR,ADLER PLANETARIUM,1,54467,2,sourced,socrata_syp8-uezg@2026-09-14
 720,GRANT (ULYSSES),Kiosk,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-721,LINCOLN (ABRAHAM),Kiosk,largest_nearby,41.927092,-87.630656,101.2,60.9,254878,,LINCOLN PARK,0,26516,1,sourced,socrata_syp8-uezg@2026-09-14
-722,LINCOLN (ABRAHAM),Lincoln Park Boathouse,largest_nearby,41.922849,-87.633966,183.4,139.1,266326,,LINCOLN PARK,0,44357.1,5,sourced,socrata_syp8-uezg@2026-09-14
+721,LINCOLN (ABRAHAM),Kiosk,largest_nearby,41.927092,-87.630656,101.2,60.9,254878,,LINCOLN PARK,,26516,1,sourced,socrata_syp8-uezg@2026-09-14
+722,LINCOLN (ABRAHAM),Lincoln Park Boathouse,largest_nearby,41.922849,-87.633966,183.4,139.1,266326,,LINCOLN PARK,,44357.1,5,sourced,socrata_syp8-uezg@2026-09-14
 723,WARREN (LAURENCE),Pratt & Western Shelter,largest_nearby,42.005304,-87.690459,108.2,84.6,841655,6800-6810 N WESTERN AVE,,1,13986.8,39,sourced,socrata_syp8-uezg@2026-09-14
-724,LINCOLN (ABRAHAM),Chicago Yacht Club Floating Clubhouse,largest_nearby,41.939564,-87.636538,139.4,133.4,848732,,,0,1051.1,1,sourced,socrata_syp8-uezg@2026-09-14
+724,LINCOLN (ABRAHAM),Chicago Yacht Club Floating Clubhouse,largest_nearby,41.939564,-87.636538,139.4,133.4,848732,,,,1051.1,1,sourced,socrata_syp8-uezg@2026-09-14
 725,WELLES (GIDEON),Crepes in the Park,largest_nearby,41.962774,-87.686463,62.7,6.5,122305,2333 W SUNNYSIDE AVE,,1,28324,62,sourced,socrata_syp8-uezg@2026-09-14
-726,KILBOURN,Landscape Building,containing,41.9447,-87.738604,27.5,0,188891,3501 N KILBOURN AVE,KILBOURN PARK,0,19068,76,sourced,socrata_syp8-uezg@2026-09-14
-727,LA FOLLETTE (ROBERT),Filter Building,largest_nearby,41.903388,-87.750702,138.2,115.7,322706,1235-1245 N LAVERGNE AVE,,0,3649.9,131,sourced,socrata_syp8-uezg@2026-09-14
-728,HALE (NATHAN),,largest_nearby,41.780184,-87.776976,181.8,148.8,530544,6140 S MELVINA AVE,,0,35148.1,53,sourced,socrata_syp8-uezg@2026-09-14
-729,HARRISON (CARTER),,largest_nearby,41.85678,-87.672219,104.2,83.6,379324,1824 S WOOD ST,,0,38285.9,55,sourced,socrata_syp8-uezg@2026-09-14
+726,KILBOURN,Landscape Building,containing,41.9447,-87.738604,27.5,0,188891,3501 N KILBOURN AVE,KILBOURN PARK,,19068,76,sourced,socrata_syp8-uezg@2026-09-14
+727,LA FOLLETTE (ROBERT),Filter Building,largest_nearby,41.903388,-87.750702,138.2,115.7,322706,1235-1245 N LAVERGNE AVE,,,3649.9,131,sourced,socrata_syp8-uezg@2026-09-14
+728,HALE (NATHAN),,largest_nearby,41.780184,-87.776976,181.8,148.8,530544,6140 S MELVINA AVE,,,35148.1,53,sourced,socrata_syp8-uezg@2026-09-14
+729,HARRISON (CARTER),,largest_nearby,41.85678,-87.672219,104.2,83.6,379324,1824 S WOOD ST,,,38285.9,55,sourced,socrata_syp8-uezg@2026-09-14
 730,MARQUETTE (JACQUES),Driving Range,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 731,MARQUETTE (JACQUES),Driving Range,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 732,MARQUETTE (JACQUES),,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
-733,PARK NO. 577,Morgan Park Sports Center,largest_nearby,41.683311,-87.681273,86.8,61,785580,11532 S WESTERN AVE,,0,13081.1,78,sourced,socrata_syp8-uezg@2026-09-14
-734,PETERSON (PEHR SAMUEL),Gate House,containing,41.990084,-87.719127,1.6,0,43322,,,0,397.8,105,sourced,socrata_syp8-uezg@2026-09-14
+733,PARK NO. 577,Morgan Park Sports Center,largest_nearby,41.683311,-87.681273,86.8,61,785580,11532 S WESTERN AVE,,,13081.1,78,sourced,socrata_syp8-uezg@2026-09-14
+734,PETERSON (PEHR SAMUEL),Gate House,containing,41.990084,-87.719127,1.6,0,43322,,,,397.8,105,sourced,socrata_syp8-uezg@2026-09-14
 735,MCKINLEY (WILLIAM),Filter Room,largest_nearby,41.822498,-87.682133,124,68.9,426359,2245 W PERSHING RD,,1,64604,5,sourced,socrata_syp8-uezg@2026-09-14
-736,CLARK (RICHARD),Kerry Wood Cubs Field,largest_nearby,41.945493,-87.693017,154.7,152.1,185410,,,0,120.2,1,sourced,socrata_syp8-uezg@2026-09-14
+736,CLARK (RICHARD),Kerry Wood Cubs Field,largest_nearby,41.945493,-87.693017,154.7,152.1,185410,,,,120.2,1,sourced,socrata_syp8-uezg@2026-09-14
 737,ELLIS (SAMUEL),Arts & Recreation Center at Ellis Park,largest_nearby,41.831455,-87.610235,110.6,90.7,416754,600 E 35TH ST,,1,12896.5,4,sourced,socrata_syp8-uezg@2026-09-14
-738,MANDRAKE (HENRY BROWN),Abraham Lincoln Centre,address_exact,41.82426,-87.607592,30.9,1.6,424012,3858 S COTTAGE GROVE AVE,,0,19599.2,26,sourced,socrata_syp8-uezg@2026-09-14
-739,PARK NO. 571,Eleanor Boat House,largest_nearby,41.843029,-87.662693,121.4,111.8,836826,,,0,2494.4,49,sourced,socrata_syp8-uezg@2026-09-14
-740,HOMAN SQUARE COMM. CTR.,Homan Square Community Center,address_exact,41.869233,-87.714094,11,0,830970,3517-3559 W ARTHINGTON ST,,0,71553.9,41,sourced,socrata_syp8-uezg@2026-09-14
-741,LINCOLN (ABRAHAM),Lincoln Park Tennis Club,largest_nearby,41.933674,-87.634399,76.9,52.1,233728,,LINCOLN PARK,0,6458.4,12,sourced,socrata_syp8-uezg@2026-09-14
+738,MANDRAKE (HENRY BROWN),Abraham Lincoln Centre,address_exact,41.82426,-87.607592,30.9,1.6,424012,3858 S COTTAGE GROVE AVE,,,19599.2,26,sourced,socrata_syp8-uezg@2026-09-14
+739,PARK NO. 571,Eleanor Boat House,largest_nearby,41.843029,-87.662693,121.4,111.8,836826,,,,2494.4,49,sourced,socrata_syp8-uezg@2026-09-14
+740,HOMAN SQUARE COMM. CTR.,Homan Square Community Center,address_exact,41.869233,-87.714094,11,0,830970,3517-3559 W ARTHINGTON ST,,,71553.9,41,sourced,socrata_syp8-uezg@2026-09-14
+741,LINCOLN (ABRAHAM),Lincoln Park Tennis Club,largest_nearby,41.933674,-87.634399,76.9,52.1,233728,,LINCOLN PARK,,6458.4,12,sourced,socrata_syp8-uezg@2026-09-14
 742,LIN (MARGARET HIE DING),Lin Park Shelter,largest_nearby,41.859211,-87.626087,116.6,82.9,376118,1624-1636 S WABASH AVE,,2,26048,12,sourced,socrata_syp8-uezg@2026-09-14
 743,LINCOLN (ABRAHAM),Webster Concession,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 744,ROSENBLUM (J. LESLIE),South Shore International College Prep HS,largest_nearby,41.758706,-87.575756,107,87.9,593904,2011 E 75TH ST,,1,11433.2,52,sourced,socrata_syp8-uezg@2026-09-14
-745,"MADIGAN (MICHAEL J., Sr.)",Azuela Elementary School,address_exact,41.77064,-87.739833,49.1,23,891534,4707 W MARQUETTE RD,AZUELA SCHOOL,0,53183.1,108,sourced,socrata_syp8-uezg@2026-09-14
+745,"MADIGAN (MICHAEL J., Sr.)",Azuela Elementary School,address_exact,41.77064,-87.739833,49.1,23,891534,4707 W MARQUETTE RD,AZUELA SCHOOL,,53183.1,108,sourced,socrata_syp8-uezg@2026-09-14
 746,LINCOLN (ABRAHAM),Fullerton Pump House,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 748,BIG MARSH,Ford Calumet Environmental Cener,no_match,,,,,,,,,,0,sourced,socrata_syp8-uezg@2026-09-14
 749,GATELY (JAMES),Gately Track & Field Center,largest_nearby,41.710638,-87.605316,108,85.4,722540,10101-10117 S COTTAGE GROVE AVE,,2,5119.8,5,sourced,socrata_syp8-uezg@2026-09-14
-750,ADDAMS (JANE),ComEd Recreation Center,largest_nearby,41.861244,-87.663256,95.2,55.1,375170,1501 S LAFLIN ST,,0,32198,4,sourced,socrata_syp8-uezg@2026-09-14
+750,ADDAMS (JANE),ComEd Recreation Center,largest_nearby,41.861244,-87.663256,95.2,55.1,375170,1501 S LAFLIN ST,,,32198,4,sourced,socrata_syp8-uezg@2026-09-14
 751,LEVIN (JOHN),Levin Park Fieldhouse,address_exact,41.887957,-87.762826,2.9,0,352237,5458 W KINZIE ST,,1,1328.2,38,sourced,socrata_syp8-uezg@2026-09-14

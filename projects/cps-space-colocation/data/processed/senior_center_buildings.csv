@@ -1,22 +1,22 @@
 site_id,center_name,program,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bldg_name,bldg_stories,footprint_area_sqft,candidates_in_range,provenance,source
 row-2hu7_b6k6.76m4,Englewood,Satellite Senior Center,largest_nearby,41.779077,-87.633778,110.4,89.3,533330,6320 S HARVARD AVE,,3,10935.4,8,sourced,socrata_syp8-uezg@2026-09-14
 row-6ey7.yyr3.iayi,Northwest,Regional Senior Center,address_exact,41.938144,-87.722838,28,8.6,216649,3160 N MILWAUKEE AVE,,1,18424.9,131,sourced,socrata_syp8-uezg@2026-09-14
-row-8gsy.g5ds-tdwi,Northeast,Regional Senior Center,address_exact,41.968468,-87.680048,30.8,16.3,104572,2019 W LAWRENCE AVE,,0,7512.4,163,sourced,socrata_syp8-uezg@2026-09-14
+row-8gsy.g5ds-tdwi,Northeast,Regional Senior Center,address_exact,41.968468,-87.680048,30.8,16.3,104572,2019 W LAWRENCE AVE,,,7512.4,163,sourced,socrata_syp8-uezg@2026-09-14
 row-9bwh.t77j_6f5t,Renaissance Court,Regional Senior Center,address_exact,41.884138,-87.624972,31.6,0,354427,78 E WASHINGTON ST,CHICAGO CULTURAL CENTER,6,51690.1,14,sourced,socrata_syp8-uezg@2026-09-14
-row-9w5r-dtey.6n7v,Chatham,Satellite Senior Center,address_exact,41.74371,-87.605469,41.1,12.7,838664,8300 S COTTAGE GROVE AVE,,0,15547.5,62,sourced,socrata_syp8-uezg@2026-09-14
+row-9w5r-dtey.6n7v,Chatham,Satellite Senior Center,address_exact,41.74371,-87.605469,41.1,12.7,838664,8300 S COTTAGE GROVE AVE,,,15547.5,62,sourced,socrata_syp8-uezg@2026-09-14
 row-bc9k_jef8-p7tg,Norwood Park,Satellite Senior Center,address_exact,41.986647,-87.793462,56.2,37.7,50714,5801 N NATOMA AVE,,1,15368.1,57,sourced,socrata_syp8-uezg@2026-09-14
 row-bkh8-5zku.k6sd,Edgewater,Satellite Senior Center,address_exact,41.989019,-87.659632,66.7,6.4,43477,5917 N BROADWAY,,2,74711.1,61,sourced,socrata_syp8-uezg@2026-09-14
 row-ea3b~fqvj_6cec,Southwest,Regional Senior Center,address_exact,41.782114,-87.702975,18.6,10.1,524875,6115-6117 S KEDZIE AVE,,1,2751,149,sourced,socrata_syp8-uezg@2026-09-14
 row-fwsg_agga_5f87,South Chicago,Satellite Senior Center,largest_nearby,41.728692,-87.5465,138.4,109.1,684418,3210 E 92ND ST,,1,6577.8,41,sourced,socrata_syp8-uezg@2026-09-14
-row-gbc2~7ue7-ftz8,Garfield Ridge,Satellite Senior Center,largest_nearby,41.797512,-87.753129,31.8,22.3,888540,5672 S ARCHER AVE,,0,10771.8,152,sourced,socrata_syp8-uezg@2026-09-14
+row-gbc2~7ue7-ftz8,Garfield Ridge,Satellite Senior Center,largest_nearby,41.797512,-87.753129,31.8,22.3,888540,5672 S ARCHER AVE,,,10771.8,152,sourced,socrata_syp8-uezg@2026-09-14
 row-gezr.auz6_9j58,Pilsen,Satellite Senior Center,largest_nearby,41.854514,-87.651188,76.2,50.1,892684,2055 S MORGAN ST,,5,14463.3,159,sourced,socrata_syp8-uezg@2026-09-14
 row-gpea.epjf~wxie,Kelvyn Park,Satellite Senior Center,largest_nearby,41.929944,-87.746985,76.2,53.3,247479,2700-2722 N CICERO AVE,,1,17386.8,166,sourced,socrata_syp8-uezg@2026-09-14
-row-hu5s-6pm5.qhb2,Central West,Regional Senior Center,address_exact,41.871087,-87.678862,22.5,5.9,368102,2102 W OGDEN AVE,,0,20242,42,sourced,socrata_syp8-uezg@2026-09-14
-row-id9w~n5eb_rc5m,West Town,Satellite Senior Center,containing,41.89578,-87.668367,8.8,0,876209,1617-1625 W CHICAGO AVE,,0,22707.3,144,sourced,socrata_syp8-uezg@2026-09-14
+row-hu5s-6pm5.qhb2,Central West,Regional Senior Center,address_exact,41.871087,-87.678862,22.5,5.9,368102,2102 W OGDEN AVE,,,20242,42,sourced,socrata_syp8-uezg@2026-09-14
+row-id9w~n5eb_rc5m,West Town,Satellite Senior Center,containing,41.89578,-87.668367,8.8,0,876209,1617-1625 W CHICAGO AVE,,,22707.3,144,sourced,socrata_syp8-uezg@2026-09-14
 row-ih76_b7ti_9eq4,Auburn Gresham,Satellite Senior Center,largest_nearby,41.750299,-87.649652,61.5,29.1,616366,1015-1025 W 79TH ST,,1,16829.2,150,sourced,socrata_syp8-uezg@2026-09-14
 row-jhe2-rs5e~amh2,Southeast,Regional Senior Center,largest_nearby,41.751293,-87.580429,131.6,107.5,611777,1767-1807 E 79TH ST,DEPARTMENT OF AGING  SOUTHEAST CENTER,2,15874,155,sourced,socrata_syp8-uezg@2026-09-14
-row-nmki.e9zc-27be,Portage Park,Satellite Senior Center,largest_nearby,41.955617,-87.763113,110,51.5,845493,,,0,36697.9,130,sourced,socrata_syp8-uezg@2026-09-14
+row-nmki.e9zc-27be,Portage Park,Satellite Senior Center,largest_nearby,41.955617,-87.763113,110,51.5,845493,,,,36697.9,130,sourced,socrata_syp8-uezg@2026-09-14
 row-ps2q-emmh~ghyr,Austin,Satellite Senior Center,address_exact,41.873757,-87.752129,20.7,9.5,365813,5071 W CONGRESS PKWY,,1,12679.8,144,sourced,socrata_syp8-uezg@2026-09-14
 row-qy3v.qdc5.asbn,Roseland,Satellite Senior Center,address_exact,41.704656,-87.621239,29.1,18.9,892234,10426 S MICHIGAN AVE,senior indepedent living facility,5,14171.8,128,sourced,socrata_syp8-uezg@2026-09-14
-row-y8bu.t9yi.p8wn,North Center,Satellite Senior Center,address_exact,41.955198,-87.686738,66.3,31.3,845812,4040 N OAKLEY AVE,,0,21391.5,122,sourced,socrata_syp8-uezg@2026-09-14
-row-zhhi_5qr4~ppw3,Abbott Park,Satellite Senior Center,address_exact,41.721158,-87.622113,59.4,48.8,700580,49 E 95TH ST,,0,4537.9,59,sourced,socrata_syp8-uezg@2026-09-14
+row-y8bu.t9yi.p8wn,North Center,Satellite Senior Center,address_exact,41.955198,-87.686738,66.3,31.3,845812,4040 N OAKLEY AVE,,,21391.5,122,sourced,socrata_syp8-uezg@2026-09-14
+row-zhhi_5qr4~ppw3,Abbott Park,Satellite Senior Center,address_exact,41.721158,-87.622113,59.4,48.8,700580,49 E 95TH ST,,,4537.9,59,sourced,socrata_syp8-uezg@2026-09-14

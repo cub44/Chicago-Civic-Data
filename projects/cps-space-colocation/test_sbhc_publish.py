@@ -149,6 +149,13 @@ check("manually_verified" not in rows[0],
 check("manually_verified" not in resolved_header,
       "retired manually_verified column is back in sbhc_resolved.csv")
 
+# ---- space-use status has one source: utilization.csv, joined on sid. The input
+# sheet's status columns come from an earlier file and contradicted it for five
+# host schools, so they are retired from both processed sheets.
+for col in ("cps_status_2025", "cps_adjusted_su", "cps_colo"):
+    check(col not in rows[0], "retired %s column is back in sbhc_publish.csv" % col)
+    check(col not in resolved_header, "retired %s column is back in sbhc_resolved.csv" % col)
+
 # ---- source sponsor claims are audit-only; publication has one canonical name
 check("sponsor_cps" not in rows[0] and "sponsor_idph" not in rows[0],
       "source-specific sponsor fields leaked into publication sheet")
@@ -171,6 +178,12 @@ hope = row("Wilma Rudolph Elementary Learning Center")
 check(hope.get("school_name") == "Hope Institute Learning Academy", "Hope host school regressed")
 check(hope.get("operational_status") == "closed" and hope.get("closed_on") == "2024-04-01",
       "Hope closure fields regressed")
+# 610308 is Rudolph; the evidence names Hope, which has no CPS id in this release
+check(hope.get("sid") == "", "Hope center still carries Rudolph's sid")
+discrepancy_sids = {r["sid"] for r in csv.DictReader(
+    (ROOT / "data" / "processed" / "sbhc_discrepancies.csv").open())
+    if r["site_name"] == "Wilma Rudolph Elementary Learning Center"}
+check(discrepancy_sids == {""}, "Hope findings still filed under Rudolph's sid")
 
 uplift = row("Uplift Community High School")
 check(uplift.get("operational_status") == "closed" and uplift.get("closed_on") == "2024-04-01",

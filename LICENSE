@@ -31,7 +31,7 @@ DATA AND PROSE — Creative Commons Attribution 4.0 International (CC BY 4.0)
 Applies to: data/, README.md, and all other documentation and written content.
 
 You are free to share and adapt this material for any purpose, including
-commercially, provided you give appropriate credit, link to the licence, and
+commercially, provided you give appropriate credit, link to the license, and
 indicate if changes were made.
 
 Full text: https://creativecommons.org/licenses/by/4.0/legalcode
@@ -44,14 +44,13 @@ Suggested attribution:
 --------------------------------------------------------------------------------
 UPSTREAM SOURCES
 --------------------------------------------------------------------------------
-Files in data/raw/ are unmodified copies of public records published by third
-parties and are not covered by the licences above:
+The CSVs here are derived from public records published by Chicago Public
+Schools, the City of Chicago Data Portal (under its Terms of Use), IDPH and
+HRSA. Those publishers' terms govern the underlying records.
 
-  - Chicago Public Schools — Space Utilization Data (SY2026), School Profile
-    Information API. Published by CPS.
-  - City of Chicago Data Portal — School Locations SY2526 (pb6d-zzuh),
-    Boundaries: Community Areas (igwz-8jzy). Published by the City of Chicago
-    under its Terms of Use.
-
-Their terms govern their reuse. Retained here, dated and unaltered, so that
-published figures remain reproducible after upstream revision.
+This repository does not republish third-party pages, PDFs or raw source
+files, and none is covered by the licenses above. Where a project cites such
+a source as evidence, it publishes the URL, access date and SHA-256 of the
+copy it relied on (for example
+projects/cps-space-colocation/data/source/evidence_manifest.csv); the copies
+themselves are preserved privately.

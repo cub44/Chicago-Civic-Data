@@ -759,3 +759,25 @@ room("Nathan S Davis Elementary School", "Davis Annex, 3050 W 39th Pl", "medium"
      ["uic_ocean", "msq_davis"],
      "IDPH names the location an Annex. This is the evidence behind reclassifying the site "
      "in_building; flagged because an annex may be a separate structure on the campus.")
+
+
+# ---- 4. sid ------------------------------------------------------------------
+# A sid is a claim that a center sits in that CPS school. Where the evidence moves
+# a center to a host school that has no CPS id in this release, the sid is left
+# blank rather than kept on the school the input sheet wrongly joined it to.
+
+SID = {}
+
+
+def sid(site, value, conf, srcs, note=""):
+    SID[site] = dict(sid=value, confidence=conf,
+                     sources="; ".join(S[k] for k in srcs), accessed=ACCESSED, note=note)
+
+
+sid("Wilma Rudolph Elementary Learning Center", "", "high", ["340b_hope", "uic_ag"],
+    "sbhc.csv joined this center (IDPH: Hope Health & Wellness SHC) to Wilma Rudolph "
+    "Elementary Learning Center, 610308, by address identity. The only source naming its "
+    "host school, UIC's 2014-12-11 announcement, names Hope Institute Learning Academy, "
+    "which has no CPS id in this release's school roster, so the sid is blank rather than "
+    "Rudolph's. The CPS profile API now places Rudolph at the same address, 1628 W "
+    "Washington Blvd; no source ties the center to Rudolph, and it closed 2024-04-01.")

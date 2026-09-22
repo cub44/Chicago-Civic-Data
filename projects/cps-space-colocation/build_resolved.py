@@ -22,7 +22,7 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
-from resolutions import ACCESSED, HOURS, R, ROOM, SPONSOR_LEGAL_NAME, STATUS
+from resolutions import ACCESSED, HOURS, R, ROOM, SID, SPONSOR_LEGAL_NAME, STATUS
 
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "data" / "source" / "sbhc.csv"
@@ -53,11 +53,19 @@ PROVENANCE_COLS = ["resolution_confidence", "resolution_fields", "resolution_sou
 SUPERSEDED = ["hours"]
 
 # Retired columns: dropped from every processed sheet, not just the publication
-# one. manually_verified was the pre-publication review gate. That gate has been
+# one. The input sheet keeps them; this build never modifies its inputs.
+#
+# manually_verified was the pre-publication review gate. That gate has been
 # replaced, so the column no longer means anything - it was "false" on all 38
-# rows - and there is nothing in it to audit. The input sheet keeps the column;
-# this build never modifies its inputs.
-RETIRED = ["manually_verified"]
+# rows - and there is nothing in it to audit.
+#
+# cps_status_2025, cps_adjusted_su and cps_colo were copied into the input sheet
+# from an earlier space-utilization file than the SY2026 workbook behind
+# utilization.csv, and carry no vintage of their own. Published beside it they
+# contradicted it: five host schools (Marquette, National Teachers, Gary Comer,
+# Sullivan, Roosevelt) had a different status in each file. utilization.csv is
+# the one source of space-use status; join it on sid.
+RETIRED = ["manually_verified", "cps_status_2025", "cps_adjusted_su", "cps_colo"]
 
 RANK = {"high": 3, "medium": 2, "low": 1, "unresolved": 0}
 
@@ -79,7 +87,8 @@ def main():
 
     # every registry key must name a real row, or a join is silently wrong
     for label, keys in (("resolutions", {x["site_name"] for x in R}),
-                        ("STATUS", set(STATUS)), ("HOURS", set(HOURS)), ("ROOM", set(ROOM))):
+                        ("STATUS", set(STATUS)), ("HOURS", set(HOURS)), ("ROOM", set(ROOM)),
+                        ("SID", set(SID))):
         unknown = sorted(keys - set(by_site))
         if unknown:
             raise SystemExit("%s references site_name values not in %s: %s"
@@ -117,13 +126,25 @@ def main():
                              resolved=d["room_or_entrance"], confidence=d["confidence"],
                              sources=d["sources"], accessed=d["accessed"], note=d["note"]))
 
+    for site, d in SID.items():
+        findings.append(dict(site_name=site, field="sid",
+                             cps_value=by_site[site]["sid"], idph_value="", other_value="",
+                             resolved=d["sid"] or "blank: host school has no CPS id",
+                             confidence=d["confidence"], sources=d["sources"],
+                             accessed=d["accessed"], note=d["note"]))
+
+    # the sid a finding is filed under is the corrected one, so no table in the
+    # release associates a center with a school the evidence rules out
+    def published_sid(site):
+        return SID[site]["sid"] if site in SID else by_site[site]["sid"]
+
     ev_cols = ["site_name", "sid", "field", "cps_value", "idph_value", "other_value",
                "resolved", "confidence", "sources", "accessed", "note"]
     with (OUT / "sbhc_discrepancies.csv").open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=ev_cols)
         w.writeheader()
         for x in sorted(findings, key=lambda d: (d["site_name"], d["field"])):
-            x["sid"] = by_site[x["site_name"]]["sid"]
+            x["sid"] = published_sid(x["site_name"])
             w.writerow({c: x.get(c, "") for c in ev_cols})
 
     # ---- resolved + publish sheets --------------------------------------
@@ -179,6 +200,14 @@ def main():
             o["hours_medical_school_year"] = r["hours"]
             fields.append("hours_split(carried)")
 
+        if r["site_name"] in SID:
+            sd = SID[r["site_name"]]
+            fields.append("sid(%s)" % sd["confidence"])
+            confs.append(sd["confidence"])
+            merge_sources(srcs, sd["sources"])
+            if sd["note"]:
+                notes.append("[sid] %s" % sd["note"])
+
         if r["site_name"] in ROOM:
             rm = ROOM[r["site_name"]]
             o["room_or_entrance"] = rm["room_or_entrance"]
@@ -229,6 +258,10 @@ def main():
             # single canonical sponsor; the two source columns stay for audit
             p["sponsor"] = o["resolved_sponsor"] or o["sponsor_cps"] or o["sponsor_idph"]
             p["sponsor_legal_name"] = o["sponsor_legal_name"]
+            # sbhc_resolved.csv keeps the input sid for audit; publication carries
+            # the corrected one, which may be blank
+            if o["site_name"] in SID:
+                p["sid"] = SID[o["site_name"]]["sid"]
             # The address-identity join was wrong for all three rows it created.
             # Preserve it in the audit sheet, but never publish it as a valid basis.
             if p["match_basis"] == "address_identity":

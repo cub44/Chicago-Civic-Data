@@ -1,83 +1,83 @@
 name,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bldg_name,bldg_stories,footprint_area_sqft,candidates_in_range,provenance,source
 Albany Park,library_named,41.975473,-87.713852,23,6.1,79179,5150 N KIMBALL AVE,ALBANY PARK,1,11071.6,136,sourced,socrata_syp8-uezg@2026-09-13
-Altgeld,largest_nearby,41.657821,-87.598582,72.3,62.3,806373,13064-13086 S ELLIS AVE,,0,6207.5,16,sourced,socrata_syp8-uezg@2026-09-13
-Archer Heights,address_exact,41.800877,-87.726731,32.9,11.6,863905,5055 S ARCHER AVE,ARCHER HEIGHTS BRANCH LIBRARY,0,13451.4,86,sourced,socrata_syp8-uezg@2026-09-13
-Austin,address_exact,41.889019,-87.765817,17.2,2.6,351473,5609-5615 W RACE AVE,AUSTIN,0,11071.9,35,sourced,socrata_syp8-uezg@2026-09-13
-Austin-Irving,address_exact,41.953239,-87.779774,42.5,20.5,845893,6100-6114 W IRVING PARK RD,,0,9388.6,179,sourced,socrata_syp8-uezg@2026-09-13
+Altgeld,largest_nearby,41.657821,-87.598582,72.3,62.3,806373,13064-13086 S ELLIS AVE,,,6207.5,16,sourced,socrata_syp8-uezg@2026-09-13
+Archer Heights,address_exact,41.800877,-87.726731,32.9,11.6,863905,5055 S ARCHER AVE,ARCHER HEIGHTS BRANCH LIBRARY,,13451.4,86,sourced,socrata_syp8-uezg@2026-09-13
+Austin,address_exact,41.889019,-87.765817,17.2,2.6,351473,5609-5615 W RACE AVE,AUSTIN,,11071.9,35,sourced,socrata_syp8-uezg@2026-09-13
+Austin-Irving,address_exact,41.953239,-87.779774,42.5,20.5,845893,6100-6114 W IRVING PARK RD,,,9388.6,179,sourced,socrata_syp8-uezg@2026-09-13
 Avalon,address_exact,41.746394,-87.586298,24.4,10.1,826025,8148 S STONY ISLAND AVE,AVALON,1,13361.5,96,sourced,socrata_syp8-uezg@2026-09-13
-Back of the Yards,library_named,41.808886,-87.677651,56.1,44.2,878300,4650 S DAMEN AVE,BACK OF THE YARDS BRANCH LIBRARY,0,16229.1,65,sourced,socrata_syp8-uezg@2026-09-13
-Beverly,address_exact,41.72138,-87.672294,24.4,6.1,888518,1962 W 95TH ST,BEVERLY BRANCH LIBRARY,0,17064.4,93,sourced,socrata_syp8-uezg@2026-09-13
+Back of the Yards,library_named,41.808886,-87.677651,56.1,44.2,878300,4650 S DAMEN AVE,BACK OF THE YARDS BRANCH LIBRARY,,16229.1,65,sourced,socrata_syp8-uezg@2026-09-13
+Beverly,address_exact,41.72138,-87.672294,24.4,6.1,888518,1962 W 95TH ST,BEVERLY BRANCH LIBRARY,,17064.4,93,sourced,socrata_syp8-uezg@2026-09-13
 Bezazian,library_named,41.971642,-87.660732,21,0.2,91306,4911 N MAGNOLIA AVE,BEZAZIAN,1,10404.6,77,sourced,socrata_syp8-uezg@2026-09-13
-Blackstone,largest_nearby,41.806003,-87.589761,71.4,30.4,449484,4903 S LAKE PARK AVE,,0,30989.5,35,sourced,socrata_syp8-uezg@2026-09-13
+Blackstone,largest_nearby,41.806003,-87.589761,71.4,30.4,449484,4903 S LAKE PARK AVE,,,30989.5,35,sourced,socrata_syp8-uezg@2026-09-13
 Brainerd,address_exact,41.732515,-87.657732,7.8,0,815653,1348-1352 W 89TH ST,BRAINERD,1,7639.4,133,sourced,socrata_syp8-uezg@2026-09-13
 Brighton Park,address_exact,41.815056,-87.703197,40.1,20.4,433640,4312-4314 S ARCHER AVE,BRIGHTON PARK,1,11082.5,154,sourced,socrata_syp8-uezg@2026-09-13
 Bucktown-Wicker Park,address_exact,41.912552,-87.680309,21.9,2.5,298615,1701 N MILWAUKEE AVE,Bucktown-Wicker Park,1,8698.1,132,sourced,socrata_syp8-uezg@2026-09-13
 Budlong Woods,address_exact,41.98337,-87.696426,37.6,22.6,815865,5630 N LINCOLN AVE,Budlong Wood Library Branch,1,13115.6,114,sourced,socrata_syp8-uezg@2026-09-13
-Canaryville,address_exact,41.816479,-87.642598,15.2,1.9,837296,640-646 W 43RD ST,,0,5572.1,194,sourced,socrata_syp8-uezg@2026-09-13
-Chicago Bee,address_exact,41.828012,-87.626206,28.3,5.2,420309,3647-3657 S STATE ST,CHICAGO BEE,0,8249.6,17,sourced,socrata_syp8-uezg@2026-09-13
+Canaryville,address_exact,41.816479,-87.642598,15.2,1.9,837296,640-646 W 43RD ST,,,5572.1,194,sourced,socrata_syp8-uezg@2026-09-13
+Chicago Bee,address_exact,41.828012,-87.626206,28.3,5.2,420309,3647-3657 S STATE ST,CHICAGO BEE,,8249.6,17,sourced,socrata_syp8-uezg@2026-09-13
 Chicago Lawn,address_exact,41.781905,-87.703499,13.5,0,525224,6116-6120 S KEDZIE AVE,CHICAGO LAWN,2,10360.1,146,sourced,socrata_syp8-uezg@2026-09-13
 Chinatown,address_exact,41.853838,-87.6321,33.6,20,894375,2100 S WENTWORTH AVE,china town public library,2,6071,49,sourced,socrata_syp8-uezg@2026-09-13
 Clearing,address_exact,41.776446,-87.782342,26.3,4,544773,6423 W 63RD PL,CLEARING,1,13617,195,sourced,socrata_syp8-uezg@2026-09-13
-Coleman,address_exact,41.780132,-87.606835,29.2,6.3,529463,731 E 63RD ST,BESSIE COLEMAN,0,13231.8,90,sourced,socrata_syp8-uezg@2026-09-13
-"Daley, Richard J.",address_exact,41.832568,-87.646467,29.1,9.7,836904,3400-3408 S HALSTED ST,DALEY BRANCH LIBRARY,0,10840.8,183,sourced,socrata_syp8-uezg@2026-09-13
-"Daley, Richard M.",largest_nearby,41.89524,-87.705804,74.6,55.1,861077,3139 W CHICAGO AVE,,0,11011.3,74,sourced,socrata_syp8-uezg@2026-09-13
+Coleman,address_exact,41.780132,-87.606835,29.2,6.3,529463,731 E 63RD ST,BESSIE COLEMAN,,13231.8,90,sourced,socrata_syp8-uezg@2026-09-13
+"Daley, Richard J.",address_exact,41.832568,-87.646467,29.1,9.7,836904,3400-3408 S HALSTED ST,DALEY BRANCH LIBRARY,,10840.8,183,sourced,socrata_syp8-uezg@2026-09-13
+"Daley, Richard M.",largest_nearby,41.89524,-87.705804,74.6,55.1,861077,3139 W CHICAGO AVE,,,11011.3,74,sourced,socrata_syp8-uezg@2026-09-13
 Douglass,library_named,41.86434,-87.710158,8.1,0.1,373885,1303 S HOMAN AVE,DOUGLASS,1,7185.5,153,sourced,socrata_syp8-uezg@2026-09-13
 Dunning,address_exact,41.943034,-87.813933,18.4,3.8,891912,7455 W CORNELIA AVE,CHICAGO PUBLIC LIBRARY,2,6065.2,189,sourced,socrata_syp8-uezg@2026-09-13
 Edgebrook,address_exact,41.997032,-87.761872,28.7,8.3,815650,5315-5331 W DEVON AVE,EDGEBROOK BRANCH LIBRARY,2,8522.8,114,sourced,socrata_syp8-uezg@2026-09-13
 Edgewater,address_exact,41.991205,-87.660671,33.2,10.1,40286,6000 N BROADWAY,EDGEWATER,1,11212.4,74,sourced,socrata_syp8-uezg@2026-09-13
 Gage Park,address_exact,41.793437,-87.694176,15.8,0.5,486360,2807 W 55TH ST,GAGE PARK,2,2705,242,sourced,socrata_syp8-uezg@2026-09-13
 Galewood-Mont Clare,largest_nearby,41.920573,-87.799197,118.4,103.4,278366,2218 N NEWLAND AVE,,4,8374.4,66,sourced,socrata_syp8-uezg@2026-09-13
-Garfield Ridge,address_exact,41.792996,-87.780188,10,2.1,854511,6348 S ARCHER AVE,,0,7669,132,sourced,socrata_syp8-uezg@2026-09-13
-Greater Grand Crossing,address_exact,41.762482,-87.60043,11.8,3,582283,1000 E 73RD ST,,0,1918.4,50,sourced,socrata_syp8-uezg@2026-09-13
+Garfield Ridge,address_exact,41.792996,-87.780188,10,2.1,854511,6348 S ARCHER AVE,,,7669,132,sourced,socrata_syp8-uezg@2026-09-13
+Greater Grand Crossing,address_exact,41.762482,-87.60043,11.8,3,582283,1000 E 73RD ST,,,1918.4,50,sourced,socrata_syp8-uezg@2026-09-13
 Hall,address_exact,41.807163,-87.622228,41.6,16.6,448165,4801-4811 S MICHIGAN AVE,HALL,1,8337.6,60,sourced,socrata_syp8-uezg@2026-09-13
 Harold Washtington Library Center,address_exact,41.876313,-87.628209,70,6.9,362058,400 S STATE ST,HAROLD WASHINGTON,9,74565.9,17,sourced,socrata_syp8-uezg@2026-09-13
-Hegewisch,address_exact,41.659399,-87.548808,13.5,0,804852,3048-3054 E 130TH ST,HEGEWISCH,0,12634,199,sourced,socrata_syp8-uezg@2026-09-13
+Hegewisch,address_exact,41.659399,-87.548808,13.5,0,804852,3048-3054 E 130TH ST,HEGEWISCH,,12634,199,sourced,socrata_syp8-uezg@2026-09-13
 Humboldt Park,address_exact,41.910433,-87.705291,21.9,0,835845,1605 N TROY ST,HUMBOLDT PARK BRANCH LIBRARY,1,13302,117,sourced,socrata_syp8-uezg@2026-09-13
 Independence,address_exact,41.954161,-87.720294,23.1,10.9,152810,4022-4026 N ELSTON AVE,,1,6836.1,135,sourced,socrata_syp8-uezg@2026-09-13
 Jefferson Park,address_exact,41.967348,-87.761992,25.8,5.4,108908,5363 W LAWRENCE AVE,JEFFERSON PARK,1,10778.9,101,sourced,socrata_syp8-uezg@2026-09-13
 Jeffery Manor,address_exact,41.713183,-87.565537,29.2,6.4,815652,2401 E 100TH ST,JEFFERY MANOR,1,7460.6,131,sourced,socrata_syp8-uezg@2026-09-13
 Kelly,address_exact,41.781994,-87.637256,11.5,1.1,523722,6151 S NORMAL BLVD,KELLY,2,5802.2,108,sourced,socrata_syp8-uezg@2026-09-13
-King,library_named,41.831812,-87.617774,26,9.8,416445,3430-3436 S DR MARTIN LUTHER KING JR DR,"MARTIN LUTHER KING, JR.",0,9472.2,62,sourced,socrata_syp8-uezg@2026-09-13
-Legler Regional,address_exact,41.87932,-87.725284,16.2,4.2,359103,115 S PULASKI RD,LEGLER,0,11872.9,109,sourced,socrata_syp8-uezg@2026-09-13
-Lincoln Belmont,address_exact,41.940322,-87.670771,26.4,3.1,815651,1635-1659 W MELROSE ST,LINCOLN BELMONT BRANCH LIBRARY,0,13292,166,sourced,socrata_syp8-uezg@2026-09-13
-Lincoln Park,address_exact,41.925616,-87.658148,24.3,0,261077,1148-1158 W FULLERTON AVE,LINCOLN PARK,0,15948.8,112,sourced,socrata_syp8-uezg@2026-09-13
-Little Italy,largest_nearby,41.869535,-87.659883,70.4,62.2,369629,921-927 S ADA ST,,0,8908.1,158,sourced,socrata_syp8-uezg@2026-09-13
+King,library_named,41.831812,-87.617774,26,9.8,416445,3430-3436 S DR MARTIN LUTHER KING JR DR,"MARTIN LUTHER KING, JR.",,9472.2,62,sourced,socrata_syp8-uezg@2026-09-13
+Legler Regional,address_exact,41.87932,-87.725284,16.2,4.2,359103,115 S PULASKI RD,LEGLER,,11872.9,109,sourced,socrata_syp8-uezg@2026-09-13
+Lincoln Belmont,address_exact,41.940322,-87.670771,26.4,3.1,815651,1635-1659 W MELROSE ST,LINCOLN BELMONT BRANCH LIBRARY,,13292,166,sourced,socrata_syp8-uezg@2026-09-13
+Lincoln Park,address_exact,41.925616,-87.658148,24.3,0,261077,1148-1158 W FULLERTON AVE,LINCOLN PARK,,15948.8,112,sourced,socrata_syp8-uezg@2026-09-13
+Little Italy,largest_nearby,41.869535,-87.659883,70.4,62.2,369629,921-927 S ADA ST,,,8908.1,158,sourced,socrata_syp8-uezg@2026-09-13
 Little Village,address_exact,41.849621,-87.704832,17.7,1.4,892275,2301-2315 S KEDZIE AVE,LITTLE VILLAGE LIBRARY,1,17720.1,159,sourced,socrata_syp8-uezg@2026-09-13
 Logan Square,address_exact,41.925077,-87.703695,28.2,10.7,263607,3030-3036 W FULLERTON AVE,LOGAN SQUARE BRANCH,1,13326.1,138,sourced,socrata_syp8-uezg@2026-09-13
-Lozano,address_exact,41.857537,-87.660934,20.4,0.7,378294,1803-1805 S LOOMIS ST,RUDY LOZANO,0,21239.1,152,sourced,socrata_syp8-uezg@2026-09-13
-Manning,address_exact,41.881022,-87.679562,28.1,6.7,357731,6 S HOYNE AVE,MABEL MANNING,0,13133.5,51,sourced,socrata_syp8-uezg@2026-09-13
+Lozano,address_exact,41.857537,-87.660934,20.4,0.7,378294,1803-1805 S LOOMIS ST,RUDY LOZANO,,21239.1,152,sourced,socrata_syp8-uezg@2026-09-13
+Manning,address_exact,41.881022,-87.679562,28.1,6.7,357731,6 S HOYNE AVE,MABEL MANNING,,13133.5,51,sourced,socrata_syp8-uezg@2026-09-13
 Mayfair,address_exact,41.968342,-87.73819,21.4,5,844635,4400-4406 W LAWRENCE AVE,,1,10383.4,136,sourced,socrata_syp8-uezg@2026-09-13
 McKinley Park,address_exact,41.830163,-87.673586,17.2,2.4,418266,1915-1925 W 35TH ST,MCKINLEY PARK,1,12714,204,sourced,socrata_syp8-uezg@2026-09-13
 Merlo,address_exact,41.940278,-87.646211,22.2,7.5,205930,642-644 W BELMONT AVE,JOHN MERLO,2,6061.8,119,sourced,socrata_syp8-uezg@2026-09-13
-Mount Greenwood,address_exact,41.693036,-87.701198,14.6,0.6,767477,11000-11014 S KEDZIE AVE,MOUNT GREENWOOD,0,13010.9,157,sourced,socrata_syp8-uezg@2026-09-13
+Mount Greenwood,address_exact,41.693036,-87.701198,14.6,0.6,767477,11000-11014 S KEDZIE AVE,MOUNT GREENWOOD,,13010.9,157,sourced,socrata_syp8-uezg@2026-09-13
 Near North,address_exact,41.904131,-87.636574,22.4,4.5,320193,310 W DIVISION ST,NEAR NORTH BRANCH,1,13555.5,51,sourced,socrata_syp8-uezg@2026-09-13
 North Austin,address_exact,41.909607,-87.768896,19.4,4.1,851543,5724 W NORTH AVE,,1,4378.6,191,sourced,socrata_syp8-uezg@2026-09-13
 North Pulaski,library_named,41.910182,-87.734204,48,3.7,307411,1600-1610 N KILDARE AVE,NORTH PULASKI,1,10232.2,103,sourced,socrata_syp8-uezg@2026-09-13
 Northtown,address_exact,42.005304,-87.690459,32.2,8,841655,6800-6810 N WESTERN AVE,,1,13986.8,82,sourced,socrata_syp8-uezg@2026-09-13
-Obama Presidential Center Library,largest_nearby,41.78528,-87.586936,96.4,86.3,511358,6018-6024 S STONY ISLAND AVE,,0,11047.8,3,sourced,socrata_syp8-uezg@2026-09-13
+Obama Presidential Center Library,largest_nearby,41.78528,-87.586936,96.4,86.3,511358,6018-6024 S STONY ISLAND AVE,,,11047.8,3,sourced,socrata_syp8-uezg@2026-09-13
 Oriole Park,address_exact,41.978388,-87.81386,42.8,15.1,825826,7454 W BALMORAL AVE,ORIOLE PARK,1,14859.2,98,sourced,socrata_syp8-uezg@2026-09-13
 Portage-Cragin,address_exact,41.938949,-87.754972,27.9,0.1,847854,5108-5114 W BELMONT AVE,PORTAGE-CRAGIN BRANCH LIBRARY,1,12619.2,143,sourced,socrata_syp8-uezg@2026-09-13
 Pullman,address_exact,41.694369,-87.617965,14.7,2.7,763787,11001 S INDIANA AVE,PULLMAN CPL BRANCH,1,6390,62,sourced,socrata_syp8-uezg@2026-09-13
 Roden,address_exact,41.992106,-87.798026,19.2,1.5,39726,6083 N NORTHWEST HWY,RODEN,1,11076.9,43,sourced,socrata_syp8-uezg@2026-09-13
 Rogers Park,library_named,42.006816,-87.673141,13.9,0,815680,6909-6919 N CLARK ST,ROGERS PARK,3,16952.2,68,sourced,socrata_syp8-uezg@2026-09-13
 Scottsdale,address_exact,41.74917,-87.724563,18.1,0,621774,4101 W 79TH ST,SCOTTSDALE,1,10625.1,139,sourced,socrata_syp8-uezg@2026-09-13
-Sherman Park,address_exact,41.794873,-87.655139,14.8,0.3,481435,5440 S RACINE AVE,SHERMAN PARK,0,5671.4,62,sourced,socrata_syp8-uezg@2026-09-13
+Sherman Park,address_exact,41.794873,-87.655139,14.8,0.3,481435,5440 S RACINE AVE,SHERMAN PARK,,5671.4,62,sourced,socrata_syp8-uezg@2026-09-13
 South Chicago,address_exact,41.7303,-87.549514,17.7,5.8,680843,9055 S HOUSTON AVE,SOUTH CHICAGO,1,8491.1,96,sourced,socrata_syp8-uezg@2026-09-13
-South Shore,address_exact,41.762444,-87.563724,16.7,2.8,581455,2505 E 73RD ST,SOUTH SHORE,0,6443.4,85,sourced,socrata_syp8-uezg@2026-09-13
+South Shore,address_exact,41.762444,-87.563724,16.7,2.8,581455,2505 E 73RD ST,SOUTH SHORE,,6443.4,85,sourced,socrata_syp8-uezg@2026-09-13
 Sulzer Regional Library,address_exact,41.962785,-87.684381,33,0,122112,4455 N LINCOLN AVE,SULZER REGIONAL,3,21854.2,86,sourced,socrata_syp8-uezg@2026-09-13
 Thurgood Marshall,address_exact,41.757366,-87.654373,25.8,8,596834,7506 S RACINE AVE,THURGOOD MARSHALL,1,13375.9,54,sourced,socrata_syp8-uezg@2026-09-13
-Toman,address_exact,41.842141,-87.724864,19.5,0,877492,2708 S PULASKI RD,TOMAN,0,16432.6,220,sourced,socrata_syp8-uezg@2026-09-13
+Toman,address_exact,41.842141,-87.724864,19.5,0,877492,2708 S PULASKI RD,TOMAN,,16432.6,220,sourced,socrata_syp8-uezg@2026-09-13
 Uptown,address_exact,41.958195,-87.654274,14.4,0,138667,929 W BUENA AVE,UPTOWN,1,13127.8,35,sourced,socrata_syp8-uezg@2026-09-13
 Vodak-East Side,largest_nearby,41.701987,-87.613283,126,115.8,743867,10557 S DR MARTIN LUTHER KING JR DR,,2,2003.5,243,sourced,socrata_syp8-uezg@2026-09-13
 Walker,address_exact,41.692186,-87.673732,26.9,14,768713,11071-11073 S HOYNE AVE,WALKER,3,6772.4,62,sourced,socrata_syp8-uezg@2026-09-13
 Water Works,address_exact,41.897172,-87.62372,44.8,0.8,335460,161-163 E PEARSON ST,CHICAGO AVENUE PUMPING STATION,2,35311.2,8,sourced,socrata_syp8-uezg@2026-09-13
 West Belmont,address_exact,41.936729,-87.786207,17.4,0,224398,3100-3104 N NARRAGANSETT AVE,WEST BELMONT,1,10212,191,sourced,socrata_syp8-uezg@2026-09-13
-West Chicago Avenue,address_exact,41.895276,-87.747996,20.7,8.8,826038,4856 W CHICAGO AVE,West Chicago Avenue Branch,0,7205.4,151,sourced,socrata_syp8-uezg@2026-09-13
-West Englewood,address_exact,41.779072,-87.668437,23.3,9.1,815842,1745 W 63RD ST,WEST ENGLEWOOD,0,6214.5,108,sourced,socrata_syp8-uezg@2026-09-13
+West Chicago Avenue,address_exact,41.895276,-87.747996,20.7,8.8,826038,4856 W CHICAGO AVE,West Chicago Avenue Branch,,7205.4,151,sourced,socrata_syp8-uezg@2026-09-13
+West Englewood,address_exact,41.779072,-87.668437,23.3,9.1,815842,1745 W 63RD ST,WEST ENGLEWOOD,,6214.5,108,sourced,socrata_syp8-uezg@2026-09-13
 West Lawn,address_exact,41.778903,-87.723666,17.7,0.5,535039,4010-4020 W 63RD ST,WEST LAWN BRANCH LIBRARY,1,14079.2,160,sourced,socrata_syp8-uezg@2026-09-13
-West Loop,containing,41.88365,-87.654754,17.1,0,879774,118 N ABERDEEN ST,,0,5791.2,29,sourced,socrata_syp8-uezg@2026-09-13
-West Pullman,address_exact,41.678048,-87.643202,16,0.9,826374,830 W 119TH ST,WEST PULLMAN BRANCH,0,14021.4,22,sourced,socrata_syp8-uezg@2026-09-13
-West Town,address_exact,41.89578,-87.668367,19.5,0.1,876209,1617-1625 W CHICAGO AVE,,0,22707.3,138,sourced,socrata_syp8-uezg@2026-09-13
+West Loop,containing,41.88365,-87.654754,17.1,0,879774,118 N ABERDEEN ST,,,5791.2,29,sourced,socrata_syp8-uezg@2026-09-13
+West Pullman,address_exact,41.678048,-87.643202,16,0.9,826374,830 W 119TH ST,WEST PULLMAN BRANCH,,14021.4,22,sourced,socrata_syp8-uezg@2026-09-13
+West Town,address_exact,41.89578,-87.668367,19.5,0.1,876209,1617-1625 W CHICAGO AVE,,,22707.3,138,sourced,socrata_syp8-uezg@2026-09-13
 "Whitney M. Young, Jr.",library_named,41.750892,-87.614543,36.7,18.1,613836,7901 S DR MARTIN LUTHER KING JR DR,WHITNEY M. YOUNG JR.,1,11103.5,129,sourced,socrata_syp8-uezg@2026-09-13
 Woodson Regional Library,address_exact,41.721132,-87.642781,53.3,4.3,700662,9501-9525 S HALSTED ST,WOODSON REGIONAL,2,34785.2,137,sourced,socrata_syp8-uezg@2026-09-13
 Wrightwood-Ashburn,address_exact,41.737645,-87.702494,41.7,17.4,663969,8530 S KEDZIE AVE,WRIGHTWOOD-ASBURN,1,13887,71,sourced,socrata_syp8-uezg@2026-09-13

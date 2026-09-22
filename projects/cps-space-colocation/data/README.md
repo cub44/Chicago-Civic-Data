@@ -1,13 +1,32 @@
 # Data dictionary
 
-Snapshot: September 21, 2026. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%.
+Release **2026-09-21**, tagged [`cps-space-colocation-2026-09-21`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-21). Cite that date and the file you used. Each source was pulled on its own date, listed below. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%. All dates are YYYY-MM-DD.
+
+### Source pulls
+
+| Source | Publisher's id | Pulled | The source's own date |
+|---|---|---|---|
+| CPS Space Utilization workbook, SY2026 (`spaceuse_2026_final_forweb.xlsx`) | CPS | 2026-09-09 | last updated 2025-12-19 |
+| CPS School Profile Information API | `AllSchoolProfiles` | 2026-09-09 | labels conflict; see below |
+| Chicago Public Schools – School Locations SY2526 | `pb6d-zzuh` | 2026-09-09 | rows updated 2025-09-09 |
+| Boundaries – Community Areas | `igwz-8jzy` | 2026-09-09 | rows updated 2025-04-22 |
+| SBHC input lists (IDPH, CPS, HRSA, CPS school file) | see `sbhc_publish.csv` | 2026-09-11 | varies; see `sbhc_publish.csv` |
+| SBHC evidence pages (38) | `data/source/evidence_manifest.csv` | 2026-09-12 | per page |
+| Libraries – Locations, Contact Information, and Usual Hours of Operation | `x8fc-8rcq` | 2026-09-13 | rows updated 2026-08-24 |
+| Building Footprints | `syp8-uezg` | 2026-09-13 (around schools and libraries), 2026-09-14 (around park buildings and City service sites) | rows updated 2015-08-15 |
+| CPD_Park_Buildings | `vcti-mbcd` | 2026-09-14 | rows updated 2022-05-18; inventory dated 2016-11-04 |
+| CDPH Clinic Locations | `kcki-hnch` | 2026-09-14 | rows updated 2017-08-03 |
+| Senior Centers | `qhfc-4cw2` | 2026-09-14 | rows updated 2019-03-07 |
+| Workforce Centers | `cs4s-nsna` | 2026-09-14 | rows updated 2011-08-21 |
+
+Every row's `source` column names the pulls it came from, as `key@YYYY-MM-DD`.
 
 ### Source-level limitations
 
 - **The profile API contradicts itself on vintage.** It reports
   `SchoolProfileYear: 2026` and `SchoolYearReadable: "School Year 2024-2025"` on
-  all 641 records. Its `StudentCount` differs from the snapshot's profile
-  enrollment on 477 of 483 comparable rows. Treat `enrollment_profile` as an
+  all 641 records. Its `StudentCount` (`enrollment_profile` here) differs from
+  the workbook's 20th-day enrollment on 502 of the 509 schools both publish. Treat `enrollment_profile` as an
   approximate headcount of uncertain year; use `enrollment_20th_day` for
   anything load-bearing.
 - **The space utilization workbook excludes whole categories by design.** Its
@@ -56,7 +75,7 @@ Grain: one school. 642 rows.
 |---|---|---|---|---|
 | `sid` | integer | — | `cps_school_profiles` (`SchoolID`) | 6-digit CPS id. District ids begin 6, charter ids begin 4. Unique in this file. |
 | `name` | text | — | `cps_school_profiles` (`SchoolLongName`) | |
-| `layer` | text | — | derived | Reconstructed from governance × grade category. Only the district and charter layers are derivable from these sources; private schools have no source at all, so they are absent here rather than manufactured. |
+| `layer` | text | — | derived | Reconstructed from governance × grade category: `cps_elem`, `cps_high`, `charter_elem`, `charter_high`, and `other_alt` for the 16 contract, ALOP and SAFE schools. Private schools have no source at all, so they are absent here rather than manufactured. |
 | `governance` | text | — | `cps_school_profiles` (`Governance`) | District, Charter, ALOP, Contract, SAFE. Empty for the one school present only in the space-use file. |
 | `school_type` | text | — | `cps_school_profiles` (`SchoolType`) | Empty string in the API for many schools; stored as empty, not as `"nan"`. |
 | `grades` | text | — | `cps_school_profiles` (`GradesOffered`) | |
@@ -64,7 +83,7 @@ Grain: one school. 642 rows.
 | `address` | text | — | `cps_school_profiles` | `AddressStreet` + zip. For the one school present only in the space-use file (`400105`), `pb6d-zzuh`'s street line, with no zip because that file publishes none. |
 | `lat` / `lon` | float | WGS84 degrees | `socrata_pb6d-zzuh`, falling back to `cps_school_profiles` | Six converted schools are read from `pb6d-zzuh` under their predecessor ids. See "missing coordinates" below. |
 | `student_count` | integer | students | `cps_school_profiles` (`StudentCount`) | The API's own headcount, of uncertain vintage. Published for every school, unlike `enrollment_20th_day`, which exists only where CPS scores the building. **Do not use it where `enrollment_20th_day` exists.** See "headcount" below. |
-| `provenance` | text | — | derived | `sourced` or `unverified`. Source status. |
+| `provenance` | text | — | derived | `sourced` on every row: each comes from the CPS sources `source` names. `unverified` is reserved for a record with no identified source; this release has none. An earlier release labeled the 16 `other_alt` schools `unverified` although they come from the same CPS sources as every other school. |
 | `source` | text | — | derived | Source keys and pull dates that produced the row. |
 
 **Missing coordinates: none.** Every school's coordinate comes from the City's
@@ -135,7 +154,7 @@ Grain: one school-year. 510 rows, all SY2026.
 | `ideal_capacity` | integer | seats | `Ideal Capacity (IC) for Permanent Bldg Only` | Permanent building only.  |
 | `adj_ideal_capacity` | integer | seats | `Adjusted IC 2 After CR Deductions` | The denominator of the published rate, after classroom deductions. |
 | `su_pct` | float | ratio (1.0 = 100%) | `SY2026 Adjusted SU 2` | Published rate. Equals `enrollment_utilization / adj_ideal_capacity` to within 0.01. |
-| `cps_status` | text | — | `Space Use Status` | Underutilized / Efficient / Overcrowded. Empty for the 14 rows without capacity. |
+| `cps_status` | text | — | `Space Use Status` | Underutilized / Efficient / Overcrowded, CPS's own label under its published standard; see "What “underutilized” means" below. Empty for the 14 rows without capacity. |
 | `classrooms_supply` | float | classrooms | `Total Classrooms (CRs)` | Fitting the published file shows this is total *permanent* classrooms; rooms under 650 sq ft count as 0.5, which is why the column is fractional. Excludes modular and leased space. Retains this label until CPS confirms. |
 | `classrooms_modular` | float | classrooms | `Modular CR's` | |
 | `classrooms_leased` | float | classrooms | `Leased CR's` | |
@@ -145,7 +164,10 @@ Grain: one school-year. 510 rows, all SY2026.
 ### The capacity rule
 
 CPS publishes adjusted classrooms and adjusted ideal capacity, but no homeroom
-count. Fitting the published SY2026 file recovers the rule exactly:
+count. Its [Space Utilization Methodology SY26](https://www.cps.edu/globalassets/cps-pages/services-and-supports/school-facilities/facilities-standards/space-utilization-methodology-sy26.pdf) states the rule — 77% of
+an elementary building's classrooms are homerooms at 28 students; a high
+school's ideal capacity is 80% of its classrooms at 30 — and the SY2026 file
+follows it exactly:
 
 ```
 ES:  homerooms      = floor(classrooms_demand × 0.77)
@@ -155,9 +177,28 @@ HS:  homerooms      = classrooms_demand × 0.80
      adj_ideal_capacity = homerooms × 30           79/79 exact
 ```
 
-**The elementary seat figure is 28, not 30.** This is asserted by
-`test_capacity_rule`; if CPS changes the rule the build fails rather than
-drifting.
+**The elementary seat figure is 28, not 30.** The build asserts the rule
+against every row, so if CPS changes it the build fails rather than drifting.
+
+### What “underutilized” means
+
+`cps_status` is CPS's label, not this project's. CPS's [Space Utilization
+Methodology SY26](https://www.cps.edu/globalassets/cps-pages/services-and-supports/school-facilities/facilities-standards/space-utilization-methodology-sy26.pdf) ("Capacity Utilization Standards Described", effective
+for school year 2025–26) sets three bands on the space utilization rate,
+enrollment divided by ideal capacity:
+
+| `cps_status` | CPS's standard | `su_pct` range in this file | Schools |
+|---|---|---|---:|
+| Underutilized | Less than 70% of ideal capacity | 0.03–0.69 | 266 |
+| Efficient | 70% to 110% of ideal capacity | 0.70–1.09 | 196 |
+| Overcrowded | Greater than 110% of ideal capacity | 1.11–1.72 | 34 |
+
+The workbook applies the bands to the adjusted rate, `su_pct` (CPS's *Adjusted
+SU 2*), and every scored row falls in the band its status names. Underutilized
+therefore means an adjusted enrollment below 70% of the seats the building's
+adjusted classroom count allows: its homerooms at 28 or 30 students each. It is a
+statement about homerooms, not floor area, and says nothing about whether any
+room could hold another service.
 
 ### What the utilization enrollment actually excludes
 
@@ -166,8 +207,9 @@ to Cluster or PK programs"** — cluster programs being separate-classroom
 placements for students needing significantly modified curriculum with moderate
 to intensive support for over 61% of the day.
 
-Pre-K alone does not account for it. 56 schools that serve no pre-K still show
-`enrollment_utilization < enrollment_20th_day`, including Lane Tech (−63),
+Pre-K alone does not account for it. 60 schools whose `grades` in
+`schools.csv` list no pre-K still show `enrollment_utilization <
+enrollment_20th_day`, including Lane Tech (−63),
 Whitney Young (−82) and the Chicago High School for Agricultural Sciences (−75).
 Walter S Christopher, a special-education elementary with no pre-K, drops from
 306 to 153. The corresponding classroom deductions (cluster, pre-K, other,
@@ -184,9 +226,8 @@ zero is correct, not a missing-value placeholder — each operates entirely in
 leased space (16 to 30 leased classrooms), and each reports permanent ideal
 capacity of 0 and no permanent SU rate. Any surplus space in these buildings is
 a landlord's, not the district's, which bears directly on whether it can host a
-co-located service. `test_zero_permanent_classrooms_is_explained_by_leased_space`
-asserts that a zero is always corroborated by non-permanent space, so a zero
-meaning "unknown" would still fail.
+co-located service. The build asserts that a zero is always corroborated by
+non-permanent space, so a zero meaning "unknown" would fail it.
 
 ---
 
@@ -204,9 +245,10 @@ label and not a school id.
 ---
 
 
-Except for the public evidence bundle for the 2026-09-12 SBHC reconciliation,
-raw snapshots, historical tables, and the broader processing pipeline are
-maintained privately.
+Raw snapshots, historical tables, and the processing pipeline behind every file
+except the SBHC sheets are maintained privately. The pages the SBHC
+reconciliation cites are not republished either; `data/source/evidence_manifest.csv`
+records each one's URL, access date and SHA-256 (see `sbhc_publish.csv` below).
 
 ---
 
@@ -237,8 +279,8 @@ within 160 m of each school point rather than all 820,606 citywide.
 | `edge_m` | meters | Distance from the `schools.csv` point to the footprint's nearest wall; `0` means the source point falls inside the footprint. |
 | `bldg_id` | integer | `syp8-uezg` building id, so any match can be re-checked against the source. |
 | `bldg_address` | text | Address the footprint itself carries, for comparison against the school's. |
-| `bldg_name` | text | Building name in the footprint file, where it has one. Not used for matching, so it is an independent check: 76 of the 80 named snapped buildings carry a school's name. |
-| `bldg_stories` | integer | From the footprint file. Absent where the source is blank. |
+| `bldg_name` | text | Building name in the footprint file, where it has one. Not used for matching, so it is an independent check: 80 snapped rows carry a name, 70 of them containing the word `SCHOOL`. Six more are school names without it (`JONES COLLEGE PREP`, `PLAMONDON`), and four are not schools (a health center, `RUBENSTEIN LUMBER CO.`, `ELSDON`, `HEMINGWAY HOUSE`). A school's name is not always this school's: some footprints still carry a former occupant's. |
+| `bldg_stories` | integer | Story count from the footprint file. **Blank where the file has no figure**, which it writes as 0: blank on 337 of 642 rows here, and in the other building files on 32 of 82 branches, 550 of 743 park buildings and 19 of 50 City service sites. A building of zero stories does not exist, so 0 is never published. |
 | `footprint_area_sqft` | number | The source's own `shape_area`, in square feet, republished unconverted. |
 | `candidates_in_range` | integer | Footprints within the extract radius. A high count is a dense block, not a problem. |
 
@@ -294,8 +336,8 @@ City publishes no newer citywide footprint dataset on this portal.
 
 ## `libraries.csv` — one row per public library branch
 
-Grain: one Chicago Public Library branch. 82 rows. Snapshot pulled
-September 13, 2026; the source's rows were last updated August 24, 2026.
+Grain: one Chicago Public Library branch. 82 rows. Pulled 2026-09-13; the
+source's rows were last updated 2026-08-24.
 
 Source: Socrata `x8fc-8rcq`, *Libraries - Locations, Contact Information, and
 Usual Hours of Operation* — CPL's own branch roster.
@@ -310,7 +352,7 @@ miles from the nearest.
 |---|---|---|
 | `name` | text | CPL's branch name. **The join key** to `library_buildings.csv`; unique across all 82 rows. |
 | `cpl_location_id` | integer | CPL's internal location id, parsed from the branch's own `website` URL. The dataset publishes no id column, so this is derived rather than sourced — join to chipublib.org with it, but join within this project on `name`. |
-| `address` | text | As published, with CPL's abbreviating full stops. |
+| `address` | text | As published, with CPL's abbreviating periods. |
 | `zip` | text | `city` and `state` are omitted: both are constant across all 82 rows. |
 | `phone`, `email`, `website` | text | Published branch contact details. |
 | `service_hours` | text | **The usual published schedule, not an observed opening record.** Verbatim free text, not parsed into structured hours — doing so would impose a precision the field does not have. |
@@ -377,7 +419,7 @@ Checked against the branches the address rule already matched, the label agrees
 with the footprint chosen in 56 of 58 cases, and no branch has two labeled
 footprints within 60 m. Both disagreements are cases the label gets right and
 the address rule gets wrong: Gage Park sits 0.5 m outside the footprint the City
-labels `GAGE PARK` and just inside its unlabelled neighbor; Whitney M. Young,
+labels `GAGE PARK` and just inside its unlabeled neighbor; Whitney M. Young,
 Jr. matched an address range 54.8 m away — inside the cap, but exactly the
 block-face collision that cap exists to bound — while its labeled footprint is
 18.1 m away. Six further branches are corner sites addressed on the cross
@@ -404,9 +446,9 @@ visible rather than being absorbed into a coordinate.
 
 ## `park_facilities.csv` — one row per Chicago Park District building
 
-Grain: one building on Park District premises. 743 rows. Snapshot pulled
-September 14, 2026; the source's rows were last updated May 18, 2022, and the
-portal describes the inventory as "as of November 4, 2016".
+Grain: one building on Park District premises. 743 rows. Pulled 2026-09-14;
+the source's rows were last updated 2022-05-18, and the portal dates the
+inventory itself 2016-11-04.
 
 Source: Socrata `vcti-mbcd`, *CPD_Park_Buildings*, the tabular dataset behind the
 portal's `u7uu-j2ma` map view, *Parks - Chicago Park District Buildings
@@ -431,7 +473,7 @@ field house staffed.
 | `bldg_id` | text | CPD's building id. Published, but **not unique** — see `objectid`. |
 | `bldg_name` | text | CPD's building name. Blank on 62 rows. |
 | `category` | text | **Derived**, and the only derived classification here: `field_house`, `museum`, `pool`, `stadium`, `other`, from `bldg_type` alone. See below. |
-| `bldg_type` | text | CPD's own type, **verbatim**, 38 distinct values. Published beside `category` so the grouping loses nothing. Four rows carry an `INACTIVE: ` prefix in the type string itself. |
+| `bldg_type` | text | CPD's own type, **verbatim**, 38 distinct values. Published beside `category` so the grouping loses nothing. Three rows carry an `INACTIVE: ` prefix in the type string itself. |
 | `field_house_class` | text | The class CPD grades a field house at, parsed from `bldg_type` — `A1 A2 A3 A4 AA B BH1 BH2 C D D2 JOINT`. Blank for everything that is not a field house. |
 | `status` | text | `ACTIVE` / `INACTIVE` as published; blank on one row. A standing building, not a programmed one. |
 | `year_built` | integer | **Blank where CPD publishes 0**, which is its null. Present on 333 of 743 rows, range 1836–2020. |
@@ -477,7 +519,7 @@ field house is categorized as a field house. `bldg_type` keeps the prefix and
 - The source contradicts itself in places, and is published as found rather than
   reconciled. `objectid` 303, a Jackson Park comfort station, is typed
   `INACTIVE: COMFORT STATION` and statused `ACTIVE`. Four buildings carry a
-  build year after the November 2016 inventory date.
+  build year after the 2016-11-04 inventory date.
 
 ---
 
@@ -552,17 +594,17 @@ published so the condition stays visible.
 ## `health_clinics.csv` — one row per CDPH clinic
 
 Grain: one clinic. 24 rows. Source: Socrata `kcki-hnch`, the tabular dataset
-behind the portal's `4msa-kt5t` map view, pulled September 14, 2026.
+behind the portal's `4msa-kt5t` map view, pulled 2026-09-14.
 
 **A location roster of uncertain currency**, described by the portal as "Current
-as of June 2016" with rows last updated in August 2017, and carrying **no
+as of June 2016" with rows last updated 2017-08-03, and carrying **no
 operating-status column at all**. See the source-level limitations above.
 
 | Column | Type | Notes |
 |---|---|---|
 | `site_id` | text | The data portal's own row handle. **The join key** for `health_clinic_buildings.csv`. Used because the dataset publishes no id column and `site_name` is not unique — two rows are both "Erie Health Center", at different addresses. It identifies a row within this snapshot and is **not** a durable public identifier. |
 | `site_name` | text | CDPH's own site name, verbatim. Not unique. |
-| `category` | text | `mental_health` (5), `wic` (15), `sti` (4). A one-to-one relabelling of `clinic_type`, and the three map layers. CDPH publishes exactly three types, so there is no `other` bucket. |
+| `category` | text | `mental_health` (5), `wic` (15), `sti` (4). A one-to-one relabeling of `clinic_type`, and the three map layers. CDPH publishes exactly three types, so there is no `other` bucket. |
 | `clinic_type` | text | CDPH's own type, verbatim, published beside `category`. |
 | `site_number` | integer | CDPH's site number, on 11 of 24 rows. Not a key — it cannot join the other 13. |
 | `hours_of_operation` | text | The published schedule, not an observed opening record, and of the same 2016 vintage as the rest of the row. |
@@ -598,10 +640,10 @@ collapsing three services into one would delete two of them.
 ## `senior_centers.csv` — one row per DFSS senior center
 
 Grain: one center. 21 rows. Source: Socrata `qhfc-4cw2`, the tabular dataset
-behind the portal's `8ayb-6mjs` map view, pulled September 14, 2026.
+behind the portal's `8ayb-6mjs` map view, pulled 2026-09-14.
 
-**A location roster the portal itself dates to 2011**, last edited in March
-2019, with no operating-status column.
+**A location roster the portal itself dates to 2011**, last edited 2019-03-07,
+with no operating-status column.
 
 | Column | Type | Notes |
 |---|---|---|
@@ -620,11 +662,11 @@ behind the portal's `8ayb-6mjs` map view, pulled September 14, 2026.
 ## `workforce_centers.csv` — one row per DFSS workforce center
 
 Grain: one center. 5 rows. Source: Socrata `cs4s-nsna`, the tabular dataset
-behind the portal's `i4rz-w47p` map view, pulled September 14, 2026.
+behind the portal's `i4rz-w47p` map view, pulled 2026-09-14.
 
 **The stalest of the three, and the one whose stated vintage says least.** The
 portal labels it a "Current list", which dates nothing, while its rows have not
-been edited since **August 2011**. Five rows is a short enough list that a gap
+been edited since **2011-08-21**. Five rows is a short enough list that a gap
 means this file does not cover an area, not that employment services are absent
 from it.
 
@@ -718,34 +760,147 @@ building, not a matching error; nothing is deduplicated.
 
 ## `sbhc_publish.csv` — one row per school-based health center
 
-Grain: one health center. 38 rows: 32 operating, two closed, one
-closed-or-consolidated, and three unverified. Closed centers are retained as
-historical records and are not evidence that a host school ceased operating.
+Grain: one health center. 38 rows: 33 operating, two closed, one
+closed-or-consolidated, and two unverified (the TCA mobile units). CPS states
+there are 33 centers citywide, the number marked `operating`. Closed centers are
+retained as historical records and are not evidence that a host school ceased
+operating. The map draws every row with a fixed site; it hides closed centers by
+default and omits the two mobile units, which have none.
 
-The build also emits `sbhc_resolved.csv`, which preserves 36 of the 37 input
-columns and adds parallel `resolved_*` values, and `sbhc_discrepancies.csv`,
-one row per site-field finding with source values, resolution, confidence,
-citations, and access date. Processed CSVs are generated by `build_resolved.py`; do not edit
-them directly.
+This roster has no machine-readable primary source. It starts from four lists
+pulled 2026-09-11 and joined in `data/source/sbhc.csv`, each one a different
+definition of a center:
+
+| Source key | What it is | Rows asserted |
+|---|---|---:|
+| `idph_shc_certified` | IDPH's list of certified school health centers in Chicago | 34 |
+| `cps_health_centers_sheet` | CPS's health-center sheet (its provider column is labeled SY2021) | 32 |
+| `hrsa_il_school_setting` | HRSA health-center sites in Illinois whose setting is School | 28 |
+| `cps_schools_geojson_2025` | A CPS school file used only to join a center to its school's id, address, community and ward | — |
+
+Every field was then checked against the operator's own pages, HRSA's 340B
+records and CPS's 2025–26 forms booklet, accessed 2026-09-12. `build_resolved.py`
+applies those findings from `resolutions.py`; the processed CSVs are its output
+and are never edited by hand. See `docs/RESOLUTION_NOTES.md` for the source
+hierarchy and the evidence behind each resolution.
+
+### Columns
+
+**Identity and join**
+
+| Column | Type | Notes |
+|---|---|---|
+| `sponsor` | text | The public-facing operating unit (`Tapestry 360 Health`, `UI Health Mile Square Health Center`). One canonical name, resolved from the IDPH and CPS names, which often disagree (stale provider names, a rename, one real change of operator); the two source values stay in `sbhc_resolved.csv`. Blank on the two unverified mobile units and on Esperanza at Cultivate Collective, whose HRSA grantee (`hrsa_grantee`) is Esperanza Health Centers. |
+| `sponsor_legal_name` | text | The legal grantee, where it differs from `sponsor` and has been established. Only the four UI Health rows: `Board of Trustees, U of I at Chicago`. |
+| `site_name` | text | The input sheet's row label, unique, and the key `resolutions.py` joins on. **Not the host school**: on the Hope row it still reads `Wilma Rudolph Elementary Learning Center`, the school the input sheet wrongly matched. Use `school_name` and `sid` for the host. |
+| `sid` | integer | CPS id of the host school, joining to `schools.csv` and `utilization.csv`. Blank where there is no CPS host: the mobile units, Esperanza at Cultivate Collective, and the closed Hope Health & Wellness center (see below). Unique where present. |
+| `school_name` | text | Host school as the evidence names it. Can be present without a `sid` when the host has no CPS id in this release (`Hope Institute Learning Academy`, `Academy for Global Citizenship`). |
+| `idph_center_name` | text | The center's name on the IDPH certified list. Blank on the four rows IDPH does not list. |
+| `campus_sids` | text | `;`-separated CPS ids of every school sharing the host building, on the two shared campuses (Greater Lawndale's four schools; Orr and KIPP One). A center there serves a campus, not one school. |
+| `match_basis` | enum | How the row was joined to a school: `cps_school_id+cps_directory_address` (26), `cps_school_id+school_name` (5), `evidence_resolution` (3, rows whose original address join was wrong and which the evidence fixed), `hrsa_site_name_mobile` (2), `cps_offsite_override` (1, Mansueto) and `unmatched` (1, Cultivate Collective). |
+
+**Where it is**
+
+| Column | Type | Notes |
+|---|---|---|
+| `setting` | enum | `in_building` (33): inside CPS school space. `school_linked` (3): serves a school from a separate building (Johnson, Gary Comer, Mansueto). `mobile` (2): no fixed site. |
+| `site_address` | text | The center's own address, which can differ from the school's: Farragut's clinic has its own entrance at 3256 W 24th St. |
+| `school_address` | text | The host school's building address, from the CPS school file. |
+| `zip` | text | The center's zip. |
+| `community`, `ward` | text | Community area and ward of the host school's building, from the CPS school file. Blank where there is no host school. |
+| `lat` / `lon` | decimal | WGS84. Where the **center** is, never a school it is merely linked to; `coord_basis` says where each came from. The two mobile units carry HRSA's coordinate for their operator's office, which is why the map does not draw them. |
+| `coord_basis` | enum | `hrsa_site` (28): HRSA's geocode of the registered site. `cps_school_building` (8): the host school's building point, used only for `in_building` rows. `cdph_2014_geocode` (1): CDPH's 2014 geocode of the Gary Comer Youth Center, an address that has not changed. `cps_offsite_override` (1): CPS's own off-site point for Mansueto's clinic. |
+| `room_or_entrance` | text | A published room number or named exterior door, on 15 `in_building` rows. The strongest evidence that a center occupies school space; never set on a `school_linked` or `mobile` row. |
+
+**Which list asserts it**
+
+| Column | Type | Notes |
+|---|---|---|
+| `idph_certified` | `true`/`false` | On IDPH's certified list. 34 rows. |
+| `cps_listed` | `true`/`false` | In CPS's health-center sheet. 32 rows. |
+| `hrsa_scope` | `true`/`false` | In HRSA's school-setting site list. 28 rows. The three flags are never collapsed into one, and every row has at least one `true`. |
+| `hrsa_site_num` | text | HRSA's BPHC site number, e.g. `BPS-H80-013554`. Unique. |
+| `hrsa_site_name`, `hrsa_grantee` | text | HRSA's site name and grantee, verbatim and in HRSA's capitals. |
+| `hrsa_setting_desc`, `hrsa_site_type`, `hrsa_status`, `hrsa_sbhc_subprogram` | text | HRSA's setting (`School` on every row it lists), site type, status (`Active`) and school-based subprogram flag (`N` on all 28), verbatim. `hrsa_status` was not re-verified and asserts nothing about current operation. |
+
+All nine HRSA columns are blank on the 10 rows HRSA does not list.
+
+**Access and hours**
+
+| Column | Type | Notes |
+|---|---|---|
+| `access_text` | text | Who may use the center, in the wording CPS or the operator publishes (`Open to the Community: No Restrictions`, `Open to Enrolled Students at the School`). Blank on the three closed rows, the two mobile units, and Cultivate Collective, which CPS does not list. |
+| `open_to_public` | `true`/`false` | `true` only where `access_text` opens the center to the community (15 rows). Never `true` on a closed row. Blank where `access_text` is. |
+| `phone` | text | The center's phone as published. Blank on four rows where no current number was established. |
+| `hours_medical_school_year` | text | School-year medical schedule, as the operator or CPS writes it. Blank means not established. |
+| `hours_medical_summer` | text | Separate summer schedule where published (Mile Square's two schools; its window is published without a year). Blank never means “same as school year.” |
+| `hours_dental` | text | Separate dental schedule where published (Hibbard). |
+
+No hours column is ever filled on a closed row.
+
+**Status**
 
 | Column | Type | Notes |
 |---|---|---|
 | `operational_status` | enum | `operating`, `closed`, `closed_or_consolidated`, or `unverified`; required on every row. |
-| `closed_on` | ISO date | Present only when a source supplies an actual date. A closed row may correctly remain blank. |
-| `hours_medical_school_year` | text | School-year medical schedule. Blank means not established. |
-| `hours_medical_summer` | text | Separate summer schedule where published. Blank never means “same as school year.” |
-| `hours_dental` | text | Separate dental schedule where published. |
-| `room_or_entrance` | text | Published room or named exterior entrance; present only for `in_building` rows. |
-| `sponsor` | text | Canonical public-facing operating unit. |
-| `sponsor_legal_name` | text | Legal grantee where it differs and has been established. |
-| `resolution_confidence` | enum | Worst confidence among the row's findings: `high`, `medium`, `low`, or `unresolved`. |
-| `resolution_sources` | URL list | Visible provenance for resolved fields. |
-| `verified_on` | ISO date | Evidence access date, not a claim of manual field verification. |
+| `closed_on` | ISO date | Present only when a source supplies an actual date (both closed rows: 2024-04-01, from HRSA's 340B termination records). `closed_or_consolidated` Reavis correctly has none. |
 
-The input sheet's `manually_verified` column is no longer published in either
-processed sheet. It was the pre-publication review gate, it read `false` on all
-38 rows, and the gate it served has been replaced. `data/source/sbhc.csv` still
-carries it, since the build does not modify its inputs.
+**Provenance**
+
+| Column | Type | Notes |
+|---|---|---|
+| `source` | text | The input lists that assert the row, with their pull dates, joined by `+`. |
+| `review_note` | text | The input sheet's own note on a join it flagged for review (a shared campus, an off-site center, a transposed IDPH entry). Nine rows. |
+| `resolution_fields` | text | Every field the build checked on this row, with its confidence, e.g. `phone(high) setting(medium)`. `hours_split(carried)` means the input sheet's single hours value was carried into `hours_medical_school_year` with no split researched. |
+| `resolution_confidence` | enum | Worst confidence among the row's findings: `high`, `medium`, `low`, or `unresolved`. |
+| `resolution_sources` | URL list | Every URL behind the row's resolutions, joined by ` \| `. Each appears in `data/source/evidence_manifest.csv`. |
+| `resolution_note` | text | The finding behind each resolved field, prefixed by the field name in brackets. |
+| `verified_on` | ISO date | The evidence access date, 2026-09-12. Not a claim of manual field verification. |
+
+### Space-use status is not in this file
+
+Join `sid` to `utilization.csv` for a host school's space-use status. An earlier
+release published `cps_status_2025`, `cps_adjusted_su` and `cps_colo` here,
+copied from the `cps_schools_geojson_2025` file. They were an older vintage than
+`utilization.csv`, were not labeled as one, and disagreed with it for five host
+schools (Marquette, National Teachers, Gary Comer, Sullivan and Roosevelt). They
+are retired from both processed sheets; `data/source/sbhc.csv` keeps them because
+the build does not modify its inputs.
+
+### The Hope Health & Wellness center has no `sid`
+
+The row labeled `Wilma Rudolph Elementary Learning Center` is IDPH's Hope Health
+& Wellness SHC at 1628 W Washington Blvd, which closed 2024-04-01. The input sheet
+matched it to Wilma Rudolph (`610308`) because the two share an address. The only
+source naming its host school, UIC's announcement of 2014-12-11, names Hope
+Institute Learning Academy, which has no CPS id in this release, so `sid` is
+blank and `school_name` names Hope. The CPS profile API now places Rudolph at the
+same address; no source ties the center to Rudolph.
+
+### The two companion files
+
+`sbhc_resolved.csv` is the audit sheet: 33 of the 37 input columns unchanged
+(`manually_verified` and the three space-use columns are retired), then a
+`resolved_*` column beside each field the evidence changed — `resolved_sponsor`,
+`resolved_setting`, `resolved_site_address`, `resolved_zip`, `resolved_phone`,
+`resolved_hours`, `resolved_access_text`, `resolved_school_name`,
+`resolved_operational_status`, `resolved_lat_lon` — then the schema and
+provenance columns above. It also keeps the input's `sponsor_cps`,
+`sponsor_idph` and single `hours` columns, which the publication sheet replaces.
+An empty `resolved_*` cell means that field was not changed. The input `sid` is
+kept here for audit; the correction lives in `sbhc_publish.csv` and the findings.
+
+`sbhc_discrepancies.csv` is the evidence table, 152 rows, one per center-field
+finding:
+
+| Column | Notes |
+|---|---|
+| `site_name`, `sid` | The row, under its corrected `sid`. |
+| `field` | The field examined. `hours_split`, `room_or_entrance` and `sid` are findings about the new columns. |
+| `cps_value`, `idph_value`, `other_value` | Each source's value as found, blank where that source is silent. |
+| `resolved` | The value the evidence supports, or blank where it settles nothing. |
+| `confidence` | `high`: the operator's own current page, or two independent current official sources agree. `medium`: one credible current source. `low`: sources conflict and none resolves it. `unresolved`: recorded for review, no value asserted. |
+| `sources`, `accessed`, `note` | Citations (`; `-separated URLs), access date, and the reasoning. |
 
 Five source fields remain unresolved rather than inferred: Drake's school-year
 medical hours and phone conflict across UI Health/CPS pages; Greater Lawndale's
@@ -755,8 +910,19 @@ though the medical/dental schedules are separated into the new columns; and
 Reavis's historical hours are not published because the center is not
 established as operating. See `docs/RESOLUTION_NOTES.md` for full evidence.
 
-The CPS 2025-26 student-health forms booklet p.11 is the only current
+### The evidence behind it
+
+The 38 pages, PDFs and datasets the findings cite are third-party material and
+are not republished here. `data/source/evidence_manifest.csv` records each one:
+`source_key`, the `requested_url` and the `final_url` actually served, `accessed`,
+`content_type`, `bytes`, and the `sha256` of the capture, which is preserved
+privately. Two were captured from the Internet Archive because the live URL failed
+on the day, and three had an unrelated embedded credential redacted before
+hashing; `note` says which. `snapshot_sources.py` recaptures them and can check a
+capture directory against the manifest.
+
+The CPS 2025–26 student-health forms booklet p.11 is the only current
 CPS-published directory used here, and it covers only the “Open to ALL CPS
-Students” subset—not all 33 centers. The CDPH dataset `cjg8-dbka` is a 2014
+Students” subset — not all 33 centers. The CDPH dataset `cjg8-dbka` is a 2014
 snapshot last updated 2014-04-22; it is used only to corroborate unchanged
 addresses and geocodes, never current status.

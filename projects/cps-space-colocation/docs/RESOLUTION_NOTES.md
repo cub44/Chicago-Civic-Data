@@ -1,7 +1,8 @@
 # SBHC cross-source reconciliation — 2026-09-12
 
-151 field-level findings across all 38 rows of `sbhc.csv`, including the three schema
-additions applied in this revision. 5 findings are deliberately left null.
+152 field-level findings across all 38 rows of `sbhc.csv`, including the three schema
+additions applied in this revision and the `sid` correction added in the 2026-09-21
+release. 5 findings are deliberately left null.
 
 **Revision 2 (2026-09-12):** Johnson resolved to `school_linked` on local knowledge; added
 `operational_status` + `closed_on`, split `hours` into `hours_medical_school_year` /
@@ -11,7 +12,8 @@ Neither input sheet was modified. Outputs:
 
 - `sbhc_discrepancies.csv` — the evidence table, one row per (site, field): each source's
   value as found, the resolved value, confidence, citations, access date.
-- `sbhc_resolved.csv` — `sbhc.csv`'s columns untouched, plus `resolved_*` columns so the
+- `sbhc_resolved.csv` — `sbhc.csv`'s columns untouched (less four retired ones:
+  `manually_verified` and the older-vintage `cps_status_2025`, `cps_adjusted_su`, `cps_colo`), plus `resolved_*` columns so the
   two can be diffed, plus per-row citations and confidence. This is the audit artifact.
 - `sbhc_publish.csv` — the canonical sheet. Resolved values overlay the canonical columns,
   the superseded `hours` column is dropped, a single `sponsor` column replaces having to
@@ -63,6 +65,13 @@ the IDPH entry to Rudolph by address identity, and the `match_basis=address_iden
 is what flagged it. The other two `address_identity` rows (Uplift, Reavis) are the closed
 sites. That join rule produced three bad rows out of three; worth retiring.
 
+The 2026-09-21 release also blanks this row's `sid`. `school_name` had already been
+corrected to Hope, but `sid` still read `610308`, Rudolph's id, so the published row named
+one school and joined to another. Hope Institute Learning Academy has no CPS id in this
+release, and UIC's announcement, the only source naming the host, dates from 2014-12-11.
+The CPS profile API now places Rudolph at the same address; nothing ties the center, which
+closed 2024-04-01, to Rudolph.
+
 Separately, `Military Leadership Academy` (sid 609780) is a stale CPS label. Both the
 uploaded CPS sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**.
 
@@ -99,7 +108,7 @@ uploaded CPS sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**.
 
 ## Provider names
 
-- **Heartland Health Center → Tapestry 360 Health** (renamed October 2022) at all six sites:
+- **Heartland Health Center → Tapestry 360 Health** (renamed 2022-10) at all six sites:
   Gale, Hibbard, Kilmer, Roosevelt, Senn, Sullivan. IDPH is stale; CPS is right.
 - **Dunbar and Phillips are Rush, not Mercy.** Rush lists both among its five SBHCs and
   publishes the same phones CPS carries. This is the one sponsor discrepancy that is a real

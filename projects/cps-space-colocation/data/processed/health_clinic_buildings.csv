@@ -1,18 +1,18 @@
 site_id,clinic_name,category,match_quality,bldg_lat,bldg_lon,offset_m,edge_m,bldg_id,bldg_address,bldg_name,bldg_stories,footprint_area_sqft,candidates_in_range,provenance,source
-row-3ras_meb6.ynzq,Erie Health Center,wic,address_exact,41.90336,-87.687736,27.1,8.5,322276,2418 W DIVISION ST,,0,21586,100,sourced,socrata_syp8-uezg@2026-09-14
+row-3ras_meb6.ynzq,Erie Health Center,wic,address_exact,41.90336,-87.687736,27.1,8.5,322276,2418 W DIVISION ST,,,21586,100,sourced,socrata_syp8-uezg@2026-09-14
 row-3xbr.ff99~gjjs,Friend Family Health Center Inc.,wic,address_exact,41.795925,-87.605305,115.1,53,476434,800 E 55TH ST,UNIVERSITY OF CHICAGO HOSPITAL,3,43134.5,3,sourced,socrata_syp8-uezg@2026-09-14
 row-43fj~9v7j.ciyp,Erie Health Center,wic,address_exact,41.894852,-87.670097,29.1,0,341645,1701 W SUPERIOR ST,,3,16730.1,203,sourced,socrata_syp8-uezg@2026-09-14
 row-5hqv.iuvp.rj9v,Englewood STI Specialty Clinic,sti,address_exact,41.779465,-87.641437,25.2,5.8,532222,641 W 63RD ST,,1,28460.5,18,sourced,socrata_syp8-uezg@2026-09-14
 row-64x2.52qx-hzqp,Roseland  STI Specialty Clinic,sti,address_exact,41.685551,-87.617564,36.2,7.1,780959,200-210 E 115TH ST,,3,7557.1,106,sourced,socrata_syp8-uezg@2026-09-14
-row-6ngv-z5b2~p73z,Henry Booth House,wic,address_exact,41.841461,-87.624818,33.9,0,400468,2907-2925 S WABASH AVE,,0,34055.1,11,sourced,socrata_syp8-uezg@2026-09-14
-row-6nxp~e8xy~5ak5,Alivio Medical Center - Morgan,wic,largest_nearby,41.854981,-87.653944,110,89.5,382112,1119 W CULLERTON ST,,0,14455.1,73,sourced,socrata_syp8-uezg@2026-09-14
-row-7943_pcxe~2fsq,Austin STI Specialty Clinic,sti,address_exact,41.902001,-87.74925,41,15.4,325482,4901-4925 W DIVISION ST,,0,12989.4,96,sourced,socrata_syp8-uezg@2026-09-14
+row-6ngv-z5b2~p73z,Henry Booth House,wic,address_exact,41.841461,-87.624818,33.9,0,400468,2907-2925 S WABASH AVE,,,34055.1,11,sourced,socrata_syp8-uezg@2026-09-14
+row-6nxp~e8xy~5ak5,Alivio Medical Center - Morgan,wic,largest_nearby,41.854981,-87.653944,110,89.5,382112,1119 W CULLERTON ST,,,14455.1,73,sourced,socrata_syp8-uezg@2026-09-14
+row-7943_pcxe~2fsq,Austin STI Specialty Clinic,sti,address_exact,41.902001,-87.74925,41,15.4,325482,4901-4925 W DIVISION ST,,,12989.4,96,sourced,socrata_syp8-uezg@2026-09-14
 row-7brx~4mrw_vzna,Englewood MHC,mental_health,address_exact,41.779465,-87.641437,25.2,5.8,532222,641 W 63RD ST,,1,28460.5,18,sourced,socrata_syp8-uezg@2026-09-14
-row-bg56~ztiz_x9gb,Greater Grand/MID-South MHC,mental_health,largest_nearby,41.816341,-87.607281,36.1,14.5,431372,741-745 E 43RD ST,,0,35404.1,34,sourced,socrata_syp8-uezg@2026-09-14
+row-bg56~ztiz_x9gb,Greater Grand/MID-South MHC,mental_health,largest_nearby,41.816341,-87.607281,36.1,14.5,431372,741-745 E 43RD ST,,,35404.1,34,sourced,socrata_syp8-uezg@2026-09-14
 row-cs5n~np67~ct9h,Englewood NHC,wic,address_exact,41.779465,-87.641437,25.2,5.8,532222,641 W 63RD ST,,1,28460.5,18,sourced,socrata_syp8-uezg@2026-09-14
-row-d69x-3uch-syub,Uptown NHC,wic,address_exact,41.965138,-87.652041,34.5,7.2,113786,845 W WILSON AVE,,0,13208.5,35,sourced,socrata_syp8-uezg@2026-09-14
+row-d69x-3uch-syub,Uptown NHC,wic,address_exact,41.965138,-87.652041,34.5,7.2,113786,845 W WILSON AVE,,,13208.5,35,sourced,socrata_syp8-uezg@2026-09-14
 row-f4fr_n7v9_6qjw,Greater Lawn MHC,mental_health,address_exact,41.793429,-87.727725,17.8,0,486865,4150 W 55TH ST,,1,14379.1,233,sourced,socrata_syp8-uezg@2026-09-14
-row-gfaa_z9a4~a9tx,Austin Clinic,wic,address_exact,41.902001,-87.74925,41,15.4,325482,4901-4925 W DIVISION ST,,0,12989.4,96,sourced,socrata_syp8-uezg@2026-09-14
+row-gfaa_z9a4~a9tx,Austin Clinic,wic,address_exact,41.902001,-87.74925,41,15.4,325482,4901-4925 W DIVISION ST,,,12989.4,96,sourced,socrata_syp8-uezg@2026-09-14
 row-jx23~b2jb~qt46,Chicago Family Health Center,wic,largest_nearby,41.730364,-87.551656,121.8,93.5,680847,9046-9052 S COMMERCIAL AVE,,1,17939.4,53,sourced,socrata_syp8-uezg@2026-09-14
 row-m7fm~rm7d_fd3t,Lower West Side NHC,wic,address_exact,41.858314,-87.665764,21,8.8,377377,1701-1713 S ASHLAND AVE,,1,13915.5,169,sourced,socrata_syp8-uezg@2026-09-14
 row-mbvh~nqnd~uiaq,Alivio Medical Center,wic,address_exact,41.848693,-87.685094,27.8,6.4,391541,2355 S WESTERN AVE,,2,7480.9,128,sourced,socrata_syp8-uezg@2026-09-14
@@ -22,4 +22,4 @@ row-ubjg~gggy~j8f7,WIC Main Office,wic,largest_nearby,41.877764,-87.627237,46.9,
 row-ujyv_gkcv.t86u,Greater Lawn Health Center,wic,address_exact,41.793429,-87.727725,17.8,0,486865,4150 W 55TH ST,,1,14379.1,233,sourced,socrata_syp8-uezg@2026-09-14
 row-urnv~bgy7_h5hw,Lawndale MHC,mental_health,largest_nearby,41.86678,-87.688677,45.6,29.9,371934,1154-1156 S CAMPBELL AVE,,3,5832.5,52,sourced,socrata_syp8-uezg@2026-09-14
 row-w34v_jijr_t68p,Westside Health Partnership,wic,address_exact,41.847937,-87.705487,20.3,0.8,877026,2400 S KEDZIE AVE,,2,9044.8,193,sourced,socrata_syp8-uezg@2026-09-14
-row-wwgg_ebfd_9k84,North River MHC,mental_health,address_exact,41.98575,-87.728184,25.4,18.1,52559,5801 N PULASKI RD,NORTH PARK VILLAGE - GUARD HOUSE,0,760.5,10,sourced,socrata_syp8-uezg@2026-09-14
+row-wwgg_ebfd_9k84,North River MHC,mental_health,address_exact,41.98575,-87.728184,25.4,18.1,52559,5801 N PULASKI RD,NORTH PARK VILLAGE - GUARD HOUSE,,760.5,10,sourced,socrata_syp8-uezg@2026-09-14

@@ -10,3 +10,7 @@ dist/
 .env
 .env.*
 !.env.example
+
+# Third-party captures cited by the SBHC reconciliation. Preserved privately;
+# data/source/evidence_manifest.csv records their URLs, dates and SHA-256.
+projects/*/data/raw/
