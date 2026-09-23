@@ -1,6 +1,6 @@
 # CPS space and co-location
 
-[Explore the project](https://connorblandford.com/projects/cps-space-colocation/). This is the dataset behind an exploratory map and the article it accompanies, “Chicago’s underutilized schools are an unrealized opportunity” (part one of three). It examines school space and potential co-location. Health-center operating status is tracked separately. Release: **2026-09-21**, tagged [`cps-space-colocation-2026-09-21`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-21); utilization year: **SY2026**. Sources were pulled between 2026-09-09 and 2026-09-14; the [data dictionary](data/README.md#source-pulls) lists each pull date. All dates here are YYYY-MM-DD.
+[Explore the project](https://connorblandford.com/projects/cps-space-colocation/). This is the dataset behind an exploratory map and the article it accompanies, “Chicago’s underutilized schools are an unrealized opportunity” (part one of three). It examines school space and potential co-location. Release: **2026-09-23**, tagged [`cps-space-colocation-2026-09-23`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23); utilization year: **SY2026**. Sources were pulled between 2026-09-09 and 2026-09-14; the [data dictionary](data/README.md#source-pulls) lists each pull date. All dates here are YYYY-MM-DD.
 
 ## Download
 
@@ -28,7 +28,7 @@ See the [data dictionary](data/README.md) for all fields and caveats. Join schoo
 
 ## Sources and method
 
-Inputs are the CPS SY2026 Space Utilization workbook (`spaceuse_2026_final_forweb.xlsx`, last updated 2025-12-19), the CPS School Profile Information API (`api.cps.edu/schoolprofile/CPS/AllSchoolProfiles`), and City of Chicago datasets `pb6d-zzuh` (school locations), `igwz-8jzy` (community areas), `x8fc-8rcq` (library branch locations), `vcti-mbcd` (the Chicago Park District building inventory behind the portal's `u7uu-j2ma` map view), `kcki-hnch`, `qhfc-4cw2` and `cs4s-nsna` (the CDPH clinic, senior center and workforce center rosters behind the portal's `4msa-kt5t`, `8ayb-6mjs` and `i4rz-w47p` map views) and `syp8-uezg` (building footprints, a 2015 snapshot). Pull dates are in the [source pull table](data/README.md#source-pulls). Six schools converted from charters in 2026 are placed from `pb6d-zzuh` under the charter ids they held before; see "Before reporting" and `data/README.md`. Source snapshots are preserved privately. The 38 pages, PDFs and datasets cited by the SBHC reconciliation are third-party material and are not republished; [`data/source/evidence_manifest.csv`](data/source/evidence_manifest.csv) records each one's URL, access date, size and SHA-256. The reconciliation's standard-library Python build is included so the publication sheet remains auditable.
+Inputs are the CPS SY2026 Space Utilization workbook (`spaceuse_2026_final_forweb.xlsx`, last updated 2025-12-19), the CPS School Profile Information API (`api.cps.edu/schoolprofile/CPS/AllSchoolProfiles`), and City of Chicago datasets `pb6d-zzuh` (school locations), `igwz-8jzy` (community areas), `x8fc-8rcq` (library branch locations), `vcti-mbcd` (the Chicago Park District building inventory behind the portal's `u7uu-j2ma` map view), `kcki-hnch`, `qhfc-4cw2` and `cs4s-nsna` (the CDPH clinic, senior center and workforce center rosters behind the portal's `4msa-kt5t`, `8ayb-6mjs` and `i4rz-w47p` map views) and `syp8-uezg` (building footprints, a 2015 snapshot). Pull dates are in the [source pull table](data/README.md#source-pulls). Six schools converted from charters in 2026 are placed from `pb6d-zzuh` under the charter ids they held before; see "Before reporting" and `data/README.md`. Source snapshots are preserved privately. The 38 pages, PDFs and datasets cited by the SBHC reconciliation are third-party material and are not republished; [`data/source/evidence_manifest.csv`](data/source/evidence_manifest.csv) records each one's URL, access date, size and SHA-256. The reconciliation's standard-library Python build is included so the publication sheet remains auditable. Reproduce the three SBHC sheets with `make sbhc` from this directory (Python 3 standard library, no dependencies; equivalently `python3 build_resolved.py && python3 test_sbhc_publish.py`). The test runs either as a script or under `pytest`.
 
 The pipeline reads the workbook’s traditional-school and co-location sheets, joins school records by CPS ID, and assigns community areas from coordinates and boundary polygons, falling back to the profile API’s community when a point falls outside all polygons. Missing values remain blank. Homerooms are derived from adjusted classrooms: elementary `floor(adjusted classrooms × 0.77)` with 28 seats each; high-school `adjusted classrooms × 0.80` with 30 seats each. CPS states these rules in its [Space Utilization Methodology SY26](https://www.cps.edu/globalassets/cps-pages/services-and-supports/school-facilities/facilities-standards/space-utilization-methodology-sy26.pdf) but publishes no homeroom count; the build derives one and checks it against every row of the workbook.
 
@@ -52,7 +52,10 @@ The pipeline reads the workbook’s traditional-school and co-location sheets, j
   should not be treated as currently operating. The map hides them by default.
 - `sbhc_publish.csv` carries no space-use status. Join its `sid` to
   `utilization.csv`; an earlier release's `cps_status_2025` columns came from an
-  older CPS file and contradicted it for five host schools.
+  older CPS file and contradicted it for five host schools. Two hosts have no
+  utilization row — Noble Mansueto (`400179`), a charter in its own building,
+  and Simpson Academy (`609750`), a specialty school the workbook excludes by
+  design — so 32 of the 34 host `sid`s join.
 - The two mobile health units in `sbhc_publish.csv` are not drawn on the map.
   Neither has a fixed site, and HRSA registers both at their operator's own
   address, so their only coordinate points at a building that is neither a
@@ -67,4 +70,34 @@ See [SBHC resolution notes](docs/RESOLUTION_NOTES.md) for source hierarchy,
 current-status evidence, deliberately unresolved values, and the 2014-only use
 of the CDPH health-center dataset.
 
-Data are covered by the repository [license](../../LICENSE). Include the release date, 2026-09-21, when citing or reusing them.
+Data are covered by the repository [license](../../LICENSE). Include the release date, 2026-09-23, when citing or reusing them.
+
+## What changed on 2026-09-23
+
+Provenance and documentation, after a pre-showcase audit of this repository, the working
+repository and the project page. **No figure changed**, and no coordinate, count, status,
+address or hours value moved. Thirteen of the 17 CSVs are byte for byte the files published
+on 2026-09-21; the four that differ are described below.
+
+- **`schools.csv` names each source once.** YCCS-Austin Career Education Center HS
+  (`400127`) is the one school the City file `pb6d-zzuh` does not carry, so the profile API
+  supplies both its record and its coordinate, and `source` had named that pull twice. The
+  row now reads `cps_school_profiles@2026-09-09+socrata_igwz-8jzy@2026-09-09` — two keys
+  where every other row carries three — and a test rejects any repeated key. No value on
+  the row changed.
+- **The three SBHC sheets no longer cite a file that does not exist.** A resolution note on
+  the Johnson row referred to `test_sbhc.py`; the rule it describes lives in
+  `test_sbhc_publish.py`, which is what the note now names. The note text is published
+  verbatim in `sbhc_publish.csv`, `sbhc_resolved.csv` and `sbhc_discrepancies.csv`, so all
+  three change by that wording.
+- **Two project-authored notes use ISO dates.** "Oct 2022" and "Feb 2026" are written
+  2022-10 and 2026-02, as every other date in the release is.
+- **The data dictionary describes the `source` separator correctly.** `schools.csv` and the
+  two SBHC sheets join keys with `+`; the five City and Park District rosters join them with
+  a comma and a space. The dictionary had claimed `+` throughout, which was wrong for 875
+  rows.
+- **`LICENSE` names paths that exist.** It had applied its code terms to `scripts/`,
+  `tests/` and `site/index.html` and its data terms to a top-level `data/`, none of which
+  are in this repository, and it now carries an SPDX identifier.
+- **The resolution notes count their own findings correctly**, and state which rows publish
+  no hours and why.

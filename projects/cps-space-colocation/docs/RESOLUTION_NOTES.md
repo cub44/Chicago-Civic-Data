@@ -2,7 +2,10 @@
 
 152 field-level findings across all 38 rows of `sbhc.csv`, including the three schema
 additions applied in this revision and the `sid` correction added in the 2026-09-21
-release. 5 findings are deliberately left null.
+release. 5 source-field findings are deliberately left null — 9 rows in
+`sbhc_discrepancies.csv` carry `confidence = unresolved` once the two derived
+`hours_split` rows and the two mobile units' unverified `operational_status`
+rows are counted alongside them.
 
 **Revision 2 (2026-09-12):** Johnson resolved to `school_linked` on local knowledge; added
 `operational_status` + `closed_on`, split `hours` into `hours_medical_school_year` /
@@ -19,7 +22,7 @@ Neither input sheet was modified. Outputs:
   the superseded `hours` column is dropped, a single `sponsor` column replaces having to
   pick between `sponsor_cps` and `sponsor_idph`, and closed sites are retained with a
   status rather than deleted.
-- `test_sbhc_publish.py` — supersedes `test_sbhc.py`; passes against `sbhc_publish.csv`.
+- `test_sbhc_publish.py` — passes against `sbhc_publish.csv`.
 
 ## Source hierarchy applied
 
@@ -89,8 +92,8 @@ uploaded CPS sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**.
   (7200 S Ingleside Ave), a different building from Gary Comer College Prep (7131 S South
   Chicago Ave). The null coordinate can be filled from CDPH's geocode of that address
   (41.764002, -87.601896) — set `coord_basis='cdph_2014_geocode'`, not
-  `cps_school_building`, since `test_sbhc.py` rightly forbids mapping a school-linked center
-  at its school's coordinate.
+  `cps_school_building`, since `test_sbhc_publish.py` rightly forbids mapping a school-linked
+  center at its school's coordinate.
 - **Mansueto → school_linked confirmed, and operating.** The center is Esperanza's Brighton
   Park clinic at 4700 S California Ave, about a kilometer from the school. CPS's off-site
   override is right, and the IPHCA locator carries the site as current.
@@ -196,8 +199,13 @@ published with hours or with `open_to_public=true`.
   would have discarded both.
 - Hibbard's single CPS cell held two concatenated schedules. The split is supported by that
   row's own access note, the only one in either sheet that names dental.
-- 17 rows have a researched split, 17 carry the source value forward as school-year medical,
-  4 are empty because the center is closed or unverified, 2 because the value is contested.
+- The 38 rows partition as 17 researched splits, 17 carrying the source value forward as
+  school-year medical, and 4 with no hours finding at all because no source publishes hours
+  for them: Uplift, Hope, and the two mobile units. Six rows publish no hours: those 4, plus
+  the two researched splits that resolve to empty — Greater Lawndale, where the value is
+  contested and needs a phone confirm, and Reavis, where the center appears closed and the
+  historical value is recorded for reference rather than asserted. `build_resolved.py` prints
+  the same three-way count.
   Mansueto keeps the CPS sheet's hours, carried forward as school-year medical.
 
 ### `room_or_entrance`

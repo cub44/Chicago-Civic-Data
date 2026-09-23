@@ -134,7 +134,7 @@ for s in _TAP:
     add(s, "sponsor", "Tapestry 360 Health", "Heartland Health Center",
         "HRSA grantee: TAPESTRY 360 HEALTH", "Tapestry 360 Health", "high",
         ["tap_rename", "blockclub", "tap_loc"],
-        "Heartland Health Centers rebranded as Tapestry 360 Health in Oct 2022. IDPH "
+        "Heartland Health Centers rebranded as Tapestry 360 Health in 2022-10. IDPH "
         "certified list still carries the pre-rename name. CPS sheet is correct.")
 
 add("Paul Laurence Dunbar Career Academy High School", "sponsor",
@@ -284,7 +284,7 @@ add("James Weldon Johnson STEAM Elementary School", "setting", "in_building",
     "CPS publishes the school address for this center in both the uploaded sheet and the "
     "2025-26 booklet, which is what produced the bad in_building classification. "
     "coord_basis stays 'hrsa_site': the existing coordinate (41.861116, -87.703417) is the "
-    "center's own, not the school's, so the school_linked coordinate rule in test_sbhc.py "
+    "center's own, not the school's, so the school_linked coordinate rule in test_sbhc_publish.py "
     "passes unchanged. Note this row no longer needs to satisfy the in_building/sid rule.")
 
 add("David G Farragut Career Academy High School", "site_address", "2345 S Christiana Ave",
@@ -378,7 +378,7 @@ add("Englewood STEM High School", "hours", "Mon-Fri: 8:00am-4:30pm", "",
 
 add("Greater Lawndale High School For Social Justice", "hours",
     "Mon-Fri: 8:30am-12:00pm; 1:00pm-4:00pm", "",
-    "findhelp listing claimed by Alivio (Feb 2026): Mon 8:30a-3:00p; Tue 8:30a-4:30p; "
+    "findhelp listing claimed by Alivio (2026-02): Mon 8:30a-3:00p; Tue 8:30a-4:30p; "
     "Wed closed; Thu 9:30a-2:30p; Fri 8:30a-12:30p; closed 12-1p",
     "", "unresolved", ["alivio_lvlhs", "alivio_loc"],
     "NOT RESOLVED. A provider-claimed third-party listing shows a much narrower schedule "

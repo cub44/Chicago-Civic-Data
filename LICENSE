@@ -1,9 +1,12 @@
+SPDX-License-Identifier: MIT AND CC-BY-4.0
+
 This repository is dual-licensed.
 
 ================================================================================
 CODE — MIT License
 ================================================================================
-Applies to: scripts/, tests/, site/index.html, and any other source file.
+Applies to: every *.py file, projects/*/Makefile, .github/, and any other
+source file in this repository.
 
 Copyright (c) 2026 Connor Ulrich Blandford
 
@@ -28,7 +31,8 @@ SOFTWARE.
 ================================================================================
 DATA AND PROSE — Creative Commons Attribution 4.0 International (CC BY 4.0)
 ================================================================================
-Applies to: data/, README.md, and all other documentation and written content.
+Applies to: projects/*/data/, projects/*/docs/, every *.md file, and all other
+documentation and written content.
 
 You are free to share and adapt this material for any purpose, including
 commercially, provided you give appropriate credit, link to the license, and

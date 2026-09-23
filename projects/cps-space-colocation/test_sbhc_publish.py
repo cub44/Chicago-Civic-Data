@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build-failing assertions for data/processed/sbhc_publish.csv.
 
-Supersedes test_sbhc.py. Three changes of substance beyond the new columns:
+Runs either as a script (`python3 test_sbhc_publish.py`)
+or under pytest. Three changes of substance beyond the new columns:
 
 1. The hard source counts (34/32/28) remain as snapshot arithmetic, but are no
    longer the liveness check. Liveness is the status-aware operating count.
@@ -206,10 +207,16 @@ drake = row("John B Drake Elementary School")
 check(drake.get("hours_medical_summer") and not drake.get("hours_medical_school_year"),
       "Drake's deliberate school-year-hours null regressed")
 
-if fail:
-    print("FAIL\n" + "\n".join(" - " + f for f in fail))
-    sys.exit(1)
-print("OK  %d rows (%d operating, %d closed/consolidated, %d unverified)"
-      % (len(rows), live,
-         sum(1 for r in rows if r["operational_status"].startswith("closed")),
-         sum(1 for r in rows if r["operational_status"] == "unverified")))
+def test_publish():
+    """pytest entry point. The checks above run at import; this reports them."""
+    assert not fail, "\n".join(fail)
+
+
+if __name__ == "__main__":
+    if fail:
+        print("FAIL\n" + "\n".join(" - " + f for f in fail))
+        sys.exit(1)
+    print("OK  %d rows (%d operating, %d closed/consolidated, %d unverified)"
+          % (len(rows), live,
+             sum(1 for r in rows if r["operational_status"].startswith("closed")),
+             sum(1 for r in rows if r["operational_status"] == "unverified")))

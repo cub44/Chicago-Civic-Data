@@ -1,6 +1,6 @@
 # Data dictionary
 
-Release **2026-09-21**, tagged [`cps-space-colocation-2026-09-21`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-21). Cite that date and the file you used. Each source was pulled on its own date, listed below. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%. All dates are YYYY-MM-DD.
+Release **2026-09-23**, tagged [`cps-space-colocation-2026-09-23`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23). Cite that date and the file you used. Each source was pulled on its own date, listed below. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%. All dates are YYYY-MM-DD.
 
 ### Source pulls
 
@@ -20,6 +20,12 @@ Release **2026-09-21**, tagged [`cps-space-colocation-2026-09-21`](https://githu
 | Workforce Centers | `cs4s-nsna` | 2026-09-14 | rows updated 2011-08-21 |
 
 Every row's `source` column names the pulls it came from, as `key@YYYY-MM-DD`.
+Where a row has more than one, the separator depends on the table: `schools.csv`
+and the two SBHC sheets join the keys with `+`, and the five City and Park
+District rosters — `health_clinics.csv`, `libraries.csv`, `park_facilities.csv`,
+`senior_centers.csv` and `workforce_centers.csv` — join them with a comma and a
+space. A key never repeats in either form, so splitting a row on its own
+separator gives each source once.
 
 ### Source-level limitations
 
@@ -87,7 +93,7 @@ Grain: one school. 642 rows.
 | `source` | text | — | derived | Source keys and pull dates that produced the row. |
 
 **Missing coordinates: none.** Every school's coordinate comes from the City's
-school-locations file (`pb6d-zzuh`) or the profile API. Seven rows need a note.
+school-locations file (`pb6d-zzuh`) or the profile API. Eight rows need a note.
 
 - Six district schools converted from former charters — five Acero schools
   (Fuentes `610602`, Santiago `610603`, de las Casas `610604`, Cisneros
@@ -114,10 +120,18 @@ school-locations file (`pb6d-zzuh`) or the profile API. Seven rows need a note.
 - Urban Prep – Bronzeville (`400105`) is absent from the profile API, and its
   row comes from the space-use workbook. `pb6d-zzuh` publishes it under its own
   id at 521 E 35th St, which is where its coordinate and address come from.
+- YCCS-Austin Career Education Center HS (`400127`) is the one school placed
+  from the profile API rather than the City file: `pb6d-zzuh` carries no row
+  under that id, so the coordinate falls back to the API's own
+  `AddressLatitude` / `AddressLongitude`. Its `source` therefore names the
+  profile API once, as both the record and the geometry source, and reads
+  `cps_school_profiles@2026-09-09+socrata_igwz-8jzy@2026-09-09` — two keys
+  where every other row carries three. An earlier release wrote that key twice.
 
-An earlier release said no primary source placed these seven schools and filled
-them from coordinates read off Google Earth imagery. That was wrong: the City
-file places all seven. The hand-read coordinates have been removed, and no
+An earlier release said no primary source placed the seven schools in the two
+bullets above — the six converted schools and Urban Prep – Bronzeville — and
+filled them from coordinates read off Google Earth imagery. That was wrong: the
+City file places all seven. The hand-read coordinates have been removed, and no
 coordinate in this file comes from imagery.
 
 **Headcount (2 rows absent).** `student_count` is present for 640 of 642
