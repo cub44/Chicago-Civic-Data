@@ -1,0 +1,1038 @@
+{
+ "schema": 1,
+ "project": "cps-space-colocation",
+ "release": "2026-09-23",
+ "school_year": "SY2026",
+ "generated_by": "scripts/build_facts.py",
+ "sources": [
+  {
+   "id": "cps_space_utilization_sy2026",
+   "name": "CPS, Space Utilization Data, SY2026",
+   "url": "https://www.cps.edu/globalassets/cps-pages/services-and-supports/school-facilities/facilities-standards/spaceuse_2026_final_forweb.xlsx",
+   "pulled": "2026-09-09"
+  },
+  {
+   "id": "cps_school_profiles",
+   "name": "CPS School Profile Information API",
+   "url": "https://api.cps.edu/schoolprofile/CPS/AllSchoolProfiles",
+   "pulled": "2026-09-09"
+  },
+  {
+   "id": "socrata_pb6d-zzuh",
+   "name": "Chicago Public Schools - School Locations SY2526 (City of Chicago data portal)",
+   "url": "https://data.cityofchicago.org/d/pb6d-zzuh",
+   "pulled": "2026-09-09"
+  },
+  {
+   "id": "socrata_igwz-8jzy",
+   "name": "Boundaries - Community Areas (City of Chicago data portal)",
+   "url": "https://data.cityofchicago.org/d/igwz-8jzy",
+   "pulled": "2026-09-09"
+  },
+  {
+   "id": "socrata_x8fc-8rcq",
+   "name": "Libraries - Locations, Contact Information, and Usual Hours of Operation",
+   "url": "https://data.cityofchicago.org/d/x8fc-8rcq",
+   "pulled": "2026-09-13"
+  },
+  {
+   "id": "socrata_vcti-mbcd",
+   "name": "Parks - Chicago Park District Buildings (current)",
+   "url": "https://data.cityofchicago.org/d/vcti-mbcd",
+   "pulled": "2026-09-14"
+  },
+  {
+   "id": "socrata_kcki-hnch",
+   "name": "Chicago Department of Public Health Clinic Locations (current as of June 2016)",
+   "url": "https://data.cityofchicago.org/d/kcki-hnch",
+   "pulled": "2026-09-14"
+  },
+  {
+   "id": "socrata_qhfc-4cw2",
+   "name": "Senior Centers (current as of 2011)",
+   "url": "https://data.cityofchicago.org/d/qhfc-4cw2",
+   "pulled": "2026-09-14"
+  },
+  {
+   "id": "socrata_cs4s-nsna",
+   "name": "Workforce Centers (rows last updated 2011-08-21)",
+   "url": "https://data.cityofchicago.org/d/cs4s-nsna",
+   "pulled": "2026-09-14"
+  },
+  {
+   "id": "socrata_syp8-uezg",
+   "name": "Building Footprints, the City's 2015 snapshot (extracts around each point set)",
+   "url": "https://data.cityofchicago.org/d/syp8-uezg",
+   "pulled": "2026-09-13"
+  },
+  {
+   "id": "sbhc_roster",
+   "name": "School-based health center roster, hand-researched and published from cub44/Chicago-Civic-Data (sbhc_publish.csv)",
+   "url": "https://github.com/cub44/Chicago-Civic-Data/tree/main/projects/cps-space-colocation",
+   "pulled": "2026-09-23",
+   "verified_through": "2026-09-12",
+   "sha256": "38126372897a30a20eade1331eecbf75a5bb2847fcd529c3abc66792ecc62f39"
+  },
+  {
+   "id": "cdph_mental_health_centers",
+   "name": "CDPH, Mental Health Centers (web page)",
+   "url": "https://www.chicago.gov/city/en/depts/cdph/supp_info/behavioral-health/mental_health_centers.html",
+   "pulled": "2026-09-21"
+  },
+  {
+   "id": "census_geocoder",
+   "name": "U.S. Census Bureau Geocoder, for the three centers on no published roster",
+   "url": "https://geocoding.geo.census.gov/geocoder/",
+   "pulled": "2026-09-21"
+  }
+ ],
+ "facts": {
+  "schools_mapped": {
+   "value": 642,
+   "display": "642",
+   "label": "Schools mapped",
+   "definition": "Schools in schools.csv, every one carrying a coordinate.",
+   "source_file": "schools.csv",
+   "sources": [
+    "cps_school_profiles",
+    "socrata_pb6d-zzuh"
+   ],
+   "rounding": null,
+   "unit": "schools"
+  },
+  "schools_elementary": {
+   "value": 474,
+   "display": "474",
+   "label": "Elementary schools mapped",
+   "definition": "Schools whose layer is cps_elem or charter_elem.",
+   "source_file": "schools.csv",
+   "sources": [
+    "cps_school_profiles",
+    "socrata_pb6d-zzuh"
+   ],
+   "rounding": null,
+   "unit": "schools"
+  },
+  "schools_high": {
+   "value": 152,
+   "display": "152",
+   "label": "High schools mapped",
+   "definition": "Schools whose layer is cps_high or charter_high.",
+   "source_file": "schools.csv",
+   "sources": [
+    "cps_school_profiles",
+    "socrata_pb6d-zzuh"
+   ],
+   "rounding": null,
+   "unit": "schools"
+  },
+  "schools_other": {
+   "value": 16,
+   "display": "16",
+   "label": "Options and alternative schools mapped",
+   "definition": "Schools whose layer is other_alt: the contract, ALOP and SAFE schools.",
+   "source_file": "schools.csv",
+   "sources": [
+    "cps_school_profiles",
+    "socrata_pb6d-zzuh"
+   ],
+   "rounding": null,
+   "unit": "schools"
+  },
+  "schools_placed_in_building": {
+   "value": 518,
+   "display": "518",
+   "label": "Schools placed inside their building",
+   "definition": "Schools whose match_quality asserts a building (address_exact or containing).",
+   "source_file": "school_buildings.csv",
+   "sources": [
+    "socrata_syp8-uezg"
+   ],
+   "rounding": null,
+   "unit": "schools"
+  },
+  "libraries": {
+   "value": 82,
+   "display": "82",
+   "label": "Library branches",
+   "definition": "Chicago Public Library branches in libraries.csv.",
+   "source_file": "libraries.csv",
+   "sources": [
+    "socrata_x8fc-8rcq"
+   ],
+   "rounding": null,
+   "unit": "branches"
+  },
+  "libraries_placed_in_building": {
+   "value": 75,
+   "display": "75",
+   "label": "Branches placed inside their building",
+   "definition": "Branches whose match_quality is address_exact, library_named or containing.",
+   "source_file": "library_buildings.csv",
+   "sources": [
+    "socrata_syp8-uezg"
+   ],
+   "rounding": null,
+   "unit": "branches"
+  },
+  "park_buildings": {
+   "value": 743,
+   "display": "743",
+   "label": "Park District buildings",
+   "definition": "Buildings in the Chicago Park District inventory.",
+   "source_file": "park_facilities.csv",
+   "sources": [
+    "socrata_vcti-mbcd"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "health_clinics": {
+   "value": 24,
+   "display": "24",
+   "label": "CDPH clinics on the 2016 roster",
+   "definition": "Clinics on CDPH's clinic-locations roster, current as of June 2016.",
+   "source_file": "health_clinics.csv",
+   "sources": [
+    "socrata_kcki-hnch"
+   ],
+   "rounding": null,
+   "unit": "clinics"
+  },
+  "mental_health_clinics_2016": {
+   "value": 5,
+   "display": "5",
+   "label": "Mental health clinics on CDPH's 2016 roster",
+   "definition": "Clinics whose category is mental_health.",
+   "source_file": "health_clinics.csv",
+   "sources": [
+    "socrata_kcki-hnch"
+   ],
+   "rounding": null,
+   "unit": "clinics"
+  },
+  "senior_centers": {
+   "value": 21,
+   "display": "21",
+   "label": "Senior centers",
+   "definition": "DFSS senior centers on the 2011 roster.",
+   "source_file": "senior_centers.csv",
+   "sources": [
+    "socrata_qhfc-4cw2"
+   ],
+   "rounding": null,
+   "unit": "centers"
+  },
+  "workforce_centers": {
+   "value": 5,
+   "display": "5",
+   "label": "Workforce centers",
+   "definition": "DFSS workforce centers on the 2011 roster.",
+   "source_file": "workforce_centers.csv",
+   "sources": [
+    "socrata_cs4s-nsna"
+   ],
+   "rounding": null,
+   "unit": "centers"
+  },
+  "city_service_sites": {
+   "value": 50,
+   "display": "50",
+   "label": "City service sites",
+   "definition": "CDPH clinics, DFSS senior centers and DFSS workforce centers together (health_clinics.csv, senior_centers.csv, workforce_centers.csv).",
+   "source_file": "health_clinics.csv",
+   "sources": [
+    "socrata_kcki-hnch",
+    "socrata_qhfc-4cw2",
+    "socrata_cs4s-nsna"
+   ],
+   "rounding": null,
+   "unit": "sites"
+  },
+  "cdph_mental_health_centers": {
+   "value": 7,
+   "display": "7",
+   "label": "CDPH mental health centers, 2026",
+   "definition": "The mental health centers CDPH listed on its website on 2026-09-21.",
+   "source_file": "cdph_mental_health_centers.csv",
+   "sources": [
+    "cdph_mental_health_centers"
+   ],
+   "rounding": null,
+   "unit": "centers"
+  },
+  "utilization_records": {
+   "value": 510,
+   "display": "510",
+   "label": "School records with a utilization row",
+   "definition": "Rows of utilization.csv for SY2026; one row is one school, not one building.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "records"
+  },
+  "scored_records": {
+   "value": 496,
+   "display": "496",
+   "label": "School records with a space-use status",
+   "definition": "Utilization rows whose cps_status is Underutilized, Efficient or Overcrowded.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "records"
+  },
+  "scored_buildings": {
+   "value": 491,
+   "display": "491",
+   "label": "Buildings with a space-use status",
+   "definition": "Distinct school addresses among the scored records; 5 addresses carry two scored schools.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_records": {
+   "value": 266,
+   "display": "266",
+   "label": "Underutilized school records",
+   "definition": "Utilization rows whose cps_status is Underutilized: below 70 percent of adjusted ideal capacity.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "records"
+  },
+  "underutilized_buildings": {
+   "value": 265,
+   "display": "265",
+   "label": "Underutilized buildings",
+   "definition": "Distinct school addresses among the underutilized records; 2400 S Marshall Blvd carries two.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "empty_seats_underutilized": {
+   "value": 101818,
+   "display": "101,800",
+   "label": "Empty seats in underutilized buildings",
+   "definition": "Adjusted ideal capacity minus utilization enrollment, summed over the underutilized records.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": "nearest 100",
+   "unit": "seats"
+  },
+  "spare_classrooms_underutilized": {
+   "value": 4558.4699,
+   "display": "4,560",
+   "label": "Spare classroom-equivalents in underutilized buildings",
+   "definition": "Homerooms less the homerooms the utilization enrollment needs at 28 (elementary) or 30 (high school) students, divided by 0.77 or 0.8 homerooms per classroom, summed over the underutilized records.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": "nearest 10",
+   "unit": "classrooms"
+  },
+  "district_utilization": {
+   "value": 68.3579,
+   "display": "68%",
+   "label": "Districtwide utilization",
+   "definition": "Utilization enrollment summed over the 496 scored records divided by their summed adjusted ideal capacity: the aggregate ratio, not the mean of building rates.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": "nearest percent",
+   "unit": "percent"
+  },
+  "students_underutilized": {
+   "value": 91334,
+   "display": "91,300",
+   "label": "Students in underutilized buildings",
+   "definition": "20th-day enrollment summed over the underutilized records.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": "nearest 100",
+   "unit": "students"
+  },
+  "students_underutilized_no_center": {
+   "value": 81729,
+   "display": "81,700",
+   "label": "Students in underutilized buildings with no health center",
+   "definition": "20th-day enrollment summed over underutilized records whose school hosts no operating in-building health center.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "sbhc_roster"
+   ],
+   "rounding": "nearest 100",
+   "unit": "students"
+  },
+  "underutilized_buildings_austin": {
+   "value": 16,
+   "display": "16",
+   "label": "Underutilized buildings, Austin",
+   "definition": "Underutilized buildings whose community area is Austin, the schools.csv community of the address.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_igwz-8jzy"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_south_lawndale": {
+   "value": 13,
+   "display": "13",
+   "label": "Underutilized buildings, South Lawndale",
+   "definition": "Underutilized buildings whose community area is South Lawndale, the schools.csv community of the address.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_igwz-8jzy"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_north_lawndale": {
+   "value": 12,
+   "display": "12",
+   "label": "Underutilized buildings, North Lawndale",
+   "definition": "Underutilized buildings whose community area is North Lawndale, the schools.csv community of the address.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_igwz-8jzy"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_west_town": {
+   "value": 12,
+   "display": "12",
+   "label": "Underutilized buildings, West Town",
+   "definition": "Underutilized buildings whose community area is West Town, the schools.csv community of the address.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_igwz-8jzy"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_englewood": {
+   "value": 11,
+   "display": "11",
+   "label": "Underutilized buildings, Englewood",
+   "definition": "Underutilized buildings whose community area is Englewood, the schools.csv community of the address.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_igwz-8jzy"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_east_garfield_park": {
+   "value": 10,
+   "display": "10",
+   "label": "Underutilized buildings, East Garfield Park",
+   "definition": "Underutilized buildings whose community area is East Garfield Park, the schools.csv community of the address.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_igwz-8jzy"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_roseland": {
+   "value": 10,
+   "display": "10",
+   "label": "Underutilized buildings, Roseland",
+   "definition": "Underutilized buildings whose community area is Roseland, the schools.csv community of the address.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_igwz-8jzy"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_new_city": {
+   "value": 9,
+   "display": "9",
+   "label": "Underutilized buildings, New City",
+   "definition": "Underutilized buildings whose community area is New City, the schools.csv community of the address.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_igwz-8jzy"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_auburn_gresham": {
+   "value": 9,
+   "display": "9",
+   "label": "Underutilized buildings, Auburn Gresham",
+   "definition": "Underutilized buildings whose community area is Auburn Gresham, the schools.csv community of the address.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_igwz-8jzy"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_lower_west_side": {
+   "value": 9,
+   "display": "9",
+   "label": "Underutilized buildings, Lower West Side",
+   "definition": "Underutilized buildings whose community area is Lower West Side, the schools.csv community of the address.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_igwz-8jzy"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_leased": {
+   "value": 3,
+   "display": "3",
+   "label": "Underutilized buildings with leased classrooms",
+   "definition": "Underutilized buildings with a record whose classrooms_leased is above zero.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_six_spare": {
+   "value": 255,
+   "display": "255",
+   "label": "Underutilized buildings with six or more spare classrooms",
+   "definition": "Underutilized buildings whose spare classroom-equivalents, summed over the records at the address, reach 6.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "six_spare_median_enrollment": {
+   "value": 305,
+   "display": "305",
+   "label": "Median enrollment of buildings with six spare classrooms",
+   "definition": "Median of 20th-day enrollment, summed per building, over the 255 buildings with six or more spare classrooms.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  },
+  "six_spare_500_students": {
+   "value": 38,
+   "display": "38",
+   "label": "Buildings with six spare classrooms and 500 or more students",
+   "definition": "Underutilized buildings with six or more spare classrooms whose summed 20th-day enrollment is 500 or more.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "six_spare_400_students": {
+   "value": 72,
+   "display": "72",
+   "label": "Buildings with six spare classrooms and 400 or more students",
+   "definition": "Underutilized buildings with six or more spare classrooms whose summed 20th-day enrollment is 400 or more.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "six_spare_600_students": {
+   "value": 21,
+   "display": "21",
+   "label": "Buildings with six spare classrooms and 600 or more students",
+   "definition": "Underutilized buildings with six or more spare classrooms whose summed 20th-day enrollment is 600 or more.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "hs_scored": {
+   "value": 79,
+   "display": "79",
+   "label": "High schools with a space-use status",
+   "definition": "Scored records whose grade_category is HS.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "records"
+  },
+  "hs_underutilized": {
+   "value": 44,
+   "display": "44",
+   "label": "Underutilized high schools",
+   "definition": "Scored HS records whose cps_status is Underutilized.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "records"
+  },
+  "hs_underutilized_median_enrollment": {
+   "value": 356.0,
+   "display": "356",
+   "label": "Median enrollment of underutilized high schools",
+   "definition": "Median 20th-day enrollment over the 44 underutilized high schools.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  },
+  "hs_underutilized_under_300": {
+   "value": 17,
+   "display": "17",
+   "label": "Underutilized high schools under 300 students",
+   "definition": "Underutilized high schools whose 20th-day enrollment is below 300.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "records"
+  },
+  "hs_underutilized_below_30pct": {
+   "value": 20,
+   "display": "20",
+   "label": "Underutilized high schools below 30 percent of capacity",
+   "definition": "Underutilized high schools whose utilization enrollment divided by adjusted ideal capacity is below 0.30 (the ratio, not the rounded su_pct).",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "records"
+  },
+  "es_seats_per_homeroom": {
+   "value": 28,
+   "display": "28",
+   "label": "Elementary seats per homeroom",
+   "definition": "CPS's Space Utilization Methodology SY26 rule, asserted against every workbook row by the build.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  },
+  "hs_seats_per_homeroom": {
+   "value": 30,
+   "display": "30",
+   "label": "High-school seats per homeroom",
+   "definition": "CPS's Space Utilization Methodology SY26 rule, asserted against every workbook row by the build.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  },
+  "es_homeroom_share": {
+   "value": 0.77,
+   "display": "0.77",
+   "label": "Elementary homerooms per adjusted classroom",
+   "definition": "CPS's SY26 rule: elementary homerooms are the floor of adjusted classrooms times this share.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null
+  },
+  "hs_homeroom_share": {
+   "value": 0.8,
+   "display": "0.80",
+   "label": "High-school homerooms per adjusted classroom",
+   "definition": "CPS's SY26 rule: high-school homerooms are adjusted classrooms times this share.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null
+  },
+  "underutilized_threshold": {
+   "value": 70,
+   "display": "70%",
+   "label": "Underutilized threshold",
+   "definition": "CPS labels a building underutilized below 70 percent of adjusted ideal capacity; checked against the status bands in utilization.csv.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "percent of capacity"
+  },
+  "overcrowded_threshold": {
+   "value": 110,
+   "display": "110%",
+   "label": "Overcrowded threshold",
+   "definition": "CPS labels a building overcrowded above 110 percent of adjusted ideal capacity; checked the same way.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "percent of capacity"
+  },
+  "median_nearest_underutilized": {
+   "value": 0.3971,
+   "display": "0.4 miles",
+   "label": "Median distance to the nearest other underutilized building",
+   "definition": "Median over the 265 underutilized buildings of the straight-line distance to the nearest other underutilized building.",
+   "source_file": "school_buildings.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_pb6d-zzuh",
+    "socrata_syp8-uezg"
+   ],
+   "rounding": "nearest tenth",
+   "unit": "miles"
+  },
+  "underutilized_within_half_mile": {
+   "value": 191,
+   "display": "191",
+   "label": "Underutilized buildings within a half mile of another",
+   "definition": "Underutilized buildings whose nearest other underutilized building is within half a mile, straight-line between building points.",
+   "source_file": "school_buildings.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_pb6d-zzuh",
+    "socrata_syp8-uezg"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_within_mile": {
+   "value": 259,
+   "display": "259",
+   "label": "Underutilized buildings within a mile of another",
+   "definition": "Underutilized buildings whose nearest other underutilized building is within a mile, straight-line between building points.",
+   "source_file": "school_buildings.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "cps_school_profiles",
+    "socrata_pb6d-zzuh",
+    "socrata_syp8-uezg"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "median_distance_cdph_mhc": {
+   "value": 2.1033,
+   "display": "2.1 miles",
+   "label": "Median distance from an underutilized building to the nearest CDPH mental health center",
+   "definition": "Median over the 265 underutilized buildings of the straight-line distance to the nearest of the 7 centers in cdph_mental_health_centers.csv.",
+   "source_file": "cdph_mental_health_centers.csv",
+   "sources": [
+    "cdph_mental_health_centers",
+    "census_geocoder",
+    "socrata_syp8-uezg"
+   ],
+   "rounding": "nearest tenth",
+   "unit": "miles"
+  },
+  "underutilized_records_within_mile_cdph_mhc": {
+   "value": 43,
+   "display": "43",
+   "label": "Underutilized school records within a mile of a CDPH mental health center",
+   "definition": "Underutilized records (note 1's basis) whose building is within a mile of one of the seven centers; the same count on the building basis.",
+   "source_file": "cdph_mental_health_centers.csv",
+   "sources": [
+    "cdph_mental_health_centers",
+    "census_geocoder",
+    "socrata_syp8-uezg"
+   ],
+   "rounding": null,
+   "unit": "records"
+  },
+  "health_centers_operating": {
+   "value": 33,
+   "display": "33",
+   "label": "Health centers operating",
+   "definition": "School-based health centers whose operational_status is operating.",
+   "source_file": "sbhc_publish.csv",
+   "sources": [
+    "sbhc_roster"
+   ],
+   "rounding": null,
+   "unit": "centers"
+  },
+  "health_centers_closed": {
+   "value": 3,
+   "display": "3",
+   "label": "Health centers closed or consolidated",
+   "definition": "Centers whose operational_status is closed or closed_or_consolidated.",
+   "source_file": "sbhc_publish.csv",
+   "sources": [
+    "sbhc_roster"
+   ],
+   "rounding": null,
+   "unit": "centers"
+  },
+  "health_center_sponsors": {
+   "value": 13,
+   "display": "13",
+   "label": "Sponsors of operating centers",
+   "definition": "Distinct non-empty sponsor values among operating centers.",
+   "source_file": "sbhc_publish.csv",
+   "sources": [
+    "sbhc_roster"
+   ],
+   "rounding": null,
+   "unit": "sponsors"
+  },
+  "health_centers_in_building": {
+   "value": 30,
+   "display": "30",
+   "label": "Operating centers inside a school building",
+   "definition": "Operating centers whose setting is in_building.",
+   "source_file": "sbhc_publish.csv",
+   "sources": [
+    "sbhc_roster"
+   ],
+   "rounding": null,
+   "unit": "centers"
+  },
+  "centers_with_status": {
+   "value": 26,
+   "display": "26",
+   "label": "In-building centers whose host has a space-use status",
+   "definition": "Operating in-building centers whose host sid has a cps_status in utilization.csv.",
+   "source_file": "sbhc_publish.csv",
+   "sources": [
+    "sbhc_roster",
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "centers"
+  },
+  "centers_in_underutilized": {
+   "value": 19,
+   "display": "19",
+   "label": "Centers in buildings CPS scores underutilized",
+   "definition": "Operating in-building centers whose host record is Underutilized.",
+   "source_file": "sbhc_publish.csv",
+   "sources": [
+    "sbhc_roster",
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "centers"
+  },
+  "underutilized_buildings_with_center": {
+   "value": 19,
+   "display": "19",
+   "label": "Underutilized buildings with a center",
+   "definition": "Distinct underutilized buildings hosting an operating in-building health center.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "sbhc_roster"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "underutilized_buildings_no_center": {
+   "value": 246,
+   "display": "246",
+   "label": "Underutilized buildings with no center",
+   "definition": "The underutilized buildings less those with an operating in-building health center; both Spry records lack one.",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026",
+    "sbhc_roster"
+   ],
+   "rounding": null,
+   "unit": "buildings"
+  },
+  "centers_open_to_community": {
+   "value": 15,
+   "display": "15",
+   "label": "Operating centers open to the community",
+   "definition": "Operating centers whose open_to_public is true.",
+   "source_file": "sbhc_publish.csv",
+   "sources": [
+    "sbhc_roster"
+   ],
+   "rounding": null,
+   "unit": "centers"
+  },
+  "hosts_with_enrollment": {
+   "value": 30,
+   "display": "30",
+   "label": "Operating centers whose host school has a 20th-day count",
+   "definition": "Operating centers whose host sid has an enrollment_20th_day in utilization.csv.",
+   "source_file": "sbhc_publish.csv",
+   "sources": [
+    "sbhc_roster",
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "centers"
+  },
+  "host_median_enrollment": {
+   "value": 483.0,
+   "display": "483",
+   "label": "Median enrollment of those host schools",
+   "definition": "Median 20th-day enrollment over the 30 host schools with a count.",
+   "source_file": "sbhc_publish.csv",
+   "sources": [
+    "sbhc_roster",
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  },
+  "enrollment_ward": {
+   "value": 280,
+   "display": "280",
+   "label": "Enrollment, Laura S Ward Elementary School",
+   "definition": "20th-day enrollment of Laura S Ward Elementary School (sid 610133).",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  },
+  "enrollment_johnson": {
+   "value": 220,
+   "display": "220",
+   "label": "Enrollment, James Weldon Johnson STEAM Elementary School",
+   "definition": "20th-day enrollment of James Weldon Johnson STEAM Elementary School (sid 610274).",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  },
+  "enrollment_orozco": {
+   "value": 284,
+   "display": "284",
+   "label": "Enrollment, Orozco Fine Arts & Sciences Elementary School",
+   "definition": "20th-day enrollment of Orozco Fine Arts & Sciences Elementary School (sid 610329).",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  },
+  "enrollment_dunbar": {
+   "value": 314,
+   "display": "314",
+   "label": "Enrollment, Paul Laurence Dunbar Career Academy High School",
+   "definition": "20th-day enrollment of Paul Laurence Dunbar Career Academy High School (sid 609676).",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  },
+  "enrollment_beethoven": {
+   "value": 293,
+   "display": "293",
+   "label": "Enrollment, Ludwig Van Beethoven Elementary School",
+   "definition": "20th-day enrollment of Ludwig Van Beethoven Elementary School (sid 610237).",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  },
+  "enrollment_gale": {
+   "value": 294,
+   "display": "294",
+   "label": "Enrollment, Stephen F Gale Elementary Community Academy",
+   "definition": "20th-day enrollment of Stephen F Gale Elementary Community Academy (sid 609933).",
+   "source_file": "utilization.csv",
+   "sources": [
+    "cps_space_utilization_sy2026"
+   ],
+   "rounding": null,
+   "unit": "students"
+  }
+ },
+ "invariants": [
+  {
+   "sum": [
+    "schools_elementary",
+    "schools_high",
+    "schools_other"
+   ],
+   "equals": "schools_mapped"
+  },
+  {
+   "sum": [
+    "health_clinics",
+    "senior_centers",
+    "workforce_centers"
+   ],
+   "equals": "city_service_sites"
+  },
+  {
+   "sum": [
+    "underutilized_buildings_with_center",
+    "underutilized_buildings_no_center"
+   ],
+   "equals": "underutilized_buildings"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 # Data dictionary
 
-Release **2026-09-23**, tagged [`cps-space-colocation-2026-09-23`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23). Cite that date and the file you used. Each source was pulled on its own date, listed below. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%. All dates are YYYY-MM-DD.
+Release **2026-09-23**, tagged [`cps-space-colocation-2026-09-23.1`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23.1). Cite that date and the file you used. Each source was pulled on its own date, listed below. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%. All dates are YYYY-MM-DD.
 
 ### Source pulls
 
@@ -18,6 +18,8 @@ Release **2026-09-23**, tagged [`cps-space-colocation-2026-09-23`](https://githu
 | CDPH Clinic Locations | `kcki-hnch` | 2026-09-14 | rows updated 2017-08-03 |
 | Senior Centers | `qhfc-4cw2` | 2026-09-14 | rows updated 2019-03-07 |
 | Workforce Centers | `cs4s-nsna` | 2026-09-14 | rows updated 2011-08-21 |
+| CDPH Mental Health Centers (web page, the seven centers it lists) | chicago.gov | 2026-09-21 | as listed that day; three centers are on no published roster |
+| U.S. Census Bureau Geocoder (three center addresses) | geocoding.geo.census.gov | 2026-09-21 | — |
 
 Every row's `source` column names the pulls it came from, as `key@YYYY-MM-DD`.
 Where a row has more than one, the separator depends on the table: `schools.csv`
@@ -771,6 +773,75 @@ same building and therefore to nearly the same point, as do the pairs at 4150 W.
 building, not a matching error; nothing is deduplicated.
 
 ---
+
+## `facts.json` — the figures the project page states
+
+Written by the build beside the tables; never hand-edited. One entry per figure
+the project page states about buildings, seats, classrooms, enrollment,
+distances and health centers, each with:
+
+| Field | Meaning |
+|---|---|
+| `value` | The exact figure: a count, a percentage on a 0–100 scale, or a distance in miles. |
+| `display` | The string the page prints, thousands separators and unit included (`"265"`, `"101,800"`, `"68%"`, `"2.1 miles"`). Hedge words such as "about" stay in the prose. |
+| `label` | A short noun phrase for a stat tile. |
+| `definition` | One sentence naming the file, the field and, for every count of buildings, the counting basis. |
+| `source_file` | The file in this release the figure is computed from. |
+| `sources` | Ids from the top-level `sources` list: the pulls behind it. |
+| `rounding` | Set wherever `display` differs from the plain rendering of `value` (`"nearest 100"`, `"nearest percent"`, `"nearest tenth"`). |
+| `unit` | `buildings`, `records`, `students`, `percent`, `miles`, … Never a metric unit. |
+
+**The counting basis.** The utilization file's rows are school records, not
+buildings: five addresses carry two scored schools each, and at one of them,
+2400 S Marshall Blvd, both are labeled underutilized, so 266 underutilized
+records stand in 265 buildings. Every fact that says buildings counts distinct
+school addresses; the Spry pair's enrollments and spare classrooms are added
+together, and distances measure each building to the nearest other building.
+Facts that say records say so. `district_utilization` is the aggregate ratio
+(utilization enrollment summed over the scored records over their summed
+adjusted ideal capacity), not the mean of building rates.
+
+The top level carries `release`, `school_year`, the `sources` list with each
+pull date (the health-center sheet's entry records its SHA-256), and
+`invariants`: sums that are re-checked on every build.
+
+## `community_area_summary.csv` — one row per community area
+
+Grain: one community area. 77 rows, one per area in the City's boundary file,
+sorted by number. Built from `schools.csv`, `utilization.csv` and
+`sbhc_publish.csv` on the counting basis above.
+
+| Column | Type | Notes |
+|---|---|---|
+| `community_area_num` | integer | The area's number in `igwz-8jzy` (`area_numbe`). |
+| `community_area` | text | Its name as the boundary layer publishes it, matching `schools.csv` `community`. |
+| `schools_mapped` | integer | Schools in `schools.csv` located in the area. |
+| `buildings_with_status` | integer | Distinct school addresses in the area with a CPS space-use status. |
+| `underutilized_buildings` | integer | Distinct school addresses in the area whose records are labeled Underutilized. A count, not a recommendation: the label is CPS's. |
+| `empty_seats_underutilized` | integer | Adjusted ideal capacity minus utilization enrollment, summed over the area's underutilized records. Empty where the area has no underutilized building. |
+| `health_centers_operating` | integer | Operating school-based health centers located in the area by point-in-polygon on the sheet's coordinate, the same assignment the rosters use. |
+
+The columns sum to the citywide figures (642, 491, 265, 101,818 and 33). There
+is no rank column.
+
+## `cdph_mental_health_centers.csv` — the seven centers CDPH lists today
+
+Grain: one CDPH mental health center. 7 rows. The centers CDPH's *Mental
+Health Centers* page listed on 2026-09-21, published so that the two distance
+figures the article rests on — the median distance from an underutilized
+building to the nearest center, and the underutilized records within a mile of
+one — are reproducible from this release alone.
+
+| Column | Notes |
+|---|---|
+| `name`, `address` | As CDPH's page listed them on 2026-09-21. |
+| `lat` / `lon` | WGS84 degrees. |
+| `coord_basis` | `cdph_2016_roster`: the coordinate the City's 2016 clinic roster (`kcki-hnch`, `health_clinics.csv`) publishes for that address. `census_geocoder`: the U.S. Census Bureau geocoder, for the three centers on no published roster. |
+| `note` | Lawndale has moved since the 2016 roster; Pilsen opened 2024; Roseland reopened 2025. |
+| `source`, `accessed` | What the row was read from, and when. |
+
+The map still draws the 2016 roster, the most recent CDPH publishes as data;
+the article measures to these seven.
 
 ## `sbhc_publish.csv` — one row per school-based health center
 

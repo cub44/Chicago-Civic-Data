@@ -1,0 +1,8 @@
+name,address,lat,lon,coord_basis,note,source,accessed
+Englewood,641 W. 63rd St,41.779692,-87.641428,cdph_2016_roster,,CDPH Mental Health Centers page; coordinate from the CDPH clinic-locations roster (kcki-hnch),2026-09-21
+Greater Grand/Mid-South,4314 S. Cottage Grove,41.816326,-87.606847,cdph_2016_roster,,CDPH Mental Health Centers page; coordinate from the CDPH clinic-locations roster (kcki-hnch),2026-09-21
+Greater Lawn,4150 W. 55th St,41.793275,-87.727664,cdph_2016_roster,,CDPH Mental Health Centers page; coordinate from the CDPH clinic-locations roster (kcki-hnch),2026-09-21
+North River,5801 N. Pulaski Rd,41.985932,-87.728369,cdph_2016_roster,,CDPH Mental Health Centers page; coordinate from the CDPH clinic-locations roster (kcki-hnch),2026-09-21
+Lawndale,1105 S. Western Ave,41.868255,-87.686007,census_geocoder,moved to this address since the 2016 roster,CDPH Mental Health Centers page; coordinate from the U.S. Census Bureau geocoder,2026-09-21
+Pilsen,1713 S. Ashland Ave,41.858552,-87.666093,census_geocoder,opened 2024,CDPH Mental Health Centers page; coordinate from the U.S. Census Bureau geocoder,2026-09-21
+Roseland,200 E. 115th St,41.685430,-87.617973,census_geocoder,reopened 2025,CDPH Mental Health Centers page; coordinate from the U.S. Census Bureau geocoder,2026-09-21

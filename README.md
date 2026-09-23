@@ -4,7 +4,7 @@ Downloadable data behind projects on [Connor Blandford’s website](https://conn
 
 | Project | Release | Downloads | Publication status |
 |---|---|---|---|
-| [CPS space and co-location](projects/cps-space-colocation/) | Release 2026-09-23; sources pulled 2026-09-09 to 2026-09-14 ([pull table](projects/cps-space-colocation/data/README.md#source-pulls)) | Schools, utilization, co-located campuses, building coordinates, school-based health centers, public library branches, Park District buildings, city health clinics, senior centers, workforce centers | Exploratory map and article (part one of three) |
+| [CPS space and co-location](projects/cps-space-colocation/) | Release 2026-09-23; sources pulled 2026-09-09 to 2026-09-14 ([pull table](projects/cps-space-colocation/data/README.md#source-pulls)) | Schools, utilization, co-located campuses, building coordinates, school-based health centers, public library branches, Park District buildings, city health clinics, senior centers, workforce centers, a community-area summary, the seven CDPH mental health centers, and the project page's figures (`facts.json`) | Exploratory map and article (part one of three) |
 
 This collection contains curated project data and documentation. Website development, raw source snapshots, third-party pages cited as evidence, historical artifacts, and work in progress are maintained separately; where a project cites a page it does not republish, it publishes the page's URL, access date and SHA-256 instead.
 

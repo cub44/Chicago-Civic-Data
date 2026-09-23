@@ -1,6 +1,6 @@
 # CPS space and co-location
 
-[Explore the project](https://connorblandford.com/projects/cps-space-colocation/). This is the dataset behind an exploratory map and the article it accompanies, “Chicago’s underutilized schools are an unrealized opportunity” (part one of three). It examines school space and potential co-location. Release: **2026-09-23**, tagged [`cps-space-colocation-2026-09-23`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23); utilization year: **SY2026**. Sources were pulled between 2026-09-09 and 2026-09-14; the [data dictionary](data/README.md#source-pulls) lists each pull date. All dates here are YYYY-MM-DD.
+[Explore the project](https://connorblandford.com/projects/cps-space-colocation/). This is the dataset behind an exploratory map and the article it accompanies, “Chicago’s underutilized schools are an unrealized opportunity” (part one of three). It examines school space and potential co-location. Release: **2026-09-23**, tagged [`cps-space-colocation-2026-09-23.1`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23.1) (the morning's [`cps-space-colocation-2026-09-23`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23) holds the same tables without the three files added later that day); utilization year: **SY2026**. Sources were pulled between 2026-09-09 and 2026-09-14; the [data dictionary](data/README.md#source-pulls) lists each pull date. All dates here are YYYY-MM-DD.
 
 ## Download
 
@@ -23,6 +23,9 @@
 | [senior_center_buildings.csv](data/processed/senior_center_buildings.csv) | 21 | One senior center, with a coordinate inside its building |
 | [workforce_centers.csv](data/processed/workforce_centers.csv) | 5 | One DFSS workforce center |
 | [workforce_center_buildings.csv](data/processed/workforce_center_buildings.csv) | 5 | One workforce center, with a coordinate inside its building |
+| [community_area_summary.csv](data/processed/community_area_summary.csv) | 77 | One community area: schools mapped, buildings with a space-use status, underutilized buildings, empty seats in them, and operating school-based health centers |
+| [cdph_mental_health_centers.csv](data/processed/cdph_mental_health_centers.csv) | 7 | One CDPH mental health center as listed on 2026-09-21, with the coordinate the article measures to |
+| [facts.json](data/processed/facts.json) | — | Every figure the project page states, with the display string it prints, a definition, its source file and rounding |
 
 See the [data dictionary](data/README.md) for all fields and caveats. Join schools and utilization using `sid`, schools and school buildings using `sid`, libraries and library buildings using `name`, the two park files using `objectid` — not `bldg_id`, which is duplicated on two Lincoln Park buildings — and each of the three City service rosters to its building file using `site_id`. `site_id` is the data portal's own row handle, used because none of those three datasets publishes an id column and site names are not unique; it identifies a row within this snapshot and is not a durable public identifier. Campus totals overlap individual school records: do not add both together. The building files never replace a roster coordinate; they add a second one, inside the building, and say how confidently it was derived. [SHA-256 checksums](checksums.sha256) identify the download versions.
 
@@ -73,6 +76,8 @@ of the CDPH health-center dataset.
 Data are covered by the repository [license](../../LICENSE). Include the release date, 2026-09-23, when citing or reusing them.
 
 ## What changed on 2026-09-23
+
+**Later the same day, three files joined the release** (tag [`cps-space-colocation-2026-09-23.1`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23.1)): `facts.json`, every figure the project page states with the display string it prints, a definition, its source file and rounding; `community_area_summary.csv`, one row per community area; and `cdph_mental_health_centers.csv`, the seven centers the article measures distances to, three of which were on no published roster. **No figure changed**, and the 17 CSVs are byte for byte the morning's files. The counting basis the page states is now data: the utilization file's rows are school records, a building is a distinct school address, and 266 underutilized records stand in 265 buildings. The morning's changes follow.
 
 Provenance and documentation, after a pre-showcase audit of this repository, the working
 repository and the project page. **No figure changed**, and no coordinate, count, status,
