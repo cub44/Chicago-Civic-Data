@@ -1,6 +1,6 @@
 # Data dictionary
 
-Release **2026-09-23**, tagged [`cps-space-colocation-2026-09-23.1`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23.1). Cite that date and the file you used. Each source was pulled on its own date, listed below. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%. All dates are YYYY-MM-DD.
+Release **2026-09-24**, tagged [`cps-space-colocation-2026-09-24`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-24). Cite that date and the file you used. Each source was pulled on its own date, listed below. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%. All dates are YYYY-MM-DD.
 
 ### Source pulls
 
@@ -815,6 +815,7 @@ sorted by number. Built from `schools.csv`, `utilization.csv` and
 |---|---|---|
 | `community_area_num` | integer | The area's number in `igwz-8jzy` (`area_numbe`). |
 | `community_area` | text | Its name as the boundary layer publishes it, matching `schools.csv` `community`. |
+| `display_name` | text | `community_area` as the pothole release (Chicago-Potholes) spells it: title case, with O'Hare and McKinley Park. The name to print; `community_area` stays the key. |
 | `schools_mapped` | integer | Schools in `schools.csv` located in the area. |
 | `buildings_with_status` | integer | Distinct school addresses in the area with a CPS space-use status. |
 | `underutilized_buildings` | integer | Distinct school addresses in the area whose records are labeled Underutilized. A count, not a recommendation: the label is CPS's. |

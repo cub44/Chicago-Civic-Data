@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "project": "cps-space-colocation",
- "release": "2026-09-23",
+ "release": "2026-09-24",
  "school_year": "SY2026",
  "generated_by": "scripts/build_facts.py",
  "sources": [

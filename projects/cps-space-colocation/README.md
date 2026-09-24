@@ -1,6 +1,6 @@
 # CPS space and co-location
 
-[Explore the project](https://connorblandford.com/projects/cps-space-colocation/). This is the dataset behind an exploratory map and the article it accompanies, “Chicago’s underutilized schools are an unrealized opportunity” (part one of three). It examines school space and potential co-location. Release: **2026-09-23**, tagged [`cps-space-colocation-2026-09-23.1`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23.1) (the morning's [`cps-space-colocation-2026-09-23`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-23) holds the same tables without the three files added later that day); utilization year: **SY2026**. Sources were pulled between 2026-09-09 and 2026-09-14; the [data dictionary](data/README.md#source-pulls) lists each pull date. All dates here are YYYY-MM-DD.
+[Explore the project](https://connorblandford.com/projects/cps-space-colocation/). This is the dataset behind an exploratory map and the article it accompanies, “Chicago’s underutilized schools are an unrealized opportunity” (part one of three). It examines school space and potential co-location. Release: **2026-09-24**, tagged [`cps-space-colocation-2026-09-24`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-24); utilization year: **SY2026**. Sources were pulled between 2026-09-09 and 2026-09-14; the [data dictionary](data/README.md#source-pulls) lists each pull date. All dates here are YYYY-MM-DD.
 
 ## Download
 
@@ -73,7 +73,11 @@ See [SBHC resolution notes](docs/RESOLUTION_NOTES.md) for source hierarchy,
 current-status evidence, deliberately unresolved values, and the 2014-only use
 of the CDPH health-center dataset.
 
-Data are covered by the repository [license](../../LICENSE). Include the release date, 2026-09-23, when citing or reusing them.
+Data are covered by the repository [license](../../LICENSE). Include the release date, 2026-09-24, when citing or reusing them.
+
+## What changed on 2026-09-24
+
+`community_area_summary.csv` gains `display_name`, each community area's name as the Chicago Potholes release spells it (title case, with O'Hare and McKinley Park), beside the boundary layer's capitals in `community_area`, which stays the key. **No figure changed**: `facts.json` differs only in its release date, and the other 18 files are byte for byte the files of release 2026-09-23.
 
 ## What changed on 2026-09-23
 
