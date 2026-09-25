@@ -1,10 +1,16 @@
 """
-Hand-researched resolutions for cross-source discrepancies in sbhc.csv.
+Resolutions for cross-source discrepancies in sbhc.csv, researched by AI agents.
 
-Each record is one (site_key, field) discrepancy. Values are recorded AS FOUND in
-each source; `resolved` is the value the evidence supports, or "" (null) where desk
-research could not settle it. Nothing is interpolated: if sources conflict and no
-operator statement breaks the tie, `resolved` stays "" and confidence is "unresolved".
+The agents checked each site's setting, access line and hours against the
+sponsor's own published pages on 2026-09-12. No person has re-checked those
+findings, except the Johnson center's setting, which the author confirmed from
+local knowledge.
+
+Each record is one finding about a (site_key, field) pair; a pair can carry more
+than one. Values are recorded AS FOUND in each source; `resolved` is the value the
+evidence supports, or "" (null) where the research could not settle it. Nothing is
+interpolated: if sources conflict and no operator statement breaks the tie,
+`resolved` stays "" and confidence is "unresolved".
 
 site_key matches sbhc.csv site_name exactly.
 All URLs accessed 2026-09-12.

@@ -15,11 +15,13 @@ jobs:
       run:
         working-directory: projects/cps-space-colocation
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Build and validate publication files
         run: python3 build_resolved.py && python3 test_sbhc_publish.py
       - name: Require generated files to be committed
         run: git diff --exit-code -- data/processed
+      - name: Verify every published file against its checksum
+        run: shasum -a 256 -c checksums.sha256

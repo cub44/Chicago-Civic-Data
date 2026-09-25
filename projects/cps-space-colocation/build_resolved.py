@@ -2,7 +2,7 @@
 """
 Emits three new files from sbhc.csv + resolutions.py. Neither input sheet is modified.
 
-  data/processed/sbhc_discrepancies.csv  one row per (site, field) finding
+  data/processed/sbhc_discrepancies.csv  one row per finding about a (site, field) pair
   data/processed/sbhc_resolved.csv       source columns plus parallel resolved_* columns
   data/processed/sbhc_publish.csv        canonical publication-shaped sheet
 

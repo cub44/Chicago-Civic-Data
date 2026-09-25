@@ -5,8 +5,6 @@ __pycache__/
 venv/
 .DS_Store
 
-dist/
-.sites-runtime/
 .env
 .env.*
 !.env.example

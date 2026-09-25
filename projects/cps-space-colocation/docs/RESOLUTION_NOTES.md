@@ -1,20 +1,49 @@
-# SBHC cross-source reconciliation — 2026-09-12
+# School-based health center (SBHC) cross-source reconciliation — 2026-09-12
 
-152 field-level findings across all 38 rows of `sbhc.csv`, including the three schema
-additions applied in this revision and the `sid` correction added in the 2026-09-21
-release. 5 source-field findings are deliberately left null — 9 rows in
+The health-center roster was researched by AI agents, which checked each site's setting,
+access line and hours against the sponsor's own published pages on 2026-09-12. No person
+has re-checked those findings, except the Johnson center's setting, which the author
+confirmed from local knowledge.
+
+`sbhc_discrepancies.csv` holds 152 field-level findings across all 38 rows of `sbhc.csv`,
+over 149 (site, field) pairs: the three centers that are closed or consolidated (Uplift,
+Hope Health & Wellness and Reavis) each carry two `operational_status` findings, one from
+the field check and one from the status column added in revision 2. The findings include
+the three schema additions applied in revision 2 and the `sid` correction added in the
+2026-09-21 release. 5 source-field findings are deliberately left null — 9 rows in
 `sbhc_discrepancies.csv` carry `confidence = unresolved` once the two derived
 `hours_split` rows and the two mobile units' unverified `operational_status`
 rows are counted alongside them.
 
-**Revision 2 (2026-09-12):** Johnson resolved to `school_linked` on local knowledge; added
-`operational_status` + `closed_on`, split `hours` into `hours_medical_school_year` /
-`hours_medical_summer` / `hours_dental`, and added `room_or_entrance`.
+## Revisions
 
-Neither input sheet was modified. Outputs:
+- **Revision 2 (2026-09-12):** Johnson resolved to `school_linked` on the author's local
+  knowledge, backed by City footprints; added `operational_status` + `closed_on`, split
+  `hours` into `hours_medical_school_year` / `hours_medical_summer` / `hours_dental`, and
+  added `room_or_entrance`.
+- **2026-09-13:** `manually_verified` retired from both processed sheets: it read `false`
+  on every row and asserted nothing. Mansueto moved from `unverified` to `operating` at
+  medium confidence (see "Mansueto is operating" below), which brings the operating count
+  to 33, the number Chicago Public Schools (CPS) publishes.
+- **Release 2026-09-21:** the older-vintage `cps_status_2025`, `cps_adjusted_su` and
+  `cps_colo` columns retired from both processed sheets; the Hope Health & Wellness row's
+  `sid` blanked and recorded as a finding, the 152nd; notes and sheets written in American
+  spelling; and the cited captures no longer republished, with
+  `data/source/evidence_manifest.csv` recording each one's URL, access date, size and
+  SHA-256 instead.
+- **Release 2026-09-23:** the Johnson note names `test_sbhc_publish.py` instead of a file
+  that does not exist, and two notes write 2022-10 and 2026-02. These notes corrected their
+  own counts and now say which rows publish no hours. No status, value or confidence grade
+  changed.
+- **Release 2026-09-24:** no change to the three SBHC sheets.
 
-- `sbhc_discrepancies.csv` — the evidence table, one row per (site, field): each source's
-  value as found, the resolved value, confidence, citations, access date.
+## Outputs
+
+Neither input sheet was modified. The build writes:
+
+- `sbhc_discrepancies.csv` — the evidence table, one row per finding (a site and field can
+  carry more than one; see above): each source's value as found, the resolved value,
+  confidence, citations, access date.
 - `sbhc_resolved.csv` — `sbhc.csv`'s columns untouched (less four retired ones:
   `manually_verified` and the older-vintage `cps_status_2025`, `cps_adjusted_su`, `cps_colo`), plus `resolved_*` columns so the
   two can be diffed, plus per-row citations and confidence. This is the audit artifact.
@@ -26,19 +55,24 @@ Neither input sheet was modified. Outputs:
 
 ## Source hierarchy applied
 
-1. The operator's own current site (Erie, Tapestry, Rush, Alivio, LCHC, UI Health Mile
-   Square, TCA, Esperanza, Near North).
-2. HRSA administrative records — the 340B OPAIS entity pages carry site-level status and
-   termination dates, which is the only source that dates a closure.
-3. CPS's current published directory (2025-26 forms booklet, p.11).
-4. The IDPH certified list and the uploaded CPS sheet.
-5. CDPH's health-center dataset — **note this is a 2014 snapshot** (rows last updated
-   2014-04-22). Used only to corroborate addresses that have not changed, never for
-   current status or provider names.
+1. The operator's own current site (Erie, Tapestry, Rush, Alivio, Lawndale Christian
+   Health Center (LCHC), UI Health Mile Square, TCA Health, Inc. (TCA), Esperanza, Near
+   North).
+2. Administrative records of the U.S. Health Resources and Services Administration
+   (HRSA) — the entity pages of its 340B Office of Pharmacy Affairs Information System
+   (OPAIS) carry site-level status and termination dates, which is the only source that
+   dates a closure.
+3. The current directory CPS publishes: its 2025-26 forms booklet, p.11.
+4. The certified list of the Illinois Department of Public Health (IDPH), and CPS's
+   health-center sheet.
+5. The health-center dataset of the Chicago Department of Public Health (CDPH) —
+   **note this is a 2014 snapshot** (rows last updated 2014-04-22). Used only to
+   corroborate addresses that have not changed, never for current status or provider
+   names.
 
 Two vintage problems drive most of the conflicts. The IDPH certified list is stale on
-provider names and phones by several years. The uploaded CPS sheet's provider column is
-named `SY2021_School_Health_Center`, and its hours in particular look like SY2021 values;
+provider names and phones by several years. The provider column of CPS's health-center
+sheet is named `SY2021_School_Health_Center`, and its hours in particular look like SY2021 values;
 CPS's 2025-26 booklet supersedes it where the two differ.
 
 ## Three centers in the IDPH list are not currently operating
@@ -46,7 +80,7 @@ CPS's 2025-26 booklet supersedes it where the two differ.
 This is the most consequential finding, because all three are in `sbhc.csv` as live rows
 with `idph_certified=true`, and two of them carry a coordinate that would put a dot on a map.
 
-| Center | Evidence | Date |
+| Center (IDPH's name; SHC is school health center) | Evidence | Date |
 |---|---|---|
 | Uplift SHC (900 W Wilson Ave) | 340B site BPS-H80-010055 terminated, "Business decision by the Covered Entity"; absent from Tapestry 360's six-site student-health list | 2024-04-01 |
 | Hope Health & Wellness SHC (1628 W Washington Blvd) | 340B site BPS-H80-010036 terminated, reason **"Site closure"**; absent from Mile Square's current four-site list | 2024-04-01 |
@@ -66,7 +100,8 @@ IDPH-only rows were the discrepancy, not a coverage gap.
 Institute Learning Academy** — UIC's own announcement names it directly. `sbhc.csv` joined
 the IDPH entry to Rudolph by address identity, and the `match_basis=address_identity` value
 is what flagged it. The other two `address_identity` rows (Uplift, Reavis) are the closed
-sites. That join rule produced three bad rows out of three; worth retiring.
+sites. That join rule produced three bad rows out of three, and it has been retired: no
+published row uses it, and the test rejects it.
 
 The 2026-09-21 release also blanks this row's `sid`. `school_name` had already been
 corrected to Hope, but `sid` still read `610308`, Rudolph's id, so the published row named
@@ -75,8 +110,8 @@ release, and UIC's announcement, the only source naming the host, dates from 201
 The CPS profile API now places Rudolph at the same address; nothing ties the center, which
 closed 2024-04-01, to Rudolph.
 
-Separately, `Military Leadership Academy` (sid 609780) is a stale CPS label. Both the
-uploaded CPS sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**.
+Separately, `Military Leadership Academy` (sid 609780) is a stale CPS label. Both CPS's
+health-center sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**.
 
 ## In school vs linked to one
 
@@ -96,7 +131,8 @@ uploaded CPS sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**.
   center at its school's coordinate.
 - **Mansueto → school_linked confirmed, and operating.** The center is Esperanza's Brighton
   Park clinic at 4700 S California Ave, about a kilometer from the school. CPS's off-site
-  override is right, and the IPHCA locator carries the site as current.
+  override is right, and the Illinois Primary Health Care Association (IPHCA) locator
+  carries the site as current.
 - **Cultivate Collective → host school is Academy for Global Citizenship**, the CPS charter
   on that campus. Note this site is neither IDPH-certified nor in CPS's directory; it may not
   meet a strict SBHC definition at all.
@@ -123,8 +159,9 @@ uploaded CPS sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**.
   Community Health Center` → Access Community Health **Network** (here IDPH is right and
   CPS is wrong).
 - `Board of Trustees, U of I at Chicago` vs `UI Health` is **not** a conflict — legal
-  grantee vs brand. The operating unit is UI Health Mile Square Health Center. Worth a
-  separate `sponsor_legal_name` column rather than forcing a single value.
+  grantee vs brand. The operating unit is UI Health Mile Square Health Center, so the legal
+  grantee goes in a separate `sponsor_legal_name` column rather than being forced into one
+  value.
 - `Near North/Komed-Homan Health Center` conflates two separate Near North sites; Komed
   Holman is at 4259 S Berkeley Ave and is not the Reavis sponsor.
 
@@ -137,11 +174,11 @@ CPS sources miss the Wednesday 10am open.
 Other corrections: **Senn** is Mon–Fri 8:00–4:00, not the three days CPS lists (operator page
 modified 2026-08-17). **Farragut** runs to 7:00pm on Tuesdays, which both CPS sources miss.
 **Carver** is Mon–Fri 9:00–4:00 per TCA, against CPS's Mon–Wed 9:00–1:00 — a large gap, and
-the TCA page is dated 2023, so this one deserves a phone call.
+the TCA page is dated 2023, so this value is not yet confirmed with the sponsor.
 
-Mile Square publishes separate **school-season and summer** hours (summer window Jun 16 –
-Aug 8). `sbhc.csv` has one hours field, so it cannot represent this; Davis and Drake both
-need two fields. The CPS 8:00am open for Davis may simply be the summer value.
+Mile Square publishes separate **school-season and summer** hours (summer window
+Jun 16–Aug 8). `sbhc.csv` has one hours field, so it cannot represent this; Davis and
+Drake both need two fields. The CPS 8:00am open for Davis may simply be the summer value.
 
 ## Left null on purpose
 
@@ -150,11 +187,12 @@ rule, these stay empty rather than being split or averaged:
 
 1. **Drake `hours`** and **`phone`** — UI Health's two own pages disagree with each other
    (8:00–4:00 vs 8:30–4:30; ...5745 vs ...5746).
-2. **Little Village Lawndale `hours`** — a provider-claimed third-party listing shows a much
-   narrower week including a Wednesday closure; Alivio publishes no hours for the site.
+2. **Greater Lawndale `hours`** (IDPH's Little Village Lawndale SHC) — a provider-claimed
+   third-party listing shows a much narrower week including a Wednesday closure; Alivio
+   publishes no hours for the site.
 3. **Hibbard `hours_medical_school_year` vs `hours_dental`** — the split is now applied,
    but the medical/dental attribution is inferred from the access note rather than published
-   by Tapestry, so it is medium confidence and worth a phone call.
+   by Tapestry, so it is medium confidence and not yet confirmed with the sponsor.
 4. **Reavis `hours`** — historical value recorded for reference only, since the site appears
    closed.
 
@@ -193,7 +231,7 @@ published with hours or with `open_to_public=true`.
 `hours_medical_school_year` / `hours_medical_summer` / `hours_dental`. An empty cell means
 **not established**, never "same as school year."
 
-- Mile Square publishes two windows (summer runs Jun 16 – Aug 8). Davis and Drake both have
+- Mile Square publishes two windows (summer runs Jun 16–Aug 8). Davis and Drake both have
   one. Splitting isolated the Drake conflict to a single cell: its summer window is
   unambiguous and now published, where previously the conflict over its school-year hours
   would have discarded both.
@@ -203,8 +241,8 @@ published with hours or with `open_to_public=true`.
   school-year medical, and 4 with no hours finding at all because no source publishes hours
   for them: Uplift, Hope, and the two mobile units. Six rows publish no hours: those 4, plus
   the two researched splits that resolve to empty — Greater Lawndale, where the value is
-  contested and needs a phone confirm, and Reavis, where the center appears closed and the
-  historical value is recorded for reference rather than asserted. `build_resolved.py` prints
+  contested and not yet confirmed with the sponsor, and Reavis, where the center appears
+  closed and the historical value is recorded for reference rather than asserted. `build_resolved.py` prints
   the same three-way count.
   Mansueto keeps the CPS sheet's hours, carried forward as school-year medical.
 
@@ -215,12 +253,7 @@ Beethoven's Room 134. A published room number or a named exterior door is eviden
 center occupies school space, which a street address is not — so the test refuses this
 column on any `school_linked` or `mobile` row.
 
-### Still worth doing
+### `in_building` without a `sid`
 
-- `sponsor_legal_name` alongside `sponsor`. The UI Health rows are the case: IDPH's "Board
-  of Trustees, U of I at Chicago" is the grantee and CPS's "UI Health" is the brand, and
-  forcing one value loses information that is correct at its own level.
-- Retire `match_basis='address_identity'`. All three rows it produced were wrong — two
-  closed sites and one bad school match.
-- `in_building` no longer requires a CPS `sid`: Cultivate Collective's host school resolves
-  to a charter name, so the test accepts a sid **or** a school name.
+`in_building` no longer requires a CPS `sid`: Cultivate Collective's host school resolves
+to a charter name, so the test accepts a sid **or** a school name.
