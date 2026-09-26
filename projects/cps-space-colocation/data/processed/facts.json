@@ -1,9 +1,13 @@
 {
  "schema": 1,
  "project": "cps-space-colocation",
- "release": "2026-09-24",
+ "release": "2026-09-26",
  "school_year": "SY2026",
- "generated_by": "scripts/build_facts.py",
+ "coverage": {
+  "start": "2025-08",
+  "end": "2026-06"
+ },
+ "generated_by": "build_facts.py in the private working repository (not published)",
  "sources": [
   {
    "id": "cps_space_utilization_sy2026",
@@ -14,7 +18,7 @@
   {
    "id": "cps_school_profiles",
    "name": "CPS School Profile Information API",
-   "url": "https://api.cps.edu/schoolprofile/CPS/AllSchoolProfiles",
+   "url": "https://api.cps.edu/schoolprofile/Help/Api/GET-CPS-AllSchoolProfiles",
    "pulled": "2026-09-09"
   },
   {
@@ -63,19 +67,20 @@
    "id": "socrata_syp8-uezg",
    "name": "Building Footprints, the City's 2015 snapshot (extracts around each point set)",
    "url": "https://data.cityofchicago.org/d/syp8-uezg",
-   "pulled": "2026-09-13"
+   "pulled": "2026-09-13",
+   "pulled_last": "2026-09-14"
   },
   {
    "id": "sbhc_roster",
-   "name": "School-based health center roster, hand-researched and published from cub44/Chicago-Civic-Data (sbhc_publish.csv)",
-   "url": "https://github.com/cub44/Chicago-Civic-Data/tree/main/projects/cps-space-colocation",
-   "pulled": "2026-09-23",
+   "name": "School-based health center roster, researched by AI agents and published from cub44/Chicago-Civic-Data (sbhc_publish.csv)",
+   "url": "https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-26/projects/cps-space-colocation",
+   "pulled": "2026-09-12",
    "verified_through": "2026-09-12",
-   "sha256": "38126372897a30a20eade1331eecbf75a5bb2847fcd529c3abc66792ecc62f39"
+   "sha256": "991b64a95fbbf3f21b18746287ca1cd49f92fc743e3bb9f8c4427e252ae92576"
   },
   {
    "id": "cdph_mental_health_centers",
-   "name": "CDPH, Mental Health Centers (web page)",
+   "name": "Mental health centers compiled by AI agents from CDPH's Mental Health Centers web page",
    "url": "https://www.chicago.gov/city/en/depts/cdph/supp_info/behavioral-health/mental_health_centers.html",
    "pulled": "2026-09-21"
   },
@@ -374,7 +379,7 @@
   "students_underutilized_no_center": {
    "value": 81729,
    "display": "81,700",
-   "label": "Students in underutilized buildings with no health center",
+   "label": "Students in underutilized buildings with no school-based health center",
    "definition": "20th-day enrollment summed over underutilized records whose school hosts no operating in-building health center.",
    "source_file": "utilization.csv",
    "sources": [
@@ -802,7 +807,7 @@
   "health_centers_operating": {
    "value": 33,
    "display": "33",
-   "label": "Health centers operating",
+   "label": "School-based health centers operating",
    "definition": "School-based health centers whose operational_status is operating.",
    "source_file": "sbhc_publish.csv",
    "sources": [
@@ -814,7 +819,7 @@
   "health_centers_closed": {
    "value": 3,
    "display": "3",
-   "label": "Health centers closed or consolidated",
+   "label": "School-based health centers closed or consolidated",
    "definition": "Centers whose operational_status is closed or closed_or_consolidated.",
    "source_file": "sbhc_publish.csv",
    "sources": [
@@ -826,7 +831,7 @@
   "health_center_sponsors": {
    "value": 13,
    "display": "13",
-   "label": "Sponsors of operating centers",
+   "label": "Sponsors of operating school-based health centers",
    "definition": "Distinct non-empty sponsor values among operating centers.",
    "source_file": "sbhc_publish.csv",
    "sources": [
@@ -838,7 +843,7 @@
   "health_centers_in_building": {
    "value": 30,
    "display": "30",
-   "label": "Operating centers inside a school building",
+   "label": "Operating school-based health centers inside a school building",
    "definition": "Operating centers whose setting is in_building.",
    "source_file": "sbhc_publish.csv",
    "sources": [
@@ -850,7 +855,7 @@
   "centers_with_status": {
    "value": 26,
    "display": "26",
-   "label": "In-building centers whose host has a space-use status",
+   "label": "In-building school-based health centers whose host has a space-use status",
    "definition": "Operating in-building centers whose host sid has a cps_status in utilization.csv.",
    "source_file": "sbhc_publish.csv",
    "sources": [
@@ -863,7 +868,7 @@
   "centers_in_underutilized": {
    "value": 19,
    "display": "19",
-   "label": "Centers in buildings CPS scores underutilized",
+   "label": "School-based health centers in buildings CPS scores underutilized",
    "definition": "Operating in-building centers whose host record is Underutilized.",
    "source_file": "sbhc_publish.csv",
    "sources": [
@@ -876,7 +881,7 @@
   "underutilized_buildings_with_center": {
    "value": 19,
    "display": "19",
-   "label": "Underutilized buildings with a center",
+   "label": "Underutilized buildings with a school-based health center",
    "definition": "Distinct underutilized buildings hosting an operating in-building health center.",
    "source_file": "utilization.csv",
    "sources": [
@@ -889,7 +894,7 @@
   "underutilized_buildings_no_center": {
    "value": 246,
    "display": "246",
-   "label": "Underutilized buildings with no center",
+   "label": "Underutilized buildings with no school-based health center",
    "definition": "The underutilized buildings less those with an operating in-building health center; both Spry records lack one.",
    "source_file": "utilization.csv",
    "sources": [
@@ -902,7 +907,7 @@
   "centers_open_to_community": {
    "value": 15,
    "display": "15",
-   "label": "Operating centers open to the community",
+   "label": "Operating school-based health centers open to the community",
    "definition": "Operating centers whose open_to_public is true.",
    "source_file": "sbhc_publish.csv",
    "sources": [
@@ -914,7 +919,7 @@
   "hosts_with_enrollment": {
    "value": 30,
    "display": "30",
-   "label": "Operating centers whose host school has a 20th-day count",
+   "label": "Operating school-based health centers whose host school has a 20th-day count",
    "definition": "Operating centers whose host sid has an enrollment_20th_day in utilization.csv.",
    "source_file": "sbhc_publish.csv",
    "sources": [
@@ -927,7 +932,7 @@
   "host_median_enrollment": {
    "value": 483.0,
    "display": "483",
-   "label": "Median enrollment of those host schools",
+   "label": "Median enrollment of schools hosting an operating school-based health center",
    "definition": "Median 20th-day enrollment over the 30 host schools with a count.",
    "source_file": "sbhc_publish.csv",
    "sources": [

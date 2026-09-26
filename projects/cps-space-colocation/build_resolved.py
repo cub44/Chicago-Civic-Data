@@ -82,7 +82,7 @@ def merge_sources(existing, new):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    rows = list(csv.DictReader(SRC.open()))
+    rows = list(csv.DictReader(SRC.open(newline="", encoding="utf-8")))
     by_site = {r["site_name"]: r for r in rows}
 
     # every registry key must name a real row, or a join is silently wrong
@@ -140,7 +140,7 @@ def main():
 
     ev_cols = ["site_name", "sid", "field", "cps_value", "idph_value", "other_value",
                "resolved", "confidence", "sources", "accessed", "note"]
-    with (OUT / "sbhc_discrepancies.csv").open("w", newline="") as fh:
+    with (OUT / "sbhc_discrepancies.csv").open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=ev_cols)
         w.writeheader()
         for x in sorted(findings, key=lambda d: (d["site_name"], d["field"])):
@@ -225,7 +225,7 @@ def main():
         o["sponsor_legal_name"] = SPONSOR_LEGAL_NAME.get(r["site_name"], "")
         out_rows.append(o)
 
-    with (OUT / "sbhc_resolved.csv").open("w", newline="") as fh:
+    with (OUT / "sbhc_resolved.csv").open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=resolved_cols, extrasaction="ignore")
         w.writeheader()
         for o in out_rows:
@@ -247,7 +247,7 @@ def main():
         c for c in publish_cols if c not in ("sponsor_cps", "sponsor_idph")
     ]
 
-    with (OUT / "sbhc_publish.csv").open("w", newline="") as fh:
+    with (OUT / "sbhc_publish.csv").open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=publish_cols, extrasaction="ignore")
         w.writeheader()
         for o in out_rows:

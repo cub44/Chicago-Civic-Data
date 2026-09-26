@@ -129,8 +129,8 @@ add("Wilma Rudolph Elementary Learning Center", "school_name", "not listed",
 add("Military Leadership Academy", "school_name", "MARINE LEADERSHIP AT AMES HS",
     "(center listed as 'Primecare Hamlin')", "CPS geojson label 'Military Leadership Academy'",
     "Marine Leadership Academy at Ames", "high", ["cps_booklet", "cdph2014"],
-    "sbhc.csv carries a stale CPS school label for sid 609780. Both the uploaded CPS "
-    "sheet and the CPS 2025-26 booklet say Marine Leadership at Ames HS.")
+    "sbhc.csv carries a stale CPS school label for sid 609780. Both CPS's health-center "
+    "sheet (pulled 2026-09-11) and the CPS 2025-26 booklet say Marine Leadership at Ames HS.")
 
 # ===== 3. SPONSOR / PROVIDER NAME ==========================================
 _TAP = ["Stephen F Gale Elementary Community Academy", "William G Hibbard Elementary School",
@@ -208,6 +208,13 @@ add("William C Reavis Math & Science Specialty ES", "sponsor", "",
     "site at 4259 S Berkeley Ave. Sponsor is Near North Health (formerly Near North Health "
     "Service Corporation). Sponsor recorded for completeness; the site itself appears closed.")
 
+add("Esperanza at Cultivate Collective", "sponsor", "not listed", "not listed",
+    "HRSA grantee: ESPERANZA HEALTH CENTERS", "Esperanza Health Centers", "high",
+    ["esp_cult", "cult_hw"],
+    "Fills the blank sponsor from this row's own HRSA grantee, written as the operator writes "
+    "its name (as on the Marquette row). Cultivate Collective describes the clinic as an "
+    "'on-site Health Clinic operated by Esperanza Health Centers'.")
+
 # ===== 4. SETTING (in school vs school-linked) ==============================
 add("David G Farragut Career Academy High School", "setting", "in_building (school address)",
     "3256 W. 24th St. (separate street address)", "HRSA BPS-H80-001032 @ 3256 W 24th St",
@@ -221,7 +228,8 @@ add("Nathan S Davis Elementary School", "setting", "3050 W 39th Pl (school bldg 
     "sbhc.csv has this as school_linked because the center address differs from the school "
     "building address. IDPH names it an Annex, i.e. CPS space on the Davis campus, and both "
     "CPS and UI Health publish the center at 3050 W 39th Pl. For a co-location analysis this "
-    "is in-building CPS space. Flagged: depends on whether the annex is a separate structure.")
+    "is in-building CPS space. Medium confidence: it depends on whether the annex is a separate "
+    "structure.")
 
 add("Noble - Gary Comer College Prep", "setting", "7200 S Ingleside Ave (school @ 7131 S South Chicago Ave)",
     "Comer Youth Center @ 7200 S. Ingleside Ave", "CDPH 2014: 'ACCESS at Gary Comer Youth Center'",
@@ -232,15 +240,16 @@ add("Noble - Gary Comer College Prep", "setting", "7200 S Ingleside Ave (school 
 add("Noble - Gary Comer College Prep", "lat_lon", "", "",
     "CDPH 2014 geocode of 7200 S Ingleside Ave: 41.764002, -87.601896",
     "41.764002,-87.601896", "medium", ["cdph2014"],
-    "Fills the null coordinate flagged in sbhc.csv. Basis is a 2014 CDPH geocode of an "
+    "Fills the null coordinate in sbhc.csv. Basis is a 2014 CDPH geocode of an "
     "address that has not changed, not the center's own published coordinate. "
     "Set coord_basis='cdph_2014_geocode', not 'cps_school_building'.")
 
 add("Noble Mansueto High School", "setting", "cps_offsite_override @ 4700 S California Ave",
     "not listed", "IPHCA lists 4700 S California Ave as an Esperanza site",
     "school_linked", "high", ["iphca", "esp_cult"],
-    "The center is Esperanza's own Brighton Park clinic at 4700 S California Ave, roughly a "
-    "kilometer from Mansueto HS (2911 W 47th St). CPS's off-site override is correct.")
+    "The center is Esperanza's own Brighton Park clinic at 4700 S California Ave, about one "
+    "block (roughly 620 feet) east of Mansueto HS (2911 W 47th St). CPS's off-site override "
+    "is correct.")
 
 add("Esperanza at Cultivate Collective", "school_name", "not listed", "not listed",
     "HRSA setting 'School' @ 4350 S Laporte Ave",
@@ -279,16 +288,19 @@ add("James Weldon Johnson STEAM Elementary School", "site_address", "1420 S Alba
     "1504 S Albany Ave", "medium", ["erie_john", "cdph2014", "cps_booklet"],
     "Operator (Erie), IDPH and CDPH 2014 all say 1504 S Albany; HRSA's coordinate in "
     "sbhc.csv (41.8611) also matches 1504 rather than 1420. CPS gives 1420 S Albany in both "
-    "the uploaded sheet and the 2025-26 booklet - that is the school building address.")
+    "its health-center sheet (pulled 2026-09-11) and the 2025-26 booklet - that is the school "
+    "building address.")
 
 add("James Weldon Johnson STEAM Elementary School", "setting", "in_building",
     "separate street address (1504 S. Albany Ave.)",
     "Erie, CDPH 2014 and HRSA's coordinate all place the center at 1504 S Albany",
     "school_linked", "high", ["erie_john", "cdph2014", "cps_booklet"],
     "CORRECTED from sbhc.csv's in_building. 1504 S Albany is a separate building from the "
-    "Johnson school building at 1420 S Albany, confirmed by local knowledge on 2026-09-12. "
-    "CPS publishes the school address for this center in both the uploaded sheet and the "
-    "2025-26 booklet, which is what produced the bad in_building classification. "
+    "Johnson school building at 1420 S Albany: the author confirmed this from local knowledge "
+    "on 2026-09-12, and the City's building footprints put the two in separate buildings, "
+    "about 270 feet apart. CPS publishes the school address for this center in both its "
+    "health-center sheet (pulled 2026-09-11) and the 2025-26 booklet, which is what produced "
+    "the bad in_building classification. "
     "coord_basis stays 'hrsa_site': the existing coordinate (41.861116, -87.703417) is the "
     "center's own, not the school's, so the school_linked coordinate rule in test_sbhc_publish.py "
     "passes unchanged. Note this row no longer needs to satisfy the in_building/sid rule.")
@@ -359,11 +371,11 @@ add("George Washington Carver Military Academy HS", "hours", "Mon-Wed: 9:00am-1p
     "TCA: 9:00 am - 4:00 pm Mon/Tues/Wed/Thurs/Fri (Carver students only)",
     "Mon-Fri: 9:00am-4:00pm", "medium", ["tca_carver"],
     "Operator publishes a five-day 9-4 schedule against CPS's three-day 9-1. Large gap; "
-    "operator page last dated 2023, so worth a phone confirm.")
+    "operator page last dated 2023, so not yet confirmed with the sponsor.")
 
 add("Nathan S Davis Elementary School", "hours",
     "Mon, Tue, Wed, Fri: 8:00am-4:30pm, Thur: 10:00am-6:00pm", "",
-    "Mile Square: school season M/Tu/W/F 8:30am-4:30pm, Th 10am-6pm; summer (Jun 16-Aug 8) M-F 8am-4:30pm",
+    "Mile Square: school season M/Tu/W/F 8:30am-4:30pm, Th 10am-6pm; summer (Jun 16–Aug 8) M-F 8am-4:30pm",
     "Mon, Tue, Wed, Fri: 8:30am-4:30pm; Thu: 10:00am-6:00pm", "medium",
     ["msq_davis", "uic_ocean", "cps_booklet"],
     "Operator says 8:30am open in school season; both CPS sources say 8:00am. CPS may be "
@@ -389,7 +401,7 @@ add("Greater Lawndale High School For Social Justice", "hours",
     "", "unresolved", ["alivio_lvlhs", "alivio_loc"],
     "NOT RESOLVED. A provider-claimed third-party listing shows a much narrower schedule "
     "including a Wednesday closure; Alivio's own site publishes no hours for this site. "
-    "Left null; needs a phone confirm.")
+    "Left null; not yet confirmed with the sponsor.")
 
 add("William G Hibbard Elementary School", "hours",
     "Mon, Wed, Thur: 8:00am-4:00pm / Mon: 8:00am-2:30pm, Wed: 8:00am-2:00pm", "",
@@ -432,8 +444,8 @@ add("Roberto Clemente Community Academy High School", "phone", "312-432-7475", "
 
 add("Benito Juarez Community Academy High School", "phone", "773-254-1400", "773-579-2691",
     "CPS 2025-26 booklet: 773-579-2691", "773-579-2691", "high", ["cps_booklet"],
-    "IDPH and the current CPS booklet agree on the site line; the uploaded CPS sheet carries "
-    "Alivio's central number instead.")
+    "IDPH and the current CPS booklet agree on the site line; CPS's health-center sheet "
+    "(pulled 2026-09-11) carries Alivio's central number instead.")
 
 add("Chicago Vocational Career Academy High School", "phone", "773-816-5081", "773-768-5000",
     "CPS 2025-26 booklet: 773-768-5000", "773-768-5000", "medium", ["cps_booklet", "cdph2014"],
@@ -643,11 +655,11 @@ def hrs(site, school_year, summer, dental, conf, srcs, note=""):
 
 hrs("Nathan S Davis Elementary School",
     "Mon, Tue, Wed, Fri: 8:30am-4:30pm; Thu: 10:00am-6:00pm",
-    "Mon-Fri: 8:00am-4:30pm (Jun 16 - Aug 8)", "", "medium", ["msq_davis", "cps_booklet"],
+    "Mon-Fri: 8:00am-4:30pm (Jun 16–Aug 8)", "", "medium", ["msq_davis", "cps_booklet"],
     "Operator publishes both windows. Both CPS sources give an 8:00am school-year open "
     "against the operator's 8:30am; CPS may be carrying the summer open time.")
 
-hrs("John B Drake Elementary School", "", "Mon-Fri: 7:00am-3:30pm (Jun 16 - Aug 8)", "",
+hrs("John B Drake Elementary School", "", "Mon-Fri: 7:00am-3:30pm (Jun 16–Aug 8)", "",
     "medium", ["msq_drake", "uic_ocean", "cps_booklet"],
     "Summer window is unambiguous on the operator's location page. School-year hours stay "
     "empty: the Mile Square location page says 8:30am-4:30pm while UIC's OCEANHP page and "
@@ -669,7 +681,7 @@ hrs("William G Hibbard Elementary School", "Mon, Wed, Thu: 8:00am-4:00pm", "",
     "by the sheet's own access note - 'Open to Enrolled Students at School and Tapestry 360 "
     "Health Patients (Dental)' - which is the only site in either sheet that names dental. "
     "Tapestry publishes no hours for this site, so the medical/dental attribution is "
-    "inferred from the access note and should be confirmed by phone.")
+    "inferred from the access note and not yet confirmed with the sponsor.")
 
 # Sites where the existing single value is a school-year medical schedule and no
 # summer or dental schedule was found. Carried across so the new columns are not
@@ -705,7 +717,7 @@ hrs("Greater Lawndale High School For Social Justice", "", "", "", "unresolved",
     ["alivio_lvlhs", "alivio_loc"],
     "Alivio publishes no hours for this site. A provider-claimed third-party listing shows "
     "a much narrower week including a Wednesday closure, against the CPS sheet's Mon-Fri "
-    "split-shift value. Needs a phone confirm.")
+    "split-shift value. Not yet confirmed with the sponsor.")
 
 hrs("William C Reavis Math & Science Specialty ES", "", "", "", "unresolved",
     ["nnh_reavis_archive", "nnh_loc"],
@@ -764,7 +776,8 @@ room("David G Farragut Career Academy High School", "Entrance at 3256 W 24th St"
 room("Nathan S Davis Elementary School", "Davis Annex, 3050 W 39th Pl", "medium",
      ["uic_ocean", "msq_davis"],
      "IDPH names the location an Annex. This is the evidence behind reclassifying the site "
-     "in_building; flagged because an annex may be a separate structure on the campus.")
+     "in_building; medium confidence because an annex may be a separate structure on the "
+     "campus.")
 
 
 # ---- 4. sid ------------------------------------------------------------------

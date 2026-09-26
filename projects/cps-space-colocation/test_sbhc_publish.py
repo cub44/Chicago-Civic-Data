@@ -18,7 +18,8 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-rows = list(csv.DictReader((ROOT / "data" / "processed" / "sbhc_publish.csv").open()))
+rows = list(csv.DictReader(
+    (ROOT / "data" / "processed" / "sbhc_publish.csv").open(newline="", encoding="utf-8")))
 fail = []
 
 
@@ -144,7 +145,7 @@ for r in rows:
 # "false" on every row, so republishing it would assert nothing while reading
 # like a verification claim.
 resolved_header = next(csv.reader(
-    (ROOT / "data" / "processed" / "sbhc_resolved.csv").open()))
+    (ROOT / "data" / "processed" / "sbhc_resolved.csv").open(newline="", encoding="utf-8")))
 check("manually_verified" not in rows[0],
       "retired manually_verified column is back in sbhc_publish.csv")
 check("manually_verified" not in resolved_header,
@@ -182,7 +183,7 @@ check(hope.get("operational_status") == "closed" and hope.get("closed_on") == "2
 # 610308 is Rudolph; the evidence names Hope, which has no CPS id in this release
 check(hope.get("sid") == "", "Hope center still carries Rudolph's sid")
 discrepancy_sids = {r["sid"] for r in csv.DictReader(
-    (ROOT / "data" / "processed" / "sbhc_discrepancies.csv").open())
+    (ROOT / "data" / "processed" / "sbhc_discrepancies.csv").open(newline="", encoding="utf-8"))
     if r["site_name"] == "Wilma Rudolph Elementary Learning Center"}
 check(discrepancy_sids == {""}, "Hope findings still filed under Rudolph's sid")
 
@@ -202,6 +203,13 @@ for site in ("Paul Laurence Dunbar Career Academy High School",
              "Wendell Phillips Academy High School"):
     check(row(site).get("sponsor") == "Rush University Medical Center",
           "%s sponsor regressed" % site)
+
+# the operating Cultivate Collective row takes its sponsor from its own HRSA grantee;
+# the closed rows keep the names the sources carried for them
+check(row("Esperanza at Cultivate Collective").get("sponsor") == "Esperanza Health Centers",
+      "Cultivate Collective sponsor regressed")
+check(all(r["sponsor"] for r in rows if r["operational_status"] != "unverified"),
+      "blank sponsor on a row whose status is established")
 
 drake = row("John B Drake Elementary School")
 check(drake.get("hours_medical_summer") and not drake.get("hours_medical_school_year"),

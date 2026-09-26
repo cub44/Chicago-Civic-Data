@@ -5,12 +5,13 @@ access line and hours against the sponsor's own published pages on 2026-09-12. N
 has re-checked those findings, except the Johnson center's setting, which the author
 confirmed from local knowledge.
 
-`sbhc_discrepancies.csv` holds 152 field-level findings across all 38 rows of `sbhc.csv`,
-over 149 (site, field) pairs: the three centers that are closed or consolidated (Uplift,
+`sbhc_discrepancies.csv` holds 153 field-level findings across all 38 rows of `sbhc.csv`,
+over 150 (site, field) pairs: the three centers that are closed or consolidated (Uplift,
 Hope Health & Wellness and Reavis) each carry two `operational_status` findings, one from
 the field check and one from the status column added in revision 2. The findings include
-the three schema additions applied in revision 2 and the `sid` correction added in the
-2026-09-21 release. 5 source-field findings are deliberately left null — 9 rows in
+the three schema additions applied in revision 2, the `sid` correction added in the
+2026-09-21 release and the Cultivate Collective `sponsor` finding added in the 2026-09-26
+release. 5 source-field findings are deliberately left null — 9 rows in
 `sbhc_discrepancies.csv` carry `confidence = unresolved` once the two derived
 `hours_split` rows and the two mobile units' unverified `operational_status`
 rows are counted alongside them.
@@ -36,6 +37,18 @@ rows are counted alongside them.
   own counts and now say which rows publish no hours. No status, value or confidence grade
   changed.
 - **Release 2026-09-24:** no change to the three SBHC sheets.
+- **Release 2026-09-26:** the Johnson note credits the author’s local knowledge and the
+  City’s building footprints, which put the center and the school in separate buildings
+  about 270 feet apart. Notes that cited “the uploaded CPS sheet” name CPS’s health-center
+  sheet and its pull date, 2026-09-11; asides that asked for a phone call say the value is
+  not yet confirmed with the sponsor; three notes no longer say “flagged”; the Mansueto
+  note gives the clinic’s distance from the school as about one block (roughly 620 feet),
+  not roughly a kilometer; and the Mile Square summer window is written Jun 16–Aug 8.
+  Esperanza at Cultivate Collective, the one operating row with a blank `sponsor`, takes
+  `Esperanza Health Centers` from its own `hrsa_grantee`, recorded as the 153rd finding. No
+  status, confidence grade or figure changed; outside the notes, that sponsor (which the
+  row’s `resolution_fields` now lists, as `sponsor(high)`) and the summer window’s dash
+  are the only values that moved.
 
 ## Outputs
 
@@ -99,7 +112,7 @@ IDPH-only rows were the discrepancy, not a coverage gap.
 `Wilma Rudolph Elementary Learning Center` is wrong. 1628 W Washington Blvd is **Hope
 Institute Learning Academy** — UIC's own announcement names it directly. `sbhc.csv` joined
 the IDPH entry to Rudolph by address identity, and the `match_basis=address_identity` value
-is what flagged it. The other two `address_identity` rows (Uplift, Reavis) are the closed
+is what exposed it. The other two `address_identity` rows (Uplift, Reavis) are the closed
 sites. That join rule produced three bad rows out of three, and it has been retired: no
 published row uses it, and the test rejects it.
 
@@ -130,9 +143,9 @@ health-center sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**
   `cps_school_building`, since `test_sbhc_publish.py` rightly forbids mapping a school-linked
   center at its school's coordinate.
 - **Mansueto → school_linked confirmed, and operating.** The center is Esperanza's Brighton
-  Park clinic at 4700 S California Ave, about a kilometer from the school. CPS's off-site
-  override is right, and the Illinois Primary Health Care Association (IPHCA) locator
-  carries the site as current.
+  Park clinic at 4700 S California Ave, about one block (roughly 620 feet) east of the
+  school. CPS's off-site override is right, and the Illinois Primary Health Care
+  Association (IPHCA) locator carries the site as current.
 - **Cultivate Collective → host school is Academy for Global Citizenship**, the CPS charter
   on that campus. Note this site is neither IDPH-certified nor in CPS's directory; it may not
   meet a strict SBHC definition at all.
@@ -164,6 +177,13 @@ health-center sheet and the 2025-26 booklet say **Marine Leadership at Ames HS**
   value.
 - `Near North/Komed-Homan Health Center` conflates two separate Near North sites; Komed
   Holman is at 4259 S Berkeley Ave and is not the Reavis sponsor.
+- **Cultivate Collective had no sponsor** in either source sheet, since neither IDPH nor CPS
+  lists it. It takes `Esperanza Health Centers` from its own HRSA grantee, written as the
+  operator writes its name; Cultivate Collective describes the clinic as operated by
+  Esperanza Health Centers.
+- **The closed rows keep the names this release recorded for them** and are not brought up
+  to date: IDPH’s `Heartland Health Center` at Uplift, IDPH’s legal grantee at the Hope
+  center, and `Near North Health` at Reavis.
 
 ## Hours
 

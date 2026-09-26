@@ -1,6 +1,6 @@
 # CPS space and co-location
 
-[Explore the project](https://connorblandford.com/projects/cps-space-colocation/) or open its [dataset page](https://connorblandford.com/data/cps-space-colocation/). This is the dataset behind an exploratory map and the article it accompanies, “Chicago’s underutilized schools are an unrealized opportunity” (part one of three). It examines Chicago Public Schools (CPS) space and potential co-location. Release: **2026-09-24**, tagged [`cps-space-colocation-2026-09-24`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-24); utilization year: **SY2026**. Sources were pulled 2026-09-09 to 2026-09-21; the [data dictionary](data/README.md#source-pulls) lists each pull date. All dates here are YYYY-MM-DD.
+[Explore the project](https://connorblandford.com/projects/cps-space-colocation/) or open its [dataset page](https://connorblandford.com/data/cps-space-colocation/). This is the dataset behind an exploratory map and the article it accompanies, “Chicago’s underutilized schools are an unrealized opportunity” (part one of three). It examines Chicago Public Schools (CPS) space and potential co-location. Release: **2026-09-26**, tagged [`cps-space-colocation-2026-09-26`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-26); utilization year: **SY2026**. Sources were pulled 2026-09-09 to 2026-09-21; the [data dictionary](data/README.md#source-pulls) lists each pull date. All dates here are YYYY-MM-DD.
 
 ## Download
 
@@ -12,7 +12,7 @@
 | [colocation_campuses.csv](data/processed/colocation_campuses.csv) | 16 | One shared campus |
 | [sbhc_publish.csv](data/processed/sbhc_publish.csv) | 38 | One school-based health center (SBHC) |
 | [sbhc_resolved.csv](data/processed/sbhc_resolved.csv) | 38 | One center with source and resolved values side by side |
-| [sbhc_discrepancies.csv](data/processed/sbhc_discrepancies.csv) | 152 | One center-field evidence finding |
+| [sbhc_discrepancies.csv](data/processed/sbhc_discrepancies.csv) | 153 | One center-field evidence finding |
 | [libraries.csv](data/processed/libraries.csv) | 82 | One Chicago Public Library (CPL) branch |
 | [library_buildings.csv](data/processed/library_buildings.csv) | 82 | One branch: the City footprint matched to it, a point inside that footprint where one was matched, and how confidently (`match_quality`) |
 | [park_facilities.csv](data/processed/park_facilities.csv) | 743 | One Chicago Park District (CPD) building |
@@ -78,9 +78,33 @@ of the CDPH health-center dataset.
 
 Cite this release as:
 
-> Blandford, Connor Ulrich. “CPS space and co-location.” Data set, release 2026-09-24. connorblandford.com. https://connorblandford.com/data/cps-space-colocation/.
+> Blandford, Connor Ulrich. “CPS space and co-location.” Data set, release 2026-09-26. connorblandford.com. https://connorblandford.com/data/cps-space-colocation/.
 
 The [dataset page](https://connorblandford.com/data/cps-space-colocation/) gives the same citation. The data and this documentation are under [CC BY 4.0](../../LICENSE), and the code (`*.py`, `Makefile`) is under [MIT](../../LICENSE-CODE). The repository's [Reuse and corrections](../../README.md#reuse-and-corrections) section says what each license covers and how to report a correction.
+
+## What changed on 2026-09-26
+
+The school-based health center notes say who did the research, and `facts.json` says where its figures come from. **No figure changed**: every figure in `facts.json`, every status and every coordinate is as it was, and the 16 other files are byte for byte the files of release 2026-09-24: the 14 tables built from the source pulls, `community_area_summary.csv` and `cdph_mental_health_centers.csv`. Four files changed:
+
+- **`sbhc_publish.csv`, `sbhc_resolved.csv` and `sbhc_discrepancies.csv`** carry the resolution notes verbatim, so all three change with them:
+  - The Johnson center’s note says the author confirmed from local knowledge that 1504 S Albany is a separate building from the school at 1420 S Albany, and that the City’s building footprints put the two in separate buildings, about 270 feet apart.
+  - Notes that cited “the uploaded CPS sheet” name CPS’s health-center sheet and the day it was pulled, 2026-09-11.
+  - Asides that asked for a phone call now say the value is not yet confirmed with the sponsor.
+  - Three notes no longer say “flagged”: the two on the Davis annex give the reason for their medium confidence, and the Gary Comer note says only that it fills an empty coordinate.
+  - The Mansueto note places Esperanza’s Brighton Park clinic about one block (roughly 620 feet) east of the school, where it had said roughly a kilometer.
+  - The summer window in the Davis and Drake centers’ hours is written Jun 16–Aug 8.
+  - Esperanza at Cultivate Collective, the one operating center with a blank `sponsor`, now reads `Esperanza Health Centers`, taken from the row’s own HRSA grantee, and its `resolution_fields` lists `sponsor(high)`. That is a new finding, so `sbhc_discrepancies.csv` has 153 rows, up from 152. The count of sponsors of operating centers stays 13.
+- **`facts.json`** takes the new release date and:
+  - names the health-center roster as researched by AI agents and links it at this release’s tag;
+  - dates the roster by its research, 2026-09-12, where it had given the day the sheet was copied into the working repository;
+  - says AI agents compiled the CDPH mental health center list;
+  - links the CPS School Profile Information API’s help page rather than its 15.5 MB data endpoint;
+  - gives the footprint extracts their last pull date, 2026-09-14, as `pulled_last`, beside the first, 2026-09-13;
+  - adds `coverage`, school year 2025–26 in months (2025-08 to 2026-06);
+  - adds “school-based” to the labels of the roster’s figures, as in “School-based health centers operating”;
+  - says the script that writes it is in the private working repository.
+
+`build_resolved.py` and `test_sbhc_publish.py` now read and write the three sheets as UTF-8 whatever the system’s default encoding, so `make sbhc` reproduces their checksums under any locale; the en dash is the sheets’ first character outside ASCII.
 
 ## What changed on 2026-09-24
 

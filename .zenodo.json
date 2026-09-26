@@ -1,0 +1,30 @@
+{
+  "upload_type": "dataset",
+  "title": "CPS space and co-location",
+  "description": "Chicago Public Schools (CPS) space utilization for school year 2025–26 (SY2026), with the district's school locations and co-located campuses, the school-based health center roster, Chicago Public Library branches, Chicago Park District buildings, and the City of Chicago's clinic, senior center and workforce center locations. Companion files record, wherever a City building footprint was matched to a school, library branch, park building or City service site, that footprint, a point inside it and how confidently it was matched. The release also carries a community-area summary, the seven Chicago Department of Public Health mental health centers the article measures distances to, and facts.json, every figure the project page states. It is the dataset behind an exploratory map and the article 'Chicago's underutilized schools are an unrealized opportunity', part one of a three-part series.",
+  "creators": [
+    {
+      "name": "Blandford, Connor Ulrich",
+      "orcid": "0009-0009-5938-7151"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "version": "2026-09-26",
+  "language": "eng",
+  "keywords": [
+    "Chicago",
+    "Chicago Public Schools",
+    "school space utilization",
+    "school-based health centers",
+    "co-location",
+    "open data"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://connorblandford.com/data/cps-space-colocation/",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-other"
+    }
+  ]
+}

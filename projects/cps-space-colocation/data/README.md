@@ -1,6 +1,6 @@
 # Data dictionary
 
-Release **2026-09-24**, tagged [`cps-space-colocation-2026-09-24`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-24). Cite that date and the file you used, in the form the [project README](../README.md#cite-and-reuse) gives. Each source was pulled on its own date, listed below. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%. All dates are YYYY-MM-DD. In the column tables, Type is one of `text`, `integer`, `decimal`, `boolean` (`true` or `false`), `date` (YYYY-MM-DD) or `enum` (one of the values listed); units are given in a Units column or in the notes, never as the type.
+Release **2026-09-26**, tagged [`cps-space-colocation-2026-09-26`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-26). Cite that date and the file you used, in the form the [project README](../README.md#cite-and-reuse) gives. Each source was pulled on its own date, listed below. CSVs are UTF-8; blank cells mean missing, not zero. Join school tables on `sid`, read as text. `su_pct` is a ratio: 0.70 means 70%. All dates are YYYY-MM-DD. In the column tables, Type is one of `text`, `integer`, `decimal`, `boolean` (`true` or `false`), `date` (YYYY-MM-DD) or `enum` (one of the values listed); units are given in a Units column or in the notes, never as the type.
 
 ### Source pulls
 
@@ -819,9 +819,17 @@ Facts that say records say so. `district_utilization` is the aggregate ratio
 (utilization enrollment summed over the scored records over their summed
 adjusted ideal capacity), not the mean of building rates.
 
-The top level carries `release`, `school_year`, the `sources` list with each
-pull date (the health-center sheet's entry records its SHA-256), and
-`invariants`: sums that are re-checked on every build.
+The top level carries `release`, `school_year`, `coverage`, `generated_by`,
+the `sources` list, and `invariants`: sums that are re-checked on every build.
+`coverage` is the school year in ISO months, `start` 2025-08 and `end` 2026-06:
+CPS’s 2025–26 calendar has students in grades K–12 in class from 2025-08-18 to
+2026-06-04. `generated_by` names the script that writes the file, which is in
+the private working repository and not published. Each source gives the date it
+was pulled; the building footprints, pulled over two days, give the first as
+`pulled` and the last as `pulled_last`. The health-center roster is dated by its
+research: `pulled` and `verified_through` are the day AI agents checked it,
+2026-09-12, its link names this release’s tag, and `sha256` is the hash of the
+`sbhc_publish.csv` the figures were computed from.
 
 ## `community_area_summary.csv` — one row per community area
 
@@ -902,7 +910,7 @@ resolution.
 
 | Column | Type | Notes |
 |---|---|---|
-| `sponsor` | text | The public-facing operating unit (`Tapestry 360 Health`, `UI Health Mile Square Health Center`). One canonical name, resolved from the IDPH and CPS names, which often disagree (stale provider names, a rename, one real change of operator); the two source values stay in `sbhc_resolved.csv`. Blank on the two unverified mobile units and on Esperanza at Cultivate Collective, whose HRSA grantee (`hrsa_grantee`) is Esperanza Health Centers. |
+| `sponsor` | text | The public-facing operating unit (`Tapestry 360 Health`, `UI Health Mile Square Health Center`). One canonical name, resolved from the IDPH and CPS names, which often disagree (stale provider names, a rename, one real change of operator); the two source values stay in `sbhc_resolved.csv`. Esperanza at Cultivate Collective, which neither IDPH nor CPS lists, takes its sponsor from its own `hrsa_grantee`, written as the operator writes it (`Esperanza Health Centers`). The three closed or consolidated rows keep the sponsor names this release recorded for them and are not brought up to date: IDPH’s `Heartland Health Center` at Uplift, the name before the organization became Tapestry 360 Health in 2022-10; IDPH’s legal grantee, `Board of Trustees, U of I at Chicago`, at the Hope center; and `Near North Health` at Reavis. Blank only on the two unverified mobile units. |
 | `sponsor_legal_name` | text | The legal grantee, where it differs from `sponsor` and has been established. Only the four UI Health rows: `Board of Trustees, U of I at Chicago`. |
 | `site_name` | text | The input sheet's row label, unique, and the key `resolutions.py` joins on. **Not the host school**: on the Hope row it still reads `Wilma Rudolph Elementary Learning Center`, the school the input sheet wrongly matched. Use `school_name` and `sid` for the host. |
 | `sid` | text | CPS id of the host school, read as text, joining to `schools.csv` and `utilization.csv`. Blank where there is no CPS host: the mobile units, Esperanza at Cultivate Collective, and the closed Hope Health & Wellness center (see below). Unique where present. |
@@ -1002,7 +1010,7 @@ provenance columns above. It also keeps the input's `sponsor_cps`,
 An empty `resolved_*` cell means that field was not changed. The input `sid` is
 kept here for audit; the correction lives in `sbhc_publish.csv` and the findings.
 
-`sbhc_discrepancies.csv` is the evidence table, 152 rows, one per center-field
+`sbhc_discrepancies.csv` is the evidence table, 153 rows, one per center-field
 finding:
 
 | Column | Notes |
