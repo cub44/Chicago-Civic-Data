@@ -2,6 +2,8 @@
 
 [Explore the project](https://connorblandford.com/projects/cps-space-colocation/) or open its [dataset page](https://connorblandford.com/data/cps-space-colocation/). This is the dataset behind an exploratory map and the article it accompanies, “Chicago’s underutilized schools are an unrealized opportunity” (part one of three). It examines Chicago Public Schools (CPS) space and potential co-location. Release: **2026-09-26**, tagged [`cps-space-colocation-2026-09-26`](https://github.com/cub44/Chicago-Civic-Data/tree/cps-space-colocation-2026-09-26); utilization year: **SY2026**. Sources were pulled 2026-09-09 to 2026-09-21; the [data dictionary](data/README.md#source-pulls) lists each pull date. All dates here are YYYY-MM-DD.
 
+DOI: [https://doi.org/10.5281/zenodo.22972209](https://doi.org/10.5281/zenodo.22972209). Zenodo archives each release from 2026-09-26 on; this DOI stands for all of them and resolves to the latest.
+
 ## Download
 
 | CSV | Rows | One row represents |
@@ -78,9 +80,9 @@ of the CDPH health-center dataset.
 
 Cite this release as:
 
-> Blandford, Connor Ulrich. “CPS space and co-location.” Data set, release 2026-09-26. connorblandford.com. https://connorblandford.com/data/cps-space-colocation/.
+> Blandford, Connor Ulrich. “CPS space and co-location.” Data set, release 2026-09-26. connorblandford.com. https://connorblandford.com/data/cps-space-colocation/. https://doi.org/10.5281/zenodo.22972209.
 
-The [dataset page](https://connorblandford.com/data/cps-space-colocation/) gives the same citation. The data and this documentation are under [CC BY 4.0](../../LICENSE), and the code (`*.py`, `Makefile`) is under [MIT](../../LICENSE-CODE). The repository's [Reuse and corrections](../../README.md#reuse-and-corrections) section says what each license covers and how to report a correction.
+The [dataset page](https://connorblandford.com/data/cps-space-colocation/) gives the same citation, with this release's own DOI in place of the page's URL, followed by the DOI for all releases. The data and this documentation are under [CC BY 4.0](../../LICENSE), and the code (`*.py`, `Makefile`) is under [MIT](../../LICENSE-CODE). The repository's [Reuse and corrections](../../README.md#reuse-and-corrections) section says what each license covers and how to report a correction.
 
 ## What changed on 2026-09-26
 
