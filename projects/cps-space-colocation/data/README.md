@@ -849,7 +849,9 @@ Grain: one CDPH mental health center. 7 rows. The centers CDPH's *Mental
 Health Centers* page listed on 2026-09-21, published so that the two distance
 figures the article rests on — the median distance from an underutilized
 building to the nearest center, and the underutilized records within a mile of
-one — are reproducible from this release alone.
+one — are reproducible from this release alone. AI agents compiled the seven rows from the
+Chicago Department of Public Health's Mental Health Centers page on 2026-09-21; no person has
+re-checked them.
 
 | Column | Type | Notes |
 |---|---|---|
